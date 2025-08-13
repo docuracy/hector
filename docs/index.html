@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>HECTOR Vocabulary SPA (Placeholder)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 2rem;
-            line-height: 1.6;
-        }
 
-        h1 {
-            color: #2c3e50;
-        }
-
-        code {
-            background: #f4f4f4;
-            padding: 0.2rem 0.4rem;
-            border-radius: 3px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@andypf/json-viewer@2.2.0/dist/iife/index.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@andypf/json-viewer@2.2.0/dist/iife/index.min.js">
 </head>
 <body>
 <h1>HECTOR Vocabulary SPA (Placeholder)</h1>
@@ -38,7 +26,8 @@
 
 <p>Requested path: <code id="path">none</code></p>
 
-<script src="hector-format.js"></script>
+<div id="json-container"></div>
+
 <script>
     const params = new URLSearchParams(window.location.search);
     const path = params.get('path');
@@ -49,6 +38,8 @@
         // Build the JSON-LD URL for the requested path
         const jsonUrl = `https://w3id.org/hector/${path}`;
 
+
+
         // Fetch with Accept: application/json to trigger JSON-LD content negotiation
         fetch(jsonUrl, {headers: {Accept: 'application/json'}})
             .then(response => {
@@ -58,8 +49,19 @@
                 return response.json();
             })
             .then(data => {
-                html = formatHector(data);
-                appendFormatted(html);
+                const jsonViewer = document.createElement("andypf-json-viewer")
+                jsonViewer.id = "json"
+                jsonViewer.expanded = 2
+                jsonViewer.indent = 4
+                jsonViewer.showDataTypes = true
+                jsonViewer.theme = "monokai"
+                jsonViewer.showToolbar = true
+                jsonViewer.showSize = true
+                jsonViewer.showCopy = true
+                jsonViewer.expandIconType = "square"
+                jsonViewer.data = data
+                const container = document.getElementById('json-container');
+                container.appendChild(jsonViewer);
             })
             .catch(err => {
                 console.error('Error fetching JSON-LD:', err);
