@@ -11,16 +11,19 @@
 
 ### Programmatic JSON Request Examples
 
+#### Context
+
+```bash
+curl -H "Accept: application/ld+json" -L "https://w3id.org/hector/context/"
+
+```
+
 #### Commodity
 
 To request JSON-LD for a commodity (e.g., saffron) using `curl`:
 
 ```bash
-#!/bin/bash
-
-COMMODITY="saffron"
-curl -H "Accept: application/ld+json" \
-     "https://w3id.org/hector/commodity/$COMMODITY"
+curl -H "Accept: application/ld+json" -L "https://w3id.org/hector/commodity/saffron"
 
 ```
 
@@ -29,9 +32,6 @@ curl -H "Accept: application/ld+json" \
 To request JSON-LD for a unit (e.g., pound) using curl:
 
 ```bash
-#!/bin/bash
-UNIT="mass/pound"
-curl -H "Accept: application/ld+json" \
-     "https://w3id.org/hector/unit/$UNIT"
+curl -H "Accept: application/ld+json" -L "https://w3id.org/hector/unit/mass/pound"
 
 ```
