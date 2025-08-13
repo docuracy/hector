@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HECTOR Vocabulary SPA (Placeholder)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; margin: 2rem; line-height: 1.6; }
+    h1 { color: #2c3e50; }
+    code { background: #f4f4f4; padding: 0.2rem 0.4rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>HECTOR Vocabulary SPA (Placeholder)</h1>
+  <p>This page is a temporary entry point for the HECTOR Single Page Application.</p>
+
+  <h2>Intended Functionality</h2>
+  <ul>
+    <li>Serve a <strong>Dexie.js</strong>-backed searchable index of HECTOR terms.</li>
+    <li>Support <strong>phonetic and orthographic searches</strong> across the vocabulary.</li>
+    <li>Provide dynamic lookup of concepts, contexts, and canonical forms.</li>
+    <li>Integrate with JSON-LD and RDF representations via content negotiation.</li>
+  </ul>
+
+  <p>Requests are to be routed here from `https://w3id.org/hector/` (unless JSON-LD or RDF content type is requested).</p>
+
+  <p>Requested path: <code id="path">none</code></p>
+<script>
+  document.getElementById('path').textContent = window.location.pathname;
+</script>
+</body>
+</html>
