@@ -26,7 +26,8 @@
 
   <p>Requested path: <code id="path">none</code></p>
 <script>
-  document.getElementById('path').textContent = window.location.pathname;
-</script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('path').textContent = params.get('path');
+</script>  
 </body>
 </html>
