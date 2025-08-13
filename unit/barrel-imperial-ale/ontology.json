@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "hector": "https://w3id.org/hector#",
+    "qudt": "http://qudt.org/schema/qudt#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@id": "hector:unit/barrel-imperial-ale",
+  "@type": [
+    "qudt:Unit",
+    "hector:HistoricalUnit"
+  ],
+  "rdfs:label": "Barrel (Imperial Ale)",
+  "skos:altLabel": [
+    "Beer Barrel (UK)",
+    "Imperial Ale Barrel"
+  ],
+  "hector:historicalTerm": "barrel",
+  "hector:conversionToLitre": 163.656,
+  "rdfs:comment": "A historical English unit of volume for beer and ale, equal to 36 imperial gallons (about 163.656 litres). Commonly used in brewing and trade.",
+  "skos:narrower": {
+    "@id": "hector:unit/firkin"
+  },
+  "dcterms:temporal": "Medieval–Modern England",
+  "hector:usedForCommodity": {
+    "@id": "hector:commodity/ale"
+  }
+}
