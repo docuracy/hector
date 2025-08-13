@@ -27,7 +27,34 @@
   <p>Requested path: <code id="path">none</code></p>
 <script>
   const params = new URLSearchParams(window.location.search);
-  document.getElementById('path').textContent = params.get('path');
-</script>  
+  const path = params.get('path');
+
+  document.getElementById('path').textContent = path || '(no path)';
+
+  if (path) {
+    // Build the JSON-LD URL for the requested path
+    const jsonUrl = `https://w3id.org/hector/${path}`;
+    
+    // Fetch with Accept: application/json to trigger JSON-LD content negotiation
+    fetch(jsonUrl, { headers: { Accept: 'application/json' } })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Fetched JSON-LD:', data);
+        // For now just dump it
+        const pre = document.createElement('pre');
+        pre.textContent = JSON.stringify(data, null, 2);
+        document.body.appendChild(pre);
+      })
+      .catch(err => {
+        console.error('Error fetching JSON-LD:', err);
+      });
+  }
+</script>
+
 </body>
 </html>
