@@ -1,20 +1,46 @@
 {
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "hector": "https://w3id.org/hector#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "hector:phoneticKey": {
+      "@id": "https://w3id.org/hector#phoneticKey",
+      "@container": "@list",
+      "@type": "xsd:string",
+      "rdfs:label": "Phonetic Key",
+      "rdfs:comment": "A phonetic transcription or simplified phonetic form used for matching variant spellings of a commodity or term."
+    },
+    "hector:historicalTerm": {
+      "@id": "https://w3id.org/hector#historicalTerm",
+      "rdfs:label": "Historical Term",
+      "rdfs:comment": "A historical term or name associated with a unit, commodity, or concept."
+    },
+    "hector:conversionToGram": {
+      "@id": "https://w3id.org/hector#conversionToGram",
+      "@type": "xsd:decimal",
+      "rdfs:label": "Conversion to Gram",
+      "rdfs:comment": "Conversion factor from the historical unit to grams."
+    },
+    "schema:sameAs": {
+      "@id": "http://schema.org/sameAs",
+      "@type": "@id"
+    },
+    "rdfs:label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "rdfs:comment": "http://www.w3.org/2000/01/rdf-schema#comment"
+  },
   "@id": "hector:unit/mass/pound",
   "@type": "hector:Unit",
   "rdfs:label": "Pound (weight)",
   "rdfs:comment": "Avoirdupois pound, a unit of mass commonly used in medieval and modern English trade, equal to approximately 453.59237 grams.",
-  "hector:historicalTerm": [
-    "pound-weight",
-    "libra",
-    "livre",
-    "pfund"
-  ],
+  "hector:historicalTerm": "pound-weight",
   "hector:conversionToGram": 453.59237,
   "schema:sameAs": [
     "http://www.wikidata.org/entity/Q100995"
   ],
-  "hector:classified_as": {
-    "@id": "hector:unit/mass",
-    "rdfs:label": "Mass"
-  }
+  "hector:phoneticKey": [
+    "paʊnd",
+    "ˈpaʊnd",
+    "pɑʊnd"
+  ]
 }
