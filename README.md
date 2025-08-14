@@ -19,8 +19,8 @@
 ### Test Persistent URLs using a Browser
 
 - **Root**: [https://w3id.org/hector/](https://w3id.org/hector/) - User Interface (searchable index)
-- **About**: [https://w3id.org/hector/about/](https://w3id.org/hector/about/)
-- **Context**: [https://w3id.org/hector/context](https://w3id.org/hector/context)
+- **About**: [https://w3id.org/hector/about/](https://w3id.org/hector/about/) - links back here
+- **Context**: [https://w3id.org/hector/context](https://w3id.org/hector/context) - JSON-LD Context Document
 - **Commodity Example**: [https://w3id.org/hector/commodity/saffron](https://w3id.org/hector/commodity/saffron) - pre-loaded in the User Interface
 - **Unit Example**: [https://w3id.org/hector/unit/mass/pound](https://w3id.org/hector/unit/mass/pound) - pre-loaded in the User Interface
 
