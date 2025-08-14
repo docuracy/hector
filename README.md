@@ -10,6 +10,10 @@
 - Provide permanent, stable URIs for all terms through **w3id.org** redirects, using `"hector": "https://w3id.org/hector#"` as the namespace base.
 - Build a phonetically-searchable and dynamically-linked browser interface, hosted sustainably beyond the life of the project on GitHub Pages.
 
+
+![hector_model_diagram](https://github.com/user-attachments/assets/1b61207b-0101-43c9-b905-f42ef3f78400)
+
+
 ## Design Principles
 
 - **Stable Identification** – Each entity has a permanent URI and machine-readable definition.
