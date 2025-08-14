@@ -22,6 +22,7 @@
 - **Context Richness** – Entities may carry temporal scope, language variants (English, Latin, others), phonetic keys for matching, and implicit links to categories and subcategories from reputable LOD vocabularies (e.g. Getty AAT, Wikidata).
 - **Discoverability** – Phonetic indexing and variant forms support cross-source matching.
 - **Dual Catalogue Coherence** – Commodities, units, and rates are linked and cross-referenced to ensure consistent navigation and data integration.
+- **Extensibility** – Schema and controlled vocabulary designed to accommodate additional geographic zones, time periods, currencies, languages, and measurement systems.
 - **Sustainability** – Namespace anchored at w3id.org, static resources hosted on GitHub Pages.
 
 ## _Conceptual Inspiration_
