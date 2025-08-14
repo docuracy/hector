@@ -3,7 +3,7 @@
 
 ## Objectives
 
-- Build a digital catalogue of historical traded commodities based initially on Tudor Books of Rates transcripts (ed. Stuart Jenks), extensible to other sources.
+- Facilitate the work of the [IHR AHRC/DFG London Customs Accounts Project](https://www.history.ac.uk/research/history-policy/unlocking-upcycled-medieval-data) by building a digital catalogue of historical traded commodities. This will be based initially on Tudor Books of Rates transcripts (ed. Stuart Jenks), but should be extensible to other sources including the medieval London Customs Accounts.
 - Represent weights and measures (units, including currencies) used in taxation, linked and categorised.
 - For permanent, stable URIs, and dereferenceable, interoperable terms, use **w3id.org** redirects, e.g.:  `https://w3id.org/hector/` as the namespace base.
 - Develop an extensible schema in the form of a JSON-LD Context Document  
