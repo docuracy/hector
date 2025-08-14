@@ -5,6 +5,7 @@
 
 - Facilitate the [IHR AHRC/DFG London Customs Accounts Project](https://www.history.ac.uk/research/history-policy/unlocking-upcycled-medieval-data) by building a **digital catalogue** of historical traded commodities. This will be based initially on Tudor Books of Rates transcripts (ed. Stuart Jenks), but should be extensible to other sources including the medieval London Customs Accounts.
 - Build a parallel catalogue of historical weights and measures (i.e. units, including currencies) used in trade and taxation, linked and categorised.
+- Record customs Rates (cost per unit of commodity) with full temporal metadata, linking each rate to the relevant commodity and unit.
 - Associate commodities and units with external authorities (e.g. Wikidata, Lexvo, Getty AAT, QUDT) and persistent image identifiers (e.g. museum collections, UK Portable Antiquities Scheme).
 - Provide permanent, stable URIs for all terms through **w3id.org** redirects, using `"hector": "https://w3id.org/hector#"` as the namespace base.
 - Build a phonetically-searchable and dynamically-linked browser interface, hosted sustainably beyond the life of the project on GitHub Pages.
@@ -15,6 +16,7 @@
 - **Interoperability** – JSON-LD data aligned with LinkedArt and CIDOC-CRM, extended via a dedicated hector: namespace.
 - **Context Richness** – Entities may carry temporal scope, language variants (English, Latin, others), phonetic keys for matching, and implicit links to categories and subcategories from reputable LOD vocabularies (e.g. Getty AAT, Wikidata).
 - **Discoverability** – Phonetic indexing and variant forms support cross-source matching.
+- **Dual Catalogue Coherence** – Commodities, units, and rates are linked and cross-referenced to ensure consistent navigation and data integration.
 - **Sustainability** – Namespace anchored at w3id.org, static resources hosted on GitHub Pages.
 
 ## _Conceptual Inspiration_
