@@ -17,11 +17,11 @@
 - **Discoverability** – Phonetic indexing and variant forms support cross-source matching.
 - **Sustainability** – Namespace anchored at w3id.org, static resources hosted on GitHub Pages.
 
-## Conceptual Inspiration
+## _Conceptual Inspiration_
 
-The acronym **HECTOR** is a respectful nod to the philosopher [**Héctor-Neri Castañeda**](https://en.wikipedia.org/wiki/H%C3%A9ctor-Neri_Casta%C3%B1eda), known for his work on formal semantics, reference, and context-sensitive meaning.
+_The acronym **HECTOR** is a respectful nod to the philosopher [**Héctor-Neri Castañeda**](https://en.wikipedia.org/wiki/H%C3%A9ctor-Neri_Casta%C3%B1eda), known for his work on formal semantics, reference, and context-sensitive meaning._
 
-While unrelated in scope, HECTOR’s approach to precise, dereferenceable identifiers for commodities and units parallels Castañeda’s interest in rigorous systems for identifying and distinguishing entities across contexts. Just as quasi-indexicals in philosophy track identity across shifting perspectives, HECTOR accommodates historical and linguistic variation, ensuring that “saffron” in one manuscript can be linked unambiguously to “croco” or “crocos” elsewhere.
+_While unrelated in scope, HECTOR’s approach to precise, dereferenceable identifiers for commodities and units parallels Castañeda’s interest in rigorous systems for identifying and distinguishing entities across contexts. Just as quasi-indexicals in philosophy track identity across shifting perspectives, HECTOR accommodates historical and linguistic variation, ensuring that “saffron” in one manuscript can be linked unambiguously to “croco” or “crocos” elsewhere._
 
 ---
 
