@@ -109,14 +109,45 @@ short, drop 19 and 23 before 21 or 25.
 
 ---
 
-## 4. What the HECTOR session can do now, without waiting on anyone
+## 4. Where things stand (handoff, 2026-09-18, end of session)
 
-1. ~~F1, F3, F5~~ done 2026-09-18.
-2. ~~21~~ done 2026-09-18.
-3. ~~15 (parsing only)~~ done 2026-09-18; output local in `build/rates/`.
-4. ~~Draft the D3 URI policy~~: adopted 2026-09-18 (`docs/uri-policy.md`); F2, F4 done.
-Next without a decision: 13 (phonetic keys, computed locally) and 18 (unit catalogue, built
-locally); both publish only after task 1.
+**Done and live on `main`** (CI green; verified over w3id): Phase 0 complete (F1–F5, 21). The
+context is valid and layered on Linked Art, the vocabulary is at `/ontology`, and entity URIs
+are path URIs that dereference to their own documents (D3 adopted). The validator
+(`tools/validate.py`) and its tests prove each check can fail.
+
+**Built locally, not published** (Jenks-derived, so it stays in git-ignored `build/` until
+task 1):
+
+| artefact | how to regenerate | state |
+|---|---|---|
+| `build/rates/` (rates.jsonl/tsv, 1604_raw.tsv, report.md) | `python -m tools.rates.parse_bor` | 4,063 rows incl. 1604; cross-checked against LCA's removed 1604 TSVs |
+| `build/site/` (staging site, 2,452 commodity records) | `python -m tools.export.export_hector` | validates 0 errors; online: 3 bad ids, all LCA-side (C7) |
+| `build/ledger/commodities.tsv` (slug ledger) | minted by the exporter | **not yet authoritative**: nothing published, so it can still be regenerated. From first publication it is committed and must never be regenerated (docs/uri-policy.md §3) |
+| `build/lca-removed-1604/` | `git -C LCA show e9b5c99^:<path>` | LCA's removed 1604 TSVs and pre-filter index, for reference |
+
+**Waiting on Stephen:**
+- **1**, Jenks permission. Blocks all publication of the above.
+- **D6**, where the 1604-only commodities live (C8). Blocks linking 1604 rates to commodities.
+- **2**, flatten vs compose. Blocks 14 and the qualifier half of rate linking (16, 17).
+- **D4**, whether HECTOR or the LCA glossary URI is canonical. **D5**, the data licence.
+- C8: 88 glossary entries with Customs Account sources vanished between Feb 2026 and now with
+  no history record. Worth a look on the LCA side.
+
+**Told to the LCA session** (it may not have acted): the namespace is unified (no LCA change
+needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
+
+**Next, needing no decision** (all local, publish only after task 1):
+1. **13**: IPA phonetic keys for all forms, reusing LCA `process/helpers/phonetic.py`. The
+   glossary's `p` field is a matching code, not IPA, so it is not used.
+2. **18**: the unit catalogue (222 glossary unit entries + corpus unit spans + `_units.tsv`),
+   joined to the rates parser's recognised units.
+3. **17 (draft)**: emit Rate nodes into `build/site/` for commodities that already exist.
+   1507–1558 rates can be linked by matching `commodity_text` against glossary forms; 1604
+   waits on D6.
+4. When task 1 lands: copy `build/site/commodity/` into the repo and commit
+   `build/ledger/commodities.tsv` as `ledger/commodities.tsv` **in the same commit**, run
+   `tools/validate.py --online` locally (CI cannot reach Getty), then push.
 
 Nothing Jenks-derived goes to `main` until task 1 is ticked: `main` is live on
 `w3id.org/hector`.
