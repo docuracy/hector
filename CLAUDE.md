@@ -54,7 +54,7 @@ shapes/hector.shacl.ttl    SHACL shapes the validator applies to the expanded gr
 tools/validate.py          the validator (task 21); tests/test_validate.py proves each check fires
 tools/contexts/linked-art.json    vendored Linked Art context, so validation is offline/deterministic
 tools/rates/parse_bor.py   Books of Rates parser (task 15); writes ONLY to build/rates/ (ignored)
-docs/uri-policy-draft.md   draft of decision D3, for Stephen
+docs/uri-policy.md         the URI and versioning policy (D3, adopted 2026-09-18): READ before minting URIs
 .github/workflows/validate.yml    CI: validator --online + pytest, on push/PR and weekly
 LICENSE                    MIT (code). The DATA licence is undecided; see §6
 ```
@@ -97,8 +97,8 @@ Accept header 404s (`//ontology.json`).
 ## 4. Known defects in the foundation (verified 2026-09-18, with PyLD)
 
 Fix these before generating thousands of files from the exemplars, or every generated file
-inherits them. They are tasks F1–F5 in `PLAN.md`. **Status 2026-09-18: 1, 3 and 5 are fixed;
-2 and 4 wait on decision D3** (`docs/uri-policy-draft.md`). The description below is kept as the
+inherits them. They are tasks F1–F5 in `PLAN.md`. **Status 2026-09-18: all five are fixed**
+(2 and 4 per the adopted URI policy, `docs/uri-policy.md`). The description below is kept as the
 record of what was wrong; `tests/fixtures/legacy/` holds the original files, and the validator
 must keep rejecting them.
 
@@ -277,7 +277,7 @@ Two largely disjoint populations (issue #2 §5):
   .venv/bin/pip install -r requirements.txt`. Stephen has standing permission for package
   installs (say afterwards what went where). Do not import from LCA as a package; read its files.
 - Before committing any `ontology.json`, context or vocabulary change:
-  `.venv/bin/python tools/validate.py --online` (0 errors; the `ENTITY-URI` warnings are D3)
+  `.venv/bin/python tools/validate.py --online` (0 errors)
   and `HECTOR_ONLINE=1 .venv/bin/python -m pytest tests/ -q`. CI runs both, **but Getty
   refuses GitHub's runners (HTTP 403 on both the web and SPARQL routes, 2026-09-18), so CI
   cannot check AAT ids**: it reports them as `ONLINE-NOTFOUND` warnings and skips the AAT test.

@@ -33,9 +33,10 @@ Checks (codes appear in the output):
   IDENTITY-CLASS        the same IRI is both an identity/match and a class/broader of one node
   KIND                  document shape wrong for its path (commodity/, unit/<dim>/, unit/<dim>/<u>)
   SHACL                 violations of shapes/hector.shacl.ttl on the expanded graph
-  ENTITY-URI            (WARNING until decision D3; ERROR with --strict-uris) the document's
-                        subject is not https://w3id.org/hector/<its path>, so it cannot
-                        dereference to this file
+  ENTITY-URI            the document's subject is not https://w3id.org/hector/<its path>, so
+                        it cannot dereference to this file (URI policy D3, docs/uri-policy.md)
+  DANGLING-REF          a link to a HECTOR entity (https://w3id.org/hector/<path>[#frag]) with
+                        no <path>/ontology.json in the checkout
   ONLINE-NOTFOUND       (--online) the authority returns 404 for the id
   ONLINE-LABEL          (--online) the document's _label matches none of the authority's labels
 """
@@ -61,7 +62,9 @@ LINKED_ART_FILE = ROOT / "tools" / "contexts" / "linked-art.json"
 CACHE_FILE = ROOT / "build" / "validate-online-cache.json"
 
 W3ID = "https://w3id.org/hector/"
-HECTOR_NAMESPACES = ("https://w3id.org/hector#", "https://w3id.org/hector/ontology#")
+HECTOR_NAMESPACES = ("https://w3id.org/hector/ontology#",)  # vocabulary terms (D3)
+# Paths under W3ID that are not entities (served by their own w3id rules or files).
+NON_ENTITY_PATHS = ("ontology", "context", "about")
 
 LOCAL_CONTEXTS: dict[str, Path] = {}
 
@@ -250,7 +253,7 @@ def check_context(issues: list[Issue]):
         issues.append(Issue(p, "ERROR", "JSONLD", root_cause(e)))
 
 
-def check_document(path: Path, vocab: set[str] | None, strict_uris: bool) -> tuple[list[Issue], Graph | None]:
+def check_document(path: Path, vocab: set[str] | None) -> tuple[list[Issue], Graph | None]:
     issues: list[Issue] = []
     p = rel(path)
     add = lambda level, code, msg: issues.append(Issue(p, level, code, msg))
@@ -305,6 +308,17 @@ def check_document(path: Path, vocab: set[str] | None, strict_uris: bool) -> tup
         if is_external(s) and (None, None, o) in g and not any(True for _ in g.objects(o, RDFS.label)):
             add("ERROR", "EXTERNAL-UNLABELLED", f"<{s}> has no _label / rdfs:label in the document")
 
+    # Links to other HECTOR entities must resolve to a document in this checkout
+    for o in sorted({x for x in g.all_nodes() if isinstance(x, URIRef)}, key=str):
+        s = str(o)
+        if not s.startswith(W3ID) or is_hector(s):
+            continue
+        rel_path = s[len(W3ID):].split("#", 1)[0].strip("/")
+        if rel_path.split("/", 1)[0] in NON_ENTITY_PATHS:
+            continue
+        if not (ROOT / rel_path / "ontology.json").exists():
+            add("ERROR", "DANGLING-REF", f"<{s}> has no {rel_path}/ontology.json")
+
     # AAT "unidentified" is never an identity; identity and class must not coincide
     for s_, p_, o_ in g.triples((None, None, UNIDENTIFIED)):
         if p_ in IDENTITY_PREDICATES:
@@ -326,9 +340,8 @@ def check_document(path: Path, vocab: set[str] | None, strict_uris: bool) -> tup
     else:
         subj = subjects[0]
         if entity_uri(path) and subj != entity_uri(path):
-            add("ERROR" if strict_uris else "WARNING", "ENTITY-URI",
-                f"subject is <{subj}>, which does not dereference to this file "
-                f"(expected <{entity_uri(path)}>; see PLAN.md F2/D3)")
+            add("ERROR", "ENTITY-URI", f"subject is <{subj}>, which does not dereference to this "
+                f"file (expected <{entity_uri(path)}>)")
         check_kind(path, g, URIRef(subj), add)
 
     return issues, g
@@ -497,8 +510,9 @@ def find_documents() -> list[Path]:
                   if not any(part in (".venv", "build", "node_modules", "tests") for part in p.relative_to(ROOT).parts))
 
 
-def validate(paths: list[Path] | None = None, online: bool = False, strict_uris: bool = False,
-             shacl: bool = True) -> list[Issue]:
+def validate(paths: list[Path] | None = None, online: bool = False, shacl: bool = True,
+             checked: list[Path] | None = None) -> list[Issue]:
+    """Validate; `checked`, if given, receives every document path that was examined."""
     issues: list[Issue] = []
     check_context(issues)
     vocab = load_vocabulary(issues)
@@ -512,7 +526,9 @@ def validate(paths: list[Path] | None = None, online: bool = False, strict_uris:
         session.headers["User-Agent"] = "HECTOR validator (https://github.com/docuracy/hector)"
         cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
     for path in docs:
-        doc_issues, g = check_document(path, vocab, strict_uris)
+        if checked is not None:
+            checked.append(path)
+        doc_issues, g = check_document(path, vocab)
         issues += doc_issues
         if g is not None and shacl:
             issues += run_shacl(path, g)
@@ -528,10 +544,9 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("paths", nargs="*", type=Path)
     ap.add_argument("--online", action="store_true", help="dereference AAT / Wikidata / QUDT ids")
-    ap.add_argument("--strict-uris", action="store_true", help="ENTITY-URI is an error, not a warning")
     ap.add_argument("--no-shacl", action="store_true")
     a = ap.parse_args(argv)
-    issues = validate(a.paths or None, a.online, a.strict_uris, not a.no_shacl)
+    issues = validate(a.paths or None, a.online, not a.no_shacl)
     for i in issues:
         print(i)
     n_err = sum(i.level == "ERROR" for i in issues)

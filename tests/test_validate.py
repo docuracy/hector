@@ -60,16 +60,13 @@ def load(rel):
 
 def test_repo_is_valid_and_was_actually_checked():
     V.set_root(REPO)
-    issues = V.validate()
+    checked = []
+    issues = V.validate(checked=checked)
     assert [str(i) for i in issues if i.level == "ERROR"] == []
-    # presence: every entity document was reached (the D3 warning is emitted per document)
-    warned = {i.path for i in issues if i.code == "ENTITY-URI"}
-    assert {SAFFRON, "unit/mass/ontology.json", "unit/mass/pound/ontology.json"} <= warned
-
-
-def test_strict_uris_turns_the_d3_warning_into_an_error():
-    V.set_root(REPO)
-    assert "ENTITY-URI" in codes(V.validate(strict_uris=True))
+    # presence: every entity document was reached
+    reached = {c.resolve().relative_to(REPO).as_posix() for c in checked}
+    assert {SAFFRON, "unit/mass/ontology.json", "unit/mass/pound/ontology.json",
+            "ontology/ontology.json"} <= reached
 
 
 # ------------------------------------------------------------------ legacy files (pre Phase 0)
@@ -101,7 +98,9 @@ def test_legacy_documents_fail_the_deeper_checks_once_the_context_parses(tmp_pat
     assert "EXTERNAL-IRI-FORM" in saffron     # wikidata /wiki/Q84, museum.org, finds.org.uk
     assert "EXTERNAL-UNLABELLED" in saffron   # bare sameAs strings
     assert "KIND" in saffron                  # not a crm:E55_Type
-    assert "UNDEFINED-TERM" in codes(issues, path="unit/mass/pound/ontology.json")  # hector:Unit
+    assert "ENTITY-URI" in saffron            # hector#commodity/saffron, a fragment URI
+    pound = codes(issues, path="unit/mass/pound/ontology.json")
+    assert "UNKNOWN-NAMESPACE" in pound       # hector:Unit, in the retired https://w3id.org/hector#
     assert "KIND" in codes(issues, path="unit/mass/ontology.json")
 
 
@@ -127,6 +126,9 @@ MUTATIONS = {
     "KIND": mutate(lambda d: d["identified_by"][1]["classified_as"].append(
         {"id": "aat:300404670", "type": "Type", "_label": "preferred terms"})),
     "SHACL": mutate(lambda d: d["taxation"][0]["amount"].__setitem__("valueInPence", "-1")),
+    "ENTITY-URI": mutate(lambda d: d.__setitem__("id", "hector:commodity/saffron")),
+    "DANGLING-REF": mutate(lambda d: d["taxation"][0]["perQuantity"]["unit"].__setitem__(
+        "id", "hectorid:unit/mass/no-such-unit")),
     "JSONLD": mutate(lambda d: d.__setitem__("@context", [*d["@context"], {"bad": {"rdfs:label": "x"}}])),
 }
 

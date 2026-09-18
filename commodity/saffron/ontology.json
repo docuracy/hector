@@ -3,7 +3,7 @@
     "https://linked.art/ns/v1/linked-art.json",
     "https://w3id.org/hector/context"
   ],
-  "id": "hector:commodity/saffron",
+  "id": "https://w3id.org/hector/commodity/saffron",
   "type": "Type",
   "_label": "saffron",
   "illustrative": true,
@@ -50,7 +50,7 @@
   ],
   "taxation": [
     {
-      "id": "hector:rate/illustrative/saffron",
+      "id": "https://w3id.org/hector/commodity/saffron#rate-illustrative",
       "type": "Rate",
       "_label": "Illustrative rate for saffron (not from a source)",
       "amount": {
@@ -62,7 +62,7 @@
       "perQuantity": {
         "type": "Dimension",
         "value": 1,
-        "unit": { "id": "hector:unit/mass/pound", "type": "MeasurementUnit", "_label": "pound (avoirdupois)" }
+        "unit": { "id": "hectorid:unit/mass/pound", "type": "MeasurementUnit", "_label": "pound (avoirdupois)" }
       },
       "validFrom": "1558",
       "validThrough": "1604"

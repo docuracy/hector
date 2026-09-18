@@ -21,11 +21,11 @@ London_Customs_Accounts (LCA), and the outputs land here.
 |---|---|---|---|
 | **1** [X] | **Jenks permission** for derived structured data, ideally CC BY 4.0 (LCA `documentation/data_licensing_strategy.md` §1) | put it in writing now; offer the split (open licence on derived data, verbatim `original_text` held back) | all publication |
 | **2** [D] | **Flatten vs compose** qualified commodities (issue #2 §4) | **flatten**: `Normandy canvas` gets its own commodity URI with the rate attached, linked by `hector:compoundOf`. Works with the schema today, avoids AAT for ~400 qualifiers | 12, 14–17 |
-| **3** [D] | **URI and versioning policy** | see D3 below; now concrete, not abstract (§2, F2) | every export |
+| **3** [D] | **URI and versioning policy** | **adopted 2026-09-18** as drafted: `docs/uri-policy.md` | every export |
 | **D4** [D] | **HECTOR URI vs LCA glossary URI.** Each concept already has `https://w3id.org/mlca/glossary/{key}`. Which is canonical? | HECTOR canonical; LCA's JSON-LD emits `skos:exactMatch` (or `owl:sameAs`) to it. Keeps LCA URIs working | 12 |
 | **D5** [D] | **Data licence for HECTOR output** (repo `LICENSE` is MIT, code only; glossary metadata says CC BY-SA; strategy prefers CC BY) | follows task 1; add a `LICENSE-DATA` once decided | 24, 25 |
 
-**D3, the URI policy.** A proposal to put to Stephen:
+**D3, the URI policy.** Adopted 2026-09-18; the full text is `docs/uri-policy.md`. In short:
 - entities are **path URIs**, never fragments: `https://w3id.org/hector/commodity/<slug>`,
   `…/unit/<dimension>/<slug>`, `…/rate/<book>/<id>`;
 - vocabulary terms (properties, classes) in **one** namespace shared by both repos. Recommend
@@ -49,13 +49,13 @@ phase comes before the exporter.
 | # | task | status |
 |---|---|---|
 | **F1** [E] | Make `context/hector.jsonld` **valid**: remove `rdfs:label`/`rdfs:comment` from term definitions (move them to a vocabulary document); drop or correct the three `hector:role*` compact-IRI terms. Test: PyLD expands both exemplars with no error | **done 2026-09-18**: context is JSON-LD 1.1, HECTOR terms only, layered after the Linked Art context; term docs moved to `ontology/ontology.json`; role terms replaced by `hector:ModernLemma` etc. as `classified_as` concepts |
-| **F2** [E] | Fix the **entity URIs** per D3: stop expanding `hector:commodity/…` to `https://w3id.org/hector#commodity/…`. Test: every `@id` expands to a URI that returns 200 through w3id with `Accept: application/ld+json` | todo, needs D3 |
+| **F2** [E] | Fix the **entity URIs** per D3: stop expanding `hector:commodity/…` to `https://w3id.org/hector#commodity/…`. Test: every `@id` expands to a URI that returns 200 through w3id with `Accept: application/ld+json` | **done 2026-09-18**: entity ids are path URIs (`https://w3id.org/hector/commodity/saffron`), rates embedded with fragment ids; `ENTITY-URI` and `DANGLING-REF` are errors in the validator |
 | **F3** [E] | Fix the **Linked Art alignment**: either adopt the real Linked Art context (`https://linked.art/ns/v1/linked-art.json`, CIDOC-CRM terms) or stop claiming the alignment. Recommend adopting it: `Type`→`crm:E55_Type`, `identified_by`, `classified_as`, `Name`, `content`, `language` as an AAT language entity. **This is a remodel of the exemplars, not a prefix swap**: the Linked Art context redefines `id`, `type` and `_label` and implies a different document structure | **done 2026-09-18**: adopted. Documents use `[linked-art.json, hector context]`; exemplars remodelled as `Type` / `MeasurementUnit` / `Name` / `MonetaryAmount` / `Dimension` |
-| **F4** [E] | **Unify the `hector:` namespace** with LCA (`https://w3id.org/hector/ontology#`); define `compoundOf` in HECTOR's vocabulary. Tell the LCA session if anything there has to change | todo, needs D3 |
+| **F4** [E] | **Unify the `hector:` namespace** with LCA (`https://w3id.org/hector/ontology#`); define `compoundOf` in HECTOR's vocabulary. Tell the LCA session if anything there has to change | **done 2026-09-18**: `hector` = `https://w3id.org/hector/ontology#` (as LCA), `hectorid` = `https://w3id.org/hector/`; `compoundOf` declared. LCA needs no change; LCA session told |
 | **F5** [E] | Rewrite the **exemplars** without placeholder ids (`aat:300123456`, lexvo `eng-1234`, the fictional images, the 1574 book) and with a real role for the modern lemma. Also fix the saffron errors listed in CLAUDE.md §4.5: London mapped to the UK's GeoNames id, a Wikidata page URL used as an entity, the same AAT id as both sameAs and classified_as, duplicate validFrom terms, GBP for a pre-decimal rate, and a dimension typed as a unit. Saffron must be real data, or be marked as illustrative | **done 2026-09-18**: all three exemplars rewritten with ids checked against AAT/Wikidata/QUDT, flagged `illustrative`. The old AAT id `300010621` does not exist and `Q12057` is a spider family (see C6) |
 | **21** [E] | Bring forward from issue #2: a **JSON Schema / SHACL shape and a CI validator**, proved able to fail (run it on the current, broken exemplars first: it must reject them) | **done 2026-09-18**: `tools/validate.py` (+ `--online`) and `shapes/hector.shacl.ttl`, CI in `.github/workflows/validate.yml`. Rejects the pre-Phase-0 files (`tests/fixtures/legacy/`); each check has a mutation test, and two were sabotaged to confirm the tests fail |
 
-F1, F3 and F5 need no decision and can start now. F2 and F4 wait on D3.
+Phase 0 complete 2026-09-18.
 
 ---
 
@@ -113,10 +113,9 @@ short, drop 19 and 23 before 21 or 25.
 1. ~~F1, F3, F5~~ done 2026-09-18.
 2. ~~21~~ done 2026-09-18.
 3. ~~15 (parsing only)~~ done 2026-09-18; output local in `build/rates/`.
-4. ~~Draft the D3 URI policy~~: `docs/uri-policy-draft.md`, **awaiting Stephen**. F2, F4 and
-   the exporter (12) follow from it.
+4. ~~Draft the D3 URI policy~~: adopted 2026-09-18 (`docs/uri-policy.md`); F2, F4 done.
 Next without a decision: 13 (phonetic keys, computed locally) and 18 (unit catalogue, built
-locally); both publish only after D3 and task 1.
+locally); both publish only after task 1.
 
 Nothing Jenks-derived goes to `main` until task 1 is ticked: `main` is live on
 `w3id.org/hector`.

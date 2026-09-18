@@ -9,7 +9,7 @@
 - Record customs Rates (cost per unit of commodity) with full temporal metadata, linking each rate to the relevant commodity and unit.
 - Associate commodities and units with external authorities (e.g. Wikidata, Lexvo, Getty AAT, QUDT) and persistent image identifiers (e.g. museum collections, UK Portable Antiquities Scheme).
 - Where and when possible, integrate the `unit` ontology with that of the [Digital Noback Project](https://www.uni-bamberg.de/en/hist/digital-history/projects/digital-noback-project/).
-- Provide permanent, stable URIs for all terms through **w3id.org** redirects, using `"hector": "https://w3id.org/hector#"` as the namespace base.
+- Provide permanent, stable URIs for all terms through **w3id.org** redirects, with path URIs for entities (`https://w3id.org/hector/commodity/saffron`) and `"hector": "https://w3id.org/hector/ontology#"` for vocabulary terms (see [docs/uri-policy.md](docs/uri-policy.md)).
 - Build a phonetically-searchable and dynamically-linked browser interface, hosted sustainably beyond the life of the project on GitHub Pages.
 
 

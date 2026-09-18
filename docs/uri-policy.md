@@ -1,8 +1,9 @@
-# HECTOR URI and versioning policy: draft for decision D3
+# HECTOR URI and versioning policy (decision D3)
 
-*Status: **draft, not adopted.** Written 2026-09-18 for Stephen to accept or amend
-(PLAN.md decision 3). Tasks F2 and F4, and the exporter (task 12), wait on it. Nothing here has
-been applied to the data yet.*
+*Status: **adopted 2026-09-18** by Stephen, as drafted, including the recommendations on the
+three open questions at the end. Applied the same day (PLAN.md F2, F4): the context, the
+exemplars and the validator follow it, and `tools/validate.py` enforces §1 (`ENTITY-URI`,
+`DANGLING-REF`). The "problem" section below describes the state before adoption.*
 
 ## The problem, in one example
 
@@ -14,7 +15,7 @@ maps `hector` to `https://w3id.org/hector#`. So saffron's identifier is
 HTTP never sends the part after `#`, so anyone who looks that identifier up gets
 `https://w3id.org/hector`, the site root, and not saffron. The file itself is reachable, but only
 at a *different* URI (`https://w3id.org/hector/commodity/saffron`), which is not the one the data
-uses. `tools/validate.py` reports this as `ENTITY-URI` on every document.
+uses. `tools/validate.py` reported this as `ENTITY-URI` on every document.
 
 ## Proposal
 
@@ -78,12 +79,12 @@ does. So:
 | where | change |
 |---|---|
 | `context/hector.jsonld` | `hector` → `…/ontology#`; add `hectorid` (F4, F2) |
-| entity documents | `id` becomes the path URI; `tools/validate.py --strict-uris` then becomes the default |
+| entity documents | `id` becomes the path URI; `ENTITY-URI` is an error in `tools/validate.py` |
 | `ontology/ontology.json` | term ids follow automatically, since they are written `hector:…` |
 | LCA | nothing (it already uses `…/ontology#`); tell the LCA session once it is done |
 | w3id `.htaccess` | nothing, for commodities and units |
 
-## Open questions for Stephen
+## Open questions (resolved 2026-09-18: each recommendation adopted)
 
 1. **Rates:** is each rate its own document (`rate/1558-inward/0412/ontology.json`, about 4,000
    files), or embedded in its commodity with a fragment id (`…/commodity/saffron#rate-1558`)?
