@@ -58,8 +58,12 @@ Glossary keys are renamed and merged over time (`metadata.rekey_history`, `merge
 LCA's `glossary_data.json`). A URI computed from the current key would change whenever the key
 does. So:
 
-- the exporter keeps a committed ledger, `ledger/commodities.tsv`, with columns
-  `slug, glossary_key, minted, status, replaced_by`;
+- the exporter keeps a ledger with columns
+  `slug, glossary_key, minted, status, replaced_by, content_sha256, modified`. *Until first
+  publication it lives at `build/ledger/commodities.tsv` (git-ignored), because its keys are
+  Jenks-derived headwords. Nothing has been published, so no URI has been cited and nothing can
+  break. It is committed as `ledger/commodities.tsv` in the same commit as the first published
+  export, and never regenerated after that* (implementation: `tools/export/export_hector.py`);
 - a slug is minted the first time a key is exported, and is looked up from then on;
 - slugs are lowercase ASCII: diacritics are stripped, spaces and punctuation become `-`, and a
   collision takes a numeric suffix. They are never reused;

@@ -54,6 +54,7 @@ shapes/hector.shacl.ttl    SHACL shapes the validator applies to the expanded gr
 tools/validate.py          the validator (task 21); tests/test_validate.py proves each check fires
 tools/contexts/linked-art.json    vendored Linked Art context, so validation is offline/deterministic
 tools/rates/parse_bor.py   Books of Rates parser (task 15); writes ONLY to build/rates/ (ignored)
+tools/export/export_hector.py   glossary → HECTOR commodity records (task 12); writes ONLY to build/
 docs/uri-policy.md         the URI and versioning policy (D3, adopted 2026-09-18): READ before minting URIs
 .github/workflows/validate.yml    CI: validator --online + pytest, on push/PR and weekly
 LICENSE                    MIT (code). The DATA licence is undecided; see §6
@@ -287,6 +288,13 @@ Two largely disjoint populations (issue #2 §5):
   any new `hector:` term in `ontology/ontology.json` first (the validator enforces all three).
 - Rates: `.venv/bin/python -m tools.rates.parse_bor` → `build/rates/` (`rates.jsonl`,
   `rates.tsv`, `1604_raw.tsv`, `report.md`). Never commit that output (§6).
+- Glossary export: `.venv/bin/python -m tools.export.export_hector` → `build/site/` (a staging
+  copy of the whole site with 2,452 `commodity/<slug>/ontology.json`), `build/ledger/commodities.tsv`
+  (the slug ledger, docs/uri-policy.md §3: **back it up; never delete it once anything is
+  published**) and `build/export-report.md`. Validate with
+  `.venv/bin/python tools/validate.py --root build/site` (~2 min; add `--online --no-shacl` to
+  dereference all ~1,240 authority ids). Exit status 1 = a ledger key vanished from LCA with no
+  rekey/merge/deletion record: resolve it by hand, never by deleting the ledger row.
 - British English in prose and documentation.
 - Commits: stage explicit paths, never `git add -A` (`.idea/` is untracked and should stay
   out). Never amend/rebase/reset shared history; fix mistakes in the next commit.

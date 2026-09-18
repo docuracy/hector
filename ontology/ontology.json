@@ -8,7 +8,7 @@
       "id": "https://w3id.org/hector/ontology",
       "type": "owl:Ontology",
       "_label": "HECTOR vocabulary",
-      "rdfs:comment": "Terms HECTOR adds to Linked Art (CIDOC-CRM) for historical commodities, units of measure and customs rates. Term documentation lives here rather than in the JSON-LD context, which may only define terms. The namespace is provisional: see PLAN.md tasks F4 and D3."
+      "rdfs:comment": "Terms HECTOR adds to Linked Art (CIDOC-CRM) for historical commodities, units of measure and customs rates. Term documentation lives here rather than in the JSON-LD context, which may only define terms. Namespace and URI policy: https://github.com/docuracy/hector/blob/main/docs/uri-policy.md"
     },
 
     { "id": "hector:illustrative", "type": "rdf:Property", "_label": "illustrative",
@@ -21,6 +21,9 @@
       "rdfs:comment": "A place of origin or provenance associated with a commodity (for example the place in a qualified commodity such as Normandy canvas)." },
     { "id": "hector:compoundOf", "type": "rdf:Property", "_label": "compound of",
       "rdfs:comment": "The simpler commodities a qualified or compound commodity is composed of. Also published by the London Customs Accounts glossary." },
+
+    { "id": "hector:attestationCount", "type": "rdf:Property", "_label": "attestation count",
+      "rdfs:comment": "The number of times a commodity is attested in the London Customs Accounts corpus, as counted by that project's tagger (LCA docs/data/concept_attestation.json) when the record was exported." },
 
     { "id": "hector:quantityKind", "type": "rdf:Property", "_label": "quantity kind",
       "rdfs:comment": "The dimension a unit measures (mass, length, volume, count), given as a HECTOR unit dimension." },

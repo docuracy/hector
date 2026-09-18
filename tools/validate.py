@@ -372,6 +372,8 @@ def check_kind(path: Path, g: Graph, subj: URIRef, add):
     labels = list(g.objects(subj, RDFS.label))
     if not labels:
         add("ERROR", "KIND", "entity has no _label / rdfs:label")
+    if parts[:1] in (("commodity",), ("unit",)) and (subj, OWL.deprecated, Literal(True)) in g:
+        return  # a deprecation record: label, deprecated, optional isReplacedBy (URI policy §3)
     if parts[:1] == ("commodity",):
         if CRM.E55_Type not in types:
             add("ERROR", "KIND", "a commodity must be a Linked Art Type (crm:E55_Type)")
@@ -543,9 +545,13 @@ def validate(paths: list[Path] | None = None, online: bool = False, shacl: bool 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("paths", nargs="*", type=Path)
+    ap.add_argument("--root", type=Path, help="validate another checkout or a staging site "
+                    "(e.g. build/site from tools/export) instead of this repo")
     ap.add_argument("--online", action="store_true", help="dereference AAT / Wikidata / QUDT ids")
     ap.add_argument("--no-shacl", action="store_true")
     a = ap.parse_args(argv)
+    if a.root:
+        set_root(a.root)
     issues = validate(a.paths or None, a.online, not a.no_shacl)
     for i in issues:
         print(i)

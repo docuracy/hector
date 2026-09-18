@@ -147,10 +147,17 @@ def test_dimension_typed_as_unit_is_rejected(tmp_path):
     assert "KIND" in codes(V.validate(), path="unit/mass/ontology.json")
 
 
-def test_name_without_language_violates_shacl(tmp_path):
-    make_repo(tmp_path, overrides=mutate(lambda d: d["identified_by"][0].pop("language")))
+def test_name_language_given_as_string_violates_shacl(tmp_path):
+    # "@value" object: a literal where the language entity belongs
+    make_repo(tmp_path, overrides=mutate(lambda d: d["identified_by"][0].__setitem__(
+        "language", [{"@value": "English"}])))
     msgs = [i.message for i in V.validate() if i.code == "SHACL"]
     assert any("language" in m for m in msgs), msgs
+
+
+def test_name_without_language_is_allowed(tmp_path):
+    make_repo(tmp_path, overrides=mutate(lambda d: d["identified_by"][0].pop("language")))
+    assert codes(V.validate(), path=SAFFRON) == set()
 
 
 def test_missing_vocabulary_is_an_error(tmp_path):

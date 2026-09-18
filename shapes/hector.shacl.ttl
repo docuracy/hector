@@ -9,8 +9,9 @@
 @prefix hector: <https://w3id.org/hector/ontology#> .
 @prefix hs:     <https://w3id.org/hector/shapes#> .
 
-# A Name (Linked Art: crm:E33_E41_Linguistic_Appellation) has exactly one text and at least
-# one language, and the language is an entity (an AAT language concept), never a string.
+# A Name (Linked Art: crm:E33_E41_Linguistic_Appellation) has exactly one text. Its language,
+# when known, is an entity (an AAT language concept), never a string. Language is optional:
+# the LCA glossary does not record the language of a form, and HECTOR does not guess it.
 hs:NameShape
     a sh:NodeShape ;
     sh:targetClass crm:E33_E41_Linguistic_Appellation ;
@@ -22,10 +23,9 @@ hs:NameShape
     ] ;
     sh:property [
         sh:path crm:P72_has_language ;
-        sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:pattern "^http://vocab\\.getty\\.edu/aat/3[0-9]{8}$" ;
-        sh:message "a Name needs a language, given as an AAT language concept" ;
+        sh:message "a Name's language must be an AAT language concept" ;
     ] ;
     sh:property [
         sh:path hector:phoneticKey ;

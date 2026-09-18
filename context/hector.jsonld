@@ -10,6 +10,7 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dcterms": "http://purl.org/dc/terms/",
+    "schema": "http://schema.org/",
     "aat": "http://vocab.getty.edu/aat/",
     "wd": "http://www.wikidata.org/entity/",
     "geonames": "https://sws.geonames.org/",
@@ -24,6 +25,14 @@
     "historicalTerm": { "@id": "hector:historicalTerm", "@container": "@set" },
     "originPlace": { "@id": "hector:originPlace", "@type": "@id", "@container": "@set" },
     "compoundOf": { "@id": "hector:compoundOf", "@type": "@id", "@container": "@set" },
+    "related": { "@id": "skos:related", "@type": "@id", "@container": "@set" },
+    "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id", "@container": "@set" },
+    "material": { "@id": "schema:material", "@type": "@id", "@container": "@set" },
+    "attestationCount": { "@id": "hector:attestationCount", "@type": "xsd:integer" },
+
+    "modified": { "@id": "dcterms:modified", "@type": "xsd:date" },
+    "deprecated": { "@id": "owl:deprecated", "@type": "xsd:boolean" },
+    "isReplacedBy": { "@id": "dcterms:isReplacedBy", "@type": "@id" },
 
     "quantityKind": { "@id": "hector:quantityKind", "@type": "@id" },
     "conversionToGram": { "@id": "hector:conversionToGram", "@type": "xsd:decimal" },
