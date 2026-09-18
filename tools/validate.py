@@ -416,7 +416,12 @@ def authority_labels(iri: str, session, cache: dict) -> tuple[int, list[str]] | 
             r = session.get(f"https://vocab.getty.edu/aat/{aid}.jsonld", timeout=30,
                             headers={"Accept": "application/ld+json"})
             labels = []
-            if r.status_code == 200:
+            if r.status_code not in (200, 404):
+                # Getty's web front end refuses some networks (HTTP 403 from GitHub Actions,
+                # seen 2026-09-18); its SPARQL endpoint is a second route to the same data.
+                r = aat_via_sparql(aid, session)
+                labels = r.labels if r.status_code == 200 else []
+            elif r.status_code == 200:
                 for n in r.json().get("@graph", []):
                     for key in ("http://www.w3.org/2004/02/skos/core#prefLabel",
                                 "http://www.w3.org/2004/02/skos/core#altLabel",
@@ -441,6 +446,22 @@ def authority_labels(iri: str, session, cache: dict) -> tuple[int, list[str]] | 
         return None
     cache[iri] = [r.status_code, labels]
     return r.status_code, labels
+
+
+@dataclass
+class _Answer:
+    status_code: int
+    labels: list
+
+
+def aat_via_sparql(aid: str, session) -> _Answer:
+    q = ("SELECT ?l WHERE { ?s dc:identifier \"%s\" ; skos:inScheme aat: . "
+         "{ ?s skos:prefLabel ?l } UNION { ?s skos:altLabel ?l } }" % aid)
+    r = session.get("https://vocab.getty.edu/sparql.json", params={"query": q}, timeout=60)
+    if r.status_code != 200:
+        return _Answer(r.status_code, [])
+    labels = [b["l"]["value"] for b in r.json()["results"]["bindings"]]
+    return _Answer(200 if labels else 404, labels)
 
 
 def check_online(path: Path, g: Graph, session, cache: dict) -> list[Issue]:

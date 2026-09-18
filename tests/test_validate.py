@@ -167,18 +167,35 @@ def test_remote_contexts_are_never_fetched(tmp_path):
 online = pytest.mark.skipif(not os.environ.get("HECTOR_ONLINE"), reason="set HECTOR_ONLINE=1")
 
 
+def _getty_reachable() -> bool:
+    """Positive control for the AAT half: can a known-good AAT id be checked from here?"""
+    import requests
+    s = requests.Session()
+    s.headers["User-Agent"] = "HECTOR validator tests"
+    res = V.authority_labels("http://vocab.getty.edu/aat/300013073", s, {})
+    return res is not None and res[0] == 200
+
+
 @online
-def test_online_catches_nonexistent_and_mislabelled_ids(tmp_path):
-    def bad(d):
-        d["equivalent"] = [
-            {"id": "aat:300010621", "type": "Type", "_label": "saffron"},  # the legacy id: 404
-            {"id": "wd:Q12057", "type": "Type", "_label": "saffron"},      # legacy Q-id: a spider family
-        ]
+def test_online_wikidata_catches_a_mislabelled_id(tmp_path):
     make_repo(tmp_path)
-    clean = V.validate(online=True)
-    assert not codes(clean) & {"ONLINE-NOTFOUND", "ONLINE-LABEL"}
-    make_repo(tmp_path / "m", overrides=mutate(bad))
+    assert not codes(V.validate(online=True)) & {"ONLINE-NOTFOUND", "ONLINE-LABEL"}
+    # the legacy Q-id: a spider family, not saffron
+    make_repo(tmp_path / "m", overrides=mutate(lambda d: d["equivalent"].__setitem__(
+        1, {"id": "wd:Q12057", "type": "Type", "_label": "saffron"})))
     issues = V.validate(online=True)
-    msgs = " ".join(i.message for i in issues)
-    assert "ONLINE-NOTFOUND" in codes(issues) and "300010621" in msgs
-    assert "ONLINE-LABEL" in codes(issues) and "Q12057" in msgs
+    assert any(i.code == "ONLINE-LABEL" and "Q12057" in i.message for i in issues)
+
+
+@online
+def test_online_aat_catches_a_nonexistent_id(tmp_path):
+    if not _getty_reachable():
+        pytest.skip("Getty AAT cannot be reached from this network (neither the web front "
+                    "end nor SPARQL); AAT ids were NOT checked")
+    make_repo(tmp_path)
+    assert not codes(V.validate(online=True)) & {"ONLINE-NOTFOUND", "ONLINE-LABEL"}
+    # the legacy AAT id, which does not exist
+    make_repo(tmp_path / "m", overrides=mutate(lambda d: d["equivalent"].__setitem__(
+        0, {"id": "aat:300010621", "type": "Type", "_label": "saffron"})))
+    issues = V.validate(online=True)
+    assert any(i.code == "ONLINE-NOTFOUND" and "300010621" in i.message for i in issues)
