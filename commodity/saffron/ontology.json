@@ -1,79 +1,71 @@
 {
-  "@context": "https://w3id.org/hector/context/",
-  "@id": "hector:commodity/saffron",
-  "@type": "la:Type",
-  "la:label": "Saffron",
-  "skos:prefLabel": "Saffron",
-  "schema:sameAs": [
-    "http://www.wikidata.org/entity/Q12057",
-    "http://lexvo.org/id/term/eng-1234",
-    "http://vocab.getty.edu/aat/300010621"
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
   ],
-  "la:identified_by": [
+  "id": "hector:commodity/saffron",
+  "type": "Type",
+  "_label": "saffron",
+  "illustrative": true,
+  "referred_to_by": [
     {
-      "@type": "la:Name",
-      "la:content": "Safranum",
-      "la:language": "la",
-      "la:script": "Latn",
-      "hector:role": "hector:attested_variant",
-      "hector:source": "Tudor Books of Rates, 1574",
-      "schema:sameAs": "http://lexvo.org/id/term/lat-5678"
+      "type": "LinguisticObject",
+      "classified_as": [
+        { "id": "aat:300418049", "type": "Type", "_label": "brief texts" }
+      ],
+      "content": "Illustrative example of a HECTOR commodity record. The identifiers are real and checked; the rate is invented to show the structure and is not taken from any Book of Rates."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "saffron",
+      "language": [
+        { "id": "aat:300388277", "type": "Language", "_label": "English (language)" }
+      ],
+      "classified_as": [
+        { "id": "aat:300404670", "type": "Type", "_label": "preferred terms" },
+        { "id": "hector:ModernLemma", "type": "Type", "_label": "modern lemma" }
+      ],
+      "phoneticKey": ["ˈsæfrən"]
     },
     {
-      "@type": "la:Name",
-      "la:content": "Saffron",
-      "la:language": "en",
-      "la:script": "Latn",
-      "hector:role": "modern_lemma",
-      "hector:source": "Oxford English Dictionary",
-      "schema:sameAs": "http://lexvo.org/id/term/eng-1234"
+      "type": "Name",
+      "content": "Safranum",
+      "language": [
+        { "id": "aat:300388693", "type": "Language", "_label": "Latin (language)" }
+      ],
+      "classified_as": [
+        { "id": "aat:300264273", "type": "Type", "_label": "nonpreferred terms" }
+      ]
     }
   ],
-  "hector:phoneticKey": [
-    "ˈsæf.rən",
-    "ˈsæf.rɛn",
-    "ˈsæf.roʊn"
+  "equivalent": [
+    { "id": "aat:300013073", "type": "Type", "_label": "saffron" },
+    { "id": "wd:Q25434", "type": "Type", "_label": "saffron" }
   ],
-  "hector:taxation": [
+  "broader": [
+    { "id": "aat:300386730", "type": "Type", "_label": "spices" },
+    { "id": "aat:300013034", "type": "Type", "_label": "vegetable dye" }
+  ],
+  "taxation": [
     {
-      "@id": "hector:taxation/saffron-1574",
-      "@type": "schema:TaxChargeSpecification",
-      "schema:priceCurrency": "GBP",
-      "schema:price": "5",
-      "schema:validFrom": "1574",
-      "schema:validThrough": "1600",
-      "hector:sourceText": "Tudor Books of Rates, 1574",
-      "hector:unit": {
-        "@id": "hector:unit/mass/pound"
-      }
+      "id": "hector:rate/illustrative/saffron",
+      "type": "Rate",
+      "_label": "Illustrative rate for saffron (not from a source)",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": { "id": "aat:300411998", "type": "Currency", "_label": "pound sterling (system of money)" },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": { "id": "hector:unit/mass/pound", "type": "MeasurementUnit", "_label": "pound (avoirdupois)" }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604"
     }
-  ],
-  "la:classified_as": [
-    {
-      "@id": "http://vocab.getty.edu/aat/300010621",
-      "skos:prefLabel": "spice"
-    },
-    {
-      "@id": "http://vocab.getty.edu/aat/300123456",
-      "skos:prefLabel": "foodstuff"
-    }
-  ],
-  "schema:image": [
-    {
-      "@id": "https://finds.org.uk/images/12345.jpg",
-      "@type": "schema:ImageObject",
-      "schema:license": "https://creativecommons.org/licenses/by/4.0/"
-    },
-    {
-      "@id": "https://collection.museum.org/object/6789/image",
-      "@type": "schema:ImageObject",
-      "schema:license": "https://rightsstatements.org/vocab/InC/1.0/"
-    }
-  ],
-  "hector:originPlace": {
-    "@type": "schema:Place",
-    "@id": "http://sws.geonames.org/2635167/",
-    "schema:name": "London",
-    "schema:sameAs": "https://www.wikidata.org/wiki/Q84"
-  }
+  ]
 }

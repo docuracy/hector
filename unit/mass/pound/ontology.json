@@ -1,17 +1,40 @@
 {
-  "@context": "https://w3id.org/hector/context/",
-  "@id": "hector:unit/mass/pound",
-  "@type": "hector:Unit",
-  "rdfs:label": "Pound (weight)",
-  "rdfs:comment": "Avoirdupois pound, a unit of mass commonly used in medieval and modern English trade, equal to approximately 453.59237 grams.",
-  "hector:historicalTerm": "pound-weight",
-  "hector:conversionToGram": 453.59237,
-  "schema:sameAs": [
-    "http://www.wikidata.org/entity/Q100995"
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
   ],
-  "hector:phoneticKey": [
-    "paʊnd",
-    "ˈpaʊnd",
-    "pɑʊnd"
+  "id": "hector:unit/mass/pound",
+  "type": "MeasurementUnit",
+  "_label": "pound (avoirdupois)",
+  "illustrative": true,
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        { "id": "aat:300418049", "type": "Type", "_label": "brief texts" }
+      ],
+      "content": "Illustrative example of a HECTOR unit record. The avoirdupois pound; the conversion given is the modern international definition (1959), not a measured Tudor standard."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "pound",
+      "language": [
+        { "id": "aat:300388277", "type": "Language", "_label": "English (language)" }
+      ],
+      "classified_as": [
+        { "id": "aat:300404670", "type": "Type", "_label": "preferred terms" },
+        { "id": "hector:ModernLemma", "type": "Type", "_label": "modern lemma" }
+      ],
+      "phoneticKey": ["paʊnd"]
+    }
+  ],
+  "quantityKind": "hector:unit/mass",
+  "conversionToGram": "453.59237",
+  "equivalent": [
+    { "id": "aat:300379254", "type": "MeasurementUnit", "_label": "pounds (units for weight)" },
+    { "id": "wd:Q100995", "type": "MeasurementUnit", "_label": "pound" },
+    { "id": "qudtunit:LB", "type": "MeasurementUnit", "_label": "Pound Mass" }
   ]
 }

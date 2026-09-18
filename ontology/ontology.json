@@ -1,0 +1,58 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "@graph": [
+    {
+      "id": "https://w3id.org/hector/ontology",
+      "type": "owl:Ontology",
+      "_label": "HECTOR vocabulary",
+      "rdfs:comment": "Terms HECTOR adds to Linked Art (CIDOC-CRM) for historical commodities, units of measure and customs rates. Term documentation lives here rather than in the JSON-LD context, which may only define terms. The namespace is provisional: see PLAN.md tasks F4 and D3."
+    },
+
+    { "id": "hector:illustrative", "type": "rdf:Property", "_label": "illustrative",
+      "rdfs:comment": "True when a record is a worked example of HECTOR's shape rather than curated data. Its values are chosen to show the structure and must not be cited." },
+    { "id": "hector:phoneticKey", "type": "rdf:Property", "_label": "phonetic key",
+      "rdfs:comment": "A phonetic transcription (IPA) of a Name, used to match variant spellings across sources." },
+    { "id": "hector:historicalTerm", "type": "rdf:Property", "_label": "historical term",
+      "rdfs:comment": "A historical word or phrase for a unit or commodity, where a full Name record is not warranted." },
+    { "id": "hector:originPlace", "type": "rdf:Property", "_label": "origin place",
+      "rdfs:comment": "A place of origin or provenance associated with a commodity (for example the place in a qualified commodity such as Normandy canvas)." },
+    { "id": "hector:compoundOf", "type": "rdf:Property", "_label": "compound of",
+      "rdfs:comment": "The simpler commodities a qualified or compound commodity is composed of. Also published by the London Customs Accounts glossary." },
+
+    { "id": "hector:quantityKind", "type": "rdf:Property", "_label": "quantity kind",
+      "rdfs:comment": "The dimension a unit measures (mass, length, volume, count), given as a HECTOR unit dimension." },
+    { "id": "hector:conversionToGram", "type": "rdf:Property", "_label": "conversion to gram",
+      "rdfs:comment": "The number of grams in one of this unit, as an xsd:decimal. State in the unit's description which definition of the unit the figure follows." },
+
+    { "id": "hector:Rate", "type": "rdfs:Class", "_label": "Rate",
+      "rdfs:comment": "A customs rate: the valuation or charge a Book of Rates sets on a quantity of a commodity for a period." },
+    { "id": "hector:taxation", "type": "rdf:Property", "_label": "taxation",
+      "rdfs:comment": "Links a commodity to a Rate set on it." },
+    { "id": "hector:amount", "type": "rdf:Property", "_label": "amount",
+      "rdfs:comment": "The MonetaryAmount of a Rate." },
+    { "id": "hector:perQuantity", "type": "rdf:Property", "_label": "per quantity",
+      "rdfs:comment": "The quantity (a Linked Art Dimension: value and unit) that a Rate's amount is charged on." },
+    { "id": "hector:valueInPence", "type": "rdf:Property", "_label": "value in pence",
+      "rdfs:comment": "The exact value of a pre-decimal sterling amount in pence, as an xsd:decimal (a halfpenny is 0.5, a farthing 0.25). Pounds and shillings do not divide exactly into decimal pounds, so pence is the unit of record." },
+    { "id": "hector:lsd", "type": "rdf:Property", "_label": "£ s d",
+      "rdfs:comment": "The amount as written in pounds, shillings and pence, for display." },
+    { "id": "hector:validFrom", "type": "rdf:Property", "_label": "valid from",
+      "rdfs:comment": "The year from which a Rate or a Name is attested or in force (xsd:gYear)." },
+    { "id": "hector:validThrough", "type": "rdf:Property", "_label": "valid through",
+      "rdfs:comment": "The last year in which a Rate or a Name is attested or in force (xsd:gYear)." },
+    { "id": "hector:source", "type": "rdf:Property", "_label": "source",
+      "rdfs:comment": "The source (for example a Book of Rates) that a Name or a Rate is taken from." },
+    { "id": "hector:sourceText", "type": "rdf:Property", "_label": "source text",
+      "rdfs:comment": "The text of the source entry, verbatim." },
+
+    { "id": "hector:ModernLemma", "type": "skos:Concept", "_label": "modern lemma",
+      "rdfs:comment": "Classifies the Name that is the modern standard form of a term." },
+    { "id": "hector:AttestedVariant", "type": "skos:Concept", "_label": "attested variant",
+      "rdfs:comment": "Classifies a Name as a variant form attested in a historical source." },
+    { "id": "hector:ArchaicForm", "type": "skos:Concept", "_label": "archaic form",
+      "rdfs:comment": "Classifies a Name as an archaic or obsolete form of a term." }
+  ]
+}

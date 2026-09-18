@@ -1,0 +1,79 @@
+{
+  "@context": "https://w3id.org/hector/context/",
+  "@id": "hector:commodity/saffron",
+  "@type": "la:Type",
+  "la:label": "Saffron",
+  "skos:prefLabel": "Saffron",
+  "schema:sameAs": [
+    "http://www.wikidata.org/entity/Q12057",
+    "http://lexvo.org/id/term/eng-1234",
+    "http://vocab.getty.edu/aat/300010621"
+  ],
+  "la:identified_by": [
+    {
+      "@type": "la:Name",
+      "la:content": "Safranum",
+      "la:language": "la",
+      "la:script": "Latn",
+      "hector:role": "hector:attested_variant",
+      "hector:source": "Tudor Books of Rates, 1574",
+      "schema:sameAs": "http://lexvo.org/id/term/lat-5678"
+    },
+    {
+      "@type": "la:Name",
+      "la:content": "Saffron",
+      "la:language": "en",
+      "la:script": "Latn",
+      "hector:role": "modern_lemma",
+      "hector:source": "Oxford English Dictionary",
+      "schema:sameAs": "http://lexvo.org/id/term/eng-1234"
+    }
+  ],
+  "hector:phoneticKey": [
+    "ˈsæf.rən",
+    "ˈsæf.rɛn",
+    "ˈsæf.roʊn"
+  ],
+  "hector:taxation": [
+    {
+      "@id": "hector:taxation/saffron-1574",
+      "@type": "schema:TaxChargeSpecification",
+      "schema:priceCurrency": "GBP",
+      "schema:price": "5",
+      "schema:validFrom": "1574",
+      "schema:validThrough": "1600",
+      "hector:sourceText": "Tudor Books of Rates, 1574",
+      "hector:unit": {
+        "@id": "hector:unit/mass/pound"
+      }
+    }
+  ],
+  "la:classified_as": [
+    {
+      "@id": "http://vocab.getty.edu/aat/300010621",
+      "skos:prefLabel": "spice"
+    },
+    {
+      "@id": "http://vocab.getty.edu/aat/300123456",
+      "skos:prefLabel": "foodstuff"
+    }
+  ],
+  "schema:image": [
+    {
+      "@id": "https://finds.org.uk/images/12345.jpg",
+      "@type": "schema:ImageObject",
+      "schema:license": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "@id": "https://collection.museum.org/object/6789/image",
+      "@type": "schema:ImageObject",
+      "schema:license": "https://rightsstatements.org/vocab/InC/1.0/"
+    }
+  ],
+  "hector:originPlace": {
+    "@type": "schema:Place",
+    "@id": "http://sws.geonames.org/2635167/",
+    "schema:name": "London",
+    "schema:sameAs": "https://www.wikidata.org/wiki/Q84"
+  }
+}

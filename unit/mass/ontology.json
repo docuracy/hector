@@ -1,7 +1,22 @@
 {
-  "@context": "https://w3id.org/hector/context/",
-  "@id": "hector:unit/mass",
-  "@type": "hector:Unit",
-  "rdfs:label": "Mass",
-  "rdfs:comment": "A physical quantity representing the amount of matter in an object."
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "hector:unit/mass",
+  "type": "Type",
+  "_label": "mass",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        { "id": "aat:300418049", "type": "Type", "_label": "brief texts" }
+      ],
+      "content": "The dimension measured by units of weight. HECTOR groups units under the dimension they measure: unit/mass/pound, and so on."
+    }
+  ],
+  "equivalent": [
+    { "id": "quantitykind:Mass", "type": "Type", "_label": "Mass" },
+    { "id": "wd:Q11423", "type": "Type", "_label": "mass" }
+  ]
 }

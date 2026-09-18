@@ -48,12 +48,12 @@ phase comes before the exporter.
 
 | # | task | status |
 |---|---|---|
-| **F1** [E] | Make `context/hector.jsonld` **valid**: remove `rdfs:label`/`rdfs:comment` from term definitions (move them to a vocabulary document); drop or correct the three `hector:role*` compact-IRI terms. Test: PyLD expands both exemplars with no error | todo |
+| **F1** [E] | Make `context/hector.jsonld` **valid**: remove `rdfs:label`/`rdfs:comment` from term definitions (move them to a vocabulary document); drop or correct the three `hector:role*` compact-IRI terms. Test: PyLD expands both exemplars with no error | **done 2026-09-18**: context is JSON-LD 1.1, HECTOR terms only, layered after the Linked Art context; term docs moved to `ontology/ontology.json`; role terms replaced by `hector:ModernLemma` etc. as `classified_as` concepts |
 | **F2** [E] | Fix the **entity URIs** per D3: stop expanding `hector:commodity/…` to `https://w3id.org/hector#commodity/…`. Test: every `@id` expands to a URI that returns 200 through w3id with `Accept: application/ld+json` | todo, needs D3 |
-| **F3** [E] | Fix the **Linked Art alignment**: either adopt the real Linked Art context (`https://linked.art/ns/v1/linked-art.json`, CIDOC-CRM terms) or stop claiming the alignment. Recommend adopting it: `Type`→`crm:E55_Type`, `identified_by`, `classified_as`, `Name`, `content`, `language` as an AAT language entity. **This is a remodel of the exemplars, not a prefix swap**: the Linked Art context redefines `id`, `type` and `_label` and implies a different document structure | todo |
+| **F3** [E] | Fix the **Linked Art alignment**: either adopt the real Linked Art context (`https://linked.art/ns/v1/linked-art.json`, CIDOC-CRM terms) or stop claiming the alignment. Recommend adopting it: `Type`→`crm:E55_Type`, `identified_by`, `classified_as`, `Name`, `content`, `language` as an AAT language entity. **This is a remodel of the exemplars, not a prefix swap**: the Linked Art context redefines `id`, `type` and `_label` and implies a different document structure | **done 2026-09-18**: adopted. Documents use `[linked-art.json, hector context]`; exemplars remodelled as `Type` / `MeasurementUnit` / `Name` / `MonetaryAmount` / `Dimension` |
 | **F4** [E] | **Unify the `hector:` namespace** with LCA (`https://w3id.org/hector/ontology#`); define `compoundOf` in HECTOR's vocabulary. Tell the LCA session if anything there has to change | todo, needs D3 |
-| **F5** [E] | Rewrite the **exemplars** without placeholder ids (`aat:300123456`, lexvo `eng-1234`, the fictional images, the 1574 book) and with a real role for the modern lemma. Also fix the saffron errors listed in CLAUDE.md §4.5: London mapped to the UK's GeoNames id, a Wikidata page URL used as an entity, the same AAT id as both sameAs and classified_as, duplicate validFrom terms, GBP for a pre-decimal rate, and a dimension typed as a unit. Saffron must be real data, or be marked as illustrative | todo |
-| **21** [E] | Bring forward from issue #2: a **JSON Schema / SHACL shape and a CI validator**, proved able to fail (run it on the current, broken exemplars first: it must reject them) | todo, M1–M2 |
+| **F5** [E] | Rewrite the **exemplars** without placeholder ids (`aat:300123456`, lexvo `eng-1234`, the fictional images, the 1574 book) and with a real role for the modern lemma. Also fix the saffron errors listed in CLAUDE.md §4.5: London mapped to the UK's GeoNames id, a Wikidata page URL used as an entity, the same AAT id as both sameAs and classified_as, duplicate validFrom terms, GBP for a pre-decimal rate, and a dimension typed as a unit. Saffron must be real data, or be marked as illustrative | **done 2026-09-18**: all three exemplars rewritten with ids checked against AAT/Wikidata/QUDT, flagged `illustrative`. The old AAT id `300010621` does not exist and `Q12057` is a spider family (see C6) |
+| **21** [E] | Bring forward from issue #2: a **JSON Schema / SHACL shape and a CI validator**, proved able to fail (run it on the current, broken exemplars first: it must reject them) | **done 2026-09-18**: `tools/validate.py` (+ `--online`) and `shapes/hector.shacl.ttl`, CI in `.github/workflows/validate.yml`. Rejects the pre-Phase-0 files (`tests/fixtures/legacy/`); each check has a mutation test, and two were sabotaged to confirm the tests fail |
 
 F1, F3 and F5 need no decision and can start now. F2 and F4 wait on D3.
 
@@ -76,14 +76,14 @@ F1, F3 and F5 need no decision and can start now. F2 and F4 wait on D3.
 ### The exporter (here)
 | # | task | status |
 |---|---|---|
-| **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `sameAs`/`exactMatch`; close → `closeMatch`; broader → `classified_as` only; nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | todo, after F1–F5 + D3 |
+| **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `equivalent` (Linked Art's identity link, as in the saffron exemplar); close → `closeMatch`; broader → `broader` (`skos:broader`; on a Linked Art Type, `classified_as` would mean "a kind of type", not "narrower than"); nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | todo, after F1–F5 + D3 |
 | 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | todo |
 | 14 [E] | Emit qualified commodities per decision 2 | todo, needs 2 |
 
 ### Rates
 | # | task | where | status |
 |---|---|---|---|
-| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html` (issue #1 says done; no TSV exists) | here (reads LCA) | todo |
+| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html` (issue #1 says done; no TSV exists) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Emitting waits on task 1 |
 | 16 [C] | Reconcile the 141 rate-bearing qualifier phrases that match nothing in `qualifiers.json` | LCA editors | — |
 | 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | todo |
 
@@ -110,13 +110,13 @@ short, drop 19 and 23 before 21 or 25.
 
 ## 4. What the HECTOR session can do now, without waiting on anyone
 
-1. **F1, F3, F5**: repair the context and exemplars on a branch; add a PyLD-based check that
-   expands every `ontology.json`, and show it failing on today's `main`.
-2. **21**: the validator, same branch.
-3. **15 (parsing only)**: a rates parser that writes an intermediate file **inside this repo,
-   uncommitted or on a branch**, with a report of the rows it could not split. Parsing is not
-   publishing; emitting to `main` waits on task 1.
-4. Draft the D3 URI policy as a short document for Stephen to accept or amend.
+1. ~~F1, F3, F5~~ done 2026-09-18.
+2. ~~21~~ done 2026-09-18.
+3. ~~15 (parsing only)~~ done 2026-09-18; output local in `build/rates/`.
+4. ~~Draft the D3 URI policy~~: `docs/uri-policy-draft.md`, **awaiting Stephen**. F2, F4 and
+   the exporter (12) follow from it.
+Next without a decision: 13 (phonetic keys, computed locally) and 18 (unit catalogue, built
+locally); both publish only after D3 and task 1.
 
 Nothing Jenks-derived goes to `main` until task 1 is ticked: `main` is live on
 `w3id.org/hector`.
@@ -149,3 +149,8 @@ where others read it.
 - **C4 (2026-09-18): licence position.** The issue says CC BY 4.0 "has been chosen for
   project-authored data". The glossary file's `metadata.licence` still declares CC BY-SA
   4.0, and the Jenks permission that governs the glossary is still pending. Hence D5.
+- **C6 (2026-09-18): two of the exemplar's identifiers were not merely placeholders but wrong.**
+  `aat:300010621` (saffron's `sameAs`, and "spice") returns 404 from AAT, so it does not exist;
+  `wd:Q12057` is *Uloboridae*, a family of spiders. Saffron is AAT `300013073` (under
+  "vegetable dye") and Wikidata `Q25434`. Found by dereferencing every id
+  (`tools/validate.py --online`); the new exemplars pass that check.

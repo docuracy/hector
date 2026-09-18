@@ -38,16 +38,24 @@ a commodity-provenance place list.
 
 ## 2. What is in this repo (as of 2026-09-18)
 
-46 commits, all 2025-08-13 → 2025-08-17, dormant since. It is a proof of concept.
+46 commits 2025-08-13 → 2025-08-17 (the proof of concept), then Phase 0 from 2026-09-18.
 
 ```
 index.html                 SPA: shows ?path=, fetches the JSON for it, renders with a JSON viewer
 js/phonemize.js            5.6 MB UMD build of hans00/phonemize (English G2P for the IPA display)
 css/index.css              5 lines
-context/hector.jsonld      JSON-LD context (INVALID, see §4)
-commodity/saffron/ontology.json   the only commodity (a worked example with placeholder ids)
-unit/mass/ontology.json           unit dimension
-unit/mass/pound/ontology.json     the only unit
+context/hector.jsonld      JSON-LD 1.1 context: HECTOR's terms only, used AFTER the Linked Art
+                           context (documents: "@context": [linked-art.json, hector context])
+ontology/ontology.json     the vocabulary: every hector: term with _label + rdfs:comment
+commodity/saffron/ontology.json   the only commodity: an ILLUSTRATIVE Linked Art Type
+unit/mass/ontology.json           unit dimension (a Type)
+unit/mass/pound/ontology.json     the only unit (MeasurementUnit, illustrative)
+shapes/hector.shacl.ttl    SHACL shapes the validator applies to the expanded graph
+tools/validate.py          the validator (task 21); tests/test_validate.py proves each check fires
+tools/contexts/linked-art.json    vendored Linked Art context, so validation is offline/deterministic
+tools/rates/parse_bor.py   Books of Rates parser (task 15); writes ONLY to build/rates/ (ignored)
+docs/uri-policy-draft.md   draft of decision D3, for Stephen
+.github/workflows/validate.yml    CI: validator --online + pytest, on push/PR and weekly
 LICENSE                    MIT (code). The DATA licence is undecided; see §6
 ```
 
@@ -65,8 +73,9 @@ describes a Dexie + Fuse.js phonetic search that does not exist yet.
 
 GitHub Pages serves `main` at the repo root → `https://docuracy.github.io/hector/`.
 
-**Pushing to `main` publishes immediately**, to a persistent namespace others may cite. Do
-exported data work on a branch; see §6 on why nothing Jenks-derived may reach `main` yet.
+**Pushing to `main` publishes immediately**, to a persistent namespace others may cite.
+Stephen is content for Phase 0 work to go straight to `main` (2026-09-18). Anything
+Jenks-derived stays in `build/` (git-ignored) until the permission lands; see §6.
 
 The redirect rules are **not in this repo**. They live in `perma-id/w3id.org` at
 `ids/hector/.htaccess` (read it with
@@ -88,7 +97,10 @@ Accept header 404s (`//ontology.json`).
 ## 4. Known defects in the foundation (verified 2026-09-18, with PyLD)
 
 Fix these before generating thousands of files from the exemplars, or every generated file
-inherits them. They are tasks F1–F5 in `PLAN.md`.
+inherits them. They are tasks F1–F5 in `PLAN.md`. **Status 2026-09-18: 1, 3 and 5 are fixed;
+2 and 4 wait on decision D3** (`docs/uri-policy-draft.md`). The description below is kept as the
+record of what was wrong; `tests/fixtures/legacy/` holds the original files, and the validator
+must keep rejecting them.
 
 1. **`context/hector.jsonld` is invalid JSON-LD.** A conforming processor rejects it
    outright, so nothing HECTOR serves can be processed as JSON-LD today:
@@ -130,6 +142,11 @@ inherits them. They are tasks F1–F5 in `PLAN.md`.
    - the rate uses `schema:validFrom` although `hector:validFrom` is also defined, and
      `priceCurrency: GBP` (an ISO 4217 code for modern sterling) for a pre-decimal rate.
    In `unit/`, `unit/mass` is a dimension but is typed `hector:Unit`.
+   - Found when the ids were dereferenced (2026-09-18): `aat:300010621` **does not exist** (AAT
+     returns 404), and `wd:Q12057` is **Uloboridae, a spider family**, not saffron. Saffron is
+     AAT `300013073` and Wikidata `Q25434`. Nothing in the old files carried a label to
+     compare against, so neither was detectable; the validator now requires a `_label` on
+     every external reference and `--online` compares it with the authority's.
 
    (Checked 2026-09-18 by the `hector-08` session, and the GeoNames ids by this one, via
    Wikidata P1566.)
@@ -256,9 +273,17 @@ Two largely disjoint populations (issue #2 §5):
 
 ## 7. Working here
 
-- No Python environment exists yet. Create `.venv/` in this repo when tooling is added;
-  Stephen has standing permission for package installs (say afterwards what went where).
-  Do not import from LCA as a package; read its files.
+- Python: `.venv/` (ignored) from `requirements.txt`: `python3 -m venv .venv &&
+  .venv/bin/pip install -r requirements.txt`. Stephen has standing permission for package
+  installs (say afterwards what went where). Do not import from LCA as a package; read its files.
+- Before committing any `ontology.json`, context or vocabulary change:
+  `.venv/bin/python tools/validate.py --online` (0 errors; the `ENTITY-URI` warnings are D3)
+  and `HECTOR_ONLINE=1 .venv/bin/python -m pytest tests/ -q`. CI runs both.
+- New data documents use `"@context": ["https://linked.art/ns/v1/linked-art.json",
+  "https://w3id.org/hector/context"]`, put a `_label` on every external reference, and declare
+  any new `hector:` term in `ontology/ontology.json` first (the validator enforces all three).
+- Rates: `.venv/bin/python -m tools.rates.parse_bor` → `build/rates/` (`rates.jsonl`,
+  `rates.tsv`, `1604_raw.tsv`, `report.md`). Never commit that output (§6).
 - British English in prose and documentation.
 - Commits: stage explicit paths, never `git add -A` (`.idea/` is untracked and should stay
   out). Never amend/rebase/reset shared history; fix mistakes in the next commit.
