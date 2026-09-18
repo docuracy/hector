@@ -83,7 +83,7 @@ Phase 0 complete 2026-09-18.
 ### Rates
 | # | task | where | status |
 |---|---|---|---|
-| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html` (issue #1 says done; no TSV exists) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Emitting waits on task 1 |
+| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html`: LCA had extracted it and deliberately removed it (e9b5c99) as out of LCA's scope; **in scope for HECTOR** (Stephen, 2026-09-18) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Emitting waits on task 1; 1604 re-extraction cross-checked against LCA's removed PDF-derived TSVs: 99.6% of inward / 97.8% of outward rates align in sequence, differences are group prefixes, PDF line-break truncation and "see" rows |
 | 16 [C] | Reconcile the 141 rate-bearing qualifier phrases that match nothing in `qualifiers.json` | LCA editors | — |
 | 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | todo |
 
@@ -144,7 +144,9 @@ where others read it.
   context is rejected by a conforming JSON-LD processor, entity ids expand to fragment URIs,
   and the `la:` namespace is not Linked Art's. Hence Phase 0. (CLAUDE.md §4.)
 - **C3 (2026-09-18): "four Books of Rates … 2,419 entries".** The 2,419 are the five TSVs for
-  1507, 1545 and 1558 only; the fourth book, 1604, is unparsed.
+  1507, 1545 and 1558 only. 1604 *had* been extracted in LCA and was deliberately removed
+  (e9b5c99, 2026-02-07) as out of LCA's scope; Stephen confirms it is in HECTOR's. HECTOR's
+  parser now extracts it again (1,644 rows).
 - **C4 (2026-09-18): licence position.** The issue says CC BY 4.0 "has been chosen for
   project-authored data". The glossary file's `metadata.licence` still declares CC BY-SA
   4.0, and the Jenks permission that governs the glossary is still pending. Hence D5.
@@ -153,3 +155,11 @@ where others read it.
   `wd:Q12057` is *Uloboridae*, a family of spiders. Saffron is AAT `300013073` (under
   "vegetable dye") and Wikidata `Q25434`. Found by dereferencing every id
   (`tools/validate.py --online`); the new exemplars pass that check.
+- **C7 (2026-09-18): three wrong authority ids in the glossary**, found by dereferencing all
+  1,250 ids the export uses: `meat` → AAT 300256775 does not exist (meat is 300389813);
+  `ounce` → AAT 300379226 is *kilograms* (ounces: 300379229); `osnaburg`'s place → Q4024 is
+  Frankfurt (Oder) (Osnabrück: Q2916). Reported to the LCA session; fix there, not here.
+- **C8 (2026-09-18): the glossary lacks the 1604-only commodities.** Of the 3,296 entries in
+  the pre-removal backup, 346 vanished without any rekey/merge/deletion record: 255 have only
+  Books of Rates sources (the 1604 removal), 88 have Customs Account sources (disappeared for
+  some other, unrecorded reason: ask Stephen/LCA), 3 have none. See decision D6.

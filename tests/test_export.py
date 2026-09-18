@@ -191,6 +191,29 @@ def test_merge_and_delete_leave_deprecation_records(tmp_path):
     assert [str(i) for i in issues if i.level == "ERROR"] == []
 
 
+def test_both_lca_history_record_shapes_are_understood(tmp_path):
+    run(tmp_path, glossary({"gizmo": entry(), "gadjet": entry(), "gadget": entry(), "doohicky_2": entry()}))
+    site, ledger, report = run(tmp_path, glossary(
+        {"gizmos": entry(), "gadget": entry()},
+        rekey_history=[{"from": "gizmo", "to": "gizmos", "when": "2026-06-18T09:00:00Z"}],
+        merge_history=[{"from": "gadjet", "into": "gadget", "when": "2026-06-18T09:00:00Z", "reason": "x"}],
+        deletion_history=[{"key": "doohicky_2", "when": "2026-06-18T09:00:00Z", "reason": "x"}]))
+    rows = ledger_rows(ledger)
+    assert rows["gizmo"]["glossary_key"] == "gizmos" and rows["gizmo"]["status"] == "active"
+    assert rows["gadjet"]["status"] == "deprecated" and rows["gadjet"]["replaced_by"] == "gadget"
+    assert rows["doohicky-2"]["status"] == "deleted"
+    assert report["missing"] == []
+
+
+def test_later_rename_wins_whatever_the_record_order(tmp_path):
+    run(tmp_path, glossary({"gizmo": entry()}))
+    _, ledger, _ = run(tmp_path, glossary(
+        {"gizmo-final": entry()},
+        rekey_history=[{"from": "gizmo", "to": "gizmo-final", "when": "2026-06-02T00:00:00Z"},
+                       {"old_key": "gizmo", "new_key": "gizmo-draft", "timestamp": "2026-06-01T00:00:00Z"}]))
+    assert ledger_rows(ledger)["gizmo"]["glossary_key"] == "gizmo-final"
+
+
 def test_a_key_that_vanishes_without_history_is_reported_not_dropped(tmp_path):
     run(tmp_path, glossary({"widget": entry(), "gizmo": entry()}))
     site, ledger, report = run(tmp_path, glossary({"widget": entry()}))

@@ -88,20 +88,41 @@ def save_ledger(path: Path, rows: list[dict]):
             w.writerow({k: r.get(k, "") for k in LEDGER_FIELDS})
 
 
+def history(meta: dict) -> tuple[dict, dict, set]:
+    """LCA's rekey/merge/deletion history as {old: new}, {merged: primary}, {deleted}.
+
+    LCA writes two record shapes (both seen 2026-09-18): {timestamp, old_key, new_key} /
+    {when, from, to} for rekeys; {timestamp, primary, merged: [...]} / {when, from, into} for
+    merges; {timestamp, key, ...} / {when, key, reason} for deletions. Records are applied in
+    time order, so a later rename of the same key wins.
+    """
+    def when(r):
+        return r.get("timestamp") or r.get("when") or ""
+
+    rekeys, merged_into, deleted = {}, {}, set()
+    for r in sorted(meta.get("rekey_history", []), key=when):
+        old, new = r.get("old_key", r.get("from")), r.get("new_key", r.get("to"))
+        if old and new:
+            rekeys[old] = new
+    for r in sorted(meta.get("merge_history", []), key=when):
+        if "primary" in r:
+            for k in r.get("merged", []):
+                merged_into[k] = r["primary"]
+        elif r.get("from") and r.get("into"):
+            merged_into[r["from"]] = r["into"]
+    for r in meta.get("deletion_history", []):
+        if r.get("key"):
+            deleted.add(r["key"])
+    return rekeys, merged_into, deleted
+
+
 def successor(key: str, meta: dict, entries: dict) -> tuple[str, str | None]:
     """Follow LCA's history for a key that has left the glossary.
 
     Returns (kind, new_key): ('rekey', k) if renamed to a live key k; ('merge', k) if merged
     into live key k; ('delete', None) if deleted; ('missing', None) if there is no record.
     """
-    rekeys = {}
-    for r in meta.get("rekey_history", []):
-        rekeys[r["old_key"]] = r["new_key"]  # later records win
-    merged_into = {}
-    for m in meta.get("merge_history", []):
-        for k in m.get("merged", []):
-            merged_into[k] = m["primary"]
-    deleted = {d["key"] for d in meta.get("deletion_history", [])}
+    rekeys, merged_into, deleted = history(meta)
 
     kind, k, seen = None, key, set()
     while k not in entries and k not in seen:

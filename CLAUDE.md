@@ -216,10 +216,18 @@ Related LCA files:
 | `Jenks Books of Rates final 3 June 2024_1507.tsv` | 335 | `commodity`, `rate` |
 | `…_1545-Inward.tsv` / `…_1545-Outward.tsv` | 810 / 49 | same |
 | `…_1558-Inward.tsv` / `…_1558-Outward.tsv` | 1,154 / 71 | same |
-| `Jenks Book of Rates 1604.doc` / `.html` | — | **not yet parsed to TSV** |
+| `Jenks Book of Rates 1604.doc` / `.html` | — | no TSV **now**: see below |
 | `Jenks index of subjects English books of rates_commodities.tsv` | 1,376 | `commodity`, `definition`, `pages` |
 | `…_crossrefs.tsv` | 5 | `commodity`, `target`, `pages` |
 | `…_units.tsv` | 73 | `unit`, `commodity`, `amount` (e.g. `bale / comyn / 3 cwt at 112 lb./cwt`) |
+
+**1604 history (from Stephen, 2026-09-18).** `process/bor_extraction.py` (Aug 2025) made
+the five TSVs from the PDF, and it once also extracted 1604 (PDF pp. 147–188, plus the 1604
+HTML tables). Commit e9b5c99 (2026-02-07) **deliberately removed** the 1604 TSVs, the
+1604-only glossary entries and the 1604-only index subjects, only because they fell outside
+LCA's scope. **1604 is in scope for HECTOR.** The removed files can be recovered with
+`git -C LCA show e9b5c99^:<path>` (copies in `build/lca-removed-1604/`). The pre-removal
+glossary is `LCA/docs/data/glossary_data_BOR_backup.json` (untracked, 3,296 entries).
 
 Total rated rows in the five TSVs: 2,419. The `commodity` cell fuses commodity, qualifier and
 unit (`Canvas Normandy whyte the hundreth elles`); `rate` is £ s d text, sometimes bracketed
