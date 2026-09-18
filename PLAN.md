@@ -24,6 +24,7 @@ London_Customs_Accounts (LCA), and the outputs land here.
 | **3** [D] | **URI and versioning policy** | **adopted 2026-09-18** as drafted: `docs/uri-policy.md` | every export |
 | **D4** [D] | **HECTOR URI vs LCA glossary URI.** Each concept already has `https://w3id.org/mlca/glossary/{key}`. Which is canonical? | HECTOR canonical; LCA's JSON-LD emits `skos:exactMatch` (or `owl:sameAs`) to it. Keeps LCA URIs working | 12 |
 | **D5** [D] | **Data licence for HECTOR output** (repo `LICENSE` is MIT, code only; glossary metadata says CC BY-SA; strategy prefers CC BY) | follows task 1; add a `LICENSE-DATA` once decided | 24, 25 |
+| **D6** [D] | **Where do the 1604-only commodities live?** 1604 rates need commodity records to link to, but LCA removed those entries (C8: 255 BOR-only in the backup, uncurated since Feb 2026) | **back in the LCA glossary with a scope flag** (e.g. `scope: "bor1604"`), which LCA's editor and tagger can filter out: one glossary, one editor, one history, and the exporter already reads it. The alternative is a HECTOR-owned supplementary glossary, which means a second editor and a second place to curate | 1604 half of 15 → 17 |
 
 **D3, the URI policy.** Adopted 2026-09-18; the full text is `docs/uri-policy.md`. In short:
 - entities are **path URIs**, never fragments: `https://w3id.org/hector/commodity/<slug>`,
