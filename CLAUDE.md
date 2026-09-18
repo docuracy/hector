@@ -278,7 +278,10 @@ Two largely disjoint populations (issue #2 §5):
   installs (say afterwards what went where). Do not import from LCA as a package; read its files.
 - Before committing any `ontology.json`, context or vocabulary change:
   `.venv/bin/python tools/validate.py --online` (0 errors; the `ENTITY-URI` warnings are D3)
-  and `HECTOR_ONLINE=1 .venv/bin/python -m pytest tests/ -q`. CI runs both.
+  and `HECTOR_ONLINE=1 .venv/bin/python -m pytest tests/ -q`. CI runs both, **but Getty
+  refuses GitHub's runners (HTTP 403 on both the web and SPARQL routes, 2026-09-18), so CI
+  cannot check AAT ids**: it reports them as `ONLINE-NOTFOUND` warnings and skips the AAT test.
+  Only a local `--online` run checks AAT. Wikidata and QUDT are checked in CI.
 - New data documents use `"@context": ["https://linked.art/ns/v1/linked-art.json",
   "https://w3id.org/hector/context"]`, put a `_label` on every external reference, and declare
   any new `hector:` term in `ontology/ontology.json` first (the validator enforces all three).
