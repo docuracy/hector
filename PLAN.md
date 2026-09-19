@@ -91,9 +91,9 @@ Phase 0 complete 2026-09-18.
 ### Units
 | # | task | status |
 |---|---|---|
-| 18 [E] | Build the unit catalogue: 222 glossary entries in `Units, weights & measures` + 357 corpus-attested unit concepts (ladings `type: unit` spans) + `…_units.tsv` conversion statements | todo |
-| 19 [C] | Align to QUDT and the Digital Noback Project | todo (droppable) |
-| 20 [E] | Emit `unit/<dimension>/<slug>/ontology.json` with conversion factors where known | todo |
+| 18 [E] | Build the unit catalogue: 222 glossary entries in `Units, weights & measures` + 357 corpus-attested unit concepts (ladings `type: unit` spans) + `…_units.tsv` conversion statements | **built 2026-09-19**, local only: `tools/units/build_units.py` → `build/units/` (`catalogue.tsv`, `rates_join.tsv`, `conversions.tsv`, `report.md`) + `build/ledger/units.tsv`. 365 candidate concepts (222 in the group ∪ 353 attested, C9); **248 emitted as units** (212 of the group, 26 attested casks/packing units outside it, 10 rates-only incl. `hector:each`); 127 not units (the tagger types every vessel in `Containers & vessels` as a unit; 10 group entries are instruments/goods). All **79** units the rates parser recognises are joined (60 to glossary units, 19 to rates-only units/`each`), covering all 3,972 rate rows that have a unit. 288 conversion statements with sources: 64 general (52 exact), 224 commodity-specific (units.tsv 73, Books of Rates contents clauses 113, LCA value model 34, LCA duty ratios 4). Dimension assignment (mass/length/volume/count/package) is a hand proposal: see §4 |
+| 19 [C] | Align to QUDT and the Digital Noback Project | todo (droppable). Only `pound` carries QUDT/Wikidata ids (kept from the exemplar); dimension documents align to QUDT quantity kinds. The one thing 19 would add that 20 lacks is SI factors for length and volume |
+| 20 [E] | Emit `unit/<dimension>/<slug>/ontology.json` with conversion factors where known | **built 2026-09-19** into `build/site/unit/` (run after the commodity export, which rebuilds `build/site/`): 248 MeasurementUnit records + dimension documents for length, volume, count, package. 48 carry `definedAs` (a Dimension: value + HECTOR unit, with its source), 12 mass units a `conversionToGram` chained to the pound avoirdupois. `definedAs` is a **proposed term**: it and a unit sense of `attestationCount` exist only in the staged `build/site/context` and `ontology`, not in the repo. Whole staging site: 0 errors (2,706 docs); units online: 0 errors, 0 warnings |
 
 ### Framework and publication
 | # | task | status |
@@ -124,6 +124,8 @@ task 1):
 | `build/rates/` (rates.jsonl/tsv, 1604_raw.tsv, report.md) | `python -m tools.rates.parse_bor` | 4,063 rows incl. 1604; cross-checked against LCA's removed 1604 TSVs |
 | `build/site/` (staging site, 2,452 commodity records) | `python -m tools.export.export_hector` | validates 0 errors; online: 3 bad ids, all LCA-side (C7) |
 | `build/ledger/commodities.tsv` (slug ledger) | minted by the exporter | **not yet authoritative**: nothing published, so it can still be regenerated. From first publication it is committed and must never be regenerated (docs/uri-policy.md §3) |
+| `build/units/`, `build/site/unit/` (unit catalogue + 248 unit records) | `python -m tools.units.build_units` **after** the export (the export wipes `build/site/`) | validates 0 errors; online 0 warnings. Reads `build/rates/rates.jsonl` |
+| `build/ledger/units.tsv` (unit slug ledger, with `dimension`) | minted by `build_units` | **not yet authoritative**, as `commodities.tsv`. A minted dimension is kept even if the classification changes (reported), since the path contains it |
 | `build/lca-removed-1604/` | `git -C LCA show e9b5c99^:<path>` | LCA's removed 1604 TSVs and pre-filter index, for reference |
 
 **Waiting on Stephen:**
@@ -140,8 +142,22 @@ needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
 **Next, needing no decision** (all local, publish only after task 1):
 1. **13**: IPA phonetic keys for all forms, reusing LCA `process/helpers/phonetic.py`. The
    glossary's `p` field is a matching code, not IPA, so it is not used.
-2. **18**: the unit catalogue (222 glossary unit entries + corpus unit spans + `_units.tsv`),
-   joined to the rates parser's recognised units.
+2. ~~**18**: the unit catalogue~~ built 2026-09-19 (with 20), local only. Open for Stephen:
+   - **the dimension classification** (`tools/units/build_units.py`: `MASS`, `LENGTH`, `VOLUME`,
+     `COUNT`, the rest `package`). `package` is not a physical dimension; is it the right path
+     level for bale/fardel/chest? `sack` is `mass` (the 364 lb wool sack) though it is also a
+     packing unit; `barrel`/`tun`/`pipe` are `volume`. Settle this before first publication:
+     the dimension is part of the URI;
+   - **`definedAs`** (proposed term) and the unit sense of `attestationCount`: adopt into
+     `context/hector.jsonld` and `ontology/ontology.json`, or model conversions another way;
+   - **`hector:each`**, a HECTOR-authored count unit for rates charged per item ("the hawke");
+   - the hand lists `NOT_UNITS` (e.g. `weight`, ambiguous), `CONTAINER_GOODS`, `PACKING_INCLUDE`;
+   - conflicts found, left unresolved in `conversions.tsv`: the LCA duty ratios charge a wine
+     **barrel as 1/6 tun** (the later statutory barrel is 1/8) and a **butt like a tun** (the
+     glossary: butt = 2 hogsheads = ½ tun); the **mark** is "20 pieces, or 2 dozen" in the
+     glossary but 2 dozen in the Books of Rates; **wey** "12 stone or c. 300 lb" is
+     self-inconsistent; **aum** is ⅓ and ⅕ of a tun in one description;
+   - **19** (QUDT/Noback) looks droppable: the only loss is SI factors for length and volume.
 3. **17 (draft)**: emit Rate nodes into `build/site/` for commodities that already exist.
    1507–1558 rates can be linked by matching `commodity_text` against glossary forms; 1604
    waits on D6.
@@ -195,3 +211,9 @@ where others read it.
   the pre-removal backup, 346 vanished without any rekey/merge/deletion record: 255 have only
   Books of Rates sources (the 1604 removal), 88 have Customs Account sources (disappeared for
   some other, unrecorded reason: ask Stephen/LCA), 3 have none. See decision D6.
+- **C9 (2026-09-19): 353 corpus-attested unit concepts, not 357.** Distinct `matches[0].key` over
+  spans typed `unit` (281 keys, 432,803 spans) or `commodity-unit` (72 keys, 16,987 spans) in
+  `LCA/docs/data/ladings/*.json.gz`; all 353 are glossary keys. 210 of them are in the units group;
+  the other 143 are mostly vessels the tagger types as units because of their group, so "corpus-
+  attested" is not the same as "a unit" (task 18 row). The 357 of 2026-09-15 was measured on an
+  earlier annotation.
