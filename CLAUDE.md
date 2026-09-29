@@ -57,6 +57,8 @@ tools/validate.py          the validator (task 21); tests/test_validate.py prove
 tools/contexts/linked-art.json    vendored Linked Art context, so validation is offline/deterministic
 tools/rates/parse_bor.py   Books of Rates parser (task 15); writes ONLY to build/rates/ (ignored)
 tools/export/export_hector.py   glossary → HECTOR commodity records (task 12); writes ONLY to build/
+tools/rates/link_rates.py  rates → commodities (head-first), qualified records (decision 2), Rate
+                           nodes (tasks 14, 17); writes ONLY to build/. Run after build_units
 docs/uri-policy.md         the URI and versioning policy (D3, adopted 2026-09-18): READ before minting URIs
 .github/workflows/validate.yml    CI: validator --online + pytest, on push/PR and weekly
 LICENSE                    MIT (code)

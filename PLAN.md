@@ -80,14 +80,14 @@ Phase 0 complete 2026-09-18.
 |---|---|---|
 | **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `equivalent` (Linked Art's identity link, as in the saffron exemplar); close → `closeMatch`; broader → `broader` (`skos:broader`; on a Linked Art Type, `classified_as` would mean "a kind of type", not "narrower than"); nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | **built 2026-09-18**, local only: `tools/export/export_hector.py` → `build/site/` (staging copy of the site, 2,452 commodity records) + `build/ledger/commodities.tsv`. The whole staging site validates (0 errors); identity counts reproduce C1 exactly. Forms carry no language in the glossary, so Names have none (not guessed). Not yet emitted: groups (no IRIs), qualifiers (decision 2), the `p` matching code (not IPA; task 13 gives IPA). **Publishing = copy `build/site/commodity/` + commit the ledger, after task 1** |
 | 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | todo |
-| 14 [E] | Emit qualified commodities per decision 2 | todo, needs 2 |
+| 14 [E] | Emit qualified commodities per decision 2 | **built 29 Sep, local** (`tools/rates/link_rates.py`): a combination gets its own record (`commodity/<concept>-<qualifier>`, skos:broader + compoundOf to the base, spellings as written as attested Names) only where the books price it apart -- the same concept at the same unit at different prices with different qualifiers. 680 records over 171 concepts (issue #2: 170 heads). Qualifier spellings joined through LCA qualifiers.json and a light fold (whit/whyte, spruse/sprewce, newcastell/neucastell); some remain split (neucastel/neuecastel). Slugs minted once into `build/ledger/qualified.tsv` |
 
 ### Rates
 | # | task | where | status |
 |---|---|---|---|
 | **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html`: LCA had extracted it and deliberately removed it (e9b5c99) as out of LCA's scope; **in scope for HECTOR** (Stephen, 2026-09-18) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Emitting waits on task 1; 1604 re-extraction cross-checked against LCA's removed PDF-derived TSVs: 99.6% of inward / 97.8% of outward rates align in sequence, differences are group prefixes, PDF line-break truncation and "see" rows |
 | 16 [C] | Reconcile the 141 rate-bearing qualifier phrases that match nothing in `qualifiers.json` | LCA editors | — |
-| 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | todo |
+| 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | **built 29 Sep, local, 1507-1558** (1604 waits for D6's LCA-side restore): of 2,419 rows, 1,828 linked (1,540 by the goods at the head of the entry, 14 by a phrase, 274 by a single word elsewhere); 1,031 rates on base commodities, 797 on qualified ones, 341 qualifiers kept in sourceText as not priced apart; NOT linked and listed in `build/rates/link-report.md`: 314 with no glossary spelling (candidate spellings for LCA's curators: Annes sede, Appells, Beffe...), 170 on a spelling two concepts share, 59 no price, 48 no unit. Rate: pence + lsd, per quantity + unit (units ledger), validFrom the book, validThrough the next, the source line quoted in sourceText. Staging site 3,388 documents, 0 errors. Tests `tests/test_link_rates.py` (head-first proven to fail without its rule) |
 
 ### Units
 | # | task | status |
@@ -151,7 +151,9 @@ needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
      sourced, scoped statement**, doubtful ones `exact: false` with a note; choose none. Send the
      wey and aum descriptions to LCA's curators as glossary defects;
    - ~~**19** (QUDT/Noback)~~ **dropped 29 Sep (D7)**.
-3. **17 (draft)**: emit Rate nodes into `build/site/` for commodities that already exist.
+3. ~~**17 (draft)**~~ built 29 Sep with 14 (above); run order: parse_bor, export_hector,
+   build_units, link_rates. Next: review the 1,828 links (the report's sample first), and
+   the 314 + 170 unlinked. Originally: emit Rate nodes into `build/site/` for commodities that already exist.
    1507–1558 rates can be linked by matching `commodity_text` against glossary forms; 1604
    needs the D6 restore on the LCA side first. Qualified rates follow decision 2 (flatten rated only).
 4. When task 1 lands: copy `build/site/commodity/` into the repo and commit
