@@ -48,8 +48,10 @@ context/hector.jsonld      JSON-LD 1.1 context: HECTOR's terms only, used AFTER 
                            context (documents: "@context": [linked-art.json, hector context])
 ontology/ontology.json     the vocabulary: every hector: term with _label + rdfs:comment
 commodity/saffron/ontology.json   the only commodity: an ILLUSTRATIVE Linked Art Type
-unit/mass/ontology.json           unit dimension (a Type)
-unit/mass/pound/ontology.json     the only unit (MeasurementUnit, illustrative)
+unit/pound/ontology.json          the only unit (MeasurementUnit, illustrative). Units are
+                                  unit/<slug> since D7 (29 Sep 2026): no dimension in the URI
+unit/dimension/mass/ontology.json a dimension (a Type); units name theirs in quantityKind
+unit/mass/, unit/mass/pound/      DEPRECATION records for the pre-D7 paths (URI policy §3)
 shapes/hector.shacl.ttl    SHACL shapes the validator applies to the expanded graph
 tools/validate.py          the validator (task 21); tests/test_validate.py proves each check fires
 tools/contexts/linked-art.json    vendored Linked Art context, so validation is offline/deterministic
@@ -57,7 +59,8 @@ tools/rates/parse_bor.py   Books of Rates parser (task 15); writes ONLY to build
 tools/export/export_hector.py   glossary → HECTOR commodity records (task 12); writes ONLY to build/
 docs/uri-policy.md         the URI and versioning policy (D3, adopted 2026-09-18): READ before minting URIs
 .github/workflows/validate.yml    CI: validator --online + pytest, on push/PR and weekly
-LICENSE                    MIT (code). The DATA licence is undecided; see §6
+LICENSE                    MIT (code)
+LICENSE-DATA               CC BY 4.0 (data), decided 29 Sep 2026 (D5); whom to credit
 ```
 
 `index.html` loads Bootstrap and a JSON viewer from jsDelivr, Roboto from Google Fonts. It

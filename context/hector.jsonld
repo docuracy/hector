@@ -34,7 +34,8 @@
     "deprecated": { "@id": "owl:deprecated", "@type": "xsd:boolean" },
     "isReplacedBy": { "@id": "dcterms:isReplacedBy", "@type": "@id" },
 
-    "quantityKind": { "@id": "hector:quantityKind", "@type": "@id" },
+    "quantityKind": { "@id": "hector:quantityKind", "@type": "@id", "@container": "@set" },
+    "definedAs": { "@id": "hector:definedAs", "@type": "@id", "@container": "@set" },
     "conversionToGram": { "@id": "hector:conversionToGram", "@type": "xsd:decimal" },
 
     "Rate": "hector:Rate",

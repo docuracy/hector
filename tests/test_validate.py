@@ -30,8 +30,8 @@ def make_repo(tmp_path: Path, overrides: dict[str, object] | None = None, legacy
     """A copy of the repo's data files in tmp_path, with some files replaced."""
     root = tmp_path / "repo"
     for rel in ["context/hector.jsonld", "ontology/ontology.json", "shapes/hector.shacl.ttl",
-                "tools/contexts/linked-art.json", SAFFRON, "unit/mass/ontology.json",
-                "unit/mass/pound/ontology.json"]:
+                "tools/contexts/linked-art.json", SAFFRON, "unit/dimension/mass/ontology.json",
+                "unit/pound/ontology.json", "unit/mass/ontology.json", "unit/mass/pound/ontology.json"]:
         src = (LEGACY / rel) if legacy and (LEGACY / rel).exists() else REPO / rel
         dst = root / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
@@ -65,7 +65,8 @@ def test_repo_is_valid_and_was_actually_checked():
     assert [str(i) for i in issues if i.level == "ERROR"] == []
     # presence: every entity document was reached
     reached = {c.resolve().relative_to(REPO).as_posix() for c in checked}
-    assert {SAFFRON, "unit/mass/ontology.json", "unit/mass/pound/ontology.json",
+    assert {SAFFRON, "unit/pound/ontology.json", "unit/dimension/mass/ontology.json",
+            "unit/mass/ontology.json", "unit/mass/pound/ontology.json",       # the D7 deprecation records
             "ontology/ontology.json"} <= reached
 
 
@@ -142,9 +143,28 @@ def test_each_check_fires_on_its_defect(tmp_path, code):
 
 
 def test_dimension_typed_as_unit_is_rejected(tmp_path):
-    over = mutate(lambda d: d.__setitem__("type", "MeasurementUnit"), "unit/mass/ontology.json")
+    over = mutate(lambda d: d.__setitem__("type", "MeasurementUnit"), "unit/dimension/mass/ontology.json")
     make_repo(tmp_path, overrides=over)
-    assert "KIND" in codes(V.validate(), path="unit/mass/ontology.json")
+    assert "KIND" in codes(V.validate(), path="unit/dimension/mass/ontology.json")
+
+
+def test_unit_typed_as_dimension_is_rejected(tmp_path):
+    """D7: unit/<slug> is a unit. Control first: the real pound passes."""
+    make_repo(tmp_path)
+    assert "KIND" not in codes(V.validate(), path="unit/pound/ontology.json")
+    over = mutate(lambda d: d.__setitem__("type", "Type"), "unit/pound/ontology.json")
+    make_repo(tmp_path / "m", overrides=over)
+    assert "KIND" in codes(V.validate(), path="unit/pound/ontology.json")
+
+
+def test_pre_d7_unit_path_only_as_a_deprecation_record(tmp_path):
+    """unit/mass/pound is published, so it stays -- as a deprecation record pointing at unit/pound.
+    The same document without `deprecated` is a unit at a path units no longer have."""
+    make_repo(tmp_path)
+    assert "KIND" not in codes(V.validate(), path="unit/mass/pound/ontology.json")
+    over = mutate(lambda d: d.pop("deprecated"), "unit/mass/pound/ontology.json")
+    make_repo(tmp_path / "m", overrides=over)
+    assert "KIND" in codes(V.validate(), path="unit/mass/pound/ontology.json")
 
 
 def test_name_language_given_as_string_violates_shacl(tmp_path):

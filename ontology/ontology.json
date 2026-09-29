@@ -23,12 +23,14 @@
       "rdfs:comment": "The simpler commodities a qualified or compound commodity is composed of. Also published by the London Customs Accounts glossary." },
 
     { "id": "hector:attestationCount", "type": "rdf:Property", "_label": "attestation count",
-      "rdfs:comment": "The number of times a commodity is attested in the London Customs Accounts corpus, as counted by that project's tagger (LCA docs/data/concept_attestation.json) when the record was exported." },
+      "rdfs:comment": "The number of times a commodity is attested in the London Customs Accounts corpus, as counted by that project's tagger (LCA docs/data/concept_attestation.json) when the record was exported; for a unit, the number of corpus spans the tagger typed as that unit (`unit` or `commodity-unit`)." },
 
     { "id": "hector:quantityKind", "type": "rdf:Property", "_label": "quantity kind",
-      "rdfs:comment": "The dimension a unit measures (mass, length, volume, count), given as a HECTOR unit dimension." },
+      "rdfs:comment": "The dimension a unit measures (mass, length, volume, count, package), given as a HECTOR unit dimension (unit/dimension/<dim>). May hold more than one value: a cask or a sack is both a measure and a package. A property, not part of the unit's URI: units are unit/<slug> (D7, 29 Sep 2026)." },
     { "id": "hector:conversionToGram", "type": "rdf:Property", "_label": "conversion to gram",
       "rdfs:comment": "The number of grams in one of this unit, as an xsd:decimal. State in the unit's description which definition of the unit the figure follows." },
+    { "id": "hector:definedAs", "type": "rdf:Property", "_label": "defined as",
+      "rdfs:comment": "A quantity (a Linked Art Dimension: value and unit) that one of this unit is defined as or equal to, according to the source cited on the Dimension. Where sources disagree, each reading is a separate Dimension with its own source; a doubtful one says so in its note. Commodity-specific contents (a bale of cumin holds 3 cwt) are not definitions. Adopted 29 Sep 2026 (D7)." },
 
     { "id": "hector:Rate", "type": "rdfs:Class", "_label": "Rate",
       "rdfs:comment": "A customs rate: the valuation or charge a Book of Rates sets on a quantity of a commodity for a period." },

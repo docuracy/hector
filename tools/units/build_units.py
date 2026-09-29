@@ -23,7 +23,8 @@ them, so it goes ONLY to git-ignored build/ until the Jenks permission (PLAN.md 
   build/units/report.md        counts and the lists a human should look at
   build/ledger/units.tsv       the slug ledger (docs/uri-policy.md §3); NOT authoritative until
                                first publication, then committed and never regenerated
-  build/site/unit/...          unit/<dimension>/<slug>/ontology.json (task 20)
+  build/site/unit/...          unit/<slug>/ontology.json (task 20); unit/dimension/<dim> Types
+                               (D7, 29 Sep 2026: no dimension in a unit's URI)
 
 Who is a unit (the population, PLAN.md task 18):
   1. the glossary entries in group "Units, weights & measures", less a short hand list of
@@ -37,7 +38,9 @@ Who is a unit (the population, PLAN.md task 18):
      (`hundred`, `score`, `the cloth`, ...), keyed `bor:<unit>`, plus `hector:each` for rates
      charged per item ("the hawke", "the skynne").
 
-Dimensions (the <dimension> path level of the URI policy) are assigned by hand, below:
+Dimensions are assigned by hand, below. Since D7 (29 Sep 2026) a dimension is a PROPERTY of a
+unit (quantityKind, which may hold several: a sack is mass and package), not part of its URI,
+so a reclassification changes a record, never a URI:
 mass, length, volume and count only where a source defines the unit by a fixed quantity of
 that kind; everything else is `package` (a packing or transport unit of customary, variable or
 commodity-specific content). This is a proposal for Stephen, not a settled classification.
@@ -109,6 +112,15 @@ COUNT = {"dozen", "gross", "pair", "couple", "dicker", "shock", "timber", "pane"
          "suma", "tale", "cast", "warpe", "quire", "ream", "sheaf", "garba", "nest", "set",
          "mark", "bende", "kip", "bor:hundred", "bor:thousand", "bor:score", "bor:flock",
          "hector:each"}
+
+# A second dimension, for units that are containers as well as measures (D7: quantityKind is
+# multi-valued). The primary is dimension_of(); these add "package".
+EXTRA_DIMENSIONS = {k: ("package",) for k in ("sack", "barrel", "hogshead", "firkin", "puncheon",
+                                              "tun", "pipe", "butt_2", "bote")}
+
+# Slugs that must never be minted for a unit: `unit/dimension/<dim>` holds the dimensions, and
+# `unit/mass` is the deprecation record of the pre-D7 dimension document.
+RESERVED_SLUGS = {"dimension", "mass", "length", "volume", "count", "package"}
 
 # Corpus-attested concepts outside the units group that are casks (always measures) ...
 CASKS = {"barrel", "hogshead", "firkin", "puncheon", "vat", "dry vat", "foist", "tonekyn",
@@ -208,6 +220,10 @@ DEFINITIONS = [
     ("roba", "25", "pound", False, "LCA glossary (roba: 'approximately 25 English pounds')", ""),
     ("wey", "12", "stone", False, "LCA glossary (wey: 'usually equal to twelve stone or c. 300 lb.')",
      "self-inconsistent: 12 stone is 168 lb, not c. 300 lb; varies by commodity"),
+    # D7 (29 Sep 2026): where a source gives two readings, each is its own statement and
+    # neither is chosen.
+    ("wey", "300", "pound", False, "LCA glossary (wey: 'usually equal to twelve stone or c. 300 lb.')",
+     "the same description's other reading; 300 lb is not twelve stone (168 lb)"),
     ("yard", "3", "foot", True, "LCA glossary (yard: '3 feet or 36 inches')",
      "0.9144 m by the 1959 agreement"),
     ("virga", "1", "yard", True, "LCA glossary (virga: 'one yard (3 feet)')", ""),
@@ -239,6 +255,8 @@ DEFINITIONS = [
     ("roda", "2", "tun", True, "LCA glossary (roda: 'equivalent to 2 tuns')", "of Rhine wine"),
     ("aum", "1/3", "tun", False, "LCA glossary (aum: '⅓ of a dolium')",
      "CONFLICT in the same description: '1/5 of a dolium', '5 aumes = 1 dolium'"),
+    ("aum", "1/5", "tun", False, "LCA glossary (aum: '1/5 of a dolium', '5 aumes = 1 dolium')",
+     "the same description's other reading (it also says ⅓)"),
     ("eightendel", "1/8", "barrel", True, "LCA glossary (eightendel: '⅛ of a barrel')", ""),
     ("firkin", "1/4", "barrel", True, "LCA glossary (firkin: 'a quarter of a barrel or half a kilderkin', Getty AAT)", ""),
     ("kilderkin", "1/2", "barrel", True, "LCA glossary (firkin: 'half a kilderkin' => kilderkin = ½ barrel)", "derived"),
@@ -267,9 +285,14 @@ DEFINITIONS = [
     ("mark", "2", "dozen", True, "units.tsv ('marke sheres for semesters 2 dozen pieces'); Books of Rates "
      "('the marke conteyninge two dossyn')",
      "CONFLICT: the glossary says '20 pieces, or 2 dozen'"),
+    ("mark", "20", "hector:each", False, "LCA glossary (mark: '20 pieces, or 2 dozen')",
+     "the glossary's other reading; the Books of Rates give 2 dozen"),
     ("skive", "100", "hector:each", False, "LCA glossary (skive: 'approximately 100 in number (Cobb 186)')",
      "CONFLICT: Zupko 383 gives 500"),
+    ("skive", "500", "hector:each", False, "Zupko, A Dictionary of Weights and Measures for the British "
+     "Isles, p. 383, as noted against the LCA glossary's skive", "against the glossary's 'approximately 100'"),
     ("cast", "3", "hector:each", False, "LCA glossary (cast: 'a set of three or four')", ""),
+    ("cast", "4", "hector:each", False, "LCA glossary (cast: 'a set of three or four')", ""),
 ]
 
 
@@ -549,13 +572,14 @@ def conversions(lca: Path, rates: list[dict], cat: dict, entries: dict, report) 
 
 def reconcile(ledger: list[dict], cat: dict, entries: dict, meta: dict, today: str, report) -> dict:
     by_key = {r["key"]: r for r in ledger if r["status"] == "active"}
-    slugs = {r["slug"] for r in ledger}
+    slugs = {r["slug"] for r in ledger} | RESERVED_SLUGS
     for key, row in list(by_key.items()):
         if key in cat and cat[key]["emit"]:
             if cat[key]["dimension"] != row["dimension"]:
-                report["dimension_conflict"].append(
-                    f"{key}: ledger {row['dimension']}, classification now {cat[key]['dimension']} "
-                    "(ledger kept; a minted path does not move without a redirect)")
+                # A property since D7, not a path: follow the classification, URI unchanged.
+                report["dimension_reclassified"].append(
+                    f"{key}: {row['dimension']} -> {cat[key]['dimension']} (unit/{row['slug']} unchanged)")
+                row["dimension"] = cat[key]["dimension"]
             continue
         if key.startswith(("bor:", "hector:")) or key in entries:
             row["status"] = "deleted"  # no longer counted as a unit
@@ -568,7 +592,7 @@ def reconcile(ledger: list[dict], cat: dict, entries: dict, meta: dict, today: s
             by_key[new] = row
             report["rekeyed"].append(f"{key} -> {new}")
         elif kind in ("rekey", "merge") and new in by_key:
-            row["status"], row["replaced_by"] = "deprecated", f"{by_key[new]['dimension']}/{by_key[new]['slug']}"
+            row["status"], row["replaced_by"] = "deprecated", by_key[new]["slug"]
             report["deprecated"].append(f"{key} -> {new}")
             del by_key[key]
         elif kind == "delete":
@@ -605,20 +629,11 @@ def save_ledger(path: Path, rows: list[dict]):
 
 # --------------------------------------------------------------------------- JSON-LD
 
-PROPOSED_TERMS = {
-    "definedAs": ({"@id": "hector:definedAs", "@type": "@id", "@container": "@set"},
-                  {"id": "hector:definedAs", "type": "rdf:Property", "_label": "defined as",
-                   "rdfs:comment": "A quantity (a Linked Art Dimension: value and unit) that one of "
-                   "this unit is defined as or equal to, according to the source cited on the "
-                   "Dimension. Only general, exact statements are given; commodity-specific "
-                   "contents (a bale of cumin holds 3 cwt) are not definitions. PROPOSED "
-                   "(task 20, 2026-09-19): present only in the build/ staging copy until adopted."}),
-}
-ATTESTATION_COMMENT = ("The number of times a commodity is attested in the London Customs Accounts "
-                       "corpus, as counted by that project's tagger (LCA "
-                       "docs/data/concept_attestation.json) when the record was exported; for a "
-                       "unit, the number of corpus spans the tagger typed as that unit "
-                       "(`unit` or `commodity-unit`). [unit sense PROPOSED 2026-09-19]")
+# `definedAs` and the unit sense of `attestationCount` were proposed here on 19 Sep and ADOPTED
+# on 29 Sep (D7): both are now in the committed context/hector.jsonld and ontology/ontology.json,
+# so nothing is added to the staged copy any more. Kept as the place for the next proposal.
+PROPOSED_TERMS = {}
+ATTESTATION_COMMENT = None
 
 DIMENSION_DOCS = {
     "length": ("length", "The dimension measured by units of length (ell, yard, foot).",
@@ -633,13 +648,17 @@ DIMENSION_DOCS = {
     "package": ("package", "Packing and transport units (bale, fardel, chest, sack as a packing "
                 "unit, basket) whose content is customary, variable or specific to the commodity "
                 "packed. Not a physical dimension: a unit here gives a count of packages, and any "
-                "known contents are commodity-specific statements, not definitions. PROPOSED "
-                "(2026-09-19): the classification is for Stephen to confirm.", []),
+                "known contents are commodity-specific statements, not definitions. A cask or a "
+                "sack is both a measure and a package, and carries both dimensions.", []),
 }
 
 
 def unit_uri(row: dict) -> str:
-    return f"{W3ID}unit/{row['dimension']}/{row['slug']}"
+    return f"{W3ID}unit/{row['slug']}"          # D7: no dimension in the URI
+
+
+def dimensions_of(key: str, row: dict) -> list[str]:
+    return [row["dimension"], *(d for d in EXTRA_DIMENSIONS.get(key, ()) if d != row["dimension"])]
 
 
 def ref(row: dict, cat: dict) -> dict:
@@ -702,19 +721,24 @@ def unit_doc(key: str, row: dict, cat: dict, by_key: dict, entries: dict, source
     if notes:
         doc["referred_to_by"] = notes
     doc["identified_by"] = unit_names(key, entries, sources)
-    doc["quantityKind"] = f"hectorid:unit/{row['dimension']}"
+    doc["quantityKind"] = [f"hectorid:unit/dimension/{d}" for d in dimensions_of(key, row)]
     if g is not None:
         doc["conversionToGram"] = num_text(g) if g.denominator == 1 or len(num_text(g)) < 24 else f"{float(g):.6f}"
     defined = []
-    for d in defs_by_unit.get(key, []):
-        t = by_key.get(d["target"])
-        if not t:
-            continue
+    readings = [d for d in defs_by_unit.get(key, []) if by_key.get(d["target"])]
+    for d in readings:
+        t = by_key[d["target"]]
+        status = []
+        if not d["exact"]:
+            status.append("Not exact: approximate, or one of several readings")
+        if len(readings) > 1:
+            status.append(f"One of {len(readings)} readings the sources give for this unit; none is preferred")
         defined.append({"type": "Dimension", "value": _json_num(frac(d["value"])),
                         "unit": ref(t, cat),
                         "referred_to_by": [{"type": "LinguisticObject", "classified_as": [AAT_BRIEF],
                                             "content": "Source: " + d["source"] +
-                                            (f". Note: {d['note']}" if d["note"] else "")}]})
+                                            (f". Note: {d['note']}" if d["note"] else "") +
+                                            "".join(f". {x}" for x in status)}]})
     if defined:
         doc["definedAs"] = defined
     if e:
@@ -762,14 +786,14 @@ def stage_vocabulary(site: Path):
         if doc["id"] not in ids:
             voc["@graph"].append(doc)
     for n in voc["@graph"]:
-        if n["id"] == "hector:attestationCount":
+        if ATTESTATION_COMMENT and n["id"] == "hector:attestationCount":
             n["rdfs:comment"] = ATTESTATION_COMMENT
     vpath.write_text(json.dumps(voc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
 def dimension_doc(dim: str) -> dict:
     label, text, eq = DIMENSION_DOCS[dim]
-    doc = {"@context": CONTEXT, "id": f"{W3ID}unit/{dim}", "type": "Type", "_label": label,
+    doc = {"@context": CONTEXT, "id": f"{W3ID}unit/dimension/{dim}", "type": "Type", "_label": label,
            "referred_to_by": [{"type": "LinguisticObject", "classified_as": [AAT_BRIEF], "content": text}]}
     if eq:
         doc["equivalent"] = eq
@@ -808,9 +832,13 @@ def build(lca: Path, site: Path, out: Path, ledger_path: Path, rates_path: Path,
     defs_by_unit = collections.defaultdict(list)
     exact_defs = collections.defaultdict(list)
     for d in conv:
-        if d["scope"] == "general" and d["exact"] and d["target"] in by_key and d["unit"] in by_key:
+        # D7 (29 Sep 2026): EVERY general reading is published, each with its source; an inexact
+        # one says so, and none is chosen where sources disagree. conversionToGram still follows
+        # exact definitions only.
+        if d["scope"] == "general" and d["target"] in by_key and d["unit"] in by_key:
             defs_by_unit[d["unit"]].append(d)
-            exact_defs[d["unit"]].append((frac(d["value"]), d["target"]))
+            if d["exact"]:
+                exact_defs[d["unit"]].append((frac(d["value"]), d["target"]))
 
     # stage: rebuild build/site/unit from this repo's unit/ and add the generated records
     if not (site / "context" / "hector.jsonld").exists():
@@ -819,7 +847,7 @@ def build(lca: Path, site: Path, out: Path, ledger_path: Path, rates_path: Path,
     shutil.copytree(REPO / "unit", site / "unit")
     stage_vocabulary(site)
     for dim in DIMENSIONS:
-        p = site / "unit" / dim / "ontology.json"
+        p = site / "unit" / "dimension" / dim / "ontology.json"
         if not p.exists():
             p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(json.dumps(dimension_doc(dim), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -844,8 +872,8 @@ def build(lca: Path, site: Path, out: Path, ledger_path: Path, rates_path: Path,
         if h != row.get("content_sha256"):
             row["content_sha256"], row["modified"] = h, today
         doc["modified"] = row["modified"]
-        p = site / "unit" / row["dimension"] / row["slug"] / "ontology.json"
-        if p.exists() and not (REPO / "unit" / row["dimension"] / row["slug"] / "ontology.json").exists():
+        p = site / "unit" / row["slug"] / "ontology.json"
+        if p.exists() and not (REPO / "unit" / row["slug"] / "ontology.json").exists():
             report["path_clash"].append(str(p))
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

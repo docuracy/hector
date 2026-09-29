@@ -16,6 +16,13 @@
 ![hector_model_diagram](https://github.com/user-attachments/assets/1b61207b-0101-43c9-b905-f42ef3f78400)
 
 
+## Licence
+
+- **Data** (commodity, unit and rate records, ledgers, vocabulary): **CC BY 4.0** -- see
+  [LICENSE-DATA](LICENSE-DATA), which says whom to credit (HECTOR, Stuart Jenks's
+  transcriptions, and the London Customs Accounts project).
+- **Code**: MIT -- see [LICENSE](LICENSE).
+
 ## Design Principles
 
 - **Stable Identification** – Each entity has a permanent URI and machine-readable definition.

@@ -31,7 +31,7 @@ Checks (codes appear in the output):
   UNIDENTIFIED-IDENTITY AAT 300386154 "unidentified (information indicator)" used as an
                         identity or match (equivalent / sameAs / exactMatch / closeMatch)
   IDENTITY-CLASS        the same IRI is both an identity/match and a class/broader of one node
-  KIND                  document shape wrong for its path (commodity/, unit/<dim>/, unit/<dim>/<u>)
+  KIND                  document shape wrong for its path (commodity/<c>, unit/<u>, unit/dimension/<d>)
   SHACL                 violations of shapes/hector.shacl.ttl on the expanded graph
   ENTITY-URI            the document's subject is not https://w3id.org/hector/<its path>, so
                         it cannot dereference to this file (URI policy D3, docs/uri-policy.md)
@@ -385,13 +385,19 @@ def check_kind(path: Path, g: Graph, subj: URIRef, add):
         if names and len(preferred) != 1:
             add("ERROR", "KIND", f"a commodity needs exactly one Name classified as preferred "
                 f"term (aat:300404670), found {len(preferred)}")
-    elif parts[:1] == ("unit",) and len(parts) == 2:
+    # D7 (29 Sep 2026): a unit is unit/<slug>; its dimensions are Types at unit/dimension/<d>,
+    # named in quantityKind. The pre-D7 unit/<dim>/<unit> paths survive only as deprecation
+    # records, which returned above.
+    elif parts[:2] == ("unit", "dimension") and len(parts) == 3:
         if CRM.E58_Measurement_Unit in types or CRM.E55_Type not in types:
-            add("ERROR", "KIND", f"unit/{parts[1]} is a dimension: it must be a Type (crm:E55_Type), "
-                "not a MeasurementUnit")
-    elif parts[:1] == ("unit",) and len(parts) >= 3:
+            add("ERROR", "KIND", f"unit/dimension/{parts[2]} is a dimension: it must be a Type "
+                "(crm:E55_Type), not a MeasurementUnit")
+    elif parts[:1] == ("unit",) and len(parts) == 2:
         if CRM.E58_Measurement_Unit not in types:
             add("ERROR", "KIND", "a unit must be a Linked Art MeasurementUnit (crm:E58_Measurement_Unit)")
+    elif parts[:1] == ("unit",):
+        add("ERROR", "KIND", f"{'/'.join(parts)}: a unit's URI is unit/<slug> and a dimension's "
+            "unit/dimension/<d> (URI policy, D7); a deeper path may only be a deprecation record")
 
 
 def run_shacl(path: Path, g: Graph) -> list[Issue]:
