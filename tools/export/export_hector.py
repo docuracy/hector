@@ -40,6 +40,8 @@ import unicodedata
 from pathlib import Path
 from urllib.parse import quote
 
+from tools.phonetics.ipa import transcribe as phonetic_key
+
 REPO = Path(__file__).resolve().parents[2]
 LCA = Path("/home/stephen/PycharmProjects/London_Customs_Accounts")
 W3ID = "https://w3id.org/hector/"
@@ -265,6 +267,10 @@ def names(key: str, entry: dict, sources: list[dict]) -> list[dict]:
         if b:
             n["validThrough"] = f"{b:04d}"
         out.append(n)
+    for n in out:  # task 13: IPA key for matching variant spellings (tools/phonetics/ipa.py)
+        k = phonetic_key(n["content"])
+        if k:
+            n["phoneticKey"] = [k]
     return out
 
 

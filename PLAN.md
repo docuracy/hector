@@ -79,7 +79,7 @@ Phase 0 complete 2026-09-18.
 | # | task | status |
 |---|---|---|
 | **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `equivalent` (Linked Art's identity link, as in the saffron exemplar); close → `closeMatch`; broader → `broader` (`skos:broader`; on a Linked Art Type, `classified_as` would mean "a kind of type", not "narrower than"); nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | **built 2026-09-18**, local only: `tools/export/export_hector.py` → `build/site/` (staging copy of the site, 2,452 commodity records) + `build/ledger/commodities.tsv`. The whole staging site validates (0 errors); identity counts reproduce C1 exactly. Forms carry no language in the glossary, so Names have none (not guessed). Not yet emitted: groups (no IRIs), qualifiers (decision 2), the `p` matching code (not IPA; task 13 gives IPA). **Publishing = copy `build/site/commodity/` + commit the ledger, after task 1** |
-| 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | todo |
+| 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | **built 29 Sep, local** (`tools/phonetics/ipa.py`, method `lme-letters-v1`): every form read with late Middle English letter values (how the clerks read both languages), ~50 ordered rules, pure Python, no stress; a phoneticKey on 20,933 of 20,935 Names (exporter + qualified records). Chosen by measurement (`tools/phonetics/compare.py`, 18,984 same-concept nearest-neighbour queries): 0.818 against 0.797 bare spelling, 0.797 Epitran lat, 0.769 Epitran eng, 0.777 LCA get_ipa, 0.774 routed by language guess, 0.719 phonemize.js (fra-Latn 0.832 rejected: it wins by silencing inflections). `--check` proven to fail (rule removed: 10 tests + 8,314 stale keys; shuffled rules: nondeterminism). Known weaknesses in the module docstring and PLAN history. Bump METHOD on any rule change |
 | 14 [E] | Emit qualified commodities per decision 2 | **built 29 Sep, local** (`tools/rates/link_rates.py`): a combination gets its own record (`commodity/<concept>-<qualifier>`, skos:broader + compoundOf to the base, spellings as written as attested Names) only where the books price it apart -- the same concept at the same unit at different prices with different qualifiers. 680 records over 171 concepts (issue #2: 170 heads). Qualifier spellings joined through LCA qualifiers.json and a light fold (whit/whyte, spruse/sprewce, newcastell/neucastell); some remain split (neucastel/neuecastel). Slugs minted once into `build/ledger/qualified.tsv` |
 
 ### Rates
@@ -137,8 +137,8 @@ task 1):
 needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
 
 **Next, needing no decision** (all local, publish only after task 1):
-1. **13**: IPA phonetic keys for all forms, reusing LCA `process/helpers/phonetic.py`. The
-   glossary's `p` field is a matching code, not IPA, so it is not used.
+1. ~~**13**~~ built 29 Sep (task row above): LCA's helpers measured WORSE than a purpose-built
+   late-Middle-English letter reading, so they were not reused.
 2. ~~**18**: the unit catalogue~~ built 2026-09-19 (with 20), local only. Open for Stephen:
    - ~~dimension classification, `definedAs`, `hector:each`~~ **decided 29 Sep (D7)**: no dimension
      in unit URIs (re-mint `build/ledger/units.tsv` as `unit/<slug>`, dimension a multi-valued

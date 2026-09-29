@@ -40,6 +40,8 @@ import sys
 import unicodedata
 from pathlib import Path
 
+from tools.phonetics.ipa import transcribe as phonetic_key
+
 REPO = Path(__file__).resolve().parents[2]
 LCA = REPO.parent / "London_Customs_Accounts"
 BUILD = REPO / "build"
@@ -285,8 +287,13 @@ def run(lca: Path = LCA, today: str | None = None) -> dict:
                                   "classified_as": [AAT_PREFERRED]}]
                                 + [{"type": "Name", "content": t, "classified_as": [ATTESTED]} for t in texts],
                "broader": [{"id": base_uri, "type": "Type", "_label": base_label}],
+               # task 13: the same IPA key the exporter gives every Name (tools/phonetics/ipa.py)
                "compoundOf": [{"id": base_uri, "type": "Type", "_label": base_label}],
                "modified": today}
+        for n in doc["identified_by"]:
+            k = phonetic_key(n["content"])
+            if k:
+                n["phoneticKey"] = [k]
         p = site / "commodity" / slug / "ontology.json"
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
