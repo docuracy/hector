@@ -22,8 +22,7 @@ uses. `tools/validate.py` reported this as `ENTITY-URI` on every document.
 ### 1. Entities get path URIs, never fragments
 
     https://w3id.org/hector/commodity/<slug>
-    https://w3id.org/hector/unit/<dimension>/<slug>          e.g. unit/mass/pound
-    https://w3id.org/hector/unit/<dimension>                 the dimension itself
+    https://w3id.org/hector/unit/<slug>                      e.g. unit/pound
     https://w3id.org/hector/rate/<book>/<id>                 e.g. rate/1558-inward/0412
 
 These already resolve through the existing w3id rules: with a JSON `Accept` header they
@@ -97,6 +96,10 @@ does. So:
 2. **Qualified commodities (decision 2):** if flattened, do their slugs follow the qualifier
    (`canvas-normandy`), or are they opaque? **Recommend readable slugs**, since the ledger makes
    them stable anyway.
-3. **Units:** is the `<dimension>` path level wanted? It makes URIs longer, and a unit that
-   changes dimension (rare) would need a redirect. **Recommend keeping it**: it is already public
-   and it groups units usefully.
+3. **Units:** ~~is the `<dimension>` path level wanted?~~ **Amended 29 Sep 2026 (Stephen): no.**
+   Most customs units are both a container and a customary quantity (sack, barrel, tun, pipe),
+   so a dimension in the path would freeze a contested classification into a permanent URI.
+   Units are `unit/<slug>`; the dimension is a property of the unit record, may hold more than
+   one value, and can be corrected. The one live exemplar, `unit/mass/pound`, and `unit/mass`
+   get deprecation records (`owl:deprecated`, `dcterms:isReplacedBy` → `unit/pound`) per §3,
+   rather than a 404.

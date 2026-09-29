@@ -19,16 +19,17 @@ London_Customs_Accounts (LCA), and the outputs land here.
 
 | # | decision | recommendation | blocks |
 |---|---|---|---|
-| **1** [X] | **Jenks permission** for derived structured data, ideally CC BY 4.0 (LCA `documentation/data_licensing_strategy.md` §1) | put it in writing now; offer the split (open licence on derived data, verbatim `original_text` held back) | all publication |
-| **2** [D] | **Flatten vs compose** qualified commodities (issue #2 §4) | **flatten**: `Normandy canvas` gets its own commodity URI with the rate attached, linked by `hector:compoundOf`. Works with the schema today, avoids AAT for ~400 qualifiers | 12, 14–17 |
-| **3** [D] | **URI and versioning policy** | **adopted 2026-09-18** as drafted: `docs/uri-policy.md` | every export |
-| **D4** [D] | **HECTOR URI vs LCA glossary URI.** Each concept already has `https://w3id.org/mlca/glossary/{key}`. Which is canonical? | HECTOR canonical; LCA's JSON-LD emits `skos:exactMatch` (or `owl:sameAs`) to it. Keeps LCA URIs working | 12 |
-| **D5** [D] | **Data licence for HECTOR output** (repo `LICENSE` is MIT, code only; glossary metadata says CC BY-SA; strategy prefers CC BY) | follows task 1; add a `LICENSE-DATA` once decided | 24, 25 |
-| **D6** [D] | **Where do the 1604-only commodities live?** 1604 rates need commodity records to link to, but LCA removed those entries (C8: 255 BOR-only in the backup, uncurated since Feb 2026) | **back in the LCA glossary with a scope flag** (e.g. `scope: "bor1604"`), which LCA's editor and tagger can filter out: one glossary, one editor, one history, and the exporter already reads it. The alternative is a HECTOR-owned supplementary glossary, which means a second editor and a second place to curate | 1604 half of 15 → 17 |
+| **1** [X] | **Jenks permission** for derived structured data (LCA `documentation/data_licensing_strategy.md` §1) | **Agreed informally (Stephen, 29 Sep 2026).** Before HECTOR's first publication, get a one-line written confirmation that covers CC BY 4.0 on the derived data (verbatim `original_text` held back). Building continues locally meanwhile | all publication |
+| **2** [D] | **Flatten vs compose** qualified commodities (issue #2 §4) | **Decided 29 Sep: flatten only the combinations the Books of Rates price separately** (at most the 391 rate-bearing phrases, not issue #2's ~2,400). Each gets a commodity URI carrying its rates, linked to its base commodity by `skos:broader` *and* `hector:compoundOf`. Corpus cargo records keep composing (concept + qualifiers). No qualifier needs AAT before release. Slugs readable (`canvas-normandy`), per uri-policy open question 2 | 12, 14–17 |
+| **3** [D] | **URI and versioning policy** | **adopted 2026-09-18** as drafted: `docs/uri-policy.md`; **amended 29 Sep for units** (below) | every export |
+| **D4** [D] | **HECTOR URI vs LCA glossary URI.** Each concept already has `https://w3id.org/mlca/glossary/{key}`. Which is canonical? | **Decided 29 Sep: HECTOR canonical.** LCA keeps its glossary URIs and emits `skos:exactMatch` (not `owl:sameAs`, which would merge LCA-only statements into HECTOR's) to the HECTOR URI. LCA commits the ledger and resolves key → URI at publication; records (incl. pass-2) keep the glossary key | 12 |
+| **D5** [D] | **Data licence for HECTOR output** | **Decided 29 Sep: CC BY 4.0**, the same as LCA (share-alike removed there 22 Sep). Add `LICENSE-DATA` beside the MIT code `LICENSE`, crediting Stuart Jenks's transcriptions of the Books of Rates | 24, 25 |
+| **D6** [D] | **Where do the 1604-only commodities live?** (C8: 255 BOR-only entries removed from LCA in e9b5c99) | **Decided 29 Sep: back in the LCA glossary with `scope: "bor1604"`.** Condition: the scope is enforced in ONE place, LCA's glossary loader, so the entries stay out of LCA's parser and public glossary/JSON-LD; and the restore must pass LCA's per-file no-anchor-loss check (adding forms has flipped fuzzy matches corpus-wide before). Curated in the concepts tool, filterable | 1604 half of 15 → 17 |
+| **D7** [D] | **Units** (task 18 open questions) | **Decided 29 Sep:** (a) **no dimension in unit URIs**: `…/unit/<slug>`; dimension is a property of the record, may be multi-valued (sack: mass *and* package) and correctable. The live exemplar `unit/mass/pound` gets a deprecation record → `unit/pound`; `unit/mass` likewise retired. (b) adopt **`definedAs`** and **`hector:each`** into the context and vocabulary. (c) **conflicting conversions are all published**, each a separate statement with source and scope, doubtful ones `exact: false` with a note; nothing is chosen between them. The wey and aum glossary descriptions go to the curators as defects. (d) **task 19 (QUDT/Noback) dropped** | 18, 20, first publication |
 
 **D3, the URI policy.** Adopted 2026-09-18; the full text is `docs/uri-policy.md`. In short:
 - entities are **path URIs**, never fragments: `https://w3id.org/hector/commodity/<slug>`,
-  `…/unit/<dimension>/<slug>`, `…/rate/<book>/<id>`;
+  `…/unit/<slug>` (dimension dropped from the path 29 Sep, D7), `…/rate/<book>/<id>`;
 - vocabulary terms (properties, classes) in **one** namespace shared by both repos. Recommend
   `https://w3id.org/hector/ontology#`, which LCA already emits for `hector:compoundOf`, so
   only HECTOR's context changes. Serve a vocabulary document at `ontology/ontology.json`;
@@ -128,13 +129,10 @@ task 1):
 | `build/ledger/units.tsv` (unit slug ledger, with `dimension`) | minted by `build_units` | **not yet authoritative**, as `commodities.tsv`. A minted dimension is kept even if the classification changes (reported), since the path contains it |
 | `build/lca-removed-1604/` | `git -C LCA show e9b5c99^:<path>` | LCA's removed 1604 TSVs and pre-filter index, for reference |
 
-**Waiting on Stephen:**
-- **1**, Jenks permission. Blocks all publication of the above.
-- **D6**, where the 1604-only commodities live (C8). Blocks linking 1604 rates to commodities.
-- **2**, flatten vs compose. Blocks 14 and the qualifier half of rate linking (16, 17).
-- **D4**, whether HECTOR or the LCA glossary URI is canonical. **D5**, the data licence.
+**Decisions taken 29 Sep 2026** (see §1): 2, D4, D5, D6, D7 decided; 1 agreed informally.
+**Waiting on Stephen:** only the written Jenks confirmation, which gates publication.
 - C8: 88 glossary entries with Customs Account sources vanished between Feb 2026 and now with
-  no history record. Worth a look on the LCA side.
+  no history record. Being traced on the LCA side (29 Sep).
 
 **Told to the LCA session** (it may not have acted): the namespace is unified (no LCA change
 needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
@@ -143,24 +141,20 @@ needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
 1. **13**: IPA phonetic keys for all forms, reusing LCA `process/helpers/phonetic.py`. The
    glossary's `p` field is a matching code, not IPA, so it is not used.
 2. ~~**18**: the unit catalogue~~ built 2026-09-19 (with 20), local only. Open for Stephen:
-   - **the dimension classification** (`tools/units/build_units.py`: `MASS`, `LENGTH`, `VOLUME`,
-     `COUNT`, the rest `package`). `package` is not a physical dimension; is it the right path
-     level for bale/fardel/chest? `sack` is `mass` (the 364 lb wool sack) though it is also a
-     packing unit; `barrel`/`tun`/`pipe` are `volume`. Settle this before first publication:
-     the dimension is part of the URI;
-   - **`definedAs`** (proposed term) and the unit sense of `attestationCount`: adopt into
-     `context/hector.jsonld` and `ontology/ontology.json`, or model conversions another way;
-   - **`hector:each`**, a HECTOR-authored count unit for rates charged per item ("the hawke");
+   - ~~dimension classification, `definedAs`, `hector:each`~~ **decided 29 Sep (D7)**: no dimension
+     in unit URIs (re-mint `build/ledger/units.tsv` as `unit/<slug>`, dimension a multi-valued
+     property); adopt `definedAs` and `hector:each`. The unit sense of `attestationCount` rides
+     with `definedAs`;
    - the hand lists `NOT_UNITS` (e.g. `weight`, ambiguous), `CONTAINER_GOODS`, `PACKING_INCLUDE`;
-   - conflicts found, left unresolved in `conversions.tsv`: the LCA duty ratios charge a wine
-     **barrel as 1/6 tun** (the later statutory barrel is 1/8) and a **butt like a tun** (the
-     glossary: butt = 2 hogsheads = ½ tun); the **mark** is "20 pieces, or 2 dozen" in the
-     glossary but 2 dozen in the Books of Rates; **wey** "12 stone or c. 300 lb" is
-     self-inconsistent; **aum** is ⅓ and ⅕ of a tun in one description;
-   - **19** (QUDT/Noback) looks droppable: the only loss is SI factors for length and volume.
+   - conflicts in `conversions.tsv` (wine **barrel** 1/6 vs the later statutory 1/8 tun; **butt**
+     charged like a tun vs the glossary's ½ tun; **mark** 20 pieces vs 2 dozen; **wey**
+     self-inconsistent; **aum** ⅓ vs ⅕): **decided 29 Sep (D7): publish every reading as its own
+     sourced, scoped statement**, doubtful ones `exact: false` with a note; choose none. Send the
+     wey and aum descriptions to LCA's curators as glossary defects;
+   - ~~**19** (QUDT/Noback)~~ **dropped 29 Sep (D7)**.
 3. **17 (draft)**: emit Rate nodes into `build/site/` for commodities that already exist.
    1507–1558 rates can be linked by matching `commodity_text` against glossary forms; 1604
-   waits on D6.
+   needs the D6 restore on the LCA side first. Qualified rates follow decision 2 (flatten rated only).
 4. When task 1 lands: copy `build/site/commodity/` into the repo and commit
    `build/ledger/commodities.tsv` as `ledger/commodities.tsv` **in the same commit**, run
    `tools/validate.py --online` locally (CI cannot reach Getty), then push.
