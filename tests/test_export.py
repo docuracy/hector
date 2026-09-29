@@ -214,6 +214,43 @@ def test_later_rename_wins_whatever_the_record_order(tmp_path):
     assert ledger_rows(ledger)["gizmo"]["glossary_key"] == "gizmo-final"
 
 
+def test_a_merge_after_a_burst_of_rekeys_is_followed(tmp_path):
+    # The real LCA shape (cradil, 9 Jun 2026): renamed away and back, then merged. Ranking
+    # rekeys above merges looped cradil -> cradle_3 -> cradil and reported it missing.
+    run(tmp_path, glossary({"cradle_2": entry(), "cradil": entry()}))
+    _, ledger, report = run(tmp_path, glossary(
+        {"cradle_2": entry()},
+        rekey_history=[{"timestamp": "2026-06-09T09:14:24Z", "old_key": "cradil", "new_key": "cradle_3"},
+                       {"timestamp": "2026-06-09T09:14:51Z", "old_key": "cradle_3", "new_key": "cradil"}],
+        merge_history=[{"timestamp": "2026-06-09T09:15:16Z", "primary": "cradle_2", "merged": ["cradil"]}]))
+    assert report["missing"] == []
+    by_key = {r["glossary_key"]: r for r in ledger_rows(ledger).values()}
+    assert by_key["cradil"]["status"] == "deprecated"
+    assert by_key["cradil"]["replaced_by"] == by_key["cradle_2"]["slug"]
+
+
+def test_a_rekey_after_a_merge_record_wins(tmp_path):
+    # Latest record wins whatever its kind, in both directions.
+    run(tmp_path, glossary({"gadget": entry(), "gadjet": entry()}))
+    _, ledger, _ = run(tmp_path, glossary(
+        {"gadget": entry(), "gadjets": entry()},
+        merge_history=[{"timestamp": "2026-06-01T00:00:00Z", "primary": "gadget", "merged": ["gadjet"]}],
+        rekey_history=[{"timestamp": "2026-06-02T00:00:00Z", "old_key": "gadjet", "new_key": "gadjets"}]))
+    assert ledger_rows(ledger)["gadjet"]["glossary_key"] == "gadjets"
+
+
+def test_a_merge_outranks_the_deletion_recorded_beside_it(tmp_path):
+    # LCA's scripted consolidations write both at one timestamp (tablys, 17 Jun 2026).
+    run(tmp_path, glossary({"tabille": entry(), "tablys": entry()}))
+    _, ledger, _ = run(tmp_path, glossary(
+        {"tabille": entry()},
+        merge_history=[{"timestamp": "2026-06-17T15:51:55Z", "primary": "tabille", "merged": ["tablys"]}],
+        deletion_history=[{"timestamp": "2026-06-17T15:51:55Z", "key": "tablys", "rationale": "Merged into tabille"}]))
+    by_key = {r["glossary_key"]: r for r in ledger_rows(ledger).values()}
+    assert by_key["tablys"]["status"] == "deprecated"
+    assert by_key["tablys"]["replaced_by"] == by_key["tabille"]["slug"]
+
+
 def test_a_key_that_vanishes_without_history_is_reported_not_dropped(tmp_path):
     run(tmp_path, glossary({"widget": entry(), "gizmo": entry()}))
     site, ledger, report = run(tmp_path, glossary({"widget": entry()}))

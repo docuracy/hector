@@ -88,55 +88,65 @@ def save_ledger(path: Path, rows: list[dict]):
             w.writerow({k: r.get(k, "") for k in LEDGER_FIELDS})
 
 
-def history(meta: dict) -> tuple[dict, dict, set]:
-    """LCA's rekey/merge/deletion history as {old: new}, {merged: primary}, {deleted}.
+def history(meta: dict) -> dict[str, tuple[str, str | None]]:
+    """LCA's rekey/merge/deletion history as {old_key: (kind, new_key)}, kind in rekey/merge/delete.
 
     LCA writes two record shapes (both seen 2026-09-18): {timestamp, old_key, new_key} /
     {when, from, to} for rekeys; {timestamp, primary, merged: [...]} / {when, from, into} for
-    merges; {timestamp, key, ...} / {when, key, reason} for deletions. Records are applied in
-    time order, so a later rename of the same key wins.
+    merges; {timestamp, key, ...} / {when, key, reason} for deletions.
+
+    All three kinds are replayed as ONE stream in time order, so for each key its latest record
+    wins whatever its kind. Ranking the kinds instead (rekey before merge) was wrong: the
+    browser editor writes a burst of rekeys just before a merge, e.g. cradil -> cradle_3 ->
+    cradil at 09:14 and then cradil merged into cradle_2 at 09:15 (9 Jun 2026); preferring the
+    rekey looped and reported the key as missing (31 of the 88 in PLAN.md C8, 29 Sep 2026).
     """
     def when(r):
         return r.get("timestamp") or r.get("when") or ""
 
-    rekeys, merged_into, deleted = {}, {}, set()
-    for r in sorted(meta.get("rekey_history", []), key=when):
+    events = []  # (when, kind, old, new)
+    for r in meta.get("rekey_history", []):
         old, new = r.get("old_key", r.get("from")), r.get("new_key", r.get("to"))
         if old and new:
-            rekeys[old] = new
-    for r in sorted(meta.get("merge_history", []), key=when):
+            events.append((when(r), "rekey", old, new))
+    for r in meta.get("merge_history", []):
         if "primary" in r:
-            for k in r.get("merged", []):
-                merged_into[k] = r["primary"]
+            events += [(when(r), "merge", k, r["primary"]) for k in r.get("merged", [])]
         elif r.get("from") and r.get("into"):
-            merged_into[r["from"]] = r["into"]
+            events.append((when(r), "merge", r["from"], r["into"]))
     for r in meta.get("deletion_history", []):
         if r.get("key"):
-            deleted.add(r["key"])
-    return rekeys, merged_into, deleted
+            events.append((when(r), "delete", r["key"], None))
+    # At one instant, a merge outranks the deletion written beside it: LCA's scripted
+    # consolidations record both, with the deletion only saying "Merged into tabille" (17 Jun
+    # 2026). The sort is stable, so other ties keep file order.
+    tie = {"delete": 0, "rekey": 1, "merge": 2}
+    last = {}
+    for _, kind, old, new in sorted(events, key=lambda e: (e[0], tie[e[1]])):
+        last[old] = (kind, new)
+    return last
 
 
 def successor(key: str, meta: dict, entries: dict) -> tuple[str, str | None]:
     """Follow LCA's history for a key that has left the glossary.
 
     Returns (kind, new_key): ('rekey', k) if renamed to a live key k; ('merge', k) if merged
-    into live key k; ('delete', None) if deleted; ('missing', None) if there is no record.
+    into live key k; ('delete', None) if deleted; ('missing', None) if there is no record, or
+    the records end at a key that has itself gone without one.
     """
-    rekeys, merged_into, deleted = history(meta)
+    last = history(meta)
 
     kind, k, seen = None, key, set()
     while k not in entries and k not in seen:
         seen.add(k)
-        if k in rekeys:
-            kind = kind or "rekey"
-            k = rekeys[k]
-        elif k in merged_into:
-            kind = "merge"
-            k = merged_into[k]
-        elif k in deleted:
-            return "delete", None
-        else:
+        if k not in last:
             return "missing", None
+        step, new = last[k]
+        if step == "delete":
+            return "delete", None
+        if step == "merge":
+            kind = "merge"
+        k = new
     return (kind or "rekey", k) if k in entries else ("missing", None)
 
 

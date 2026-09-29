@@ -131,8 +131,7 @@ task 1):
 
 **Decisions taken 29 Sep 2026** (see §1): 2, D4, D5, D6, D7 decided; 1 agreed informally.
 **Waiting on Stephen:** only the written Jenks confirmation, which gates publication.
-- C8: 88 glossary entries with Customs Account sources vanished between Feb 2026 and now with
-  no history record. Being traced on the LCA side (29 Sep).
+- C8 resolved 29 Sep: the 88 are curation, not loss (§5); `successor()` fixed.
 
 **Told to the LCA session** (it may not have acted): the namespace is unified (no LCA change
 needed); the three wrong ids (C7); LCA's glossary URIs contain raw spaces.
@@ -205,6 +204,28 @@ where others read it.
   the pre-removal backup, 346 vanished without any rekey/merge/deletion record: 255 have only
   Books of Rates sources (the 1604 removal), 88 have Customs Account sources (disappeared for
   some other, unrecorded reason: ask Stephen/LCA), 3 have none. See decision D6.
+  **Revised 2026-09-29: the 88 are curation, not loss.** Traced through all 527 LCA commits
+  that touched the glossary (key sets diffed commit by commit): every one was removed between
+  10 May and 21 Jul 2026 by Stephen's commits, 30 of them the browser editor's and the rest
+  scripted consolidations (thread 2c6f5d87, "last" 1377d4bf, Eliot's duplicate queue 59a687fe,
+  gun fb6f4546, gum 706e3a8b, and seven single-key commits). By history: **31** resolve to a
+  live concept (hector's check was wrong, see below), **4** are recorded deletions (`cocket`,
+  a customs seal, deliberately), **13** have chains ending at a split target such as
+  "poke/pocket" or "lyneboard / line" (no single successor: correctly left for a human),
+  **40** have no record at all because the scripted consolidations never wrote history. By
+  forms: 64 keep all or most of their spellings under a live concept and 21 split cleanly into
+  a live head plus a qualifier (`flaunders tile` → tile + q(flaunders)). The only loss of
+  meaning is **`gunes vocati basis`**, the "base", the smallest cannon (OED base n.6): `gun`
+  survives, "basis" exists nowhere; plus one unregistered variant, "pro toyles" of
+  `toalys pro joyners`. Both sent to LCA's curators. A rerun today also counts `ciste`
+  (removed 22 Sep by the container rule, forms intact), hence 89.
+  **The check was wrong for 31 of them.** `successor()` ranked rekeys above merges whatever
+  their time, and the browser editor writes a burst of rekeys just before a merge (`cradil` →
+  `cradle_3` → `cradil`, then merged into `cradle_2`, 9 Jun), so it looped. Fixed 29 Sep: one
+  time-ordered stream, the latest record per key wins, and at a tied instant a merge outranks
+  the deletion scripted consolidations write beside it. Over all 1,983 keys gone since the
+  backup, "missing" falls 347 → 307; the tests `cradil`, `tablys` and the reverse order each
+  fail on the old code or pin the new rule.
 - **C9 (2026-09-19): 353 corpus-attested unit concepts, not 357.** Distinct `matches[0].key` over
   spans typed `unit` (281 keys, 432,803 spans) or `commodity-unit` (72 keys, 16,987 spans) in
   `LCA/docs/data/ladings/*.json.gz`; all 353 are glossary keys. 210 of them are in the units group;
