@@ -110,6 +110,17 @@ short, drop 19 and 23 before 21 or 25.
 
 ---
 
+## 3a. Parked 29 September 2026 (read this first)
+
+Decisions 2, D4, D5, D6, D7 taken 29 Sep (§1). LIVE: D7 (units at unit/<slug>, deprecation
+records for the old paths, definedAs adopted, every conflicting conversion published) and D5
+(LICENSE-DATA). LOCAL in build/, Jenks-derived: rates 1507-1558 linked (tasks 14, 17),
+680 qualified records, IPA keys (task 13). Run order: parse_bor, export_hector, build_units,
+link_rates; staging 3,388 docs, 0 errors; 115 tests. **Blocker: Jenks's written confirmation
+(task 1).** Next: the 314 unlinked rate spellings to LCA's curators; D6 (1604 commodities
+back into the LCA glossary behind a loader filter); D4 on the LCA side once the ledger is
+published; `ciste` needs an LCA history record (export exits 1 on it, by design).
+
 ## 4. Where things stand (handoff, 2026-09-18, end of session)
 
 **Done and live on `main`** (CI green; verified over w3id): Phase 0 complete (F1–F5, 21). The
