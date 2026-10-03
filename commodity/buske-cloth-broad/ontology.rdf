@@ -13,21 +13,49 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>buskə kloθə brodə</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/buske-cloth-broad#rate-1558-inward-104">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Buske clothe brode the C elles cont’ five score 50s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_buske_cloth_broad_cb15bf6f86470255294b49350f53476cd9b9cfe9aa3478e408e35fc6c39f4e9f503"/>
+    <hector:perQuantity rdf:nodeID="commodity_buske_cloth_broad_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 104 (transcribed by Stuart Jenks): 'Buske clothe brode the C elles cont’ five score' 50s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/buske-cloth-broad">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_buske_cloth_broad_cb35d14c12f9c322c9cb465696c28c6dc6be31377a3d42b19b5c1a8614ddd56717"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_buske_cloth_broad_cba82ef67fc9694b44418eb5becd69bdd12975e14ecc3581dc1532851b985f8432"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_buske_cloth_broad_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>buske (cloth broad)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/buske"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/buske"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/buske-cloth-broad#rate-1558-inward-104"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_buske_cloth_broad_cba82ef67fc9694b44418eb5becd69bdd12975e14ecc3581dc1532851b985f8432">
     <crm:P190_has_symbolic_content>buske (cloth broad)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>buskə kloθ broad</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_buske_cloth_broad_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_buske_cloth_broad_cb0">
     <crm:P190_has_symbolic_content>buske, qualified as ‘cloth broad’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_buske_cloth_broad_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_buske_cloth_broad_cb15bf6f86470255294b49350f53476cd9b9cfe9aa3478e408e35fc6c39f4e9f503">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -43,40 +71,12 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>hundred</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/buske-cloth-broad">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_buske_cloth_broad_cb35d14c12f9c322c9cb465696c28c6dc6be31377a3d42b19b5c1a8614ddd56717"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_buske_cloth_broad_cba82ef67fc9694b44418eb5becd69bdd12975e14ecc3581dc1532851b985f8432"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_buske_cloth_broad_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>buske (cloth broad)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/buske"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/buske"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/buske-cloth-broad#rate-1558-inward-104"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/buske-cloth-broad#rate-1558-inward-104">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Buske clothe brode the C elles cont’ five score 50s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_buske_cloth_broad_cb15bf6f86470255294b49350f53476cd9b9cfe9aa3478e408e35fc6c39f4e9f503"/>
-    <hector:perQuantity rdf:nodeID="commodity_buske_cloth_broad_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 104 (transcribed by Stuart Jenks): 'Buske clothe brode the C elles cont’ five score' 50s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

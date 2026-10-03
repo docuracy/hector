@@ -8,11 +8,19 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_sherd_cb18e920375e23b6d5c2b09c566cf2f935005ff39c6d24e150a1e211f40780e891e">
-    <crm:P190_has_symbolic_content>shredde</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300162391">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>cloth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sherd_cb11d4ba89024757f433553b2cfe249c06b76b771eca7e4021d909f8465f4a23a01">
+    <crm:P190_has_symbolic_content>shreddes</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ʃredə</hector:phoneticKey>
+    <hector:phoneticKey>ʃredəs</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/sherd">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -33,11 +41,19 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sherd#rate-1558-outward-57"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sherd#rate-1558-outward-58"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb2a66d53ac08aaac3eaf898c4f3c8f706af1aed53664136001d64f3a369edd8b95">
+  <rdf:Description rdf:nodeID="commodity_sherd_cb329b844b509ed166f78c30c7e9330b31dae730a707b0cb639fe5991acd06f3364">
+    <crm:P190_has_symbolic_content>shredes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>ʃredəs</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sherd_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£3</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">720</hector:valueInPence>
+    <hector:lsd>30s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">360</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sherd_cb301d9c3421d6c22b613d499901e661cbe44e1bc7d5f3271cf3d6a68a561de506e">
     <crm:P190_has_symbolic_content>sherd</crm:P190_has_symbolic_content>
@@ -56,12 +72,12 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1547</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sherd#rate-1558-outward-57">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sherd#rate-1558-outward-58">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 outward: Shreddes and lystes the pype £3</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_sherd_cb2a66d53ac08aaac3eaf898c4f3c8f706af1aed53664136001d64f3a369edd8b95"/>
-    <hector:perQuantity rdf:nodeID="commodity_sherd_cb260dd71a89fd34bb588188670ca2acc7c004fcbfaea0b7a56f10d085eeb8f33b0"/>
-    <hector:sourceText>Book of Rates 1558, outward, line 57 (transcribed by Stuart Jenks): 'Shreddes and lystes the pype' £3</hector:sourceText>
+    <rdfs:label>1558 outward: Shreddes and lystes the barrell 30s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_sherd_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2"/>
+    <hector:perQuantity rdf:nodeID="commodity_sherd_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, outward, line 58 (transcribed by Stuart Jenks): 'Shreddes and lystes the barrell' 30s</hector:sourceText>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
@@ -73,69 +89,52 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1508</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sherd#rate-1558-outward-58">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 outward: Shreddes and lystes the barrell 30s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_sherd_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2"/>
-    <hector:perQuantity rdf:nodeID="commodity_sherd_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, outward, line 58 (transcribed by Stuart Jenks): 'Shreddes and lystes the barrell' 30s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300162391">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>cloth</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300248023">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>remnants</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb1a41273159ef051e91d7edb0b9066f394a2d39194e00cc6a37a033ae4124d917b">
-    <crm:P190_has_symbolic_content>probably fragments of cloth, because exported together with lists (OED s.v. shard, sherd n.1 4c, 4d) | fragments of cloth (OED s.v. shard, sherd n.1 4c, 4d) | (of cloth) | remnants and lists, the selvage, border, or edge of a cloth, usually of different material from the body of the cloth (OED s.v. list n.2 1a) | of cloth | shreds, remnants of cloth</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb329b844b509ed166f78c30c7e9330b31dae730a707b0cb639fe5991acd06f3364">
-    <crm:P190_has_symbolic_content>shredes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ʃredəs</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb260dd71a89fd34bb588188670ca2acc7c004fcbfaea0b7a56f10d085eeb8f33b0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pipe"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb11d4ba89024757f433553b2cfe249c06b76b771eca7e4021d909f8465f4a23a01">
-    <crm:P190_has_symbolic_content>shreddes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ʃredəs</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sherd_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sherd_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>30s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">360</hector:valueInPence>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/pipe">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>pipe</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:nodeID="commodity_sherd_cb2a66d53ac08aaac3eaf898c4f3c8f706af1aed53664136001d64f3a369edd8b95">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£3</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">720</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sherd#rate-1558-outward-57">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 outward: Shreddes and lystes the pype £3</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_sherd_cb2a66d53ac08aaac3eaf898c4f3c8f706af1aed53664136001d64f3a369edd8b95"/>
+    <hector:perQuantity rdf:nodeID="commodity_sherd_cb260dd71a89fd34bb588188670ca2acc7c004fcbfaea0b7a56f10d085eeb8f33b0"/>
+    <hector:sourceText>Book of Rates 1558, outward, line 57 (transcribed by Stuart Jenks): 'Shreddes and lystes the pype' £3</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sherd">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>sherd (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300248023">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>remnants</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sherd_cb18e920375e23b6d5c2b09c566cf2f935005ff39c6d24e150a1e211f40780e891e">
+    <crm:P190_has_symbolic_content>shredde</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>ʃredə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sherd_cb1a41273159ef051e91d7edb0b9066f394a2d39194e00cc6a37a033ae4124d917b">
+    <crm:P190_has_symbolic_content>probably fragments of cloth, because exported together with lists (OED s.v. shard, sherd n.1 4c, 4d) | fragments of cloth (OED s.v. shard, sherd n.1 4c, 4d) | (of cloth) | remnants and lists, the selvage, border, or edge of a cloth, usually of different material from the body of the cloth (OED s.v. list n.2 1a) | of cloth | shreds, remnants of cloth</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sherd_cb205002d747b60d04f7e74501ae3d33c51e26d2ea5692b897b1a3b2e8b35d61c5f">
     <crm:P190_has_symbolic_content>shrede</crm:P190_has_symbolic_content>
@@ -145,20 +144,21 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1547</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>barrel</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sherd">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>sherd (London Customs Accounts glossary)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_sherd_cb260dd71a89fd34bb588188670ca2acc7c004fcbfaea0b7a56f10d085eeb8f33b0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pipe"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>barrel</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

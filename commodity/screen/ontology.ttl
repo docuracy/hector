@@ -9,8 +9,12 @@
 
 <https://w3id.org/hector/commodity/screen> a crm:E55_Type ;
     rdfs:label "screen" ;
-    dcterms:modified "2026-09-29"^^xsd:date ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
     crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "screvane" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skrevanə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "screnys" ;
             crm:P2_has_type hector:AttestedVariant ;
             hector:phoneticKey "skrenis" ;
@@ -44,7 +48,7 @@
             crm:P2_has_type aat:300435416 ] ;
     skos:exactMatch <https://w3id.org/mlca/glossary/screen> ;
     la:equivalent aat:300262203 ;
-    hector:attestationCount 6 .
+    hector:attestationCount 7 .
 
 aat:300262203 a crm:E55_Type ;
     rdfs:label "fire screens (equipment)" .

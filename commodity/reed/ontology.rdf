@@ -8,13 +8,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_reed_cb26963d624dc1e3319748d8a3101858ae60f09d2f0f6555bc3a7e7836007fdccb7">
-    <crm:P190_has_symbolic_content>redes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>redəs</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+  <rdf:Description rdf:nodeID="commodity_reed_cb13d1b686e92a64f49b10b48392e6e25e5d6fc67af9542b88d9913d53cf62636ad">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed#rate-1507-none-236">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -25,11 +26,48 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_reed_cb3500fc3a38c7bea7c9e977139921b84f12628de048a2617fa31ba4ba6490d20f4">
+    <crm:P190_has_symbolic_content>redys</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>redis</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1493</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1495</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_reed_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_reed_cb1aafd2057ed26c140661abbab8e5fb067b0629d00974ba9f838f474198828dac4">
+    <crm:P190_has_symbolic_content>reedes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>reːdəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed#rate-1545-inward-620">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Redes or canes the 1000 16s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_reed_cb3488b613aaabedd5b15f0a24f39052fca91f6f40ff8d3123e320e1a155f2794d5"/>
+    <hector:perQuantity rdf:nodeID="commodity_reed_cbee15335f2344a334903d9349e0548248cae5362c0bc4a842967e34ece22d1692"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 620 (transcribed by Stuart Jenks): 'Redes or canes the 1000' 16s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cb1c531058797b4b875691d4c66f403a3598a7984ac13a346eb707695aeadf8549c">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>23s 4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">280</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed#rate-1558-inward-891">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Redes or canes the thowsande 23s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_reed_cb1c531058797b4b875691d4c66f403a3598a7984ac13a346eb707695aeadf8549c"/>
+    <hector:perQuantity rdf:nodeID="commodity_reed_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 891 (transcribed by Stuart Jenks): 'Redes or canes the thowsande' 23s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -49,34 +87,22 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/reed#rate-1545-inward-620"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/reed#rate-1558-inward-891"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:nodeID="commodity_reed_cb26963d624dc1e3319748d8a3101858ae60f09d2f0f6555bc3a7e7836007fdccb7">
+    <crm:P190_has_symbolic_content>redes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>redəs</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cbee15335f2344a334903d9349e0548248cae5362c0bc4a842967e34ece22d1692">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cb1aafd2057ed26c140661abbab8e5fb067b0629d00974ba9f838f474198828dac4">
-    <crm:P190_has_symbolic_content>reedes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>reːdəs</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed#rate-1545-inward-620">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Redes or canes the 1000 16s 8d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_reed_cb3488b613aaabedd5b15f0a24f39052fca91f6f40ff8d3123e320e1a155f2794d5"/>
-    <hector:perQuantity rdf:nodeID="commodity_reed_cbee15335f2344a334903d9349e0548248cae5362c0bc4a842967e34ece22d1692"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 620 (transcribed by Stuart Jenks): 'Redes or canes the 1000' 16s 8d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300011878">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>reed (grass, material)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cb32213f22dee1b154e3b1273de81c30760f6800c1a27723428dccb82dc0e30dfbc">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -84,30 +110,16 @@
     <hector:lsd>2s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cb3500fc3a38c7bea7c9e977139921b84f12628de048a2617fa31ba4ba6490d20f4">
-    <crm:P190_has_symbolic_content>redys</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_reed_cbbe85224bc6fe0486bf0f1c455a8d35b4df8410ae9c84dba8ba20588c0d40527c">
+    <crm:P190_has_symbolic_content>reede</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>redis</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1493</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1495</hector:validThrough>
+    <hector:phoneticKey>reːdə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/thousand">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>thousand</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/reed#rate-1558-inward-891">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Redes or canes the thowsande 23s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_reed_cb1c531058797b4b875691d4c66f403a3598a7984ac13a346eb707695aeadf8549c"/>
-    <hector:perQuantity rdf:nodeID="commodity_reed_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 891 (transcribed by Stuart Jenks): 'Redes or canes the thowsande' 23s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/reed">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>reed (London Customs Accounts glossary)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_reed_cb163fb22affdd9cbb6843baab12feb0101e2e92cf9b3b4da9d0e9f07f4626a689b">
+    <crm:P190_has_symbolic_content>General term for material comprising the leaves and stems of various tall, stiff, wetland grasses of various genera in the order Poales. Used for construction and thatching roofs. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cb1820f53f0e07c487406dde02d9d7f6e8af01c144563cded793b4d61c534630787">
     <crm:P190_has_symbolic_content>reed</crm:P190_has_symbolic_content>
@@ -116,18 +128,13 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>reːd</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300011878">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>reed (grass, material)</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>dozen</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cb13d1b686e92a64f49b10b48392e6e25e5d6fc67af9542b88d9913d53cf62636ad">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cb3488b613aaabedd5b15f0a24f39052fca91f6f40ff8d3123e320e1a155f2794d5">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -135,33 +142,26 @@
     <hector:lsd>16s 8d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>dozen</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cb163fb22affdd9cbb6843baab12feb0101e2e92cf9b3b4da9d0e9f07f4626a689b">
-    <crm:P190_has_symbolic_content>General term for material comprising the leaves and stems of various tall, stiff, wetland grasses of various genera in the order Poales. Used for construction and thatching roofs. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_reed_cbbe85224bc6fe0486bf0f1c455a8d35b4df8410ae9c84dba8ba20588c0d40527c">
-    <crm:P190_has_symbolic_content>reede</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>reːdə</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_reed_cb110fb0adb8a0da42d3de1248fe7241cecb1e1d6742d850e5703d00c378ab4e2d2">
     <crm:P190_has_symbolic_content>rede</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>redə</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/reed">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>reed (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/thousand">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>thousand</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

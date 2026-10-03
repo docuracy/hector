@@ -15,7 +15,10 @@ actually use, with dates and a phonetic key, links to the Getty Art & Architectu
 Wikidata and QUDT where an equivalent exists, and is published as JSON-LD aligned with
 [Linked Art](https://linked.art/).
 
-**Browse and search it at <https://w3id.org/hector/>.**
+**Browse and search it at <https://w3id.org/hector/>**, by any spelling the sources use or a near
+miss: similar spellings are found with the London Customs Accounts project's character encoder,
+which LCA measured best for this material (0.881 top-1 on held-out glossary spellings, against
+0.853 for Symphonym v8 with trigrams).
 
 ## What is published
 
@@ -82,6 +85,7 @@ The pipeline (Python, in `tools/`; everything is written to the git-ignored `bui
 .venv/bin/python -m tools.rates.link_rates          # rates onto commodities and units; qualified records
 .venv/bin/python -m tools.site.build_search_index   # -> build/site/search/index.json
 .venv/bin/python -m tools.site.build_rdf            # -> ontology.ttl / ontology.rdf beside each record, dump/
+node tools/site/build_fuzzy.mjs build/site          # -> build/site/search/fuzzy.*, similar-spelling vectors
 .venv/bin/python tools/validate.py --root build/site --online --no-shacl
 ```
 
@@ -99,8 +103,6 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
 - The URIs negotiate JSON-LD only: Turtle and RDF/XML are files to fetch directly
   (`https://docuracy.github.io/hector/commodity/saffron/ontology.ttl`) until the w3id redirect
   rules are extended.
-- The site searches spellings, not sounds. Every spelling has an IPA key, but sound-alike search
-  is not built.
 - The 1604 Book of Rates is parsed but not published (it waits on its commodities being restored
   to the LCA glossary).
 - Integration with the [Digital Noback Project](https://www.uni-bamberg.de/en/hist/digital-history/projects/digital-noback-project/)'s

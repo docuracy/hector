@@ -28,7 +28,7 @@ release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
   (they are generated; copied, published records would never be dropped). A rebuild now
   reproduces the published files byte for byte.
 - To republish: parse_bor, export_hector, build_units, link_rates, tools.site.build_search_index,
-  tools.site.build_rdf; validate; copy `build/site/{commodity,unit,context,ontology,search,dump}` and
+  tools.site.build_rdf, `node tools/site/build_fuzzy.mjs build/site`; validate; copy `build/site/{commodity,unit,context,ontology,search,dump}` and
   `build/ledger/*.tsv` to the repo.
 - Same day, the site: `index.html` rewritten (task 23): search by any attested spelling, a readable
   view of every record, honest "not yet" list; favicon. Turtle and RDF/XML for every record and a
@@ -44,7 +44,7 @@ release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
 4. **D4 on the LCA side**: LCA's JSON-LD emits `skos:exactMatch` to HECTOR URIs, now the ledger is public.
 5. **25**: first tagged release + Zenodo DOI, which ends the alpha and freezes the ledger
    (docs/uri-policy.md §0) [D: when].
-6. **19, 22, 24** as time allows; sound-alike search over the IPA keys (task 23 remainder).
+6. **19, 22, 24** as time allows.
 
 
 ---
@@ -136,7 +136,7 @@ Phase 0 complete 2026-09-18.
 |---|---|---|
 | 21 [E] | Schema + CI validator | **moved to Phase 0** |
 | 22 [E] | Contribution route: PR template, validation on PR | todo |
-| 23 [E] | UI for thousands of entities (Dexie + Fuse phonetic search, as `index.html` promises) | **largely done 3 Oct 2026**, without Dexie or Fuse: `index.html` + `js/hector.js` give a search over every attested spelling (`search/index.json`, `tools/site/build_search_index.py`) and a readable view of every record (w3id sends every HTML request there). Sound-alike search over the IPA keys not built |
+| 23 [E] | UI for thousands of entities (Dexie + Fuse phonetic search, as `index.html` promises) | **largely done 3 Oct 2026**, without Dexie or Fuse: `index.html` + `js/hector.js` give a search over every attested spelling (`search/index.json`, `tools/site/build_search_index.py`) and a readable view of every record (w3id sends every HTML request there). Similar-spelling search added 3 Oct: LCA's character bi-encoder (`js/fuzzy_encoder.js`, weights `search/encoder.json.gz`, vectors by `tools/site/build_fuzzy.mjs`), chosen over Symphonym v8 by Stephen on LCA's measurement (0.881 vs 0.853 top-1, 2,825 held-out spellings); CI checks parity with the Python model and that the vectors are current |
 | 26 [E] | Turtle and RDF/XML | **done 3 Oct 2026**: `tools/site/build_rdf.py`, `ontology.ttl` / `ontology.rdf` beside every record + `dump/hector.ttl.gz`; deterministic, and CI checks they are current |
 | 27 [X] | Content negotiation for Turtle and RDF/XML at the URIs | PR to `perma-id/w3id.org` (`ids/hector/.htaccess`), to be designed to cover the site's other foreseeable needs (dump, files, trailing slashes, root) |
 | 24 [C] | Credits and licence pages for every source | todo |

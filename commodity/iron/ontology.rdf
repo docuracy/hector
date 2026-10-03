@@ -8,31 +8,21 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>gross</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1220fddd2b9f3bb588f10d94a6f7999304e443b660697bcb51fd34bfec40a7b29">
-    <crm:P190_has_symbolic_content>ferri</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1ad78e7254e12f0902b8937bee6b0728cf120a072d0bf2e6cc30a58bb465ced31">
+    <crm:P190_has_symbolic_content>yorn</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>feri</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1380</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1385</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb269b6c1eea261618f0445686643582e400fba8dd91401709cb5892cccf17b6f71">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£4</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">960</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb2ba11a718c565ac3a5bad3641475f4d3dbdb7026f421f8c0f5d70fea0593a5ffa">
-    <crm:P190_has_symbolic_content>spaynesshe yrone</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>spaineʃə ironə</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1512</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validThrough>
+    <hector:phoneticKey>jorn</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -65,82 +55,6 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/iron#rate-1558-inward-612"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/iron#rate-1558-inward-856"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1ad78e7254e12f0902b8937bee6b0728cf120a072d0bf2e6cc30a58bb465ced31">
-    <crm:P190_has_symbolic_content>yorn</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>jorn</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-1111">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Touche boxes of yron or other mettall guylt the dossen 10s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb31d0e42b7b26e5c66adfac3b515b71a8345e4dbf7cdbb54d472607c3da65fab93"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cb1d928370e14dbf3498e6b26c879173ee82e133c02809535b975c54b0c6df30d62"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 1111 (transcribed by Stuart Jenks): 'Touche boxes of yron or other mettall guylt the dossen' 10s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/tun"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb219e9f946a7d4cb91fe31fc931420fd08ccaa2a1a6e571ae0bd12e09ec1841ad2">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb31cf3226f825f36dd6bd1b4ae502fb00876db6855374cb0dbbe5ac0686bf0197b">
-    <crm:P190_has_symbolic_content>spanyshe yron</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>spaniʃə iron</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-612">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Iron voc’ Spanishe iron the tonne cont’ 20 C weight £4</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb269b6c1eea261618f0445686643582e400fba8dd91401709cb5892cccf17b6f71"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 612 (transcribed by Stuart Jenks): 'Iron voc’ Spanishe iron the tonne cont’ 20 C weight' £4</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb28787f78abbd07432e47576dc67e41db298bdb489e7db77ee395bca02d844bd92">
-    <crm:P190_has_symbolic_content>yren</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>iren</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/tun">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>tun</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1f50512d5fdfc3a0293734978d6fc0dd3949b520038b6987fdbbe8adc70e9952c">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/band"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb11fbf909f9fe4b14ce215979cf90d03b19844d9d54ec0431b75276db08dc047e5">
-    <crm:P190_has_symbolic_content>spanishe iron</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>spaniʃə iron</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb2536b56f4abcad2af87b6df34d6e92187aaba84c3013f32b02dc85b3b969ac6e1">
-    <crm:P190_has_symbolic_content>iron</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>iron</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1533</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1535</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1545-inward-398">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1545 inward: Iron called faggot yron the bonde 6s 8d</rdfs:label>
@@ -150,9 +64,10 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1f50512d5fdfc3a0293734978d6fc0dd3949b520038b6987fdbbe8adc70e9952c">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/band"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_iron_cb28f0fc5c44e2b58afeb65d66cdb6a790a93305e17c4c6581d8622fc56c087b365">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -160,38 +75,42 @@
     <hector:lsd>50s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1545-inward-399">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Iron called faggot yron the hundreth pounde 3s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb37a0428904a40358f088d39b74637d06eb188fe0feb458c25cabd18caf5af6557"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cb219e9f946a7d4cb91fe31fc931420fd08ccaa2a1a6e571ae0bd12e09ec1841ad2"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 399 (transcribed by Stuart Jenks): 'Iron called faggot yron the hundreth pounde' 3s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  <rdf:Description rdf:nodeID="commodity_iron_cb37a0428904a40358f088d39b74637d06eb188fe0feb458c25cabd18caf5af6557">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>3s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/band">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>band</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1b74f7a9cb45678a27ed5e48edd7984c05827d21fffefad43d2fd2c0d2be6af02">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1d65f709bece0b451869da6c26a946e37b48fb416df130059c1d8b56db228a9fd">
-    <crm:P190_has_symbolic_content>ferre</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_iron_cb318ec328a1c7f531443094cb797c70339d49c40118a1ffe47fb4bb6358e094f6b">
+    <crm:P190_has_symbolic_content>see also ferrum</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ferə</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
+    <hector:phoneticKey>seː also ferum</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1512</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-856">
+  <rdf:Description rdf:nodeID="commodity_iron_cb31cf3226f825f36dd6bd1b4ae502fb00876db6855374cb0dbbe5ac0686bf0197b">
+    <crm:P190_has_symbolic_content>spanyshe yron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>spaniʃə iron</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1548</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb251b4a8dc1a8b16381274f8399e1c891e9ffd23eb0ac5f83459e9eb4b0def3cf8">
+    <crm:P190_has_symbolic_content>fer</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>fer</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1555</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-1111">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Pulleys of yron the grosse 50s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb28f0fc5c44e2b58afeb65d66cdb6a790a93305e17c4c6581d8622fc56c087b365"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 856 (transcribed by Stuart Jenks): 'Pulleys of yron the grosse' 50s</hector:sourceText>
+    <rdfs:label>1558 inward: Touche boxes of yron or other mettall guylt the dossen 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb31d0e42b7b26e5c66adfac3b515b71a8345e4dbf7cdbb54d472607c3da65fab93"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cb1d928370e14dbf3498e6b26c879173ee82e133c02809535b975c54b0c6df30d62"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 1111 (transcribed by Stuart Jenks): 'Touche boxes of yron or other mettall guylt the dossen' 10s</hector:sourceText>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
@@ -203,35 +122,84 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1536</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1540</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-368">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-612">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Doble yron plates vocat’ dobles the shock cont’ 6 bundelles 40s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb34d23fd8a12f7eaed0f9c7d0d1844e1db80c91b2c5617205b79ac32334c2a1dd9"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cb1e16928885e869f2834c528659b877634e960999ad6c1782cc9658bffa277d94f"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 368 (transcribed by Stuart Jenks): 'Doble yron plates vocat’ dobles the shock cont’ 6 bundelles' 40s</hector:sourceText>
+    <rdfs:label>1558 inward: Iron voc’ Spanishe iron the tonne cont’ 20 C weight £4</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb269b6c1eea261618f0445686643582e400fba8dd91401709cb5892cccf17b6f71"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 612 (transcribed by Stuart Jenks): 'Iron voc’ Spanishe iron the tonne cont’ 20 C weight' £4</hector:sourceText>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb251b4a8dc1a8b16381274f8399e1c891e9ffd23eb0ac5f83459e9eb4b0def3cf8">
-    <crm:P190_has_symbolic_content>fer</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/tun">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>tun</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb2536b56f4abcad2af87b6df34d6e92187aaba84c3013f32b02dc85b3b969ac6e1">
+    <crm:P190_has_symbolic_content>iron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>fer</hector:phoneticKey>
+    <hector:phoneticKey>iron</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1533</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1535</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb269b6c1eea261618f0445686643582e400fba8dd91401709cb5892cccf17b6f71">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£4</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">960</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb2ecea8b8da8a3d507a9e452cc6d84e56c56c151db79d0a15682204d9c86b7a77a">
+    <crm:P190_has_symbolic_content>iren</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>iren</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1555</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb318ec328a1c7f531443094cb797c70339d49c40118a1ffe47fb4bb6358e094f6b">
-    <crm:P190_has_symbolic_content>see also ferrum</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_iron_cb2ba11a718c565ac3a5bad3641475f4d3dbdb7026f421f8c0f5d70fea0593a5ffa">
+    <crm:P190_has_symbolic_content>spaynesshe yrone</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>seː also ferum</hector:phoneticKey>
+    <hector:phoneticKey>spaineʃə ironə</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1512</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb107551e69630925133cfcf0d32dc8803367c3ac51e31c0d1abbd2440cccdfb710">
+    <crm:P190_has_symbolic_content>ferrum</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>ferum</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1380</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1385</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb219e9f946a7d4cb91fe31fc931420fd08ccaa2a1a6e571ae0bd12e09ec1841ad2">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb23a5578069c23f50badba038483cbc3404f15da97e86c59ff53a7d52641e4da98">
+    <crm:P190_has_symbolic_content>yron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>iron</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1e16928885e869f2834c528659b877634e960999ad6c1782cc9658bffa277d94f">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/shock"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1b74f7a9cb45678a27ed5e48edd7984c05827d21fffefad43d2fd2c0d2be6af02">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300011002">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>iron (metal)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_iron_cb34d23fd8a12f7eaed0f9c7d0d1844e1db80c91b2c5617205b79ac32334c2a1dd9">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -239,22 +207,13 @@
     <hector:lsd>40s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1545-inward-395">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Iron called Lukes yron the 100 lb 3s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_iron_cb2848b24f014e6fa64bf9794b8bcee1272149b40304749e649b57051b22f7079c9"/>
-    <hector:perQuantity rdf:nodeID="commodity_iron_cb1b74f7a9cb45678a27ed5e48edd7984c05827d21fffefad43d2fd2c0d2be6af02"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 395 (transcribed by Stuart Jenks): 'Iron called Lukes yron the 100 lb' 3s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>dozen</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1d65f709bece0b451869da6c26a946e37b48fb416df130059c1d8b56db228a9fd">
+    <crm:P190_has_symbolic_content>ferre</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>ferə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_iron_cb31d0e42b7b26e5c66adfac3b515b71a8345e4dbf7cdbb54d472607c3da65fab93">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -262,11 +221,44 @@
     <hector:lsd>10s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb107551e69630925133cfcf0d32dc8803367c3ac51e31c0d1abbd2440cccdfb710">
-    <crm:P190_has_symbolic_content>ferrum</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-856">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Pulleys of yron the grosse 50s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb28f0fc5c44e2b58afeb65d66cdb6a790a93305e17c4c6581d8622fc56c087b365"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 856 (transcribed by Stuart Jenks): 'Pulleys of yron the grosse' 50s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1f6fb9560d90b6ba34176339c170666e838139ddcf7f333fc4e522d2b25333217">
+    <crm:P190_has_symbolic_content>Pure metallic element having symbol Fe and atomic number 26; metallic iron is silvery in color, lustrous, soft, ductile, malleable, and slightly magnetic; it rusts when exposed to moist air. It is rarely found as a native metal (telluric iron) except in meteorites (meteoric iron). Iron is most often found throughout the world as iron oxides (hematite, magnetite, limonite, and siderite) mixed with other ores. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/iron">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>iron (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb2f2e87ceb46e2c52446c2756c92389fd51082d148cd5390e0d0d6c4e2edf28d54">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>6s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/tun"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb1220fddd2b9f3bb588f10d94a6f7999304e443b660697bcb51fd34bfec40a7b29">
+    <crm:P190_has_symbolic_content>ferri</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ferum</hector:phoneticKey>
+    <hector:phoneticKey>feri</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1380</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1385</hector:validThrough>
   </rdf:Description>
@@ -278,77 +270,85 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1541</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb28787f78abbd07432e47576dc67e41db298bdb489e7db77ee395bca02d844bd92">
+    <crm:P190_has_symbolic_content>yren</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>iren</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/shock">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>shock</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1545-inward-399">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Iron called faggot yron the hundreth pounde 3s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb37a0428904a40358f088d39b74637d06eb188fe0feb458c25cabd18caf5af6557"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cb219e9f946a7d4cb91fe31fc931420fd08ccaa2a1a6e571ae0bd12e09ec1841ad2"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 399 (transcribed by Stuart Jenks): 'Iron called faggot yron the hundreth pounde' 3s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_iron_cb11fbf909f9fe4b14ce215979cf90d03b19844d9d54ec0431b75276db08dc047e5">
+    <crm:P190_has_symbolic_content>spanishe iron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>spaniʃə iron</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_iron_cb2848b24f014e6fa64bf9794b8bcee1272149b40304749e649b57051b22f7079c9">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>3s 4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb37a0428904a40358f088d39b74637d06eb188fe0feb458c25cabd18caf5af6557">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>3s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb2f2e87ceb46e2c52446c2756c92389fd51082d148cd5390e0d0d6c4e2edf28d54">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>6s 8d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>hundred</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb23a5578069c23f50badba038483cbc3404f15da97e86c59ff53a7d52641e4da98">
-    <crm:P190_has_symbolic_content>yron</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>iron</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1550</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validThrough>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1545-inward-395">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Iron called Lukes yron the 100 lb 3s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb2848b24f014e6fa64bf9794b8bcee1272149b40304749e649b57051b22f7079c9"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cb1b74f7a9cb45678a27ed5e48edd7984c05827d21fffefad43d2fd2c0d2be6af02"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 395 (transcribed by Stuart Jenks): 'Iron called Lukes yron the 100 lb' 3s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb2ecea8b8da8a3d507a9e452cc6d84e56c56c151db79d0a15682204d9c86b7a77a">
-    <crm:P190_has_symbolic_content>iren</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>iren</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1553</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1555</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300011002">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>iron (metal)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/iron">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>iron (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1e16928885e869f2834c528659b877634e960999ad6c1782cc9658bffa277d94f">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/shock"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/iron#rate-1558-inward-368">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Doble yron plates vocat’ dobles the shock cont’ 6 bundelles 40s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_iron_cb34d23fd8a12f7eaed0f9c7d0d1844e1db80c91b2c5617205b79ac32334c2a1dd9"/>
+    <hector:perQuantity rdf:nodeID="commodity_iron_cb1e16928885e869f2834c528659b877634e960999ad6c1782cc9658bffa277d94f"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 368 (transcribed by Stuart Jenks): 'Doble yron plates vocat’ dobles the shock cont’ 6 bundelles' 40s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_iron_cb1d928370e14dbf3498e6b26c879173ee82e133c02809535b975c54b0c6df30d62">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/shock">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>shock</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_iron_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_iron_cb1f6fb9560d90b6ba34176339c170666e838139ddcf7f333fc4e522d2b25333217">
-    <crm:P190_has_symbolic_content>Pure metallic element having symbol Fe and atomic number 26; metallic iron is silvery in color, lustrous, soft, ductile, malleable, and slightly magnetic; it rusts when exposed to moist air. It is rarely found as a native metal (telluric iron) except in meteorites (meteoric iron). Iron is most often found throughout the world as iron oxides (hematite, magnetite, limonite, and siderite) mixed with other ores. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>dozen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/band">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>band</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

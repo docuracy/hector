@@ -187,6 +187,54 @@
 
     let INDEX = null;
     let kindFilter = "";
+    let FUZZY = null, fuzzyLoading = null, searchSeq = 0;
+    const FUZZY_MIN = 0.6, FUZZY_MAX = 15, FUZZY_WHEN_FEWER = 10;
+
+    async function gzBytes(url) {
+        const r = await fetch(url);
+        if (!r.ok) throw new Error(`${url}: ${r.status}`);
+        return new Uint8Array(await new Response(r.body.pipeThrough(new DecompressionStream("gzip"))).arrayBuffer());
+    }
+
+    /* Similar spellings: the London Customs Accounts project's character bi-encoder
+       (js/fuzzy_encoder.js; vectors from tools/site/build_fuzzy.mjs). Loaded only when a
+       search finds few matches. */
+    function loadFuzzy() {
+        if (!fuzzyLoading) {
+            fuzzyLoading = (async () => {
+                const dec = (b) => JSON.parse(new TextDecoder().decode(b));
+                const [meta, model, bytes] = await Promise.all([
+                    gzBytes(new URL("search/fuzzy.json.gz", BASE)).then(dec),
+                    gzBytes(new URL("search/encoder.json.gz", BASE)).then(dec),
+                    gzBytes(new URL("search/fuzzy.i8.gz", BASE))]);
+                const i8 = new Int8Array(bytes.buffer, bytes.byteOffset, bytes.byteLength);
+                if (i8.length !== meta.n * meta.dim) throw new Error("fuzzy.i8 does not match its index");
+                const probe = meta.rows[meta.n - 1];
+                const rec = INDEX[probe[0]];
+                if (!rec || ![rec.label, ...rec.names].some((s) => FuzzyEncoder.norm0(s) === probe[1]))
+                    throw new Error("fuzzy index was built from another search index");
+                FUZZY = {meta, i8, enc: FuzzyEncoder.create(model)};
+            })().catch((e) => { fuzzyLoading = null; throw e; });
+        }
+        return fuzzyLoading;
+    }
+
+    function fuzzy(q, exclude) {
+        const f = FuzzyEncoder.norm0(q);
+        if (Array.from(f).length < 3) return [];
+        const {meta, i8, enc} = FUZZY;
+        const cos = FuzzyEncoder.cosines(enc.embed(f), i8, meta.n, meta.dim, meta.scale);
+        const best = new Map();
+        for (let r = 0; r < meta.n; r++) {
+            if (cos[r] < FUZZY_MIN) continue;
+            const [ri, form] = meta.rows[r];
+            const b = best.get(ri);
+            if (!b || cos[r] > b.c) best.set(ri, {c: cos[r], form});
+        }
+        return [...best].map(([ri, b]) => ({r: INDEX[ri], c: b.c, form: b.form}))
+            .filter((x) => x.r && !exclude.has(x.r.path) && (!kindFilter || x.r.kind === kindFilter))
+            .sort((a, b) => b.c - a.c).slice(0, FUZZY_MAX);
+    }
 
     async function loadIndex() {
         if (INDEX) return INDEX;
@@ -212,7 +260,7 @@
     function search(q) {
         const status = $("#search-status"), out = $("#results");
         const nq = normalise(q.trim());
-        if (!nq) { status.textContent = ""; out.innerHTML = ""; return; }
+        if (!nq) { searchSeq++; status.textContent = ""; out.innerHTML = ""; return; }
         const hits = [];
         for (const r of INDEX) {
             if (kindFilter && r.kind !== kindFilter) continue;
@@ -227,9 +275,26 @@
         const shown = hits.slice(0, 60);
         status.textContent = hits.length ? `${hits.length.toLocaleString("en-GB")} match${hits.length === 1 ? "" : "es"}${hits.length > shown.length ? `, first ${shown.length} shown` : ""}`
             : "No matches. Try a shorter part of the word.";
-        out.innerHTML = shown.map(({r, via}) => `<li><a href="?path=${encodeURIComponent(r.path)}">${esc(r.label)}</a>
+        const item = ({r, via}) => `<li><a href="?path=${encodeURIComponent(r.path)}">${esc(r.label)}</a>
             <span class="kind">${esc(KIND[r.kind])}${r.dep ? " · merged" : ""}</span>
-            ${via ? `<span class="via">spelled “${esc(via)}”</span>` : ""}</li>`).join("");
+            ${via ? `<span class="via">spelled “${esc(via)}”</span>` : ""}</li>`;
+        out.innerHTML = shown.map(item).join("");
+        if (hits.length >= FUZZY_WHEN_FEWER || Array.from(nq).length < 3) return;
+        const mine = ++searchSeq;
+        if (!FUZZY) status.textContent += hits.length ? " · looking for similar spellings…" : " Looking for similar spellings…";
+        loadFuzzy().then(() => {
+            if (mine !== searchSeq) return;
+            const near = fuzzy(q, new Set(hits.map((h) => h.r.path)));
+            status.textContent = status.textContent.replace(/ ·? ?[Ll]ooking for similar spellings…$/, "");
+            if (!near.length) return;
+            if (!hits.length) status.textContent = "No exact matches.";
+            out.insertAdjacentHTML("beforeend", `<li class="near-head">Similar spellings</li>` + near.map((x) =>
+                `<li><a href="?path=${encodeURIComponent(x.r.path)}">${esc(x.r.label)}</a>
+                <span class="kind">${esc(KIND[x.r.kind])}</span>
+                <span class="via" title="${Math.round(x.c * 100)}% alike, by the London Customs Accounts project's spelling encoder">≈ “${esc(x.form)}”, ${Math.round(x.c * 100)}% alike</span></li>`).join(""));
+        }).catch(() => {
+            if (mine === searchSeq) status.textContent = status.textContent.replace(/ ·? ?[Ll]ooking for similar spellings…$/, "");
+        });
     }
 
     async function showLanding() {

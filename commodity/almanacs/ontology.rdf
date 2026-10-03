@@ -8,46 +8,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/calendars">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>calendars</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_almanacs_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293">
-    <crm:P190_has_symbolic_content>pronosticaciouns</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>pronostikasiuːns</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_almanacs_cbae0552173cb1cefcf721b33f442e91c5bb234663793749828e470ad446809a10">
-    <crm:P190_has_symbolic_content>almanacs</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>almanaks</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/almanacs">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb15b9e46f675da644093b4dd449de6865e84546528c05962e142b047fe7a052408"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb1f4bbe9867b73e8adc27b08172bc14a57551c83233d3569ce48c8050d7f92b22f"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cbae0552173cb1cefcf721b33f442e91c5bb234663793749828e470ad446809a10"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cbb28a88df16711ef2b57fc0d3968ba156288e4ba163f34bd17d31dcbd28ae7afa"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_almanacs_cb6c5b1e3ad86b56c92dd2b370be51689ffafef156746bbf125e6eb8bdb95191dd"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>almanacs</rdfs:label>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/almanacs"/>
-    <skos:related rdf:resource="https://w3id.org/hector/commodity/calendars"/>
-    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300026705"/>
-    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hector:attestationCount>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_almanacs_cbb28a88df16711ef2b57fc0d3968ba156288e4ba163f34bd17d31dcbd28ae7afa">
-    <crm:P190_has_symbolic_content>prognostications</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>prognostikations</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_almanacs_cb15b9e46f675da644093b4dd449de6865e84546528c05962e142b047fe7a052408">
     <crm:P190_has_symbolic_content>pronosticacioun</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -64,29 +24,69 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1506</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_almanacs_cb6c5b1e3ad86b56c92dd2b370be51689ffafef156746bbf125e6eb8bdb95191dd">
     <crm:P190_has_symbolic_content>an annual table, or (more usually) a book of tables, containing a calendar of months and days, with astronomical data and calculations, ecclesiastical and other anniversaries, besides other useful information, and astrological and astrometeorological forecasts (OED s.v. almanac)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/almanacs">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb15b9e46f675da644093b4dd449de6865e84546528c05962e142b047fe7a052408"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cb1f4bbe9867b73e8adc27b08172bc14a57551c83233d3569ce48c8050d7f92b22f"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cbae0552173cb1cefcf721b33f442e91c5bb234663793749828e470ad446809a10"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_almanacs_cbb28a88df16711ef2b57fc0d3968ba156288e4ba163f34bd17d31dcbd28ae7afa"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_almanacs_cb6c5b1e3ad86b56c92dd2b370be51689ffafef156746bbf125e6eb8bdb95191dd"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>almanacs</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/almanacs"/>
+    <skos:related rdf:resource="https://w3id.org/hector/commodity/calendars"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300026705"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hector:attestationCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/almanacs">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>almanacs (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_almanacs_cbae0552173cb1cefcf721b33f442e91c5bb234663793749828e470ad446809a10">
+    <crm:P190_has_symbolic_content>almanacs</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>almanaks</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_almanacs_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293">
+    <crm:P190_has_symbolic_content>pronosticaciouns</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>pronostikasiuːns</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_almanacs_cbb28a88df16711ef2b57fc0d3968ba156288e4ba163f34bd17d31dcbd28ae7afa">
+    <crm:P190_has_symbolic_content>prognostications</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>prognostikations</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300026705">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>almanacs</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/almanacs">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/calendars">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>almanacs (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>calendars</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -7,9 +7,22 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>gross</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock-large#rate-1558-inward-545">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Hanging lockes great the grosse 40s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_padlock_large_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4"/>
+    <hector:perQuantity rdf:nodeID="commodity_padlock_large_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 545 (transcribed by Stuart Jenks): 'Hanging lockes great the grosse' 40s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock-large">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -24,28 +37,11 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/padlock-large#rate-1545-inward-359"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/padlock-large#rate-1558-inward-545"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock-large#rate-1545-inward-359">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Hangyng lockes the great sorte, the groce 20s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_padlock_large_cb3708cd04d8439598e2d66caa1778d0f82fcae938179f0e7e865415fde41578c83"/>
-    <hector:perQuantity rdf:nodeID="commodity_padlock_large_cb160ee25c5ddc240afa80e0515f902bdc928c37d5bc1080dc6a2407af46a26b86a"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 359 (transcribed by Stuart Jenks): 'Hangyng lockes the great sorte, the groce' 20s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_padlock_large_cb1ce473bf0f3c24fe01c748570e8347030b6696f6cb07004dd7f591683fe5c8eb7">
-    <crm:P190_has_symbolic_content>padlock, qualified as ‘large’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock-large#rate-1558-inward-545">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Hanging lockes great the grosse 40s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_padlock_large_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4"/>
-    <hector:perQuantity rdf:nodeID="commodity_padlock_large_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 545 (transcribed by Stuart Jenks): 'Hanging lockes great the grosse' 40s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  <rdf:Description rdf:nodeID="commodity_padlock_large_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>40s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_padlock_large_cb3708cd04d8439598e2d66caa1778d0f82fcae938179f0e7e865415fde41578c83">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -53,19 +49,16 @@
     <hector:lsd>20s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_padlock_large_cb9a09e8fee67faf802a9b81aa093aaca0c99a0581a1208b3c3563e7bb19546d61">
-    <crm:P190_has_symbolic_content>Hangyng lockes the great sorte</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+  <rdf:Description rdf:nodeID="commodity_padlock_large_cb19a4a2f930aca5193902a731e14114dc9f01521db2cb4aec90563eb5150deed11">
+    <crm:P190_has_symbolic_content>padlock (large)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>hangiŋ lokəs θe grɛːt sortə</hector:phoneticKey>
+    <hector:phoneticKey>padlok lardʒə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>padlock</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_padlock_large_cb1ce473bf0f3c24fe01c748570e8347030b6696f6cb07004dd7f591683fe5c8eb7">
+    <crm:P190_has_symbolic_content>padlock, qualified as ‘large’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_padlock_large_cbef0231946e621785daf628993cff3abafa6892cc9740beaee179a83b0d9b06cf">
     <crm:P190_has_symbolic_content>Hanging lockes great</crm:P190_has_symbolic_content>
@@ -73,10 +66,11 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>handʒiŋ lokəs grɛːt</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_padlock_large_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:nodeID="commodity_padlock_large_cb9a09e8fee67faf802a9b81aa093aaca0c99a0581a1208b3c3563e7bb19546d61">
+    <crm:P190_has_symbolic_content>Hangyng lockes the great sorte</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>hangiŋ lokəs θe grɛːt sortə</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_padlock_large_cb160ee25c5ddc240afa80e0515f902bdc928c37d5bc1080dc6a2407af46a26b86a">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
@@ -87,24 +81,30 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_padlock_large_cb19a4a2f930aca5193902a731e14114dc9f01521db2cb4aec90563eb5150deed11">
-    <crm:P190_has_symbolic_content>padlock (large)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>padlok lardʒə</hector:phoneticKey>
+  <rdf:Description rdf:nodeID="commodity_padlock_large_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_padlock_large_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>40s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock-large#rate-1545-inward-359">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Hangyng lockes the great sorte, the groce 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_padlock_large_cb3708cd04d8439598e2d66caa1778d0f82fcae938179f0e7e865415fde41578c83"/>
+    <hector:perQuantity rdf:nodeID="commodity_padlock_large_cb160ee25c5ddc240afa80e0515f902bdc928c37d5bc1080dc6a2407af46a26b86a"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 359 (transcribed by Stuart Jenks): 'Hangyng lockes the great sorte, the groce' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/padlock">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>padlock</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -19,17 +19,9 @@
     <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/mece"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hector:attestationCount>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mece_cb311530fbe4a55576722d32830d2e88b1961106dd261f356327cbd29bd8b1b394">
-    <crm:P190_has_symbolic_content>mece</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>mesə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mece_cb8ee865e3a62378f6b322dea964bb622e77cb7f84f3828b0ece6ad364dc18aced">
-    <crm:P190_has_symbolic_content>mece: a measure of weight, chiefly of copper (300 lb.)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mece">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>mece (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_mece_cb279f434aab2e77a564d30be5a1b2664818b81f6f2db0655343ee92cfd4d484b8">
     <crm:P190_has_symbolic_content>meces</crm:P190_has_symbolic_content>
@@ -43,6 +35,13 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>mesis</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mece_cb311530fbe4a55576722d32830d2e88b1961106dd261f356327cbd29bd8b1b394">
+    <crm:P190_has_symbolic_content>mece</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>mesə</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
@@ -51,16 +50,17 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>weights and measures (general, standards)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_mece_cb8ee865e3a62378f6b322dea964bb622e77cb7f84f3828b0ece6ad364dc18aced">
+    <crm:P190_has_symbolic_content>mece: a measure of weight, chiefly of copper (300 lb.)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mece">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>mece (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

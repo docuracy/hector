@@ -7,6 +7,25 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sable">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>sable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sable-second-sort">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_sable_second_sort_cb11fa626a6d12655913095dde237dab4004ba9d0a4c94ae9bb901c868e0474d5e"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_sable_second_sort_cb8bd089efe465c6c373edc792971c5b694011c53ea862e63472c968e931809b18"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_sable_second_sort_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>sable (second sort)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/sable"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/sable"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sable-second-sort#rate-1558-inward-1042"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/sable-second-sort#rate-1558-inward-1042">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1558 inward: Sables of the second sort the tymber £30</rdfs:label>
@@ -27,13 +46,14 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>sabləs of θe sekond sort</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/timber">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>timber</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_sable_second_sort_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sable_second_sort_cb8bd089efe465c6c373edc792971c5b694011c53ea862e63472c968e931809b18">
     <crm:P190_has_symbolic_content>sable (second sort)</crm:P190_has_symbolic_content>
@@ -47,33 +67,13 @@
     <hector:lsd>£30</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7200</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sable-second-sort">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_sable_second_sort_cb11fa626a6d12655913095dde237dab4004ba9d0a4c94ae9bb901c868e0474d5e"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_sable_second_sort_cb8bd089efe465c6c373edc792971c5b694011c53ea862e63472c968e931809b18"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_sable_second_sort_cb0"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/timber">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>timber</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>sable (second sort)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/sable"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/sable"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sable-second-sort#rate-1558-inward-1042"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sable">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>sable</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sable_second_sort_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>

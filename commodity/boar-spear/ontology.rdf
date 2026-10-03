@@ -8,16 +8,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/boar-spear">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_boar_spear_cb0"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_boar_spear_cb6d15fa928de4aa47331a52ac95dcecd8ed5762dfa5b77fa27f9ee5b86227ad14"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_boar_spear_cb59d5ab838799dd798b651130cd59c28cb0ed644ae5c165ee5251c9d4ca38babc"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/partisan">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>boar spear</rdfs:label>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/boar%20spear"/>
-    <skos:related rdf:resource="https://w3id.org/hector/commodity/partisan"/>
-    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300204482"/>
+    <rdfs:label>partisan</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_boar_spear_cb6d15fa928de4aa47331a52ac95dcecd8ed5762dfa5b77fa27f9ee5b86227ad14">
     <crm:P190_has_symbolic_content>boar spear</crm:P190_has_symbolic_content>
@@ -32,13 +25,20 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>borə sper</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/boar%20spear">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300204482">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>boar spear (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>boar spears</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/partisan">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/boar-spear">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_boar_spear_cb0"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_boar_spear_cb6d15fa928de4aa47331a52ac95dcecd8ed5762dfa5b77fa27f9ee5b86227ad14"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_boar_spear_cb59d5ab838799dd798b651130cd59c28cb0ed644ae5c165ee5251c9d4ca38babc"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>partisan</rdfs:label>
+    <rdfs:label>boar spear</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/boar%20spear"/>
+    <skos:related rdf:resource="https://w3id.org/hector/commodity/partisan"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300204482"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -49,16 +49,16 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300204482">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/boar%20spear">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>boar spears</rdfs:label>
+    <rdfs:label>boar spear (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

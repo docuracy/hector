@@ -8,10 +8,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/battle-axe">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>battle-axe (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_battle_axe_cb1853c3b45b7aa733985c31927f4dea60d3896b215ec1ee00f5cd7451102a553db">
     <crm:P190_has_symbolic_content>batelle axes</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -32,10 +28,9 @@
     <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300036983"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_battle_axe_cb4878ac2d16bf224c91fa90583072e70530ab82289637a2543769225e48bf901c">
-    <crm:P190_has_symbolic_content>Axes used in combat and warfare since prehistoric times, made in various forms and sizes from one geographic region and culture to another, but typically having a broad blade with a convex cutting edge and a handle, and wielded with one or two hands to strike cutting blows or to throw. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300036983">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>battle-axes</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_battle_axe_cb0">
     <crm:P190_has_symbolic_content>battle-axe</crm:P190_has_symbolic_content>
@@ -43,10 +38,6 @@
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>batlə aksə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300036983">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>battle-axes</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_battle_axe_cb2100cfe212cabdc225d5161b2817e32af3b8239d28c33bdcfe67fb67b477c3628">
     <crm:P190_has_symbolic_content>batelle axe</crm:P190_has_symbolic_content>
@@ -56,16 +47,25 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1512</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_battle_axe_cb4878ac2d16bf224c91fa90583072e70530ab82289637a2543769225e48bf901c">
+    <crm:P190_has_symbolic_content>Axes used in combat and warfare since prehistoric times, made in various forms and sizes from one geographic region and culture to another, but typically having a broad blade with a convex cutting edge and a handle, and wielded with one or two hands to strike cutting blows or to throw. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/battle-axe">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>battle-axe (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

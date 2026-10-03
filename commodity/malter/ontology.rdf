@@ -7,6 +7,25 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/malter">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb11cb40525e873bb4a8e6d561c5b392723fc059dbe141c0ce339c16c918b02c3c5"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb1535dc7250d88264337a3ec6042874d2584176405081dcbb64a1589c3c01482e2"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb243850f7ffbb6e6f514b12c5ba96884867b58639b4dd2d8484d61c2132ab06f65"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_malter_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>malter</rdfs:label>
+    <skos:broader rdf:resource="http://vocab.getty.edu/aat/300386648"/>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/malter"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_malter_cb1535dc7250d88264337a3ec6042874d2584176405081dcbb64a1589c3c01482e2">
+    <crm:P190_has_symbolic_content>malter</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>malter</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_malter_cb243850f7ffbb6e6f514b12c5ba96884867b58639b4dd2d8484d61c2132ab06f65">
     <crm:P190_has_symbolic_content>maldri</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -23,34 +42,6 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1412</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1427</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_malter_cb1535dc7250d88264337a3ec6042874d2584176405081dcbb64a1589c3c01482e2">
-    <crm:P190_has_symbolic_content>malter</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>malter</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/malter">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb11cb40525e873bb4a8e6d561c5b392723fc059dbe141c0ce339c16c918b02c3c5"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb1535dc7250d88264337a3ec6042874d2584176405081dcbb64a1589c3c01482e2"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_malter_cb243850f7ffbb6e6f514b12c5ba96884867b58639b4dd2d8484d61c2132ab06f65"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_malter_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>malter</rdfs:label>
-    <skos:broader rdf:resource="http://vocab.getty.edu/aat/300386648"/>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/malter"/>
-    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/malter">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>malter (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_malter_cb0">
-    <crm:P190_has_symbolic_content>malter, a measure of capacity, here as a packing unit for woad (20 maldris wode)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
@@ -59,12 +50,21 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>weights and measures (general, standards)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/malter">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>malter (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_malter_cb0">
+    <crm:P190_has_symbolic_content>malter, a measure of capacity, here as a packing unit for woad (20 maldris wode)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
 </rdf:RDF>

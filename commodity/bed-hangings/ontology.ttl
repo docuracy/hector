@@ -32,6 +32,10 @@
             hector:validFrom "1519"^^xsd:gYear ;
             hector:validThrough "1520"^^xsd:gYear ],
         [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lecto" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lekto" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "lecti" ;
             crm:P2_has_type hector:AttestedVariant ;
             hector:phoneticKey "lekti" ;
@@ -47,6 +51,10 @@
             crm:P190_has_symbolic_content "bed tapestry" ;
             crm:P2_has_type hector:AttestedVariant ;
             hector:phoneticKey "bed tapestri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lectis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lektis" ],
         [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "beddes" ;
             crm:P2_has_type hector:AttestedVariant ;
@@ -98,6 +106,10 @@
             crm:P2_has_type hector:AttestedVariant ;
             hector:phoneticKey "bedə tapseri" ],
         [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lectorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lektorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "lectus" ;
             crm:P2_has_type hector:AttestedVariant ;
             hector:phoneticKey "lektus" ;
@@ -112,7 +124,7 @@
         <https://w3id.org/hector/commodity/tester>,
         <https://w3id.org/hector/commodity/valance> ;
     la:equivalent aat:300204122 ;
-    hector:attestationCount 603 .
+    hector:attestationCount 635 .
 
 aat:300204122 a crm:E55_Type ;
     rdfs:label "bed hangings" .

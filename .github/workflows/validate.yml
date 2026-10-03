@@ -23,3 +23,9 @@ jobs:
         run: python -m pytest tests/ -q -p no:warnings
       - name: Turtle and RDF/XML are current with the JSON-LD (tools/site/build_rdf.py)
         run: python -m tools.site.build_rdf --root . --check
+      - name: Similar-spelling encoder agrees with its Python original, and can be shown to fail
+        run: |
+          node tools/site/build_fuzzy.mjs --parity
+          if node tools/site/build_fuzzy.mjs --parity --break; then echo "parity check cannot fail"; exit 1; fi
+      - name: Similar-spelling vectors are current with the search index
+        run: node tools/site/build_fuzzy.mjs . --check

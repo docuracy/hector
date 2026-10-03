@@ -7,11 +7,19 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb2645396d4aaa3bdcd1fb58ac1165cf6037645b9ed7c78a7e688f46b5c4108832d">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£3</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">720</hector:valueInPence>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1999a1e0455ce22fe7d1c0cec397d06c14da37df2a7f1ff23ace828859946d42f">
+    <crm:P190_has_symbolic_content>herring, qualified as ‘shotten’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb236c66137495fbf921dc00ec0265832446dc49fb06a874e50926c8e1efcd3c12d">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-shotten#rate-1558-inward-561">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -22,24 +30,17 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1999a1e0455ce22fe7d1c0cec397d06c14da37df2a7f1ff23ace828859946d42f">
-    <crm:P190_has_symbolic_content>herring, qualified as ‘shotten’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_shotten_cb696b05f0b4dacba6197eae1b2f918313ad7a0be8e3b1d7620712391e79e5acba">
     <crm:P190_has_symbolic_content>Heringe shotten</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>herindʒə ʃoten</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>herring</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb2645396d4aaa3bdcd1fb58ac1165cf6037645b9ed7c78a7e688f46b5c4108832d">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£3</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">720</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-shotten">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -56,26 +57,13 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-shotten#rate-1545-inward-374"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-shotten#rate-1558-inward-561"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb3b92bc0337a0d2cfe3227cefcd1d02f9f263efae60ebb697b790bc53bdc83c0e9">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>40s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>herring</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-shotten#rate-1545-inward-374">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Heryng shotten the last 40s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_herring_shotten_cb2cf53779fa245e6ecf6fcbc89daf27c68caf247925370d1ed5a2c6ffc9859e51c"/>
-    <hector:perQuantity rdf:nodeID="commodity_herring_shotten_cb1b7c92f9f84ed16af41585fb605361968a6bb17970324712daf7db40b376b549c"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 374 (transcribed by Stuart Jenks): 'Heryng shotten the last' 40s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb129115c6367269f10cd97758f92cdd7740e4801927222e6cd08bdfc8fb4be34ef">
-    <crm:P190_has_symbolic_content>Herynge shotton</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>herindʒə ʃoton</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-shotten#rate-1507-none-127">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -86,20 +74,10 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1b7c92f9f84ed16af41585fb605361968a6bb17970324712daf7db40b376b549c">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb14d1d01779a9cffa3ef107d2c7883138aacc36d9a8afed75b93b6050823e70685">
-    <crm:P190_has_symbolic_content>Heryng shotten</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>heriŋ ʃoten</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_shotten_cb172414c32c7b7c1e8012b4ac6cb97e5be06d51aa0d0512ce3267d247dff599960">
     <crm:P190_has_symbolic_content>herring (shotten)</crm:P190_has_symbolic_content>
@@ -107,14 +85,17 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>heriŋ ʃoten</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1b7c92f9f84ed16af41585fb605361968a6bb17970324712daf7db40b376b549c">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb3b92bc0337a0d2cfe3227cefcd1d02f9f263efae60ebb697b790bc53bdc83c0e9">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>40s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb129115c6367269f10cd97758f92cdd7740e4801927222e6cd08bdfc8fb4be34ef">
+    <crm:P190_has_symbolic_content>Herynge shotton</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>herindʒə ʃoton</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_shotten_cb2cf53779fa245e6ecf6fcbc89daf27c68caf247925370d1ed5a2c6ffc9859e51c">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -122,17 +103,36 @@
     <hector:lsd>40s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb14d1d01779a9cffa3ef107d2c7883138aacc36d9a8afed75b93b6050823e70685">
+    <crm:P190_has_symbolic_content>Heryng shotten</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>heriŋ ʃoten</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-shotten#rate-1545-inward-374">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Heryng shotten the last 40s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_herring_shotten_cb2cf53779fa245e6ecf6fcbc89daf27c68caf247925370d1ed5a2c6ffc9859e51c"/>
+    <hector:perQuantity rdf:nodeID="commodity_herring_shotten_cb1b7c92f9f84ed16af41585fb605361968a6bb17970324712daf7db40b376b549c"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 374 (transcribed by Stuart Jenks): 'Heryng shotten the last' 40s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb236c66137495fbf921dc00ec0265832446dc49fb06a874e50926c8e1efcd3c12d">
+  <rdf:Description rdf:nodeID="commodity_herring_shotten_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

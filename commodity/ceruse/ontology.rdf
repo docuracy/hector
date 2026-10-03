@@ -8,21 +8,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/ceruse">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb14618728bd32eeec1a6bc0772a29524c458cda59daa6183c989da9024c6c07afe"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb16f9391789b2ad019f565998ef57b77e3caa9989bae1b0ea82f4a4d9882bdbd1f"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb19148831aac3084b10296124f41eaf8263cc63af3d2414db6f46e24fba70a588"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb1bb553e390700f6be55af8d8f23aab4f33dce4eca68d6cddb2138754b2e615cca"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb1f38fc4d4fa5c42e5819e6795373dba35497ae0268485684bfc0bb9ecbd568d12"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cbe6de8d094b5cbc3e7225de7799664abe341d3a8967da268ed69c4fd8037f9a8e"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_ceruse_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>ceruse</rdfs:label>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/ceruse"/>
-    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300013754"/>
-    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/ceruse#rate-1558-inward-1027"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_ceruse_cb19148831aac3084b10296124f41eaf8263cc63af3d2414db6f46e24fba70a588">
     <crm:P190_has_symbolic_content>ceruse</crm:P190_has_symbolic_content>
@@ -40,6 +28,15 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_ceruse_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_ceruse_cb1f38fc4d4fa5c42e5819e6795373dba35497ae0268485684bfc0bb9ecbd568d12">
     <crm:P190_has_symbolic_content>serusia</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -48,43 +45,26 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1439</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_ceruse_cb1bb553e390700f6be55af8d8f23aab4f33dce4eca68d6cddb2138754b2e615cca">
-    <crm:P190_has_symbolic_content>gersae</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>dʒerse</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1434</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_ceruse_cb16f9391789b2ad019f565998ef57b77e3caa9989bae1b0ea82f4a4d9882bdbd1f">
-    <crm:P190_has_symbolic_content>gersa</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>dʒersa</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1434</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validThrough>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/ceruse">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb14618728bd32eeec1a6bc0772a29524c458cda59daa6183c989da9024c6c07afe"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb16f9391789b2ad019f565998ef57b77e3caa9989bae1b0ea82f4a4d9882bdbd1f"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb19148831aac3084b10296124f41eaf8263cc63af3d2414db6f46e24fba70a588"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb1bb553e390700f6be55af8d8f23aab4f33dce4eca68d6cddb2138754b2e615cca"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cb1f38fc4d4fa5c42e5819e6795373dba35497ae0268485684bfc0bb9ecbd568d12"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_ceruse_cbe6de8d094b5cbc3e7225de7799664abe341d3a8967da268ed69c4fd8037f9a8e"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_ceruse_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>ceruse</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/ceruse"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300013754"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/ceruse#rate-1558-inward-1027"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_ceruse_cb0">
     <crm:P190_has_symbolic_content>white lead, especially as a cosmetic (OED s.v. ceruse) | white lead, a mixture or compound of carbonate and hydrate of lead (usually 2 PbCO3+ PbH2O2); largely used as a white paint, formerly also in medicine for ointments, etc. (OED s.v. ceruse)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_ceruse_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_ceruse_cb14618728bd32eeec1a6bc0772a29524c458cda59daa6183c989da9024c6c07afe">
     <crm:P190_has_symbolic_content>serusiae</crm:P190_has_symbolic_content>
@@ -94,15 +74,41 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1439</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013754">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lead white</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_ceruse_cb1bb553e390700f6be55af8d8f23aab4f33dce4eca68d6cddb2138754b2e615cca">
+    <crm:P190_has_symbolic_content>gersae</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>dʒerse</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1434</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_ceruse_cb1e9caad0874412bb1b552a05e802c203f452c8a0b9b576759217576c93d669126">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>2d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_ceruse_cbe6de8d094b5cbc3e7225de7799664abe341d3a8967da268ed69c4fd8037f9a8e">
+    <crm:P190_has_symbolic_content>serusa</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>serusa</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_ceruse_cb16f9391789b2ad019f565998ef57b77e3caa9989bae1b0ea82f4a4d9882bdbd1f">
+    <crm:P190_has_symbolic_content>gersa</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>dʒersa</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1434</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013754">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lead white</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/ceruse">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -112,14 +118,8 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_ceruse_cbe6de8d094b5cbc3e7225de7799664abe341d3a8967da268ed69c4fd8037f9a8e">
-    <crm:P190_has_symbolic_content>serusa</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>serusa</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

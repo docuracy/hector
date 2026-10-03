@@ -7,36 +7,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb942fe64a34cb292813d12939df0c69802d9f47369ee83fe8f6c36b8e910800b9">
-    <crm:P190_has_symbolic_content>leather (girdels new making)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>lɛːθer dʒirdels neu makiŋ</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/leather">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>leather</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb113ceb8faa62415e67ab0d26569690f70c85645253632e1b8d2891b319203af73">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>2s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/leather-girdels-new-making">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_leather_girdels_new_making_cb22c68f3001f388e0871cf8e2a7a536e296f49b139f9e6217372a5c23ba32c847"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_leather_girdels_new_making_cb942fe64a34cb292813d12939df0c69802d9f47369ee83fe8f6c36b8e910800b9"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_leather_girdels_new_making_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>leather (girdels new making)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/leather"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/leather"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/leather-girdels-new-making#rate-1545-inward-447"/>
+  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb0">
+    <crm:P190_has_symbolic_content>leather, qualified as ‘girdels new making’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/leather-girdels-new-making#rate-1545-inward-447">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -57,19 +31,45 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb113ceb8faa62415e67ab0d26569690f70c85645253632e1b8d2891b319203af73">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>2s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/leather">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>leather</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/leather-girdels-new-making">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_leather_girdels_new_making_cb22c68f3001f388e0871cf8e2a7a536e296f49b139f9e6217372a5c23ba32c847"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_leather_girdels_new_making_cb942fe64a34cb292813d12939df0c69802d9f47369ee83fe8f6c36b8e910800b9"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_leather_girdels_new_making_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>leather (girdels new making)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/leather"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/leather"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/leather-girdels-new-making#rate-1545-inward-447"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb942fe64a34cb292813d12939df0c69802d9f47369ee83fe8f6c36b8e910800b9">
+    <crm:P190_has_symbolic_content>leather (girdels new making)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>lɛːθer dʒirdels neu makiŋ</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb368438ac5b64f6a74d55450fed76c89d095feefafcdff9b740f6542b1fa254d7">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_leather_girdels_new_making_cb0">
-    <crm:P190_has_symbolic_content>leather, qualified as ‘girdels new making’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>

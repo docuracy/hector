@@ -7,6 +7,7 @@
     <meta name="description" content="HECTOR: a Linked Data vocabulary of historical traded commodities, units of measure and Tudor customs rates, built from the London customs accounts and the Books of Rates. Alpha.">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/fuzzy_encoder.js" defer></script>
     <script src="./js/hector.js" defer></script>
 </head>
 <body>
@@ -37,7 +38,7 @@
         </p>
 
         <div class="search" role="search">
-            <label for="q">Search commodities and units, by any spelling the sources use</label>
+            <label for="q">Search commodities and units, by any spelling the sources use, or a near miss</label>
             <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="e.g. saffron, nottes, kersey, pound">
             <div class="filters" role="group" aria-label="Filter results">
                 <button type="button" data-kind="" aria-pressed="true">All</button>
@@ -93,8 +94,6 @@
                     <li>No tagged release or DOI yet: please do not cite the records or URIs.</li>
                     <li>The URIs negotiate JSON-LD only; Turtle and RDF/XML are files to fetch directly, until the
                         w3id redirect rules are extended.</li>
-                    <li>Search here matches spellings, not sounds: each spelling carries an IPA key in the records, but
-                        sound-alike search is not built.</li>
                     <li>Rates beyond 1507–1558 (the 1604 book) are parsed but not yet published.</li>
                 </ul>
             </div>

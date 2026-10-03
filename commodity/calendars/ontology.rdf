@@ -8,9 +8,26 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300026741">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>calendars (documents)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_calendars_cb127c89d5797c0160166f8bc47b228dff0ce4afd5aad5f08604d69053d8447063">
+    <crm:P190_has_symbolic_content>a table or chart of the year, or for a mathematical or astronomical table (MED s.v. calender n.) | case for a table or chart of the year, or for a mathematical or astronomical table (MED s.v. calender n.) | calendar, a table showing the division of a given year into its months and days, and referring the days of each month to the days of the week; often also including important astronomical data, and indicating ecclesiastical or other festivals, and other events belonging to individual days (OED s.v. calendar n. 2) | a written calender; an astronomical table (MED s.v. calender) | a table (or pamphlet) showing the division of the year into months and days, often with astronomical data and/or church festivals (notably Easter) and saints’ days (OED s.v. calendar n.)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_calendars_cb1d23801e9ac8bc666e9508609151c768fcbc52a44c659922fd6ffe341de8a65b7">
+    <crm:P190_has_symbolic_content>calendre</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kalendrə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1446</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_calendars_cbda9b18917cb1daf7e62f61be8560414ab6c7bd4c22ab553f243e3891b54a5dc4">
+    <crm:P190_has_symbolic_content>calenders</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kalenders</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1483</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1485</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/calendars">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -29,11 +46,11 @@
     <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300026741"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hector:attestationCount>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_calendars_cb1d23801e9ac8bc666e9508609151c768fcbc52a44c659922fd6ffe341de8a65b7">
-    <crm:P190_has_symbolic_content>calendre</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_calendars_cb201e96b81287ecb74c5c85776a7ddf65b018fefa236e582153d28b3685e18deff">
+    <crm:P190_has_symbolic_content>calendres</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kalendrə</hector:phoneticKey>
+    <hector:phoneticKey>kalendrəs</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1446</hector:validThrough>
   </rdf:Description>
@@ -45,6 +62,10 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/almanacs">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>almanacs</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_calendars_cb2155c70bc6971d753d12aa876db5a369c6aa2b0ebfe5c9ee90c41a1127a3ab186">
     <crm:P190_has_symbolic_content>calender</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -53,20 +74,16 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1483</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1485</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/calendars">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>calendars (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_calendars_cb139ac2cfab8aa28a8211025be54a5e63a532813437c21f9da7af534cde14061c0">
     <crm:P190_has_symbolic_content>calendars</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>kalendars</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_calendars_cbda9b18917cb1daf7e62f61be8560414ab6c7bd4c22ab553f243e3891b54a5dc4">
-    <crm:P190_has_symbolic_content>calenders</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kalenders</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1483</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1485</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_calendars_cb11c8cf16fc7a7f86d723d5d4190133ed3045135f97a3e46090c1bfd637821b427">
     <crm:P190_has_symbolic_content>kalenderes</crm:P190_has_symbolic_content>
@@ -76,37 +93,20 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_calendars_cb201e96b81287ecb74c5c85776a7ddf65b018fefa236e582153d28b3685e18deff">
-    <crm:P190_has_symbolic_content>calendres</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kalendrəs</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1446</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/calendars">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>calendars (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_calendars_cb127c89d5797c0160166f8bc47b228dff0ce4afd5aad5f08604d69053d8447063">
-    <crm:P190_has_symbolic_content>a table or chart of the year, or for a mathematical or astronomical table (MED s.v. calender n.) | case for a table or chart of the year, or for a mathematical or astronomical table (MED s.v. calender n.) | calendar, a table showing the division of a given year into its months and days, and referring the days of each month to the days of the week; often also including important astronomical data, and indicating ecclesiastical or other festivals, and other events belonging to individual days (OED s.v. calendar n. 2) | a written calender; an astronomical table (MED s.v. calender) | a table (or pamphlet) showing the division of the year into months and days, often with astronomical data and/or church festivals (notably Easter) and saints’ days (OED s.v. calendar n.)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/almanacs">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>almanacs</rdfs:label>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300026741">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>calendars (documents)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

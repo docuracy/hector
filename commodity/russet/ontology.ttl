@@ -9,12 +9,11 @@
 
 <https://w3id.org/hector/commodity/russet> a crm:E55_Type ;
     rdfs:label "russet" ;
-    dcterms:modified "2026-09-29"^^xsd:date ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
     crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
-            crm:P190_has_symbolic_content "russet" ;
-            crm:P2_has_type aat:300404670,
-                hector:AttestedVariant ;
-            hector:phoneticKey "ruset" ],
+            crm:P190_has_symbolic_content "russettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rusetəs" ],
         [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "cotton russet" ;
             crm:P2_has_type hector:AttestedVariant ;
@@ -22,13 +21,18 @@
         [ a crm:E33_E41_Linguistic_Appellation ;
             crm:P190_has_symbolic_content "cotton russett" ;
             crm:P2_has_type hector:AttestedVariant ;
-            hector:phoneticKey "koton ruset" ] ;
+            hector:phoneticKey "koton ruset" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "russet" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ruset" ] ;
     crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
             crm:P190_has_symbolic_content "Coarse homespun cloth, usually reddish or brownish in color. [Source: Getty AAT]" ;
             crm:P2_has_type aat:300435416 ] ;
     skos:exactMatch <https://w3id.org/mlca/glossary/russet> ;
     la:equivalent aat:300380102 ;
-    hector:attestationCount 1789 .
+    hector:attestationCount 1831 .
 
 aat:300380102 a crm:E55_Type ;
     rdfs:label "russet (coarse fabric)" .

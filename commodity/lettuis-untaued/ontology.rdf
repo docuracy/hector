@@ -7,20 +7,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1d60d76c699d011b24f821175edadf48d38bf119c6b8b5b7a27f913121281deb8">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/timber">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>timber</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb11deb4c815ce5fa9aa7f4965b3eb69b7cc0ece52f54ec18c19365bdf403f3123e">
-    <crm:P190_has_symbolic_content>lettuis (untaued)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>letuis untaued</hector:phoneticKey>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb22fca5254808429f9a4667b09b6ff828b12cb8a3ad66f75b1e2809154aa8813b0">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -28,51 +22,17 @@
     <hector:lsd>5s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lettuis</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis-untaued#rate-1558-inward-654">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Letwis untawed the tymbre 5s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_lettuis_untaued_cb22fca5254808429f9a4667b09b6ff828b12cb8a3ad66f75b1e2809154aa8813b0"/>
-    <hector:perQuantity rdf:nodeID="commodity_lettuis_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 654 (transcribed by Stuart Jenks): 'Letwis untawed the tymbre' 5s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis-untaued">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb11deb4c815ce5fa9aa7f4965b3eb69b7cc0ece52f54ec18c19365bdf403f3123e"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb130b4c42dba99e100c857d4e4106012ae07592751f42f593ece2e8af51bfca81d"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb14150d4be4cce02e14d306c4f275dd1635f4eec48a812a83443d2a569a61f706c"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_lettuis_untaued_cb1bc0c69be5cad8cd18702ee8a56a4060c69d0512af8fc57ca5bd2e8ff8329f011"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lettuis (untaued)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/lettuis"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/lettuis"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lettuis-untaued#rate-1545-inward-452"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lettuis-untaued#rate-1558-inward-654"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1bc0c69be5cad8cd18702ee8a56a4060c69d0512af8fc57ca5bd2e8ff8329f011">
-    <crm:P190_has_symbolic_content>lettuis, qualified as ‘untaued’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb11deb4c815ce5fa9aa7f4965b3eb69b7cc0ece52f54ec18c19365bdf403f3123e">
+    <crm:P190_has_symbolic_content>lettuis (untaued)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>letuis untaued</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb2ecaa4776ee8821d0e997403504e9de44e12373f94ba4d936ea0be84ad8d7bf48">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>2s 6d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1d60d76c699d011b24f821175edadf48d38bf119c6b8b5b7a27f913121281deb8">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis-untaued#rate-1545-inward-452">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -89,13 +49,14 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>letwis untaued</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis-untaued#rate-1558-inward-654">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Letwis untawed the tymbre 5s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_lettuis_untaued_cb22fca5254808429f9a4667b09b6ff828b12cb8a3ad66f75b1e2809154aa8813b0"/>
+    <hector:perQuantity rdf:nodeID="commodity_lettuis_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 654 (transcribed by Stuart Jenks): 'Letwis untawed the tymbre' 5s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb14150d4be4cce02e14d306c4f275dd1635f4eec48a812a83443d2a569a61f706c">
     <crm:P190_has_symbolic_content>Lettuis untawed</crm:P190_has_symbolic_content>
@@ -103,8 +64,47 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>letuis untaued</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis-untaued">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb11deb4c815ce5fa9aa7f4965b3eb69b7cc0ece52f54ec18c19365bdf403f3123e"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb130b4c42dba99e100c857d4e4106012ae07592751f42f593ece2e8af51bfca81d"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lettuis_untaued_cb14150d4be4cce02e14d306c4f275dd1635f4eec48a812a83443d2a569a61f706c"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_lettuis_untaued_cb1bc0c69be5cad8cd18702ee8a56a4060c69d0512af8fc57ca5bd2e8ff8329f011"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lettuis (untaued)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/lettuis"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/lettuis"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lettuis-untaued#rate-1545-inward-452"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lettuis-untaued#rate-1558-inward-654"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/timber">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>timber</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lettuis_untaued_cb1bc0c69be5cad8cd18702ee8a56a4060c69d0512af8fc57ca5bd2e8ff8329f011">
+    <crm:P190_has_symbolic_content>lettuis, qualified as ‘untaued’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lettuis">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lettuis</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
