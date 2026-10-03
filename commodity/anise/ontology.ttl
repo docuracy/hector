@@ -1,0 +1,112 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/anise> a crm:E55_Type ;
+    rdfs:label "anise" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anneis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aneis" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aunys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aunis" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "auneys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "auneis" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anyse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anisə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aunes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aunəs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anise" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "anisə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aunis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aunis" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "anise, an umbelliferous plant (Pimpinella Anisum) native to the Levant and cultivated for its aromatic and carminative seeds, used medically (OED s.v. anise)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300132436,
+        aat:300386730,
+        aat:300404880,
+        aat:300435300 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/anise> ;
+    skos:related <https://w3id.org/hector/commodity/aniseed> ;
+    la:equivalent wd:Q28692 ;
+    hector:attestationCount 67 ;
+    hector:originPlace wd:Q81483 .
+
+aat:300132436 a crm:E55_Type ;
+    rdfs:label "herbs" .
+
+aat:300386730 a crm:E55_Type ;
+    rdfs:label "spices" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435300 a crm:E55_Type ;
+    rdfs:label "Apiaceae (family)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q28692 a crm:E55_Type ;
+    rdfs:label "Pimpinella anisum" .
+
+wd:Q81483 a crm:E53_Place ;
+    rdfs:label "Levant" .
+
+<https://w3id.org/hector/commodity/aniseed> a crm:E55_Type ;
+    rdfs:label "aniseed" .
+
+<https://w3id.org/mlca/glossary/anise> a crm:E55_Type ;
+    rdfs:label "anise (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

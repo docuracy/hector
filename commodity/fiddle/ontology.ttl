@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fiddle> a crm:E55_Type ;
+    rdfs:label "fiddle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fiddle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "fidlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedalə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedaləs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedelə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedeləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers generally for all lutelike instruments having a soundbox and played with a bow. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fiddle> ;
+    la:equivalent aat:300042220 ;
+    hector:attestationCount 3 .
+
+aat:300042220 a crm:E55_Type ;
+    rdfs:label "fiddles" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/fiddle> a crm:E55_Type ;
+    rdfs:label "fiddle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

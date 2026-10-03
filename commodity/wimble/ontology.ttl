@@ -1,0 +1,87 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wimble> a crm:E55_Type ;
+    rdfs:label "wimble" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymbelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimbelə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymbylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimbiləs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymbylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimbilə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimeləs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimelə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wymbelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wimbeləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wimble" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wimblə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "wymble (wimble): a gimlet, auger or other instrument for boring holes (OED s.v. wimble)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wimble> ;
+    skos:related <https://w3id.org/hector/commodity/wimble-iron>,
+        <https://w3id.org/hector/commodity/wimple> ;
+    la:equivalent aat:300023572,
+        aat:300023752 ;
+    hector:attestationCount 4 .
+
+aat:300023572 a crm:E55_Type ;
+    rdfs:label "augers" .
+
+aat:300023752 a crm:E55_Type ;
+    rdfs:label "gimlets" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/wimble-iron> a crm:E55_Type ;
+    rdfs:label "wimble iron" .
+
+<https://w3id.org/hector/commodity/wimple> a crm:E55_Type ;
+    rdfs:label "wimple" .
+
+<https://w3id.org/mlca/glossary/wimble> a crm:E55_Type ;
+    rdfs:label "wimble (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,123 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/anvil> a crm:E55_Type ;
+    rdfs:label "anvil" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "andvillum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "andvilum" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anveltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anveltəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anvil" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "anvil" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "andvilli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "andvili" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anfeldum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anfeldum" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anvelte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anveltə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anfeldi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anfeldi" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "incudi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "inkudi" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "incudus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "inkudus" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anvelde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anveldə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anveldes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "anveldəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "awndevyle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aundevilə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "incusudis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "inkusudis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "andfeld" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "andfeld" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "incus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "inkus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Heavy, usually steel or iron blocks, on which metal is shaped by hand hammering or forging. Anvils are also used for working materials other than metal. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/anvil> ;
+    la:equivalent aat:300023119 ;
+    hector:attestationCount 28 .
+
+aat:300023119 a crm:E55_Type ;
+    rdfs:label "anvils (tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/anvil> a crm:E55_Type ;
+    rdfs:label "anvil (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

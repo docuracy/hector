@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/hook-endes">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_hook_endes_cb100312c1c0637a4ade08b176f787d3dff6b13b1a03cca775b0ff8d699f11ab579"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_hook_endes_cb159f2bbbd05b9c2a741b7f14171af8c96476872d7efb78d88f3d67010006da796"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_hook_endes_cb18f2428d0c0dd1d8a9f1982db947896ece98593b9bae6a8dd827eb342fa08f93f"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>hook (endes)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/hook"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/hook"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/hook-endes#rate-1545-inward-362"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/hook-endes#rate-1558-inward-575"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>gross</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb100312c1c0637a4ade08b176f787d3dff6b13b1a03cca775b0ff8d699f11ab579">
+    <crm:P190_has_symbolic_content>Hoke endes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>hokə endəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/hook-endes#rate-1558-inward-575">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Hoke endes the grosse 4s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_hook_endes_cb1c301b00b2d6846777a00721b2ec09fb6b3b98dc402a3f1d783c3ae5dba7ee785"/>
+    <hector:perQuantity rdf:nodeID="commodity_hook_endes_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 575 (transcribed by Stuart Jenks): 'Hoke endes the grosse' 4s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb3403feb9a9378aa5eee31179bc4d2eb4b269697572d9bdc07879dc135834bc971">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>12d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb1595df2f76cddcf9cfbb1502cadf3812cbd85aa13a561fff89b050a10ba3eddb3">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb159f2bbbd05b9c2a741b7f14171af8c96476872d7efb78d88f3d67010006da796">
+    <crm:P190_has_symbolic_content>hook (endes)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>hoːk endəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb1c301b00b2d6846777a00721b2ec09fb6b3b98dc402a3f1d783c3ae5dba7ee785">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>4s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/hook-endes#rate-1545-inward-362">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Hoke endes the groce 12d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_hook_endes_cb3403feb9a9378aa5eee31179bc4d2eb4b269697572d9bdc07879dc135834bc971"/>
+    <hector:perQuantity rdf:nodeID="commodity_hook_endes_cb1595df2f76cddcf9cfbb1502cadf3812cbd85aa13a561fff89b050a10ba3eddb3"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 362 (transcribed by Stuart Jenks): 'Hoke endes the groce' 12d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_hook_endes_cb18f2428d0c0dd1d8a9f1982db947896ece98593b9bae6a8dd827eb342fa08f93f">
+    <crm:P190_has_symbolic_content>hook, qualified as ‘endes’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/hook">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>hook</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

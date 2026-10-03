@@ -1,0 +1,115 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bowstring> a crm:E55_Type ;
+    rdfs:label "bowstring" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filo" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bawestryng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bauestriŋ" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowstrenges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːstrendʒəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowestring" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːestriŋ" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowestrenges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːestrendʒəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowstreng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːstreŋ" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowestreng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːestreŋ" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bawestrynges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bauestrindʒəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filati" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filati" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowstringes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːstrindʒəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filatum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filatum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowstring" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buːstriŋ" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowestringes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːestrindʒəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the string of a bow" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bowstring> ;
+    skos:related <https://w3id.org/hector/commodity/cord> ;
+    la:equivalent aat:300421014 ;
+    hector:attestationCount 19 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300421014 a crm:E55_Type ;
+    rdfs:label "bowstrings" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cord> a crm:E55_Type ;
+    rdfs:label "cord" .
+
+<https://w3id.org/mlca/glossary/bowstring> a crm:E55_Type ;
+    rdfs:label "bowstring (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

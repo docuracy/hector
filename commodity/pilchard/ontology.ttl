@@ -1,0 +1,93 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pilchard> a crm:E55_Type ;
+    rdfs:label "pilchard" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilcherde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃerdə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pylcherdes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃerdəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilcherdes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃerdəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pylchardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃardəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilchardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃardəs" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pylcherd" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃerd" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pichardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃardəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pylchard" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃard" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilchard" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "piltʃard" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilcherd" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piltʃerd" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a small sea fish, Clupea pilchardus, closely allied to the herring, but smaller, and rounder in form; it is taken in large numbers on the coasts of Cornwall and Devon, and forms a considerable article of trade (OED s.v. pilchard)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pilchard> ;
+    la:equivalent aat:300389825 ;
+    hector:attestationCount 18 .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/pilchard> a crm:E55_Type ;
+    rdfs:label "pilchard (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

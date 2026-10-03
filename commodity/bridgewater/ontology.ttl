@@ -1,0 +1,76 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bridgewater> a crm:E55_Type ;
+    rdfs:label "bridgewater" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brigewaters" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bridʒeuaters" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bridgewaters" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "briddʒeuaters" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bridgewaters," ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "briddʒeuaters" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bridgewater" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "briddʒeuater" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bridwaters" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bridwaters" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bridwater" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bridwater" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brygewatars" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bridʒeuatars" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an English woollen made in Bridgwater | , an English woollen cloth | cloth made in Bridgwater, reckoned at a half a cloth of assize" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300243430 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bridgewater> ;
+    hector:attestationCount 18 .
+
+aat:300243430 a crm:E55_Type ;
+    rdfs:label "wool (textile)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/bridgewater> a crm:E55_Type ;
+    rdfs:label "bridgewater (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

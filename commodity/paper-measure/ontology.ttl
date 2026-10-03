@@ -1,0 +1,309 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/paper-measure> a crm:E55_Type ;
+    rdfs:label "paper (measure)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kartə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressyng papers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presiŋ papers" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paper (measure)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "paper mɛːsurə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papers" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papiri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papiri" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pryntnge paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "printndʒə paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "apupir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "apupir" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papier" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papiːr" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pauper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pauper" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pryntynge paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "printindʒə paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karta" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pappir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papir" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "printing paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "printiŋ paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paperes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paperəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressing paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presiŋ paper" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "printing carte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "printiŋ kartə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pryntyng paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "printiŋ paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paperus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paperus" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papyr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papir" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paperis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paperis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prest papers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "prest papers" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papar" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cort" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kort" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "apupirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "apupirs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prest paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "prest paper" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paper" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressyng paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presiŋ paper" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "venes paperes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "venəs paperəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paperises" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paperisəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papiries" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papiriːs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packing paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ paper" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paperi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paperi" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papeir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papeir" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papir" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papirs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pauperus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pauperus" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pauperes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pauperəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papiruses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papirusəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pauperi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pauperi" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papyrs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papirs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "writyng paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "writiŋ paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressinge papers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presindʒə papers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressinge paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presindʒə paper" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "writinge paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "writindʒə paper" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pressing papers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "presiŋ papers" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "papirus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "papirus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a paper: a quire or packet of paper used as a unit of measure or packing for small wares — buckram, silk (raw, caul, Cologne, Messina), points, pins, laces, thread, corses, combs, laune, sarcenet, and gold thread (OED s.v. paper n. 6b)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/paper%20%28measure%29> ;
+    skos:related <https://w3id.org/hector/commodity/paper>,
+        <https://w3id.org/hector/commodity/parpes> ;
+    hector:attestationCount 1641 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/paper> a crm:E55_Type ;
+    rdfs:label "paper" .
+
+<https://w3id.org/hector/commodity/parpes> a crm:E55_Type ;
+    rdfs:label "parpes" .
+
+<https://w3id.org/mlca/glossary/paper%20%28measure%29> a crm:E55_Type ;
+    rdfs:label "paper (measure) (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

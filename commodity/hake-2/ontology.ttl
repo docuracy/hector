@@ -1,0 +1,46 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hake-2> a crm:E55_Type ;
+    rdfs:label "hake_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hake_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "hakə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hakə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a gadoid fish, Merlucius vulgaris, resembling the cod (OED s.v. hake)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300266085 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hake_2> ;
+    la:equivalent wd:Q1289807 .
+
+aat:300266085 a crm:E55_Type ;
+    rdfs:label "fish (animals)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q1289807 a crm:E55_Type ;
+    rdfs:label "hake" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/hake_2> a crm:E55_Type ;
+    rdfs:label "hake_2 (London Customs Accounts glossary)" .
+

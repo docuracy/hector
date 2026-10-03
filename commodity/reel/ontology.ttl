@@ -1,0 +1,81 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/reel> a crm:E55_Type ;
+    rdfs:label "reel" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "relə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reːlə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reeles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reːləs" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "relys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "relis" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reːlə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "reːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rel" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Devices designed to support a skein of yarn while it is being unwound during use and/or wound into a ball for future use. These devices traditionally comprised a circular board nailed to a piece of oak to be handled manually, but are now electric and equipped with automated pre-selection counters for setting the desired yarn length.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/reel> ;
+    la:equivalent aat:300433379 ;
+    hector:attestationCount 4 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300433379 a crm:E55_Type ;
+    rdfs:label "yarn reels" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/reel> a crm:E55_Type ;
+    rdfs:label "reel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

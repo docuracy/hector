@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wallet> a crm:E55_Type ;
+    rdfs:label "wallet" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wallette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "waletə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wallets" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "walets" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wallettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "waletəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wallet" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "walet" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a bag for holding provisions, clothing, books, etc., esp. on a journey either on foot or on horseback (OED s.v. wallet), here as a packing unit for dry goods of no particular size | a bag for holding provisions, clothing, books etc., especially on a journey either on foot or on horseback (OED s.v. wallet), here as a packing unit for dry goods of no particular size" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300194509,
+        aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wallet> ;
+    hector:attestationCount 5 .
+
+aat:300194509 a crm:E55_Type ;
+    rdfs:label "bags (generic containers)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/wallet> a crm:E55_Type ;
+    rdfs:label "wallet (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

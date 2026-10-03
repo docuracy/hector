@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/alabaster> a crm:E55_Type ;
+    rdfs:label "alabaster" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alabastri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alabastri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alabaster" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "alabaster" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alabastre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alabastrə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alablaster" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alablaster" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fine-grained marblelike variety of gypsum that is easy to carve but is rather fragile; it has been used as a sculpture material, ornamental building work, vases, small decorative carvings, and powdered for use as a paper filler and paint pigment called mineral white or terra alba. Alabaster is usually a translucent white or pink but may also be a muted red, yellow or gray. It is soft and can be scratched slightly with a fingernail. It also dissolves slowly in wet environments. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/alabaster> ;
+    la:equivalent aat:300011101 ;
+    hector:attestationCount 26 .
+
+aat:300011101 a crm:E55_Type ;
+    rdfs:label "alabaster (mineral)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/alabaster> a crm:E55_Type ;
+    rdfs:label "alabaster (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

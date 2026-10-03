@@ -1,0 +1,112 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sleeve-2> a crm:E55_Type ;
+    rdfs:label "sleeve_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slevys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slevis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manicarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manikarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slev" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slev" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scleve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sklevə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manicae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manike" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manubrii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manubri" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manubrium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manubrium" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manica" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manika" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slevis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slevis" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manicis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manisis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleeve_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "sleːvə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleeve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sleːvə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Shaped coverings for the arm. Originally made separate from the main garment and attached by lacing through eyelets at the shoulder; later, often made as component parts of garments. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sleeve_2> ;
+    skos:related <https://w3id.org/hector/commodity/haft> ;
+    la:equivalent aat:300210530 ;
+    hector:attestationCount 40 ;
+    hector:taxation <https://w3id.org/hector/commodity/sleeve-2#rate-1558-inward-1014> .
+
+aat:300210530 a crm:E55_Type ;
+    rdfs:label "sleeves (costume)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/haft> a crm:E55_Type ;
+    rdfs:label "haft" .
+
+<https://w3id.org/hector/commodity/sleeve-2#rate-1558-inward-1014> a hector:Rate ;
+    rdfs:label "1558 inward: Slevys of vellett or satten for wemen the payre 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pair> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1014 (transcribed by Stuart Jenks): 'Slevys of vellett or satten for wemen the payre' 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pair> a crm:E58_Measurement_Unit ;
+    rdfs:label "pair" .
+
+<https://w3id.org/mlca/glossary/sleeve_2> a crm:E55_Type ;
+    rdfs:label "sleeve_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

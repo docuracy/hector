@@ -1,0 +1,66 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mala> a crm:E55_Type ;
+    rdfs:label "mala" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mala" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mala" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "males" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "maləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "male" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mala (also 'male', 'mail'), a packing unit — a leather pack, bag or trunk used to bundle goods (chiefly cloths) for carriage; of no particular fixed size. Cf. French 'malle'." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mala> ;
+    skos:related <https://w3id.org/hector/commodity/bale>,
+        <https://w3id.org/hector/commodity/chest>,
+        <https://w3id.org/hector/commodity/fardel> ;
+    hector:attestationCount 180 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bale> a crm:E55_Type ;
+    rdfs:label "bale" .
+
+<https://w3id.org/hector/commodity/chest> a crm:E55_Type ;
+    rdfs:label "chest" .
+
+<https://w3id.org/hector/commodity/fardel> a crm:E55_Type ;
+    rdfs:label "fardel" .
+
+<https://w3id.org/mlca/glossary/mala> a crm:E55_Type ;
+    rdfs:label "mala (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,71 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/recorder> a crm:E55_Type ;
+    rdfs:label "recorder" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "recorderes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rekorderəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "recorders" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rekorders" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "recorder" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "rekorder" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Family of fipple flutes that originated in Europe, traditionally made of wood, recently sometimes of plastic, with seven fingerholes and a thumb hole. Recorders may be made in several sizes, including the following: garklein, sopranino, Soprano, alto, voice flute, tenor, bass, great bass, contrabass, sub-great bass, and sub-contrabass. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/recorder> ;
+    la:equivalent aat:300042551 ;
+    hector:attestationCount 6 ;
+    hector:taxation <https://w3id.org/hector/commodity/recorder#rate-1558-inward-909> .
+
+aat:300042551 a crm:E55_Type ;
+    rdfs:label "recorders (flutes)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/recorder#rate-1558-inward-909> a hector:Rate ;
+    rdfs:label "1558 inward: Recorders the sett or case cont’ 5 pipes the sett 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/set> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 909 (transcribed by Stuart Jenks): 'Recorders the sett or case cont’ 5 pipes the sett' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/set> a crm:E58_Measurement_Unit ;
+    rdfs:label "set" .
+
+<https://w3id.org/mlca/glossary/recorder> a crm:E55_Type ;
+    rdfs:label "recorder (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,113 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pec" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pek" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesəs" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pese" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesis" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peceis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peseis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pece" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesis" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesiarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecia" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pesia" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesie" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peci" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesi" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pecia / pece (Latin, a piece): a piece used as a measure or packing unit, of definite size varying by commodity — figs (60 lb.), raisins and other fruit/citrus (a third of a sorte), Cornish tin (250 lb.) and tin foil, rosin, battery (650 lb.) and kettles, brazil, iron of Lucca, buckram, lawn, Dornix thread, saunders, hops and marmalade." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/pecia>,
+        <https://w3id.org/mlca/glossary/pecia> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 23456 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pecia> a crm:E55_Type ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/pecia> a crm:E55_Type ;
+    rdfs:label "pecia (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

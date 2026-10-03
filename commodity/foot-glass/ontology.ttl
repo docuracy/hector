@@ -1,0 +1,76 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/foot-glass> a crm:E55_Type ;
+    rdfs:label "foot glass" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pes vitri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pes vitri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fote in quarellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotə in kwarelis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fote glasse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotə glasə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foyet glasses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "foiet glasəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pedis vitri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pedis vitri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fote in quarelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotə in kwareləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fote vitri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotə vitri" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foot glass" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "foːt glas" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "clearly some kind of drinking vessel made of glass, but exact meaning unknown (Cobb 180 does not define)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300194567 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/foot%20glass> ;
+    skos:related <https://w3id.org/hector/commodity/glass-3> ;
+    hector:attestationCount 4 .
+
+aat:300194567 a crm:E55_Type ;
+    rdfs:label "drinking vessels" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/glass-3> a crm:E55_Type ;
+    rdfs:label "glass_3" .
+
+<https://w3id.org/mlca/glossary/foot%20glass> a crm:E55_Type ;
+    rdfs:label "foot glass (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

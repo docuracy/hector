@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tuckyng-gerdele> a crm:E55_Type ;
+    rdfs:label "tuckyng gerdele" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuckyng girdelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukiŋ dʒirdelə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuckyng gerdele" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tukiŋ dʒerdelə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuckyng gerdeles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukiŋ dʒerdeləs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuckyng girdelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukiŋ dʒirdeləs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a girdle worn with the alb, which is drawn through it until the skirt is of the proper length (OED s.v. tucking vbl.n.1 5)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300210585 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tuckyng%20gerdele> ;
+    skos:related <https://w3id.org/hector/commodity/girdle> ;
+    hector:attestationCount 2 .
+
+aat:300210585 a crm:E55_Type ;
+    rdfs:label "girdles (underwear)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/girdle> a crm:E55_Type ;
+    rdfs:label "girdle" .
+
+<https://w3id.org/mlca/glossary/tuckyng%20gerdele> a crm:E55_Type ;
+    rdfs:label "tuckyng gerdele (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

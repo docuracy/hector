@@ -1,0 +1,148 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/dornick> a crm:E55_Type ;
+    rdfs:label "dornick" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornekes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornekəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornykkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornikəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornick" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dornik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornikes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornikəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornax" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornaks" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornik" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornyckes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornikəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornix" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorniks" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornexe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorneksə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornyx" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorniks" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornixe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorniksə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornyxe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorniksə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornex" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dorneks" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dornike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dornikə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "cloth manufactured in Doornik/Tournai, especially a silk, worsted, woollen or partly woollen fabric, used for hangings, carpets, vestments etc. (OED s.v. dornick1) | cloth manufactured in Doornik/ Tournai, especially a silk, worsted, woollen or partly woollen fabric, used for hangings, carpets, vestments etc. (OED s.v. dornick1) | (Dornyck, -es) with silke | Note that the Cologne translation describes this product as low-quality tapistry (schlechte decken) | 19," ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300162391 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/dornick> ;
+    hector:attestationCount 106 ;
+    hector:originPlace wd:Q173219 ;
+    hector:taxation <https://w3id.org/hector/commodity/dornick#rate-1558-inward-383>,
+        <https://w3id.org/hector/commodity/dornick#rate-1558-inward-384> .
+
+aat:300162391 a crm:E55_Type ;
+    rdfs:label "cloth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q173219 a crm:E53_Place ;
+    rdfs:label "Tournai" .
+
+<https://w3id.org/hector/commodity/dornick#rate-1558-inward-383> a hector:Rate ;
+    rdfs:label "1558 inward: Dornyx voc’ Frenche Dornix the ell 15d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "15d" ;
+            hector:valueInPence 15.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ell> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 383 (transcribed by Stuart Jenks): 'Dornyx voc’ Frenche Dornix the ell' 15d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/dornick#rate-1558-inward-384> a hector:Rate ;
+    rdfs:label "1558 inward: Dornix voc’ Frenche Dornix the yerde 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/yard> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 384 (transcribed by Stuart Jenks): 'Dornix voc’ Frenche Dornix the yerde' 12d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/ell> a crm:E58_Measurement_Unit ;
+    rdfs:label "ell" .
+
+<https://w3id.org/hector/unit/yard> a crm:E58_Measurement_Unit ;
+    rdfs:label "yard" .
+
+<https://w3id.org/mlca/glossary/dornick> a crm:E55_Type ;
+    rdfs:label "dornick (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

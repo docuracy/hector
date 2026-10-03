@@ -1,0 +1,151 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ell> a crm:E55_Type ;
+    rdfs:label "ell" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulnis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulnis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulnarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulnarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulnae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulne" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "elles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "eləs" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulnə" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ell" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "el" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulna" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulna" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "els" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "els" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "elle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "elə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "allnae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alne" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "eles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "eləs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "allna" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alna" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "els" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "elə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alna" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alna" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "el" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "el" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alnae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alne" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alnis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alnis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ulnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ulnəs" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ell, a measure of length (45 in. in England, 27 in. in Flanders), used for cloth (Zupko 119; OED s.v. ell1 1a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ell> ;
+    skos:related <https://w3id.org/hector/commodity/eel> ;
+    la:equivalent aat:300412070 ;
+    hector:attestationCount 18446 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300412070 a crm:E55_Type ;
+    rdfs:label "ells (units of length)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/eel> a crm:E55_Type ;
+    rdfs:label "eel" .
+
+<https://w3id.org/mlca/glossary/ell> a crm:E55_Type ;
+    rdfs:label "ell (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

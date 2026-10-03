@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/toney> a crm:E55_Type ;
+    rdfs:label "toney" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tonye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tonie" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tonny" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toni" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tony" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toni" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "toney" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tonei" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ] ;
+    crm:P2_has_type aat:300386154 ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "meaning unknown; a product measured in pounds (cannot be tunny, a fish)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/toney> ;
+    skos:related <https://w3id.org/hector/commodity/tunny> ;
+    hector:attestationCount 17 .
+
+aat:300386154 a crm:E55_Type ;
+    rdfs:label "unidentified (information indicator)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tunny> a crm:E55_Type ;
+    rdfs:label "tunny" .
+
+<https://w3id.org/mlca/glossary/toney> a crm:E55_Type ;
+    rdfs:label "toney (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

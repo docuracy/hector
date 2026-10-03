@@ -1,0 +1,91 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/torch-wick> a crm:E55_Type ;
+    rdfs:label "torch wick" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torchweck" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃwek" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torche weke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃə wekə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torche wyke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃə wikə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torcheweike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃeueikə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torch wick" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tortʃ wik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torchewekes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃeuekəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "torcheweke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tortʃeuekə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "torch-wick | a bundle of twisted fiber in a torch (OED s.v. wick n.1 1a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/torch%20wick> ;
+    skos:related <https://w3id.org/hector/commodity/candlewick>,
+        <https://w3id.org/hector/commodity/torch-staff>,
+        <https://w3id.org/hector/commodity/wax-torch>,
+        <https://w3id.org/hector/commodity/wick> ;
+    la:equivalent aat:300181108 ;
+    hector:attestationCount 8 .
+
+aat:300181108 a crm:E55_Type ;
+    rdfs:label "wicks" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/candlewick> a crm:E55_Type ;
+    rdfs:label "candlewick" .
+
+<https://w3id.org/hector/commodity/torch-staff> a crm:E55_Type ;
+    rdfs:label "torch staff" .
+
+<https://w3id.org/hector/commodity/wax-torch> a crm:E55_Type ;
+    rdfs:label "wax torch" .
+
+<https://w3id.org/hector/commodity/wick> a crm:E55_Type ;
+    rdfs:label "wick" .
+
+<https://w3id.org/mlca/glossary/torch%20wick> a crm:E55_Type ;
+    rdfs:label "torch wick (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

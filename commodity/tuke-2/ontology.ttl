@@ -1,0 +1,117 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tuke-2> a crm:E55_Type ;
+    rdfs:label "tuke_2" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuke_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "tukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuckes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tuk" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tewk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teuk" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tewke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teukə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tuke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teukes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teukəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tukis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tukes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukəs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teuke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tewkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teukəs" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tucke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tukə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "canvas, such as is used for an awning or canopy; but also applied to a finer fabric (OED s.v. tuke/tweke, MED s.v. tuke n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014078 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tuke_2> ;
+    hector:attestationCount 159 ;
+    hector:taxation <https://w3id.org/hector/commodity/tuke-2#rate-1558-inward-1097> .
+
+aat:300014078 a crm:E55_Type ;
+    rdfs:label "canvas (textile material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tuke-2#rate-1558-inward-1097> a hector:Rate ;
+    rdfs:label "1558 inward: Tukes the pece 8s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "8s" ;
+            hector:valueInPence 96.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1097 (transcribed by Stuart Jenks): 'Tukes the pece' 8s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/tuke_2> a crm:E55_Type ;
+    rdfs:label "tuke_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

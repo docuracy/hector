@@ -1,0 +1,68 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/seed-pearl> a crm:E55_Type ;
+    rdfs:label "seed pearl" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seede perle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seːdə perlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sede perle pro medean'" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sedə perlə pro medɛːn" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seed pearl" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "seːd pɛːrl" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a seed pearl is a minute pearl having the appearance of a seed, usually drilled and fastened to some material to be worn as an ornament (OED s.v. seed-pearl), but the meaning of medean' is unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011827 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/seed%20pearl> ;
+    hector:attestationCount 1 ;
+    hector:taxation <https://w3id.org/hector/commodity/seed-pearl#rate-1558-inward-1063> .
+
+aat:300011827 a crm:E55_Type ;
+    rdfs:label "pearl (animal material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/seed-pearl#rate-1558-inward-1063> a hector:Rate ;
+    rdfs:label "1558 inward: Seede perle the ounce 2s 6d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s 6d" ;
+            hector:valueInPence 30.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ounce> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1063 (transcribed by Stuart Jenks): 'Seede perle the ounce' 2s 6d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/ounce> a crm:E58_Measurement_Unit ;
+    rdfs:label "ounce" .
+
+<https://w3id.org/mlca/glossary/seed%20pearl> a crm:E55_Type ;
+    rdfs:label "seed pearl (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

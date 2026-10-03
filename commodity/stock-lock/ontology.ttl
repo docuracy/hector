@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/stock-lock> a crm:E55_Type ;
+    rdfs:label "stock-lock" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoclockes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklokkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklokke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklokes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stocklokk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklok" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklockes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklokk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklok" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklokkys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokis" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklock" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklok" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoklok" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklok" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoclock" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklok" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoclockys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stoklokis" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stock-lock" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "stok lok" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a lock enclosed in a wooden case, usually fitted on an outer door (OED s.v. stock-lock) (see also lockys)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/stock-lock> ;
+    la:equivalent aat:300033419 ;
+    hector:attestationCount 12 .
+
+aat:300033419 a crm:E55_Type ;
+    rdfs:label "door locks" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/stock-lock> a crm:E55_Type ;
+    rdfs:label "stock-lock (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

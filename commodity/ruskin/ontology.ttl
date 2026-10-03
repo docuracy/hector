@@ -1,0 +1,114 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ruskin> a crm:E55_Type ;
+    rdfs:label "ruskin" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "russewerke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruseuerkə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "russewark" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruseuark" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ruswerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruswerk" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ruskyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruskins" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ruskin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ruskin" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "russewerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruseuerk" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis ruskyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis ruskin" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ruskynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruskinə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ruskyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ruskin" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rossekynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rosekin" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roskynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roskinəs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roskynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roskinə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "red summer fur of the squirrel (Veale, 228)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ruskin> ;
+    skos:related <https://w3id.org/hector/commodity/rushware>,
+        <https://w3id.org/hector/commodity/squirrel> ;
+    hector:attestationCount 183 .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/rushware> a crm:E55_Type ;
+    rdfs:label "rushware" .
+
+<https://w3id.org/hector/commodity/squirrel> a crm:E55_Type ;
+    rdfs:label "squirrel" .
+
+<https://w3id.org/mlca/glossary/ruskin> a crm:E55_Type ;
+    rdfs:label "ruskin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

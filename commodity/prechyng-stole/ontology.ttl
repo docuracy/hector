@@ -1,0 +1,46 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/prechyng-stole> a crm:E55_Type ;
+    rdfs:label "prechyng stole" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prechyng stoles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pretʃiŋ stoləs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prechyng stole" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pretʃiŋ stolə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an ecclesiastical vestment consisting of a narrow strip of silk or linen, worn over the shoulders (by deacons over the left shoulder only) and hanging down to the knee or lower (OED s.v. stole n1, 2), worn by preachers" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300210450 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/prechyng%20stole> ;
+    hector:attestationCount 2 .
+
+aat:300210450 a crm:E55_Type ;
+    rdfs:label "vestments (ecclesiastical costume)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/prechyng%20stole> a crm:E55_Type ;
+    rdfs:label "prechyng stole (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,129 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/storax> a crm:E55_Type ;
+    rdfs:label "storax" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storas" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "astarachia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "astaratʃia" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "calamyta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kalamita" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "calamytae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kalamite" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storys liquidi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storis likwidi" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storax" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "storaks" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storax calamite" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storaks kalamitə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the resin of the tree Styrax officinalis; in later commercial and pharmaceutical use the balsam of the tree Liquidambar orientale, used medically (OED s.v. storax; Latham, Word-List, s.v. 2 calamita) | probably storax, from the Portuguese form of the word (estoraque) (see also calamyta, storax)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300375614 ;
+    skos:closeMatch aat:300012940 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/storax> ;
+    hector:attestationCount 9 ;
+    hector:taxation <https://w3id.org/hector/commodity/storax#rate-1545-inward-707>,
+        <https://w3id.org/hector/commodity/storax#rate-1558-inward-1046>,
+        <https://w3id.org/hector/commodity/storax#rate-1558-inward-998> .
+
+aat:300012940 a crm:E55_Type ;
+    rdfs:label "gum resin" .
+
+aat:300375614 a crm:E55_Type ;
+    rdfs:label "Styrax (genus)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/storax#rate-1545-inward-707> a hector:Rate ;
+    rdfs:label "1545 inward: Storax liquide þe 100 lb £3 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3 6s 8d" ;
+            hector:valueInPence 800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 707 (transcribed by Stuart Jenks): 'Storax liquide þe 100 lb' £3 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/storax#rate-1558-inward-1046> a hector:Rate ;
+    rdfs:label "1558 inward: Storax calamyte the pounde 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1046 (transcribed by Stuart Jenks): 'Storax calamyte the pounde' 4s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/storax#rate-1558-inward-998> a hector:Rate ;
+    rdfs:label "1558 inward: Storax liquide the C lb. cont’ 5 score [lb.] £5" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£5" ;
+            hector:valueInPence 1200.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 998 (transcribed by Stuart Jenks): 'Storax liquide the C lb. cont’ 5 score [lb.]' £5" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/storax> a crm:E55_Type ;
+    rdfs:label "storax (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ashes-2> a crm:E55_Type ;
+    rdfs:label "ashes_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ashes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aʃəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ciniseris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siniseris" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ashes_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "aʃəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sinis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "residue powder left after the combustion of wood [Source: Wikidata]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011786 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ashes_2> ;
+    skos:related <https://w3id.org/hector/commodity/ash-blue> ;
+    la:equivalent wd:Q3480332 ;
+    hector:attestationCount 1 .
+
+aat:300011786 a crm:E55_Type ;
+    rdfs:label "ash (residue)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q3480332 a crm:E55_Type ;
+    rdfs:label "wood ash" .
+
+<https://w3id.org/hector/commodity/ash-blue> a crm:E55_Type ;
+    rdfs:label "ash-blue" .
+
+<https://w3id.org/mlca/glossary/ashes_2> a crm:E55_Type ;
+    rdfs:label "ashes_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

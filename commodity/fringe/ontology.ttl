@@ -1,0 +1,97 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fringe> a crm:E55_Type ;
+    rdfs:label "fringe" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fring cirici" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "friŋ sirisi" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frynge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frindʒə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frynges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frindʒəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frindge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frinddʒə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fringe" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "frindʒə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frenge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frendʒə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "freinge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "freindʒə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frengis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frendʒis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sadlers fringe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sadlers frindʒə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fringe cirici" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frindʒə sirisi" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "frenges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "frendʒəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Trimming consisting of long or short lengths of straight or twisted thread, cord, or tassel; often grouped or knotted in various designs. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fringe> ;
+    la:equivalent aat:300227830 ;
+    hector:attestationCount 35 .
+
+aat:300227830 a crm:E55_Type ;
+    rdfs:label "fringe" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/fringe> a crm:E55_Type ;
+    rdfs:label "fringe (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

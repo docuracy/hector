@@ -1,0 +1,94 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cat-fur> a crm:E55_Type ;
+    rdfs:label "cat fur" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "murilegorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "murilegorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "de cattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "de katəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "catulinorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katulinorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "catt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kat" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kat" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cat fur" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kat fur" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "catte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "catorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mureliga" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mureliga" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mureligorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mureligorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mureligiarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "murelidʒiarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "catulorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "katulorum" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "cat fur | the fur of the cat | the fur of the large wild mountain cat, the smaller wild cat or the domestic cat (Veale 218) | (potte, -s) fur from the paws of the large wild mountain cat, the smaller wild cat or the domestic cat (Veale 25, 218, 221) | skins of the large wild mountain cat, the smaller wild cat or the domestic cat (Veale 218) | fur from the belly of the large wild mountain cat, the smaller wild cat or the domestic cat (Veale 218, 221)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cat%20fur> ;
+    hector:attestationCount 55 .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/cat%20fur> a crm:E55_Type ;
+    rdfs:label "cat fur (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

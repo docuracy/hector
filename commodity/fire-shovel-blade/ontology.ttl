@@ -1,0 +1,95 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fire-shovel-blade> a crm:E55_Type ;
+    rdfs:label "fire shovel blade" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fier sholve plates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiːr ʃolvə platəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fire shovel blade" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "firə ʃovel bladə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fire shovelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "firə ʃoveləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fire shovelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "firə ʃovelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fier sholve plate" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiːr ʃolvə platə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "not attested, but clearly the broad metal blade of a fire shovel, a shovel for placing coals on a fire or for removing coal or ashes (OED s.v. fire-shovel) | , -s a shovel for placing coals on a fire or for removing coal or ashes (OED s.v. fire-shovel)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300423365 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fire%20shovel%20blade> ;
+    hector:attestationCount 1 ;
+    hector:taxation <https://w3id.org/hector/commodity/fire-shovel-blade#rate-1558-inward-456>,
+        <https://w3id.org/hector/commodity/fire-shovel-blade#rate-1558-inward-457> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300423365 a crm:E55_Type ;
+    rdfs:label "coal shovels" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/fire-shovel-blade#rate-1558-inward-456> a hector:Rate ;
+    rdfs:label "1558 inward: Fire shovelles the dosen 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 456 (transcribed by Stuart Jenks): 'Fire shovelles the dosen' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/fire-shovel-blade#rate-1558-inward-457> a hector:Rate ;
+    rdfs:label "1558 inward: Fire shovelles plate the C cont’ 112 lb 12s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12s" ;
+            hector:valueInPence 144.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 457 (transcribed by Stuart Jenks): 'Fire shovelles plate the C cont’ 112 lb' 12s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/fire%20shovel%20blade> a crm:E55_Type ;
+    rdfs:label "fire shovel blade (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

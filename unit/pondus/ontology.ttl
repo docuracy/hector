@@ -1,0 +1,55 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/pondus> a crm:E58_Measurement_Unit ;
+    rdfs:label "pondus" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pondera" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pondera" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pondus" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pondus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ponduseris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ponduseris" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "wey, a measure of weight, here as a measure of wax | wey, a measure of weight, not of wax | wey, here as a measure of wax" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/pondus>,
+        <https://w3id.org/mlca/glossary/pondus> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 5 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pondus> a crm:E55_Type ;
+    rdfs:label "pondus" .
+
+<https://w3id.org/mlca/glossary/pondus> a crm:E55_Type ;
+    rdfs:label "pondus (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

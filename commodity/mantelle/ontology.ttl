@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mantelle> a crm:E55_Type ;
+    rdfs:label "mantelle" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantiləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantello" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantelo" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantellum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantelum" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantelis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantellorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantelorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantillis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantilis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manteləs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantel" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantelle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mantelə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manteli" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manteles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manteləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mantels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mantels" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content """a mantle of furs: a number of furs sewn together to make a fur lining, usually (by the 15th century) of a standard size (Veale 220)
+
+Note that mantles are also a form of cloak. """ ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mantelle> ;
+    skos:related <https://w3id.org/hector/commodity/cloak>,
+        <https://w3id.org/hector/commodity/mantelet> ;
+    la:equivalent aat:300375744 ;
+    hector:attestationCount 611 .
+
+aat:300375744 a crm:E55_Type ;
+    rdfs:label "fur stoles" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cloak> a crm:E55_Type ;
+    rdfs:label "cloak" .
+
+<https://w3id.org/hector/commodity/mantelet> a crm:E55_Type ;
+    rdfs:label "mantelet" .
+
+<https://w3id.org/mlca/glossary/mantelle> a crm:E55_Type ;
+    rdfs:label "mantelle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

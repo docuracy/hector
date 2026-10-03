@@ -1,0 +1,60 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/herring-oil> a crm:E55_Type ;
+    rdfs:label "herring oil" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "heryngseyme" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "heriŋseimə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "heryngsmolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "heriŋsmolt" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herring oil" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "heriŋ oil" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "heryngsmolte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "heriŋsmoltə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "herring fat, hering oil (MED s.v. hering 1(a)) | almost surely herring fat, herring oil (MED s.v. herring 1(a)) | almost surely herring fat" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014290 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/herring%20oil> ;
+    skos:related <https://w3id.org/hector/commodity/oil> ;
+    hector:attestationCount 9 .
+
+aat:300014290 a crm:E55_Type ;
+    rdfs:label "fish oil" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/oil> a crm:E55_Type ;
+    rdfs:label "oil" .
+
+<https://w3id.org/mlca/glossary/herring%20oil> a crm:E55_Type ;
+    rdfs:label "herring oil (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

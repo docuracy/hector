@@ -1,0 +1,65 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/down> a crm:E55_Type ;
+    rdfs:label "down" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "downe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "duːnə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "down" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "duːn" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "doune" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "duːnə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dovettum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dovetum" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dovetti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "doveti" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Material comprising the fine, small, fluffy, undergrowth feathers that lie next to the body of many adult birds. Commercial down, usually obtained from ducks and waterfowl, is lightweight and resilient. When used as a filling, down provides insulation and loft. It is used in winter coats, sleeping bags, bedding, and pillows. Trade regulation rules allow a garment to be labeled 100% down when it contains a minimum of 80% down. Today, most down is imported from China, Taiwan, Poland, and eastern Europe.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/down> ;
+    la:equivalent aat:300011810 ;
+    hector:attestationCount 19 .
+
+aat:300011810 a crm:E55_Type ;
+    rdfs:label "down (feather material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/down> a crm:E55_Type ;
+    rdfs:label "down (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

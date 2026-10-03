@@ -1,0 +1,142 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/petticoat> a crm:E55_Type ;
+    rdfs:label "petticoat" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pettycootes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikoːtəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petticotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petycotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petticottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotəs" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petycottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticotes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pettycote" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticote" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticoate" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikoatə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pettycoote" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikoːtə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pettycotes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikotəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peticoates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petikoatəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petticoat" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "petikoat" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a small coat worn by men beneath the doublet; also a short coat worn as armor (OED s.v. petticoat n. (a.) 1 a), here made of silk | a small coat worn by men beneath the doublet; also a short coat worn as armor (OED s.v. petticoat n. (a.) 1 a) | of wulle made of wool | a small coat worn by men beneath the doublet; also a short coat worn as armor (OED s.v. petticoat n. (a.) 1 a), here made of cotton | a small coat worn by men beneath the doublet; also a short coat worn as armor (OED s.v. petticoat n. (a.) 1 a) | a small coat worn by men beneath the doublet; also a short coat worn as armor (OED s.v. petticoat n. (a.) 1 a), here knitted" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300046143 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/petticoat> ;
+    hector:attestationCount 25 ;
+    hector:taxation <https://w3id.org/hector/commodity/petticoat#rate-1558-inward-867> .
+
+aat:300046143 a crm:E55_Type ;
+    rdfs:label "coats (garments)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/petticoat#rate-1558-inward-867> a hector:Rate ;
+    rdfs:label "1558 inward: Peticotes knytte of silke the dosen £12" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£12" ;
+            hector:valueInPence 2880.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 867 (transcribed by Stuart Jenks): 'Peticotes knytte of silke the dosen' £12" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/petticoat> a crm:E55_Type ;
+    rdfs:label "petticoat (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

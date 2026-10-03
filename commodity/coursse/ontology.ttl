@@ -1,0 +1,72 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/coursse> a crm:E55_Type ;
+    rdfs:label "coursse" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coursse" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kuːrsə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koris" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korsəs" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korsə" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cors" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kors" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korsəs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korsə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a ribbon or band serving as a ground for ornamentation with embroidery, used as a girdle, garter etc. (OED s.v. corse n. 5)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014668 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/coursse> ;
+    hector:attestationCount 81 .
+
+aat:300014668 a crm:E55_Type ;
+    rdfs:label "ribbon (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/coursse> a crm:E55_Type ;
+    rdfs:label "coursse (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

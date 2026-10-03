@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/warpe> a crm:E58_Measurement_Unit ;
+    rdfs:label "warpe" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werpes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werpəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werpəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werpə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werpe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werpə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warpis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warpis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warp" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warp" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warpes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warpəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warpə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warpəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warpe" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "warpə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a counting measure for pots (4 pots) (OED s.v. warp n.1 5a), here for earthenware pots and bowls (olla, patella terre)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/warpe>,
+        <https://w3id.org/mlca/glossary/warpe> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 168 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (warpe: 'a counting measure for pots (4 pots)')" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 4 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/warpe> a crm:E55_Type ;
+    rdfs:label "warpe" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/warpe> a crm:E55_Type ;
+    rdfs:label "warpe (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

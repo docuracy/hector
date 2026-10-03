@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/oil-met-oil-rap> a crm:E55_Type ;
+    rdfs:label "oil (met oil rap)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Oyle called mett oylle or rape oylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oilə kaled met oilə or rapə oilə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oil (met oil rap)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "oil met oil rap" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "oil, qualified as ‘met oil rap’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/oil> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/oil> ;
+    hector:taxation <https://w3id.org/hector/commodity/oil-met-oil-rap#rate-1507-none-201> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/oil-met-oil-rap#rate-1507-none-201> a hector:Rate ;
+    rdfs:label "1507: Oyle called mett oylle or rape oylle the barrelle 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1507, line 201 (transcribed by Stuart Jenks): 'Oyle called mett oylle or rape oylle the barrelle' 13s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/commodity/oil> a crm:E55_Type ;
+    rdfs:label "oil" .
+

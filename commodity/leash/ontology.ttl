@@ -1,0 +1,95 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/leash> a crm:E55_Type ;
+    rdfs:label "leash" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "liemes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "liːməs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lieme" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "liːmə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lesez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lesez" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "les" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "les" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lesəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lece" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lesə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lese" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lesə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lesəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leash" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lɛːʃ" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a leash for hounds (OED s.v. lyam, lyme) | leashes (OED s.v. leash n.) | leash | leash for holding a coursing hound or watchdog (OED s.v. leash n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/leash> ;
+    skos:related <https://w3id.org/hector/commodity/dog-chain>,
+        <https://w3id.org/hector/commodity/dog-collar> ;
+    la:equivalent aat:300428068 ;
+    hector:attestationCount 8 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300428068 a crm:E55_Type ;
+    rdfs:label "leashes" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/dog-chain> a crm:E55_Type ;
+    rdfs:label "dog chain" .
+
+<https://w3id.org/hector/commodity/dog-collar> a crm:E55_Type ;
+    rdfs:label "dog collar" .
+
+<https://w3id.org/mlca/glossary/leash> a crm:E55_Type ;
+    rdfs:label "leash (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

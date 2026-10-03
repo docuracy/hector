@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sinew> a crm:E55_Type ;
+    rdfs:label "sinew" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "synwes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sinwəs" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "senuys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "senuis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sinwes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sinwəs" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "synwe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sinwə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "senu" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "senu" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sinwe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sinwə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sinew" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sineu" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sinew for bows, military machines (MED s.v. sineu n. 1c)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sinew> ;
+    skos:related <https://w3id.org/hector/commodity/ox-sinew> ;
+    la:equivalent aat:300192952 ;
+    hector:attestationCount 3 .
+
+aat:300192952 a crm:E55_Type ;
+    rdfs:label "sinew (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/ox-sinew> a crm:E55_Type ;
+    rdfs:label "ox sinew" .
+
+<https://w3id.org/mlca/glossary/sinew> a crm:E55_Type ;
+    rdfs:label "sinew (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,100 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/raser> a crm:E55_Type ;
+    rdfs:label "raser" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reseres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reserəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "resere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reserə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "raseres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "raserəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reser" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reser" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasorii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasori" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasuːr" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasoures" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasuːrəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "raser" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "raser" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasers" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasuːrs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rasorium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rasorium" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a dry measure containing ca. 4 bushels (OED s.v. raser1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/raser> ;
+    hector:attestationCount 49 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/raser> a crm:E55_Type ;
+    rdfs:label "raser (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

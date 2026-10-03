@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/furniture-foot> a crm:E55_Type ;
+    rdfs:label "furniture foot" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "furniture foot" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "furniturə foːt" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feete" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feːtə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fete" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fetə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fotys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fet" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feet" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feːt" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fote" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fotə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Foot: a furniture foot (e.g. of a chest or table), distinct from the measure of length." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/furniture%20foot> ;
+    la:equivalent aat:300233918 ;
+    hector:attestationCount 5 .
+
+aat:300233918 a crm:E55_Type ;
+    rdfs:label "furniture feet" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/furniture%20foot> a crm:E55_Type ;
+    rdfs:label "furniture foot (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

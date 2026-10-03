@@ -1,0 +1,187 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mustard-seed> a crm:E55_Type ;
+    rdfs:label "mustard seed" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seminis cenappii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seminis senapi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterd sede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterd sedə" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustard musterdseed" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustard musterdseːd" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustard" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustard" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seminis cenapii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seminis senapi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustard seed" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mustard seːd" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seminis senapii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seminis senapi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustard sede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustard sedə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustardsede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustardsedə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustardesede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustardesedə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterdsede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdsedə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterde seede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdə seːdə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustardsede seede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustardsedə seːdə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterdsed" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdsed" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustarde sede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustardə sedə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterdsede seede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdsedə seːdə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mustersede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mustersedə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterdseed" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdseːd" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musterde sede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musterdə sedə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mustard seed (see also semen cenappii, semen cenapii, semen senapii)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300400469 ;
+    skos:closeMatch aat:300311365 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mustard%20seed> ;
+    skos:related <https://w3id.org/hector/commodity/mustard-quern> ;
+    hector:attestationCount 127 ;
+    hector:taxation <https://w3id.org/hector/commodity/mustard-seed#rate-1545-inward-476>,
+        <https://w3id.org/hector/commodity/mustard-seed#rate-1558-inward-712> .
+
+aat:300311365 a crm:E55_Type ;
+    rdfs:label "mustard (material)" .
+
+aat:300400469 a crm:E55_Type ;
+    rdfs:label "seeds (plant components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/mustard-quern> a crm:E55_Type ;
+    rdfs:label "mustard quern" .
+
+<https://w3id.org/hector/commodity/mustard-seed#rate-1545-inward-476> a hector:Rate ;
+    rdfs:label "1545 inward: Mustarde sede the pipe 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pipe> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 476 (transcribed by Stuart Jenks): 'Mustarde sede the pipe' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mustard-seed#rate-1558-inward-712> a hector:Rate ;
+    rdfs:label "1558 inward: Musterd sede the busshell 20d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20d" ;
+            hector:valueInPence 20.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bushel> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 712 (transcribed by Stuart Jenks): 'Musterd sede the busshell' 20d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/bushel> a crm:E58_Measurement_Unit ;
+    rdfs:label "bushel" .
+
+<https://w3id.org/hector/unit/pipe> a crm:E58_Measurement_Unit ;
+    rdfs:label "pipe" .
+
+<https://w3id.org/mlca/glossary/mustard%20seed> a crm:E55_Type ;
+    rdfs:label "mustard seed (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

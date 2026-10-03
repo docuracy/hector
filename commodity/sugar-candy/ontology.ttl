@@ -1,0 +1,81 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sugar-candy> a crm:E55_Type ;
+    rdfs:label "sugar candy" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sugar candy" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sugar kandi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "suger candy" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sudʒer kandi" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "C at 112 lb./cwt" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sugar%20candy> ;
+    skos:related <https://w3id.org/hector/commodity/candy> ;
+    la:equivalent aat:300250954 ;
+    hector:attestationCount 12 ;
+    hector:taxation <https://w3id.org/hector/commodity/sugar-candy#rate-1545-inward-649>,
+        <https://w3id.org/hector/commodity/sugar-candy#rate-1558-inward-968> .
+
+aat:300250954 a crm:E55_Type ;
+    rdfs:label "candy" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/candy> a crm:E55_Type ;
+    rdfs:label "candy" .
+
+<https://w3id.org/hector/commodity/sugar-candy#rate-1545-inward-649> a hector:Rate ;
+    rdfs:label "1545 inward: Suger candy the di’ cheste poinz’ one hundreth 33s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "33s 4d" ;
+            hector:valueInPence 400.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 5e-01 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/chest> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 649 (transcribed by Stuart Jenks): 'Suger candy the di’ cheste poinz’ one hundreth' 33s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sugar-candy#rate-1558-inward-968> a hector:Rate ;
+    rdfs:label "1558 inward: Suger candy the di’ chest cont’ C lb. at 112 lb £3 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3 6s 8d" ;
+            hector:valueInPence 800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 5e-01 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/chest> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 968 (transcribed by Stuart Jenks): 'Suger candy the di’ chest cont’ C lb. at 112 lb' £3 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/sugar%20candy> a crm:E55_Type ;
+    rdfs:label "sugar candy (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/chest> a crm:E58_Measurement_Unit ;
+    rdfs:label "chest" .
+

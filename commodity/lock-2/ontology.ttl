@@ -1,0 +1,69 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lock-2> a crm:E55_Type ;
+    rdfs:label "lock_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lock_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "lok" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lock" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lok" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lokkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lokəs" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lokke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lokə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lokes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lokəs" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "loke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lokə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the lowest class of remnants after the removal of the fleece, consisting of the shortest wool, coming from the legs and belly of the sheep, lana fracta (OED s.v. lock, n.1 2)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300243430 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lock_2> ;
+    skos:related <https://w3id.org/hector/commodity/spring-lock> ;
+    hector:attestationCount 5 .
+
+aat:300243430 a crm:E55_Type ;
+    rdfs:label "wool (textile)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/spring-lock> a crm:E55_Type ;
+    rdfs:label "spring-lock" .
+
+<https://w3id.org/mlca/glossary/lock_2> a crm:E55_Type ;
+    rdfs:label "lock_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

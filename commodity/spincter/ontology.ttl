@@ -1,0 +1,88 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/spincter> a crm:E55_Type ;
+    rdfs:label "spincter" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spincters" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinkters" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spinctiner" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinktiner" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spinctes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinktəs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spinct" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinkt" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spincteris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinkteris" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spinctiners" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spinktiners" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spincter" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spinkter" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pin, brooch" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300036423,
+        aat:300045995 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/spincter> ;
+    skos:related <https://w3id.org/hector/commodity/brooch>,
+        <https://w3id.org/hector/commodity/pin> ;
+    hector:attestationCount 10 .
+
+aat:300036423 a crm:E55_Type ;
+    rdfs:label "pins (fasteners)" .
+
+aat:300045995 a crm:E55_Type ;
+    rdfs:label "brooches" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/brooch> a crm:E55_Type ;
+    rdfs:label "brooch" .
+
+<https://w3id.org/hector/commodity/pin> a crm:E55_Type ;
+    rdfs:label "pin" .
+
+<https://w3id.org/mlca/glossary/spincter> a crm:E55_Type ;
+    rdfs:label "spincter (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

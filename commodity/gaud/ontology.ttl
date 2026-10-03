@@ -1,0 +1,76 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gaud> a crm:E55_Type ;
+    rdfs:label "gaud" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawdeys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaudeis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawdey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaudei" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gaudies" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaudiːs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gaud" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gaud" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawdes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaudəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaudə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "one of the larger and more ornamental beads placed between the decades of ‘aves’ in a rosary (OED s.v. gaud n.1), here made of latten | one of the larger and more ornamental beads placed between the decades of ‘aves’ in a rosary (OED s.v. gaud n.1), here made of glass | one of the larger and more ornamental beads placed between the decades of ‘aves’ in a rosary (OED s.v. gaud n.1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300262831 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gaud> ;
+    skos:related <https://w3id.org/hector/commodity/bead>,
+        <https://w3id.org/hector/commodity/paternoster> ;
+    hector:attestationCount 4 .
+
+aat:300262831 a crm:E55_Type ;
+    rdfs:label "rosaries" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bead> a crm:E55_Type ;
+    rdfs:label "bead" .
+
+<https://w3id.org/hector/commodity/paternoster> a crm:E55_Type ;
+    rdfs:label "paternoster" .
+
+<https://w3id.org/mlca/glossary/gaud> a crm:E55_Type ;
+    rdfs:label "gaud (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

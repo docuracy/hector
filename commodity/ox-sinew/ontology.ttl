@@ -1,0 +1,108 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ox-sinew> a crm:E55_Type ;
+    rdfs:label "ox sinew" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervis bovum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervis bovum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oxe senewes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oksə seneuəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervi bovum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervi bovum" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oxe senewe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oksə seneuə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervus bovum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervus bovum" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ox synwe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oks sinwə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervus bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervus bovium" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ox synwes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oks sinwəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervi bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervi bovium" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ox sinew" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "oks sineu" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nervis bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nervis bovium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "senewes bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seneuəs bovium" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sinew of an ox | sinew of an ox (Latham, Word-List s.v. nervus)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300192952,
+        aat:300250282 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ox%20sinew> ;
+    skos:related <https://w3id.org/hector/commodity/sinew> ;
+    hector:attestationCount 8 .
+
+aat:300192952 a crm:E55_Type ;
+    rdfs:label "sinew (material)" .
+
+aat:300250282 a crm:E55_Type ;
+    rdfs:label "oxen" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sinew> a crm:E55_Type ;
+    rdfs:label "sinew" .
+
+<https://w3id.org/mlca/glossary/ox%20sinew> a crm:E55_Type ;
+    rdfs:label "ox sinew (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

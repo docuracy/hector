@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sumac> a crm:E55_Type ;
+    rdfs:label "sumac" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sumac" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sumak" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sumak" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumak" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "somack" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "somak" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shomake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃomakə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "smake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "smakə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shumake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃumakə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "smacis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "smasis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A part or parts of the shrub sumac (Rhus coriaria), usually used as an ingredient in medicaments (MED s.v. sumac n.); a preparation of the dried and chopped leaves and shoots of plants of the genus Rhus, especially R. Coriaria, much used in tanning, also for dyeing and staining leather black and medicinally as an astringent (OED s.v. sumach, sumac n.); in view of the reading of the Cologne translation of the Book of Rates (smacis) and the definition of smacke as 'sumach, rhus coriaria' (Lübben-Walter s.v. smacke), identified as sumach" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:closeMatch aat:300256164 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sumac> ;
+    hector:attestationCount 5 ;
+    hector:taxation <https://w3id.org/hector/commodity/sumac#rate-1558-inward-1029>,
+        <https://w3id.org/hector/commodity/sumac#rate-1558-inward-944> .
+
+aat:300256164 a crm:E55_Type ;
+    rdfs:label "sumac (wood)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sumac#rate-1558-inward-1029> a hector:Rate ;
+    rdfs:label "1558 inward: Smacis the pounde 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "8d" ;
+            hector:valueInPence 8.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1029 (transcribed by Stuart Jenks): 'Smacis the pounde' 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sumac#rate-1558-inward-944> a hector:Rate ;
+    rdfs:label "1558 inward: Shomake the C cont’ 112 lb. 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 944 (transcribed by Stuart Jenks): 'Shomake the C cont’ 112 lb.' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/sumac> a crm:E55_Type ;
+    rdfs:label "sumac (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

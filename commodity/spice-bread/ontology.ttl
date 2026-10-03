@@ -1,0 +1,68 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/spice-bread> a crm:E55_Type ;
+    rdfs:label "spice bread" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spice bredes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spisə bredəs" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spice brede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spisə bredə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spicebred" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spisebred" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spise bred" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spisə bred" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spys bred" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spis bred" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spice bread" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spisə brɛːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bread seasoned or prepared with spices" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300262820 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/spice%20bread> ;
+    hector:attestationCount 4 .
+
+aat:300262820 a crm:E55_Type ;
+    rdfs:label "bread" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/spice%20bread> a crm:E55_Type ;
+    rdfs:label "spice bread (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

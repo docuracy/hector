@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/silk-tapistri-uithout-cadas-uol> a crm:E55_Type ;
+    rdfs:label "silk (tapistri uithout cadas uol)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "silk (tapistri uithout cadas uol)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "silk tapistri uiθuːt kadas uol" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Tapistry wythout sylke, caddas or woll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tapistri wiθuːt silkə kadas or wol" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "silk, qualified as ‘tapistri uithout cadas uol’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/silk> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/silk> ;
+    hector:taxation <https://w3id.org/hector/commodity/silk-tapistri-uithout-cadas-uol#rate-1545-inward-730> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/silk-tapistri-uithout-cadas-uol#rate-1545-inward-730> a hector:Rate ;
+    rdfs:label "1545 inward: Tapistry wythout sylke, caddas or woll the elle 6d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6d" ;
+            hector:valueInPence 6.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ell> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 730 (transcribed by Stuart Jenks): 'Tapistry wythout sylke, caddas or woll the elle' 6d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/ell> a crm:E58_Measurement_Unit ;
+    rdfs:label "ell" .
+
+<https://w3id.org/hector/commodity/silk> a crm:E55_Type ;
+    rdfs:label "silk" .
+

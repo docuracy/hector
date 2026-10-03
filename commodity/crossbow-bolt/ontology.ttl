@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/crossbow-bolt> a crm:E55_Type ;
+    rdfs:label "crossbow bolt" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyles pro crosbowes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piləs pro krosbuːəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pilum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pilum" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyle pro crosbowes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pilə pro krosbuːəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossbow bolt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "krosbuː bolt" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pili" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pili" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bolt of a cross-bow (Latham, Word-List s.v. pilum) | spear, bolt of cross-bow" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/crossbow%20bolt> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow>,
+        <https://w3id.org/hector/commodity/crossbow-lath-2>,
+        <https://w3id.org/hector/commodity/crossbow-rods> ;
+    la:equivalent aat:300424099 ;
+    hector:attestationCount 75 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300424099 a crm:E55_Type ;
+    rdfs:label "crossbow bolts (edged weapons)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow> a crm:E55_Type ;
+    rdfs:label "crossbow" .
+
+<https://w3id.org/hector/commodity/crossbow-lath-2> a crm:E55_Type ;
+    rdfs:label "crossbow lath_2" .
+
+<https://w3id.org/hector/commodity/crossbow-rods> a crm:E55_Type ;
+    rdfs:label "crossbow rods" .
+
+<https://w3id.org/mlca/glossary/crossbow%20bolt> a crm:E55_Type ;
+    rdfs:label "crossbow bolt (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

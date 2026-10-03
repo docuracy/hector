@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:la="https://linked.art/ns/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb26a75508829d013cce5bc1b2db191d24f5a023296a1de6f76144df9196dc83438">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>10s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb14fa0639c4576ead75dc171c928d45c25f8c47a517e4340da47eda1ae82cf31f9">
+    <crm:P190_has_symbolic_content>vitae</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>vite</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lignum-vitae">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lignum_vitae_cb14fa0639c4576ead75dc171c928d45c25f8c47a517e4340da47eda1ae82cf31f9"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lignum_vitae_cb1569b8ef9d5a27280e62ea3aec6c82ebb4cce54dfb4315867e3f18b404c2ded51"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lignum_vitae_cb1ef4d719253a6e19e90bb5ae533981aec6e31228ff2aa38870685970f479e1fd9"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_lignum_vitae_cb327c729a71e5f074aa4163a79473a2bc6d529b078b2dcb9717d425747e229a546"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_lignum_vitae_cb1d99c4d77f30dc643114c88b975953493f94baf6b9898d28cafbabe4ef0fb3bad"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lignum vitae</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/hector/commodity/wood"/>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/lignum%20vitae"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300012193"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</hector:attestationCount>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lignum-vitae#rate-1545-inward-458"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/lignum-vitae#rate-1558-inward-664"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb1569b8ef9d5a27280e62ea3aec6c82ebb4cce54dfb4315867e3f18b404c2ded51">
+    <crm:P190_has_symbolic_content>vite</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>vitə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb1ef4d719253a6e19e90bb5ae533981aec6e31228ff2aa38870685970f479e1fd9">
+    <crm:P190_has_symbolic_content>lignum vitae</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>lignum vite</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb234b2fded76834e0807f9402eb6471afa76ff18371720f9530a1337ed4ba6591e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lignum-vitae#rate-1545-inward-458">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Lignum vite the 100 lb. 6s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_lignum_vitae_cb29cafb91b0afd0de7675e8d2d0bdeb7ae8221268250c07ce0fa4fbe18b610d7f7"/>
+    <hector:perQuantity rdf:nodeID="commodity_lignum_vitae_cb234b2fded76834e0807f9402eb6471afa76ff18371720f9530a1337ed4ba6591e"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 458 (transcribed by Stuart Jenks): 'Lignum vite the 100 lb.' 6s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/lignum-vitae#rate-1558-inward-664">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Lignum vite the C cont’ 112 lb 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_lignum_vitae_cb26a75508829d013cce5bc1b2db191d24f5a023296a1de6f76144df9196dc83438"/>
+    <hector:perQuantity rdf:nodeID="commodity_lignum_vitae_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 664 (transcribed by Stuart Jenks): 'Lignum vite the C cont’ 112 lb' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb327c729a71e5f074aa4163a79473a2bc6d529b078b2dcb9717d425747e229a546">
+    <crm:P190_has_symbolic_content>lignum vite</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>lignum vitə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1442</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012193">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lignum vitae (wood)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb1d99c4d77f30dc643114c88b975953493f94baf6b9898d28cafbabe4ef0fb3bad">
+    <crm:P190_has_symbolic_content>Wood derived from trees of the genus Guaiacum; it is generally the heaviest, hardest, and most dense type of commercially available wood, black to brownish green in color. It is tough and difficult to carve, but valued for its fine grain that polishes to a high gloss. It is naturally resistant to fungi. It is used to make pulleys, shafts, axles, and bowling balls. The wood is relatively waterproof because of its high fat content. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lignum_vitae_cb29cafb91b0afd0de7675e8d2d0bdeb7ae8221268250c07ce0fa4fbe18b610d7f7">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>6s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/wood">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>wood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/lignum%20vitae">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lignum vitae (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

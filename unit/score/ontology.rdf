@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="unit_score_cba34c1c449876b19f5ee90f4faf6a687882ca72c2928c8e7f9bc04ccf1cd31a0e">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_score_cb48d00c9e0245c0427379a28dec45c279a3ac4b9aceba2c2534f3621485fbe54a"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/each"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_score_cb48d00c9e0245c0427379a28dec45c279a3ac4b9aceba2c2534f3621485fbe54a">
+    <crm:P190_has_symbolic_content>Source: parse_bor COUNT_UNITS</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/score">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="unit_score_cb4d1aff761b18de7329367eea406b4e1705e36f92f25d3ca78ec0c582e5f799b2"/>
+    <crm:P1_is_identified_by rdf:nodeID="unit_score_cbb4c910c6355ae803e27ab7f589b33f66476600d995c3ab5ae194dbdb51d2e99e"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_score_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>score</rdfs:label>
+    <hector:definedAs rdf:nodeID="unit_score_cba34c1c449876b19f5ee90f4faf6a687882ca72c2928c8e7f9bc04ccf1cd31a0e"/>
+    <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/count"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_score_cb0">
+    <crm:P190_has_symbolic_content>the score: twenty</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/each">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>each</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_score_cb4d1aff761b18de7329367eea406b4e1705e36f92f25d3ca78ec0c582e5f799b2">
+    <crm:P190_has_symbolic_content>skore</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_score_cbb4c910c6355ae803e27ab7f589b33f66476600d995c3ab5ae194dbdb51d2e99e">
+    <crm:P190_has_symbolic_content>score</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

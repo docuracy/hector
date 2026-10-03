@@ -1,0 +1,178 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bag> a crm:E55_Type ;
+    rdfs:label "bag" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bages" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "badʒəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bag" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bag" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baga" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baga" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bagga" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baga" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bag parvies" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bag parviːs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bagg" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bag" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bage" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "badʒə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bagges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bagəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bagge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bagə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bags" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bags" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baggae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bage" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bagae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bage" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baggys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bagis" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baggs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bags" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bag, a packing unit for dry goods of no particular size (Zupko 8) | Containers or receptacles of leather, cloth, paper, or other flexible material, often capable of being closed at the mouth. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bag> ;
+    skos:related <https://w3id.org/hector/commodity/bag-ring> ;
+    la:equivalent aat:300194509 ;
+    hector:attestationCount 1576 ;
+    hector:taxation <https://w3id.org/hector/commodity/bag#rate-1545-inward-63>,
+        <https://w3id.org/hector/commodity/bag#rate-1545-outward-18>,
+        <https://w3id.org/hector/commodity/bag#rate-1558-outward-5> .
+
+aat:300194509 a crm:E55_Type ;
+    rdfs:label "bags (generic containers)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bag#rate-1545-inward-63> a hector:Rate ;
+    rdfs:label "1545 inward: Bagges for chyldren the groce 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 63 (transcribed by Stuart Jenks): 'Bagges for chyldren the groce' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/bag#rate-1545-outward-18> a hector:Rate ;
+    rdfs:label "1545 outward: Bagges the dossen 3s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s" ;
+            hector:valueInPence 36.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 18 (transcribed by Stuart Jenks): 'Bagges the dossen' 3s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/bag#rate-1558-outward-5> a hector:Rate ;
+    rdfs:label "1558 outward: Bagges the dossyn 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 5 (transcribed by Stuart Jenks): 'Bagges the dossyn' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/bag-ring> a crm:E55_Type ;
+    rdfs:label "bag ring" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/bag> a crm:E55_Type ;
+    rdfs:label "bag (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

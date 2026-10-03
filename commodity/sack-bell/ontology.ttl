@@ -1,0 +1,37 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sack-bell> a crm:E55_Type ;
+    rdfs:label "sack bell" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sack bell" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sak bel" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sacring bell, a small bell rung at the elevation of the host, a bell rung to announce a death (OED sacring, bell n.1 2)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300042399 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sack%20bell> .
+
+aat:300042399 a crm:E55_Type ;
+    rdfs:label "bells (aerophone components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/sack%20bell> a crm:E55_Type ;
+    rdfs:label "sack bell (London Customs Accounts glossary)" .
+

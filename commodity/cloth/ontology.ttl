@@ -1,0 +1,207 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cloth> a crm:E55_Type ;
+    rdfs:label "cloth" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "telle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tela" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "telum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telum" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teleis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teleis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pani" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tellae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tele" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pann" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pan" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloethez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kleθez" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tela" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tela" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloθə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tely" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teli" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "telae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tele" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teli" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clothes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloθəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kloθ" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clothis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloθis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloþis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloθis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloþes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloθəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannos" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panos" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panno" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pano" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Generally, textile that is woven, felted, knit, pounded, or otherwise made into a flat piece. For textile in the form of continuous strands made from filaments of fiber by reeling, spinning, twisting, or throwing, see \"yarn.\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cloth> ;
+    skos:related <https://w3id.org/hector/commodity/pentice-cloth>,
+        <https://w3id.org/hector/commodity/plica>,
+        <https://w3id.org/hector/commodity/shortcloth>,
+        <https://w3id.org/hector/commodity/terlinge>,
+        <https://w3id.org/hector/commodity/tick-2>,
+        <https://w3id.org/hector/commodity/tonnante> ;
+    la:equivalent aat:300162391 ;
+    hector:attestationCount 66912 ;
+    hector:taxation <https://w3id.org/hector/commodity/cloth#rate-1507-none-175> .
+
+aat:300162391 a crm:E55_Type ;
+    rdfs:label "cloth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cloth#rate-1507-none-175> a hector:Rate ;
+    rdfs:label "1507: Mynster clothe the rowlle £10" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£10" ;
+            hector:valueInPence 2400.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/roll> ] ;
+    hector:sourceText "Book of Rates 1507, line 175 (transcribed by Stuart Jenks): 'Mynster clothe the rowlle' £10" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pentice-cloth> a crm:E55_Type ;
+    rdfs:label "pentice cloth" .
+
+<https://w3id.org/hector/commodity/plica> a crm:E55_Type ;
+    rdfs:label "plica" .
+
+<https://w3id.org/hector/commodity/shortcloth> a crm:E55_Type ;
+    rdfs:label "shortcloth" .
+
+<https://w3id.org/hector/commodity/terlinge> a crm:E55_Type ;
+    rdfs:label "terlinge" .
+
+<https://w3id.org/hector/commodity/tick-2> a crm:E55_Type ;
+    rdfs:label "tick_2" .
+
+<https://w3id.org/hector/commodity/tonnante> a crm:E55_Type ;
+    rdfs:label "tonnante" .
+
+<https://w3id.org/hector/unit/roll> a crm:E58_Measurement_Unit ;
+    rdfs:label "roll" .
+
+<https://w3id.org/mlca/glossary/cloth> a crm:E55_Type ;
+    rdfs:label "cloth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

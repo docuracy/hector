@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/swingle> a crm:E55_Type ;
+    rdfs:label "swingle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swynglyng stokkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swiŋliŋ stokəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swynglyng stokke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swiŋliŋ stokə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swynglys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swiŋlis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swyngl" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swiŋl" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swingle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "swiŋlə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a wooden instrument resembling a sword, used for beating and scraping flax or hemp so as to cleanse it of woody or coarse particles (OED s.v. swingle n.1 1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300419970 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/swingle> ;
+    hector:attestationCount 2 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300419970 a crm:E55_Type ;
+    rdfs:label "fiberworking tools" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/swingle> a crm:E55_Type ;
+    rdfs:label "swingle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

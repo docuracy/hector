@@ -1,0 +1,160 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bunch> a crm:E55_Type ;
+    rdfs:label "bunch" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonchae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃe" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plural also just bunche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plural also dʒust buntʃə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boncha" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃa" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunchae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃe" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonchys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃis" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunchis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃis" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunchez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃez" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bounches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːntʃəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonchis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃis" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃ" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃəs" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonchez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bontʃez" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunch" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buntʃ" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buncha" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃa" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunchys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bounch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːntʃ" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bounchez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːntʃez" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bunchz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buntʃz" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bunch, a unit of packing (especially for garlic, onions, containing 25 heads) (Zupko 52-3) | bunch, a unit of packing (especially for garlic, onions, containing 25 heads) (Zupko 52-3), here of garlic | of onions | bunch, a unit of packing (esp. for garlic, onions, containing 25 heads) (Zupko 52-3) | as a measure of onions | as a measure of garlic (alleum) | bunch, a unit of packing (especially for garlic, onions, containing 25 heads) (Zupko 52-3), but also of iron | bunch, a unit of packing (esp. for garlic, containing 25 heads) (Zupko 52-3) | bunch, a unit of packing (esp. for garlic, containing 25 heads) (Zupko 52-3), here of garlic, onions | bunch, a unit of packing (esp. for garlic, onions: 25 heads) (Zupko 52-3) | bunch, a unit of packing for garlic, containing 25 heads (Zupko 52-3) rlic | bunch, a unit of packing for garlic, containing 25 heads (Zupko 52-3) | as a measure of gold thread (aurum de Cipro) (cf. OED s.v. bunch n.1 2b)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bunch> ;
+    hector:attestationCount 1025 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/bunch> a crm:E55_Type ;
+    rdfs:label "bunch (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

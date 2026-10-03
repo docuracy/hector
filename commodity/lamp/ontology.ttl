@@ -1,0 +1,91 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lamp> a crm:E55_Type ;
+    rdfs:label "lamp" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucernae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luserne" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampis" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampadarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampadarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampada" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampada" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucerna" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luserna" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampis tyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampis tinə" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampadae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampade" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lamp" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lamp" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lampe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lampə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Lighting devices having a vessel to contain fuel used as a source of illumination, such as grease or oil. The term also refers to relatively small -- of a size to be placed on or beside a desk or table -- household or office lighting devices that incorporate a vessel of glass or some similar material that encloses the source of illumination, whether a candle, oil, gas-jet, or incandescent wire inside a light bulb. The lamp was invented at least as early as 70,000 BCE, originally consisting of a hollowed-out rock filled with moss or some other absorbent material that was soaked with animal fat and ignited. To refer to the glass bulbs used as a component of electric lamps, use \"light bulbs.\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lamp> ;
+    la:equivalent aat:300037592 ;
+    hector:attestationCount 11 .
+
+aat:300037592 a crm:E55_Type ;
+    rdfs:label "lamps (lighting devices)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/lamp> a crm:E55_Type ;
+    rdfs:label "lamp (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

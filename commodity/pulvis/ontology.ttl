@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pulvis> a crm:E55_Type ;
+    rdfs:label "pulvis" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pulvis" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pulvis" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pulviseris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pulviseris" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "medicinal powder; a substance used in alchemy or as ground seasoning (MED s.v. poudre 5a-5c)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pulvis> ;
+    skos:related <https://w3id.org/hector/commodity/granum>,
+        <https://w3id.org/hector/commodity/gunpowder>,
+        <https://w3id.org/hector/commodity/pulver-pro-pellibus>,
+        <https://w3id.org/hector/commodity/wormseed> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/granum> a crm:E55_Type ;
+    rdfs:label "granum" .
+
+<https://w3id.org/hector/commodity/gunpowder> a crm:E55_Type ;
+    rdfs:label "gunpowder" .
+
+<https://w3id.org/hector/commodity/pulver-pro-pellibus> a crm:E55_Type ;
+    rdfs:label "pulver pro pellibus" .
+
+<https://w3id.org/hector/commodity/wormseed> a crm:E55_Type ;
+    rdfs:label "wormseed" .
+
+<https://w3id.org/mlca/glossary/pulvis> a crm:E55_Type ;
+    rdfs:label "pulvis (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

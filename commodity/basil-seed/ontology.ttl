@@ -1,0 +1,54 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/basil-seed> a crm:E55_Type ;
+    rdfs:label "basil seed" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seminis basiliconis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seminis basilikonis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselle sede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselə sedə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "basil seed" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "basil seːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "seeds of basil, the popular name of a genus (Ocymum, family Labiatæ) of aromatic, shrubby plants, with flowers arranged in whorled racemes, widely dispersed in tropical and subtropical countries. The best-known species are the culinary herbs, Common or Sweet Basil (O. basilicum) and Bush or Lesser Basil (O. minimum), the leaves of which are used for seasoning soups and made dishes (OED s.v. basil n.1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300132436 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/basil%20seed> ;
+    la:equivalent wd:Q10771602 ;
+    hector:attestationCount 2 .
+
+aat:300132436 a crm:E55_Type ;
+    rdfs:label "herbs" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q10771602 a crm:E55_Type ;
+    rdfs:label "basil seed" .
+
+<https://w3id.org/mlca/glossary/basil%20seed> a crm:E55_Type ;
+    rdfs:label "basil seed (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

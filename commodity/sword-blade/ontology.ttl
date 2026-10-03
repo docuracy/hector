@@ -1,0 +1,76 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sword-blade> a crm:E55_Type ;
+    rdfs:label "sword blade" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    schema1:material aat:300010900 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sworde blades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swordə bladəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swerd blades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swerd bladəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swerdblade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swerdbladə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sword blade" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sword bladə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swerdblades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swerdbladəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sword blad" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sword blad" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sword blades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sword bladəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sword bladys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sword bladis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The sharpened, flat-edged cutting part of a tool or weapon. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sword%20blade> ;
+    skos:related <https://w3id.org/hector/commodity/sword> ;
+    la:equivalent aat:300024917 ;
+    hector:attestationCount 112 .
+
+aat:300010900 a crm:E57_Material ;
+    rdfs:label "metal" .
+
+aat:300024917 a crm:E55_Type ;
+    rdfs:label "blades (tool and equipment components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sword> a crm:E55_Type ;
+    rdfs:label "sword" .
+
+<https://w3id.org/mlca/glossary/sword%20blade> a crm:E55_Type ;
+    rdfs:label "sword blade (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,147 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/spoon> a crm:E55_Type ;
+    rdfs:label "spoon" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sponis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sponis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sponəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coclearis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koklɛːris" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cocliarium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kokliarium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spon" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sponys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sponis" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coclear" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koklɛːr" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lepille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lepilə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sponə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lepulles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lepuləs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lepilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lepiləs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cocliaris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kokliaris" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cokliar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kokliar" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lepulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lepulə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cocliar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kokliar" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cokliaris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kokliaris" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cocleari" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koklɛːri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spounes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spuːnəs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spoun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spuːn" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spoon" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spoːn" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "wooden spoon | spoon (MNW s.v. lepel) | tin spoon | spoon, made of box-wood | (spoone of alkemie, spones of aulcamyn) alchemy: a substance produced by alchemy; specifically any of various metal alloys made in imitation of gold or resembling it in color, as varieties of brass or latten, sometimes containing arsenic compounds (OED s.v. alchemy 2), especially quote of 1773: J. Buchanan in J. Milton Paradise Lost (new ed.) 128 (note) Alchemy is a mixture of metals of which spoons, &c. are made | silver spoon | spoon, made of latten" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/spoon> ;
+    la:equivalent aat:300043149 ;
+    hector:attestationCount 47 .
+
+aat:300043149 a crm:E55_Type ;
+    rdfs:label "spoons" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/spoon> a crm:E55_Type ;
+    rdfs:label "spoon (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,96 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sleeve-mail> a crm:E55_Type ;
+    rdfs:label "sleeve mail" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slevys mayle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slevis mailə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manus mayle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manus mailə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slevəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manicae mayle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manike mailə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "manica mayle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "manika mailə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slevə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleveis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sleveis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sleeve mail" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sleːvə mail" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "armor to protect the arm, made of mail" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300197059 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sleeve%20mail> ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/sleeve-mail#rate-1558-inward-1067> .
+
+aat:300197059 a crm:E55_Type ;
+    rdfs:label "armor components" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sleeve-mail#rate-1558-inward-1067> a hector:Rate ;
+    rdfs:label "1558 inward: Sleves for women wrought with sylke, golde or sylver the payre 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pair> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1067 (transcribed by Stuart Jenks): 'Sleves for women wrought with sylke, golde or sylver the payre' 40s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pair> a crm:E58_Measurement_Unit ;
+    rdfs:label "pair" .
+
+<https://w3id.org/mlca/glossary/sleeve%20mail> a crm:E55_Type ;
+    rdfs:label "sleeve mail (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,89 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/turnip-2> a crm:E55_Type ;
+    rdfs:label "turnip_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnops" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnops" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turneppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnepə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnop" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnepe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnepə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnep" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnep" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turneppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnepəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnip_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "turnip" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnip" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnip" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnopes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnopəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turnope" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turnopə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "turnip, an edible plant" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300380162 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/turnip_2> ;
+    hector:attestationCount 7 .
+
+aat:300380162 a crm:E55_Type ;
+    rdfs:label "vegetables" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/turnip_2> a crm:E55_Type ;
+    rdfs:label "turnip_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

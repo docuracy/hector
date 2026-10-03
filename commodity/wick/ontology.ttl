@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wick> a crm:E55_Type ;
+    rdfs:label "wick" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wick" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikə" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "weke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wekə" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikə" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "weyke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "weikə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Those elements in lighting devices, usually cords, ribbons, or tubes of loosely woven, twisted, or braided fibers, that draw fuel to the flame by capillary action. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wick> ;
+    skos:related <https://w3id.org/hector/commodity/candle>,
+        <https://w3id.org/hector/commodity/candlewick>,
+        <https://w3id.org/hector/commodity/torch-wick> ;
+    la:equivalent aat:300181108 ;
+    hector:attestationCount 17 .
+
+aat:300181108 a crm:E55_Type ;
+    rdfs:label "wicks" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/candle> a crm:E55_Type ;
+    rdfs:label "candle" .
+
+<https://w3id.org/hector/commodity/candlewick> a crm:E55_Type ;
+    rdfs:label "candlewick" .
+
+<https://w3id.org/hector/commodity/torch-wick> a crm:E55_Type ;
+    rdfs:label "torch wick" .
+
+<https://w3id.org/mlca/glossary/wick> a crm:E55_Type ;
+    rdfs:label "wick (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

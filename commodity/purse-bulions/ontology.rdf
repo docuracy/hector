@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>gross</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-bulions">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_purse_bulions_cb175da5cf9c4b938c200a80dc06f85534b6a07b548022f1c8580583631ba07eed2"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_purse_bulions_cb4f682df68e7c5fe7b19aca61424df6f351e1d5292038063c7527895c01b415fe"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_purse_bulions_cb78454958c86e182c8f302d70fa70ff9bdd666f7caeec37d6ee7add54a73356cb"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_purse_bulions_cb10ba24ebae8204b01ab291d0d96ed9c5e2a5f1395ad82db70f6a574b16a50a0af"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>purse (bulions)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/purse"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/purse"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/purse-bulions#rate-1507-none-18"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/purse-bulions#rate-1558-inward-111"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-bulions#rate-1558-inward-111">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Bullions for purses the grosse 5s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_purse_bulions_cb22fca5254808429f9a4667b09b6ff828b12cb8a3ad66f75b1e2809154aa8813b0"/>
+    <hector:perQuantity rdf:nodeID="commodity_purse_bulions_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 111 (transcribed by Stuart Jenks): 'Bullions for purses the grosse' 5s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb78454958c86e182c8f302d70fa70ff9bdd666f7caeec37d6ee7add54a73356cb">
+    <crm:P190_has_symbolic_content>Bullyons for pursses</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>bulions for pursəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-bulions#rate-1507-none-18">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1507: Bullyons for pursses the smalle grosse 3s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_purse_bulions_cb306d206c106eb22f1c87bc1051c5c9db16f3f58bb56e06de7b77c34c45813dd3b"/>
+    <hector:perQuantity rdf:nodeID="commodity_purse_bulions_cb146b76c02f809a470a0da287d8d8ee3527497b23f6785d967291426c4fad18e51"/>
+    <hector:sourceText>Book of Rates 1507, line 18 (transcribed by Stuart Jenks): 'Bullyons for pursses the smalle grosse' 3s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb146b76c02f809a470a0da287d8d8ee3527497b23f6785d967291426c4fad18e51">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb175da5cf9c4b938c200a80dc06f85534b6a07b548022f1c8580583631ba07eed2">
+    <crm:P190_has_symbolic_content>purse (bulions)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>pursə bulions</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb306d206c106eb22f1c87bc1051c5c9db16f3f58bb56e06de7b77c34c45813dd3b">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>3s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb22fca5254808429f9a4667b09b6ff828b12cb8a3ad66f75b1e2809154aa8813b0">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>5s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb4f682df68e7c5fe7b19aca61424df6f351e1d5292038063c7527895c01b415fe">
+    <crm:P190_has_symbolic_content>Bullions for purses</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>bulions for pursəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>purse</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_bulions_cb10ba24ebae8204b01ab291d0d96ed9c5e2a5f1395ad82db70f6a574b16a50a0af">
+    <crm:P190_has_symbolic_content>purse, qualified as ‘bulions’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

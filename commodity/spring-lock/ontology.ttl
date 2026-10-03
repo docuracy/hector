@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/spring-lock> a crm:E55_Type ;
+    rdfs:label "spring-lock" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "springlokkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spriŋlokəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spring-lock" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spriŋ lok" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "springlokke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spriŋlokə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A common form of lock in which a spring presses the bolt outwards, thus rendering it self-locking except when secured by a catch (OED s.v. spring-lock)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300033407 ;
+    skos:closeMatch aat:300395593 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/spring-lock> ;
+    skos:related <https://w3id.org/hector/commodity/lock-2>,
+        <https://w3id.org/hector/commodity/padlock> ;
+    hector:attestationCount 1 .
+
+aat:300033407 a crm:E55_Type ;
+    rdfs:label "locks (securing devices)" .
+
+aat:300395593 a crm:E55_Type ;
+    rdfs:label "splitting-spring locks" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lock-2> a crm:E55_Type ;
+    rdfs:label "lock_2" .
+
+<https://w3id.org/hector/commodity/padlock> a crm:E55_Type ;
+    rdfs:label "padlock" .
+
+<https://w3id.org/mlca/glossary/spring-lock> a crm:E55_Type ;
+    rdfs:label "spring-lock (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

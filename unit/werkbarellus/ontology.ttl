@@ -1,0 +1,105 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/werkbarellus> a crm:E58_Measurement_Unit ;
+    rdfs:label "werkbarellus" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkfatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkfatə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkefatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkefatə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkfate" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkfatə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkffatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkfatə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "warkfatt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "warkfat" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkefat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkefat" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkbarelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkbareli" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkbarellus" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "werkbarelus" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkefate" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkefatə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkfat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkfat" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werkfattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werkfatəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "barrel or vat for goods (Schiller-Walther, s.v. werkvat), as a packing unit for dry goods of no particular size | vat for transporting furs" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/werkbarellus>,
+        <https://w3id.org/mlca/glossary/werkbarellus> ;
+    skos:broader aat:300194514 ;
+    hector:attestationCount 36 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300194514 a crm:E55_Type ;
+    rdfs:label "barrels (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/werkbarellus> a crm:E55_Type ;
+    rdfs:label "werkbarellus" .
+
+<https://w3id.org/mlca/glossary/werkbarellus> a crm:E55_Type ;
+    rdfs:label "werkbarellus (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

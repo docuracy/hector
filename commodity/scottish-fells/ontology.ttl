@@ -1,0 +1,37 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/scottish-fells> a crm:E55_Type ;
+    rdfs:label "scottish fells" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scottish fells" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skotiʃ fels" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skottyshe felles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skotiʃə feləs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/scottish%20fells> .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+<https://w3id.org/mlca/glossary/scottish%20fells> a crm:E55_Type ;
+    rdfs:label "scottish fells (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

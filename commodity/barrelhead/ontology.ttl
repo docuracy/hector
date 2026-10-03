@@ -1,0 +1,55 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/barrelhead> a crm:E55_Type ;
+    rdfs:label "barrelhead" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    schema1:material aat:300011914 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "barellis hedes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "barelis hedəs" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "barellis hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "barelis hedə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "barrelhead" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "barelhɛːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "barrel-head, the flat end of a barrel" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300194514 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/barrelhead> ;
+    hector:attestationCount 4 .
+
+aat:300011914 a crm:E57_Material ;
+    rdfs:label "wood (plant material)" .
+
+aat:300194514 a crm:E55_Type ;
+    rdfs:label "barrels (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/barrelhead> a crm:E55_Type ;
+    rdfs:label "barrelhead (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

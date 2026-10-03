@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/generale#rate-1507-none-110">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1507: Generalle the C wayte 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_generale_cb364d3892c144e587e598cf4bab0f53750d6a9c048886a966b25710472afc9393f"/>
+    <hector:perQuantity rdf:nodeID="commodity_generale_cb20e459213ae98e0562f5ddb4642719c69e9f3ed13223e32818a376836f7d6b3a5"/>
+    <hector:sourceText>Book of Rates 1507, line 110 (transcribed by Stuart Jenks): 'Generalle the C wayte' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundredweight">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundredweight</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb2e28674e0e673ccac60d0e5a153fc6c3bf52a2fe8fb09a96c74e717ff247070bd">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>10s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/generale#rate-1545-inward-328">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Generall the 100 pounde 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_generale_cb2e28674e0e673ccac60d0e5a153fc6c3bf52a2fe8fb09a96c74e717ff247070bd"/>
+    <hector:perQuantity rdf:nodeID="commodity_generale_cb191a23dbe9cfd53fe77ead7696fa7633bc515be53704d753610084518dae74eaa"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 328 (transcribed by Stuart Jenks): 'Generall the 100 pounde' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb155eda72e86f307067c0108f0321f71bdb224329e96954ee50e5736c3a9b4b4ff">
+    <crm:P190_has_symbolic_content>generall</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>dʒeneral</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/generale">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_generale_cb155eda72e86f307067c0108f0321f71bdb224329e96954ee50e5736c3a9b4b4ff"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_generale_cb282ce7ddf7e98228cade755380aa675e96c16cb4679e85500426279f29fb0c00f"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_generale_cb33412371dc9af16d5f23bc2f997ccf8bf26c42a0a56a30c8d1510838c9c89e779"/>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300386154"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_generale_cb12a56913d40419d0a6e50728e18855e7d9ff5719834edef0ffa4049df1c70848b"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>generale</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/generale"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hector:attestationCount>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/generale#rate-1507-none-110"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/generale#rate-1545-inward-328"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/generale#rate-1558-inward-472"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb364d3892c144e587e598cf4bab0f53750d6a9c048886a966b25710472afc9393f">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>10s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb33412371dc9af16d5f23bc2f997ccf8bf26c42a0a56a30c8d1510838c9c89e779">
+    <crm:P190_has_symbolic_content>generalle</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>dʒeneralə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1493</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1495</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb282ce7ddf7e98228cade755380aa675e96c16cb4679e85500426279f29fb0c00f">
+    <crm:P190_has_symbolic_content>generale</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>dʒeneralə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1465</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1472</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb28f0fc5c44e2b58afeb65d66cdb6a790a93305e17c4c6581d8622fc56c087b365">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>50s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386154">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>unidentified (information indicator)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb191a23dbe9cfd53fe77ead7696fa7633bc515be53704d753610084518dae74eaa">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb12a56913d40419d0a6e50728e18855e7d9ff5719834edef0ffa4049df1c70848b">
+    <crm:P190_has_symbolic_content>in painting (?), a ground color (OED general B.n.4) | meaning unknown, measured in lb.</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/generale">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>generale (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/generale#rate-1558-inward-472">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Generall the C cont’ fyve skore lb 50s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_generale_cb28f0fc5c44e2b58afeb65d66cdb6a790a93305e17c4c6581d8622fc56c087b365"/>
+    <hector:perQuantity rdf:nodeID="commodity_generale_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 472 (transcribed by Stuart Jenks): 'Generall the C cont’ fyve skore lb' 50s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_generale_cb20e459213ae98e0562f5ddb4642719c69e9f3ed13223e32818a376836f7d6b3a5">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundredweight"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

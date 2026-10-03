@@ -1,0 +1,74 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mull-madder> a crm:E55_Type ;
+    rdfs:label "mull madder" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mulmader" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mulmader" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mullmader" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mulmader" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mul mader" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mul mader" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mull madder" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mul mader" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mull madder: madder of the lowest quality" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300013062 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mull%20madder> ;
+    skos:related <https://w3id.org/hector/commodity/madder> ;
+    hector:attestationCount 11 ;
+    hector:taxation <https://w3id.org/hector/commodity/mull-madder#rate-1545-inward-470> .
+
+aat:300013062 a crm:E55_Type ;
+    rdfs:label "madder (colorant)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/madder> a crm:E55_Type ;
+    rdfs:label "madder" .
+
+<https://w3id.org/hector/commodity/mull-madder#rate-1545-inward-470> a hector:Rate ;
+    rdfs:label "1545 inward: Mull madder the bale 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 470 (transcribed by Stuart Jenks): 'Mull madder the bale' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/bale> a crm:E58_Measurement_Unit ;
+    rdfs:label "bale" .
+
+<https://w3id.org/mlca/glossary/mull%20madder> a crm:E55_Type ;
+    rdfs:label "mull madder (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

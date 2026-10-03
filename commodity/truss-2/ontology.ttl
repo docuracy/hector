@@ -1,0 +1,44 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/truss-2> a crm:E55_Type ;
+    rdfs:label "truss_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "truss" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "truss_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "trus" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "most likely some sort of tackle for drawing a crossbow (OED truss n. 2)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300227076 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/truss_2> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow> .
+
+aat:300227076 a crm:E55_Type ;
+    rdfs:label "projectile weapon components" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow> a crm:E55_Type ;
+    rdfs:label "crossbow" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/truss_2> a crm:E55_Type ;
+    rdfs:label "truss_2 (London Customs Accounts glossary)" .
+

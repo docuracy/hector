@@ -1,0 +1,53 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sugar-loaf> a crm:E55_Type ;
+    rdfs:label "sugar loaf" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sugar loaf" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sugar loaf" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sugar loaf: sugar refined and moulded into a conical loaf (OED s.v. loaf-sugar); the cheapest, once-refined sort was the pan-sugar (Heyd 675)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300183931 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sugar%20loaf> ;
+    skos:related <https://w3id.org/hector/commodity/loaf>,
+        <https://w3id.org/hector/commodity/pan>,
+        <https://w3id.org/hector/commodity/panis>,
+        <https://w3id.org/hector/commodity/sugar> .
+
+aat:300183931 a crm:E55_Type ;
+    rdfs:label "sugar" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/loaf> a crm:E55_Type ;
+    rdfs:label "loaf" .
+
+<https://w3id.org/hector/commodity/pan> a crm:E55_Type ;
+    rdfs:label "pan" .
+
+<https://w3id.org/hector/commodity/panis> a crm:E55_Type ;
+    rdfs:label "panis" .
+
+<https://w3id.org/hector/commodity/sugar> a crm:E55_Type ;
+    rdfs:label "sugar" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/sugar%20loaf> a crm:E55_Type ;
+    rdfs:label "sugar loaf (London Customs Accounts glossary)" .
+

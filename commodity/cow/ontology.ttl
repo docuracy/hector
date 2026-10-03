@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cow> a crm:E55_Type ;
+    rdfs:label "cow" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kowes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kow" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cowe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cow" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kuː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cowes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cows" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kowe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Cow; adult female of cattle. Traded (with calf) by the dozen and in maunds." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cow> ;
+    skos:related <https://w3id.org/hector/commodity/calf> ;
+    la:equivalent aat:300250120 ;
+    hector:attestationCount 17 .
+
+aat:300250120 a crm:E55_Type ;
+    rdfs:label "cows (mammals)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/calf> a crm:E55_Type ;
+    rdfs:label "calf" .
+
+<https://w3id.org/mlca/glossary/cow> a crm:E55_Type ;
+    rdfs:label "cow (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

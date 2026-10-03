@@ -1,0 +1,88 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/elephant-tusks> a crm:E55_Type ;
+    rdfs:label "elephant tusks" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "olephantes teeth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "olefantəs teːθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dentes elephanti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dentəs elefanti" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "elevauntes teth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "elevauntəs teθ" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "elyvauntes teth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "elivauntəs teθ" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "elephant tusks" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "elefant tusks" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "olyvantes tethe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "olivantəs teθə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yvore de peciis dencium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ivorə de pesis densium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yvore dente" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ivorə dentə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "olyfauntes tethe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "olifauntəs teθə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yvore dent" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ivorə dent" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an elephant’s tusks, as a source of ivory (OED s.v. tooth n. 1b)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300400464 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/elephant%20tusks> ;
+    skos:related <https://w3id.org/hector/commodity/ivory> ;
+    hector:attestationCount 12 .
+
+aat:300400464 a crm:E55_Type ;
+    rdfs:label "tusks (animal component)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/ivory> a crm:E55_Type ;
+    rdfs:label "ivory" .
+
+<https://w3id.org/mlca/glossary/elephant%20tusks> a crm:E55_Type ;
+    rdfs:label "elephant tusks (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

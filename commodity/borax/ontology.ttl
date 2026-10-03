@@ -1,0 +1,108 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/borax> a crm:E55_Type ;
+    rdfs:label "borax" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "borias" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "borias" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "borace" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "borasə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "borax" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "boraks" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boras" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boras" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "borras" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boras" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "borase" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "borasə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A white or colorless crystalline mineral composed of hydrated sodium borate, used as a flux, cleansing agent, tanning agent, water softener, preservative, fungicide, as an alkaline ingredient in glass, ceramics, and glazes, in soldering, and as a source of boron. Borax is produced by the evaporation of water in shallow lakes. Borax was used by the Egyptians for mummification, by the Romans for glassmaking, as a flux for soldering gold in 9th-century Arabia, in ceramic glazes in northern China in the 10th century, and in Venetian glass from the 13th century. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/borax> ;
+    la:equivalent aat:300011077 ;
+    hector:attestationCount 53 ;
+    hector:taxation <https://w3id.org/hector/commodity/borax#rate-1545-inward-51>,
+        <https://w3id.org/hector/commodity/borax#rate-1558-inward-91> .
+
+aat:300011077 a crm:E55_Type ;
+    rdfs:label "borax" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/borax#rate-1545-inward-51> a hector:Rate ;
+    rdfs:label "1545 inward: Borras the 100 pounde 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 51 (transcribed by Stuart Jenks): 'Borras the 100 pounde' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/borax#rate-1558-inward-91> a hector:Rate ;
+    rdfs:label "1558 inward: Borras the pounde 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 91 (transcribed by Stuart Jenks): 'Borras the pounde' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/borax> a crm:E55_Type ;
+    rdfs:label "borax (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

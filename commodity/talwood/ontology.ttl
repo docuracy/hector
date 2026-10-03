@@ -1,0 +1,49 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/talwood> a crm:E55_Type ;
+    rdfs:label "talwood" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "talwode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "talwodə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "talwood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "talwoːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "wood for fuel, cut up usually to a prescribed size (OED s.v. talwood)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300015139 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/talwood> ;
+    la:equivalent aat:300015146 ;
+    hector:attestationCount 3 .
+
+aat:300015139 a crm:E55_Type ;
+    rdfs:label "fuel" .
+
+aat:300015146 a crm:E55_Type ;
+    rdfs:label "firewood (fuel)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/talwood> a crm:E55_Type ;
+    rdfs:label "talwood (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

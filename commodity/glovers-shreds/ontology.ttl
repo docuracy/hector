@@ -1,0 +1,60 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/glovers-shreds> a crm:E55_Type ;
+    rdfs:label "glover’s shreds" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    schema1:material aat:300011845 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glovers shredes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glovers ʃredəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glovers clippings" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glovers klipiŋs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glover’s shreds" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "glovers ʃreds" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glovers clipping" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glovers klipiŋ" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "shreds of glove-leather used to make size, a semi-solid glutinous substance, prepared from materials similar to those which furnish glue, and used to mix with colors, to dress cloth or paper, and for various other purposes (OED s.v. glover c & size n.2 2)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/glover%E2%80%99s%20shreds> ;
+    skos:related <https://w3id.org/hector/commodity/glove> ;
+    la:equivalent aat:300011845 ;
+    hector:attestationCount 1 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/glove> a crm:E55_Type ;
+    rdfs:label "glove" .
+
+<https://w3id.org/mlca/glossary/glover%E2%80%99s%20shreds> a crm:E55_Type ;
+    rdfs:label "glover’s shreds (London Customs Accounts glossary)" .
+
+aat:300011845 a crm:E55_Type,
+        crm:E57_Material ;
+    rdfs:label "leather" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

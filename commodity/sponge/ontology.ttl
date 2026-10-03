@@ -1,0 +1,119 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sponge> a crm:E55_Type ;
+    rdfs:label "sponge" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sponge" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spondʒə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sponges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spondʒəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spoundge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spuːnddʒə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spongis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spondʒis" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spong" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spoŋ" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spownges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spuːndʒəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spunge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spundʒə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spunges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spundʒəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spownge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spuːndʒə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Material comprising a porous structure composed of siliceous cells bound in a spongin (fibrous protein) matrix of certain animals or the absorbent cellulose fibers from several types of fruits or gourds. The term may also be applied to similar artificial materials. Natural sponges have been used for their absorbent characteristics since ancient times, for example, for applying paint, cleaning, and for drinking. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sponge> ;
+    la:equivalent aat:300011854 ;
+    hector:attestationCount 121 ;
+    hector:taxation <https://w3id.org/hector/commodity/sponge#rate-1545-inward-708>,
+        <https://w3id.org/hector/commodity/sponge#rate-1558-inward-979> .
+
+aat:300011854 a crm:E55_Type ;
+    rdfs:label "sponge (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sponge#rate-1545-inward-708> a hector:Rate ;
+    rdfs:label "1545 inward: Sponges the pounde 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4d" ;
+            hector:valueInPence 4.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 708 (transcribed by Stuart Jenks): 'Sponges the pounde' 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sponge#rate-1558-inward-979> a hector:Rate ;
+    rdfs:label "1558 inward: Spunges the pounde 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 979 (transcribed by Stuart Jenks): 'Spunges the pounde' 2s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/sponge> a crm:E55_Type ;
+    rdfs:label "sponge (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

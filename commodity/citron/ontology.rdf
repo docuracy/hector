@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:la="https://linked.art/ns/terms/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300389919">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>citrons (fruits)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_citron_cbeedd2f4f6922fe2576a6213c3decf09aad3437ad4e53f795ff69f23fd6363536">
+    <crm:P190_has_symbolic_content>citron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>sitron</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_citron_cb36af3af7bb513c4f3f4525403d7fbd2263ea1fafc2dd777ce6988528f7f01476">
+    <crm:P190_has_symbolic_content>an ovate acid juicy tree-fruit with a pale yellow rind. Formerly the name included the lemon, and perhaps the lime, as well as the fruit to which it is now restricted, which is larger, less acid, and has a thicker rind than the lemon (OED citron), here dried</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/citron">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_citron_cb0"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_citron_cbeedd2f4f6922fe2576a6213c3decf09aad3437ad4e53f795ff69f23fd6363536"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_citron_cb36af3af7bb513c4f3f4525403d7fbd2263ea1fafc2dd777ce6988528f7f01476"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>citron</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/citron"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300389919"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_citron_cb0">
+    <crm:P190_has_symbolic_content>sydron</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>sidron</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/citron">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>citron (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

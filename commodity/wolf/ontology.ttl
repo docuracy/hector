@@ -1,0 +1,103 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wolf> a crm:E55_Type ;
+    rdfs:label "wolf" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wulf" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wulf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolfə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lupus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lupus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolfskin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolfskin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lupi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lupi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolfskins" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolfskins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolf" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wolf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolvəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolfe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolfə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "fur/skin of the wolf (Latin lupus); pellis lupi = wolfskin" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wolf> ;
+    skos:related <https://w3id.org/hector/commodity/otter>,
+        <https://w3id.org/hector/commodity/pelt> ;
+    la:equivalent aat:300011811 ;
+    hector:attestationCount 5 ;
+    hector:taxation <https://w3id.org/hector/commodity/wolf#rate-1558-inward-1154> .
+
+aat:300011811 a crm:E55_Type ;
+    rdfs:label "fur (hair material)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/otter> a crm:E55_Type ;
+    rdfs:label "otter" .
+
+<https://w3id.org/hector/commodity/pelt> a crm:E55_Type ;
+    rdfs:label "pelt" .
+
+<https://w3id.org/hector/commodity/wolf#rate-1558-inward-1154> a hector:Rate ;
+    rdfs:label "1558 inward: Wolfe skynnes tawed the skynne 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1154 (transcribed by Stuart Jenks): 'Wolfe skynnes tawed the skynne' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/wolf> a crm:E55_Type ;
+    rdfs:label "wolf (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

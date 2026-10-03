@@ -1,0 +1,87 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cross> a crm:E55_Type ;
+    rdfs:label "cross" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krusis" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krosis" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crosse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krosə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cross" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kros" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crosses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krosəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crux" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kruks" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krosez" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krosis" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Visual works in the shape of two intersecting bars, usually an upright one traversed by a horizontal one, especially those used as Christian symbols. For motifs consisting of two intersecting lines, with many variations in the shapes of the arms, use \"crosses (motifs).\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cross> ;
+    skos:related <https://w3id.org/hector/commodity/crucifix> ;
+    la:equivalent aat:300235443 ;
+    hector:attestationCount 45 .
+
+aat:300235443 a crm:E55_Type ;
+    rdfs:label "crosses (visual works)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crucifix> a crm:E55_Type ;
+    rdfs:label "crucifix" .
+
+<https://w3id.org/mlca/glossary/cross> a crm:E55_Type ;
+    rdfs:label "cross (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

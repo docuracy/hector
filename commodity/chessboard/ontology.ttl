@@ -1,0 +1,51 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/chessboard> a crm:E55_Type ;
+    rdfs:label "chessboard" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chessboard" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tʃesboard" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ches bord" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃes bord" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ches bordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃes bordəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Gameboards of 64 squares arranged in eight vertical rows called files and eight horizontal rows called ranks. These squares alternate between two colors: one light, such as white or beige; and the other dark, such as black or green. The board is set between the two opponents so that each player has a light-colored square at the right-hand corner. Chessboards are identical to checkerboards except for the colors, which tend to be black and red in checkerboards. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/chessboard> ;
+    skos:related <https://w3id.org/hector/commodity/chess> ;
+    la:equivalent aat:300216610 ;
+    hector:attestationCount 1 .
+
+aat:300216610 a crm:E55_Type ;
+    rdfs:label "chessboards" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/chess> a crm:E55_Type ;
+    rdfs:label "chess" .
+
+<https://w3id.org/mlca/glossary/chessboard> a crm:E55_Type ;
+    rdfs:label "chessboard (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

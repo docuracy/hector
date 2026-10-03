@@ -1,0 +1,108 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/musk> a crm:E55_Type ;
+    rdfs:label "musk" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muske" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "muskə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musk" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "musk" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "musk, an odoriferous, reddish-brown substance, secreted in a gland or sack by the male musk-deer; has a very powerful and enduring odor and is used as the basis of many perfumes, as well as in medicine (OED s.v. musk)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300015166,
+        aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/musk> ;
+    skos:related <https://w3id.org/hector/commodity/muskball> ;
+    hector:attestationCount 19 ;
+    hector:taxation <https://w3id.org/hector/commodity/musk#rate-1545-inward-475>,
+        <https://w3id.org/hector/commodity/musk#rate-1558-inward-714>,
+        <https://w3id.org/hector/commodity/musk#rate-1558-inward-715> .
+
+aat:300015166 a crm:E55_Type ;
+    rdfs:label "perfume (scent)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/musk#rate-1545-inward-475> a hector:Rate ;
+    rdfs:label "1545 inward: Muske the boxe 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4d" ;
+            hector:valueInPence 4.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/box> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 475 (transcribed by Stuart Jenks): 'Muske the boxe' 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/musk#rate-1558-inward-714> a hector:Rate ;
+    rdfs:label "1558 inward: Muske voc’ codes of muske the dosen coddes 26s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "26s 8d" ;
+            hector:valueInPence 320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 714 (transcribed by Stuart Jenks): 'Muske voc’ codes of muske the dosen coddes' 26s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/musk#rate-1558-inward-715> a hector:Rate ;
+    rdfs:label "1558 inward: Muske of Levant the ounce 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ounce> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 715 (transcribed by Stuart Jenks): 'Muske of Levant the ounce' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/muskball> a crm:E55_Type ;
+    rdfs:label "muskball" .
+
+<https://w3id.org/hector/unit/box> a crm:E58_Measurement_Unit ;
+    rdfs:label "box" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/ounce> a crm:E58_Measurement_Unit ;
+    rdfs:label "ounce" .
+
+<https://w3id.org/mlca/glossary/musk> a crm:E55_Type ;
+    rdfs:label "musk (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+

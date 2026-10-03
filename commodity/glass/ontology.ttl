@@ -1,0 +1,85 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/glass> a crm:E55_Type ;
+    rdfs:label "glass" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vitrum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vitrum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "viterum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "viterum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glas" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vitri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vitri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "veter" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "veter" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glasse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glasə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glase" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "glasə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "glass" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "glas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "viter" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "viter" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "viteri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "viteri" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "An amorphous, inorganic substance made by fusing silica (silicon dioxide) with a basic oxide; generally transparent but often translucent or opaque. Its characteristic properties are its hardness and rigidity at ordinary temperatures, its capacity for plastic working at elevated temperatures, and its resistance to weathering and to most chemicals except hydrofluoric acid. Used for both utilitarian and decorative purposes, it can be formed into various shapes, colored or decorated. Glass originated as a glaze in Mesopotamia in about 3500 BCE and the first objects made wholly of glass date to about 2500 BCE. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/glass> ;
+    skos:related <https://w3id.org/hector/commodity/glass-3>,
+        <https://w3id.org/hector/commodity/glass-measure> ;
+    la:equivalent aat:300010797 ;
+    hector:attestationCount 388 .
+
+aat:300010797 a crm:E55_Type ;
+    rdfs:label "glass (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/glass-3> a crm:E55_Type ;
+    rdfs:label "glass_3" .
+
+<https://w3id.org/hector/commodity/glass-measure> a crm:E55_Type ;
+    rdfs:label "glass (measure)" .
+
+<https://w3id.org/mlca/glossary/glass> a crm:E55_Type ;
+    rdfs:label "glass (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

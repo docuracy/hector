@@ -1,0 +1,103 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/virga> a crm:E55_Type ;
+    rdfs:label "virga" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virgas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdʒəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virgarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verge" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdʒə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virge" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vergae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verge" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virga" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "virga" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verga" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verga" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a measure of length, one yard (3 feet); also square yard, a measure of cloth" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/virga> ;
+    skos:related <https://w3id.org/hector/commodity/iron-rod>,
+        <https://w3id.org/hector/commodity/osier-rods>,
+        <https://w3id.org/hector/commodity/rod>,
+        <https://w3id.org/hector/commodity/weavers-reed> ;
+    la:equivalent aat:300379234 ;
+    hector:attestationCount 14039 .
+
+aat:300379234 a crm:E55_Type ;
+    rdfs:label "rods (measurements)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/iron-rod> a crm:E55_Type ;
+    rdfs:label "iron rod" .
+
+<https://w3id.org/hector/commodity/osier-rods> a crm:E55_Type ;
+    rdfs:label "osier rods" .
+
+<https://w3id.org/hector/commodity/rod> a crm:E55_Type ;
+    rdfs:label "rod" .
+
+<https://w3id.org/hector/commodity/weavers-reed> a crm:E55_Type ;
+    rdfs:label "weaver's reed" .
+
+<https://w3id.org/mlca/glossary/virga> a crm:E55_Type ;
+    rdfs:label "virga (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

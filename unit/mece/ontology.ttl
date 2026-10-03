@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/mece> a crm:E58_Measurement_Unit ;
+    rdfs:label "mece" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mecis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mesis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "meces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mesəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mece" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mesə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mece: a measure of weight, chiefly of copper (300 lb.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/mece>,
+        <https://w3id.org/mlca/glossary/mece> ;
+    skos:broader aat:300386648 ;
+    hector:attestationCount 28 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (mece: '300 lb.'). Note: stated, but a customary weight. Not exact: approximate, or one of several readings" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 300 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/mece> a crm:E55_Type ;
+    rdfs:label "mece" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/mece> a crm:E55_Type ;
+    rdfs:label "mece (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

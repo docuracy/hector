@@ -1,0 +1,153 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/orchil> a crm:E55_Type ;
+    rdfs:label "orchil" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchil" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ortʃil" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃelə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃeləs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃal" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃilə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃelə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orselle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orselə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃel" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchal" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃal" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃalə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchaul" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃaul" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orchell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ortʃel" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "orchil, a red or violet dye prepared from certain lichens, especially Roccella tintoria (OED s.v. orchil)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300013032 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/orchil> ;
+    hector:attestationCount 156 ;
+    hector:taxation <https://w3id.org/hector/commodity/orchil#rate-1545-inward-514>,
+        <https://w3id.org/hector/commodity/orchil#rate-1545-inward-515>,
+        <https://w3id.org/hector/commodity/orchil#rate-1545-outward-15> .
+
+aat:300013032 a crm:E55_Type ;
+    rdfs:label "natural dye" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/orchil#rate-1545-inward-514> a hector:Rate ;
+    rdfs:label "1545 inward: Orchell the last 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 514 (transcribed by Stuart Jenks): 'Orchell the last' 40s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/orchil#rate-1545-inward-515> a hector:Rate ;
+    rdfs:label "1545 inward: Orchell the [hundrith] pounde 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 515 (transcribed by Stuart Jenks): 'Orchell the [hundrith] pounde' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/orchil#rate-1545-outward-15> a hector:Rate ;
+    rdfs:label "1545 outward: Orchell the 100 pounde 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 15 (transcribed by Stuart Jenks): 'Orchell the 100 pounde' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/mlca/glossary/orchil> a crm:E55_Type ;
+    rdfs:label "orchil (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

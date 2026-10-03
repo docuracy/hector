@@ -1,0 +1,205 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/whetstone> a crm:E55_Type ;
+    rdfs:label "whetstone" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whettestone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetestonə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstonəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wesstonys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstonys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstonis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstonez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstonez" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wesstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whestonys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "westone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whitstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "witstonə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstanes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstanəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetston" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetston" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "westonys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonis" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstane" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstanə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstone" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wetstonə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "weston" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "weston" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cotum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kotum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whestones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whestone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whitstones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "witstonəs" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "westones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "westonəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koti" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whetstons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wetstons" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "whetstone, used for sharpening tools (OED s.v. whetstone)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/whetstone> ;
+    skos:related <https://w3id.org/hector/commodity/hone> ;
+    la:equivalent aat:300023299 ;
+    hector:attestationCount 48 ;
+    hector:taxation <https://w3id.org/hector/commodity/whetstone#rate-1545-inward-810>,
+        <https://w3id.org/hector/commodity/whetstone#rate-1558-inward-1148> .
+
+aat:300023299 a crm:E55_Type ;
+    rdfs:label "whetstones" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/hone> a crm:E55_Type ;
+    rdfs:label "hone" .
+
+<https://w3id.org/hector/commodity/whetstone#rate-1545-inward-810> a hector:Rate ;
+    rdfs:label "1545 inward: Whetstones the 100 wayes 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 810 (transcribed by Stuart Jenks): 'Whetstones the 100 wayes' 12d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/whetstone#rate-1558-inward-1148> a hector:Rate ;
+    rdfs:label "1558 inward: Whetstones the C by tale 8s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "8s 4d" ;
+            hector:valueInPence 100.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1148 (transcribed by Stuart Jenks): 'Whetstones the C by tale' 8s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/whetstone> a crm:E55_Type ;
+    rdfs:label "whetstone (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

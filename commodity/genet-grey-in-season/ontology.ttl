@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/genet-grey-in-season> a crm:E55_Type ;
+    rdfs:label "genet (grey in season)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Jennettes gray seasoned" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒenetəs grai sɛːsoned" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "genet (grey in season)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "dʒenet grei in sɛːson" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "genet, qualified as ‘grey in season’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/genet> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/genet> ;
+    hector:taxation <https://w3id.org/hector/commodity/genet-grey-in-season#rate-1558-inward-606> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/genet-grey-in-season#rate-1558-inward-606> a hector:Rate ;
+    rdfs:label "1558 inward: Jennettes gray seasoned the pece 3s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s" ;
+            hector:valueInPence 36.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 606 (transcribed by Stuart Jenks): 'Jennettes gray seasoned the pece' 3s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/hector/commodity/genet> a crm:E55_Type ;
+    rdfs:label "genet" .
+

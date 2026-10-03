@@ -1,0 +1,103 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth> a crm:E55_Type ;
+    rdfs:label "brabant cloth (cloth)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Brabande clothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brabandə kloθə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Brabant clothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brabant kloθə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brabant cloth (cloth)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "brabant kloθ kloθ" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "brabant cloth, qualified as ‘cloth’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/brabant-cloth> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/brabant-cloth> ;
+    hector:taxation <https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1545-inward-36>,
+        <https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1545-inward-37>,
+        <https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1558-inward-121>,
+        <https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1558-inward-122> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1545-inward-36> a hector:Rate ;
+    rdfs:label "1545 inward: Brabande clothe the hole pece 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 36 (transcribed by Stuart Jenks): 'Brabande clothe the hole pece' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1545-inward-37> a hector:Rate ;
+    rdfs:label "1545 inward: Brabande clothe the halfe pece 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 5e-01 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 37 (transcribed by Stuart Jenks): 'Brabande clothe the halfe pece' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1558-inward-121> a hector:Rate ;
+    rdfs:label "1558 inward: Brabant clothe the hole pece 26s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "26s 8d" ;
+            hector:valueInPence 320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 121 (transcribed by Stuart Jenks): 'Brabant clothe the hole pece' 26s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth#rate-1558-inward-122> a hector:Rate ;
+    rdfs:label "1558 inward: Brabant clothe the di’ pece 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 5e-01 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 122 (transcribed by Stuart Jenks): 'Brabant clothe the di’ pece' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/brabant-cloth> a crm:E55_Type ;
+    rdfs:label "brabant cloth" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+

@@ -1,0 +1,70 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sport> a crm:E55_Type ;
+    rdfs:label "sport" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sportarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sportarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sport" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sport" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sportae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sporte" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sporta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sporta" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sportes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sportəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a basket as a packing unit for dry goods of no particular size (OED s.v. sport n.2) | basket, as a packing unit for dry goods of no particular size, here as an article of commerce | basket, here as an article of commerce | basket, as a packing unit for dry goods of no particular size | basket" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300194498 ;
+    skos:closeMatch aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sport> ;
+    skos:related <https://w3id.org/hector/commodity/basket> ;
+    hector:attestationCount 10 .
+
+aat:300194498 a crm:E55_Type ;
+    rdfs:label "baskets (containers)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/basket> a crm:E55_Type ;
+    rdfs:label "basket" .
+
+<https://w3id.org/mlca/glossary/sport> a crm:E55_Type ;
+    rdfs:label "sport (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

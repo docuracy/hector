@@ -1,0 +1,81 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sheepskin> a crm:E55_Type ;
+    rdfs:label "sheepskin" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheepskin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃeːpskin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovilinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ovilinis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellibus ovilinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelibus ovilinis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovilinae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oviline" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovillis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ovilis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovilini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ovilini" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovilina" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ovilina" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ovillus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ovilus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sheep (imported) and the products thereof: sheepskin and sheep leather." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sheepskin> ;
+    skos:related <https://w3id.org/hector/commodity/sheep-bell>,
+        <https://w3id.org/hector/commodity/sheep-leather> ;
+    la:equivalent aat:300193374 ;
+    hector:attestationCount 8 .
+
+aat:300193374 a crm:E55_Type ;
+    rdfs:label "sheepskin" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sheep-bell> a crm:E55_Type ;
+    rdfs:label "sheep bell" .
+
+<https://w3id.org/hector/commodity/sheep-leather> a crm:E55_Type ;
+    rdfs:label "sheep leather" .
+
+<https://w3id.org/mlca/glossary/sheepskin> a crm:E55_Type ;
+    rdfs:label "sheepskin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

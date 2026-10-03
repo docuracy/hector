@@ -1,0 +1,90 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/seal-blubber> a crm:E55_Type ;
+    rdfs:label "seal blubber" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsmolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltsmolt" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "selesmolte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "selesmoltə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seel smolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seːl smolt" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salesmolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salesmolt" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "selsmolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "selsmolt" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sele smolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "selə smolt" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "selesmolt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "selesmolt" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seal blubber" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sɛːl bluber" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "selsmolte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "selsmoltə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "melted seal blubber (Lübben-Walther s.v. selsmer; MED s.v. smolt n. 2) | melted seal blubber (MED s.v. sele 2a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300013023 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/seal%20blubber> ;
+    skos:related <https://w3id.org/hector/commodity/smolt> ;
+    hector:attestationCount 60 .
+
+aat:300013023 a crm:E55_Type ;
+    rdfs:label "fat" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/smolt> a crm:E55_Type ;
+    rdfs:label "smolt" .
+
+<https://w3id.org/mlca/glossary/seal%20blubber> a crm:E55_Type ;
+    rdfs:label "seal blubber (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

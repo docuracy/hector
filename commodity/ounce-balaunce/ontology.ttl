@@ -1,0 +1,101 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ounce-balaunce> a crm:E55_Type ;
+    rdfs:label "ounce balaunce" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce ballaunces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balaunsəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce balaunces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balaunsəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce ballaunce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balaunsə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce balaunce" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balaunsə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce ballandes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balandəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce ballances" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə balansəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce balland" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə baland" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oz. balance" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oz balansə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ounce balance, a set of scales (MED s.v. balance) for weighing very light things (Willan 6)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ounce%20balaunce> ;
+    skos:related <https://w3id.org/hector/commodity/balance> ;
+    la:equivalent aat:300196293 ;
+    hector:attestationCount 1 ;
+    hector:taxation <https://w3id.org/hector/commodity/ounce-balaunce#rate-1545-inward-532> .
+
+aat:300196293 a crm:E55_Type ;
+    rdfs:label "scales (weighing devices)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/balance> a crm:E55_Type ;
+    rdfs:label "balance" .
+
+<https://w3id.org/hector/commodity/ounce-balaunce#rate-1545-inward-532> a hector:Rate ;
+    rdfs:label "1545 inward: Ounce ballandes the groce 8s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "8s" ;
+            hector:valueInPence 96.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 532 (transcribed by Stuart Jenks): 'Ounce ballandes the groce' 8s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/ounce%20balaunce> a crm:E55_Type ;
+    rdfs:label "ounce balaunce (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

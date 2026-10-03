@@ -1,0 +1,157 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pitch> a crm:E55_Type ;
+    rdfs:label "pitch" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pitche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "picti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pikti" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "picche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pix" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piks" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pictis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piktis" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piccis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pithe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "piθə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pytche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pitch" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pitʃ" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "picis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pice" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pitʃə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A sticky, black residue obtained from the distillation of coal tar, petroleum, or pine tar. Pitch is used as a sealant and wood preservative as well as a component in roofing, paving, and water proofing. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pitch> ;
+    skos:related <https://w3id.org/hector/commodity/bitumen>,
+        <https://w3id.org/hector/commodity/code>,
+        <https://w3id.org/hector/commodity/tar> ;
+    la:equivalent aat:300012949 ;
+    hector:attestationCount 1120 ;
+    hector:taxation <https://w3id.org/hector/commodity/pitch#rate-1507-none-220>,
+        <https://w3id.org/hector/commodity/pitch#rate-1545-inward-566> .
+
+aat:300012949 a crm:E55_Type ;
+    rdfs:label "pitch (tar)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bitumen> a crm:E55_Type ;
+    rdfs:label "bitumen" .
+
+<https://w3id.org/hector/commodity/code> a crm:E55_Type ;
+    rdfs:label "code" .
+
+<https://w3id.org/hector/commodity/pitch#rate-1507-none-220> a hector:Rate ;
+    rdfs:label "1507: Pyche the last 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1507, line 220 (transcribed by Stuart Jenks): 'Pyche the last' 20s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pitch#rate-1545-inward-566> a hector:Rate ;
+    rdfs:label "1545 inward: Pitche the laste 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 566 (transcribed by Stuart Jenks): 'Pitche the laste' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/tar> a crm:E55_Type ;
+    rdfs:label "tar" .
+
+<https://w3id.org/mlca/glossary/pitch> a crm:E55_Type ;
+    rdfs:label "pitch (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

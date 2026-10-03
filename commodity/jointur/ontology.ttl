@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/jointur> a crm:E55_Type ;
+    rdfs:label "jointur" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jountour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒuːntuːr" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "joyntour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒointuːr" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "joyntours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒointuːrs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jointur" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dʒointur" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jountours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒuːntuːrs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "something which fastens or connects, a fastener, tie, buckle, link etc. (MEd s.v. jointur n. 1c), here of latten | the meaning is not altogether clear. A joyntour is something which fastens or connects, a fastener, tie, buckle, link etc. (MEd s.v. jointur n. 1c), but what pro femina ('for women') might mean in this context is unclear" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300036363 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/jointur> ;
+    hector:attestationCount 5 .
+
+aat:300036363 a crm:E55_Type ;
+    rdfs:label "fasteners" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/jointur> a crm:E55_Type ;
+    rdfs:label "jointur (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

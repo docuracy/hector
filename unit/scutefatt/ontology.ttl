@@ -1,0 +1,105 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/scutefatt> a crm:E58_Measurement_Unit ;
+    rdfs:label "scutefatt" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutefattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skutefatəs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skedefatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skedefatə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sketevates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sketevatəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sketefattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sketefatəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skedefattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skedefatəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sketevatis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sketevatis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sketefatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sketefatə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sketevat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sketevat" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutefatt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skutefat" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyt fattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skit fatəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyt fatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skit fatə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "some kind of vat or bucket, perhaps used as a scoop (MED s.v. sket-fat n.); occurring both as a liquid measure of vinegar and as an article of commerce" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/scutefatt>,
+        <https://w3id.org/mlca/glossary/scutefatt> ;
+    skos:closeMatch aat:300194541 ;
+    hector:attestationCount 11 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300194541 a crm:E55_Type ;
+    rdfs:label "vats (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/scutefatt> a crm:E55_Type ;
+    rdfs:label "scutefatt" .
+
+<https://w3id.org/mlca/glossary/scutefatt> a crm:E55_Type ;
+    rdfs:label "scutefatt (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

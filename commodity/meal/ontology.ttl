@@ -1,0 +1,100 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/meal> a crm:E55_Type ;
+    rdfs:label "meal" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "meal" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mɛːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "melə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "meale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mɛːlə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "meall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mɛːl" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "meele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "meːlə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "meale, moldy, moist and fetid | meal, ground grain | meaning unknown | meal | rye flour | meal (because measured in quarters)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/meal> ;
+    la:equivalent aat:300389812 ;
+    hector:attestationCount 75 ;
+    hector:taxation <https://w3id.org/hector/commodity/meal#rate-1545-outward-23>,
+        <https://w3id.org/hector/commodity/meal#rate-1558-outward-43> .
+
+aat:300389812 a crm:E55_Type ;
+    rdfs:label "flour" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/meal#rate-1545-outward-23> a hector:Rate ;
+    rdfs:label "1545 outward: Musty meale the laste 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 23 (transcribed by Stuart Jenks): 'Musty meale the laste' 40s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/meal#rate-1558-outward-43> a hector:Rate ;
+    rdfs:label "1558 outward: Meale the quarter 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/quarter> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 43 (transcribed by Stuart Jenks): 'Meale the quarter' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/hector/unit/quarter> a crm:E58_Measurement_Unit ;
+    rdfs:label "quarter" .
+
+<https://w3id.org/mlca/glossary/meal> a crm:E55_Type ;
+    rdfs:label "meal (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

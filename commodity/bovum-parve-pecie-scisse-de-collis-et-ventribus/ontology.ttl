@@ -1,0 +1,43 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bovum-parve-pecie-scisse-de-collis-et-ventribus> a crm:E55_Type ;
+    rdfs:label "bovum parve pecie scisse de collis et ventribus" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bovum parve pecie scisse de collis et ventribus" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bovum parvə pesiː sisə de kolis et ventribus" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "small pieces of hide from the necks and bellies of oxen" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011844,
+        aat:300250282 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bovum%20parve%20pecie%20scisse%20de%20collis%20et%20ventribus> .
+
+aat:300011844 a crm:E55_Type ;
+    rdfs:label "hide (collagenous material)" .
+
+aat:300250282 a crm:E55_Type ;
+    rdfs:label "oxen" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/bovum%20parve%20pecie%20scisse%20de%20collis%20et%20ventribus> a crm:E55_Type ;
+    rdfs:label "bovum parve pecie scisse de collis et ventribus (London Customs Accounts glossary)" .
+

@@ -1,0 +1,143 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/roe-skin> a crm:E55_Type ;
+    rdfs:label "roe skin" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rooskynnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roːskinis" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone pellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə pelis" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roo skynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roː skin" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone pellisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə pelisis" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone skyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə skins" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rooskynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roːskin" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roo skynnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roː skinis" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roane skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roanə skinə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roan skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roan skinə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone skynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə skin" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone skyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə skin" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roane skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roanə skinəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roan skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "roan skinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roe skin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "re skin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rone skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ronə skinəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the skin of the roe, a small species of deer (capreolus capraea) inhabiting various parts of Europe and Asia (OED s.v. roe n.1, roan n.2 1) (see also pellis de roo)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/roe%20skin> ;
+    la:equivalent aat:300253844 ;
+    hector:attestationCount 9 ;
+    hector:taxation <https://w3id.org/hector/commodity/roe-skin#rate-1558-inward-910> .
+
+aat:300253844 a crm:E55_Type ;
+    rdfs:label "Capreolus capreolus (species)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/roe-skin#rate-1558-inward-910> a hector:Rate ;
+    rdfs:label "1558 inward: Roan skynnes the dosen 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 910 (transcribed by Stuart Jenks): 'Roan skynnes the dosen' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/roe%20skin> a crm:E55_Type ;
+    rdfs:label "roe skin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

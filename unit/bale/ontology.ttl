@@ -1,0 +1,123 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/bale> a crm:E58_Measurement_Unit ;
+    rdfs:label "bale" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balez" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balls" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bals" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bales" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baləs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bale" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "balə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bal" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bailes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bailəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bala" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bala" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bala" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bale" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ballae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bale" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bal" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bal" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baləs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Closely pressed or tightly wrapped, large bundles of materials or goods prepared for storage or transport, as cotton or hay. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/bale>,
+        <https://w3id.org/mlca/glossary/bale> ;
+    la:equivalent aat:300251746 ;
+    hector:attestationCount 21691 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300251746 a crm:E55_Type ;
+    rdfs:label "bales (object genre)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bale> a crm:E55_Type ;
+    rdfs:label "bale" .
+
+<https://w3id.org/mlca/glossary/bale> a crm:E55_Type ;
+    rdfs:label "bale (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

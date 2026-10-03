@@ -1,0 +1,99 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/flute> a crm:E55_Type ;
+    rdfs:label "flute" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flute" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "flutə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floyte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floitə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floytys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floitis" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flotəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floyttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floitəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floyt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floit" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floytes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floitəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flot" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flot" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flotə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flotis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flotis" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "floytte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "floitə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Generally refers to any musical wind instrument consisting of a hollow cylinder or pipe of wood, metal, or another material, with holes along its length that are stopped by the fingers or by keys that are opened by the fingers. Although most flutes are tubular, some are globular (as with a gourd flute). A flute is sounded by a stream of air from the player's lips striking against the sharp edge of an opening, breaking the air up and vibrating within the enclosed space. The air may be blown in from an end or from the side, depending upon the type of flute. Many, but not all, modern flutes are equipped with the Boehm system of keywork. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/flute> ;
+    la:equivalent aat:300042513 ;
+    hector:attestationCount 19 .
+
+aat:300042513 a crm:E55_Type ;
+    rdfs:label "flutes (aerophones)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/flute> a crm:E55_Type ;
+    rdfs:label "flute (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

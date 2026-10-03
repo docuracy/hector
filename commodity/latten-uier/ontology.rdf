@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundredweight">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundredweight</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/latten-uier#rate-1558-inward-647">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Latten wier the C lb. cont’ 112 lb 40s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_latten_uier_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4"/>
+    <hector:perQuantity rdf:nodeID="commodity_latten_uier_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 647 (transcribed by Stuart Jenks): 'Latten wier the C lb. cont’ 112 lb' 40s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb21eb0348a4676870f2116f95482f540cfa3a42becc0998c5d3159a0f683da85eb">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb308adab3136b5cb6bf508f20184991f7362387fb88b3a052357db51ab4e9b170">
+    <crm:P190_has_symbolic_content>Latten wyer</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>laten wier</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb31815c98ad5bed51576a0b8550ff35e20fc91cd365109a60a03e3bbd044be4ff9">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>20s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/latten-uier#rate-1507-none-158">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1507: Lattyn wyer the C wayte 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_latten_uier_cb31815c98ad5bed51576a0b8550ff35e20fc91cd365109a60a03e3bbd044be4ff9"/>
+    <hector:perQuantity rdf:nodeID="commodity_latten_uier_cb20ebe8306f723be8f4d7b71874c8f40dd6594dc9f90190484b9d8214e72c3ee53"/>
+    <hector:sourceText>Book of Rates 1507, line 158 (transcribed by Stuart Jenks): 'Lattyn wyer the C wayte' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/latten-uier">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_latten_uier_cb17e6fcd5f36775cead2b92805edb69216fce0c44b5e3c55b32017f8ca0c3d1245"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_latten_uier_cb18f08e8ab15b0d77fae990e7bf20a7c4a655c16395a6444eee86c4c0f48439a81"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_latten_uier_cb19d958a0270792b684d56f38a500103da0d9f4ec51350f95c8a5e4300b2ad1ad6"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_latten_uier_cb308adab3136b5cb6bf508f20184991f7362387fb88b3a052357db51ab4e9b170"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_latten_uier_cb159aa9d17820f309f90ee3112c1938ac0bcc894f834e3ef0d3011e1606cf16113"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>latten (uier)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/latten"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/latten"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/latten-uier#rate-1507-none-158"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/latten-uier#rate-1545-inward-441"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/latten-uier#rate-1558-inward-647"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb20ebe8306f723be8f4d7b71874c8f40dd6594dc9f90190484b9d8214e72c3ee53">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundredweight"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/latten-uier#rate-1545-inward-441">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Latten wyer the 100 pounde 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_latten_uier_cb3fa49f4ecd130f510b6cd74369a4cd9b9394ace79b8eb37f0cafd2f5bea24d4a9"/>
+    <hector:perQuantity rdf:nodeID="commodity_latten_uier_cb21eb0348a4676870f2116f95482f540cfa3a42becc0998c5d3159a0f683da85eb"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 441 (transcribed by Stuart Jenks): 'Latten wyer the 100 pounde' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb18f08e8ab15b0d77fae990e7bf20a7c4a655c16395a6444eee86c4c0f48439a81">
+    <crm:P190_has_symbolic_content>Latten wier</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>laten wiːr</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>40s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb17e6fcd5f36775cead2b92805edb69216fce0c44b5e3c55b32017f8ca0c3d1245">
+    <crm:P190_has_symbolic_content>latten (uier)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>laten uiːr</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb19d958a0270792b684d56f38a500103da0d9f4ec51350f95c8a5e4300b2ad1ad6">
+    <crm:P190_has_symbolic_content>Lattyn wyer</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>latin wier</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/latten">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>latten</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb3fa49f4ecd130f510b6cd74369a4cd9b9394ace79b8eb37f0cafd2f5bea24d4a9">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>20s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_latten_uier_cb159aa9d17820f309f90ee3112c1938ac0bcc894f834e3ef0d3011e1606cf16113">
+    <crm:P190_has_symbolic_content>latten, qualified as ‘uier’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+</rdf:RDF>

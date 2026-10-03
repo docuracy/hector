@@ -1,0 +1,69 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hawking-glove> a crm:E55_Type ;
+    rdfs:label "hawking glove" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawkes glove" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukəs glovə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawke glove" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukə glovə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawk glove" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hauk glovə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawking glove" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "haukiŋ glovə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A hawking glove: a glove worn while hawking (MED s.v. glove n.1; OED s.v. hawking n.1)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/glove>,
+        <https://w3id.org/hector/commodity/hawk-bell>,
+        <https://w3id.org/hector/commodity/hawk-laver>,
+        <https://w3id.org/hector/commodity/shooting-glove> ;
+    skos:broader aat:300148821 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hawking%20glove> ;
+    skos:related <https://w3id.org/hector/commodity/falcon> .
+
+aat:300148821 a crm:E55_Type ;
+    rdfs:label "gloves" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/falcon> a crm:E55_Type ;
+    rdfs:label "falcon" .
+
+<https://w3id.org/hector/commodity/glove> a crm:E55_Type ;
+    rdfs:label "glove" .
+
+<https://w3id.org/hector/commodity/hawk-bell> a crm:E55_Type ;
+    rdfs:label "hawk bell" .
+
+<https://w3id.org/hector/commodity/hawk-laver> a crm:E55_Type ;
+    rdfs:label "hawk laver" .
+
+<https://w3id.org/hector/commodity/shooting-glove> a crm:E55_Type ;
+    rdfs:label "shooting glove" .
+
+<https://w3id.org/mlca/glossary/hawking%20glove> a crm:E55_Type ;
+    rdfs:label "hawking glove (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

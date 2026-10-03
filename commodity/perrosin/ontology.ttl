@@ -1,0 +1,141 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/perrosin> a crm:E55_Type ;
+    rdfs:label "perrosin" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peroseme" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosemə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perosen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosen" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perrosen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosen" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peresyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peresinə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perresyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peresin" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perrosene" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosenə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perosene" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosenə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pererosine" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pererosinə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perrcisen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "persisen" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perewsen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pereusen" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perosyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perosin" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "perrosin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "perosin" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "resin of some kind, especially the dry rosin obtained from pine trees (OED s.v. perrosin)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300419317 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/perrosin> ;
+    la:equivalent aat:300012950 ;
+    hector:attestationCount 13 ;
+    hector:taxation <https://w3id.org/hector/commodity/perrosin#rate-1545-inward-541>,
+        <https://w3id.org/hector/commodity/perrosin#rate-1558-inward-820> .
+
+aat:300012950 a crm:E55_Type ;
+    rdfs:label "rosin" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300419317 a crm:E55_Type ;
+    rdfs:label "pine resin" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/perrosin#rate-1545-inward-541> a hector:Rate ;
+    rdfs:label "1545 inward: Perosen the 100 pounde 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 541 (transcribed by Stuart Jenks): 'Perosen the 100 pounde' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/perrosin#rate-1558-inward-820> a hector:Rate ;
+    rdfs:label "1558 inward: Peroseme the C lb. cont’ 112 lb 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 820 (transcribed by Stuart Jenks): 'Peroseme the C lb. cont’ 112 lb' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/perrosin> a crm:E55_Type ;
+    rdfs:label "perrosin (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

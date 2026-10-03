@@ -1,0 +1,95 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/stone> a crm:E58_Measurement_Unit ;
+    rdfs:label "stone" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petris" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peterae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petere" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petera" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petera" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petrae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petre" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stone" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "stonə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stonəs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petra" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petra" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard." ;
+            crm:P2_has_type aat:300418049 ],
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a unit of weight (14 lb.) (see also petra)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/stone>,
+        <https://w3id.org/mlca/glossary/stone> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 877 ;
+    hector:conversionToGram 6350.29318 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (stone: 'a unit of weight (14 lb.)')" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 14 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/stone> a crm:E55_Type ;
+    rdfs:label "stone" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/stone> a crm:E55_Type ;
+    rdfs:label "stone (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

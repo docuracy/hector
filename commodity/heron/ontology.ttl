@@ -1,0 +1,70 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/heron> a crm:E55_Type ;
+    rdfs:label "heron" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "heron" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "heron" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "heronəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "any of various long-necked, long-legged wading birds of the genus Ardea and related genera (family Ardeidae), typically having a crest and nesting colonially, and related to egrets and bitterns; especially the large A. cinerea of Eurasia (OED s.v. heron n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300266506 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/heron> ;
+    skos:related <https://w3id.org/hector/commodity/herenshew> ;
+    hector:attestationCount 2 ;
+    hector:taxation <https://w3id.org/hector/commodity/heron#rate-1558-inward-564> .
+
+aat:300266506 a crm:E55_Type ;
+    rdfs:label "Aves (class)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/herenshew> a crm:E55_Type ;
+    rdfs:label "herenshew" .
+
+<https://w3id.org/hector/commodity/heron#rate-1558-inward-564> a hector:Rate ;
+    rdfs:label "1558 inward: Heron sewes the dosen 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 564 (transcribed by Stuart Jenks): 'Heron sewes the dosen' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/heron> a crm:E55_Type ;
+    rdfs:label "heron (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

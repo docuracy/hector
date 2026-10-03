@@ -1,0 +1,286 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bushel> a crm:E55_Type ;
+    rdfs:label "bushel" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bousshelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːʃelə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busschelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃel" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃel" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bossels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosels" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bousshelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːʃeləs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bossel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosel" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buscelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buseli" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshyll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃil" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bussell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "busel" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃels" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃels" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busschelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeli" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshellus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelus" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busselli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buseli" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃels" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boshelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boʃeləs" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boshelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boʃelə" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃels" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buʃel" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busheles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bussellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buselis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃel" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boscelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boseli" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boscellus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boselus" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buschellus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buschelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeli" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bushhelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃhelə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buschelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃelə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buscellus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buselus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buschelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bussellus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buselus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bussheles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃeləs" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "busshylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buʃiləs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "unit of volume with numerous different definitions [Source: Wikidata]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bushel> ;
+    la:equivalent wd:Q216658 ;
+    hector:attestationCount 166 .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q216658 a crm:E55_Type ;
+    rdfs:label "bushel" .
+
+<https://w3id.org/mlca/glossary/bushel> a crm:E55_Type ;
+    rdfs:label "bushel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

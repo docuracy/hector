@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/soap-box> a crm:E55_Type ;
+    rdfs:label "soap box" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopebuttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sopebutəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sebutte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sebutə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "box pro sapone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boks pro saponə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "soap box" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "soap boks" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopp box" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sop boks" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sebuttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sebutəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopp boxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sop boksəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sebotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sebotə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sebottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sebotəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopp sope" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sop sopə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopp boxis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sop boksis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sope buttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sopə butəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sopebutt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sopebut" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "soap box: a box, butt or cask of (or for) soap, traded by the shock" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/soap%20box> ;
+    skos:related <https://w3id.org/hector/commodity/soap> ;
+    la:equivalent aat:300197296,
+        aat:300220755 ;
+    hector:attestationCount 61 .
+
+aat:300197296 a crm:E55_Type ;
+    rdfs:label "packing boxes" .
+
+aat:300220755 a crm:E55_Type ;
+    rdfs:label "soap boxes (container for personal grooming)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/soap> a crm:E55_Type ;
+    rdfs:label "soap" .
+
+<https://w3id.org/mlca/glossary/soap%20box> a crm:E55_Type ;
+    rdfs:label "soap box (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

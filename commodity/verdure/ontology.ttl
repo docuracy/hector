@@ -1,0 +1,89 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/verdure> a crm:E55_Type ;
+    rdfs:label "verdure" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verdours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verduːrs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verdour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verduːr" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vardar cadas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vardar kadas" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verdurs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdurs" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verder" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verdur" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdur" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "varder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "varder" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "verdure" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "verdurə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "werder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "werder" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a rich tapestry ornamented with representations of trees and other vegetation (OED s.v. verdure), here made of (or decorated with) caddis (OED caddis n.1) | a rich tapestry ornamented with representations of trees and other vegetation (OED 2, s.v. verdure) | a rich tapestry ornamented with representations of trees and other vegetation (OED 2, s.v. verdure), here of low quality | verdure, a rich tapestry ornamented with representations of trees and other vegetation (OED 2, s.v. verdure) | a rich tapestry ornamented with representations of trees and other vegetation (OED s.v. verdure) | a rich tapestry ornamented with representations of trees and other vegetation (OED s.v. verdure), here of low quality | banker, a covering, generally of tapestry, for a bench or a chair (OED s.v. banker1), her made of verdure" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/verdure> ;
+    la:equivalent aat:300205002 ;
+    hector:attestationCount 352 .
+
+aat:300205002 a crm:E55_Type ;
+    rdfs:label "tapestries" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/verdure> a crm:E55_Type ;
+    rdfs:label "verdure (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

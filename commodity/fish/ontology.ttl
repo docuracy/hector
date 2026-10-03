@@ -1,0 +1,208 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fish> a crm:E55_Type ;
+    rdfs:label "fish" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyscium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pissium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisium" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pisces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pisscibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fysshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pheshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyscisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisisis" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piscisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisisis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fyshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fish" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "fiʃ" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "phishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pissis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pisscisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisisis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pisscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fisshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fissh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃ" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pissisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisisis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fysh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fiʃ" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pisce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piscibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "piscium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pisium" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The flesh of fish used as food. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fish> ;
+    skos:related <https://w3id.org/hector/commodity/fisshesmer> ;
+    la:equivalent aat:300389825 ;
+    hector:attestationCount 3582 ;
+    hector:taxation <https://w3id.org/hector/commodity/fish#rate-1545-inward-302>,
+        <https://w3id.org/hector/commodity/fish#rate-1558-inward-431> .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/fish#rate-1545-inward-302> a hector:Rate ;
+    rdfs:label "1545 inward: Fysshe the barrell 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 302 (transcribed by Stuart Jenks): 'Fysshe the barrell' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/fish#rate-1558-inward-431> a hector:Rate ;
+    rdfs:label "1558 inward: Fishe the last cont’ 12 barrelles £6" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6" ;
+            hector:valueInPence 1440.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 431 (transcribed by Stuart Jenks): 'Fishe the last cont’ 12 barrelles' £6" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/fisshesmer> a crm:E55_Type ;
+    rdfs:label "fisshesmer" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/mlca/glossary/fish> a crm:E55_Type ;
+    rdfs:label "fish (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

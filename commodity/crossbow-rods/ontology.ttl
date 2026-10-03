@@ -1,0 +1,50 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/crossbow-rods> a crm:E55_Type ;
+    rdfs:label "crossbow rods" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossbow rods" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "krosbuː rods" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Probably rods to be made into cross-bow bolts (cf. OED s.v. rod n.1 8; MED rod(de n. 3b)|Straight, slender, usually cylindrical stick staff or wand.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300222721 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/crossbow%20rods> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow>,
+        <https://w3id.org/hector/commodity/crossbow-bolt> ;
+    la:equivalent aat:300014669 .
+
+aat:300014669 a crm:E55_Type ;
+    rdfs:label "rods (object genre)" .
+
+aat:300222721 a crm:E55_Type ;
+    rdfs:label "<projectiles with nonexplosive propellant>" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow> a crm:E55_Type ;
+    rdfs:label "crossbow" .
+
+<https://w3id.org/hector/commodity/crossbow-bolt> a crm:E55_Type ;
+    rdfs:label "crossbow bolt" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/crossbow%20rods> a crm:E55_Type ;
+    rdfs:label "crossbow rods (London Customs Accounts glossary)" .
+

@@ -1,0 +1,127 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tent> a crm:E55_Type ;
+    rdfs:label "tent" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "telda" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telda" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tyldae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tilde" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tylda" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tilda" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teld" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teld" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teldes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teldəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teldae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telde" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tente" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tentə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teldys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teldis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "telde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teldə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teeldes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teːldəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teelde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teːldə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tent" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tent" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teintes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teintəs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tylde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tildə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "teinte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "teintə" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tent, pavilion (OED s.v. teld n.); tents made of canvas or frieze." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tent> ;
+    skos:related <https://w3id.org/hector/commodity/hair> ;
+    la:equivalent aat:300005694 ;
+    hector:attestationCount 44 .
+
+aat:300005694 a crm:E55_Type ;
+    rdfs:label "tents (portable buildings)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/hair> a crm:E55_Type ;
+    rdfs:label "hair" .
+
+<https://w3id.org/mlca/glossary/tent> a crm:E55_Type ;
+    rdfs:label "tent (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,120 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/spar> a crm:E55_Type ;
+    rdfs:label "spar" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sperre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sperə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spar" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "spar" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spar" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparrys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparəs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spars" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spars" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spares" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparəs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparrs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spars" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sparris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sparis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "one of the common rafters of a roof; a pole or piece of timber of some length and moderate thickness; nautical: the general term for all masts, yards, booms, gaffs etc. (OED s.v. spar n.1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300002424 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/spar> ;
+    hector:attestationCount 100 ;
+    hector:taxation <https://w3id.org/hector/commodity/spar#rate-1545-inward-696> .
+
+aat:300002424 a crm:E55_Type ;
+    rdfs:label "rafters" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/spar#rate-1545-inward-696> a hector:Rate ;
+    rdfs:label "1545 inward: Sparres the hundreth 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 696 (transcribed by Stuart Jenks): 'Sparres the hundreth' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/spar> a crm:E55_Type ;
+    rdfs:label "spar (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

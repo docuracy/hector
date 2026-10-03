@@ -1,0 +1,257 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/comb> a crm:E55_Type ;
+    rdfs:label "comb" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectenum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektenum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectinum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektinum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektin" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecteninis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pekteninis" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "combz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombz" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kombys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombis" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "combis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "come" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "komə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "combes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "comes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koməs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecten" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pekten" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "comebe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "komebə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "comebes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "komebəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "combe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektinis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "comb" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "komb" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "combys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kombes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kombəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "komb" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "komb" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectines" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pectinibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pektinibus" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Implements having a row of teeth on one or both edges or sides, used for adjusting, distangling, or cleaning the hair. For such tools that are intended primarily to be decorative and displayed in the hair, use \"combs (hair ornaments).\" [Source: Getty AAT] | Any of various toothed devices used in handling or ordering textile fibers. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/comb> ;
+    skos:related <https://w3id.org/hector/commodity/hatchel> ;
+    la:equivalent aat:300236397,
+        aat:300239965 ;
+    hector:attestationCount 988 ;
+    hector:taxation <https://w3id.org/hector/commodity/comb#rate-1545-inward-156>,
+        <https://w3id.org/hector/commodity/comb#rate-1545-inward-157>,
+        <https://w3id.org/hector/commodity/comb#rate-1545-inward-159>,
+        <https://w3id.org/hector/commodity/comb#rate-1558-inward-233>,
+        <https://w3id.org/hector/commodity/comb#rate-1558-inward-234>,
+        <https://w3id.org/hector/commodity/comb#rate-1558-inward-235> .
+
+aat:300236397 a crm:E55_Type ;
+    rdfs:label "combs (grooming tools)" .
+
+aat:300239965 a crm:E55_Type ;
+    rdfs:label "combs (textile working equipment)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/comb#rate-1545-inward-156> a hector:Rate ;
+    rdfs:label "1545 inward: Combes the groce 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 156 (transcribed by Stuart Jenks): 'Combes the groce' 4s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/comb#rate-1545-inward-157> a hector:Rate ;
+    rdfs:label "1545 inward: Combes the cace 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/case> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 157 (transcribed by Stuart Jenks): 'Combes the cace' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/comb#rate-1545-inward-159> a hector:Rate ;
+    rdfs:label "1545 inward: Combes the box 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/box> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 159 (transcribed by Stuart Jenks): 'Combes the box' 4s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/comb#rate-1558-inward-233> a hector:Rate ;
+    rdfs:label "1558 inward: Combes the grosse 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 233 (transcribed by Stuart Jenks): 'Combes the grosse' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/comb#rate-1558-inward-234> a hector:Rate ;
+    rdfs:label "1558 inward: Combes the case 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/case> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 234 (transcribed by Stuart Jenks): 'Combes the case' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/comb#rate-1558-inward-235> a hector:Rate ;
+    rdfs:label "1558 inward: Combes the boxe cont’ di’ grosse 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/box> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 235 (transcribed by Stuart Jenks): 'Combes the boxe cont’ di’ grosse' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/hatchel> a crm:E55_Type ;
+    rdfs:label "hatchel" .
+
+<https://w3id.org/mlca/glossary/comb> a crm:E55_Type ;
+    rdfs:label "comb (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/box> a crm:E58_Measurement_Unit ;
+    rdfs:label "box" .
+
+<https://w3id.org/hector/unit/case> a crm:E58_Measurement_Unit ;
+    rdfs:label "case" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

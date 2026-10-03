@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/dozen-cloth> a crm:E55_Type ;
+    rdfs:label "dozen cloth" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dozen cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dozen kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossins" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosson" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "doson" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossenes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosenəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosenes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosenəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "doseynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "doseinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dosons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosons" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosons" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dossyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dosin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "doseyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "doseins" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A dozen: a kind of coarse woollen kersey cloth (e.g. Northern or Devonshire dozens). Distinct from the unit \"dozen\"." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300162391 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/dozen%20cloth> ;
+    skos:related <https://w3id.org/hector/commodity/kersey> ;
+    hector:attestationCount 112 .
+
+aat:300162391 a crm:E55_Type ;
+    rdfs:label "cloth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/kersey> a crm:E55_Type ;
+    rdfs:label "kersey" .
+
+<https://w3id.org/mlca/glossary/dozen%20cloth> a crm:E55_Type ;
+    rdfs:label "dozen cloth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

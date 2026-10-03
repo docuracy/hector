@@ -1,0 +1,85 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/kyppe> a crm:E55_Type ;
+    rdfs:label "kyppe" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kype" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipə" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kippes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kippe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipə" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kipes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyppe" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kipə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kipe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kipəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a basket; specifically one holding approximately a bushel, used as a measure of fish (MED s.v. kipe n.; OED s.v. kipe; Zupko 213). Frequently confused orthographically with kip (a bundle of furs/hides) — see kip." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/kyppe> ;
+    skos:related <https://w3id.org/hector/commodity/basket>,
+        <https://w3id.org/hector/commodity/kip> ;
+    la:equivalent aat:300194498 ;
+    hector:attestationCount 16 .
+
+aat:300194498 a crm:E55_Type ;
+    rdfs:label "baskets (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/basket> a crm:E55_Type ;
+    rdfs:label "basket" .
+
+<https://w3id.org/hector/commodity/kip> a crm:E55_Type ;
+    rdfs:label "kip" .
+
+<https://w3id.org/mlca/glossary/kyppe> a crm:E55_Type ;
+    rdfs:label "kyppe (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

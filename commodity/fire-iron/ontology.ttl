@@ -1,0 +1,66 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fire-iron> a crm:E55_Type ;
+    rdfs:label "fire iron" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fire iron" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "firə iron" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fyre yrens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "firə irens" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fyre irons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "firə irons" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feire iron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feirə iron" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fyre iron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "firə iron" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "implements for tending a domestic fire, usually shovel, tongs and poker (OED s.v. fire-iron)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300425514 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fire%20iron> ;
+    skos:related <https://w3id.org/hector/commodity/andirons> ;
+    hector:attestationCount 2 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300425514 a crm:E55_Type ;
+    rdfs:label "fireplace accessories" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/andirons> a crm:E55_Type ;
+    rdfs:label "andirons" .
+
+<https://w3id.org/mlca/glossary/fire%20iron> a crm:E55_Type ;
+    rdfs:label "fire iron (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

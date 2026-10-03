@@ -1,0 +1,125 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/virginal> a crm:E55_Type ;
+    rdfs:label "virginal" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginales" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinaləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vergenalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdʒenaləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgynalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virginaləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyrgenalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wirdʒenaləs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vergenalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "verdʒenalə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinaləs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virgynalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virginalə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyrgenall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wirdʒenal" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginalls" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinals" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinalə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinal" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "virginal" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "virdʒinal" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Small harpsichords that are usually rectangular in shape, and having one keyboard and with the strings running at right angles to the keys. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/virginal> ;
+    la:equivalent aat:300041684 ;
+    hector:attestationCount 6 ;
+    hector:taxation <https://w3id.org/hector/commodity/virginal#rate-1545-inward-772> .
+
+aat:300041684 a crm:E55_Type ;
+    rdfs:label "virginals" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/virginal#rate-1545-inward-772> a hector:Rate ;
+    rdfs:label "1545 inward: Virginales the payre 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pair> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 772 (transcribed by Stuart Jenks): 'Virginales the payre' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pair> a crm:E58_Measurement_Unit ;
+    rdfs:label "pair" .
+
+<https://w3id.org/mlca/glossary/virginal> a crm:E55_Type ;
+    rdfs:label "virginal (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

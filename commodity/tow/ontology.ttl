@@ -1,0 +1,69 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tow> a crm:E55_Type ;
+    rdfs:label "tow" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tow" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tuː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tow linum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tuː linum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tow lini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tuː lini" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filas" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "towe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tuːə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tawe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tauə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fiber derived from the bast or skin of the stem of the species Linum usitatissimum. Soft, flexible fibers are produced by retting the stem of the flax plant, then washing and cleaning the fibers. Flax fibers of thinner and longer than cotton, but the fiber tube has thicker walls resulting in a stronger thread. Additionally, flax fibers are used for linen fabric, thread for making shoes and bookbinding, fish line, and twine. Waste flax fibers are used in banknotes, cigarette covers, and writing and drawing paper. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tow> ;
+    la:equivalent aat:300014041 ;
+    hector:attestationCount 30 .
+
+aat:300014041 a crm:E55_Type ;
+    rdfs:label "flax (fiber)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/tow> a crm:E55_Type ;
+    rdfs:label "tow (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

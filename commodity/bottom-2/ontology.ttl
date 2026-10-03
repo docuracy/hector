@@ -1,0 +1,77 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bottom-2> a crm:E55_Type ;
+    rdfs:label "bottom_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botynholt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botinholt" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bothom" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boθom" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bothoms" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boθoms" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bothemholt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boθemholt" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bottom_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "botom" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bottom" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botom" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "one of the planks for the lower part of the hull of a ship (MED s.v. botme 2a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300264606 ;
+    skos:closeMatch aat:300247448 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bottom_2> ;
+    skos:related <https://w3id.org/hector/commodity/cogboards>,
+        <https://w3id.org/hector/commodity/plank> ;
+    hector:attestationCount 10 .
+
+aat:300247448 a crm:E55_Type ;
+    rdfs:label "shipbuilding" .
+
+aat:300264606 a crm:E55_Type ;
+    rdfs:label "timber (wood by form)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cogboards> a crm:E55_Type ;
+    rdfs:label "cogboards" .
+
+<https://w3id.org/hector/commodity/plank> a crm:E55_Type ;
+    rdfs:label "plank" .
+
+<https://w3id.org/mlca/glossary/bottom_2> a crm:E55_Type ;
+    rdfs:label "bottom_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mappa> a crm:E55_Type ;
+    rdfs:label "mappa" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mappae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mape" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mapparum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "maparum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mappa" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mapa" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mappes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mapəs" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mappe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mapə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Cloth coverings for altars often with decorative edgings and individual embroidered motifs. [Source: Getty AAT] Relatively small pieces of cloth or paper used for wiping the mouth and hands and protecting clothes while dining. [Source: Getty AAT] | Small towels or cloths used to dry hands after washing them. [Source: Getty AAT] | Cloths for covering the top of a table, especially during a meal. [Source: Getty AAT] | Refers to graphic or photogrammetric representations of the Earth's surface or a part of it, including physical features and political boundaries, where each point corresponds to a geographical or celestial position according to a definite scale or projection. The term may also refer to similar depictions of other planets, suns, other heavenly bodies, or areas of the heavens. Maps are typically depicted on a flat medium, such as on paper, a wall, or a computer screen. For similar depictions on a sphere, see \"globes (cartographic spheres).\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mappa> ;
+    la:equivalent aat:300028094,
+        aat:300204864,
+        aat:300204969,
+        aat:300216644,
+        aat:300426959 ;
+    hector:attestationCount 19 .
+
+aat:300028094 a crm:E55_Type ;
+    rdfs:label "maps (documents)" .
+
+aat:300204864 a crm:E55_Type ;
+    rdfs:label "altar cloths" .
+
+aat:300204969 a crm:E55_Type ;
+    rdfs:label "tablecloths" .
+
+aat:300216644 a crm:E55_Type ;
+    rdfs:label "napkins (culinary textile)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300426959 a crm:E55_Type ;
+    rdfs:label "hand towels" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/mappa> a crm:E55_Type ;
+    rdfs:label "mappa (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

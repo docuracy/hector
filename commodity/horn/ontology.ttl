@@ -1,0 +1,212 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/horn> a crm:E55_Type ;
+    rdfs:label "horn" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horn" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornus" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornez" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornusus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornusus" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornuum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornuum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornis" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horn" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "horn" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornu" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornu" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horns" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cornubus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kornubus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Horn (the natural material): the horn of an animal, used as a raw material (for lanterns, knife-handles, crossbow-making, etc.). For type-specific and worked forms see the related concepts; genuinely unidentifiable \"horn\" occurrences are kept under horn_3." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/bloweyng-horn>,
+        <https://w3id.org/hector/commodity/buckhorn>,
+        <https://w3id.org/hector/commodity/deer-horn>,
+        <https://w3id.org/hector/commodity/drinking-horn>,
+        <https://w3id.org/hector/commodity/drum>,
+        <https://w3id.org/hector/commodity/elk-horn>,
+        <https://w3id.org/hector/commodity/gun-horn>,
+        <https://w3id.org/hector/commodity/hart-horn>,
+        <https://w3id.org/hector/commodity/horn-3>,
+        <https://w3id.org/hector/commodity/inkhorn>,
+        <https://w3id.org/hector/commodity/ox-horn>,
+        <https://w3id.org/hector/commodity/ruet-horn>,
+        <https://w3id.org/hector/commodity/shoehorn> ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/horn> ;
+    skos:related <https://w3id.org/hector/commodity/middilhorn> ;
+    la:equivalent aat:300011826 ;
+    hector:attestationCount 299 ;
+    hector:taxation <https://w3id.org/hector/commodity/horn#rate-1545-outward-7>,
+        <https://w3id.org/hector/commodity/horn#rate-1558-inward-460> .
+
+aat:300011826 a crm:E55_Type ;
+    rdfs:label "horn (animal material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bloweyng-horn> a crm:E55_Type ;
+    rdfs:label "bloweyng horn" .
+
+<https://w3id.org/hector/commodity/buckhorn> a crm:E55_Type ;
+    rdfs:label "buckhorn" .
+
+<https://w3id.org/hector/commodity/deer-horn> a crm:E55_Type ;
+    rdfs:label "deer horn" .
+
+<https://w3id.org/hector/commodity/drinking-horn> a crm:E55_Type ;
+    rdfs:label "drinking horn" .
+
+<https://w3id.org/hector/commodity/drum> a crm:E55_Type ;
+    rdfs:label "drum" .
+
+<https://w3id.org/hector/commodity/elk-horn> a crm:E55_Type ;
+    rdfs:label "elk horn" .
+
+<https://w3id.org/hector/commodity/gun-horn> a crm:E55_Type ;
+    rdfs:label "gun horn" .
+
+<https://w3id.org/hector/commodity/hart-horn> a crm:E55_Type ;
+    rdfs:label "hart horn" .
+
+<https://w3id.org/hector/commodity/horn#rate-1545-outward-7> a hector:Rate ;
+    rdfs:label "1545 outward: Horne typpes the 1000 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1000 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/thousand> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 7 (transcribed by Stuart Jenks): 'Horne typpes the 1000' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/horn#rate-1558-inward-460> a hector:Rate ;
+    rdfs:label "1558 inward: Flaske of horne the dosen 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 460 (transcribed by Stuart Jenks): 'Flaske of horne the dosen' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/horn-3> a crm:E55_Type ;
+    rdfs:label "horn_3" .
+
+<https://w3id.org/hector/commodity/inkhorn> a crm:E55_Type ;
+    rdfs:label "inkhorn" .
+
+<https://w3id.org/hector/commodity/middilhorn> a crm:E55_Type ;
+    rdfs:label "middilhorn" .
+
+<https://w3id.org/hector/commodity/ox-horn> a crm:E55_Type ;
+    rdfs:label "ox horn" .
+
+<https://w3id.org/hector/commodity/ruet-horn> a crm:E55_Type ;
+    rdfs:label "ruet horn" .
+
+<https://w3id.org/hector/commodity/shoehorn> a crm:E55_Type ;
+    rdfs:label "shoehorn" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/thousand> a crm:E58_Measurement_Unit ;
+    rdfs:label "thousand" .
+
+<https://w3id.org/mlca/glossary/horn> a crm:E55_Type ;
+    rdfs:label "horn (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

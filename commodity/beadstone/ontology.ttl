@@ -1,0 +1,72 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/beadstone> a crm:E55_Type ;
+    rdfs:label "beadstone" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bedestones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bedestonəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bedstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bedstonə" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bedestonys glasse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bedestonis glasə" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bedstones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bedstonəs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beadstone" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bɛːdstonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bedestone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bedestonə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "material from which beads are made (OED s.v. bead n. 8)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300234006 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/beadstone> ;
+    skos:related <https://w3id.org/hector/commodity/paternoster> ;
+    hector:attestationCount 3 .
+
+aat:300234006 a crm:E55_Type ;
+    rdfs:label "beads (pierced objects)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/paternoster> a crm:E55_Type ;
+    rdfs:label "paternoster" .
+
+<https://w3id.org/mlca/glossary/beadstone> a crm:E55_Type ;
+    rdfs:label "beadstone (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,108 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/last> a crm:E55_Type ;
+    rdfs:label "last" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "last" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "last" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lastae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laste" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lastus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lastus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lasta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lasta" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laste" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lastə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lasti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lasti" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lasts" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lasts" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lastes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lastəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lastum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lastum" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Last (Latin lastus/lasta): a large unit of quantity, weight or packing whose size varied by commodity. As a measure of weight, c. 1870 kg (= 12 barrels); as a packing unit for liquid goods, usually 12 barrels; as a counting unit for hides, 200 pieces (= 20 dickers); for fish c. 1000 (croplings, herring, sprats); also used for eels, rye, soap, tar, pitch, butter, oil and bowstaves (24 bundles of 16 staves). Distinct from the shoemaker's last (a foot-shaped mould) and from lastage/ballast." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/last> ;
+    hector:attestationCount 9385 ;
+    hector:taxation <https://w3id.org/hector/commodity/last#rate-1558-inward-397> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/last#rate-1558-inward-397> a hector:Rate ;
+    rdfs:label "1558 inward: The laste of either cont’ 12 barrelles £18" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£18" ;
+            hector:valueInPence 4320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 397 (transcribed by Stuart Jenks): 'The laste of either cont’ 12 barrelles' £18" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/mlca/glossary/last> a crm:E55_Type ;
+    rdfs:label "last (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

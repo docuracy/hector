@@ -1,0 +1,241 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shuttle> a crm:E55_Type ;
+    rdfs:label "shuttle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shuttle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃutlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schettelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetill" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetil" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wevers shetylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wevers ʃetilə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetyls" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetils" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shittilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitiləs" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetils brode wever" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetils brodə wever" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schettelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeteləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shettelle longs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə loŋs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetiləs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetiləs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheteles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeteləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetel" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shettelle long" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə loŋ" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shettylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetilə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shittille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitilə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetilə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeteləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shettylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetiləs" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetilə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schetelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeteləs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shittylle longs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitilə loŋs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shotele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃotelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schyttels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitels" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shoteles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃoteləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shittylle long" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitilə loŋ" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shetil brode wever" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetil brodə wever" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schyttel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃitel" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wevers shetylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wevers ʃetiləs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schetelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃetelə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "shuttle, an instrument used in weaving for passing the thread of the weft to and fro from one edge of the cloth to the other between the threads of the warp (OED s.v. shuttle n.1 2.a); occurring in pairs, and in broad and long varieties" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shuttle> ;
+    la:equivalent aat:300247548 ;
+    hector:attestationCount 56 ;
+    hector:taxation <https://w3id.org/hector/commodity/shuttle#rate-1558-inward-1066> .
+
+aat:300247548 a crm:E55_Type ;
+    rdfs:label "shuttles (textile fabricating tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/shuttle#rate-1558-inward-1066> a hector:Rate ;
+    rdfs:label "1558 inward: Shoteles for weavers the dossyn 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1066 (transcribed by Stuart Jenks): 'Shoteles for weavers the dossyn' 2s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/shuttle> a crm:E55_Type ;
+    rdfs:label "shuttle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

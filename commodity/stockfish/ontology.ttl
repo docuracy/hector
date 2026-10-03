@@ -1,0 +1,382 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/stockfish> a crm:E55_Type ;
+    rdfs:label "stockfish" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungiis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfysch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒia" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfisch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfisshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stok stokefysch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stok stokefiʃ" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokepheshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefeʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockefisch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefiʃ" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoke piscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokə pisis" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stocfissch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockefishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefiʃə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokkefysshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefiʃə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stocfissches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockphise" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfisə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfissch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stok piscisi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stok pisisi" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockepheshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefeʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfische" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfysche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfysh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockpheshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfeʃə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockefish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefiʃ" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfisshes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfysches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokffisshes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoke piscisi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokə pisisi" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfissches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungiae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒie" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfyssh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stok piscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stok pisis" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfyshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stocfishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokffisshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokffissh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stocfisch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockfysh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungea" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒɛː" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockfishe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockfyshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungeae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒɛːe" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfissh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfysshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stokfishes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockfish" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "stokfiʃ" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungiarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒiarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fungeis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fundʒeis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stock" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stok" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockefyshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefiʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stockefiche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stokefitʃə" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "stockfish | stockfish, cod or other gadoid fish cured by splitting open and drying hard in the air without salt (OED s.v. stockfish) | dry cured fish, stockfish | stockfish, a name for cod and other gadoid fish cured by splitting open and drying hard in the air without salt (OED s.v. stock-fish) | a name for cod and other gadoid fish cured by splitting open and drying hard in the air without salt (OED s.v. stock-fish) | fish (usually cod) preserved by drying | stockfish (see also fungia)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/stockfish> ;
+    skos:related <https://w3id.org/hector/commodity/titling> ;
+    hector:attestationCount 626 ;
+    hector:taxation <https://w3id.org/hector/commodity/stockfish#rate-1545-inward-681>,
+        <https://w3id.org/hector/commodity/stockfish#rate-1545-inward-683>,
+        <https://w3id.org/hector/commodity/stockfish#rate-1545-inward-685> .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/stockfish#rate-1545-inward-681> a hector:Rate ;
+    rdfs:label "1545 inward: Stokfysshe the hundreth 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 681 (transcribed by Stuart Jenks): 'Stokfysshe the hundreth' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/stockfish#rate-1545-inward-683> a hector:Rate ;
+    rdfs:label "1545 inward: Stokfysshe the hundreth 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 683 (transcribed by Stuart Jenks): 'Stokfysshe the hundreth' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/stockfish#rate-1545-inward-685> a hector:Rate ;
+    rdfs:label "1545 inward: Stokfysshe the hundreth 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 685 (transcribed by Stuart Jenks): 'Stokfysshe the hundreth' 5s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/titling> a crm:E55_Type ;
+    rdfs:label "titling" .
+
+<https://w3id.org/mlca/glossary/stockfish> a crm:E55_Type ;
+    rdfs:label "stockfish (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

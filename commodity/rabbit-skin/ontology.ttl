@@ -1,0 +1,109 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/rabbit-skin> a crm:E55_Type ;
+    rdfs:label "rabbit skin" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rabbit" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rabit" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conny skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koni skinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellibus cuniculorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelibus kunikulorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conyskyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koniskin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellium cuniculorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelium kunikulorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koni" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cuniculorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kunikulorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coniculorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konikulorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conyskynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koniskinə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cony" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koni" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rabbit skin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "rabit skin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis cuniculorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis kunikulorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conny skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koni skinə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "connyskyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koniskins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conyskyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koniskins" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Skins of rabbits, usually including fur, used for apparel or other purposes. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/rabbit%20skin> ;
+    skos:related <https://w3id.org/hector/commodity/roll> ;
+    la:equivalent aat:300380354 ;
+    hector:attestationCount 1382 .
+
+aat:300380354 a crm:E55_Type ;
+    rdfs:label "rabbit skin" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/roll> a crm:E55_Type ;
+    rdfs:label "roll" .
+
+<https://w3id.org/mlca/glossary/rabbit%20skin> a crm:E55_Type ;
+    rdfs:label "rabbit skin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

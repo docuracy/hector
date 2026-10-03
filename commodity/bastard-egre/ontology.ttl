@@ -1,0 +1,46 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bastard-egre> a crm:E55_Type ;
+    rdfs:label "bastard egre" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastard egre" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bastard egrə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastard eagre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastard ɛːgrə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "vinegar made with bastard wine" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300011755 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bastard%20egre> ;
+    skos:related <https://w3id.org/hector/commodity/bastard> ;
+    hector:attestationCount 1 .
+
+aat:300011755 a crm:E55_Type ;
+    rdfs:label "vinegar" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bastard> a crm:E55_Type ;
+    rdfs:label "bastard" .
+
+<https://w3id.org/mlca/glossary/bastard%20egre> a crm:E55_Type ;
+    rdfs:label "bastard egre (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

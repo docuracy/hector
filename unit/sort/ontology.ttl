@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/sort> a crm:E58_Measurement_Unit ;
+    rdfs:label "sort" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sortez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sortez" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sortes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sortəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sorte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sortə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sort" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sort" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a measure of fruit (figs, raisins): 1 dolium fructus = 10 sorte = 30 peces/pecie (Zupko 384) | (imported) short cloth (MED s.v. sort referring to short adj.) | as a measure of laune/laun | as a measure of Cameryk (Cambric cloth) | as a measure of balances" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/sort>,
+        <https://w3id.org/mlca/glossary/sort> ;
+    skos:broader aat:300386648 ;
+    hector:attestationCount 118 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sort> a crm:E55_Type ;
+    rdfs:label "sort" .
+
+<https://w3id.org/mlca/glossary/sort> a crm:E55_Type ;
+    rdfs:label "sort (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

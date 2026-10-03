@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bowl> a crm:E55_Type ;
+    rdfs:label "bowl" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patelis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowl" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bollez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolez" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowlis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːlis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bolle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bolles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boləs" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patellae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patele" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patellarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patelarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patela" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Rounded vessels that are generally wider than they are high, usually hemispherical or nearly so. A bowl may have a spreading base or foot ring and sometimes two handles or a cover. Distinguished from a cup, which is rather deep than wide. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bowl> ;
+    la:equivalent aat:300203596 ;
+    hector:attestationCount 430 .
+
+aat:300203596 a crm:E55_Type ;
+    rdfs:label "bowls (vessels)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/bowl> a crm:E55_Type ;
+    rdfs:label "bowl (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

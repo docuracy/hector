@@ -1,0 +1,117 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/oakum> a crm:E55_Type ;
+    rdfs:label "oakum" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ocam" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okam" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ocame" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okamə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "occam" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okam" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oakum" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "oakum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ocram" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okram" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ocum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okum" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "occome" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okomə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ockam" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okam" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ocume" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okumə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "okam" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okam" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "occam lini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okam lini" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Loosely twisted hemp or jute fiber impregnated with tar or a tar derivative and used in caulking seams, as of wooden ships, and packing joints, as of pipes. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/oakum> ;
+    la:equivalent aat:300015203 ;
+    hector:attestationCount 64 ;
+    hector:taxation <https://w3id.org/hector/commodity/oakum#rate-1558-inward-770> .
+
+aat:300015203 a crm:E55_Type ;
+    rdfs:label "oakum" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/oakum#rate-1558-inward-770> a hector:Rate ;
+    rdfs:label "1558 inward: Occome the C lb. cont’ 112 lb 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 770 (transcribed by Stuart Jenks): 'Occome the C lb. cont’ 112 lb' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/oakum> a crm:E55_Type ;
+    rdfs:label "oakum (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

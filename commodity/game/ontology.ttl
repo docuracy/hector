@@ -1,0 +1,56 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/game> a crm:E55_Type ;
+    rdfs:label "game" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gamez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gamez" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "game" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gamə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "games" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaməs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The pieces used in the game of chess, in modern sets generally comprising kings, queens, bishops, knights, rooks, and pawns. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300211432 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/game> ;
+    skos:related <https://w3id.org/hector/commodity/chessmen> ;
+    hector:attestationCount 4 .
+
+aat:300211432 a crm:E55_Type ;
+    rdfs:label "chessmen" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/chessmen> a crm:E55_Type ;
+    rdfs:label "chessmen" .
+
+<https://w3id.org/mlca/glossary/game> a crm:E55_Type ;
+    rdfs:label "game (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

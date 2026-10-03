@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/herford-linen> a crm:E55_Type ;
+    rdfs:label "herford linen" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hertfordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hertfordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herrefordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "herefordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herfordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "herfordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herffordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "herfordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hertffordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hertfordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herford linen" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "herford linen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herfford" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "herford" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "herford" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "herford" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Herford linen: a German linen from Herford (Westphalia), traded by the roll/pack (cf. osnaburg)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014069 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/herford%20linen> ;
+    skos:related <https://w3id.org/hector/commodity/osnaburg> ;
+    hector:attestationCount 50 ;
+    hector:originPlace wd:Q3971 .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q3971 a crm:E53_Place ;
+    rdfs:label "Herford" .
+
+<https://w3id.org/hector/commodity/osnaburg> a crm:E55_Type ;
+    rdfs:label "osnaburg" .
+
+<https://w3id.org/mlca/glossary/herford%20linen> a crm:E55_Type ;
+    rdfs:label "herford linen (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

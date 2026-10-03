@@ -1,0 +1,121 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mirrour> a crm:E55_Type ;
+    rdfs:label "mirrour" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "speculi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spekuli" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "merour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "meruːr" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "merours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "meruːrs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mirrour" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "miruːr" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "myrrour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "miruːr" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "specullum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spekulum" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "myrrours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "miruːrs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mirrourz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "miruːrz" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mirrours" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "miruːrs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "myrrourz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "miruːrz" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "speculli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spekuli" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "merrour" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "meruːr" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "speculum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spekulum" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mirror (see also speculum) | mirror, large (see also speculum) | mirror | small mirror (see also mirrours) | mirror (see also mirrour) | presumably some sort of decorated mirror, a pinnacle being a projection suggesting the form of an ornamental turret on a cup, bird cage or crown (MED s.v. pinacle) | mirror (see also myrrourz) | mirror (see also mirrours)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mirrour> ;
+    skos:related <https://w3id.org/hector/commodity/looking-glass>,
+        <https://w3id.org/hector/commodity/skrene> ;
+    la:equivalent aat:300037690 ;
+    hector:attestationCount 64 .
+
+aat:300037690 a crm:E55_Type ;
+    rdfs:label "mirror" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/looking-glass> a crm:E55_Type ;
+    rdfs:label "looking glass" .
+
+<https://w3id.org/hector/commodity/skrene> a crm:E55_Type ;
+    rdfs:label "skrene" .
+
+<https://w3id.org/mlca/glossary/mirrour> a crm:E55_Type ;
+    rdfs:label "mirrour (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,55 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/whipstock> a crm:E55_Type ;
+    rdfs:label "whipstock" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whippestikkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wipestikəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whippestikk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wipestik" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whipstock" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wipstok" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "whipstock, the stick or staff to which the lash of a whip is attached (OED s.v. whipstock)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300255555 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/whipstock> ;
+    la:equivalent aat:300014681 ;
+    hector:attestationCount 1 .
+
+aat:300014681 a crm:E55_Type ;
+    rdfs:label "sticks (object genre)" .
+
+aat:300255555 a crm:E55_Type ;
+    rdfs:label "whips (striking tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/whipstock> a crm:E55_Type ;
+    rdfs:label "whipstock (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

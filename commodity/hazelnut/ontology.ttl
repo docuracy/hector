@@ -1,0 +1,119 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hazelnut> a crm:E55_Type ;
+    rdfs:label "hazelnut" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nucibus avelanis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nusibus avelanis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avellanarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelanarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hasilnotis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hasilnotis" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avelanae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelane" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "abellana" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "abelana" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hasillnottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hasilnotəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avellanae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelane" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hasillnotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hasilnotə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hasilnot" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hasilnot" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avelana" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelana" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "abellanae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "abelane" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avellana" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelana" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "avelanarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "avelanarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hazelnut" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hazelnut" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Nuts from any of about 15 species of shrubs and trees constituting the genus Corylus in the birch family (Betulaceae). [Source: Getty AAT] | Fruits (drupaceous nuts) from any of several species of walnut tree, having a two-lobed seed covered with a fleshy husk. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hazelnut> ;
+    skos:related <https://w3id.org/hector/commodity/nut> ;
+    la:equivalent aat:300266426,
+        aat:300411352 ;
+    hector:attestationCount 70 .
+
+aat:300266426 a crm:E55_Type ;
+    rdfs:label "walnuts (nuts)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411352 a crm:E55_Type ;
+    rdfs:label "hazelnuts (nuts)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/nut> a crm:E55_Type ;
+    rdfs:label "nut" .
+
+<https://w3id.org/mlca/glossary/hazelnut> a crm:E55_Type ;
+    rdfs:label "hazelnut (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

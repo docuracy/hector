@@ -70,6 +70,9 @@
                     <li>Slug ledgers (how each URI was minted, and what replaced it):
                         <a href="./ledger/commodities.tsv">commodities</a>, <a href="./ledger/qualified.tsv">qualified</a>,
                         <a href="./ledger/units.tsv">units</a>.</li>
+                    <li>Every record also as Turtle and RDF/XML, beside its JSON-LD (<code>…/ontology.ttl</code>,
+                        <code>…/ontology.rdf</code>), and all of HECTOR in one file:
+                        <a href="./dump/hector.ttl.gz">hector.ttl.gz</a> (Turtle, gzipped).</li>
                     <li>Everything, with the code that builds it: <a href="https://github.com/docuracy/hector">github.com/docuracy/hector</a>.</li>
                 </ul>
             </div>
@@ -88,7 +91,8 @@
                 <h2>Not yet</h2>
                 <ul class="plain">
                     <li>No tagged release or DOI yet: please do not cite the records or URIs.</li>
-                    <li>No RDF/XML or Turtle serialisation; JSON-LD only.</li>
+                    <li>The URIs negotiate JSON-LD only; Turtle and RDF/XML are files to fetch directly, until the
+                        w3id redirect rules are extended.</li>
                     <li>Search here matches spellings, not sounds: each spelling carries an IPA key in the records, but
                         sound-alike search is not built.</li>
                     <li>Rates beyond 1507–1558 (the 1604 book) are parsed but not yet published.</li>

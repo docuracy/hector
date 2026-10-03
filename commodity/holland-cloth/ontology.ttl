@@ -1,0 +1,127 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/holland-cloth> a crm:E55_Type ;
+    rdfs:label "holland cloth" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holonder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holonder" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hollande" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holandie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holond" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holond" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hollandes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hollandie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holande" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hollonde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holondə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holland linen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holand linen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holonde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holondə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holland cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "holand kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holland" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holand" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hollond" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holond" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holandia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holandia" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holand" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holand" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Holland: a fine plain-woven linen, originally from the County of Holland; traded by the piece (cf. lockram, dowlas)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014069 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/holland%20cloth> ;
+    skos:related <https://w3id.org/hector/commodity/dowlas>,
+        <https://w3id.org/hector/commodity/lockram> ;
+    hector:attestationCount 2514 ;
+    hector:originPlace wd:Q762943 ;
+    hector:taxation <https://w3id.org/hector/commodity/holland-cloth#rate-1558-inward-538> .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q762943 a crm:E53_Place ;
+    rdfs:label "County of Holland" .
+
+<https://w3id.org/hector/commodity/dowlas> a crm:E55_Type ;
+    rdfs:label "dowlas" .
+
+<https://w3id.org/hector/commodity/holland-cloth#rate-1558-inward-538> a hector:Rate ;
+    rdfs:label "1558 inward: Hollande cloth the pece 24s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "24s" ;
+            hector:valueInPence 288.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 538 (transcribed by Stuart Jenks): 'Hollande cloth the pece' 24s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/lockram> a crm:E55_Type ;
+    rdfs:label "lockram" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/holland%20cloth> a crm:E55_Type ;
+    rdfs:label "holland cloth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

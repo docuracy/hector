@@ -1,0 +1,82 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/nubs-of-silk> a crm:E55_Type ;
+    rdfs:label "nubs of silk" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "waste silk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wastə silk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nubs of silk" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "nubs of silk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobbes of silk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobəs of silk" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobbes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobbs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobbes of sylke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobəs of silkə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cirici nobbes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sirisi nobəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nobs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nobs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "of silk nobbes is attested in OED s.v. nub. n.1 1, but not defined. In view of the entry in the Book of Rates (Jenks 111), which equates nobbs with huskes of silke, this must be a husk of silk, the shell or case of a chrysalis, a cocoon, especially of silkworms (OED s.v. husk 2b)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300417859 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/nubs%20of%20silk> ;
+    hector:attestationCount 29 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300417859 a crm:E55_Type ;
+    rdfs:label "waste silk" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/nubs%20of%20silk> a crm:E55_Type ;
+    rdfs:label "nubs of silk (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

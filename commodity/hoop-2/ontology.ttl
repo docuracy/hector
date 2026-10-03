@@ -1,0 +1,89 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hoop-2> a crm:E55_Type ;
+    rdfs:label "hoop_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hopis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hopis" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hop" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hopə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bondes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bondəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hopes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hopəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bonde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bondə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hope" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hopə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hopəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoop_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "hoːp" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hoːp" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "hoop (of latten), but precise meaning unknown | probably hoops, because they are counted individually | hops, used in brewing beer | probably hoops, because they are measured in dozens" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300253047 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hoop_2> ;
+    hector:attestationCount 14 .
+
+aat:300253047 a crm:E55_Type ;
+    rdfs:label "bands (binding components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/hoop_2> a crm:E55_Type ;
+    rdfs:label "hoop_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

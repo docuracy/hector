@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/trussing-chest> a crm:E58_Measurement_Unit ;
+    rdfs:label "trussing chest" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussing chest" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ tʃest" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussing cista empty" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ sista empti" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussyng chestes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ tʃestəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussyng chest" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ tʃest" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a chest for packing, stowing away (OED s.v. trussing vbl. n. 3), as an article of commerce | a chest for packing, stowing away (OED s.v. trussing vbl. n. 3), here as a packing unit for dry goods of no particular size" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/trussing-chest>,
+        <https://w3id.org/mlca/glossary/trussing%20chest> ;
+    skos:closeMatch aat:300038992 ;
+    hector:attestationCount 1 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300038992 a crm:E55_Type ;
+    rdfs:label "chests (case furniture)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/trussing-chest> a crm:E55_Type ;
+    rdfs:label "trussing chest" .
+
+<https://w3id.org/mlca/glossary/trussing%20chest> a crm:E55_Type ;
+    rdfs:label "trussing chest (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

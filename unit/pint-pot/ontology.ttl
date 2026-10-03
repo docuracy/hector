@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/pint-pot> a crm:E58_Measurement_Unit ;
+    rdfs:label "pint pot" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyntes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pint potte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pint potə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pintpottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintpotəs" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pynte pottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintə potəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pint pot" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pint pot" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pynt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pint" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyntz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintz" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pintpotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintpotə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pynte potte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pintə potə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pynt pottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pint potəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pynt potte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pint potə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pot holding a liquid pint" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/pint-pot>,
+        <https://w3id.org/mlca/glossary/pint%20pot> ;
+    skos:broader aat:300386648 ;
+    la:equivalent aat:300045697 ;
+    hector:attestationCount 48 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/volume> .
+
+aat:300045697 a crm:E55_Type ;
+    rdfs:label "pots (containers)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pint-pot> a crm:E55_Type ;
+    rdfs:label "pint pot" .
+
+<https://w3id.org/mlca/glossary/pint%20pot> a crm:E55_Type ;
+    rdfs:label "pint pot (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

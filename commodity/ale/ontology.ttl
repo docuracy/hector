@@ -1,0 +1,117 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ale> a crm:E55_Type ;
+    rdfs:label "ale" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servisye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servycia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cerviciae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servisia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervicia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "serviciae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervesye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servesie" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisiae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ale" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "alə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servicia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servicie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "servisiae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A type of fermented malt beverage that is fermented rapidly at high temperature; fermentation is checked while a considerable portion of sugar still remains unchanged. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ale> ;
+    la:equivalent aat:300456642 ;
+    hector:attestationCount 1535 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300456642 a crm:E55_Type ;
+    rdfs:label "ale (beverage)" .
+
+<https://w3id.org/mlca/glossary/ale> a crm:E55_Type ;
+    rdfs:label "ale (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

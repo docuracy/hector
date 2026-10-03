@@ -1,0 +1,94 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/demi-lance> a crm:E55_Type ;
+    rdfs:label "demi lance" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dymye launce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dimie launsə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy lawnces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi launsəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy lawnce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi launsə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demi lances" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi lansəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy launce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi launsə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy launces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi launsəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demi lance" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "demi lansə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy lances" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi lansəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demy lance" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demi lansə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "demye lawnce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "demie launsə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a demi-lance is a lance with a short shaft, but what is probably meant here is the complete harness for a light horseman armed with a demilance (OED s.v. demi-lance)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300212971 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/demi%20lance> ;
+    hector:attestationCount 7 .
+
+aat:300212971 a crm:E55_Type ;
+    rdfs:label "harnesses" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/demi%20lance> a crm:E55_Type ;
+    rdfs:label "demi lance (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

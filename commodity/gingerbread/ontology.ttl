@@ -1,0 +1,72 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gingerbread> a crm:E55_Type ;
+    rdfs:label "gingerbread" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingerbread" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒerbrɛːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ginger bred" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒer bred" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ginger brede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒer bredə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ginger cake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒer kakə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingerbrede parvi kakes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒerbredə parvi kakəs" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingerbred" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒerbred" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ginger breade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒer brɛːdə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a cake flavored with ginger; gingerbread in the form of a cake (OED s.v. ginger n. and a. 7) | small pieces of gingerbread, a kind of plain cake, compounded with treacle, and highly flavoured with ginger (OED s.v. gingerbread)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300255019 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gingerbread> ;
+    la:equivalent wd:Q178600 ;
+    hector:attestationCount 8 .
+
+aat:300255019 a crm:E55_Type ;
+    rdfs:label "cake (food)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q178600 a crm:E55_Type ;
+    rdfs:label "gingerbread" .
+
+<https://w3id.org/mlca/glossary/gingerbread> a crm:E55_Type ;
+    rdfs:label "gingerbread (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

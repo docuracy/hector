@@ -1,0 +1,121 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lath> a crm:E55_Type ;
+    rdfs:label "lath" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latthys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latthe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lattys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lathe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lathys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lathes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lath" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "laθ" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθ" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latthez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθez" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latthes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lat" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lathez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laθez" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lattez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latez" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Thin, narrow, flat pieces of wood used for many purposes, such as in constructing lattices of trellis work, Venetian blinds, or to form a groundwork upon which to fasten the slates or tiles of a roof or the plaster of a wall or ceiling. For groundwork of any material upon which plaster or another such material is applied, use \"lath (grounding surface).\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lath> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow-lath-2>,
+        <https://w3id.org/hector/commodity/lath-nail> ;
+    la:equivalent aat:300389657 ;
+    hector:attestationCount 66 .
+
+aat:300389657 a crm:E55_Type ;
+    rdfs:label "laths (wood by form)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow-lath-2> a crm:E55_Type ;
+    rdfs:label "crossbow lath_2" .
+
+<https://w3id.org/hector/commodity/lath-nail> a crm:E55_Type ;
+    rdfs:label "lath nail" .
+
+<https://w3id.org/mlca/glossary/lath> a crm:E55_Type ;
+    rdfs:label "lath (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

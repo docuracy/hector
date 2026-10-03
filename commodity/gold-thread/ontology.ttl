@@ -1,0 +1,83 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gold-thread> a crm:E55_Type ;
+    rdfs:label "gold thread" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gold thread" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gold θrɛːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurum" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "auri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "auri" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "auro" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "auro" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fiber or fiber-like material made wholly or in part from gold [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gold%20thread> ;
+    skos:related <https://w3id.org/hector/commodity/gold-leaf>,
+        <https://w3id.org/hector/commodity/roll> ;
+    la:equivalent aat:300400561 ;
+    hector:attestationCount 517 ;
+    hector:taxation <https://w3id.org/hector/commodity/gold-thread#rate-1558-inward-286> .
+
+aat:300400561 a crm:E55_Type ;
+    rdfs:label "gold thread" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/gold-leaf> a crm:E55_Type ;
+    rdfs:label "gold leaf" .
+
+<https://w3id.org/hector/commodity/gold-thread#rate-1558-inward-286> a hector:Rate ;
+    rdfs:label "1558 inward: Crippins cum auro the dossen 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 286 (transcribed by Stuart Jenks): 'Crippins cum auro the dossen' 40s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/roll> a crm:E55_Type ;
+    rdfs:label "roll" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/gold%20thread> a crm:E55_Type ;
+    rdfs:label "gold thread (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

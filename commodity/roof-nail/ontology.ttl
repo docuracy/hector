@@ -1,0 +1,55 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/roof-nail> a crm:E55_Type ;
+    rdfs:label "roof nail" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roof nail" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "roːf nail" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roffnailles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rofnailəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roffnaille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rofnailə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rof nailles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rof nailəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roff nailles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rof nailəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "roof nail (roffnaille): a nail for roofing" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/roof%20nail> ;
+    la:equivalent aat:300048959 ;
+    hector:attestationCount 5 .
+
+aat:300048959 a crm:E55_Type ;
+    rdfs:label "roofing nails" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/roof%20nail> a crm:E55_Type ;
+    rdfs:label "roof nail (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

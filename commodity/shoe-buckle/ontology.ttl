@@ -1,0 +1,91 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shoe-buckle> a crm:E55_Type ;
+    rdfs:label "shoe buckle" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shobokils" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃobokils" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shomakers bokil" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃomakers bokil" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shobokylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃobokiləs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shobokylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃobokilə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shomakers bokils" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃomakers bokils" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shoe buckle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃe buklə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shomakers bukylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃomakers bukiləs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shobokil" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃobokil" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shomakers bukylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃomakers bukilə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fasteners attached to shoes, used for both decoration and to secure shoes to the wearer.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shoe%20buckle> ;
+    skos:related <https://w3id.org/hector/commodity/buckle> ;
+    la:equivalent aat:300432212 ;
+    hector:attestationCount 8 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300432212 a crm:E55_Type ;
+    rdfs:label "shoe buckles" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/buckle> a crm:E55_Type ;
+    rdfs:label "buckle" .
+
+<https://w3id.org/mlca/glossary/shoe%20buckle> a crm:E55_Type ;
+    rdfs:label "shoe buckle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

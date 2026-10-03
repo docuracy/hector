@@ -1,0 +1,87 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ceruse> a crm:E55_Type ;
+    rdfs:label "ceruse" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "serusiae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "serusie" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gersa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒersa" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ceruse" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "serusə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gersae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerse" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "serusia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "serusia" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "serusa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "serusa" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "white lead, especially as a cosmetic (OED s.v. ceruse) | white lead, a mixture or compound of carbonate and hydrate of lead (usually 2 PbCO3+ PbH2O2); largely used as a white paint, formerly also in medicine for ointments, etc. (OED s.v. ceruse)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ceruse> ;
+    la:equivalent aat:300013754 ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/ceruse#rate-1558-inward-1027> .
+
+aat:300013754 a crm:E55_Type ;
+    rdfs:label "lead white" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/ceruse#rate-1558-inward-1027> a hector:Rate ;
+    rdfs:label "1558 inward: Serusa the pounde 2d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2d" ;
+            hector:valueInPence 2.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1027 (transcribed by Stuart Jenks): 'Serusa the pounde' 2d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/ceruse> a crm:E55_Type ;
+    rdfs:label "ceruse (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

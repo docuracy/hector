@@ -1,0 +1,50 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/horse-cloth> a crm:E55_Type ;
+    rdfs:label "horse cloth" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horse cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "horsə kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hors cloth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hors kloθ" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hors clothis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hors kloθis" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a rug or cloth used to cover a horse (OED s.v. horse-cloth)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300239147 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/horse%20cloth> ;
+    hector:attestationCount 1 .
+
+aat:300239147 a crm:E55_Type ;
+    rdfs:label "animal equipment" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/horse%20cloth> a crm:E55_Type ;
+    rdfs:label "horse cloth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,59 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bitumen> a crm:E55_Type ;
+    rdfs:label "bitumen" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bitumen" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bitumen" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bitumeninis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bitumeninis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Any of various solid or semisolid mixtures of hydrocarbons that occur in nature or that are obtained as residues from the distillation of petroleum or coal. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bitumen> ;
+    skos:related <https://w3id.org/hector/commodity/black-earth>,
+        <https://w3id.org/hector/commodity/pitch>,
+        <https://w3id.org/hector/commodity/tar> ;
+    la:equivalent aat:300012976 ;
+    hector:attestationCount 1 .
+
+aat:300012976 a crm:E55_Type ;
+    rdfs:label "bitumen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/black-earth> a crm:E55_Type ;
+    rdfs:label "black earth" .
+
+<https://w3id.org/hector/commodity/pitch> a crm:E55_Type ;
+    rdfs:label "pitch" .
+
+<https://w3id.org/hector/commodity/tar> a crm:E55_Type ;
+    rdfs:label "tar" .
+
+<https://w3id.org/mlca/glossary/bitumen> a crm:E55_Type ;
+    rdfs:label "bitumen (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

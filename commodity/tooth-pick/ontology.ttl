@@ -1,0 +1,113 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tooth-pick> a crm:E55_Type ;
+    rdfs:label "tooth pick" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "toth pikes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθ pikəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "toth pike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθ pikə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pykes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pikəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pikes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pikəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pyk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pik" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "toothpike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toːθpikə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "toothpikes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toːθpikəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pykys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pikis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tooth pick" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "toːθ pik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pikers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pikers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tothe pike" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "toθə pikə" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tooth pick | (tothe pyke) an instrument for picking the teeth: usually a pointed quill or small piece of wood (OED s.v. toothpick)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tooth%20pick> ;
+    la:equivalent aat:300423928 ;
+    hector:attestationCount 5 ;
+    hector:taxation <https://w3id.org/hector/commodity/tooth-pick#rate-1558-inward-1117> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300423928 a crm:E55_Type ;
+    rdfs:label "eating picks" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tooth-pick#rate-1558-inward-1117> a hector:Rate ;
+    rdfs:label "1558 inward: Tothe pykes the grosse 20d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20d" ;
+            hector:valueInPence 20.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1117 (transcribed by Stuart Jenks): 'Tothe pykes the grosse' 20d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/tooth%20pick> a crm:E55_Type ;
+    rdfs:label "tooth pick (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

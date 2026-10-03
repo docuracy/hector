@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/ounce> a crm:E58_Measurement_Unit ;
+    rdfs:label "ounce" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "unces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "unsəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "oz" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "uːnsəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ounce" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "uːnsə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "unce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "unsə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard." ;
+            crm:P2_has_type aat:300418049 ],
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ounce: a unit of weight (and the corresponding balance/scale weight)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/ounce>,
+        <https://w3id.org/mlca/glossary/ounce> ;
+    la:equivalent aat:300379229 ;
+    hector:attestationCount 13 ;
+    hector:conversionToGram 28.349523125 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: avoirdupois definition. Note: 16 oz to the lb avoirdupois" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 6.25e-02 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300379229 a crm:E55_Type ;
+    rdfs:label "ounces (units for weight)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/ounce> a crm:E55_Type ;
+    rdfs:label "ounce" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/ounce> a crm:E55_Type ;
+    rdfs:label "ounce (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,95 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pattens> a crm:E55_Type ;
+    rdfs:label "pattens" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patin" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patins" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patins" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patens" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patin" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paten" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paten" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patins" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pattens" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "patens" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "patynz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "patinz" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pattens, overshoes or sandals worn to raise the ordinary shoes out of mud (OED s.v. patten n. 1b) | an overshoe or sandal worn to raise the ordinary shoes out of mud (OED s.v. patten n. 1b) | leather for making patens | nails for making patens | pattens, overshoes or sandals worn to raise the ordinary shoes out of mud (OED s.v. clog n. 6a) | nail for making pattens | nails for making pattens | wood for making pattens | nails used for making clogs" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pattens> ;
+    skos:related <https://w3id.org/hector/commodity/patene-nayle>,
+        <https://w3id.org/hector/commodity/patinholt>,
+        <https://w3id.org/hector/commodity/patyntree> ;
+    la:equivalent aat:300210042 ;
+    hector:attestationCount 120 .
+
+aat:300210042 a crm:E55_Type ;
+    rdfs:label "pattens (overshoes)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/patene-nayle> a crm:E55_Type ;
+    rdfs:label "patene nayle" .
+
+<https://w3id.org/hector/commodity/patinholt> a crm:E55_Type ;
+    rdfs:label "patinholt" .
+
+<https://w3id.org/hector/commodity/patyntree> a crm:E55_Type ;
+    rdfs:label "patyntree" .
+
+<https://w3id.org/mlca/glossary/pattens> a crm:E55_Type ;
+    rdfs:label "pattens (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/petra> a crm:E55_Type ;
+    rdfs:label "petra" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petrae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petre" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peterae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petere" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petri" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petera" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petera" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petra" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "petra" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petrum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petrum" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "building or masonry stone (Latin petra/petrum): worked stone for building, including rectangularly dressed (squared) stone, Caen stone, and stone supplied to masons or for making moulds and templates. The weight unit \"stone\" (14 lb.) is a distinct sense, recorded under stone." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/stone> ;
+    skos:closeMatch aat:300011318 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/petra> ;
+    la:equivalent aat:300011700 ;
+    hector:attestationCount 99 .
+
+aat:300011318 a crm:E55_Type ;
+    rdfs:label "Caen stone" .
+
+aat:300011700 a crm:E55_Type ;
+    rdfs:label "building stone" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/stone> a crm:E55_Type ;
+    rdfs:label "stone" .
+
+<https://w3id.org/mlca/glossary/petra> a crm:E55_Type ;
+    rdfs:label "petra (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

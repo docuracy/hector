@@ -1,0 +1,82 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gold-leaf> a crm:E55_Type ;
+    rdfs:label "gold leaf" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    schema1:material aat:300011021 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gold leaf" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gold lɛːf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "parti gold" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "parti gold" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurum paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurum paper" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurepartye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurepartie" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurefoille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurefoilə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurum bettyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurum betin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurum papir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurum papir" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to sheets of gold that have been hammered or rolled very thin (typically around 0.1 micrometer, or 4 millionths of an inch, thick). In art, gold leaf has been applied to paintings, sculptures, manuscripts, and decorative arts since around 1500 BCE. In the 1920s, the process of creating gold leaf was successfully automated. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gold%20leaf> ;
+    skos:related <https://w3id.org/hector/commodity/book-of-gold>,
+        <https://w3id.org/hector/commodity/gold-thread> ;
+    la:equivalent aat:300264831 ;
+    hector:attestationCount 5 .
+
+aat:300011021 a crm:E57_Material ;
+    rdfs:label "gold (metal)" .
+
+aat:300264831 a crm:E55_Type ;
+    rdfs:label "gold leaf" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/book-of-gold> a crm:E55_Type ;
+    rdfs:label "book of gold" .
+
+<https://w3id.org/hector/commodity/gold-thread> a crm:E55_Type ;
+    rdfs:label "gold thread" .
+
+<https://w3id.org/mlca/glossary/gold%20leaf> a crm:E55_Type ;
+    rdfs:label "gold leaf (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

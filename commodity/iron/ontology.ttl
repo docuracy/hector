@@ -1,0 +1,242 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/iron> a crm:E55_Type ;
+    rdfs:label "iron" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ferrum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ferum" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spanishe iron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spaniʃə iron" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ferri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feri" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ferə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "iorn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "iorn" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yorn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "jorn" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ferre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ferə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "iron" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fer" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "iron" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "iron" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "yren" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "iren" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spaynesshe yrone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spaineʃə ironə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "iren" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "iren" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "see also ferrum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seː also ferum" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "spanyshe yron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "spaniʃə iron" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Pure metallic element having symbol Fe and atomic number 26; metallic iron is silvery in color, lustrous, soft, ductile, malleable, and slightly magnetic; it rusts when exposed to moist air. It is rarely found as a native metal (telluric iron) except in meteorites (meteoric iron). Iron is most often found throughout the world as iron oxides (hematite, magnetite, limonite, and siderite) mixed with other ores. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/iron> ;
+    la:equivalent aat:300011002 ;
+    hector:attestationCount 3015 ;
+    hector:taxation <https://w3id.org/hector/commodity/iron#rate-1545-inward-395>,
+        <https://w3id.org/hector/commodity/iron#rate-1545-inward-398>,
+        <https://w3id.org/hector/commodity/iron#rate-1545-inward-399>,
+        <https://w3id.org/hector/commodity/iron#rate-1558-inward-1111>,
+        <https://w3id.org/hector/commodity/iron#rate-1558-inward-368>,
+        <https://w3id.org/hector/commodity/iron#rate-1558-inward-612>,
+        <https://w3id.org/hector/commodity/iron#rate-1558-inward-856> .
+
+aat:300011002 a crm:E55_Type ;
+    rdfs:label "iron (metal)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/iron#rate-1545-inward-395> a hector:Rate ;
+    rdfs:label "1545 inward: Iron called Lukes yron the 100 lb 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 395 (transcribed by Stuart Jenks): 'Iron called Lukes yron the 100 lb' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1545-inward-398> a hector:Rate ;
+    rdfs:label "1545 inward: Iron called faggot yron the bonde 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/band> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 398 (transcribed by Stuart Jenks): 'Iron called faggot yron the bonde' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1545-inward-399> a hector:Rate ;
+    rdfs:label "1545 inward: Iron called faggot yron the hundreth pounde 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 399 (transcribed by Stuart Jenks): 'Iron called faggot yron the hundreth pounde' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1558-inward-1111> a hector:Rate ;
+    rdfs:label "1558 inward: Touche boxes of yron or other mettall guylt the dossen 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1111 (transcribed by Stuart Jenks): 'Touche boxes of yron or other mettall guylt the dossen' 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1558-inward-368> a hector:Rate ;
+    rdfs:label "1558 inward: Doble yron plates vocat’ dobles the shock cont’ 6 bundelles 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/shock> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 368 (transcribed by Stuart Jenks): 'Doble yron plates vocat’ dobles the shock cont’ 6 bundelles' 40s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1558-inward-612> a hector:Rate ;
+    rdfs:label "1558 inward: Iron voc’ Spanishe iron the tonne cont’ 20 C weight £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/tun> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 612 (transcribed by Stuart Jenks): 'Iron voc’ Spanishe iron the tonne cont’ 20 C weight' £4" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/iron#rate-1558-inward-856> a hector:Rate ;
+    rdfs:label "1558 inward: Pulleys of yron the grosse 50s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "50s" ;
+            hector:valueInPence 600.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 856 (transcribed by Stuart Jenks): 'Pulleys of yron the grosse' 50s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/band> a crm:E58_Measurement_Unit ;
+    rdfs:label "band" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/hector/unit/shock> a crm:E58_Measurement_Unit ;
+    rdfs:label "shock" .
+
+<https://w3id.org/hector/unit/tun> a crm:E58_Measurement_Unit ;
+    rdfs:label "tun" .
+
+<https://w3id.org/mlca/glossary/iron> a crm:E55_Type ;
+    rdfs:label "iron (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

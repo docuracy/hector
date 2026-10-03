@@ -1,0 +1,140 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/primer> a crm:E55_Type ;
+    rdfs:label "primer" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prymmer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "primer" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "premmers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "premers" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prymer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "primer" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "premer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "premer" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "premmer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "premer" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "primer" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "primer" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "premers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "premers" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prymmers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "primers" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "primers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "primers" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prymers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "primers" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Elementary books for teaching children to read. [Source: Getty AAT] | a printed prayer book for the use of the laity (OED s.v. primer n.1 1, 2a), here small | a printed prayer book for the use of the laity (OED s.v. primer n.1 1, 2a), here written (printed?) on parchment and bound in velvet | an elementary school-book for teaching children to read (OED s.v. primer n.^1 2a) | a printed prayer book for the use of the laity (OED s.v. primer n.1 1, 2a) | an elementary school-book for teaching children to read, less likely a printed prayer book for the use of the laity for understanding the (Latin) mass (OED s.v. primer n.1 1, 2a) | either a printed prayer book for the use of the laity or an elementary school-book for teaching children to read (OED s.v. primer n.1 1, 2a) | probably a prayer book rather than an elementary school-book (since only one was imported) | either a printed prayer book for the use of the laity (to follow the Latin mass) or an elementary school-book for teaching children to read (OED s.v. primer n.1 1, 2a) | an elementary school-book for teaching children to read (OED s.v. primer n.1 1, 2a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300026378 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/primer> ;
+    skos:related <https://w3id.org/hector/commodity/abc> ;
+    la:equivalent aat:300026476 ;
+    hector:attestationCount 94 ;
+    hector:taxation <https://w3id.org/hector/commodity/primer#rate-1507-none-215>,
+        <https://w3id.org/hector/commodity/primer#rate-1558-inward-837> .
+
+aat:300026378 a crm:E55_Type ;
+    rdfs:label "primers (books)" .
+
+aat:300026476 a crm:E55_Type ;
+    rdfs:label "prayer books" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/abc> a crm:E55_Type ;
+    rdfs:label "abc" .
+
+<https://w3id.org/hector/commodity/primer#rate-1507-none-215> a hector:Rate ;
+    rdfs:label "1507: Prynted prymers the dossen 20d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20d" ;
+            hector:valueInPence 20.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1507, line 215 (transcribed by Stuart Jenks): 'Prynted prymers the dossen' 20d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/primer#rate-1558-inward-837> a hector:Rate ;
+    rdfs:label "1558 inward: Prymers the grosse 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 837 (transcribed by Stuart Jenks): 'Prymers the grosse' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/primer> a crm:E55_Type ;
+    rdfs:label "primer (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

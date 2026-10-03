@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/matta> a crm:E55_Type ;
+    rdfs:label "matta" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "matəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "matte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "matə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "matta" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mata" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mattae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mate" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mat | a mat made of rushes, straw etc., used on the floor or as a seat cover; a pad or underlay for a bed (MED s.v. matte n.) | a mat, as a packing unit for sword blades | mat for packaging furniature | mat for packaging furniture (OED mat n.1) | mat, as a packing unit for dry goods of no particular size" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300421505 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/matta> ;
+    la:equivalent aat:300186112 ;
+    hector:attestationCount 12 .
+
+aat:300186112 a crm:E55_Type ;
+    rdfs:label "mats (floor coverings)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300421505 a crm:E55_Type ;
+    rdfs:label "bed mats" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/matta> a crm:E55_Type ;
+    rdfs:label "matta (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

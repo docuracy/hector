@@ -1,0 +1,70 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/crucifix> a crm:E55_Type ;
+    rdfs:label "crucifix" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucifixes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krusifiksəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucifixus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krusifiksus" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucifixi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krusifiksi" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucifixicis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krusifiksisis" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crucifix" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "krusifiks" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Visual works in the shape of a cross having the figure of Christ crucified. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/cross> ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/crucifix> ;
+    skos:related <https://w3id.org/hector/commodity/cross> ;
+    la:equivalent aat:300248835 ;
+    hector:attestationCount 6 .
+
+aat:300248835 a crm:E55_Type ;
+    rdfs:label "crucifixes" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/crucifix> a crm:E55_Type ;
+    rdfs:label "crucifix (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/commodity/cross> a crm:E55_Type ;
+    rdfs:label "cross" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

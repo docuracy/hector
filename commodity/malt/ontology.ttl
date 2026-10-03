@@ -1,0 +1,120 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/malt> a crm:E55_Type ;
+    rdfs:label "malt" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bracium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brasium" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musty malte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musti maltə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brasii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brasi" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "malt" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brasium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brasium" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "maltə" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "braseum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "braseum" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brasei" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brasei" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "malt | barley or other grain prepared for brewing or distilling by steeping, germinating and kiln-drying (OED s.v. malt n.1 1a) | (mault) barley or other grain prepared for brewing or distilling by steeping, germinating and kiln-drying (OED s.v. malt n.^1 1a) | moldy, moist and fetid | 368 (see also bracium, -i) | malt, moldy, moist and fetid" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300444361 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/malt> ;
+    la:equivalent wd:Q152024 ;
+    hector:attestationCount 20 ;
+    hector:taxation <https://w3id.org/hector/commodity/malt#rate-1545-outward-24>,
+        <https://w3id.org/hector/commodity/malt#rate-1558-outward-40> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300444361 a crm:E55_Type ;
+    rdfs:label "cereals" .
+
+wd:Q152024 a crm:E55_Type ;
+    rdfs:label "malt" .
+
+<https://w3id.org/hector/commodity/malt#rate-1545-outward-24> a hector:Rate ;
+    rdfs:label "1545 outward: Musty malte the quarter 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/quarter> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 24 (transcribed by Stuart Jenks): 'Musty malte the quarter' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/malt#rate-1558-outward-40> a hector:Rate ;
+    rdfs:label "1558 outward: Malte the quarter 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/quarter> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 40 (transcribed by Stuart Jenks): 'Malte the quarter' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/malt> a crm:E55_Type ;
+    rdfs:label "malt (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/quarter> a crm:E58_Measurement_Unit ;
+    rdfs:label "quarter" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

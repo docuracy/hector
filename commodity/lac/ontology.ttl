@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lac> a crm:E55_Type ;
+    rdfs:label "lac" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lac" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lak" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laːkə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lacae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lake" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lakə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laca" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laka" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A resinous substance excreted by the lac insect, especially those who live on the twigs and soft new branches of several varieties of soapberry and acacia trees. Lac is used in the manufacture of varnishes (shellac), sealing wax (lac wax), and red colorants (lac dye) as early as ca. 1200 BCE in India. The word \"lac\" is the English version of Persian and Hindi words meaning \"hundred thousand,\" indicating the large number of the tiny insects required to produce lac. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lac> ;
+    la:equivalent aat:300012946 ;
+    hector:attestationCount 7 .
+
+aat:300012946 a crm:E55_Type ;
+    rdfs:label "lac (resin)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/lac> a crm:E55_Type ;
+    rdfs:label "lac (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

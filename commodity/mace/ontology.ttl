@@ -1,0 +1,168 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mace> a crm:E55_Type ;
+    rdfs:label "mace" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "maciz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masiz" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "maces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masəs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "macis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masis" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mases" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "masis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mase" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "macez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masez" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mace" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "masə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "mace: a spice consisting of the dried outer covering of the nutmeg (OED s.v. mace n.2 1)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386730 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mace> ;
+    skos:related <https://w3id.org/hector/commodity/oil-of-mace> ;
+    hector:attestationCount 321 ;
+    hector:taxation <https://w3id.org/hector/commodity/mace#rate-1507-none-164>,
+        <https://w3id.org/hector/commodity/mace#rate-1545-inward-468>,
+        <https://w3id.org/hector/commodity/mace#rate-1545-inward-469>,
+        <https://w3id.org/hector/commodity/mace#rate-1558-inward-693>,
+        <https://w3id.org/hector/commodity/mace#rate-1558-inward-694> .
+
+aat:300386730 a crm:E55_Type ;
+    rdfs:label "spices" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/mace#rate-1507-none-164> a hector:Rate ;
+    rdfs:label "1507: Maces the C wayte £12 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£12 10s" ;
+            hector:valueInPence 3000.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:sourceText "Book of Rates 1507, line 164 (transcribed by Stuart Jenks): 'Maces the C wayte' £12 10s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mace#rate-1545-inward-468> a hector:Rate ;
+    rdfs:label "1545 inward: Maces the hundreth pounde £12 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£12 10s" ;
+            hector:valueInPence 3000.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 468 (transcribed by Stuart Jenks): 'Maces the hundreth pounde' £12 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mace#rate-1545-inward-469> a hector:Rate ;
+    rdfs:label "1545 inward: Maces the pounde 2s 6d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s 6d" ;
+            hector:valueInPence 30.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 469 (transcribed by Stuart Jenks): 'Maces the pounde' 2s 6d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mace#rate-1558-inward-693> a hector:Rate ;
+    rdfs:label "1558 inward: Maces the C lb. cont’ five score pound £33 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£33 6s 8d" ;
+            hector:valueInPence 8000.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 693 (transcribed by Stuart Jenks): 'Maces the C lb. cont’ five score pound' £33 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mace#rate-1558-inward-694> a hector:Rate ;
+    rdfs:label "1558 inward: Maces the pound 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 694 (transcribed by Stuart Jenks): 'Maces the pound' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/oil-of-mace> a crm:E55_Type ;
+    rdfs:label "oil of mace" .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/mlca/glossary/mace> a crm:E55_Type ;
+    rdfs:label "mace (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

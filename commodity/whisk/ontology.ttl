@@ -1,0 +1,98 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/whisk> a crm:E55_Type ;
+    rdfs:label "whisk" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyskeres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskerəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyskere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskerə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whisk" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wisk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wisker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wisker" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whysker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wisker" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whiskar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskar" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whisker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wisker" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wiskers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskers" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whiskars" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskars" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whiskers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskers" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whyskers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiskers" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "something used for whisking (a fan, a rod or a switch), also a bunch of feathers used as a brush (OED s.v. whisker sb.1 1) | fan (MED s.v. wisker n.) | fan for fanning a fire (MED s.v. wisker n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300209970 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/whisk> ;
+    hector:attestationCount 5 .
+
+aat:300209970 a crm:E55_Type ;
+    rdfs:label "fans (equipment)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/whisk> a crm:E55_Type ;
+    rdfs:label "whisk (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

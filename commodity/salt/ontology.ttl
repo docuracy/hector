@@ -1,0 +1,250 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/salt> a crm:E55_Type ;
+    rdfs:label "salt" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salte latens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltə latens" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salt" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saylt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sailt" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salte latenes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltə latenəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sal" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sal" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "salt" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sault" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sault" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "salt: common salt (sodium chloride), used as a condiment and for preserving fish and meat; traded as bay salt, white salt and other grades (see also sal). The salt-cellar vessel and saltpetre are distinct concepts." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/salt> ;
+    skos:related <https://w3id.org/hector/commodity/midde>,
+        <https://w3id.org/hector/commodity/salammoniac>,
+        <https://w3id.org/hector/commodity/salt-cellar>,
+        <https://w3id.org/hector/commodity/saltfish>,
+        <https://w3id.org/hector/commodity/saltpetre> ;
+    la:equivalent aat:300183627,
+        aat:300183888 ;
+    hector:attestationCount 1363 ;
+    hector:taxation <https://w3id.org/hector/commodity/salt#rate-1545-inward-653>,
+        <https://w3id.org/hector/commodity/salt#rate-1545-inward-672>,
+        <https://w3id.org/hector/commodity/salt#rate-1545-inward-673>,
+        <https://w3id.org/hector/commodity/salt#rate-1545-inward-690>,
+        <https://w3id.org/hector/commodity/salt#rate-1545-inward-695>,
+        <https://w3id.org/hector/commodity/salt#rate-1558-inward-935>,
+        <https://w3id.org/hector/commodity/salt#rate-1558-inward-936> .
+
+aat:300183627 a crm:E55_Type ;
+    rdfs:label "salt (inorganic material)" .
+
+aat:300183888 a crm:E55_Type ;
+    rdfs:label "sodium chloride" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/midde> a crm:E55_Type ;
+    rdfs:label "midde" .
+
+<https://w3id.org/hector/commodity/salammoniac> a crm:E55_Type ;
+    rdfs:label "salammoniac" .
+
+<https://w3id.org/hector/commodity/salt#rate-1545-inward-653> a hector:Rate ;
+    rdfs:label "1545 inward: Salte peter the 100 pounde 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 653 (transcribed by Stuart Jenks): 'Salte peter the 100 pounde' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1545-inward-672> a hector:Rate ;
+    rdfs:label "1545 inward: Salte the barrell 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 672 (transcribed by Stuart Jenks): 'Salte the barrell' 12d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1545-inward-673> a hector:Rate ;
+    rdfs:label "1545 inward: Salte the busshell 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4d" ;
+            hector:valueInPence 4.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bushel> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 673 (transcribed by Stuart Jenks): 'Salte the busshell' 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1545-inward-690> a hector:Rate ;
+    rdfs:label "1545 inward: Salt fysshe the laste £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 690 (transcribed by Stuart Jenks): 'Salt fysshe the laste' £4" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1545-inward-695> a hector:Rate ;
+    rdfs:label "1545 inward: Salt hyds the dekar £3 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3 6s 8d" ;
+            hector:valueInPence 800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dicker> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 695 (transcribed by Stuart Jenks): 'Salt hyds the dekar' £3 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1558-inward-935> a hector:Rate ;
+    rdfs:label "1558 inward: Salt fyshe the laste £6" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6" ;
+            hector:valueInPence 1440.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 935 (transcribed by Stuart Jenks): 'Salt fyshe the laste' £6" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt#rate-1558-inward-936> a hector:Rate ;
+    rdfs:label "1558 inward: Salt hydes the deker cont’ 10 hydes 66s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "66s 8d" ;
+            hector:valueInPence 800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 10 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 936 (transcribed by Stuart Jenks): 'Salt hydes the deker cont’ 10 hydes' 66s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salt-cellar> a crm:E55_Type ;
+    rdfs:label "salt cellar" .
+
+<https://w3id.org/hector/commodity/saltfish> a crm:E55_Type ;
+    rdfs:label "saltfish" .
+
+<https://w3id.org/hector/commodity/saltpetre> a crm:E55_Type ;
+    rdfs:label "saltpetre" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/bushel> a crm:E58_Measurement_Unit ;
+    rdfs:label "bushel" .
+
+<https://w3id.org/hector/unit/dicker> a crm:E58_Measurement_Unit ;
+    rdfs:label "dicker" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/salt> a crm:E55_Type ;
+    rdfs:label "salt (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

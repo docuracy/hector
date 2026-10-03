@@ -1,0 +1,263 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hand-gun> a crm:E55_Type ;
+    rdfs:label "hand gun" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haunde gones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haundə gonəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gonnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonis" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haunde gonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haundə gonəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gon" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand handgons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand handgons" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gonn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gon" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haunde gonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haundə gonə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gune" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gunə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gonys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand handgonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand handgonə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hangone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haŋgonə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hangon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haŋgon" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgonnez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgonez" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gonəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gun" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hand gun" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgonəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgonə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gunes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gunəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgon" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgons" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gun" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonəs" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gonəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand guns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand guns" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand handgon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand handgon" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hangones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haŋgonəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haunde gone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haundə gonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand handgonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand handgonəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haund gone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haund gonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hand gone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hand gonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gunez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gunez" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hande gone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handə gonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hangons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haŋgons" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handgunnes or halfe hankes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handgunəs or halfə haŋkəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Firearms that can be held and fired with one hand. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hand%20gun> ;
+    skos:related <https://w3id.org/hector/commodity/gun>,
+        <https://w3id.org/hector/commodity/harquebus> ;
+    la:equivalent aat:300037158 ;
+    hector:attestationCount 60 .
+
+aat:300037158 a crm:E55_Type ;
+    rdfs:label "handguns (small arms)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/gun> a crm:E55_Type ;
+    rdfs:label "gun" .
+
+<https://w3id.org/hector/commodity/harquebus> a crm:E55_Type ;
+    rdfs:label "harquebus" .
+
+<https://w3id.org/mlca/glossary/hand%20gun> a crm:E55_Type ;
+    rdfs:label "hand gun (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

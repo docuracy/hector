@@ -1,0 +1,141 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/coal> a crm:E55_Type ;
+    rdfs:label "coal" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "see coole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seː koːlə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolis" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coal" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "koal" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coales" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koaləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "see cole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seː kolə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carbo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karbo" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolis" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crolles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kroləs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carbonis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karbonis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koləs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seecolis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seːkolis" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koalə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carbone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karbonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolə" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coals" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koals" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Carbon-rich material that most often occurs in stratified sedimentary deposits. It is one of the most important of the primary fossil fuels. It is characterized by being solid, hard, opaque, black, or blackish, found in seams or strata in the earth, and largely used as fuel; it consists of carbonized vegetable matter deposited in former epochs of the world's history. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/coal> ;
+    la:equivalent aat:300015149 ;
+    hector:attestationCount 219 ;
+    hector:taxation <https://w3id.org/hector/commodity/coal#rate-1545-outward-10> .
+
+aat:300015149 a crm:E55_Type ;
+    rdfs:label "coal" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/coal#rate-1545-outward-10> a hector:Rate ;
+    rdfs:label "1545 outward: Coles the chalder 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/chalder> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 10 (transcribed by Stuart Jenks): 'Coles the chalder' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/chalder> a crm:E58_Measurement_Unit ;
+    rdfs:label "chalder" .
+
+<https://w3id.org/mlca/glossary/coal> a crm:E55_Type ;
+    rdfs:label "coal (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

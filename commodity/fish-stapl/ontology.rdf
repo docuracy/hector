@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/fish-stapl">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_fish_stapl_cb103abf82c0ad746d59010d4a3486acd180fb6361eee90b00e37ec2fa4579fb550"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_fish_stapl_cb14506b6559981f4f18462def35b987656d6c09d09bfecaf84bc372fbf140db64c"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_fish_stapl_cb9825891dfbd119aa2e6a64974451d8b56e4f18d15f6cf5a34395051cfaf71461"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_fish_stapl_cb149b55e48c7189ea485ceb4dccf0ef89078ceb4c26ce0c208c6a288dd428929f1"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>fish (stapl)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/fish"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/fish"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/fish-stapl#rate-1545-inward-691"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/fish-stapl#rate-1558-inward-987"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/fish-stapl#rate-1558-inward-987">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Staple fyshe the C cont’ 120 fysshes 30s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_fish_stapl_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2"/>
+    <hector:perQuantity rdf:nodeID="commodity_fish_stapl_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 987 (transcribed by Stuart Jenks): 'Staple fyshe the C cont’ 120 fysshes' 30s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>30s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">360</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb149b55e48c7189ea485ceb4dccf0ef89078ceb4c26ce0c208c6a288dd428929f1">
+    <crm:P190_has_symbolic_content>fish, qualified as ‘stapl’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/fish-stapl#rate-1545-inward-691">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Staple fysshe the hundreth 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_fish_stapl_cb3561af4592c7a24de959a2d22ce156f46562b5827189625f7b267a53e877b1aef"/>
+    <hector:perQuantity rdf:nodeID="commodity_fish_stapl_cb1f9558281217acab7e7461821302af701d80752283389c57b69421af48e848fb3"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 691 (transcribed by Stuart Jenks): 'Staple fysshe the hundreth' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb14506b6559981f4f18462def35b987656d6c09d09bfecaf84bc372fbf140db64c">
+    <crm:P190_has_symbolic_content>fish (stapl)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>fiʃ stapl</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb148ab670c330cf7e7d114310da8bf3011e8069cacf36eb620392a195ca59cc35e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb103abf82c0ad746d59010d4a3486acd180fb6361eee90b00e37ec2fa4579fb550">
+    <crm:P190_has_symbolic_content>Staple fysshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>staplə fiʃə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb9825891dfbd119aa2e6a64974451d8b56e4f18d15f6cf5a34395051cfaf71461">
+    <crm:P190_has_symbolic_content>Staple fyshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>staplə fiʃə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb1f9558281217acab7e7461821302af701d80752283389c57b69421af48e848fb3">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/fish">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>fish</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_fish_stapl_cb3561af4592c7a24de959a2d22ce156f46562b5827189625f7b267a53e877b1aef">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>20s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

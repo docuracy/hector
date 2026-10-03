@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/latch-2> a crm:E55_Type ;
+    rdfs:label "latch_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latch_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "latʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lache" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latʃə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latʃəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latʃ" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the latch of a crossbow: most likely the mechanism that holds back the drawn bowstring and releases it to propel the bolt. ('Latch' was also one of two kinds of English crossbow, designed to shoot bolts — OED s.v. latch n.1 4, prodd n. — but here the product is clearly a part of a crossbow, not a type, so best understood as the iron release mechanism.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300227076 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/latch_2> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow>,
+        <https://w3id.org/hector/commodity/crossbow-lath-2> ;
+    hector:attestationCount 1 .
+
+aat:300227076 a crm:E55_Type ;
+    rdfs:label "projectile weapon components" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow> a crm:E55_Type ;
+    rdfs:label "crossbow" .
+
+<https://w3id.org/hector/commodity/crossbow-lath-2> a crm:E55_Type ;
+    rdfs:label "crossbow lath_2" .
+
+<https://w3id.org/mlca/glossary/latch_2> a crm:E55_Type ;
+    rdfs:label "latch_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

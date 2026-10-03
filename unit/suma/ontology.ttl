@@ -1,0 +1,123 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/suma> a crm:E58_Measurement_Unit ;
+    rdfs:label "suma" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sumae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sume" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summe sommes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumə soməs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summ" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sum" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "suma" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "suma" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summe somme" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumə somə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "somes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "soməs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sommes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "soməs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summe s" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumə s" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "suma" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "somme" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "somə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "some" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "somə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sume" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "summys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sumis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a packing unit for nails, containing 10,000 nails | a measure of quantity (12,000) for nails (OED s.v. sum n.2), here as a measure of patin nails | a measure of quantity (12,000) for nails (OED s.v. sum n.2) | measure of weight for nails (10,000 lb.) (Zupko 402) | a measure of weight (OED s.v. sum n.2), here of copper | as a numerical measure (12,000 pieces) for onions | of sprygges contains 10,000 pieces" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/suma>,
+        <https://w3id.org/mlca/glossary/suma> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 105 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/suma> a crm:E55_Type ;
+    rdfs:label "suma" .
+
+<https://w3id.org/mlca/glossary/suma> a crm:E55_Type ;
+    rdfs:label "suma (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/seron> a crm:E58_Measurement_Unit ;
+    rdfs:label "seron" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ceron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "seron" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seron" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "seron" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cerons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "serons" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "soron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "soron" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "serons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "serons" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sorons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sorons" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bale or package (of exotic products, e.g. almonds, medicinal bark, cocoa) made up in an animal's hide (OED s.v. seron)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/seron>,
+        <https://w3id.org/mlca/glossary/seron> ;
+    skos:broader aat:300404445 ;
+    hector:attestationCount 39 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300404445 a crm:E55_Type ;
+    rdfs:label "packages" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/seron> a crm:E55_Type ;
+    rdfs:label "seron" .
+
+<https://w3id.org/mlca/glossary/seron> a crm:E55_Type ;
+    rdfs:label "seron (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

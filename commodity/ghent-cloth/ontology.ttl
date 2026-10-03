@@ -1,0 +1,71 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ghent-cloth> a crm:E55_Type ;
+    rdfs:label "ghent cloth" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gentis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒentis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gentisch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒentiʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gaunt cloth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaunt kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ghent cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gent kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gentish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒentiʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gentes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒentəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Ghent cloth: linen/cloth from Ghent, traded by the piece (cf. holland cloth, bruselles)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014069 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ghent%20cloth> ;
+    skos:related <https://w3id.org/hector/commodity/bruselles>,
+        <https://w3id.org/hector/commodity/holland-cloth> ;
+    hector:attestationCount 162 ;
+    hector:originPlace wd:Q1296 .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q1296 a crm:E53_Place ;
+    rdfs:label "Ghent" .
+
+<https://w3id.org/hector/commodity/bruselles> a crm:E55_Type ;
+    rdfs:label "bruselles" .
+
+<https://w3id.org/hector/commodity/holland-cloth> a crm:E55_Type ;
+    rdfs:label "holland cloth" .
+
+<https://w3id.org/mlca/glossary/ghent%20cloth> a crm:E55_Type ;
+    rdfs:label "ghent cloth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,187 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/salt-cellar> a crm:E55_Type ;
+    rdfs:label "salt cellar" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsellers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltselers" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salers" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salt sceller" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salt seler" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salt sellor" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salt selor" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltseller" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltseler" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltceler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltseler" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salar" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salsarium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salsarium" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salsares" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salsarəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salsare" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salsarə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltselers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltselers" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltseler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltseler" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltcelers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltselers" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsaler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltsaler" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salerə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salsarii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salsari" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsalers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltsalers" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salares" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salarəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saleres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salerəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsallers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltsalers" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saltsaller" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saltsaler" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salt cellar" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "salt selar" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salt selar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salt selar" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynsaltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinsaltəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynsalt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinsalt" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "saler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saler" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "salt-cellar, a small vessel used on the table for holding salt (OED s.v. saler, salt-cellar) | salt-cellar (Cobb 185, OED s.v. salt n.1 7a) | salt-cellar of silver | salt-cellar made of latten | salt-cellar made of tin" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/salt%20cellar> ;
+    skos:related <https://w3id.org/hector/commodity/salt> ;
+    la:equivalent aat:300043062 ;
+    hector:attestationCount 397 .
+
+aat:300043062 a crm:E55_Type ;
+    rdfs:label "salts (condiment vessels)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/salt> a crm:E55_Type ;
+    rdfs:label "salt" .
+
+<https://w3id.org/mlca/glossary/salt%20cellar> a crm:E55_Type ;
+    rdfs:label "salt cellar (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

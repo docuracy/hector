@@ -1,0 +1,99 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/buckskin> a crm:E55_Type ;
+    rdfs:label "buckskin" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukskynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bukskinəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buckskin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bukskin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukskyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bukskin" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukke skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bukə skinəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buk skynez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buk skinez" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukke skynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bukə skin" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukk skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buk skinəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buk skyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buk skinə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukk skynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buk skin" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bukes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bukəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Leather made from skin from deer or deer family animals from which the grain has been removed. Generally treated with animal oils, formaldehyde, or a combination of both. For unprocessed skin, use \"deerskin.\"  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/buckskin> ;
+    la:equivalent aat:300011846 ;
+    hector:attestationCount 13 .
+
+aat:300011846 a crm:E55_Type ;
+    rdfs:label "buckskin" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/buckskin> a crm:E55_Type ;
+    rdfs:label "buckskin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

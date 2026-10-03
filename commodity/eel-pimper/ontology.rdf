@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb4493d1ee59842ec1cff94995e23b19ac88301808004f7a981f127e7de9995563">
+    <crm:P190_has_symbolic_content>Elis called pymper elis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>elis kaled pimper elis</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-pimper">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_eel_pimper_cb13ec350a7849775da3ab30f8c64243f4045fa5c6284143c54a0cc2f56c26be882"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_eel_pimper_cb4493d1ee59842ec1cff94995e23b19ac88301808004f7a981f127e7de9995563"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_eel_pimper_cb151466e1a1a567999c29e422e53de4989a0b6acb6dd22003f0c99a4fea55db10d"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>eel (pimper)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/eel"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/eel"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/eel-pimper#rate-1545-inward-258"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/eel-pimper#rate-1545-inward-259"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb151466e1a1a567999c29e422e53de4989a0b6acb6dd22003f0c99a4fea55db10d">
+    <crm:P190_has_symbolic_content>eel, qualified as ‘pimper’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-pimper#rate-1545-inward-259">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Elis called pymper elis þe laste £8</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_eel_pimper_cb2eecef5669d392ab629c98064ee4511ed08479a8ef21bdb72aaf9c397379812bb"/>
+    <hector:perQuantity rdf:nodeID="commodity_eel_pimper_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 259 (transcribed by Stuart Jenks): 'Elis called pymper elis þe laste' £8</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb2eecef5669d392ab629c98064ee4511ed08479a8ef21bdb72aaf9c397379812bb">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£8</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1920</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb13ec350a7849775da3ab30f8c64243f4045fa5c6284143c54a0cc2f56c26be882">
+    <crm:P190_has_symbolic_content>eel (pimper)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>eːl pimper</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>eel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-pimper#rate-1545-inward-258">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Elis called pymper elis the barrel 13s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_eel_pimper_cb3d71749f3d0986ecba4538d771f4ffacc2f98856be7c3fbc69572ac7192d3a295"/>
+    <hector:perQuantity rdf:nodeID="commodity_eel_pimper_cb22d712e19806ed9145dd25e005d1611546de8eb982d6ce9aef3e817e013a4bba2"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 258 (transcribed by Stuart Jenks): 'Elis called pymper elis the barrel' 13s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb3d71749f3d0986ecba4538d771f4ffacc2f98856be7c3fbc69572ac7192d3a295">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>13s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_pimper_cb22d712e19806ed9145dd25e005d1611546de8eb982d6ce9aef3e817e013a4bba2">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>barrel</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

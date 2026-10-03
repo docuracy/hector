@@ -1,0 +1,96 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/packing-sheet> a crm:E55_Type ;
+    rdfs:label "packing sheet" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packyng shetes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃetəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pakkyng shete" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃetə" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pakking shetes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃetəs" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packyng sheetes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃeːtəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pakking shete" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃetə" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packyng sheete" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃeːtə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packing sheet" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pakiŋ ʃeːt" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a sheet for packing goods (OED s.v. packing vbl.n.1 III 3) | a sheet for packing goods in (OED s.v. packing n.1 III 3)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300254740 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/packing%20sheet> ;
+    skos:related <https://w3id.org/hector/commodity/poke> ;
+    hector:attestationCount 4 ;
+    hector:taxation <https://w3id.org/hector/commodity/packing-sheet#rate-1558-inward-763> .
+
+aat:300254740 a crm:E55_Type ;
+    rdfs:label "packing material" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/packing-sheet#rate-1558-inward-763> a hector:Rate ;
+    rdfs:label "1558 inward: Old shetes voc’ packyng shetes the dosen 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 763 (transcribed by Stuart Jenks): 'Old shetes voc’ packyng shetes the dosen' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/poke> a crm:E55_Type ;
+    rdfs:label "poke" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/packing%20sheet> a crm:E55_Type ;
+    rdfs:label "packing sheet (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,101 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/clove> a crm:E58_Measurement_Unit ;
+    rdfs:label "clove" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavus" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavi" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavo" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klave" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clava" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klava" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clove" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "klovə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard." ;
+            crm:P2_has_type aat:300418049 ],
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "clove, a unit of weight for wool (7 lb)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/clove>,
+        <https://w3id.org/mlca/glossary/clove> ;
+    skos:closeMatch aat:300386648 ;
+    la:equivalent wd:Q1102701 ;
+    hector:attestationCount 62981 ;
+    hector:conversionToGram 3175.14659 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (clove: 'a unit of weight for wool (7 lb)')" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 7 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q1102701 a crm:E55_Type ;
+    rdfs:label "clove" .
+
+<https://w3id.org/hector/commodity/clove> a crm:E55_Type ;
+    rdfs:label "clove" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/clove> a crm:E55_Type ;
+    rdfs:label "clove (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

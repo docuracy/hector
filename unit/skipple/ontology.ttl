@@ -1,0 +1,72 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/skipple> a crm:E58_Measurement_Unit ;
+    rdfs:label "skipple" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepelə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepeləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skepelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skepeləs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skepelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skepelə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skipple" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skiplə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "skipple (Ger. Scheffel, MLG schepel) , a (German) measure of capacity for grain, here of wheat and rye (OED s.v. skipple) | meaning unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/skipple>,
+        <https://w3id.org/mlca/glossary/skipple> ;
+    skos:broader aat:300386648 ;
+    la:equivalent aat:300404430 ;
+    hector:attestationCount 32 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/volume> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404430 a crm:E55_Type ;
+    rdfs:label "capacity (size measurement)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/skipple> a crm:E55_Type ;
+    rdfs:label "skipple" .
+
+<https://w3id.org/mlca/glossary/skipple> a crm:E55_Type ;
+    rdfs:label "skipple (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

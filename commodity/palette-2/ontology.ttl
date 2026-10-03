@@ -1,0 +1,100 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/palette-2> a crm:E55_Type ;
+    rdfs:label "palette_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palette_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "paletə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palatus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palatus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paletəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palati" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palati" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palettorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paletorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palettus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paletus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paletə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palati ferri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palati feri" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paletti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paleti" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palatti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palati" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palattus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palatus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "palatis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "palatis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a palette: a small rounded plate of armour used to protect the armpit (OED palette 2a; MED palet n.1), here made of iron" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/palette_2> ;
+    skos:related <https://w3id.org/hector/commodity/head-piece> ;
+    la:equivalent aat:300036745 ;
+    hector:attestationCount 55 .
+
+aat:300036745 a crm:E55_Type ;
+    rdfs:label "armor" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/head-piece> a crm:E55_Type ;
+    rdfs:label "head-piece" .
+
+<https://w3id.org/mlca/glossary/palette_2> a crm:E55_Type ;
+    rdfs:label "palette_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

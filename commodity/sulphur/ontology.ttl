@@ -1,0 +1,174 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sulphur> a crm:E55_Type ;
+    rdfs:label "sulphur" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulfur vivum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfur vivum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brymstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brimstonə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulphir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfir" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brimstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brimstonə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulphiris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfiris" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulphuris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfuris" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brymeston" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brimeston" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulphure" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfurə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulphur" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sulfur" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brymestone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brimestonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sulfre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sulfrə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bremstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bremstonə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brimston" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "brimston" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Orthorhombic mineral of the native element sulfur, having symbol S and atomic number 16.  It is found abundantly in volcanic regions, occurring as a brittle crystalline solid, widely distributed in combination with metals and other substances. It has been used as molten to create small objects and as a gap-filler, for bleaching wood pulp, straw, wool, silk, felt, and linen, for vulcanizing rubber, for making gunpowder, and in the manufacture of sulfa drugs, insecticides, plastic, enamels, and dyes. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sulphur> ;
+    la:equivalent aat:300011156 ;
+    hector:attestationCount 67 ;
+    hector:taxation <https://w3id.org/hector/commodity/sulphur#rate-1507-none-14>,
+        <https://w3id.org/hector/commodity/sulphur#rate-1545-inward-48>,
+        <https://w3id.org/hector/commodity/sulphur#rate-1558-inward-1026>,
+        <https://w3id.org/hector/commodity/sulphur#rate-1558-inward-127> .
+
+aat:300011156 a crm:E55_Type ;
+    rdfs:label "sulfur (mineral)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sulphur#rate-1507-none-14> a hector:Rate ;
+    rdfs:label "1507: Brymstone the C 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1507, line 14 (transcribed by Stuart Jenks): 'Brymstone the C' 3s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sulphur#rate-1545-inward-48> a hector:Rate ;
+    rdfs:label "1545 inward: Brymstone the 100 pounde 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 48 (transcribed by Stuart Jenks): 'Brymstone the 100 pounde' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sulphur#rate-1558-inward-1026> a hector:Rate ;
+    rdfs:label "1558 inward: Sulfur vivum the lb 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "8d" ;
+            hector:valueInPence 8.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1026 (transcribed by Stuart Jenks): 'Sulfur vivum the lb' 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sulphur#rate-1558-inward-127> a hector:Rate ;
+    rdfs:label "1558 inward: Brimston the hundreth cont’ 112 lb 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 127 (transcribed by Stuart Jenks): 'Brimston the hundreth cont’ 112 lb' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/sulphur> a crm:E55_Type ;
+    rdfs:label "sulphur (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

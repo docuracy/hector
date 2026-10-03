@@ -1,0 +1,81 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wood> a crm:E55_Type ;
+    rdfs:label "wood" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boscus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boskus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lignum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lignum" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bosci" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosi" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ligni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ligni" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːdə" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Wood / timber (Latin lignum, boscus): unworked or roughly-worked wood, and small wooden wares. The homonymous dyestuff is the separate concept woad; the exotic medicinal woods are lignum aloes and lignum vitae." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/balsamum>,
+        <https://w3id.org/hector/commodity/last>,
+        <https://w3id.org/hector/commodity/woad> ;
+    skos:closeMatch aat:300012827 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wood> ;
+    la:equivalent aat:300011914 ;
+    hector:attestationCount 21 .
+
+aat:300011914 a crm:E55_Type ;
+    rdfs:label "wood (plant material)" .
+
+aat:300012827 a crm:E55_Type ;
+    rdfs:label "timber (wood by origin)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/balsamum> a crm:E55_Type ;
+    rdfs:label "balsamum" .
+
+<https://w3id.org/hector/commodity/last> a crm:E55_Type ;
+    rdfs:label "last" .
+
+<https://w3id.org/hector/commodity/woad> a crm:E55_Type ;
+    rdfs:label "woad" .
+
+<https://w3id.org/mlca/glossary/wood> a crm:E55_Type ;
+    rdfs:label "wood (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

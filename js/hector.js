@@ -85,7 +85,9 @@
         h.push(`<p class="crumb"><a href="./">HECTOR</a> › ${esc(kind)}</p>`);
         h.push(`<h1>${esc(label)}</h1>`);
         h.push(`<p class="uri"><code>${esc(uri)}</code> <button type="button" class="copy" data-copy="${esc(uri)}">Copy URI</button>
-                 <a class="json" href="./${esc(path)}/ontology.json">JSON-LD</a></p>`);
+                 <a class="json" href="./${esc(path)}/ontology.json">JSON-LD</a>
+                 <a class="json" href="./${esc(path)}/ontology.ttl">Turtle</a>
+                 <a class="json" href="./${esc(path)}/ontology.rdf">RDF/XML</a></p>`);
 
         if (d.deprecated) {
             const to = d.isReplacedBy ? ref(d.isReplacedBy) : "nothing";
@@ -165,7 +167,8 @@
         const terms = graph.filter((g) => g !== head);
         el.innerHTML = `<p class="crumb"><a href="./">HECTOR</a> › Vocabulary</p>
             <h1>${esc(head._label || "HECTOR vocabulary")}</h1>
-            <p class="uri"><code>https://w3id.org/hector/ontology</code> <a class="json" href="./ontology/ontology.json">JSON-LD</a></p>
+            <p class="uri"><code>https://w3id.org/hector/ontology</code> <a class="json" href="./ontology/ontology.json">JSON-LD</a>
+            <a class="json" href="./ontology/ontology.ttl">Turtle</a> <a class="json" href="./ontology/ontology.rdf">RDF/XML</a></p>
             ${head["rdfs:comment"] ? `<p>${esc(head["rdfs:comment"])}</p>` : ""}
             ${head["owl:versionInfo"] ? `<p class="muted small">Status: ${esc(head["owl:versionInfo"])}</p>` : ""}
             <dl class="terms">${terms.map((t) => `<dt id="${esc(String(t.id).replace(/^hector:/, ""))}"><code>${esc(t.id)}</code>

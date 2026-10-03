@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pike> a crm:E55_Type ;
+    rdfs:label "pike" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pikes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pikəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pikə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pik" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pike" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pikə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Use generally for spears having a very sharply pointed steel head, somtimes with a hook or pick on the side. Use particularly for the very long type, from 16 to 22 feet in length, having a small leaf- or lozenge-shaped head, used by infantry as a defense against cavalry from the late 15th to the mid-17th century. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pike> ;
+    skos:related <https://w3id.org/hector/commodity/morris-pike>,
+        <https://w3id.org/hector/commodity/pikestaff> ;
+    la:equivalent aat:300037033 ;
+    hector:attestationCount 23 .
+
+aat:300037033 a crm:E55_Type ;
+    rdfs:label "pikes (spears)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/morris-pike> a crm:E55_Type ;
+    rdfs:label "morris-pike" .
+
+<https://w3id.org/hector/commodity/pikestaff> a crm:E55_Type ;
+    rdfs:label "pikestaff" .
+
+<https://w3id.org/mlca/glossary/pike> a crm:E55_Type ;
+    rdfs:label "pike (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

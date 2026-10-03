@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shipboard> a crm:E55_Type ;
+    rdfs:label "shipboard" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shippbordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃipbordəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shippborde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃipbordə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shipboard" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃipboard" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "timber for ship building (MED s.v. ship-bord n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300264606 ;
+    skos:closeMatch aat:300247448 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shipboard> ;
+    skos:related <https://w3id.org/hector/commodity/cogboards> ;
+    hector:attestationCount 1 .
+
+aat:300247448 a crm:E55_Type ;
+    rdfs:label "shipbuilding" .
+
+aat:300264606 a crm:E55_Type ;
+    rdfs:label "timber (wood by form)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cogboards> a crm:E55_Type ;
+    rdfs:label "cogboards" .
+
+<https://w3id.org/mlca/glossary/shipboard> a crm:E55_Type ;
+    rdfs:label "shipboard (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

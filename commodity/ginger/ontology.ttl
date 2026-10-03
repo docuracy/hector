@@ -1,0 +1,200 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ginger> a crm:E55_Type ;
+    rdfs:label "ginger" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ginger" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒer" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "inger" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "indʒer" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "zinziberis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "zinziberis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingiber" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒiber" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "zinziperi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "zinziperi" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingebre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒebrə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "zinzibery" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "zinziberi" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "zinziber" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "zinziber" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gynger" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gindʒer" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gynner" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "giner" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gyngar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "giŋgar" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gingir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒindʒir" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gyngir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gindʒir" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ginger" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300435605 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ginger> ;
+    la:equivalent wd:Q35625 ;
+    hector:attestationCount 996 ;
+    hector:taxation <https://w3id.org/hector/commodity/ginger#rate-1507-none-103>,
+        <https://w3id.org/hector/commodity/ginger#rate-1545-inward-310>,
+        <https://w3id.org/hector/commodity/ginger#rate-1545-inward-311>,
+        <https://w3id.org/hector/commodity/ginger#rate-1558-inward-485>,
+        <https://w3id.org/hector/commodity/ginger#rate-1558-inward-486> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300435605 a crm:E55_Type ;
+    rdfs:label "Zingiberaceae (family)" .
+
+wd:Q35625 a crm:E55_Type ;
+    rdfs:label "ginger" .
+
+<https://w3id.org/hector/commodity/ginger#rate-1507-none-103> a hector:Rate ;
+    rdfs:label "1507: Gynger the C wayte £4 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4 10s" ;
+            hector:valueInPence 1080.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:sourceText "Book of Rates 1507, line 103 (transcribed by Stuart Jenks): 'Gynger the C wayte' £4 10s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/ginger#rate-1545-inward-310> a hector:Rate ;
+    rdfs:label "1545 inward: Gynger the hunderith pounde £4 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4 10s" ;
+            hector:valueInPence 1080.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 310 (transcribed by Stuart Jenks): 'Gynger the hunderith pounde' £4 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/ginger#rate-1545-inward-311> a hector:Rate ;
+    rdfs:label "1545 inward: Gynger the pounde 11d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "11d" ;
+            hector:valueInPence 11.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 311 (transcribed by Stuart Jenks): 'Gynger the pounde' 11d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/ginger#rate-1558-inward-485> a hector:Rate ;
+    rdfs:label "1558 inward: Gynger the C lb. cont’ 100 pounde £7 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£7 10s" ;
+            hector:valueInPence 1800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 485 (transcribed by Stuart Jenks): 'Gynger the C lb. cont’ 100 pounde' £7 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/ginger#rate-1558-inward-486> a hector:Rate ;
+    rdfs:label "1558 inward: Gynger the pounde 18d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "18d" ;
+            hector:valueInPence 18.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 486 (transcribed by Stuart Jenks): 'Gynger the pounde' 18d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/mlca/glossary/ginger> a crm:E55_Type ;
+    rdfs:label "ginger (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

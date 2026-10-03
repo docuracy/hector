@@ -1,0 +1,116 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hamper> a crm:E55_Type ;
+    rdfs:label "hamper" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hampers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampperis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamperis" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hamperes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamperəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamper" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hamper" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hamper" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Large baskets, usually having a cover or lid, for packing, storing, or transporting food, laundry, or other articles. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hamper> ;
+    la:equivalent aat:300197291 ;
+    hector:attestationCount 41 ;
+    hector:taxation <https://w3id.org/hector/commodity/hamper#rate-1545-inward-366>,
+        <https://w3id.org/hector/commodity/hamper#rate-1545-inward-367>,
+        <https://w3id.org/hector/commodity/hamper#rate-1558-inward-549> .
+
+aat:300197291 a crm:E55_Type ;
+    rdfs:label "hampers" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/hamper#rate-1545-inward-366> a hector:Rate ;
+    rdfs:label "1545 inward: Hampers the neste 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/nest> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 366 (transcribed by Stuart Jenks): 'Hampers the neste' 12d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/hamper#rate-1545-inward-367> a hector:Rate ;
+    rdfs:label "1545 inward: Hampers the dossen 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 367 (transcribed by Stuart Jenks): 'Hampers the dossen' 2s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/hamper#rate-1558-inward-549> a hector:Rate ;
+    rdfs:label "1558 inward: Hampers the nest cont’ 3 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/nest> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 549 (transcribed by Stuart Jenks): 'Hampers the nest cont’ 3' 3s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/hamper> a crm:E55_Type ;
+    rdfs:label "hamper (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/nest> a crm:E58_Measurement_Unit ;
+    rdfs:label "nest" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

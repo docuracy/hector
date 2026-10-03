@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/load> a crm:E58_Measurement_Unit ;
+    rdfs:label "load" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "loode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "loːdə" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lodes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lodəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lodə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "load" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "load" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "loodes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "loːdəs" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "load, the specific quantity of a substance which it is customary to load at one time; hence, taken as a unit of measure or weight for fletcher's timber (wood for making arrows) | the specific quantity of a substance which it is custumary to load at one time, a unit of measure of wood (OED s.v. load n. 2b), here of alabaster | load, the specific quantity of a substance (here: alabaster) which it is custumary to load at one time (OED s.v. load n. 2b) | meaning unknown | load, the specific quantity of a substance (here: wood) which it is custumary to load at one time, a unit of measure of wood (OED s.v. load n. 2b)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/load>,
+        <https://w3id.org/mlca/glossary/load> ;
+    skos:broader aat:300386648 ;
+    hector:attestationCount 20 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/load> a crm:E55_Type ;
+    rdfs:label "load" .
+
+<https://w3id.org/mlca/glossary/load> a crm:E55_Type ;
+    rdfs:label "load (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

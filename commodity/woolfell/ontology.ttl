@@ -1,0 +1,70 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/woolfell> a crm:E55_Type ;
+    rdfs:label "woolfell" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woolfell" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːlfel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanutus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanutus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellium lanutarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelium lanutarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanutis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanutis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis lanuta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis lanuta" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pelles lanute" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peləs lanutə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pelles lanutas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peləs lanutas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanute" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanutə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a sheepskin with the wool still on it, exported with wool and taxed beside it (OED s.v. wool-fell). Distinct from basan, which is sheepskin tanned in bark." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300193374,
+        aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/woolfell> ;
+    hector:attestationCount 7740 .
+
+aat:300193374 a crm:E55_Type ;
+    rdfs:label "sheepskin" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/woolfell> a crm:E55_Type ;
+    rdfs:label "woolfell (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

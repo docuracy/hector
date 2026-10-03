@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cbfcc572d4376e8c0911c36c736c312e0b04e15a623dac8436cdbc77ba4f882d6e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb2ff7255e60bae1130a89e7b84faabe566247058c223bb62e7a2cd0b74f610819f">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>6s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cushion-clothes-holland-making">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cushion_clothes_holland_making_cb101e613b9dcb64f9eb894e7994ae295ec02107ad987c73c22ad7f966b1a6f6300"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cushion_clothes_holland_making_cb10e5076108e1e414ba39f0d9dd82d4abdaa7f00ae45f42679be288bb665261387"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cushion_clothes_holland_making_cbd5888a2e849268996a5d1449fc394303970f9d4025d31c2d997b66b583b56455"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_cushion_clothes_holland_making_cb182509341c003b6367cfea9b1522f339489305d1938efd36055364423108a2850"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>cushion (clothes holland making)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/cushion"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/cushion"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/cushion-clothes-holland-making#rate-1545-inward-181"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/cushion-clothes-holland-making#rate-1558-inward-265"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb182509341c003b6367cfea9b1522f339489305d1938efd36055364423108a2850">
+    <crm:P190_has_symbolic_content>cushion, qualified as ‘clothes holland making’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cushion-clothes-holland-making#rate-1545-inward-181">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Cosshen clothes of Hollande makinge the dossen 6s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_cushion_clothes_holland_making_cb2ff7255e60bae1130a89e7b84faabe566247058c223bb62e7a2cd0b74f610819f"/>
+    <hector:perQuantity rdf:nodeID="commodity_cushion_clothes_holland_making_cb1c9d3cec9fb68045aa4b91d59311d9f35eff04c398c04a1190203ae00beaadb7e"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 181 (transcribed by Stuart Jenks): 'Cosshen clothes of Hollande makinge the dossen' 6s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cushion-clothes-holland-making#rate-1558-inward-265">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Cusshen clothes of Holland makyng the dossen 30s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_cushion_clothes_holland_making_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2"/>
+    <hector:perQuantity rdf:nodeID="commodity_cushion_clothes_holland_making_cbfcc572d4376e8c0911c36c736c312e0b04e15a623dac8436cdbc77ba4f882d6e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 265 (transcribed by Stuart Jenks): 'Cusshen clothes of Holland makyng the dossen' 30s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb101e613b9dcb64f9eb894e7994ae295ec02107ad987c73c22ad7f966b1a6f6300">
+    <crm:P190_has_symbolic_content>Cusshen clothes of Holland makyng</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kuʃen kloθəs of holand makiŋ</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb1c9d3cec9fb68045aa4b91d59311d9f35eff04c398c04a1190203ae00beaadb7e">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cushion">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>cushion</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb1559642a96dce9cbecc814feabb0e5870f4a7690d5fb3b8688995cb98cc9b79b2">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>30s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">360</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>dozen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cb10e5076108e1e414ba39f0d9dd82d4abdaa7f00ae45f42679be288bb665261387">
+    <crm:P190_has_symbolic_content>Cosshen clothes of Hollande makinge</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>koʃen kloθəs of holandə makindʒə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cushion_clothes_holland_making_cbd5888a2e849268996a5d1449fc394303970f9d4025d31c2d997b66b583b56455">
+    <crm:P190_has_symbolic_content>cushion (clothes holland making)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kuʃion kloθəs holand makiŋ</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

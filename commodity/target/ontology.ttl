@@ -1,0 +1,109 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/target> a crm:E55_Type ;
+    rdfs:label "target" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tergates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tergatəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tergate" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tergatə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "targatəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "target" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tardʒet" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "targadə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "targadəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tardʒetə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tardʒet" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tardʒetəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targatte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "targatə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "targetes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tardʒetəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a light round shield or buckler; a small targe (OED s.v. target n.1 1) | a light round shield or buckler; a small targe (OED s.v. target n.^1 1), here of low quality" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/target> ;
+    skos:related <https://w3id.org/hector/commodity/buckler>,
+        <https://w3id.org/hector/commodity/shield> ;
+    la:equivalent aat:300036879 ;
+    hector:attestationCount 6 .
+
+aat:300036879 a crm:E55_Type ;
+    rdfs:label "targets (shields)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/buckler> a crm:E55_Type ;
+    rdfs:label "buckler" .
+
+<https://w3id.org/hector/commodity/shield> a crm:E55_Type ;
+    rdfs:label "shield" .
+
+<https://w3id.org/mlca/glossary/target> a crm:E55_Type ;
+    rdfs:label "target (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

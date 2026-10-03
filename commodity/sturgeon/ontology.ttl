@@ -1,0 +1,286 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sturgeon> a crm:E55_Type ;
+    rdfs:label "sturgeon" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stourgeon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stuːrdʒeon" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgin" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgoyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storgoinə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgeone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒeonə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒin" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stordʒen" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgoyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgoin" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgonə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgion" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stordʒion" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stairgeon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stairdʒeon" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stargeon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stardʒeon" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgeon" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒeon" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storgon" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stourgoyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stuːrgoin" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storio" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storio" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgoyen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgoien" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgeon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stordʒeon" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgonis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgonis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stourgion" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stuːrdʒion" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storionis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storionis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storion" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storion" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "storgyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "storgin" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgyon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgion" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgiun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒiun" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgeonis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒeonis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturgon" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturion" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturion" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturionis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturionis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒen" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturione" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturionə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgionis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒionis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturio" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturio" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sturgion" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sturdʒion" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a large fish of the family Acipenseridæ, having an elongated, almost cylindrical, body protected by longitudinal rows of bony scutes and a long tapering snout, found widely distributed in the rivers and coastal waters of the north temperate zone; especially a fish belonging to either of the genera Acipenser and Scaphirhynchops, A. sturio being the common sturgeon of the Atlantic; a 'royal' fish, esteemed as an article of food, and the source of caviar and isinglass (OED s.v. sturgeon) | alien | clerical, Tenth | parliamentary, Fifteenth" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300266085 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sturgeon> ;
+    la:equivalent aat:300389825 ;
+    hector:attestationCount 386 ;
+    hector:taxation <https://w3id.org/hector/commodity/sturgeon#rate-1507-none-247>,
+        <https://w3id.org/hector/commodity/sturgeon#rate-1558-inward-977>,
+        <https://w3id.org/hector/commodity/sturgeon#rate-1558-inward-978> .
+
+aat:300266085 a crm:E55_Type ;
+    rdfs:label "fish (animals)" .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sturgeon#rate-1507-none-247> a hector:Rate ;
+    rdfs:label "1507: Sturgen the barrelle 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1507, line 247 (transcribed by Stuart Jenks): 'Sturgen the barrelle' 20s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sturgeon#rate-1558-inward-977> a hector:Rate ;
+    rdfs:label "1558 inward: Sturgeon the barrell 53s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "53s 4d" ;
+            hector:valueInPence 640.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 977 (transcribed by Stuart Jenks): 'Sturgeon the barrell' 53s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/sturgeon#rate-1558-inward-978> a hector:Rate ;
+    rdfs:label "1558 inward: Sturgeon the fyrkyn 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/firkin> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 978 (transcribed by Stuart Jenks): 'Sturgeon the fyrkyn' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/firkin> a crm:E58_Measurement_Unit ;
+    rdfs:label "firkin" .
+
+<https://w3id.org/mlca/glossary/sturgeon> a crm:E55_Type ;
+    rdfs:label "sturgeon (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

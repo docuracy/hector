@@ -1,0 +1,214 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/candle> a crm:E55_Type ;
+    rdfs:label "candle" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candullarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandularum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cepo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sepo" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelle smalls" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandelə smals" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candulla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandula" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandeləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candil" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandil" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candils" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandils" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candellum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandelum" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandelə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandeli" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candilla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandila" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candillae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandile" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kandlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candellarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandelarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandele" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandels" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candylla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandila" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candela" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandela" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandela" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candellae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandele" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candelarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandelarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candullae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandule" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Cylindrical masses typically of tallow or wax containing a wick or loosely twisted linen or cotton threads burned to give light; made by dipping or casting in a metal mold. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/candle> ;
+    skos:related <https://w3id.org/hector/commodity/candle-holder>,
+        <https://w3id.org/hector/commodity/candlecase>,
+        <https://w3id.org/hector/commodity/candlewick>,
+        <https://w3id.org/hector/commodity/wick> ;
+    la:equivalent aat:300037654 ;
+    hector:attestationCount 968 ;
+    hector:taxation <https://w3id.org/hector/commodity/candle#rate-1558-outward-13>,
+        <https://w3id.org/hector/commodity/candle#rate-1558-outward-15> .
+
+aat:300037654 a crm:E55_Type ;
+    rdfs:label "candles" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/candle#rate-1558-outward-13> a hector:Rate ;
+    rdfs:label "1558 outward: Candells the dossen pounde 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 13 (transcribed by Stuart Jenks): 'Candells the dossen pounde' 4s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/candle#rate-1558-outward-15> a hector:Rate ;
+    rdfs:label "1558 outward: Candells the barrell cont’ 10 dossen poundes 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 15 (transcribed by Stuart Jenks): 'Candells the barrell cont’ 10 dossen poundes' 40s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/candle-holder> a crm:E55_Type ;
+    rdfs:label "candle holder" .
+
+<https://w3id.org/hector/commodity/candlecase> a crm:E55_Type ;
+    rdfs:label "candlecase" .
+
+<https://w3id.org/hector/commodity/candlewick> a crm:E55_Type ;
+    rdfs:label "candlewick" .
+
+<https://w3id.org/hector/commodity/wick> a crm:E55_Type ;
+    rdfs:label "wick" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/candle> a crm:E55_Type ;
+    rdfs:label "candle (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

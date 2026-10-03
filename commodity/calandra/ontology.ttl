@@ -1,0 +1,50 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/calandra> a crm:E55_Type ;
+    rdfs:label "calandra" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chelaundre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃelaundrə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "calandra" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kalandra" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "species of bird [Source: Wikidata] | calandra, a Mediterranean species of lark (Alauda calandra) (OED s.v. calandra)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300266506 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/calandra> ;
+    la:equivalent wd:Q470853 ;
+    hector:attestationCount 1 .
+
+aat:300266506 a crm:E55_Type ;
+    rdfs:label "Aves (class)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q470853 a crm:E55_Type ;
+    rdfs:label "Calandra Lark" .
+
+<https://w3id.org/mlca/glossary/calandra> a crm:E55_Type ;
+    rdfs:label "calandra (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

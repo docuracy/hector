@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/skrene> a crm:E55_Type ;
+    rdfs:label "skrene" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skrenes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skrenəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skrene" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skrenə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skrenys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skrenis" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to furniture or built-in features in the form of an upright partition that can be used to embellish, partition, shelter, and provide privacy. Screens are often highly decorated. [Source: Getty AAT] | some sort of mirror, but exact meaning unknown | clearly some sort of mirror, since 1 barrel of mirrors containing 806 skrenys was imported, but exact meaning unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/skrene> ;
+    skos:related <https://w3id.org/hector/commodity/mirrour> ;
+    la:equivalent aat:300037737 ;
+    hector:attestationCount 2 .
+
+aat:300037737 a crm:E55_Type ;
+    rdfs:label "screens (furniture)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/mirrour> a crm:E55_Type ;
+    rdfs:label "mirrour" .
+
+<https://w3id.org/mlca/glossary/skrene> a crm:E55_Type ;
+    rdfs:label "skrene (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

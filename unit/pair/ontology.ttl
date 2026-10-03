@@ -1,0 +1,115 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/pair> a crm:E58_Measurement_Unit ;
+    rdfs:label "pair" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peyres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peirəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pariis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paris" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pair" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pair" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "payre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pairə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pare" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "parə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paires" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pairəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "parium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "parium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pari" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pari" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "par" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "par" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pares" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "parəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paria" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paria" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pairs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pairs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peyre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peirə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paribus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paribus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paire" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pairə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "payres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pairəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Pair: a counting unit of two (e.g. pairs of hose, shoes)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/pair>,
+        <https://w3id.org/mlca/glossary/pair> ;
+    la:equivalent aat:300235505 ;
+    hector:attestationCount 1988 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (pair: 'a counting unit of two')" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 2 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300235505 a crm:E55_Type ;
+    rdfs:label "pairs" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pair> a crm:E55_Type ;
+    rdfs:label "pair" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/pair> a crm:E55_Type ;
+    rdfs:label "pair (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,107 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cloak> a crm:E55_Type ;
+    rdfs:label "cloak" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloukes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kluːkəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clookes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloːkəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clook" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kloːk" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klokə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clokes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klokəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "armilausae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "armilause" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clok" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klok" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "armulausa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "armulausa" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cloak" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kloak" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Sleeveless outer garments which fasten at the neck and fall loosely from the shoulders to cover the entire body; may have a yoke or some shaping from the neck to the shoulders. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cloak> ;
+    skos:related <https://w3id.org/hector/commodity/mantelle> ;
+    la:equivalent aat:300046142 ;
+    hector:attestationCount 15 ;
+    hector:taxation <https://w3id.org/hector/commodity/cloak#rate-1558-inward-312> .
+
+aat:300046142 a crm:E55_Type ;
+    rdfs:label "cloaks" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cloak#rate-1558-inward-312> a hector:Rate ;
+    rdfs:label "1558 inward: Clokes voc’ felte clokes the pece 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 312 (transcribed by Stuart Jenks): 'Clokes voc’ felte clokes the pece' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/mantelle> a crm:E55_Type ;
+    rdfs:label "mantelle" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/cloak> a crm:E55_Type ;
+    rdfs:label "cloak (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

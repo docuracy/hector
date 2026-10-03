@@ -1,0 +1,114 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/rod> a crm:E55_Type ;
+    rdfs:label "rod" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "white rod" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "witə rod" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rodes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rodds" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rods" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roddys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rods" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rods" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roddes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "roddis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rɛːdə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rɛːdəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rodd" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rod" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rodde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rod" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "rod" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rodis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rodis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "rod | rod for making baskets | large rod" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300014669 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/rod> ;
+    hector:attestationCount 150 .
+
+aat:300014669 a crm:E55_Type ;
+    rdfs:label "rods (object genre)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/rod> a crm:E55_Type ;
+    rdfs:label "rod (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

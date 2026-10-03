@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/setwall> a crm:E55_Type ;
+    rdfs:label "setwall" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "seduale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sedualə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sedevalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sedevalə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sedwale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sedwalə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "setuale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "setualə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cetuale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "setualə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "setwall" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "setwal" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "setwalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "setwalə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "edewal" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "edeual" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "setwall, the root of the East Indian plant Curcuma Zedoaria, used as a drug (OED s.v. setwall)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880,
+        aat:300435606 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/setwall> ;
+    la:equivalent wd:Q102330941 ;
+    hector:attestationCount 12 ;
+    hector:taxation <https://w3id.org/hector/commodity/setwall#rate-1558-inward-947> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300435606 a crm:E55_Type ;
+    rdfs:label "Curcuma (genus)" .
+
+wd:Q102330941 a crm:E55_Type ;
+    rdfs:label "Curcuma zedoaria root" .
+
+<https://w3id.org/hector/commodity/setwall#rate-1558-inward-947> a hector:Rate ;
+    rdfs:label "1558 inward: Setwall the C lb. cont’ 5 score £33 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£33 6s 8d" ;
+            hector:valueInPence 8000.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 947 (transcribed by Stuart Jenks): 'Setwall the C lb. cont’ 5 score' £33 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/setwall> a crm:E55_Type ;
+    rdfs:label "setwall (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

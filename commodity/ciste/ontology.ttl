@@ -1,0 +1,14 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ciste> a crm:E55_Type ;
+    rdfs:label "ciste" ;
+    dcterms:isReplacedBy <https://w3id.org/hector/commodity/chest> ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    owl:deprecated true .
+
+<https://w3id.org/hector/commodity/chest> a crm:E55_Type .
+

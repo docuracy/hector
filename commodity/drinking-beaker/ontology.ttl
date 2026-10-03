@@ -1,0 +1,69 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/drinking-beaker> a crm:E55_Type ;
+    rdfs:label "drinking beaker" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "drinking beaker" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "driŋkiŋ bɛːker" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bikeres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bikerəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "drinking beker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "driŋkiŋ beker" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bewker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beuker" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "biker" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biker" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bewkeres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beukerəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to many varieties of relatively large drinking vessels without handles, cylindrical or conical in shape, with a flat base in the form of an open cup or goblet. Specifically, in archaeology refers to the tall wide-mouthed vessels produced by the Bell Beaker culture and found in certain early Bronze Age graves. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/drinking%20beaker> ;
+    la:equivalent aat:300043198 ;
+    hector:attestationCount 6 .
+
+aat:300043198 a crm:E55_Type ;
+    rdfs:label "beakers (drinking vessels)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/drinking%20beaker> a crm:E55_Type ;
+    rdfs:label "drinking beaker (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

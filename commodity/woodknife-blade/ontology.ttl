@@ -1,0 +1,66 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/woodknife-blade> a crm:E55_Type ;
+    rdfs:label "woodknife blade" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woodknyfe blade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːdknifə bladə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodknyffe blade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodknifə bladə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodknyffe blades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodknifə bladəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woodknife blade" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːdknifə bladə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woodknyfe blades" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːdknifə bladəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the blade (metal part) of a woodknife, a large knife for cutting off branches or twigs (OED s.v. wood-knife)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300024917 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/woodknife%20blade> ;
+    skos:related <https://w3id.org/hector/commodity/woodknife> ;
+    hector:attestationCount 2 .
+
+aat:300024917 a crm:E55_Type ;
+    rdfs:label "blades (tool and equipment components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/woodknife> a crm:E55_Type ;
+    rdfs:label "woodknife" .
+
+<https://w3id.org/mlca/glossary/woodknife%20blade> a crm:E55_Type ;
+    rdfs:label "woodknife blade (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

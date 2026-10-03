@@ -1,0 +1,20 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/mass/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound (avoirdupois)" ;
+    dcterms:isReplacedBy <https://w3id.org/hector/unit/pound> ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Retired 29 Sep 2026 (decision D7): units no longer carry their dimension in the URI. See https://w3id.org/hector/unit/pound." ;
+            crm:P2_has_type aat:300418049 ] ;
+    owl:deprecated true .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit .
+

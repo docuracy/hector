@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/glass">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="unit_glass_cb3592d3f57a9153a3d204752b3ddae10b0203c1cffa3dbc55aef31d47605dae9d"/>
+    <crm:P1_is_identified_by rdf:nodeID="unit_glass_cb83d0c7bb54b019164c2125fd89970ae5a1a6bb87b1d72a257fbb4ef993969393"/>
+    <crm:P1_is_identified_by rdf:nodeID="unit_glass_cb903b210c34dc5ece21b40d3dc05caa6ded7900c6520c087ff06fc6e9d2bef849"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_glass_cb3eb341a27e3d701aef532170d6f43b1e3ce4631946e8a160991ade061c840ab2"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>glass</rdfs:label>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/hector/commodity/glass-measure"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/mlca/glossary/glass%20%28measure%29"/>
+    <skos:broader rdf:resource="http://vocab.getty.edu/aat/300386648"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
+    <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/package"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/glass%20%28measure%29">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>glass (measure) (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_glass_cb3592d3f57a9153a3d204752b3ddae10b0203c1cffa3dbc55aef31d47605dae9d">
+    <crm:P190_has_symbolic_content>glass</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>glas</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_glass_cb83d0c7bb54b019164c2125fd89970ae5a1a6bb87b1d72a257fbb4ef993969393">
+    <crm:P190_has_symbolic_content>glacys</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>glasis</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_glass_cb903b210c34dc5ece21b40d3dc05caa6ded7900c6520c087ff06fc6e9d2bef849">
+    <crm:P190_has_symbolic_content>glas</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>glas</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/glass-measure">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>glass (measure)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_glass_cb3eb341a27e3d701aef532170d6f43b1e3ce4631946e8a160991ade061c840ab2">
+    <crm:P190_has_symbolic_content>A glass used as a packing unit / measure, especially for rose-water (also reckoned by the dozen, gross or thousand).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>weights and measures (general, standards)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

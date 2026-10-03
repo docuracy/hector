@@ -1,0 +1,66 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/faggot-2> a crm:E55_Type ;
+    rdfs:label "faggot_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    schema1:material aat:300011002,
+        aat:300133751 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "faggot" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fagot" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "faggot_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "fagot" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fagottes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fagotəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fagotte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fagotə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fagote" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fagotə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a measure of iron, a bundle of iron or steel rods bound together (OED s.v. faggot, fagot n. 4)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386648 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/faggot_2> ;
+    hector:attestationCount 2 .
+
+aat:300011002 a crm:E57_Material ;
+    rdfs:label "iron (metal)" .
+
+aat:300133751 a crm:E57_Material ;
+    rdfs:label "steel (alloy)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/faggot_2> a crm:E55_Type ;
+    rdfs:label "faggot_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

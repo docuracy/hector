@@ -1,0 +1,73 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shaffrons> a crm:E55_Type ;
+    rdfs:label "shaffrons" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaffrons" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃafrons" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chafforne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃafornə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crynen chamfer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krinen tʃamfer" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chaffrons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃafrons" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chaffron" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃafron" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chamfre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃamfrə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chamfrain" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃamfrain" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Armor pieces for the front of a horse's or camel's head, often with side plates to protect the cheeks and often decorated to match the armor of the rider. Known in classical Greece and from the 12th century on throughout Europe, the Middle East, Turkey, North Africa, and Japan, they were commonly made of either steel or leather, though the Japanese also used papier-maché and wood, the Ottoman Turks copper, and the Sudanese mainly brass. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shaffrons> ;
+    la:equivalent aat:300036905 ;
+    hector:attestationCount 4 .
+
+aat:300036905 a crm:E55_Type ;
+    rdfs:label "shaffrons" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/shaffrons> a crm:E55_Type ;
+    rdfs:label "shaffrons (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/whistle> a crm:E55_Type ;
+    rdfs:label "whistle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wistles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistləs" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistel" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wistle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistlə" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistels" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wistlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistilə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wistiləs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whistelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wisteləs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Short, usually high-pitched duct flutes having no fingerholes, or no more than one; the body may contain a captive pellet to add a roll to the sound. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/whistle> ;
+    la:equivalent aat:300042706 ;
+    hector:attestationCount 12 .
+
+aat:300042706 a crm:E55_Type ;
+    rdfs:label "whistles" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/whistle> a crm:E55_Type ;
+    rdfs:label "whistle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

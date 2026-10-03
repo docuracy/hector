@@ -1,0 +1,138 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/latten> a crm:E55_Type ;
+    rdfs:label "latten" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latonə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latin" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lattyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latin" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laten" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laten" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latinə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laton" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laton" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lattene" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latenə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latton" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laton" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lattone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latonə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latene" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "latenə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "latten" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "laten" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Copper-zinc-tin alloy, sometimes also including lead, made by melting ground calamine ore with charcoal and copper; used in the Medieval period for weights and utensils. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/latten> ;
+    la:equivalent aat:300198675 ;
+    hector:attestationCount 448 ;
+    hector:taxation <https://w3id.org/hector/commodity/latten#rate-1507-none-156>,
+        <https://w3id.org/hector/commodity/latten#rate-1507-none-157> .
+
+aat:300198675 a crm:E55_Type ;
+    rdfs:label "latten" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/latten#rate-1507-none-156> a hector:Rate ;
+    rdfs:label "1507: Lattyn the C wayte 23s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "23s 4d" ;
+            hector:valueInPence 280.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:sourceText "Book of Rates 1507, line 156 (transcribed by Stuart Jenks): 'Lattyn the C wayte' 23s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/latten#rate-1507-none-157> a hector:Rate ;
+    rdfs:label "1507: Lattyn the barrelle £6" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6" ;
+            hector:valueInPence 1440.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1507, line 157 (transcribed by Stuart Jenks): 'Lattyn the barrelle' £6" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/mlca/glossary/latten> a crm:E55_Type ;
+    rdfs:label "latten (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

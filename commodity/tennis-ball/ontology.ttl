@@ -1,0 +1,127 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tennis-ball> a crm:E55_Type ;
+    rdfs:label "tennis ball" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenys balles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis baləs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenysball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenisbal" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennys bawles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis bauləs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennys bawl" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis baul" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennys bawlis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis baulis" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenes ball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenəs bal" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenes balles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenəs baləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenys ballys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis balis" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenysballys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenisbalis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenys ball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis bal" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennys bawle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis baulə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennis ball" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tenis bal" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tenys balle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenis balə" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennes bawles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenəs bauləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tennes bawle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tenəs baulə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tennis ball (see also bawl(l))" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tennis%20ball> ;
+    skos:related <https://w3id.org/hector/commodity/ball> ;
+    la:equivalent aat:300434534 ;
+    hector:attestationCount 28 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300434534 a crm:E55_Type ;
+    rdfs:label "tennis balls" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/ball> a crm:E55_Type ;
+    rdfs:label "ball" .
+
+<https://w3id.org/mlca/glossary/tennis%20ball> a crm:E55_Type ;
+    rdfs:label "tennis ball (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

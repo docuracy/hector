@@ -1,0 +1,43 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gold-and-silver> a crm:E55_Type ;
+    rdfs:label "gold and silver" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "silver et gold" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "silver et gold" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurum et argentum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurum et ardʒentum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gold and silver" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gold and silver" ] ;
+    skos:broader aat:300044045,
+        aat:300234152 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gold%20and%20silver> .
+
+aat:300044045 a crm:E55_Type ;
+    rdfs:label "goldwork (visual works)" .
+
+aat:300234152 a crm:E55_Type ;
+    rdfs:label "silverwork" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+<https://w3id.org/mlca/glossary/gold%20and%20silver> a crm:E55_Type ;
+    rdfs:label "gold and silver (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

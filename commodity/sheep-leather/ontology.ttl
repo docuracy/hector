@@ -1,0 +1,80 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/sheep-leather> a crm:E55_Type ;
+    rdfs:label "sheep leather" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepis letther" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepis leθer" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepis ledir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepis ledir" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepisleder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepisleder" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepis lether" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepis leθer" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shepis shepleder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃepis ʃepleder" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheep leather" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃeːp lɛːθer" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sheep leather" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011845,
+        aat:300395532 ;
+    skos:closeMatch aat:300263571 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/sheep%20leather> ;
+    skos:related <https://w3id.org/hector/commodity/sheepskin> ;
+    hector:attestationCount 6 .
+
+aat:300011845 a crm:E55_Type ;
+    rdfs:label "leather" .
+
+aat:300263571 a crm:E55_Type ;
+    rdfs:label "law sheep" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/sheepskin> a crm:E55_Type ;
+    rdfs:label "sheepskin" .
+
+<https://w3id.org/mlca/glossary/sheep%20leather> a crm:E55_Type ;
+    rdfs:label "sheep leather (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

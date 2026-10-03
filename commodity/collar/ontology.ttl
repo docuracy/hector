@@ -1,0 +1,105 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/collar> a crm:E55_Type ;
+    rdfs:label "collar" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rollarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rolarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coller" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koler" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "collae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kole" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koler" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kola" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolerə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coleres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolerəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolers" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "color" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolor" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colores" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolorəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "colors" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolors" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "collar" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kolar" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "collers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kolers" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Shaped articles worn at the neckline of a garment, either separate or attached. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/collar> ;
+    la:equivalent aat:300210058,
+        aat:300444098 ;
+    hector:attestationCount 170 .
+
+aat:300210058 a crm:E55_Type ;
+    rdfs:label "collars (neckwear)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300444098 a crm:E55_Type ;
+    rdfs:label "neck pieces (armor components)" .
+
+<https://w3id.org/mlca/glossary/collar> a crm:E55_Type ;
+    rdfs:label "collar (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

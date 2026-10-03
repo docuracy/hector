@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pepper-quern> a crm:E55_Type ;
+    rdfs:label "pepper quern" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peper queren" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peper kweren" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pepper quern" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "peper kwern" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peper queryn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peper kwerin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peper quern" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peper kwern" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a pepper quern / pepper mill, a hand-mill for grinding pepper (MED s.v. peperquerne)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pepper%20quern> ;
+    skos:related <https://w3id.org/hector/commodity/peper>,
+        <https://w3id.org/hector/commodity/quern-2> ;
+    la:equivalent aat:300200179 .
+
+aat:300200179 a crm:E55_Type ;
+    rdfs:label "pepper mills" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/peper> a crm:E55_Type ;
+    rdfs:label "peper" .
+
+<https://w3id.org/hector/commodity/quern-2> a crm:E55_Type ;
+    rdfs:label "quern_2" .
+
+<https://w3id.org/mlca/glossary/pepper%20quern> a crm:E55_Type ;
+    rdfs:label "pepper quern (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

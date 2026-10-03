@@ -1,0 +1,101 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mudfish> a crm:E55_Type ;
+    rdfs:label "mudfish" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mud piscibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mud pisibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mudde fysche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudə fiʃə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mudffisches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudfiʃəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muddefissh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudefiʃ" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mudffische" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudfiʃə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mode piscis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "modə pisis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mudde piscibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudə pisibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muddefish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mudefiʃ" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mode piscibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "modə pisibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mode piscium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "modə pisium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mud piscium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mud pisium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mudfish" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mudfiʃ" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "General term for fish of various species in various orders that live in mud, whether marine, estuarine, or freshwater. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mudfish> ;
+    la:equivalent aat:300257145 ;
+    hector:attestationCount 8 .
+
+aat:300257145 a crm:E55_Type ;
+    rdfs:label "mudfishes" .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/mudfish> a crm:E55_Type ;
+    rdfs:label "mudfish (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,46 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/silver-leaf> a crm:E55_Type ;
+    rdfs:label "silver leaf" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "silver leaf" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "silver lɛːf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aurepartye silver" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aurepartie silver" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Silver beaten out into thin leaf for use in gilding. Silver leaf is about three times as thick as gold leaf because silver is less malleable but the resulting leaf is easier to handle. It requires lacquering or varnishing to prevent tarnishing; for this reason it is often replaced by palladium leaf. In the commerical arts inexpensive aluminum leaf is used to achieve the effect of silver leaf. Silver leaf can also be covered with a golden yellow transparent coating as a substitute for gold. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/silver%20leaf> ;
+    skos:related <https://w3id.org/hector/commodity/book-of-silver> ;
+    la:equivalent aat:300265199 .
+
+aat:300265199 a crm:E55_Type ;
+    rdfs:label "silver leaf" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/book-of-silver> a crm:E55_Type ;
+    rdfs:label "book of silver" .
+
+<https://w3id.org/mlca/glossary/silver%20leaf> a crm:E55_Type ;
+    rdfs:label "silver leaf (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

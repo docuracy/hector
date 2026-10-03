@@ -1,0 +1,50 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cheese-bore> a crm:E55_Type ;
+    rdfs:label "cheese bore" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chese borys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃesə boris" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cheese bore" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tʃeːsə borə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chese bor" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃesə bor" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an instrument for piercing cheese and withdrawing a small portion to be tasted (OED s.v. cheese n.1 7)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389694 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cheese%20bore> ;
+    skos:related <https://w3id.org/hector/commodity/cheese> ;
+    hector:attestationCount 1 .
+
+aat:300389694 a crm:E55_Type ;
+    rdfs:label "borers (tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cheese> a crm:E55_Type ;
+    rdfs:label "cheese" .
+
+<https://w3id.org/mlca/glossary/cheese%20bore> a crm:E55_Type ;
+    rdfs:label "cheese bore (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

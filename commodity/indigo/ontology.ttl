@@ -1,0 +1,51 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/indigo> a crm:E55_Type ;
+    rdfs:label "indigo" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "indigo" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "indigo" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ynde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ində" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "inde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ində" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A natural dark blue colorant obtained from the tropical Indigofera tinctoria plants. The use of indigo was first mentioned in Indian manuscripts in the 4th century BCE; it was first exported to Europe in Roman times. The natural material is collected as a precipitate from a fermented solution of the plant, where the coloring component, indigotin, is extracted as a colorless glycoside that turns blue with oxidation. Indigo is a fine, intense powder which may be used directly as a pigment in oil, tempera, or watercolor media. Since the exposed pigment can fade rapidly in strong sunlight, it is rarely used in art or fine textiles today. However, it is still used to dye jeans, where its fading and uneven coloring have become favorable characteristics. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/indigo> ;
+    la:equivalent aat:300013055 ;
+    hector:attestationCount 66 .
+
+aat:300013055 a crm:E55_Type ;
+    rdfs:label "indigo (colorant)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/indigo> a crm:E55_Type ;
+    rdfs:label "indigo (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

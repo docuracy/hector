@@ -1,0 +1,96 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/mark> a crm:E58_Measurement_Unit ;
+    rdfs:label "mark" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mark" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mark" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "marces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "marsəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "marc" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mark" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "marke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "markə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "marcae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "marke" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "marca" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "marka" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a unit of quantity (20 pieces, or 2 dozen) for cutlery and hardware: shears, scissors, hammer heads, compasses, ironware (Cobb 182)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/mark>,
+        <https://w3id.org/mlca/glossary/mark> ;
+    skos:broader aat:300386648 ;
+    hector:attestationCount 87 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: units.tsv ('marke sheres for semesters 2 dozen pieces'); Books of Rates ('the marke conteyninge two dossyn'). Note: CONFLICT: the glossary says '20 pieces, or 2 dozen'. One of 2 readings the sources give for this unit; none is preferred" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 2 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ],
+        [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (mark: '20 pieces, or 2 dozen'). Note: the glossary's other reading; the Books of Rates give 2 dozen. Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 20 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/mark> a crm:E55_Type ;
+    rdfs:label "mark" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/mark> a crm:E55_Type ;
+    rdfs:label "mark (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,78 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/last-6> a crm:E55_Type ;
+    rdfs:label "last_6" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "calopodii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kalopodi" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "formula" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "formula" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "calopodium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kalopodium" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "last_6" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "last" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "last" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "last" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "formers pro sotularibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "formers pro sotularibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "former pro sotularibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "former pro sotularibus" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Models of the foot made of wood or metal, and in modern times plastic, of varous sizes, upon which boots and shoes are shaped during making or manufacture. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/last_6> ;
+    skos:related <https://w3id.org/hector/commodity/formula>,
+        <https://w3id.org/hector/commodity/shaping-board>,
+        <https://w3id.org/hector/commodity/truncus-pro-galoches> ;
+    la:equivalent aat:300022925 ;
+    hector:attestationCount 18 .
+
+aat:300022925 a crm:E55_Type ;
+    rdfs:label "lasts (shoemaking tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/formula> a crm:E55_Type ;
+    rdfs:label "formula" .
+
+<https://w3id.org/hector/commodity/shaping-board> a crm:E55_Type ;
+    rdfs:label "shaping board" .
+
+<https://w3id.org/hector/commodity/truncus-pro-galoches> a crm:E55_Type ;
+    rdfs:label "truncus pro galoches" .
+
+<https://w3id.org/mlca/glossary/last_6> a crm:E55_Type ;
+    rdfs:label "last_6 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

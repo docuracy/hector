@@ -1,0 +1,114 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shaft-eel> a crm:E55_Type ;
+    rdfs:label "shaft eel" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaftelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃafteləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft eles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft eləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shafteellarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃafteːlarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaftell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaftel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft eylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft eilə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaftella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaftela" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft yele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft jelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft ele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft elə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft eel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft eːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaft eell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft eːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shaftele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaftelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schaft elis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaft elis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "schaftele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaftelə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A medium-sized eel (MED s.v. shaftele; OED s.v. shaft-eel)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300261225 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shaft%20eel> ;
+    skos:related <https://w3id.org/hector/commodity/conger>,
+        <https://w3id.org/hector/commodity/eel>,
+        <https://w3id.org/hector/commodity/kyve-eel>,
+        <https://w3id.org/hector/commodity/middle-eel>,
+        <https://w3id.org/hector/commodity/pympernel>,
+        <https://w3id.org/hector/commodity/stub-eel> ;
+    hector:attestationCount 75 .
+
+aat:300261225 a crm:E55_Type ;
+    rdfs:label "Anguilliformes (order)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/conger> a crm:E55_Type ;
+    rdfs:label "conger" .
+
+<https://w3id.org/hector/commodity/eel> a crm:E55_Type ;
+    rdfs:label "eel" .
+
+<https://w3id.org/hector/commodity/kyve-eel> a crm:E55_Type ;
+    rdfs:label "kyve eel" .
+
+<https://w3id.org/hector/commodity/middle-eel> a crm:E55_Type ;
+    rdfs:label "middle eel" .
+
+<https://w3id.org/hector/commodity/pympernel> a crm:E55_Type ;
+    rdfs:label "pympernel" .
+
+<https://w3id.org/hector/commodity/stub-eel> a crm:E55_Type ;
+    rdfs:label "stub eel" .
+
+<https://w3id.org/mlca/glossary/shaft%20eel> a crm:E55_Type ;
+    rdfs:label "shaft eel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

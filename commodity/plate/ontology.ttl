@@ -1,0 +1,101 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/plate> a crm:E55_Type ;
+    rdfs:label "plate" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plattes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "platəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "platt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plat" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plaat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaːt" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plates" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "platəs" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "platys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "platis" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "platae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plate" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "platte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "platə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plat" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plat" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plate" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "platə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plata" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plata" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "platez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "platez" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "sheet metal / plate: metal — commonly iron, but also latten, copper, steel or silver — rolled or beaten into thin flat sheets. Often distinguished as black (untinned) or white (tinned) iron plate; used for armour (e.g. vambraces and rerebraces) and a range of other manufactures." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/plate> ;
+    la:equivalent aat:300223016 ;
+    hector:attestationCount 583 .
+
+aat:300223016 a crm:E55_Type ;
+    rdfs:label "sheet metal" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/plate> a crm:E55_Type ;
+    rdfs:label "plate (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

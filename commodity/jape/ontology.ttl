@@ -1,0 +1,59 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/jape> a crm:E55_Type ;
+    rdfs:label "jape" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "japes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒapəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jape" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "dʒapə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Material objects contrived for amusement rather than for practical use by children or pets, or intended as collectibles by adults. Toys are generally miniature versions of real beings or objects that lend themselves to imaginative or imitative play. Toys may also be items for use in games. Among the earliest toys were dolls and balls. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/jape> ;
+    skos:related <https://w3id.org/hector/commodity/gewgaw>,
+        <https://w3id.org/hector/commodity/trifle>,
+        <https://w3id.org/hector/commodity/trifle-2> ;
+    la:equivalent aat:300211037 ;
+    hector:attestationCount 1 .
+
+aat:300211037 a crm:E55_Type ;
+    rdfs:label "toys (recreational artifacts)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/gewgaw> a crm:E55_Type ;
+    rdfs:label "gewgaw" .
+
+<https://w3id.org/hector/commodity/trifle> a crm:E55_Type ;
+    rdfs:label "trifle" .
+
+<https://w3id.org/hector/commodity/trifle-2> a crm:E55_Type ;
+    rdfs:label "trifle_2" .
+
+<https://w3id.org/mlca/glossary/jape> a crm:E55_Type ;
+    rdfs:label "jape (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

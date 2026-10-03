@@ -1,0 +1,107 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/baselard> a crm:E55_Type ;
+    rdfs:label "baselard" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baslardus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baslardus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselardorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baslardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baslardəs" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baslardi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baslardi" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "basellardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardəs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baslard" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baslard" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardəs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselardi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardi" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselardus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselardis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselardis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "basellard" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baselard" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baselard" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "baselard" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Daggers having a hilt shaped like a capital H on its side (becoming more like a capital I over time), usually worn at the girdle by civilians. The form originated in southern Germany or Switzerland in the late 13th century and remained in wide use throughout Europe until the late 15th century. Some types are as long as short swords. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/baselard> ;
+    skos:related <https://w3id.org/hector/commodity/dagger> ;
+    la:equivalent aat:300037062 ;
+    hector:attestationCount 39 .
+
+aat:300037062 a crm:E55_Type ;
+    rdfs:label "baselards" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/dagger> a crm:E55_Type ;
+    rdfs:label "dagger" .
+
+<https://w3id.org/mlca/glossary/baselard> a crm:E55_Type ;
+    rdfs:label "baselard (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

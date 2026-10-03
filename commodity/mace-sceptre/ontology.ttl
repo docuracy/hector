@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/mace-sceptre> a crm:E55_Type ;
+    rdfs:label "mace (sceptre)" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "masis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mas" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mace" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "masə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mace (sceptre)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "masə septrə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Maces intended primarily for ceremonial display rather than as weapons. A ceremonial mace is a staff or club-shaped device, often richly ornamented and typically topped with a knob or other head-piece, carried by priestly officials, ecclesiastical persons, magistrates, and academic persons as a symbol of jurisdiction or office during a solemn ceremony. Examples are found in ancient Egypt, pre-Columbian America, Asia, and Europe and North America. For similar objects carried by rulers, use \"scepters.\" [Source: Getty AAT] | Clubs used throughout Europe mainly from the 11th to the 17th century, made either entirely of metal or of a wooden shaft with a metal head, the head having longitudinal grooves or flanges and sometimes surmounted by a spike. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300037214,
+        aat:300299039 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/mace%20%28sceptre%29> ;
+    skos:related <https://w3id.org/hector/commodity/masse> ;
+    hector:attestationCount 2 .
+
+aat:300037214 a crm:E55_Type ;
+    rdfs:label "maces (weapons)" .
+
+aat:300299039 a crm:E55_Type ;
+    rdfs:label "ceremonial maces" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/masse> a crm:E55_Type ;
+    rdfs:label "masse" .
+
+<https://w3id.org/mlca/glossary/mace%20%28sceptre%29> a crm:E55_Type ;
+    rdfs:label "mace (sceptre) (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

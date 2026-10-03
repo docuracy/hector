@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/bolt> a crm:E58_Measurement_Unit ;
+    rdfs:label "bolt" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowlt" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːlt" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowlttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːltəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boult" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːlt" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bolte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boltə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bolttes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boltəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boultes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːltəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boltəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowltte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːltə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boltte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boltə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bolt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bolt" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bowltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buːltəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Lengths of woven or knitted cloth, typically measuring approximately 40 to 100 yards long, folded or rolled on a cylindrical or rectangular core. Often stored in an upright position on shelves or racks and wrapped in plastic or other protective material to prevent damage, these fabric rolls are used to create myriad textile products. They can be made of cotton, silk, wool, or synthetic fibers, depending on desired use. [Source: Getty AAT] | bundle (MED s.v. bolt n. 4a/b), here as a measure of thread (filum) | of thread | a packing unit for poldavyes, containing 30 yards | a packing unit for thread" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/bolt-3>,
+        <https://w3id.org/mlca/glossary/bolt_3> ;
+    skos:broader aat:300386648 ;
+    la:equivalent aat:300423311 ;
+    hector:attestationCount 164 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300423311 a crm:E55_Type ;
+    rdfs:label "bolts (cloth)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bolt-3> a crm:E55_Type ;
+    rdfs:label "bolt_3" .
+
+<https://w3id.org/mlca/glossary/bolt_3> a crm:E55_Type ;
+    rdfs:label "bolt_3 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,92 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/muskball> a crm:E55_Type ;
+    rdfs:label "muskball" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muske balles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "muskə baləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muskball" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "muskbal" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "muske ball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "muskə bal" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musk pila" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musk pila" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musbal" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musballes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musbaləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musk balles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musk baləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musk pilae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musk pile" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "musk ball" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "musk bal" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a receptacle for musk, an odoriferous, reddish-brown substance, secreted in a gland or sack by the male musk-deer; it has a very powerful and enduring odor and is used as the basis of many perfumes, as well as in medicine (OED s.v. musk, muskball)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300197197 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/muskball> ;
+    skos:related <https://w3id.org/hector/commodity/musk>,
+        <https://w3id.org/hector/commodity/musk-box> ;
+    hector:attestationCount 18 .
+
+aat:300197197 a crm:E55_Type ;
+    rdfs:label "containers (receptacles)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/musk> a crm:E55_Type ;
+    rdfs:label "musk" .
+
+<https://w3id.org/hector/commodity/musk-box> a crm:E55_Type ;
+    rdfs:label "musk box" .
+
+<https://w3id.org/mlca/glossary/muskball> a crm:E55_Type ;
+    rdfs:label "muskball (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

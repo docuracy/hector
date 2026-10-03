@@ -1,0 +1,90 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/breechgirdle> a crm:E55_Type ;
+    rdfs:label "breechgirdle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "breechgirdle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "breːtʃdʒirdlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdulles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirduləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirdiləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregerdille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒerdilə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirdilə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdillis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirdilis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirdulə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregirdill" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒirdil" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregerdilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒerdiləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bregerdil" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bredʒerdil" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a girdle or belt worn around the loins to keep up the breeches (OED s.v. breechgirdle)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300210002 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/breechgirdle> ;
+    hector:attestationCount 10 .
+
+aat:300210002 a crm:E55_Type ;
+    rdfs:label "belts (costume accessories)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/breechgirdle> a crm:E55_Type ;
+    rdfs:label "breechgirdle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

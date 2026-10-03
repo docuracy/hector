@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/leather-pieces> a crm:E55_Type ;
+    rdfs:label "leather pieces" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesia" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesie" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecia corii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesia kori" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leather pieces" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lɛːθer piːsəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciarum scissarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesiarum sisarum" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pieces or offcuts of (tanned) leather, especially small pieces cut from the bellies, necks or horns of cattle, used for clouting and repairs (OED s.v. clout v.); Latin pecia corii." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/leather%20pieces> ;
+    skos:related <https://w3id.org/hector/commodity/clout>,
+        <https://w3id.org/hector/commodity/pecia> ;
+    la:equivalent aat:300011845 ;
+    hector:attestationCount 10 .
+
+aat:300011845 a crm:E55_Type ;
+    rdfs:label "leather" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/clout> a crm:E55_Type ;
+    rdfs:label "clout" .
+
+<https://w3id.org/hector/commodity/pecia> a crm:E55_Type ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/leather%20pieces> a crm:E55_Type ;
+    rdfs:label "leather pieces (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

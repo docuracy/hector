@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/graving-iron> a crm:E55_Type ;
+    rdfs:label "graving iron" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    schema1:material aat:300011002 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gravyng iorn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graviŋ iorn" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graving irons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graviŋ irons" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graving iron" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "graviŋ iron" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gravyng iorns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graviŋ iorns" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a graving iron for use by engravers (MED s.v. graving(e ger.)) | the tool used by an engraver, a graver (OED s.v. graving vbl. n. 5)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300024665 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/graving%20iron> ;
+    skos:related <https://w3id.org/hector/commodity/engraving-hafts> ;
+    hector:attestationCount 3 .
+
+aat:300011002 a crm:E57_Material ;
+    rdfs:label "iron (metal)" .
+
+aat:300024665 a crm:E55_Type ;
+    rdfs:label "chisels" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/engraving-hafts> a crm:E55_Type ;
+    rdfs:label "engraving hafts" .
+
+<https://w3id.org/mlca/glossary/graving%20iron> a crm:E55_Type ;
+    rdfs:label "graving iron (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

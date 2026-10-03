@@ -1,0 +1,191 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/playing-card> a crm:E55_Type ;
+    rdfs:label "playing card" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pleing cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pleiŋ kardəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng pleying" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ pleiiŋ" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng carde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kardə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playeing cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaieiŋ kardəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng card" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kard" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing playeng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ plaieŋ" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pleyng card" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pleiŋ kard" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plaing cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kardəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing pleying" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ pleiiŋ" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plaing card" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kard" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plaieng cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaieŋ kardəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing card" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ kard" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ kardəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pleying cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pleiiŋ kardəs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng cardys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kardis" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "card" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kard" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng pleyng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ pleiŋ" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing cardis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ kardis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playing pleing" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiiŋ pleiŋ" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pleyng cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pleiŋ kardəs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playeng cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaieŋ kardəs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "playng cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plaiŋ kardəs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kardəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pleyng caredes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pleiŋ karedəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Cards made in sets of a designated number and marked for use as game accessories during play. The markings or designs may follow a standard suit or rank system or may be special and individualized. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/playing%20card> ;
+    la:equivalent aat:300211294 ;
+    hector:attestationCount 193 ;
+    hector:taxation <https://w3id.org/hector/commodity/playing-card#rate-1507-none-214> .
+
+aat:300211294 a crm:E55_Type ;
+    rdfs:label "playing cards" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/playing-card#rate-1507-none-214> a hector:Rate ;
+    rdfs:label "1507: Playeng cardes the grosse £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1507, line 214 (transcribed by Stuart Jenks): 'Playeng cardes the grosse' £4" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/playing%20card> a crm:E55_Type ;
+    rdfs:label "playing card (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

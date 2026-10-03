@@ -1,0 +1,157 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/turmeric> a crm:E55_Type ;
+    rdfs:label "turmeric" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tormareth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tormareθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarmaryte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tarmaritə" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turmeric" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "turmerik" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "curcombe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kurkombə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "termaret" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "termaret" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarmarett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tarmaret" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "termerett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "termeret" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tormert" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tormert" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "karkumer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karkumer" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarmarite" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tarmaritə" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turmeryk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turmerik" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "courcombe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuːrkombə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "turmarik" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "turmarik" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "termarett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "termaret" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarmaret" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tarmaret" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "meaning unknown in earliest occurrences (measured in dozens); turmeric, the aromatic and pungent root-stock of the East Indian plant (Curcuma longa), or the powder made of this, the chief ingredient in curry powder, used also in dyeing yellow, and as a chemical test, and in the East as a condiment and medicinally; also applied by English herbalists to the root of Tormentil, and to the root-stock of Sanguinaria canadensis (OED s.v. turmeric n. 1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300386730 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/turmeric> ;
+    la:equivalent aat:300386705 ;
+    hector:attestationCount 17 ;
+    hector:taxation <https://w3id.org/hector/commodity/turmeric#rate-1545-inward-716>,
+        <https://w3id.org/hector/commodity/turmeric#rate-1558-inward-1093> .
+
+aat:300386705 a crm:E55_Type ;
+    rdfs:label "Curcuma longa (species)" .
+
+aat:300386730 a crm:E55_Type ;
+    rdfs:label "spices" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/turmeric#rate-1545-inward-716> a hector:Rate ;
+    rdfs:label "1545 inward: Tarmaret the 100 pounde 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 716 (transcribed by Stuart Jenks): 'Tarmaret the 100 pounde' 40s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/turmeric#rate-1558-inward-1093> a hector:Rate ;
+    rdfs:label "1558 inward: Tormareth the C lb. conteyninge 112 lb £3 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3 6s 8d" ;
+            hector:valueInPence 800.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1093 (transcribed by Stuart Jenks): 'Tormareth the C lb. conteyninge 112 lb' £3 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/turmeric> a crm:E55_Type ;
+    rdfs:label "turmeric (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

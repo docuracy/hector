@@ -1,0 +1,74 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/grill> a crm:E55_Type ;
+    rdfs:label "grill" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grile" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "grilə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "griles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "griləs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grill" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gril" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grillis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "grilis" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "griləs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "grilə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the name given to a young salmon on its first return to the river from the sea and retained during the same year (MED s.v. grills n.pl., OED s.v. grilse) | young salmon (MED s.v. grills n.pl.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/grill> ;
+    skos:related <https://w3id.org/hector/commodity/salmon> ;
+    hector:attestationCount 7 .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/salmon> a crm:E55_Type ;
+    rdfs:label "salmon" .
+
+<https://w3id.org/mlca/glossary/grill> a crm:E55_Type ;
+    rdfs:label "grill (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

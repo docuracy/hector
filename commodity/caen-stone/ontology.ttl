@@ -1,0 +1,77 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/caen-stone> a crm:E55_Type ;
+    rdfs:label "caen stone" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petri de caen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petri de ken" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "canestone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kanestonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "canez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kanez" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cane" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kanə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "canes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kanəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caen stone" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "ken stonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "petre de caen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "petrə de ken" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Caen stone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ken stonə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A fine-grained French oolitic limestone that is cream in color and easily carved. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/caen%20stone> ;
+    la:equivalent aat:300011318 ;
+    hector:attestationCount 51 ;
+    hector:originPlace wd:Q41185 .
+
+aat:300011318 a crm:E55_Type ;
+    rdfs:label "Caen stone" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q41185 a crm:E53_Place ;
+    rdfs:label "Caen" .
+
+<https://w3id.org/mlca/glossary/caen%20stone> a crm:E55_Type ;
+    rdfs:label "caen stone (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

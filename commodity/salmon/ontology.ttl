@@ -1,0 +1,164 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/salmon> a crm:E55_Type ;
+    rdfs:label "salmon" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sallmond" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmond" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "samon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "samon" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salmon" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "salmon" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salmons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmons" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "samondis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "samondis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sallmondes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmondəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salmone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmonə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "samo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "samo" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salmo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmo" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sawmon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "saumon" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "samond" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "samond" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salman" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salman" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "salmonis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "salmonis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "samonis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "samonis" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "salmon, an edible sea-fish | salted salmon | dried salmon | a young salmon on its first return to the river from the sea, and retained during the same year (OED s.v. grilse)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/salmon> ;
+    skos:related <https://w3id.org/hector/commodity/grill> ;
+    la:equivalent aat:300261263 ;
+    hector:attestationCount 350 ;
+    hector:taxation <https://w3id.org/hector/commodity/salmon#rate-1558-inward-931>,
+        <https://w3id.org/hector/commodity/salmon#rate-1558-inward-932> .
+
+aat:300261263 a crm:E55_Type ;
+    rdfs:label "salmon (fish)" .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/grill> a crm:E55_Type ;
+    rdfs:label "grill" .
+
+<https://w3id.org/hector/commodity/salmon#rate-1558-inward-931> a hector:Rate ;
+    rdfs:label "1558 inward: Salmon the barrell 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 931 (transcribed by Stuart Jenks): 'Salmon the barrell' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/salmon#rate-1558-inward-932> a hector:Rate ;
+    rdfs:label "1558 inward: Salmon the last cont’ 12 barrelles £18" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£18" ;
+            hector:valueInPence 4320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 932 (transcribed by Stuart Jenks): 'Salmon the last cont’ 12 barrelles' £18" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/mlca/glossary/salmon> a crm:E55_Type ;
+    rdfs:label "salmon (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

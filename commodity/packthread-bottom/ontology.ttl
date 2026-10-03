@@ -1,0 +1,52 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/packthread-bottom> a crm:E55_Type ;
+    rdfs:label "packthread bottom" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packthread bottom" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pakθrɛːd botom" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packtred botom" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paktred botom" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Any of various small, round, or cylindrical devices usually of bone, wood, or metal on which threads are wound for use in textile fabrication. [Source: Getty AAT] | stout thread or twine such as is used for sewing or tying up packs or bundles (OED s.v. packthread); bottom: a core on which to wind thread; (also) a skein or ball of thread or yarn (OED s.v. bottom n. and adj. 24)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300014251 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/packthread%20bottom> ;
+    la:equivalent aat:300014250,
+        aat:300023485 .
+
+aat:300014250 a crm:E55_Type ;
+    rdfs:label "thread" .
+
+aat:300014251 a crm:E55_Type ;
+    rdfs:label "twine" .
+
+aat:300023485 a crm:E55_Type ;
+    rdfs:label "bobbins" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/packthread%20bottom> a crm:E55_Type ;
+    rdfs:label "packthread bottom (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

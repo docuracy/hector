@@ -1,0 +1,287 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/kerchief> a crm:E55_Type ;
+    rdfs:label "kerchief" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchiefes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃiːfəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerverchef" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kervertʃef" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyrchifes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃifəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchieffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃiːfəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corchiffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kortʃifəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corchiffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kortʃifə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchieff" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃiːf" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kirchefes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃefəs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kirchef" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃef" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kercheves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃevəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyrchife" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃifə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "curchiffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kurtʃifə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchiffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃifə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchefs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃefs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchif" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃif" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchiffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃifəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverchefes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kovertʃefəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kirchiffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃifəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "curchiffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kurtʃifəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchief" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kertʃiːf" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kercheffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃefəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchefs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃefs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kercher" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃer" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverch" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃ" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kercheffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃefə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchiffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃifə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverchef" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kovertʃef" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchefe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃefə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kirchiffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kirtʃifə" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kercheve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃevə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchefes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃefəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchiefs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃiːfs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchief" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃiːf" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchef" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃef" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchefes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃefəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchiffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃifəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchef" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃef" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃis" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kerchers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kertʃers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keverchiefs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevertʃiːfs" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Square or triangular headcloths worn as a covering for the head. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/kerchief> ;
+    skos:related <https://w3id.org/hector/commodity/kintofes> ;
+    la:equivalent aat:300046122 ;
+    hector:attestationCount 200 .
+
+aat:300046122 a crm:E55_Type ;
+    rdfs:label "kerchiefs" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/kintofes> a crm:E55_Type ;
+    rdfs:label "kintofes" .
+
+<https://w3id.org/mlca/glossary/kerchief> a crm:E55_Type ;
+    rdfs:label "kerchief (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,63 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/aloe-socotrina> a crm:E55_Type ;
+    rdfs:label "aloe socotrina" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alloes cicotrini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ales sikotrini" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aloe socotrina" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ale sokotrina" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aloe cicotrini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ale sikotrini" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a drug of nauseous odor, bitter taste, and purgative qualities, procured from the inspissated juice of plants of the genus Aloe (OED s.v. aloe) | a drug made of the juice or rosin on the tree aloes (MED s.v. aloe(s n.), used medically as a purgative (Heyd 557-8, Pegalotti 412, Day 979 s.v. oliapatico, Stieda, Venice, 95), imported from the island Socotora via Aden, Alexandria and Cyprus) | aloe, a drug of nauseous odour, bitter taste, and purgative qualities, procured from the inspissated juice of plants of the genus Aloe (OED s.v. aloe; Heyd 557-8, Pegolotti 412, Stieda 95) | socotrine aloes, a drug prepared from the juice of the Aloe socotrina (or perryi), and originally obtained from the island of Socotra (OED s.v. socotrine 1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300379869,
+        aat:300387541 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/aloe%20socotrina> ;
+    skos:related <https://w3id.org/hector/commodity/aloes> ;
+    la:equivalent wd:Q140942 ;
+    hector:originPlace wd:Q1885093 .
+
+aat:300379869 a crm:E55_Type ;
+    rdfs:label "drugs" .
+
+aat:300387541 a crm:E55_Type ;
+    rdfs:label "Aloe (genus)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q140942 a crm:E55_Type ;
+    rdfs:label "Aloe perryi" .
+
+wd:Q1885093 a crm:E53_Place ;
+    rdfs:label "Mahra Sultanate" .
+
+<https://w3id.org/hector/commodity/aloes> a crm:E55_Type ;
+    rdfs:label "aloes" .
+
+<https://w3id.org/mlca/glossary/aloe%20socotrina> a crm:E55_Type ;
+    rdfs:label "aloe socotrina (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

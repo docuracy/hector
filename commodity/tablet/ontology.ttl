@@ -1,0 +1,265 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tablet> a crm:E55_Type ;
+    rdfs:label "tablet" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabulis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabulis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablers" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabiləs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabulə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabula pro altare" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabula pro altarə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabelə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablerə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabler" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabilə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabula" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabula" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabule" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabulə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "table" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tables" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabləs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabules" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabuləs" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabelares" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabelarəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabel parvus depictus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabel parvus depiktus" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabil" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabil" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tableras" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tableras" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabils" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabils" ;
+            hector:validFrom "1456"^^xsd:gYear ;
+            hector:validThrough "1461"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabilette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabiletə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablett" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablet" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabilə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabeler" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabeler" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabeleres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabelerəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabletə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabelar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabelar" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablettum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabletum" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabel parvus depictuses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabel parvus depiktusəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabulae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabule" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablet" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tablet" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablis" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tablettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabletəs" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tableres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tablerəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabularum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabularum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabulis pro altari" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabulis pro altari" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabulles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabuləs" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tabylles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tabiləs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tablet: a small portable writing-tablet (often of wax, sometimes in pairs as a notebook); also a small painted or decorated tablet / panel (Latin tabula/tabuletta)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300014657 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tablet> ;
+    skos:related <https://w3id.org/hector/commodity/tablecloth>,
+        <https://w3id.org/hector/commodity/tablemen> ;
+    la:equivalent aat:300028879,
+        aat:300262572 ;
+    hector:attestationCount 261 .
+
+aat:300014657 a crm:E55_Type ;
+    rdfs:label "panel (wood by form)" .
+
+aat:300028879 a crm:E55_Type ;
+    rdfs:label "tablets (information artifacts)" .
+
+aat:300262572 a crm:E55_Type ;
+    rdfs:label "writing tablets (information artifacts)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tablecloth> a crm:E55_Type ;
+    rdfs:label "tablecloth" .
+
+<https://w3id.org/hector/commodity/tablemen> a crm:E55_Type ;
+    rdfs:label "tablemen" .
+
+<https://w3id.org/mlca/glossary/tablet> a crm:E55_Type ;
+    rdfs:label "tablet (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

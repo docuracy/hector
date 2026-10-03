@@ -1,0 +1,56 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/handles-pro-fullers> a crm:E55_Type ;
+    rdfs:label "handles pro fullers" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handles fullers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handləs fulers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fullers handles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fulers handləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handles pro fullers" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "handləs pro fulers" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "handels pro fullers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "handels pro fulers" ] ;
+    crm:P2_has_type aat:300386154 ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "clearly some sort of implement for the use of fullers, but exact meaning unknown (Cobb 179 does not define)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300024841 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/handles%20pro%20fullers> ;
+    hector:attestationCount 2 .
+
+aat:300024841 a crm:E55_Type ;
+    rdfs:label "tools" .
+
+aat:300386154 a crm:E55_Type ;
+    rdfs:label "unidentified (information indicator)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/handles%20pro%20fullers> a crm:E55_Type ;
+    rdfs:label "handles pro fullers (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

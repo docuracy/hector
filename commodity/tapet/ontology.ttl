@@ -1,0 +1,69 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tapet> a crm:E55_Type ;
+    rdfs:label "tapet" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tapettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tapetəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tappettes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tapetəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tappette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tapetə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tapette" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tapetə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tapet" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tapet" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tapet, a piece of figured cloth used as a hanging, table-cover, carpet etc. (OED s.v. tapet n.) | tapet, a piece of figured cloth used as a hanging, table-cover, carpet etc. (OED s.v. tapet n.), here of low quality tapestry" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tapet> ;
+    skos:related <https://w3id.org/hector/commodity/tapis> ;
+    la:equivalent aat:300204962 ;
+    hector:attestationCount 3 .
+
+aat:300204962 a crm:E55_Type ;
+    rdfs:label "table carpets" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tapis> a crm:E55_Type ;
+    rdfs:label "tapis" .
+
+<https://w3id.org/mlca/glossary/tapet> a crm:E55_Type ;
+    rdfs:label "tapet (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,73 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/paste-board> a crm:E55_Type ;
+    rdfs:label "paste board" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paste burdes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pastə burdəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pastboardes for bookes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pastboardəs for boːkəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paste burde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pastə burdə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "past borde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "past bordə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "past bordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "past bordəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "past paper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "past paper" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paste board" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pastə board" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a substitute for a thin wooden board made by pasting sheets of paper together; especially a board of a book so made (OED s.v. pasteboard n.) | a stiff but pliable material made by pasting three or more sheets of paper together and compressing and rolling them (OED s.v. pasteboard n. & adj); a piece of board made by pasting together sheets of paper, especially for the covering of a book (ibid. II.3)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/paste%20board> ;
+    la:equivalent aat:300162474 ;
+    hector:attestationCount 5 .
+
+aat:300162474 a crm:E55_Type ;
+    rdfs:label "pasteboard (paper)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/paste%20board> a crm:E55_Type ;
+    rdfs:label "paste board (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

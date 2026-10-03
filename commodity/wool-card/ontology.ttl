@@ -1,0 +1,107 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wool-card> a crm:E55_Type ;
+    rdfs:label "wool card" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wul card" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul kard" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wool card" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːl kard" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woolle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːlə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːlə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wol" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wooll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːl" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wull cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul kardəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wull carde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul kardə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wul cardes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul kardəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wul carde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul kardə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an implement for raising a nap on cloth, consisting of teasel-heads set in a frame; an instrument with iron teeth, used in pairs to part, comb out, and set in order the fibres of wool, hemp, etc., one of the cards being held in the hand, and the other fastened to a 'stock' or support (OED s.v. card n.1 1 & 2); also lambfell (OED s.v. lambfell); meaning of some forms unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wool%20card> ;
+    skos:related <https://w3id.org/hector/commodity/wool>,
+        <https://w3id.org/hector/commodity/wool-comb> ;
+    la:equivalent aat:300426934 ;
+    hector:attestationCount 110 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300426934 a crm:E55_Type ;
+    rdfs:label "hand cards" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/wool> a crm:E55_Type ;
+    rdfs:label "wool" .
+
+<https://w3id.org/hector/commodity/wool-comb> a crm:E55_Type ;
+    rdfs:label "wool comb" .
+
+<https://w3id.org/mlca/glossary/wool%20card> a crm:E55_Type ;
+    rdfs:label "wool card (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,154 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/kyve-eel> a crm:E55_Type ;
+    rdfs:label "kyve eel" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve ellarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə elarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kevelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kevelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyvele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyffe eylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kifə eilə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keveella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "keveːla" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve yele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə jelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyv" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kiv" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyveele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kiveːlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyvel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyvelys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivelis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyvelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kiveləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyvelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve eelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə eːləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keveelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "keveːləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve ella" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə ela" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve eell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kivə eːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "keveellarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "keveːlarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kyve eel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kivə eːl" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Eels packed in a kive (a tub or vat); a packaging/measure of eels rather than a distinct variety (ME kive 'tub, vat'; cf. kevelynges)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300261225 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/kyve%20eel> ;
+    skos:related <https://w3id.org/hector/commodity/conger>,
+        <https://w3id.org/hector/commodity/eel>,
+        <https://w3id.org/hector/commodity/middle-eel>,
+        <https://w3id.org/hector/commodity/pympernel>,
+        <https://w3id.org/hector/commodity/shaft-eel>,
+        <https://w3id.org/hector/commodity/stub-eel> ;
+    hector:attestationCount 166 ;
+    hector:taxation <https://w3id.org/hector/commodity/kyve-eel#rate-1558-inward-396> .
+
+aat:300261225 a crm:E55_Type ;
+    rdfs:label "Anguilliformes (order)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/conger> a crm:E55_Type ;
+    rdfs:label "conger" .
+
+<https://w3id.org/hector/commodity/eel> a crm:E55_Type ;
+    rdfs:label "eel" .
+
+<https://w3id.org/hector/commodity/kyve-eel#rate-1558-inward-396> a hector:Rate ;
+    rdfs:label "1558 inward: Eles voc’ shafte, kyve or dole eles the barrell of either 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 396 (transcribed by Stuart Jenks): 'Eles voc’ shafte, kyve or dole eles the barrell of either' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/middle-eel> a crm:E55_Type ;
+    rdfs:label "middle eel" .
+
+<https://w3id.org/hector/commodity/pympernel> a crm:E55_Type ;
+    rdfs:label "pympernel" .
+
+<https://w3id.org/hector/commodity/shaft-eel> a crm:E55_Type ;
+    rdfs:label "shaft eel" .
+
+<https://w3id.org/hector/commodity/stub-eel> a crm:E55_Type ;
+    rdfs:label "stub eel" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/mlca/glossary/kyve%20eel> a crm:E55_Type ;
+    rdfs:label "kyve eel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

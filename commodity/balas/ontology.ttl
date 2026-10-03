@@ -1,0 +1,73 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/balas> a crm:E55_Type ;
+    rdfs:label "balas" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balas" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "balas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balacez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balasez" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bala" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bala" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balace" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balasə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ballas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "baleys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "baleis" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "balas, a delicate rose-red variety of the spinel ruby, a semiprecious stone (OED s.v. balas; MED s.v. baleis) | Balas rubies from Badakshan (Balakshan), of inferior quality (Pegolotti 414 s.v. Balasci; Heyd 583)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011082 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/balas> ;
+    hector:attestationCount 23 ;
+    hector:originPlace wd:Q32056 .
+
+aat:300011082 a crm:E55_Type ;
+    rdfs:label "ruby (mineral)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q32056 a crm:E53_Place ;
+    rdfs:label "Badakhshan" .
+
+<https://w3id.org/mlca/glossary/balas> a crm:E55_Type ;
+    rdfs:label "balas (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/aglett-butons-other-capes-coper> a crm:E55_Type ;
+    rdfs:label "aglett (butons other capes coper)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Aglettes or buttons for other cappes of coper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "agletəs or butons for oθer kapəs of koper" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aglett (butons other capes coper)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "aglet butons oθer kapəs koper" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "aglett, qualified as ‘butons other capes coper’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/aglett> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/aglett> ;
+    hector:taxation <https://w3id.org/hector/commodity/aglett-butons-other-capes-coper#rate-1558-inward-40> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/aglett-butons-other-capes-coper#rate-1558-inward-40> a hector:Rate ;
+    rdfs:label "1558 inward: Aglettes or buttons for other cappes of coper the grosse 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 40 (transcribed by Stuart Jenks): 'Aglettes or buttons for other cappes of coper the grosse' 3s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/hector/commodity/aglett> a crm:E55_Type ;
+    rdfs:label "aglett" .
+

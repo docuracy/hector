@@ -1,0 +1,45 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bay-oil> a crm:E55_Type ;
+    rdfs:label "bay oil" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bay oil" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bai oil" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Wood the species Laurus nobilis native to the Mediterranean region; used for small novelties, carving, and marquetry. [Source: Getty AAT] | laurel/bay oil: oil from the laurel tree or its berry (OED bay n.1 1a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014254 ;
+    skos:closeMatch aat:300374995 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bay%20oil> ;
+    skos:related <https://w3id.org/hector/commodity/oil> .
+
+aat:300014254 a crm:E55_Type ;
+    rdfs:label "oil (organic material)" .
+
+aat:300374995 a crm:E55_Type ;
+    rdfs:label "bay laurel (wood)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/oil> a crm:E55_Type ;
+    rdfs:label "oil" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/bay%20oil> a crm:E55_Type ;
+    rdfs:label "bay oil (London Customs Accounts glossary)" .
+

@@ -1,0 +1,83 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/fullers-earth> a crm:E55_Type ;
+    rdfs:label "fuller's earth" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fuller's earth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "fulers ɛːrθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tal" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tarə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tar" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tarr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tar" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "terrae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tere" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "terra" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tera" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Clay possessing a high absorptive capacity; it is extensively used as an absorbent in refining and decolorizing oil and fat. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/fuller%27s%20earth> ;
+    skos:related <https://w3id.org/hector/commodity/tall>,
+        <https://w3id.org/hector/commodity/terra-sigillata> ;
+    la:equivalent aat:300210312 ;
+    hector:attestationCount 19 .
+
+aat:300210312 a crm:E55_Type ;
+    rdfs:label "fuller's earth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tall> a crm:E55_Type ;
+    rdfs:label "tall" .
+
+<https://w3id.org/hector/commodity/terra-sigillata> a crm:E55_Type ;
+    rdfs:label "terra sigillata" .
+
+<https://w3id.org/mlca/glossary/fuller%27s%20earth> a crm:E55_Type ;
+    rdfs:label "fuller's earth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

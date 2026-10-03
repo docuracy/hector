@@ -1,0 +1,105 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/image> a crm:E55_Type ;
+    rdfs:label "image" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymagoines" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imagoinəs" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymagoinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imagoinis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "image" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "imadʒə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymagine" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒinə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "images" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymago" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imago" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymaginum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒinum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymages" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymage" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ymaginibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒinibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "imageres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imadʒerəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "imago" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "imago" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a three-dimensional devotional statue, occurring in wood, lead, tin, alabaster, plaster, stone, earthenware, amber and ivory, in various sizes; often of the Blessed Virgin Mary, Jesus, St John the Evangelist or St George" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/image> ;
+    skos:related <https://w3id.org/hector/commodity/image-of-pity> ;
+    la:equivalent aat:300033945 ;
+    hector:attestationCount 195 .
+
+aat:300033945 a crm:E55_Type ;
+    rdfs:label "icons (devotional images)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/image-of-pity> a crm:E55_Type ;
+    rdfs:label "image of pity" .
+
+<https://w3id.org/mlca/glossary/image> a crm:E55_Type ;
+    rdfs:label "image (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

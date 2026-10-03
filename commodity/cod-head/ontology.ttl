@@ -1,0 +1,129 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cod-head> a crm:E55_Type ;
+    rdfs:label "cod head" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod hed" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hed" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codhedes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodhedəs" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hedə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coddis hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodis hedə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codde hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodə hedə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "code hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodə hedə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codes hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodəs hedə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coddis hedes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodis hedəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod hedes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hedəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod heddes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hedəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod head" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kod hɛːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codhede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodhedə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codd hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hedə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codds hede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kods hedə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cod hedde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kod hedə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the head of the cod-fish" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300266085 ;
+    skos:closeMatch wd:Q13194939 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cod%20head> ;
+    skos:related <https://w3id.org/hector/commodity/cod> ;
+    hector:attestationCount 27 .
+
+aat:300266085 a crm:E55_Type ;
+    rdfs:label "fish (animals)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q13194939 a crm:E55_Type ;
+    rdfs:label "cod" .
+
+<https://w3id.org/hector/commodity/cod> a crm:E55_Type ;
+    rdfs:label "cod" .
+
+<https://w3id.org/mlca/glossary/cod%20head> a crm:E55_Type ;
+    rdfs:label "cod head (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

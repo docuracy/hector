@@ -1,0 +1,82 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/aloeswood> a crm:E55_Type ;
+    rdfs:label "aloeswood" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lignum aloes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lignum ales" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alloes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ales" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alewes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aleuəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "alloie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aloie" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ligni aloes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ligni ales" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "allus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "alus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aloeswood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "aleswoːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Lignum aloes / aloeswood / agalloch: the fragrant wood of the agalloch, from East Indian Aloexylon and Aquilaria species (OED s.v. aloe; Heyd 557-8, Pegolotti 412, Stieda 95), used medicinally and as incense. Distinct from the purgative drug aloes (see aloes) and from lignum vitae." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/aloes>,
+        <https://w3id.org/hector/commodity/lignum-vitae>,
+        <https://w3id.org/hector/commodity/wood> ;
+    skos:broader aat:300265591,
+        aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/aloeswood> ;
+    hector:attestationCount 4 .
+
+aat:300265591 a crm:E55_Type ;
+    rdfs:label "incense (material by function)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/aloes> a crm:E55_Type ;
+    rdfs:label "aloes" .
+
+<https://w3id.org/hector/commodity/lignum-vitae> a crm:E55_Type ;
+    rdfs:label "lignum vitae" .
+
+<https://w3id.org/hector/commodity/wood> a crm:E55_Type ;
+    rdfs:label "wood" .
+
+<https://w3id.org/mlca/glossary/aloeswood> a crm:E55_Type ;
+    rdfs:label "aloeswood (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

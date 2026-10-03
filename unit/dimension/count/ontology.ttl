@@ -1,0 +1,13 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/hector/unit/dimension/count> a crm:E55_Type ;
+    rdfs:label "count" ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Units of number: a count of items (dozen, gross, pair, the timber of 40 skins), and `each`, one item counted individually." ;
+            crm:P2_has_type aat:300418049 ] .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+

@@ -1,0 +1,243 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/flax> a crm:E55_Type ;
+    rdfs:label "flax" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flackes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flakəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flaxe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flaksə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flaxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "flaksəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flex" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fleks" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lini" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flexe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fleksə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "linum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linum" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flax" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "flaks" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fiber derived from the bast or skin of the stem of the species Linum usitatissimum. Soft, flexible fibers are produced by retting the stem of the flax plant, then washing and cleaning the fibers. Flax fibers of thinner and longer than cotton, but the fiber tube has thicker walls resulting in a stronger thread. Additionally, flax fibers are used for linen fabric, thread for making shoes and bookbinding, fish line, and twine. Waste flax fibers are used in banknotes, cigarette covers, and writing and drawing paper. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/flax> ;
+    skos:related <https://w3id.org/hector/commodity/flax-brush> ;
+    la:equivalent aat:300014041 ;
+    hector:attestationCount 7242 ;
+    hector:taxation <https://w3id.org/hector/commodity/flax#rate-1507-none-98>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-inward-285>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-inward-286>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-inward-287>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-inward-288>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-inward-289>,
+        <https://w3id.org/hector/commodity/flax#rate-1545-outward-14>,
+        <https://w3id.org/hector/commodity/flax#rate-1558-inward-446>,
+        <https://w3id.org/hector/commodity/flax#rate-1558-inward-447>,
+        <https://w3id.org/hector/commodity/flax#rate-1558-inward-448> .
+
+aat:300014041 a crm:E55_Type ;
+    rdfs:label "flax (fiber)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/flax#rate-1507-none-98> a hector:Rate ;
+    rdfs:label "1507: Flexe the laste containing 1 C 20 balys £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1507, line 98 (transcribed by Stuart Jenks): 'Flexe the laste containing 1 C 20 balys' £4" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-inward-285> a hector:Rate ;
+    rdfs:label "1545 inward: Flaxe the laste £6" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6" ;
+            hector:valueInPence 1440.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 285 (transcribed by Stuart Jenks): 'Flaxe the laste' £6" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-inward-286> a hector:Rate ;
+    rdfs:label "1545 inward: Flax the packe £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pack> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 286 (transcribed by Stuart Jenks): 'Flax the packe' £4" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-inward-287> a hector:Rate ;
+    rdfs:label "1545 inward: Flaxe the balle 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 287 (transcribed by Stuart Jenks): 'Flaxe the balle' 12d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-inward-288> a hector:Rate ;
+    rdfs:label "1545 inward: Flaxe the hundreth pounde wrought 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 288 (transcribed by Stuart Jenks): 'Flaxe the hundreth pounde wrought' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-inward-289> a hector:Rate ;
+    rdfs:label "1545 inward: Flaxe the hundreth pounde unwrought 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 289 (transcribed by Stuart Jenks): 'Flaxe the hundreth pounde unwrought' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1545-outward-14> a hector:Rate ;
+    rdfs:label "1545 outward: Flaxe the bale £6 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6 13s 4d" ;
+            hector:valueInPence 1600.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 14 (transcribed by Stuart Jenks): 'Flaxe the bale' £6 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1558-inward-446> a hector:Rate ;
+    rdfs:label "1558 inward: Flaxe thole packe cont’ 150 bales poiz’ 20 C at 112 lb. the hundred £8" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£8" ;
+            hector:valueInPence 1920.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pack> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 446 (transcribed by Stuart Jenks): 'Flaxe thole packe cont’ 150 bales poiz’ 20 C at 112 lb. the hundred' £8" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1558-inward-447> a hector:Rate ;
+    rdfs:label "1558 inward: Flax the bale 14d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "14d" ;
+            hector:valueInPence 14.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 447 (transcribed by Stuart Jenks): 'Flax the bale' 14d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax#rate-1558-inward-448> a hector:Rate ;
+    rdfs:label "1558 inward: Flax the dosen pounde 2s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s 8d" ;
+            hector:valueInPence 32.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 448 (transcribed by Stuart Jenks): 'Flax the dosen pounde' 2s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/flax-brush> a crm:E55_Type ;
+    rdfs:label "flax brush" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/flax> a crm:E55_Type ;
+    rdfs:label "flax (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/hector/unit/pack> a crm:E58_Measurement_Unit ;
+    rdfs:label "pack" .
+
+<https://w3id.org/hector/unit/bale> a crm:E58_Measurement_Unit ;
+    rdfs:label "bale" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+

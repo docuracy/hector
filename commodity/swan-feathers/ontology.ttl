@@ -1,0 +1,82 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/swan-feathers> a crm:E55_Type ;
+    rdfs:label "swan feathers" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan fethers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan feθers" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swannfederes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swanfederəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan fethirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan feθirs" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan feders" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan feders" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan fethurs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan feθurs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan feathers" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "swan fɛːθers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan fethur" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan feθur" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "swan feather" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "swan fɛːθer" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Feathers of a swan (note the fused compound form 'swannfederes')." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300400474 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/swan%20feathers> ;
+    skos:related <https://w3id.org/hector/commodity/feathers> ;
+    hector:attestationCount 7 .
+
+aat:300400474 a crm:E55_Type ;
+    rdfs:label "feathers (animal components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/feathers> a crm:E55_Type ;
+    rdfs:label "feathers" .
+
+<https://w3id.org/mlca/glossary/swan%20feathers> a crm:E55_Type ;
+    rdfs:label "swan feathers (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

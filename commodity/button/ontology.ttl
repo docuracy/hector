@@ -1,0 +1,127 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/button> a crm:E55_Type ;
+    rdfs:label "button" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nodulus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nodulus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "noduli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "noduli" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botton" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boton" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boton" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boton" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buttons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "butons" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botoun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botuːn" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bottens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botens" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "button" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buton" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botouns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botuːns" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botten" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boten" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bottons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botons" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "botons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "botons" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Disks, balls, or devices of other shape having holes or a shank by which they are sewn or secured to an article and that are used as fasteners by passing through a buttonhole or loop or a trimming. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/button> ;
+    skos:related <https://w3id.org/hector/commodity/botenet>,
+        <https://w3id.org/hector/commodity/silk> ;
+    la:equivalent aat:300239261 ;
+    hector:attestationCount 18 ;
+    hector:taxation <https://w3id.org/hector/commodity/button#rate-1558-inward-170> .
+
+aat:300239261 a crm:E55_Type ;
+    rdfs:label "buttons (fasteners)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/botenet> a crm:E55_Type ;
+    rdfs:label "botenet" .
+
+<https://w3id.org/hector/commodity/button#rate-1558-inward-170> a hector:Rate ;
+    rdfs:label "1558 inward: Buttons fyne Damaskyn worke the dosen 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 170 (transcribed by Stuart Jenks): 'Buttons fyne Damaskyn worke the dosen' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/silk> a crm:E55_Type ;
+    rdfs:label "silk" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/button> a crm:E55_Type ;
+    rdfs:label "button (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

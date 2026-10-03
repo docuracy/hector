@@ -1,0 +1,155 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/leaf> a crm:E55_Type ;
+    rdfs:label "leaf" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leaf" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lɛːf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foliis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "folis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foiles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "foiləs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "levəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foliorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "foliorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foile" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "foilə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "levez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "levez" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "folium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "folium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leve" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "levə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "folii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "foli" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fulə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Metal beaten or rolled out to extreme thinness for use in gilding or other decorative processes. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/leaf> ;
+    skos:related <https://w3id.org/hector/commodity/tin-foil> ;
+    la:equivalent aat:300011039 ;
+    hector:attestationCount 52 ;
+    hector:taxation <https://w3id.org/hector/commodity/leaf#rate-1545-inward-435>,
+        <https://w3id.org/hector/commodity/leaf#rate-1558-inward-463>,
+        <https://w3id.org/hector/commodity/leaf#rate-1558-inward-533>,
+        <https://w3id.org/hector/commodity/leaf#rate-1558-inward-658> .
+
+aat:300011039 a crm:E55_Type ;
+    rdfs:label "leaf (metal)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/leaf#rate-1545-inward-435> a hector:Rate ;
+    rdfs:label "1545 inward: Leves of golde the hunderith 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 435 (transcribed by Stuart Jenks): 'Leves of golde the hunderith' 2s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/leaf#rate-1558-inward-463> a hector:Rate ;
+    rdfs:label "1558 inward: Folium the pounde 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 463 (transcribed by Stuart Jenks): 'Folium the pounde' 12d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/leaf#rate-1558-inward-533> a hector:Rate ;
+    rdfs:label "1558 inward: Golde foile the grosse 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 533 (transcribed by Stuart Jenks): 'Golde foile the grosse' 3s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/leaf#rate-1558-inward-658> a hector:Rate ;
+    rdfs:label "1558 inward: Leves of gold the C cont’ 5 score 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 658 (transcribed by Stuart Jenks): 'Leves of gold the C cont’ 5 score' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/tin-foil> a crm:E55_Type ;
+    rdfs:label "tin foil" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/leaf> a crm:E55_Type ;
+    rdfs:label "leaf (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

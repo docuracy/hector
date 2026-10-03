@@ -1,0 +1,129 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/quire> a crm:E58_Measurement_Unit ;
+    rdfs:label "quire" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwers" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaternia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaternia" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaterniae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaternie" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quayer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaier" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quayers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaiers" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "queyres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kweirəs" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quayrs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwairs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "queyre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kweirə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quayr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwair" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quires" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwirəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quire" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kwirə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwer" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaier" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaier" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quaiers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kwaiers" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "quire (of paper), a set of four sheets of parchment or paper doubled so as to form eight leaves (OED quire n.1) | measure of paper quantity [Source: Wikidata]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/quire>,
+        <https://w3id.org/mlca/glossary/quire> ;
+    skos:broader aat:300386648 ;
+    la:equivalent wd:Q16930882 ;
+    hector:attestationCount 23 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q16930882 a crm:E55_Type ;
+    rdfs:label "quire" .
+
+<https://w3id.org/hector/commodity/quire> a crm:E55_Type ;
+    rdfs:label "quire" .
+
+<https://w3id.org/mlca/glossary/quire> a crm:E55_Type ;
+    rdfs:label "quire (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

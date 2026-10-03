@@ -1,0 +1,147 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shank> a crm:E55_Type ;
+    rdfs:label "shank" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shank" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃaŋk" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shanke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaŋkə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shankes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaŋkəs" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shankke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaŋkə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shankkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃaŋkəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "fur obtained from the legs of animals, especially kids, goats or sheep, and used for trimming outer garments (Veale 217) | fur obtained from the legs of animals, esp. kids, goats or sheep, and used for trimming outer garments (OED s.v. shank 2) | furs made of the skins from the legs of the animal and used for trimming outer garments (Veale 217) | [fox] fur of the leg of the fox | fur obtained from the legs of animals, esp. kids, goats or sheep, and used for trimming outer garments (Veale 217; OED s.v. shank n. 2) | fur obtained from the legs of animals, especially kids, goats or sheep, and used for trimming outer garments (Veale 217; OED s.v. shank n. 2) | shanks are fur obtained from the legs of animals, especially kids, goats or sheep, and used for trimming outer garments (Veale 217; OED s.v. shank n. 2), while a tavelyn is a small package of skins or furs, but it is unknown what they designate when used together" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shank> ;
+    skos:related <https://w3id.org/hector/commodity/lamb-shank> ;
+    hector:attestationCount 202 ;
+    hector:taxation <https://w3id.org/hector/commodity/shank#rate-1507-none-262>,
+        <https://w3id.org/hector/commodity/shank#rate-1507-none-263>,
+        <https://w3id.org/hector/commodity/shank#rate-1507-none-304>,
+        <https://w3id.org/hector/commodity/shank#rate-1545-inward-694>,
+        <https://w3id.org/hector/commodity/shank#rate-1558-inward-994> .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lamb-shank> a crm:E55_Type ;
+    rdfs:label "lamb shank" .
+
+<https://w3id.org/hector/commodity/shank#rate-1507-none-262> a hector:Rate ;
+    rdfs:label "1507: Shankes the pane 16s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "16s 8d" ;
+            hector:valueInPence 200.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pane> ] ;
+    hector:sourceText "Book of Rates 1507, line 262 (transcribed by Stuart Jenks): 'Shankes the pane' 16s 8d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/shank#rate-1507-none-263> a hector:Rate ;
+    rdfs:label "1507: Shankes in tawlynges the C 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1507, line 263 (transcribed by Stuart Jenks): 'Shankes in tawlynges the C' 6s 8d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/shank#rate-1507-none-304> a hector:Rate ;
+    rdfs:label "1507: Tavelynges of shankes the C 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1507, line 304 (transcribed by Stuart Jenks): 'Tavelynges of shankes the C' 6s 8d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/shank#rate-1545-inward-694> a hector:Rate ;
+    rdfs:label "1545 inward: Shankes the pane 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pane> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 694 (transcribed by Stuart Jenks): 'Shankes the pane' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/shank#rate-1558-inward-994> a hector:Rate ;
+    rdfs:label "1558 inward: Shankes the pane or mantell 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pane> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 994 (transcribed by Stuart Jenks): 'Shankes the pane or mantell' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/shank> a crm:E55_Type ;
+    rdfs:label "shank (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pane> a crm:E58_Measurement_Unit ;
+    rdfs:label "pane" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/aqua-rosarum> a crm:E55_Type ;
+    rdfs:label "aqua rosarum" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rosarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rosarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aque viridis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwe viridis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aque rose" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwe rosə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aqua viridis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwa viridis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aqua rosarum" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "akwa rosarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aqua dulce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwa dulsə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aque rosarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwe rosarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "aqua rose" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "akwa rosə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Water distilled from roses or scented with essence of roses, used as a perfume, scenting a room, flavoring, in medicinal preparations, or for other purposes. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/aqua%20rosarum> ;
+    la:equivalent aat:300404831 ;
+    hector:attestationCount 49 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404831 a crm:E55_Type ;
+    rdfs:label "rosewater" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/aqua%20rosarum> a crm:E55_Type ;
+    rdfs:label "aqua rosarum (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,54 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/passion-book> a crm:E55_Type ;
+    rdfs:label "passion book" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "passion book" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pasion boːk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "passion boke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pasion bokə" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "passion bokes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pasion bokəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "books containing a narrative (images) of Christ's passion (or a saint's) (MED s.v. passioun n. 3d, 3e)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300220519 ;
+    skos:closeMatch aat:300028051 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/passion%20book> ;
+    hector:attestationCount 2 .
+
+aat:300028051 a crm:E55_Type ;
+    rdfs:label "books" .
+
+aat:300220519 a crm:E55_Type ;
+    rdfs:label "religious texts" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/passion%20book> a crm:E55_Type ;
+    rdfs:label "passion book (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

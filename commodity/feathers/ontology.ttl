@@ -1,0 +1,280 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/feathers> a crm:E55_Type ;
+    rdfs:label "feathers" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feddir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedir" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumorum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fether" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθer" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fethre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθrə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feather" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fɛːθer" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feþeres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθerəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feddirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedirs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pluma" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pluma" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feathers" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "fɛːθers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedirs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fethres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθrəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumus" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedir" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumer" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feþer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθer" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fethers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθers" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feþeris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθeris" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumers" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fethir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθir" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plume" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumi" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feder" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feder" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plume" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fethirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feθirs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "feders" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feders" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "fedires" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "fedirəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Feather (OE feþer; Latin pluma). Bird plumage traded for ornament, dress, bedding and for fletching arrows; recorded especially as ostrich and pheasant feathers. See also swan feathers." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/feathers> ;
+    skos:related <https://w3id.org/hector/commodity/swan-feathers> ;
+    la:equivalent aat:300400474 ;
+    hector:attestationCount 182 ;
+    hector:taxation <https://w3id.org/hector/commodity/feathers#rate-1507-none-85>,
+        <https://w3id.org/hector/commodity/feathers#rate-1545-inward-252>,
+        <https://w3id.org/hector/commodity/feathers#rate-1545-inward-280>,
+        <https://w3id.org/hector/commodity/feathers#rate-1558-inward-417>,
+        <https://w3id.org/hector/commodity/feathers#rate-1558-inward-453>,
+        <https://w3id.org/hector/commodity/feathers#rate-1558-inward-464> .
+
+aat:300400474 a crm:E55_Type ;
+    rdfs:label "feathers (animal components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/feathers#rate-1507-none-85> a hector:Rate ;
+    rdfs:label "1507: Fethers for beddes the C wayte 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:sourceText "Book of Rates 1507, line 85 (transcribed by Stuart Jenks): 'Fethers for beddes the C wayte' 10s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/feathers#rate-1545-inward-252> a hector:Rate ;
+    rdfs:label "1545 inward: Esteryche fethers the tufte or bonde 20d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20d" ;
+            hector:valueInPence 20.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/tufte> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 252 (transcribed by Stuart Jenks): 'Esteryche fethers the tufte or bonde' 20d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/feathers#rate-1545-inward-280> a hector:Rate ;
+    rdfs:label "1545 inward: Fethers for beddes the 100 pounde 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 280 (transcribed by Stuart Jenks): 'Fethers for beddes the 100 pounde' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/feathers#rate-1558-inward-417> a hector:Rate ;
+    rdfs:label "1558 inward: Fethers for beddes the C lb. cont’ 112 lb 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 417 (transcribed by Stuart Jenks): 'Fethers for beddes the C lb. cont’ 112 lb' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/feathers#rate-1558-inward-453> a hector:Rate ;
+    rdfs:label "1558 inward: Fethers voc’ estrege fethers the tufte 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/tufte> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 453 (transcribed by Stuart Jenks): 'Fethers voc’ estrege fethers the tufte' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/feathers#rate-1558-inward-464> a hector:Rate ;
+    rdfs:label "1558 inward: Fethers voc’ estredge undressed the pounde 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 464 (transcribed by Stuart Jenks): 'Fethers voc’ estredge undressed the pounde' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/swan-feathers> a crm:E55_Type ;
+    rdfs:label "swan feathers" .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/feathers> a crm:E55_Type ;
+    rdfs:label "feathers (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/tufte> a crm:E58_Measurement_Unit ;
+    rdfs:label "tufte" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

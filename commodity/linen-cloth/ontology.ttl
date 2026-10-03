@@ -1,0 +1,136 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/linen-cloth> a crm:E55_Type ;
+    rdfs:label "linen cloth" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lynen cloth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen kloθ" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "linnen teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen teli" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "linen cloth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "linen kloθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lynen teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen teli" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lynnen clothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen kloθə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tela cloth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tela kloθ" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lynen clothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen kloθə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lynnen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "line teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linə teli" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lini teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lini teli" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "linen teli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "linen teli" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "General name for textile woven from the spun fiber of the flax plant. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/linen%20cloth> ;
+    la:equivalent aat:300014069 ;
+    hector:attestationCount 38 ;
+    hector:taxation <https://w3id.org/hector/commodity/linen-cloth#rate-1545-outward-30>,
+        <https://w3id.org/hector/commodity/linen-cloth#rate-1558-outward-38> .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/linen-cloth#rate-1545-outward-30> a hector:Rate ;
+    rdfs:label "1545 outward: Lynnen clothe the elle 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4d" ;
+            hector:valueInPence 4.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ell> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 30 (transcribed by Stuart Jenks): 'Lynnen clothe the elle' 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/linen-cloth#rate-1558-outward-38> a hector:Rate ;
+    rdfs:label "1558 outward: Lynnen shreddes voc’ ragges, the maunde or fatte 26s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "26s 8d" ;
+            hector:valueInPence 320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/maund> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 38 (transcribed by Stuart Jenks): 'Lynnen shreddes voc’ ragges, the maunde or fatte' 26s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/ell> a crm:E58_Measurement_Unit ;
+    rdfs:label "ell" .
+
+<https://w3id.org/hector/unit/maund> a crm:E58_Measurement_Unit ;
+    rdfs:label "maund" .
+
+<https://w3id.org/mlca/glossary/linen%20cloth> a crm:E55_Type ;
+    rdfs:label "linen cloth (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

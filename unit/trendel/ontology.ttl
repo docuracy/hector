@@ -1,0 +1,77 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/trendel> a crm:E58_Measurement_Unit ;
+    rdfs:label "trendel" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trendel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "trendel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trendell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trendel" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tryndelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trindelə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trendall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trendal" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trendelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trendeləs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trendelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trendelə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a rounded bowl or platter (MED s.v. trendel n.); a vessel of flat rounded form, a round or oval tub used for various purposes, here as a packing unit for wax (OED s.v. trendle n. 4; Gras 763); also used as a packing unit for splintes pro hattes, but exact meaning in that context unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/trendel>,
+        <https://w3id.org/mlca/glossary/trendel> ;
+    skos:broader aat:300042946,
+        aat:300386648 ;
+    hector:attestationCount 6 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300042946 a crm:E55_Type ;
+    rdfs:label "bowls (object components)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/trendel> a crm:E55_Type ;
+    rdfs:label "trendel" .
+
+<https://w3id.org/mlca/glossary/trendel> a crm:E55_Type ;
+    rdfs:label "trendel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

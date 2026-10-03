@@ -1,0 +1,115 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/candle-snuffer> a crm:E55_Type ;
+    rdfs:label "candle snuffer" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snoffer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snofer" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snoffers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snofers" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snuffar latynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snufar latinəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candle snoffer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandlə snofer" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candel snoffers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandel snofers" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snuffer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snufer" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snuffar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snufar" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candel snoffer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandel snofer" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candle snuffer" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kandlə snufer" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "snuffers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "snufers" ;
+            hector:validFrom "1509"^^xsd:gYear ;
+            hector:validThrough "1510"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "candle snoffers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kandlə snofers" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Devices for trimming the wicks of candles and lamps to keep the end of the wick even and clean; usually in the form of scissors with one blade bearing a boxlike receptacle to catch the cut-off ends of the charred wick. For scissorlike devices with flat disc-shaped ends used for pinching out a candle flame, use \"douters.\" For cone-shaped devices used to extinguish flames, use \"extinguishers.\" [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/candle%20snuffer> ;
+    la:equivalent aat:300181446 ;
+    hector:attestationCount 14 ;
+    hector:taxation <https://w3id.org/hector/commodity/candle-snuffer#rate-1558-inward-193> .
+
+aat:300181446 a crm:E55_Type ;
+    rdfs:label "candle snuffers" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/candle-snuffer#rate-1558-inward-193> a hector:Rate ;
+    rdfs:label "1558 inward: Candle snoffers the dosen 2s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s 8d" ;
+            hector:valueInPence 32.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 193 (transcribed by Stuart Jenks): 'Candle snoffers the dosen' 2s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/mlca/glossary/candle%20snuffer> a crm:E55_Type ;
+    rdfs:label "candle snuffer (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

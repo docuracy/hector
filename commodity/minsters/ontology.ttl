@@ -1,0 +1,95 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/minsters> a crm:E55_Type ;
+    rdfs:label "minsters" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tele lini minstris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "telə lini minstris" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mynstars" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "minstars" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "minsters" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "minsters" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mynsters" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "minsters" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "cloth made in Münster" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300162391 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/minsters> ;
+    hector:attestationCount 71 ;
+    hector:originPlace wd:Q2742 ;
+    hector:taxation <https://w3id.org/hector/commodity/minsters#rate-1545-inward-467>,
+        <https://w3id.org/hector/commodity/minsters#rate-1558-inward-711> .
+
+aat:300162391 a crm:E55_Type ;
+    rdfs:label "cloth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q2742 a crm:E53_Place ;
+    rdfs:label "Münster" .
+
+<https://w3id.org/hector/commodity/minsters#rate-1545-inward-467> a hector:Rate ;
+    rdfs:label "1545 inward: Mynsters the roule £10" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£10" ;
+            hector:valueInPence 2400.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/roll> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 467 (transcribed by Stuart Jenks): 'Mynsters the roule' £10" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/minsters#rate-1558-inward-711> a hector:Rate ;
+    rdfs:label "1558 inward: Mynsters the roll cont’ 15 C elles at 5 score [ells] the C £16 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£16 13s 4d" ;
+            hector:valueInPence 4000.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/roll> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 711 (transcribed by Stuart Jenks): 'Mynsters the roll cont’ 15 C elles at 5 score [ells] the C' £16 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/minsters> a crm:E55_Type ;
+    rdfs:label "minsters (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/roll> a crm:E58_Measurement_Unit ;
+    rdfs:label "roll" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

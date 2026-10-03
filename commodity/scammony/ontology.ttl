@@ -1,0 +1,85 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/scammony> a crm:E55_Type ;
+    rdfs:label "scammony" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamony" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamoni" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squamone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwamonə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamoniae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamonie" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamonia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamonia" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamonye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamonie" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamonə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scammony" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skamoni" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scamonie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skamoniː" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "scammony, a gum-resin obtained from the tuberous roots of Convolvulus Scammonia, used in medicine as a strong purgative; also the dried tuberous root from which the drug is prepared (OED s.v. scammony; Heyd 648-9; Stieda, Venice 105-6)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/scammony> ;
+    la:equivalent aat:300012940 ;
+    hector:attestationCount 26 .
+
+aat:300012940 a crm:E55_Type ;
+    rdfs:label "gum resin" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/scammony> a crm:E55_Type ;
+    rdfs:label "scammony (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

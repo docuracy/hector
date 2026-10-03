@@ -1,0 +1,135 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/coral> a crm:E55_Type ;
+    rdfs:label "coral" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coral" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "koral" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "currall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kural" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corallus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koralus" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corrall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koral" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coralli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korali" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corale" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koralə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koral" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "curall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kural" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "corallum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koralum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coraille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "korailə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coralle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koralə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "curalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kuralə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Hard material consisting of calcium carbonate derived from the skeletal deposits of certain marine animals. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/coral> ;
+    la:equivalent aat:300011800 ;
+    hector:attestationCount 24 ;
+    hector:taxation <https://w3id.org/hector/commodity/coral#rate-1545-inward-162>,
+        <https://w3id.org/hector/commodity/coral#rate-1558-inward-259> .
+
+aat:300011800 a crm:E55_Type ;
+    rdfs:label "coral (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/coral#rate-1545-inward-162> a hector:Rate ;
+    rdfs:label "1545 inward: Corrall the mast 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/mast> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 162 (transcribed by Stuart Jenks): 'Corrall the mast' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/coral#rate-1558-inward-259> a hector:Rate ;
+    rdfs:label "1558 inward: Currall whyte or redd the maste cont’ 2½ lb 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/mast> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 259 (transcribed by Stuart Jenks): 'Currall whyte or redd the maste cont’ 2½ lb' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/coral> a crm:E55_Type ;
+    rdfs:label "coral (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/mast> a crm:E58_Measurement_Unit ;
+    rdfs:label "mast" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,111 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/timber> a crm:E58_Measurement_Unit ;
+    rdfs:label "timber" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbir" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbar" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymber" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timber" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbr" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "timbir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbir" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbyr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbir" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "timber" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "timber" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbrəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "timbre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbrə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tymbre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "timbrə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "timber, a measure of quantity of furs (40 skins) (Zupko 413-4)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/timber>,
+        <https://w3id.org/mlca/glossary/timber> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 912 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (timber: '40 skins', Zupko 413-4); units.tsv ('tymbre 40 furs'). Note: of furs" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 40 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/timber> a crm:E55_Type ;
+    rdfs:label "timber" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/timber> a crm:E55_Type ;
+    rdfs:label "timber (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

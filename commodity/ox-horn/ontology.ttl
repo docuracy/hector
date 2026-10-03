@@ -1,0 +1,72 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/ox-horn> a crm:E55_Type ;
+    rdfs:label "ox horn" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hornes bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hornəs bovium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horn bovium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horn bovium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oxhornes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okshornəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oxhornys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okshornis" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horn bovis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horn bovis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "oxhorn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "okshorn" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ox horn" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "oks horn" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ox horn" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011826,
+        aat:300250282 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/ox%20horn> ;
+    hector:attestationCount 4 .
+
+aat:300011826 a crm:E55_Type ;
+    rdfs:label "horn (animal material)" .
+
+aat:300250282 a crm:E55_Type ;
+    rdfs:label "oxen" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/ox%20horn> a crm:E55_Type ;
+    rdfs:label "ox horn (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

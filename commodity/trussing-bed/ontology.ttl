@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/trussing-bed> a crm:E55_Type ;
+    rdfs:label "trussing bed" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trusshing bedde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "truʃiŋ bedə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussyng bedde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ bedə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussyng beddes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ bedəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trussing bed" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "trusiŋ bed" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trusshing beddes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "truʃiŋ bedəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a bed designed to be taken apart and packed for travelling, a portable bed (OED s.v. trussing vbl.n. 3, MED s.v. trussing(e ger.)) | bed used for packing (OED s.v. trussing vbl.n. 3)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300174746 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/trussing%20bed> ;
+    hector:attestationCount 2 .
+
+aat:300174746 a crm:E55_Type ;
+    rdfs:label "suitcase beds" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/trussing%20bed> a crm:E55_Type ;
+    rdfs:label "trussing bed (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

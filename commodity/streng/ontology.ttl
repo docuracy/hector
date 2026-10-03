@@ -1,0 +1,67 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/streng> a crm:E55_Type ;
+    rdfs:label "streng" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "streng" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "streŋ" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "strenges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "strendʒəs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stryng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "striŋ" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "strynges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "strindʒəs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "rope, cord, line (MED s.v. streng n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300014247 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/streng> ;
+    la:equivalent aat:300014248,
+        aat:300191094 ;
+    hector:attestationCount 32 .
+
+aat:300014247 a crm:E55_Type ;
+    rdfs:label "cord (fiber product)" .
+
+aat:300014248 a crm:E55_Type ;
+    rdfs:label "rope" .
+
+aat:300191094 a crm:E55_Type ;
+    rdfs:label "strings (chordophone components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/streng> a crm:E55_Type ;
+    rdfs:label "streng (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

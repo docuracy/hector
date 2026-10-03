@@ -1,0 +1,140 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lucern> a crm:E55_Type ;
+    rdfs:label "lucern" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lewsernes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "leusernəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusarn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusarn" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucewark" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luseuark" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lossen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "losen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "luzerns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luzerns" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "luswerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luswerk" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucewerke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luseuerkə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusorne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusornə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusern" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusern" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusernes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusernəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "luserns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luserns" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucewerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luseuerk" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "luzern" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "luzern" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lucern" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lusern" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusarne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusarnə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lusard" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lusard" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lewserne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "leusernə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "skin of the lynx (OED s.v. lucern) | lynx fur (Veale 226, MED s.v. luskwerk) | lucewerk, lynx fur (Veale 226, MED s.v. luskwerk) | some kind of squirrel fur (Veale 226, 246)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lucern> ;
+    hector:attestationCount 94 ;
+    hector:taxation <https://w3id.org/hector/commodity/lucern#rate-1558-inward-675> .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lucern#rate-1558-inward-675> a hector:Rate ;
+    rdfs:label "1558 inward: Lewsernes the pece 40s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "40s" ;
+            hector:valueInPence 480.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 675 (transcribed by Stuart Jenks): 'Lewsernes the pece' 40s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/lucern> a crm:E55_Type ;
+    rdfs:label "lucern (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

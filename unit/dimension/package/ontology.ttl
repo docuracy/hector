@@ -1,0 +1,13 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://w3id.org/hector/unit/dimension/package> a crm:E55_Type ;
+    rdfs:label "package" ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Packing and transport units (bale, fardel, chest, sack as a packing unit, basket) whose content is customary, variable or specific to the commodity packed. Not a physical dimension: a unit here gives a count of packages, and any known contents are commodity-specific statements, not definitions. A cask or a sack is both a measure and a package, and carries both dimensions." ;
+            crm:P2_has_type aat:300418049 ] .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+

@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/card-board> a crm:E55_Type ;
+    rdfs:label "card board" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cardebord" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kardebord" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "card board" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kard board" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "card bordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kard bordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cardebordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kardebordəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Specialized combs, typically made of wood, comprising a flat surface covered by iron nails, wire teeth, or other sharp objects designed to manually disentangible the fibres from textile materials prior to spinning. [Source: Getty AAT] | pieces of wood for making cardes" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300422672 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/card%20board> ;
+    skos:related <https://w3id.org/hector/commodity/board>,
+        <https://w3id.org/hector/commodity/card-nails> ;
+    hector:attestationCount 1 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300422672 a crm:E55_Type ;
+    rdfs:label "carding combs" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/board> a crm:E55_Type ;
+    rdfs:label "board" .
+
+<https://w3id.org/hector/commodity/card-nails> a crm:E55_Type ;
+    rdfs:label "card nails" .
+
+<https://w3id.org/mlca/glossary/card%20board> a crm:E55_Type ;
+    rdfs:label "card board (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

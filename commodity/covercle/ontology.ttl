@@ -1,0 +1,87 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/covercle> a crm:E55_Type ;
+    rdfs:label "covercle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkləs" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkel" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkelə" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkels" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverklə" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "covercle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "koverklə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "covercles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkləs" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "coverkeles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "koverkeləs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Covers for the opening at the top of a vessel or other receptacle, or which close the mouth of an aperture; lids may be detached or turned upon a hinge in order to give access to the interior. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/covercle> ;
+    skos:related <https://w3id.org/hector/commodity/coveryng> ;
+    la:equivalent aat:300045712 ;
+    hector:attestationCount 12 .
+
+aat:300045712 a crm:E55_Type ;
+    rdfs:label "lids (covers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/coveryng> a crm:E55_Type ;
+    rdfs:label "coveryng" .
+
+<https://w3id.org/mlca/glossary/covercle> a crm:E55_Type ;
+    rdfs:label "covercle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

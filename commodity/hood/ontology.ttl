@@ -1,0 +1,83 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hood> a crm:E55_Type ;
+    rdfs:label "hood" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hoːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capicii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapisi" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hodes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hodəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capisii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapisi" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capicium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapisium" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capisium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapisium" ;
+            hector:validFrom "1439"^^xsd:gYear ;
+            hector:validThrough "1440"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caprone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapronə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capucinis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapusinis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hode" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hodə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "capuciis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kapusis" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Soft coverings for the head and neck, and sometimes extending to the shoulders, either separate or attached to a garment. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hood> ;
+    la:equivalent aat:300046121 ;
+    hector:attestationCount 104 .
+
+aat:300046121 a crm:E55_Type ;
+    rdfs:label "hoods (headgear)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/hood> a crm:E55_Type ;
+    rdfs:label "hood (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

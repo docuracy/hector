@@ -1,0 +1,142 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/caddis-2> a crm:E55_Type ;
+    rdfs:label "caddis_2" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cadis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadis" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caddys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadis" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cades peces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadəs pesəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cadde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filett cadez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filet kadez" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cadace" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadasə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cadas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadas" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caddis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caddis_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "kadis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "filett cadezes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "filet kadezəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caddes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caddas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kadas" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Fine, loosely twisted, two-ply, worsted yarn used in embroidering. [Source: Getty AAT] | Short for caddis ribbon: A worsted tape or binding, used for garters, etc.[Source: OED Caddis 2c]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300227812 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/caddis_2> ;
+    la:equivalent wd:Q2932703 ;
+    hector:attestationCount 97 ;
+    hector:taxation <https://w3id.org/hector/commodity/caddis-2#rate-1545-inward-621>,
+        <https://w3id.org/hector/commodity/caddis-2#rate-1545-inward-728> .
+
+aat:300227812 a crm:E55_Type ;
+    rdfs:label "crewel wool" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q2932703 a crm:E55_Type ;
+    rdfs:label "caddis" .
+
+<https://w3id.org/hector/commodity/caddis-2#rate-1545-inward-621> a hector:Rate ;
+    rdfs:label "1545 inward: Ribbonde or caddas the dossen peces 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 621 (transcribed by Stuart Jenks): 'Ribbonde or caddas the dossen peces' 4s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/caddis-2#rate-1545-inward-728> a hector:Rate ;
+    rdfs:label "1545 inward: Tapistry wyth caddas the ell 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/ell> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 728 (transcribed by Stuart Jenks): 'Tapistry wyth caddas the ell' 12d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/ell> a crm:E58_Measurement_Unit ;
+    rdfs:label "ell" .
+
+<https://w3id.org/mlca/glossary/caddis_2> a crm:E55_Type ;
+    rdfs:label "caddis_2 (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

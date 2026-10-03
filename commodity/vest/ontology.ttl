@@ -1,0 +1,51 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/vest> a crm:E55_Type ;
+    rdfs:label "vest" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vestes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vestəs" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "veste" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vestə" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vest" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "vest" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Close-fitting main garments extending to the waist or just below. Sleeveless and usually collarless, and often having buttons or pockets. For close-fitting main garments extending below the waistline that are usually front-buttoning and may have sleeves, that are worn over a shirt and under a coat or jacket, use \"waistcoats.\" [Source: Getty AAT] | cpossibly a (sleeveless) garment made of linen cloth (OED s.v. vest n., but first citations are 17th century) or some sort of measure of linen cloth, but exact meaning unknown" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/vest> ;
+    la:equivalent aat:300209904 ;
+    hector:attestationCount 1 .
+
+aat:300209904 a crm:E55_Type ;
+    rdfs:label "vests (garments)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/vest> a crm:E55_Type ;
+    rdfs:label "vest (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

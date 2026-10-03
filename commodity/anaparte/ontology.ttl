@@ -1,0 +1,49 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/anaparte> a crm:E55_Type ;
+    rdfs:label "anaparte" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "anaparte" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "anapartə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Possibly fustian from Naples: Strong cloth woven in a variety of patterns, in common use for bedding and lining for clothing from the 17th to the 19th century. Prior to the 17th century it was made of worsted, then pure cotton or mixes of cotton and linen became common; today generally a cotton twill with a short nap. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300132887 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/anaparte> ;
+    skos:related <https://w3id.org/hector/commodity/fustian> ;
+    hector:attestationCount 1 ;
+    hector:originPlace wd:Q2634 .
+
+aat:300132887 a crm:E55_Type ;
+    rdfs:label "fustian" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q2634 a crm:E53_Place ;
+    rdfs:label "Naples" .
+
+<https://w3id.org/hector/commodity/fustian> a crm:E55_Type ;
+    rdfs:label "fustian" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/anaparte> a crm:E55_Type ;
+    rdfs:label "anaparte (London Customs Accounts glossary)" .
+

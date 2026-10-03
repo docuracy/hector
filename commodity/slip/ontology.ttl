@@ -1,0 +1,152 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/slip> a crm:E55_Type ;
+    rdfs:label "slip" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slypp" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slip" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sluppe otherwyse called fyelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slupə oθerwisə kaled fielə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slyppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slip" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "slip" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slype" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipə" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slipp" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slip" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slippes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slipes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipəs" ;
+            hector:validFrom "1483"^^xsd:gYear ;
+            hector:validThrough "1485"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slypes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "slippe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "slipə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "filing debris or waste resulting from manufacturing processes [Source: Wikidata] | filings or shavings of iron or steel; also the wet or greasy grit abraded from a grindstone or axle, used illicitly for dyeing black (OED s.v. swarf n.¹ and n.²; Act 8 Eliz. c.11 §3, 1566)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300010900 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/slip> ;
+    skos:related <https://w3id.org/hector/commodity/swarf> ;
+    la:equivalent wd:Q1225294 ;
+    hector:attestationCount 25 ;
+    hector:taxation <https://w3id.org/hector/commodity/slip#rate-1507-none-260>,
+        <https://w3id.org/hector/commodity/slip#rate-1545-inward-699>,
+        <https://w3id.org/hector/commodity/slip#rate-1558-inward-985> .
+
+aat:300010900 a crm:E55_Type ;
+    rdfs:label "metal" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q1225294 a crm:E55_Type ;
+    rdfs:label "swarf" .
+
+<https://w3id.org/hector/commodity/slip#rate-1507-none-260> a hector:Rate ;
+    rdfs:label "1507: Slyppe the barrelle 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1507, line 260 (transcribed by Stuart Jenks): 'Slyppe the barrelle' 3s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/slip#rate-1545-inward-699> a hector:Rate ;
+    rdfs:label "1545 inward: Slippe the barell 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 699 (transcribed by Stuart Jenks): 'Slippe the barell' 2s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/slip#rate-1558-inward-985> a hector:Rate ;
+    rdfs:label "1558 inward: Slype the barrell 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 985 (transcribed by Stuart Jenks): 'Slype the barrell' 3s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/swarf> a crm:E55_Type ;
+    rdfs:label "swarf" .
+
+<https://w3id.org/mlca/glossary/slip> a crm:E55_Type ;
+    rdfs:label "slip (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

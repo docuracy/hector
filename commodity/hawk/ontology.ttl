@@ -1,0 +1,108 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hawk> a crm:E55_Type ;
+    rdfs:label "hawk" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "haukes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawk" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hauk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hauke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "accipiter" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "asipiter" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hawkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "haukəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "hawk: a bird of prey used in falconry, generic (cf. tiercel, gyrfalcon)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hawk> ;
+    skos:related <https://w3id.org/hector/commodity/goshawk>,
+        <https://w3id.org/hector/commodity/gyrfalcon>,
+        <https://w3id.org/hector/commodity/tiercel> ;
+    la:equivalent aat:300379800 ;
+    hector:attestationCount 20 ;
+    hector:taxation <https://w3id.org/hector/commodity/hawk#rate-1545-inward-381>,
+        <https://w3id.org/hector/commodity/hawk#rate-1545-inward-464> .
+
+aat:300379800 a crm:E55_Type ;
+    rdfs:label "hawks (bird)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/goshawk> a crm:E55_Type ;
+    rdfs:label "goshawk" .
+
+<https://w3id.org/hector/commodity/gyrfalcon> a crm:E55_Type ;
+    rdfs:label "gyrfalcon" .
+
+<https://w3id.org/hector/commodity/hawk#rate-1545-inward-381> a hector:Rate ;
+    rdfs:label "1545 inward: Haukes heddes the groce 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 381 (transcribed by Stuart Jenks): 'Haukes heddes the groce' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/hawk#rate-1545-inward-464> a hector:Rate ;
+    rdfs:label "1545 inward: Leures for haukes the pece 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4d" ;
+            hector:valueInPence 4.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 464 (transcribed by Stuart Jenks): 'Leures for haukes the pece' 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/tiercel> a crm:E55_Type ;
+    rdfs:label "tiercel" .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/hawk> a crm:E55_Type ;
+    rdfs:label "hawk (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

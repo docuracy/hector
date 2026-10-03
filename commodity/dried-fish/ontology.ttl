@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/dried-fish> a crm:E55_Type ;
+    rdfs:label "dried fish" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dry fish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dri fiʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dryfysh" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "drifiʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dried fish" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "driːd fiʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dryfysshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "drifiʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dryfish" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "drifiʃ" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "dried fish: fish preserved by drying (not indexed by Jenks)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/dried%20fish> ;
+    skos:related <https://w3id.org/hector/commodity/fish> ;
+    hector:attestationCount 2 .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/fish> a crm:E55_Type ;
+    rdfs:label "fish" .
+
+<https://w3id.org/mlca/glossary/dried%20fish> a crm:E55_Type ;
+    rdfs:label "dried fish (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,74 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/trifle-2> a crm:E55_Type ;
+    rdfs:label "trifle_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifle_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "triflə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifull" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "triful" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifoles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trifoləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trifolə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifulles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "trifuləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trifle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "triflə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to small ornaments, typically showy inexpensive jewelry or other articles for personal adornment or attached to clothing. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/trifle_2> ;
+    skos:related <https://w3id.org/hector/commodity/gewgaw>,
+        <https://w3id.org/hector/commodity/jape> ;
+    la:equivalent aat:300266122 ;
+    hector:attestationCount 3 .
+
+aat:300266122 a crm:E55_Type ;
+    rdfs:label "trinkets" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/gewgaw> a crm:E55_Type ;
+    rdfs:label "gewgaw" .
+
+<https://w3id.org/hector/commodity/jape> a crm:E55_Type ;
+    rdfs:label "jape" .
+
+<https://w3id.org/mlca/glossary/trifle_2> a crm:E55_Type ;
+    rdfs:label "trifle_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

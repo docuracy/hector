@@ -1,0 +1,150 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gyrfalcon> a crm:E55_Type ;
+    rdfs:label "gyrfalcon" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gyrfalcon" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "girfalkon" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerfawcon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfaukon" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "girkyns hawke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒirkins haukə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerfawkon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfaukon" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gerken" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerken" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerkins hawk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerkins hauk" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerkins hawkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerkins haukəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerfawcons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfaukons" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerfawkons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfaukons" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jarfaucon hauke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒarfaukon haukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerkin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerkin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "jerfalcon hawkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfalkon haukəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gerkens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerkens" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gerfalcon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfalkon" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gerfalcons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒerfalkons" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "girkyns hawkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dʒirkins haukəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a large falcon, especially one used to fly at herons (OED s.v. gyrfalcon) | a large falcon, especially one used to fly at herons (OED s.v. gyrfalcon, MED s.v. gerfaucoun n.) | the male of the gyrfalcon, Falco rusticolus (OED s.v. gyrfalcon, jerkin) | the male of the gyrfalcon, Falco rusticolus (OED s.v. gyrkin n.) | gyrkin, male of the gyrfalcon, Falco rusticolus (OED s.v. jerkin)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300379800 ;
+    skos:closeMatch aat:300435103 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gyrfalcon> ;
+    skos:related <https://w3id.org/hector/commodity/falcon> ;
+    hector:attestationCount 9 ;
+    hector:taxation <https://w3id.org/hector/commodity/gyrfalcon#rate-1558-inward-555> .
+
+aat:300379800 a crm:E55_Type ;
+    rdfs:label "hawks (bird)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435103 a crm:E55_Type ;
+    rdfs:label "falconry" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/falcon> a crm:E55_Type ;
+    rdfs:label "falcon" .
+
+<https://w3id.org/hector/commodity/gyrfalcon#rate-1558-inward-555> a hector:Rate ;
+    rdfs:label "1558 inward: Hawkes voc’ jerfalcon hawkes the hawke 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 555 (transcribed by Stuart Jenks): 'Hawkes voc’ jerfalcon hawkes the hawke' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+<https://w3id.org/mlca/glossary/gyrfalcon> a crm:E55_Type ;
+    rdfs:label "gyrfalcon (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

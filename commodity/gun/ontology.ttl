@@ -1,0 +1,159 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gun> a crm:E55_Type ;
+    rdfs:label "gun" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gons" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gun" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gun" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gon" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gon" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gonnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gonis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gunnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gunis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gonne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gownnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "guːnis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gonnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gonəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gunys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gunis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gunes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gunəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gonn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gon" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gounn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "guːn" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gounnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "guːnis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gownn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "guːn" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Gun / cannon (OED s.v. gun 1a): a piece of ordnance, of iron or brass, in various sizes (from great cannon to the small 'base' and 'demi-hawk'), some breech-loading 'with chambers'. See also gunstone, gunpowder, hand gun, gune horn (powder-horn) and gonnelack (gunlock)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300208782 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gun> ;
+    skos:related <https://w3id.org/hector/commodity/base>,
+        <https://w3id.org/hector/commodity/gun-horn>,
+        <https://w3id.org/hector/commodity/gunlock>,
+        <https://w3id.org/hector/commodity/gunpowder>,
+        <https://w3id.org/hector/commodity/gunstone>,
+        <https://w3id.org/hector/commodity/hand-gun>,
+        <https://w3id.org/hector/commodity/harquebus>,
+        <https://w3id.org/hector/commodity/serpentine> ;
+    hector:attestationCount 58 ;
+    hector:taxation <https://w3id.org/hector/commodity/gun#rate-1545-inward-324>,
+        <https://w3id.org/hector/commodity/gun#rate-1558-inward-517> .
+
+aat:300208782 a crm:E55_Type ;
+    rdfs:label "<projectile weapons with explosive propellant>" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/base> a crm:E55_Type ;
+    rdfs:label "base" .
+
+<https://w3id.org/hector/commodity/gun#rate-1545-inward-324> a hector:Rate ;
+    rdfs:label "1545 inward: Gonne pouder the 100 pounde 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 324 (transcribed by Stuart Jenks): 'Gonne pouder the 100 pounde' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/gun#rate-1558-inward-517> a hector:Rate ;
+    rdfs:label "1558 inward: Gonnes voc’ handgonnes or half hakes the pece 5s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "5s" ;
+            hector:valueInPence 60.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 517 (transcribed by Stuart Jenks): 'Gonnes voc’ handgonnes or half hakes the pece' 5s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/gun-horn> a crm:E55_Type ;
+    rdfs:label "gun horn" .
+
+<https://w3id.org/hector/commodity/gunlock> a crm:E55_Type ;
+    rdfs:label "gunlock" .
+
+<https://w3id.org/hector/commodity/gunpowder> a crm:E55_Type ;
+    rdfs:label "gunpowder" .
+
+<https://w3id.org/hector/commodity/gunstone> a crm:E55_Type ;
+    rdfs:label "gunstone" .
+
+<https://w3id.org/hector/commodity/hand-gun> a crm:E55_Type ;
+    rdfs:label "hand gun" .
+
+<https://w3id.org/hector/commodity/harquebus> a crm:E55_Type ;
+    rdfs:label "harquebus" .
+
+<https://w3id.org/hector/commodity/serpentine> a crm:E55_Type ;
+    rdfs:label "serpentine" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/gun> a crm:E55_Type ;
+    rdfs:label "gun (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

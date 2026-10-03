@@ -1,0 +1,201 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/madder> a crm:E55_Type ;
+    rdfs:label "madder" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madrə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madar" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madyr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madir" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madrae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madre" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madra" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madra" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mather" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "maθer" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madder" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "mader" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madire" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madirə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madir" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mader" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mader" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "madur" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "madur" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A natural organic colorant extracted from the roots of any of several species of the genus Rubia, having a reddish color. Madder has been used as a colorant for dyeing textiles since ancient times in India, Persia, and Egypt. It has been largely replaced as a dye and a pigment by synthetic alizarin. Used for dye and lake pigment preparation. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300013062,
+        wd:Q162108 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/madder> ;
+    hector:attestationCount 3084 ;
+    hector:taxation <https://w3id.org/hector/commodity/madder#rate-1507-none-176>,
+        <https://w3id.org/hector/commodity/madder#rate-1545-inward-471>,
+        <https://w3id.org/hector/commodity/madder#rate-1545-inward-472>,
+        <https://w3id.org/hector/commodity/madder#rate-1545-outward-13>,
+        <https://w3id.org/hector/commodity/madder#rate-1558-inward-696>,
+        <https://w3id.org/hector/commodity/madder#rate-1558-inward-698> .
+
+aat:300013062 a crm:E55_Type ;
+    rdfs:label "madder (colorant)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q162108 a crm:E55_Type ;
+    rdfs:label "Rubia" .
+
+<https://w3id.org/hector/commodity/madder#rate-1507-none-176> a hector:Rate ;
+    rdfs:label "1507: Mather called crope or umbero the pocke 37s 6d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "37s 6d" ;
+            hector:valueInPence 450.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pocket> ] ;
+    hector:sourceText "Book of Rates 1507, line 176 (transcribed by Stuart Jenks): 'Mather called crope or umbero the pocke' 37s 6d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/madder#rate-1545-inward-471> a hector:Rate ;
+    rdfs:label "1545 inward: Madder the bale 50s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "50s" ;
+            hector:valueInPence 600.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 471 (transcribed by Stuart Jenks): 'Madder the bale' 50s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/madder#rate-1545-inward-472> a hector:Rate ;
+    rdfs:label "1545 inward: Madder the 100 lb 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 472 (transcribed by Stuart Jenks): 'Madder the 100 lb' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/madder#rate-1545-outward-13> a hector:Rate ;
+    rdfs:label "1545 outward: Madder the 100 pounde 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, outward, line 13 (transcribed by Stuart Jenks): 'Madder the 100 pounde' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/madder#rate-1558-inward-696> a hector:Rate ;
+    rdfs:label "1558 inward: Madder the bale cont’ 8 C [lb.] £5 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£5 6s 8d" ;
+            hector:valueInPence 1280.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 696 (transcribed by Stuart Jenks): 'Madder the bale cont’ 8 C [lb.]' £5 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/madder#rate-1558-inward-698> a hector:Rate ;
+    rdfs:label "1558 inward: Madder the C lb. cont’ 112 lb 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 698 (transcribed by Stuart Jenks): 'Madder the C lb. cont’ 112 lb' 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pocket> a crm:E58_Measurement_Unit ;
+    rdfs:label "pocket" .
+
+<https://w3id.org/mlca/glossary/madder> a crm:E55_Type ;
+    rdfs:label "madder (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/bale> a crm:E58_Measurement_Unit ;
+    rdfs:label "bale" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

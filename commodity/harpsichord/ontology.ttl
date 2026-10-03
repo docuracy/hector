@@ -1,0 +1,55 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/harpsichord> a crm:E55_Type ;
+    rdfs:label "harpsichord" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "harpsichord" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "harpsitʃord" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavisimablum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavisimablum" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavisimabli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavisimabli" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Zitherlike chordophones having a keyboard which operates a plucking mechanism to sound the strings; typically of an an elongated wing shape like a grand piano with strings that run parallel to the keys. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/harpsichord> ;
+    skos:related <https://w3id.org/hector/commodity/clavichord> ;
+    la:equivalent aat:300041678 ;
+    hector:attestationCount 1 .
+
+aat:300041678 a crm:E55_Type ;
+    rdfs:label "harpsichords" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/clavichord> a crm:E55_Type ;
+    rdfs:label "clavichord" .
+
+<https://w3id.org/mlca/glossary/harpsichord> a crm:E55_Type ;
+    rdfs:label "harpsichord (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

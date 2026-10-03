@@ -1,0 +1,128 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/grey> a crm:E55_Type ;
+    rdfs:label "grey" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graywerke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graiwerkə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "grey" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "grei" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graie" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "greywark" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "greiwark" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graywerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graiwerk" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cristygray" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kristigrai" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "graywark" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "graiwark" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gray" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "grai" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "greye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "greie" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "greys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "greis" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "greywerk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "greiwerk" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis grey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis grei" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cristy gray" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kristi grai" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "winter squirrel skins, with the grey back (Veale, 224) | reddish-brown squirrel skins from Central Europe (Veale 225) | winter squirrel skins, with the grey back (Veale, 224) (see also peltrie de gray) | winter squirrel skins, with the grey back (Veale 224) | co(u)rse (course graye) of low quality | skins of the civet cat, the grey skins being less valuable than the black (Veale 219) | the back of the skin of the winter squirrel, grey in color (Veale 224, 222) | winter squirrel skins, with the grey back (Veale 224), here dressed" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/grey> ;
+    hector:attestationCount 373 ;
+    hector:taxation <https://w3id.org/hector/commodity/grey#rate-1558-inward-522> .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/grey#rate-1558-inward-522> a hector:Rate ;
+    rdfs:label "1558 inward: Gray skynnes voc’ flienge gray the pece 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 522 (transcribed by Stuart Jenks): 'Gray skynnes voc’ flienge gray the pece' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/grey> a crm:E55_Type ;
+    rdfs:label "grey (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,146 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pan> a crm:E55_Type ;
+    rdfs:label "pan" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panis" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pans" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panəs" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pann" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pan" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "panis" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pan" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pan" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pannae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pane" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pans" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pans" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "panna" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pana" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pan (OED s.v. pan n.1): a cooking or household vessel, made of iron, brass, bronze, copper, latten or earthenware; sometimes with a mortar. Also of Dinant ware or Spanish make." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pan> ;
+    skos:related <https://w3id.org/hector/commodity/pane>,
+        <https://w3id.org/hector/commodity/sugar-loaf> ;
+    la:equivalent aat:300042983 ;
+    hector:attestationCount 200 ;
+    hector:taxation <https://w3id.org/hector/commodity/pan#rate-1507-none-66>,
+        <https://w3id.org/hector/commodity/pan#rate-1558-inward-1152> .
+
+aat:300042983 a crm:E55_Type ;
+    rdfs:label "pans (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pan#rate-1507-none-66> a hector:Rate ;
+    rdfs:label "1507: Droppyn pans of yerne the C wyte 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1507, line 66 (transcribed by Stuart Jenks): 'Droppyn pans of yerne the C wyte' 10s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pan#rate-1558-inward-1152> a hector:Rate ;
+    rdfs:label "1558 inward: Warmynge pannes or bedde pannes the dossyn 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 1152 (transcribed by Stuart Jenks): 'Warmynge pannes or bedde pannes the dossyn' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pane> a crm:E55_Type ;
+    rdfs:label "pane" .
+
+<https://w3id.org/hector/commodity/sugar-loaf> a crm:E55_Type ;
+    rdfs:label "sugar loaf" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/pan> a crm:E55_Type ;
+    rdfs:label "pan (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

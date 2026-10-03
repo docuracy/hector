@@ -1,0 +1,86 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/woodash> a crm:E55_Type ;
+    rdfs:label "woodash" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woodash" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːdaʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodasche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodaʃə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodasches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodaʃəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodasshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodaʃə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodasshes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodaʃəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wodde or sope ashes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wodə or sopə aʃəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "woadashes, used to make lye, used by dyers" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011786 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/woodash> ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/woodash#rate-1558-inward-37> .
+
+aat:300011786 a crm:E55_Type ;
+    rdfs:label "ash (residue)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/woodash#rate-1558-inward-37> a hector:Rate ;
+    rdfs:label "1558 inward: Ashes voc’ wodde or sope ashes the last cont’ 12 barrelles £3" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3" ;
+            hector:valueInPence 720.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/last> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 37 (transcribed by Stuart Jenks): 'Ashes voc’ wodde or sope ashes the last cont’ 12 barrelles' £3" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/last> a crm:E58_Measurement_Unit ;
+    rdfs:label "last" .
+
+<https://w3id.org/mlca/glossary/woodash> a crm:E55_Type ;
+    rdfs:label "woodash (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

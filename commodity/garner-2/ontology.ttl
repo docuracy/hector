@@ -1,0 +1,65 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/garner-2> a crm:E55_Type ;
+    rdfs:label "garner_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "granarium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "granarium" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "garner" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "garner" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "granarii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "granari" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "garnarii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "garnari" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "garnarium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "garnarium" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "garner_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "garner" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "grain bin (on a ship) | granary. garner, a storehouse for corn; grain-bin in the hold of a ship (Latham, Dictionary s.v. granarium 2)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300004929 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/garner_2> ;
+    hector:attestationCount 13 .
+
+aat:300004929 a crm:E55_Type ;
+    rdfs:label "granaries" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/garner_2> a crm:E55_Type ;
+    rdfs:label "garner_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

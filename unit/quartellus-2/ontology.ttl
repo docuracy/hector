@@ -1,0 +1,73 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/quartellus-2> a crm:E58_Measurement_Unit ;
+    rdfs:label "quartellus" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "quartellus" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kwartelus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cartalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kartalə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caritalle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karitalə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caritall" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karital" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cartalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kartaləs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caritalles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karitaləs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a small tun (Day 978), a measuring-vessel that contains a quarter of standard measure. The quotes indicate that a quartellus is equivalent to a fourth of a sester or two fifths of a butte (Latham, Dictionary, s.v. quartellus, sextarius)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/quartellus-2>,
+        <https://w3id.org/mlca/glossary/quartellus_2> ;
+    skos:closeMatch aat:300386648 ;
+    hector:attestationCount 5 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/volume> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/quartellus-2> a crm:E55_Type ;
+    rdfs:label "quartellus_2" .
+
+<https://w3id.org/mlca/glossary/quartellus_2> a crm:E55_Type ;
+    rdfs:label "quartellus_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

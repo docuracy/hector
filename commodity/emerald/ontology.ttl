@@ -1,0 +1,61 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/emerald> a crm:E55_Type ;
+    rdfs:label "emerald" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "emerald" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "emerald" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "emeraudes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "emeraudəs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "emeraude" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "emeraudə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "emerawd" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "emeraud" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A brilliant grass-green variety of beryl, highly prized as a gemstone. The name comes indirectly from the Greek \"smaragdos,\" referring to a number of stones having little in common except a green color. The emerald in the the Bible was probably a garnet. However, ancient societies did also value the genuine emerald, which came from Upper Egypt as early as 2000 BCE. Greek emerald miners worked for Alexander the Great and Cleopatra. The physical properties of emerald are essentially the same as those of beryl, with only moderate light refractive and dispersive powers, meaning that cut stones display little brilliancy or fire. The gems are instead valued for their magnificent color, which is probably caused by small amounts of chromium. The stone loses colour when strongly heated. Synthetic emerald was successfully produced in the 1930s, and today is produced by a either a molten-flux process or a hydrothermal method crystal growing process. Synthetic crystals appear very similar to natural emerald crystals. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300439889 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/emerald> ;
+    la:equivalent aat:300011074 ;
+    hector:attestationCount 3 .
+
+aat:300011074 a crm:E55_Type ;
+    rdfs:label "emerald (mineral)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+aat:300439889 a crm:E55_Type ;
+    rdfs:label "jewels" .
+
+<https://w3id.org/mlca/glossary/emerald> a crm:E55_Type ;
+    rdfs:label "emerald (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

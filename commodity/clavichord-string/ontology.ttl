@@ -1,0 +1,64 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/clavichord-string> a crm:E55_Type ;
+    rdfs:label "clavichord string" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "claricord wyer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikord wier" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavichord string" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "klavitʃord striŋ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clerycordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klerikordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clarycorde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clarycorde red" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordə red" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "strings for a clavichord, a musical instrument with strings and keys; in its developed form resembling a square pianoforte, the tones being produced by the action on the strings of ‘tangents’ or small brass wedges attached in upright position to the back of the keys (OED s.v. clavichord, clarichord)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300191094 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/clavichord%20string> ;
+    skos:related <https://w3id.org/hector/commodity/clavichord>,
+        <https://w3id.org/hector/commodity/wire> ;
+    hector:attestationCount 1 .
+
+aat:300191094 a crm:E55_Type ;
+    rdfs:label "strings (chordophone components)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/clavichord> a crm:E55_Type ;
+    rdfs:label "clavichord" .
+
+<https://w3id.org/hector/commodity/wire> a crm:E55_Type ;
+    rdfs:label "wire" .
+
+<https://w3id.org/mlca/glossary/clavichord%20string> a crm:E55_Type ;
+    rdfs:label "clavichord string (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

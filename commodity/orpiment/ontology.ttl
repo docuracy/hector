@@ -1,0 +1,103 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/orpiment> a crm:E55_Type ;
+    rdfs:label "orpiment" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpment" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orpment" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpimentum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orpimentum" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "auripigmentum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "auripigmentum" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orpinə" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "auripigmenti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "auripigmenti" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpiment" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "orpiment" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpyment" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orpiment" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "orpement" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "orpement" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "orpiment, a bright yellow mineral substance, the trisulphide of arsenic, also called Yellow Arsenic, found native in soft masses resembling gold in colour; also manufactured by the combination of sulphur and arsenious oxide; used as a pigment under the name of King's Yellow (Stieda, Venice 101; OED s.v. orpiment)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/orpiment> ;
+    la:equivalent aat:300013834 ;
+    hector:attestationCount 36 ;
+    hector:taxation <https://w3id.org/hector/commodity/orpiment#rate-1558-inward-760> .
+
+aat:300013834 a crm:E55_Type ;
+    rdfs:label "orpiment (pigment)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/orpiment#rate-1558-inward-760> a hector:Rate ;
+    rdfs:label "1558 inward: Orpement the C lb. cont’ 112 lb 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 760 (transcribed by Stuart Jenks): 'Orpement the C lb. cont’ 112 lb' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/orpiment> a crm:E55_Type ;
+    rdfs:label "orpiment (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

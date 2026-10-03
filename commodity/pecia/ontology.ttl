@@ -1,0 +1,189 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pecia> a crm:E55_Type ;
+    rdfs:label "pecia" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesie" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pec" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pek" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecia" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pesia" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peci" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesi" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pese" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesis" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peceis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peseis" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pece" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesəs" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pecys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesis" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peciarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pesiarum" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pecia / pece (Latin, a piece): a piece used as a measure or packing unit, of definite size varying by commodity — figs (60 lb.), raisins and other fruit/citrus (a third of a sorte), Cornish tin (250 lb.) and tin foil, rosin, battery (650 lb.) and kettles, brazil, iron of Lucca, buckram, lawn, Dornix thread, saunders, hops and marmalade." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pecia> ;
+    skos:related <https://w3id.org/hector/commodity/clout>,
+        <https://w3id.org/hector/commodity/leather-pieces>,
+        <https://w3id.org/hector/commodity/tin-piece> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 23456 ;
+    hector:taxation <https://w3id.org/hector/commodity/pecia#rate-1507-none-10>,
+        <https://w3id.org/hector/commodity/pecia#rate-1545-inward-109>,
+        <https://w3id.org/hector/commodity/pecia#rate-1558-inward-100>,
+        <https://w3id.org/hector/commodity/pecia#rate-1558-inward-101> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/clout> a crm:E55_Type ;
+    rdfs:label "clout" .
+
+<https://w3id.org/hector/commodity/leather-pieces> a crm:E55_Type ;
+    rdfs:label "leather pieces" .
+
+<https://w3id.org/hector/commodity/pecia#rate-1507-none-10> a hector:Rate ;
+    rdfs:label "1507: Buckroms in paperes, every paper 1 with another fyne þat ys to saye 3 peces in every papere 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/paper> ] ;
+    hector:sourceText "Book of Rates 1507, line 10 (transcribed by Stuart Jenks): 'Buckroms in paperes, every paper 1 with another fyne þat ys to saye 3 peces in every papere' 6s 8d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pecia#rate-1545-inward-109> a hector:Rate ;
+    rdfs:label "1545 inward: Box peces for combes the butte or pipe £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/butt> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 109 (transcribed by Stuart Jenks): 'Box peces for combes the butte or pipe' £4" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pecia#rate-1558-inward-100> a hector:Rate ;
+    rdfs:label "1558 inward: Boxe peces for combes the butte, pipe or fatt cont’ 4 M £6 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6 13s 4d" ;
+            hector:valueInPence 1600.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/butt> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 100 (transcribed by Stuart Jenks): 'Boxe peces for combes the butte, pipe or fatt cont’ 4 M' £6 13s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pecia#rate-1558-inward-101> a hector:Rate ;
+    rdfs:label "1558 inward: Boxe peces for combes the thousand 33s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "33s 4d" ;
+            hector:valueInPence 400.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1000 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/thousand> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 101 (transcribed by Stuart Jenks): 'Boxe peces for combes the thousand' 33s 4d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/tin-piece> a crm:E55_Type ;
+    rdfs:label "tin piece" .
+
+<https://w3id.org/hector/unit/paper> a crm:E58_Measurement_Unit ;
+    rdfs:label "paper (measure)" .
+
+<https://w3id.org/hector/unit/thousand> a crm:E58_Measurement_Unit ;
+    rdfs:label "thousand" .
+
+<https://w3id.org/mlca/glossary/pecia> a crm:E55_Type ;
+    rdfs:label "pecia (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/butt> a crm:E58_Measurement_Unit ;
+    rdfs:label "butt" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

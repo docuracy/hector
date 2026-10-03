@@ -1,0 +1,80 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/powderbox> a crm:E55_Type ;
+    rdfs:label "powderbox" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "poudir boxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːdir boksəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "powderboxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːderboksəs" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "powderbox" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "puːderboks" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "poudir box" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːdir boks" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pouder boxis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːder boksis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pouder box" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːder boks" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pouder boxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "puːder boksəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a box for holding powder, especially toilet-powder (talcum-powder), usually also containing a powder-puff; also for holding powdered spice or salt, for carrying gunpowder, or (with small holes in the lid) for sprinkling powder or sand upon writing to prevent blotting (OED s.v. powder-box)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300045643 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/powderbox> ;
+    skos:related <https://w3id.org/hector/commodity/powder> ;
+    hector:attestationCount 6 .
+
+aat:300045643 a crm:E55_Type ;
+    rdfs:label "boxes (containers)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/powder> a crm:E55_Type ;
+    rdfs:label "powder" .
+
+<https://w3id.org/mlca/glossary/powderbox> a crm:E55_Type ;
+    rdfs:label "powderbox (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

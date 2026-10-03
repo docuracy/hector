@@ -1,0 +1,90 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/trunk> a crm:E58_Measurement_Unit ;
+    rdfs:label "trunk" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trunk" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "truŋk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tronke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "troŋkə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tronk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "troŋk" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "troncke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tronkə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tronckes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tronkəs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tronkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "troŋkəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "truk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "truk" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "trunkes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "truŋkəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a chest, coffer, box (OED s.v. trunk n. II 6), here as a packing unit for dry goods of no particular size | as an article of commerce" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/trunk-2>,
+        <https://w3id.org/mlca/glossary/trunk_2> ;
+    skos:broader aat:300386648 ;
+    la:equivalent aat:300038992,
+        aat:300215543 ;
+    hector:attestationCount 8 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300038992 a crm:E55_Type ;
+    rdfs:label "chests (case furniture)" .
+
+aat:300215543 a crm:E55_Type ;
+    rdfs:label "trunks (containers)" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/trunk-2> a crm:E55_Type ;
+    rdfs:label "trunk_2" .
+
+<https://w3id.org/mlca/glossary/trunk_2> a crm:E55_Type ;
+    rdfs:label "trunk_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

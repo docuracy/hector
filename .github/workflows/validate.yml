@@ -21,3 +21,5 @@ jobs:
         env:
           HECTOR_ONLINE: "1"
         run: python -m pytest tests/ -q -p no:warnings
+      - name: Turtle and RDF/XML are current with the JSON-LD (tools/site/build_rdf.py)
+        run: python -m tools.site.build_rdf --root . --check

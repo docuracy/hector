@@ -1,0 +1,100 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/morkin> a crm:E55_Type ;
+    rdfs:label "morkin" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mortkin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mortkin" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morkens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "morkens" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mortkyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mortkin" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morken" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "morken" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morkyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "morkins" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morkins" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "morkins" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morkin" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "morkin" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis mortkyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis mortkin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "mortkyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "mortkins" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "morkyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "morkin" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the skin (or fur) of a beast that dies by disease or accident (OED s.v. morkin1), here most probably the skin of a sheep; may be undressed" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:closeMatch aat:300011840 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/morkin> ;
+    skos:related <https://w3id.org/hector/commodity/lamb> ;
+    hector:attestationCount 124 .
+
+aat:300011840 a crm:E55_Type ;
+    rdfs:label "skin (collagenous material)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lamb> a crm:E55_Type ;
+    rdfs:label "lamb" .
+
+<https://w3id.org/mlca/glossary/morkin> a crm:E55_Type ;
+    rdfs:label "morkin (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

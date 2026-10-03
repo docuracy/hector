@@ -1,0 +1,24 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<https://w3id.org/hector/unit/dimension/volume> a crm:E55_Type ;
+    rdfs:label "volume" ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The dimension measured by units of capacity, liquid and dry (gallon, tun, bushel, quarter), including casks that the sources define by capacity." ;
+            crm:P2_has_type aat:300418049 ] ;
+    la:equivalent quantitykind:Volume,
+        wd:Q39297 .
+
+quantitykind:Volume a crm:E55_Type ;
+    rdfs:label "Volume" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+wd:Q39297 a crm:E55_Type ;
+    rdfs:label "volume" .
+

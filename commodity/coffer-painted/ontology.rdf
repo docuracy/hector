@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/"
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:hector="https://w3id.org/hector/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/nest"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb2bb39a635bfbeb7492ef4dac6946633512ab88718d735ebe2dd79118760b2b8f1">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>4s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/coffer-painted#rate-1558-inward-811">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Paynted cofers the nest cont’ 3 to the nest 8s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_coffer_painted_cb22ae97faf673466eaa1a73860d5e28144559de4b28e64c3e1fc88282975291046"/>
+    <hector:perQuantity rdf:nodeID="commodity_coffer_painted_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 811 (transcribed by Stuart Jenks): 'Paynted cofers the nest cont’ 3 to the nest' 8s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/coffer-painted#rate-1545-inward-569">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Painted coffers the neste, videlicet 3 to one 4s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_coffer_painted_cb2bb39a635bfbeb7492ef4dac6946633512ab88718d735ebe2dd79118760b2b8f1"/>
+    <hector:perQuantity rdf:nodeID="commodity_coffer_painted_cb234eb598a359b88ce8e6c7611751b283c7d6aa05df9f314fc47384d7da3447c6a"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 569 (transcribed by Stuart Jenks): 'Painted coffers the neste, videlicet 3 to one' 4s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/coffer">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>coffer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb199ec37e2e12d57002bd09a5adef265b7a07c8fcbbb3f71e1482a28d95a379a1e">
+    <crm:P190_has_symbolic_content>Painted coffers</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>painted kofers</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/coffer-painted">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_coffer_painted_cb18ae98e86a6301e3edb82b13aa0dcb8759debc34bcb39f961f1515cc985534dab"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_coffer_painted_cb199ec37e2e12d57002bd09a5adef265b7a07c8fcbbb3f71e1482a28d95a379a1e"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_coffer_painted_cb20a4f994114438d36ca20acf766e7069af7f33da22ef72c239001447328ec9c92"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_coffer_painted_cb10febd9d77e725f6737a1a260320d754c34a3c8894fe76a1553c647dbc13cdbb3"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>coffer (painted)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/coffer"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/coffer"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/coffer-painted#rate-1545-inward-569"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/coffer-painted#rate-1558-inward-811"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb20a4f994114438d36ca20acf766e7069af7f33da22ef72c239001447328ec9c92">
+    <crm:P190_has_symbolic_content>coffer (painted)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kofer painted</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/nest">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>nest</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb10febd9d77e725f6737a1a260320d754c34a3c8894fe76a1553c647dbc13cdbb3">
+    <crm:P190_has_symbolic_content>coffer, qualified as ‘painted’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb18ae98e86a6301e3edb82b13aa0dcb8759debc34bcb39f961f1515cc985534dab">
+    <crm:P190_has_symbolic_content>Paynted cofers</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>painted kofers</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb22ae97faf673466eaa1a73860d5e28144559de4b28e64c3e1fc88282975291046">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>8s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_coffer_painted_cb234eb598a359b88ce8e6c7611751b283c7d6aa05df9f314fc47384d7da3447c6a">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/nest"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

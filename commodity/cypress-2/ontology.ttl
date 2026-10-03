@@ -1,0 +1,183 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cypress-2> a crm:E55_Type ;
+    rdfs:label "cypress_2" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cypres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siprəs" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cypress" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siprəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sypirs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sipirs" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sypres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siprəs" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sypers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sipers" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cipers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sipers" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "siperis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siperis" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sipres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siprəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sipers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sipers" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cypress_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "siprəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cipres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "siprəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cipris" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "sipris" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "cypress, a light transparent textile fabric (lawn or crape) originally imported from or through Cyprus, often black and used for kerchiefs, hat-bands and mourning" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cypress_2> ;
+    skos:related <https://w3id.org/hector/commodity/chest>,
+        <https://w3id.org/hector/commodity/cotton-8> ;
+    la:equivalent aat:300249444 ;
+    hector:attestationCount 131 ;
+    hector:originPlace wd:Q229 ;
+    hector:taxation <https://w3id.org/hector/commodity/cypress-2#rate-1507-none-287>,
+        <https://w3id.org/hector/commodity/cypress-2#rate-1545-inward-630>,
+        <https://w3id.org/hector/commodity/cypress-2#rate-1558-inward-949>,
+        <https://w3id.org/hector/commodity/cypress-2#rate-1558-inward-962> .
+
+aat:300249444 a crm:E55_Type ;
+    rdfs:label "lawn (textile)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q229 a crm:E53_Place ;
+    rdfs:label "Cyprus" .
+
+<https://w3id.org/hector/commodity/chest> a crm:E55_Type ;
+    rdfs:label "chest" .
+
+<https://w3id.org/hector/commodity/cotton-8> a crm:E55_Type ;
+    rdfs:label "cotton_8" .
+
+<https://w3id.org/hector/commodity/cypress-2#rate-1507-none-287> a hector:Rate ;
+    rdfs:label "1507: Sypres for women the pece 20d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20d" ;
+            hector:valueInPence 20.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1507, line 287 (transcribed by Stuart Jenks): 'Sypres for women the pece' 20d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/cypress-2#rate-1545-inward-630> a hector:Rate ;
+    rdfs:label "1545 inward: Sypres cotten the dossen yardes 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 630 (transcribed by Stuart Jenks): 'Sypres cotten the dossen yardes' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/cypress-2#rate-1558-inward-949> a hector:Rate ;
+    rdfs:label "1558 inward: Sypers cotton the dosen yardes 4s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "4s" ;
+            hector:valueInPence 48.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 12 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/dozen> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 949 (transcribed by Stuart Jenks): 'Sypers cotton the dosen yardes' 4s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/cypress-2#rate-1558-inward-962> a hector:Rate ;
+    rdfs:label "1558 inward: Sypers chestes the nest £4" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£4" ;
+            hector:valueInPence 960.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/nest> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 962 (transcribed by Stuart Jenks): 'Sypers chestes the nest' £4" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/nest> a crm:E58_Measurement_Unit ;
+    rdfs:label "nest" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/mlca/glossary/cypress_2> a crm:E55_Type ;
+    rdfs:label "cypress_2 (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/dozen> a crm:E58_Measurement_Unit ;
+    rdfs:label "dozen" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

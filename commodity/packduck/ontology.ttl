@@ -1,0 +1,143 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/packduck> a crm:E55_Type ;
+    rdfs:label "packduck" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pacduck" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakduk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pak dulke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pak dulkə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packduck" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pakduk" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pakduk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakduk" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paduck" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paduk" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "padduck" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "paduk" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pacduk" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakduk" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pakduke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakdukə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pagducke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pagdukə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "padoke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "padokə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "paduke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "padukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "padduke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "padukə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "packducke" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pakdukə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "packduck (pack-duck), a coarse sort of linen used for pack-cloths etc. (OED s.v. pack n.1 15)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/packduck> ;
+    skos:related <https://w3id.org/hector/commodity/pack>,
+        <https://w3id.org/hector/commodity/poke> ;
+    la:equivalent aat:300014069 ;
+    hector:attestationCount 14 ;
+    hector:taxation <https://w3id.org/hector/commodity/packduck#rate-1545-inward-537>,
+        <https://w3id.org/hector/commodity/packduck#rate-1558-inward-795> .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pack> a crm:E55_Type ;
+    rdfs:label "pack" .
+
+<https://w3id.org/hector/commodity/packduck#rate-1545-inward-537> a hector:Rate ;
+    rdfs:label "1545 inward: Padduke the 100 elles 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 537 (transcribed by Stuart Jenks): 'Padduke the 100 elles' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/packduck#rate-1558-inward-795> a hector:Rate ;
+    rdfs:label "1558 inward: Paduke the C elles cont’ 6 score 24s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "24s" ;
+            hector:valueInPence 288.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 795 (transcribed by Stuart Jenks): 'Paduke the C elles cont’ 6 score' 24s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/poke> a crm:E55_Type ;
+    rdfs:label "poke" .
+
+<https://w3id.org/mlca/glossary/packduck> a crm:E55_Type ;
+    rdfs:label "packduck (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

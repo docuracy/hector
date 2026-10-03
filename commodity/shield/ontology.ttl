@@ -1,0 +1,73 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/shield> a crm:E55_Type ;
+    rdfs:label "shield" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "shield" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "ʃiːld" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scuti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skuti" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheld" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeld" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheldes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeldəs" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skutum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "sheldis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "ʃeldis" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "General term for armor pieces carried in the hand or on the arm, used to parry an opponent's blows or provide shelter from projectiles. They have existed worldwide throughout history in a wide variety of sizes, shapes, and materials. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/shield> ;
+    skos:related <https://w3id.org/hector/commodity/buckler>,
+        <https://w3id.org/hector/commodity/target> ;
+    la:equivalent aat:300036869 ;
+    hector:attestationCount 3 .
+
+aat:300036869 a crm:E55_Type ;
+    rdfs:label "shields (armor)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/buckler> a crm:E55_Type ;
+    rdfs:label "buckler" .
+
+<https://w3id.org/hector/commodity/target> a crm:E55_Type ;
+    rdfs:label "target" .
+
+<https://w3id.org/mlca/glossary/shield> a crm:E55_Type ;
+    rdfs:label "shield (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

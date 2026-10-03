@@ -1,0 +1,125 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/clavichord> a crm:E55_Type ;
+    rdfs:label "clavichord" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavichord" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "klavitʃord" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clarycorde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "claricordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clarycord" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikord" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavicorde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavikordə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavicord" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavikord" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clarycordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordəs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "clavicordes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klavikordəs" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "claricorde" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "klarikordə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Zitherlike instruments in the form of a rectangular box with a keyboard set in the long side. Strings, usually two per note, run from hitch pins on the left over a bridge to tuning pins at the right. Brass tangents on the rear portion of each key strike the strings from below to produce sound. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/clavichord> ;
+    skos:related <https://w3id.org/hector/commodity/clavichord-string>,
+        <https://w3id.org/hector/commodity/harpsichord> ;
+    la:equivalent aat:300041675 ;
+    hector:attestationCount 25 ;
+    hector:taxation <https://w3id.org/hector/commodity/clavichord#rate-1545-inward-221>,
+        <https://w3id.org/hector/commodity/clavichord#rate-1558-inward-295> .
+
+aat:300041675 a crm:E55_Type ;
+    rdfs:label "clavichords" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/clavichord#rate-1545-inward-221> a hector:Rate ;
+    rdfs:label "1545 inward: Clarycordes the payre 2s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "2s" ;
+            hector:valueInPence 24.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pair> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 221 (transcribed by Stuart Jenks): 'Clarycordes the payre' 2s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/clavichord#rate-1558-inward-295> a hector:Rate ;
+    rdfs:label "1558 inward: Clarycordes the payre 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pair> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 295 (transcribed by Stuart Jenks): 'Clarycordes the payre' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/clavichord-string> a crm:E55_Type ;
+    rdfs:label "clavichord string" .
+
+<https://w3id.org/hector/commodity/harpsichord> a crm:E55_Type ;
+    rdfs:label "harpsichord" .
+
+<https://w3id.org/mlca/glossary/clavichord> a crm:E55_Type ;
+    rdfs:label "clavichord (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/pair> a crm:E58_Measurement_Unit ;
+    rdfs:label "pair" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

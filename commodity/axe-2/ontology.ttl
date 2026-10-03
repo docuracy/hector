@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/axe-2> a crm:E55_Type ;
+    rdfs:label "axe_2" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "acse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aksə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "acses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aksəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "axe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aksə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ax" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aks" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "axes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "aksəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "axe_2" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "aksə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Cutting tools that consist of a relatively heavy edged, squarish head fixed to a handle, the edge or edges being parallel to the handle so as to be suited for striking, hewing, cleaving, or chopping, trees, wood, ice, or another material. For axes used as weapons, typically having wider blades, use \"axes (weapons).\" For similar tools that are smaller and lighter, use \"hatchets.\" For long-handled tools with a curved blade set perpendicular to the handle and used for dressing lumber, use \"adzes.\"  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/axe_2> ;
+    la:equivalent aat:300024664 ;
+    hector:attestationCount 9 .
+
+aat:300024664 a crm:E55_Type ;
+    rdfs:label "axes (tools)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/axe_2> a crm:E55_Type ;
+    rdfs:label "axe_2 (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

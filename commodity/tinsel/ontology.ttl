@@ -1,0 +1,60 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tinsel> a crm:E55_Type ;
+    rdfs:label "tinsel" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynsyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinsin" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynsell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinsel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tinsel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tinsel" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynselles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinseləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tynselle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tinselə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "tinselled (sparkling, glittering with gold or silver thread) cloth; a rich material of silk or wool interwoven with gold or silver thread (OED s.v. tinsel n.3 and a. 2) | very thin plates or sheets, spangles, strips, or threads, originally of gold or silver, later of copper, brass, or some gold- or silver-coloured alloy, used chiefly for ornament (OED s.v. tinsel n.3 & adj. 3)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300162391 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tinsel> ;
+    hector:attestationCount 5 .
+
+aat:300162391 a crm:E55_Type ;
+    rdfs:label "cloth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/tinsel> a crm:E55_Type ;
+    rdfs:label "tinsel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

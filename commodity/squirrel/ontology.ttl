@@ -1,0 +1,121 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/squirrel> a crm:E55_Type ;
+    rdfs:label "squirrel" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squerelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwereləs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squyrlle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwirlə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squirrels" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwirels" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squerelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwerelə" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squirrel" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skwirel" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squeralle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skweralə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squyrrelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwirelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyrelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skireləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squyrlles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwirləs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "squirelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skwirelə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "untanned skins of squirrels | the fur of one or other of various species of slender, graceful, agile rodents (characterized by a long bushy tail, furry coat, and bright eyes), belonging to the genus Sciurus, or to the widely-distributed sub-family Sciurina including this; especially the common species Sciurus vulgaris, native to Britain, Europe, and parts of Asia. (OED s.v. squirrel n.) | one or other of various species of slender, graceful, agile rodents (characterized by a long bushy tail, furry coat, and bright eyes), belonging to the genus Sciurus, or to the widely-distributed sub-family Sciurina including this; especially the common species Sciurus vulgaris, native to Britain, Europe, and parts of Asia. (OED s.v. squirrel n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/squirrel> ;
+    skos:related <https://w3id.org/hector/commodity/pellis-pople>,
+        <https://w3id.org/hector/commodity/ruskin>,
+        <https://w3id.org/hector/commodity/skonewark>,
+        <https://w3id.org/hector/commodity/stranlyng>,
+        <https://w3id.org/hector/commodity/suethwark>,
+        <https://w3id.org/hector/commodity/troines>,
+        <https://w3id.org/hector/commodity/wark> ;
+    la:equivalent aat:300011840 ;
+    hector:attestationCount 19 .
+
+aat:300011840 a crm:E55_Type ;
+    rdfs:label "skin (collagenous material)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pellis-pople> a crm:E55_Type ;
+    rdfs:label "pellis pople" .
+
+<https://w3id.org/hector/commodity/ruskin> a crm:E55_Type ;
+    rdfs:label "ruskin" .
+
+<https://w3id.org/hector/commodity/skonewark> a crm:E55_Type ;
+    rdfs:label "skonewark" .
+
+<https://w3id.org/hector/commodity/stranlyng> a crm:E55_Type ;
+    rdfs:label "stranlyng" .
+
+<https://w3id.org/hector/commodity/suethwark> a crm:E55_Type ;
+    rdfs:label "suethwark" .
+
+<https://w3id.org/hector/commodity/troines> a crm:E55_Type ;
+    rdfs:label "troines" .
+
+<https://w3id.org/hector/commodity/wark> a crm:E55_Type ;
+    rdfs:label "wark" .
+
+<https://w3id.org/mlca/glossary/squirrel> a crm:E55_Type ;
+    rdfs:label "squirrel (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

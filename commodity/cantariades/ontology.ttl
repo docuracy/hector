@@ -1,0 +1,89 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cantariades> a crm:E55_Type ;
+    rdfs:label "cantariades" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cantarides" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kantaridəs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "canterelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kanterelə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cantaridas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kantaridas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cantariades" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kantariadəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "the dried beetle Cantharis vesicatoria or Spanish Fly. Used externally as a rubefacient and vesicant; internally as a diuretic and stimulant to the genito-urinary organs, etc. Formerly considered an aphrodisiac (OED s.v. cantharides n.pl. 2) | cantharides, the dried beetle Cantharis vesicatoria or Spanish Fly. Used externally as a rubefacient and vesicant; internally as a diuretic and stimulant to the genito-urinary organs, etc. (OED s.v. cantharides)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300310470,
+        aat:300404880 ;
+    skos:closeMatch wd:Q3446580 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cantariades> ;
+    skos:related <https://w3id.org/hector/commodity/cantrey> ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/cantariades#rate-1558-inward-212> .
+
+aat:300310470 a crm:E55_Type ;
+    rdfs:label "Insecta (class)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q3446580 a crm:E55_Type ;
+    rdfs:label "rubefacient" .
+
+<https://w3id.org/hector/commodity/cantariades#rate-1558-inward-212> a hector:Rate ;
+    rdfs:label "1558 inward: Cantaridas the pounde 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 212 (transcribed by Stuart Jenks): 'Cantaridas the pounde' 6s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/cantrey> a crm:E55_Type ;
+    rdfs:label "cantrey" .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/cantariades> a crm:E55_Type ;
+    rdfs:label "cantariades (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

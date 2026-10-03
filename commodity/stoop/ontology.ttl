@@ -1,0 +1,77 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/stoop> a crm:E55_Type ;
+    rdfs:label "stoop" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stopə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoop" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "stoːp" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stop" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stopys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stopis" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stoppes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stopəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "stoop: a drinking vessel, or a large jar or small cask for holding liquids (OED s.v. stoup)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/stoop> ;
+    skos:related <https://w3id.org/hector/commodity/holy-water-stoup>,
+        <https://w3id.org/hector/commodity/stoop-measure> ;
+    la:equivalent aat:300194515,
+        aat:300194567 ;
+    hector:attestationCount 5 .
+
+aat:300194515 a crm:E55_Type ;
+    rdfs:label "casks" .
+
+aat:300194567 a crm:E55_Type ;
+    rdfs:label "drinking vessels" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/holy-water-stoup> a crm:E55_Type ;
+    rdfs:label "holy water stoup" .
+
+<https://w3id.org/hector/commodity/stoop-measure> a crm:E55_Type ;
+    rdfs:label "stoop (measure)" .
+
+<https://w3id.org/mlca/glossary/stoop> a crm:E55_Type ;
+    rdfs:label "stoop (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

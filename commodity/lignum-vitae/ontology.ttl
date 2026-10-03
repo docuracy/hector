@@ -1,0 +1,93 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lignum-vitae> a crm:E55_Type ;
+    rdfs:label "lignum vitae" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vitae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vite" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vite" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vitə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lignum vitae" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "lignum vite" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lignum vite" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lignum vitə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Wood derived from trees of the genus Guaiacum; it is generally the heaviest, hardest, and most dense type of commercially available wood, black to brownish green in color. It is tough and difficult to carve, but valued for its fine grain that polishes to a high gloss. It is naturally resistant to fungi. It is used to make pulleys, shafts, axles, and bowling balls. The wood is relatively waterproof because of its high fat content. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/wood> ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lignum%20vitae> ;
+    la:equivalent aat:300012193 ;
+    hector:attestationCount 14 ;
+    hector:taxation <https://w3id.org/hector/commodity/lignum-vitae#rate-1545-inward-458>,
+        <https://w3id.org/hector/commodity/lignum-vitae#rate-1558-inward-664> .
+
+aat:300012193 a crm:E55_Type ;
+    rdfs:label "lignum vitae (wood)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lignum-vitae#rate-1545-inward-458> a hector:Rate ;
+    rdfs:label "1545 inward: Lignum vite the 100 lb. 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 458 (transcribed by Stuart Jenks): 'Lignum vite the 100 lb.' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/lignum-vitae#rate-1558-inward-664> a hector:Rate ;
+    rdfs:label "1558 inward: Lignum vite the C cont’ 112 lb 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 664 (transcribed by Stuart Jenks): 'Lignum vite the C cont’ 112 lb' 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/wood> a crm:E55_Type ;
+    rdfs:label "wood" .
+
+<https://w3id.org/mlca/glossary/lignum%20vitae> a crm:E55_Type ;
+    rdfs:label "lignum vitae (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

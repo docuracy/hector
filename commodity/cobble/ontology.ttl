@@ -1,0 +1,58 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cobble> a crm:E55_Type ;
+    rdfs:label "cobble" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cobble" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "koblə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cawse stones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kausə stonəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cawse stone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kausə stonə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "causey stone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kausei stonə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "A rock fragment, rounded or otherwise abraded, with a diameter between 64 and 256 mm, being larger than a pebble and smaller than a boulder. The term can also refer more specifically to a rounded stone suitable for use in paving or other construction. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300008231 ;
+    skos:closeMatch aat:300011677 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cobble> ;
+    hector:attestationCount 3 .
+
+aat:300008231 a crm:E55_Type ;
+    rdfs:label "causeways (built environment)" .
+
+aat:300011677 a crm:E55_Type ;
+    rdfs:label "cobble" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/cobble> a crm:E55_Type ;
+    rdfs:label "cobble (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/agnus-dei> a crm:E55_Type ;
+    rdfs:label "agnus dei" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "agnus dey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "agnus dei" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "agni dei" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "agni dei" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "agni dey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "agni dei" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "agnus dei" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "agnus dei" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to disks of wax bearing the sign of the Agnus Dei, which is a symbol of Christ in the form of a lamb bearing a cross with a halo round its head. The small cake of wax was stamped with such a figure and blessed by the Pope. The wax may be the remains of the Pascal candle, solemnly blessed by the Pope on the Thursday after Easter. Disks may be round or oval. Figures of saints or the name and arms of the Pope are commonly impressed on the reverse. Agnus Deis may be worn suspended round the neck, or they may be preserved as objects of devotion. In virtue of the consecration they receive, they are regarded as \"sacramentals,\" like holy water or blessed palms. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300191086 ;
+    skos:closeMatch aat:300298735 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/agnus%20dei> ;
+    hector:attestationCount 1 .
+
+aat:300191086 a crm:E55_Type ;
+    rdfs:label "visual works (works)" .
+
+aat:300298735 a crm:E55_Type ;
+    rdfs:label "Agnus Deis (medallions)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/agnus%20dei> a crm:E55_Type ;
+    rdfs:label "agnus dei (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

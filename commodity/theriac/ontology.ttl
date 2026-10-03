@@ -1,0 +1,66 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/theriac> a crm:E55_Type ;
+    rdfs:label "theriac" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tiriacum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tiriakum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tiriaci" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tiriasi" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "theriac" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "θeriak" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "flore tiriac" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "florə tiriak" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "theriac is an antidote to poison, especially to the bite of a venomous serpent (OED s.v. theriac n.); flore is the froth of a fermenting liquid (MED s.v. flori) | theriac, an antidote to poison, especially to the bite of a venomous serpent (OED s.v. theriac n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300379033,
+        aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/theriac> ;
+    la:equivalent wd:Q1546149 ;
+    hector:attestationCount 2 .
+
+aat:300379033 a crm:E55_Type ;
+    rdfs:label "antidotes" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q1546149 a crm:E55_Type ;
+    rdfs:label "theriac" .
+
+<https://w3id.org/mlca/glossary/theriac> a crm:E55_Type ;
+    rdfs:label "theriac (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

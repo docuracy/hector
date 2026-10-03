@@ -1,0 +1,83 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/red-lead> a crm:E55_Type ;
+    rdfs:label "red lead" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "redde leade" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "redə lɛːdə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "plumbum read" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "plumbum rɛːd" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "red lead" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "red lɛːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "redelede" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "redeledə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Heavy, opaque, orange-red pigment composed of lead tetroxide. Although chemically equivalent to the mineral minium, red lead pigment has been synthetically prepared by roasting lead white (480 C) since before the 5th century BCE. Red lead has been found as a pigment on early objects from Egypt, China, Japan, India, Persia, and Rome; it is no longer used as an artist's color because is has poor light stability and poor working properties, although it is still used to color glass and ceramic glazes. Pliny called it \"secondarium minium.\" It was widely used in illuminated manuscripts, and with its use, the term \"miniare\" came to mean \"to color with red lead,\" giving rise to the term \"miniature.\" Red lead paint was used as an anticorrosion primer for structural iron and steel until the late 20th century. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/red%20lead> ;
+    skos:related <https://w3id.org/hector/commodity/lead>,
+        <https://w3id.org/hector/commodity/white-lead> ;
+    la:equivalent aat:300013647 ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/red-lead#rate-1558-inward-894> .
+
+aat:300013647 a crm:E55_Type ;
+    rdfs:label "red lead (pigment)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lead> a crm:E55_Type ;
+    rdfs:label "lead" .
+
+<https://w3id.org/hector/commodity/red-lead#rate-1558-inward-894> a hector:Rate ;
+    rdfs:label "1558 inward: Redde leade the C lb. cont’ 112 lb 15s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "15s" ;
+            hector:valueInPence 180.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 894 (transcribed by Stuart Jenks): 'Redde leade the C lb. cont’ 112 lb' 15s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/white-lead> a crm:E55_Type ;
+    rdfs:label "white lead" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/red%20lead> a crm:E55_Type ;
+    rdfs:label "red lead (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

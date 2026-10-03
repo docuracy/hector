@@ -1,0 +1,65 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/almanacs> a crm:E55_Type ;
+    rdfs:label "almanacs" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pronosticaciouns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pronostikasiuːns" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pronosticacioun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pronostikasiuːn" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "almanax" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "almanaks" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "almanacs" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "almanaks" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "prognostications" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "prognostikations" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "an annual table, or (more usually) a book of tables, containing a calendar of months and days, with astronomical data and calculations, ecclesiastical and other anniversaries, besides other useful information, and astrological and astrometeorological forecasts (OED s.v. almanac)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/almanacs> ;
+    skos:related <https://w3id.org/hector/commodity/calendars> ;
+    la:equivalent aat:300026705 ;
+    hector:attestationCount 2 .
+
+aat:300026705 a crm:E55_Type ;
+    rdfs:label "almanacs" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/calendars> a crm:E55_Type ;
+    rdfs:label "calendars" .
+
+<https://w3id.org/mlca/glossary/almanacs> a crm:E55_Type ;
+    rdfs:label "almanacs (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

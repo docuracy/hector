@@ -1,0 +1,115 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/boxwood> a crm:E55_Type ;
+    rdfs:label "boxwood" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxwood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bokswoːd" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksis" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxxae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bokse" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksəs" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxxa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksa" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksis" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bokse" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boksa" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "box" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boks" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bokss" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bokssəs" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boxce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bokssə" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Dense, pale yellow wood from trees of the genus Buxus. Although difficult to carve, the wood has excellent dimensional stability and is very wear resistant. The hard, fine-grain wood is often used for printing blocks, rulers, mallets, architects scales, slide rules, modeling tools, musical instruments, engravings, inlays, small decorative items, and game pieces. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/boxwood> ;
+    skos:related <https://w3id.org/hector/commodity/boxstave> ;
+    la:equivalent aat:300012002 ;
+    hector:attestationCount 46 .
+
+aat:300012002 a crm:E55_Type ;
+    rdfs:label "boxwood (wood)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/boxstave> a crm:E55_Type ;
+    rdfs:label "boxstave" .
+
+<https://w3id.org/mlca/glossary/boxwood> a crm:E55_Type ;
+    rdfs:label "boxwood (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

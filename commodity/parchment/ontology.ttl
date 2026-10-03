@@ -1,0 +1,101 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/parchment> a crm:E55_Type ;
+    rdfs:label "parchment" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pergameno" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pergameno" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "folium percameni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "folium perkameni" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foliis pergameni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "folis pergameni" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "parchement" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partʃement" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pergameni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pergameni" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "percameni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perkameni" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "parchment" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "partʃment" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "percamenum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "perkamenum" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pargament" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pargament" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "foliis percameni" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "folis perkameni" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pergamenum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pergamenum" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "parchment: prepared animal skin used as a writing material (MED s.v. parchemin; Latin pergamenum). Also attested painted/figured (percamenum depictum) — see also painted paper." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/parchment> ;
+    skos:related <https://w3id.org/hector/commodity/painted-paper>,
+        <https://w3id.org/hector/commodity/passement> ;
+    la:equivalent aat:300011851 ;
+    hector:attestationCount 19 .
+
+aat:300011851 a crm:E55_Type ;
+    rdfs:label "parchment (animal material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/painted-paper> a crm:E55_Type ;
+    rdfs:label "painted paper" .
+
+<https://w3id.org/hector/commodity/passement> a crm:E55_Type ;
+    rdfs:label "passement" .
+
+<https://w3id.org/mlca/glossary/parchment> a crm:E55_Type ;
+    rdfs:label "parchment (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

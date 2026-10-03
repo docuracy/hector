@@ -1,0 +1,275 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/pelt> a crm:E55_Type ;
+    rdfs:label "pelt" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "felle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "felə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skins" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellibus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelibus" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltria" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltria" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skins" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skins" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltery" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelteri" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellium" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelium" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skin" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skins" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltrie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltriː" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltriae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltrie" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peləs" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinəs" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skin" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltri" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltri" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pel" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pellisis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelisis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skin" ;
+            hector:validFrom "1533"^^xsd:gYear ;
+            hector:validThrough "1535"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltrə" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1490"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltəs" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynnys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinis" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltry" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltri" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pelt" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "pelt" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "peltrye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "peltrie" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "felles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "feləs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pelə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pelt / peltry: an animal skin with the hair, wool or fur still attached, as traded raw or dressed by skinners and furriers; also peltry (peltria, peltry) for skins collectively, and old or low-quality skins. Specific skins are distinguished by the animal, treatment (raw, tanned, tawed), colour, origin and quality qualifiers below; named animal skins (rabbit, fox, lamb, marten, etc.) are catalogued under their own concepts." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300193371 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/pelt> ;
+    la:equivalent aat:300395532 ;
+    hector:attestationCount 7716 ;
+    hector:taxation <https://w3id.org/hector/commodity/pelt#rate-1507-none-115>,
+        <https://w3id.org/hector/commodity/pelt#rate-1558-inward-159>,
+        <https://w3id.org/hector/commodity/pelt#rate-1558-inward-160>,
+        <https://w3id.org/hector/commodity/pelt#rate-1558-outward-32> .
+
+aat:300193371 a crm:E55_Type ;
+    rdfs:label "pelt (animal material)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pelt#rate-1507-none-115> a hector:Rate ;
+    rdfs:label "1507: Golde skynes the kyppe 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/kip> ] ;
+    hector:sourceText "Book of Rates 1507, line 115 (transcribed by Stuart Jenks): 'Golde skynes the kyppe' 13s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pelt#rate-1558-inward-159> a hector:Rate ;
+    rdfs:label "1558 inward: Beares skynne redde the skynne 16s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "16s" ;
+            hector:valueInPence 192.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 159 (transcribed by Stuart Jenks): 'Beares skynne redde the skynne' 16s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pelt#rate-1558-inward-160> a hector:Rate ;
+    rdfs:label "1558 inward: Beares skynne blacke the skynne 16s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "16s" ;
+            hector:valueInPence 192.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 160 (transcribed by Stuart Jenks): 'Beares skynne blacke the skynne' 16s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/pelt#rate-1558-outward-32> a hector:Rate ;
+    rdfs:label "1558 outward: Kydde skynnes or broken felles the C cont’ 5 score 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 32 (transcribed by Stuart Jenks): 'Kydde skynnes or broken felles the C cont’ 5 score' 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/hector/unit/kip> a crm:E58_Measurement_Unit ;
+    rdfs:label "kip" .
+
+<https://w3id.org/mlca/glossary/pelt> a crm:E55_Type ;
+    rdfs:label "pelt (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

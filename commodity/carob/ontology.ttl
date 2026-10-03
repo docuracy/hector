@@ -1,0 +1,68 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/carob> a crm:E55_Type ;
+    rdfs:label "carob" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carabe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karabə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carobae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karobe" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caroba" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karoba" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carob" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "karob" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "carobe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "karobə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Species of tree native to the eastern Mediterranean region and cultivated elsewhere. It is highly drought resistant. The tree reaches about 15 m (50 feet) in height, has glossy evergreen leaves, and produces long leathery pods that contain up to 15 hard brown seeds embedded in a sweet, edible pulp. The ripened pods are food for animals and also ground for a variety of uses by humans. The seeds are ground to produce a gum. The seeds were a standard of weight measurement in the ancient world, from which the concept \"carat\" is derived. The common names referring to locusts or St. John's bread come from the belief that the so-called \"locusts\" on which John the Baptist fed in the Biblical story were carob pods, not grasshoppers. There are various other references to the tree in the Bible. [Source: Getty AAT] | fruit or seed of Ceratonia siliqua [Source: Wikidata]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300375537 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/carob> ;
+    la:equivalent wd:Q8195444 ;
+    hector:attestationCount 7 .
+
+aat:300375537 a crm:E55_Type ;
+    rdfs:label "Ceratonia siliqua (species)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q8195444 a crm:E55_Type ;
+    rdfs:label "carob" .
+
+<https://w3id.org/mlca/glossary/carob> a crm:E55_Type ;
+    rdfs:label "carob (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

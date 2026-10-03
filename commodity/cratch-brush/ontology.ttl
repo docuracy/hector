@@ -1,0 +1,74 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cratch-brush> a crm:E55_Type ;
+    rdfs:label "cratch brush" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cresshe brusches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kreʃə bruʃəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "craisshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kraiʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crache" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kratʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crasshe brushes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kraʃə bruʃəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cratch brush" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kratʃ bruʃ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crasshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kraʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "craysshe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kraiʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cratche" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kratʃə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "craissh brusches" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kraiʃ bruʃəs" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "cratch brush (craissh brusches): a brush for cratching (scratching) cloth (OED cratch v.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300239148 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cratch%20brush> ;
+    skos:related <https://w3id.org/hector/commodity/brush> ;
+    hector:attestationCount 12 .
+
+aat:300239148 a crm:E55_Type ;
+    rdfs:label "<brushes for personal use>" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/brush> a crm:E55_Type ;
+    rdfs:label "brush" .
+
+<https://w3id.org/mlca/glossary/cratch%20brush> a crm:E55_Type ;
+    rdfs:label "cratch brush (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,71 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/codling> a crm:E55_Type ;
+    rdfs:label "codling" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codlings" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodliŋs" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codlynges" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodlindʒəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codlyng" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kodliŋ" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "codling" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kodliŋ" ;
+            hector:validFrom "1445"^^xsd:gYear ;
+            hector:validThrough "1446"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "small cod | small cod (MED s.v. codling) | small cod (see also cabelow) | salted small cod (MED s.v. codling)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300266085 ;
+    skos:closeMatch wd:Q13194939 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/codling> ;
+    skos:related <https://w3id.org/hector/commodity/cod>,
+        <https://w3id.org/hector/commodity/dorse> ;
+    hector:attestationCount 22 .
+
+aat:300266085 a crm:E55_Type ;
+    rdfs:label "fish (animals)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q13194939 a crm:E55_Type ;
+    rdfs:label "cod" .
+
+<https://w3id.org/hector/commodity/cod> a crm:E55_Type ;
+    rdfs:label "cod" .
+
+<https://w3id.org/hector/commodity/dorse> a crm:E55_Type ;
+    rdfs:label "dorse" .
+
+<https://w3id.org/mlca/glossary/codling> a crm:E55_Type ;
+    rdfs:label "codling (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

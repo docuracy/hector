@@ -1,0 +1,240 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/beer> a crm:E55_Type ;
+    rdfs:label "beer" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beres" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "berəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "byer" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bier" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisiae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisie" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bier" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biːr" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cervisia" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "servisia" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beyr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beir" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "byr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bir" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "byere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bierə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beire" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beirə" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bierae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biːre" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "berre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "berə" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bewyr" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beuir" ;
+            hector:validFrom "1477"^^xsd:gYear ;
+            hector:validThrough "1479"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "biera" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biːra" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "berə" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "biere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biːrə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "byre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "birə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bierre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "biːrə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beare" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bɛːrə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beer" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "beːr" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beere" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beːrə" ;
+            hector:validFrom "1507"^^xsd:gYear ;
+            hector:validThrough "1508"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bear" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bɛːr" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bears" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bɛːrs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beyre" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beirə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "beir" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "beir" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "An alcoholic beverage obtained by the fermentation of malt from cereal grain (or another saccharine substance), flavored with hops or other aromatic bitters. Formerly the term was used as distinct from \"ale,\" with beer being hopped; now \"ale\" is used to describe a type of beer. May also be applied as a generic reference to other fermented liquors of various kinds, flavored by various ingredients such as ginger. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/beer> ;
+    la:equivalent aat:300302722 ;
+    hector:attestationCount 1455 ;
+    hector:taxation <https://w3id.org/hector/commodity/beer#rate-1507-none-28>,
+        <https://w3id.org/hector/commodity/beer#rate-1545-inward-118>,
+        <https://w3id.org/hector/commodity/beer#rate-1545-inward-629>,
+        <https://w3id.org/hector/commodity/beer#rate-1558-outward-8> .
+
+aat:300302722 a crm:E55_Type ;
+    rdfs:label "beer (beverage)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/beer#rate-1507-none-28> a hector:Rate ;
+    rdfs:label "1507: Bere the pype 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pipe> ] ;
+    hector:sourceText "Book of Rates 1507, line 28 (transcribed by Stuart Jenks): 'Bere the pype' 6s 8d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/beer#rate-1545-inward-118> a hector:Rate ;
+    rdfs:label "1545 inward: Beres quycke the pece 6s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "6s 8d" ;
+            hector:valueInPence 80.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 118 (transcribed by Stuart Jenks): 'Beres quycke the pece' 6s 8d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/beer#rate-1545-inward-629> a hector:Rate ;
+    rdfs:label "1545 inward: Spruce bere the barrell 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/barrel> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 629 (transcribed by Stuart Jenks): 'Spruce bere the barrell' 10s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/beer#rate-1558-outward-8> a hector:Rate ;
+    rdfs:label "1558 outward: Bere the tonne 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/tun> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 8 (transcribed by Stuart Jenks): 'Bere the tonne' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/barrel> a crm:E58_Measurement_Unit ;
+    rdfs:label "barrel" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/hector/unit/pipe> a crm:E58_Measurement_Unit ;
+    rdfs:label "pipe" .
+
+<https://w3id.org/hector/unit/tun> a crm:E58_Measurement_Unit ;
+    rdfs:label "tun" .
+
+<https://w3id.org/mlca/glossary/beer> a crm:E55_Type ;
+    rdfs:label "beer (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

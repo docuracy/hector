@@ -1,0 +1,98 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/conserve> a crm:E55_Type ;
+    rdfs:label "conserve" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conserves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konservəs" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conservo" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konservo" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "concervys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konservis" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conserv" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konserv" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conservae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konserve" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conservas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konservas" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conserve" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "konservə" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conserva" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konserva" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "conservys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konservis" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "concerv" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "konserv" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "confection, preserve (OED s.v. conserve n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300404380 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/conserve> ;
+    skos:related <https://w3id.org/hector/commodity/comfit> ;
+    hector:attestationCount 79 .
+
+aat:300404380 a crm:E55_Type ;
+    rdfs:label "comfits" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/comfit> a crm:E55_Type ;
+    rdfs:label "comfit" .
+
+<https://w3id.org/mlca/glossary/conserve> a crm:E55_Type ;
+    rdfs:label "conserve (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

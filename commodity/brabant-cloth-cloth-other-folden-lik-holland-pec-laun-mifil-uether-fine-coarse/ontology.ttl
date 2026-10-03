@@ -1,0 +1,57 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth-other-folden-lik-holland-pec-laun-mifil-uether-fine-coarse> a crm:E55_Type ;
+    rdfs:label "brabant cloth (cloth other folden lik holland pec laun mifil uether fine coarse)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "Braband clothe and all other clothe that ys follden lyke Holond clothe, þe pece lawne or myffyll wether ytt be fyne or corsse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "braband kloθə and al oθer kloθə θat is folden likə holond kloθə θe pesə launə or mifil weθer it be finə or korsə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "brabant cloth (cloth other folden lik holland pec laun mifil uether fine coarse)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "brabant kloθ kloθ oθer folden lik holand pek laun mifil ueθer finə koarsə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "brabant cloth, qualified as ‘cloth other folden lik holland pec laun mifil uether fine coarse’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    skos:broader <https://w3id.org/hector/commodity/brabant-cloth> ;
+    hector:compoundOf <https://w3id.org/hector/commodity/brabant-cloth> ;
+    hector:taxation <https://w3id.org/hector/commodity/brabant-cloth-cloth-other-folden-lik-holland-pec-laun-mifil-uether-fine-coarse#rate-1507-none-152> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/commodity/brabant-cloth-cloth-other-folden-lik-holland-pec-laun-mifil-uether-fine-coarse#rate-1507-none-152> a hector:Rate ;
+    rdfs:label "1507: Braband clothe and all other clothe that ys follden lyke Holond clothe, þe pece lawne or myffyll wether ytt be fyne or corsse the pece 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1507, line 152 (transcribed by Stuart Jenks): 'Braband clothe and all other clothe that ys follden lyke Holond clothe, þe pece lawne or myffyll wether ytt be fyne or corsse the pece' 20s" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+<https://w3id.org/hector/commodity/brabant-cloth> a crm:E55_Type ;
+    rdfs:label "brabant cloth" .
+

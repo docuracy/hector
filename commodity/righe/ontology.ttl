@@ -1,0 +1,100 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/righe> a crm:E55_Type ;
+    rdfs:label "righe" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "righes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixəs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ryghtes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixtəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "righe" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "rixə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ryght" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixt" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "right" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixt" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reighes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reixəs" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "righs" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rightys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixtis" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "reighe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "reixə" ;
+            hector:validFrom "1446"^^xsd:gYear ;
+            hector:validThrough "1450"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "righ" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rix" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "ryghes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rixəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a selachian fish of the family Raiidæ, having a broad flat body (sometimes of enormous size) and inferior gill-openings; esp. a skate (OED ray n.2, s.v. reigh)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300389825 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/righe> ;
+    hector:attestationCount 26 .
+
+aat:300389825 a crm:E55_Type ;
+    rdfs:label "fish (meat)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/righe> a crm:E55_Type ;
+    rdfs:label "righe (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,126 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/malmesy> a crm:E55_Type ;
+    rdfs:label "malmesy" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malvesye" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malvesie" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmeseii" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmeseii" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmeseis vini" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmeseis vini" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmesies" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmesiːs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malvese" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malvesə" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malvesey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malvesei" ;
+            hector:validFrom "1487"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmesey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmesei" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmesei" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmesei" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malvesie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malvesiː" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "melvesey" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "melvesei" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malveseis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malveseis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmesie" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malmesiː" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malvesy" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "malvesi" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "malmesy" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "malmesi" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a Mediterranean sweet wine | see vinum Malmesey | malmsey, a Mediterranean sweet wine (OED s.v. malmsey) | a Mediterranean sweet wine, originally the product of the neighbourhood of Monemvasia (Napoli di Malvasia) in the Morea (OED s.v. malmsey) (see also vinum) | a Mediterranean sweet wine, originally the product of the neighbourhood of Monemvasia (Napoli di Malvasia) in the Morea (OED s.v. malmsey) | a Mediterranean sweet wine, originally the product of the neighborhood of Monemvasia (Napoli di Malvasia) in the Morea (OED s.v. malmsey) | malmsey, a Mediterranean sweet wine | malmsey, a strong sweet wine, originally the product of the neighbourhood of Monemvasia (Napoli di Malvasia) in the Morea (OED s.v. malmsey)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300379442 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/malmesy> ;
+    hector:attestationCount 263 ;
+    hector:taxation <https://w3id.org/hector/commodity/malmesy#rate-1558-outward-42> .
+
+aat:300379442 a crm:E55_Type ;
+    rdfs:label "wine" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/malmesy#rate-1558-outward-42> a hector:Rate ;
+    rdfs:label "1558 outward: Malvesey the butte £6" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£6" ;
+            hector:valueInPence 1440.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/butt> ] ;
+    hector:sourceText "Book of Rates 1558, outward, line 42 (transcribed by Stuart Jenks): 'Malvesey the butte' £6" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/butt> a crm:E58_Measurement_Unit ;
+    rdfs:label "butt" .
+
+<https://w3id.org/mlca/glossary/malmesy> a crm:E55_Type ;
+    rdfs:label "malmesy (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

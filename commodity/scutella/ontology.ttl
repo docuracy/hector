@@ -1,0 +1,79 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/scutella> a crm:E55_Type ;
+    rdfs:label "scutella" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scuttle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skutlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chetelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃeteləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chittilles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃitiləs" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chittille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃitilə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "chetelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tʃetelə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutellis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skutelis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutellae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skutele" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "scutella" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "skutela" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Circular or rectangular flat dishes, generally made of wood, pottery or metal, on which meat or other food is carved or served. Early wooden examples often have a depressed area for food and a second smaller cavity for salt. Use \"chargers\" for large platters, usually circular or oval and often made of earthenware or metal, used for serving meat. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300043078 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/scutella> ;
+    la:equivalent aat:300042973 ;
+    hector:attestationCount 3 .
+
+aat:300042973 a crm:E55_Type ;
+    rdfs:label "dishes (vessels for food)" .
+
+aat:300043078 a crm:E55_Type ;
+    rdfs:label "trenchers (dishes)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/scutella> a crm:E55_Type ;
+    rdfs:label "scutella (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

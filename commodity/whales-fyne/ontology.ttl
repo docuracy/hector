@@ -1,0 +1,60 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/whales-fyne> a crm:E55_Type ;
+    rdfs:label "whales fyne" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whale fynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "walə finəs" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whale fynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "walə finə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whales fyne" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "waləs finə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whale fin" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "walə fin" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "whales fynes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "waləs finəs" ;
+            hector:validFrom "1545"^^xsd:gYear ;
+            hector:validThrough "1547"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "whalebone, formerly supposed to be the fin of the whale (OED s.v. whale-fin)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300417719 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/whales%20fyne> ;
+    hector:attestationCount 4 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300417719 a crm:E55_Type ;
+    rdfs:label "whale bone (bone)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/whales%20fyne> a crm:E55_Type ;
+    rdfs:label "whales fyne (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

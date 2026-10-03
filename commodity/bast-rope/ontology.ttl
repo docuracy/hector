@@ -1,0 +1,98 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/bast-rope> a crm:E55_Type ;
+    rdfs:label "bast rope" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastrope" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastropə" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast roap" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bast roap" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast ropys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bast ropis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastropes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastropəs" ;
+            hector:validFrom "1438"^^xsd:gYear ;
+            hector:validThrough "1439"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastropis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastropis" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast ropis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bast ropis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastrop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastrop" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast ropp" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bast rop" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast rop" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bast rop" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bastropez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bastropez" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bast rope" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bast ropə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "ropes made of bast, bark fiber (MED s.v. bast n.1)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014248 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/bast%20rope> ;
+    skos:related <https://w3id.org/hector/commodity/bast>,
+        <https://w3id.org/hector/commodity/rope> ;
+    hector:attestationCount 13 .
+
+aat:300014248 a crm:E55_Type ;
+    rdfs:label "rope" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bast> a crm:E55_Type ;
+    rdfs:label "bast" .
+
+<https://w3id.org/hector/commodity/rope> a crm:E55_Type ;
+    rdfs:label "rope" .
+
+<https://w3id.org/mlca/glossary/bast%20rope> a crm:E55_Type ;
+    rdfs:label "bast rope (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

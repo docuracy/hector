@@ -1,0 +1,136 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/pipe-weight> a crm:E58_Measurement_Unit ;
+    rdfs:label "pipe (weight)" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipe" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1456"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipe (weight)" ;
+            crm:P2_has_type aat:300404670 ;
+            hector:phoneticKey "pipə weixt" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyppys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipis" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipez" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipis" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pypp" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pip" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipz" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipz" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pip" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pip" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pyppe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pippe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pype" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipə" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipəs" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "pipa" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "pipa" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1456"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard." ;
+            crm:P2_has_type aat:300418049 ],
+        [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a pipe as a unit of weight, equivalent to half a dolium ponderis (10 cwt, i.e. ½ tun), here used especially for iron (Zupko 416-9)." ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/pipe-weight>,
+        <https://w3id.org/mlca/glossary/pipe%20%28weight%29> ;
+    la:equivalent aat:300386648 ;
+    hector:attestationCount 165 ;
+    hector:conversionToGram 508023.4544 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (pipe (weight): '10 cwt, i.e. ½ tun')" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 10 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/pipe-weight> a crm:E55_Type ;
+    rdfs:label "pipe (weight)" .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/mlca/glossary/pipe%20%28weight%29> a crm:E55_Type ;
+    rdfs:label "pipe (weight) (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

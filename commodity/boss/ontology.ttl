@@ -1,0 +1,116 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/boss> a crm:E55_Type ;
+    rdfs:label "boss" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boss" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "bos" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bosses" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosəs" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bosys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosis" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bossis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bosse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "booces" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boːsəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bose" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosə" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "booce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boːsə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bosez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosez" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boce" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bosə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Bosses, rivets, or nails with a large head for ornament or protection. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:closeMatch aat:300036429 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/boss> ;
+    hector:attestationCount 19 ;
+    hector:taxation <https://w3id.org/hector/commodity/boss#rate-1558-inward-147> .
+
+aat:300036429 a crm:E55_Type ;
+    rdfs:label "studs (bosses)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/boss#rate-1558-inward-147> a hector:Rate ;
+    rdfs:label "1558 inward: Bosses for bridelles the grosse 10s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "10s" ;
+            hector:valueInPence 120.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 147 (transcribed by Stuart Jenks): 'Bosses for bridelles the grosse' 10s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/boss> a crm:E55_Type ;
+    rdfs:label "boss (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

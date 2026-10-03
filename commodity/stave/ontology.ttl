@@ -1,0 +1,77 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/stave> a crm:E55_Type ;
+    rdfs:label "stave" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stavez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stavez" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "staves" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stavəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stav" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stav" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stave" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "stavə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stavis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stavis" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "staf" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "staf" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "stavys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "stavis" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "(stave, -s, stave, -z) stave | stick; cane; club or clublike weapon; staff (MED s.v. staf n.) | clearly some sort of packing unit for copper pans, but meaning unknown | clearly some sort of packing unit (measure?) of kettles, but exact meaning unknown | stave for making crossbows | probably the bow of a cross-bow | staves for a bill, which is an obsolete military weapon used chiefly by infantry; varying in form from a simple concave blade with a long wooden handle, to a kind of concave axe with a spike at the back and its shaft terminating in a spear-head; a halberd (OED s.v. bill n.1 2) | stave for spears" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/stave> ;
+    la:equivalent aat:300014680 ;
+    hector:attestationCount 36 .
+
+aat:300014680 a crm:E55_Type ;
+    rdfs:label "stave (wood products)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/stave> a crm:E55_Type ;
+    rdfs:label "stave (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

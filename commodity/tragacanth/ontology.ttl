@@ -1,0 +1,89 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/tragacanth> a crm:E55_Type ;
+    rdfs:label "tragacanth" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tragacanth" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "tragakanθ" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dragantum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dragantum" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dragant" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dragant" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "draganti" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "draganti" ;
+            hector:validFrom "1472"^^xsd:gYear ;
+            hector:validThrough "1477"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "drogagant" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "drogagant" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "dragagantum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "dragagantum" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "An exudate from several species of shrubs of the genus Astragalus, especially Astragalus gummifer, found in the dry regions of Iran, Iraq, Syria, and Turkey. The use of gum tragacanth dates from pre-Christian times. It used for textile sizing, printing, pastel crayon production, leather curing, furniture polishes, as an emulsifying, suspending, and thickening agent, pharmaceutically as a demulcent (coating) and as a binding agent in pill manufacture, and in processed foods. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/tragacanth> ;
+    la:equivalent aat:300012876 ;
+    hector:attestationCount 3 ;
+    hector:taxation <https://w3id.org/hector/commodity/tragacanth#rate-1558-inward-393> .
+
+aat:300012876 a crm:E55_Type ;
+    rdfs:label "gum tragacanth" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/tragacanth#rate-1558-inward-393> a hector:Rate ;
+    rdfs:label "1558 inward: Dragagantum the pounde 12d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "12d" ;
+            hector:valueInPence 12.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pound> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 393 (transcribed by Stuart Jenks): 'Dragagantum the pounde' 12d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/pound> a crm:E58_Measurement_Unit ;
+    rdfs:label "pound" .
+
+<https://w3id.org/mlca/glossary/tragacanth> a crm:E55_Type ;
+    rdfs:label "tragacanth (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

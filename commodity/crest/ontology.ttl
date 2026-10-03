@@ -1,0 +1,78 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/crest> a crm:E55_Type ;
+    rdfs:label "crest" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crestis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krestis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crestae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kreste" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cresta" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kresta" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crest" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "krest" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cresse" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kresə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "creste" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krestə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crestcloth" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krestkloθ" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cresclothe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kreskloθə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "crest, a measure of linen cloth (OED s.v. crest n.3) | a measure of Britanny cloth (5 ells) (TNA: PRO, E159/177 Recorda Michaelmas m 5) | linen cloth from Britanny, so called because measured in crests (= 5 ells) (OED s.v. crest n.^3) | linen cloth from Britanny, so called because measured in crests (= 5 ells) (OED s.v. crest n.3) | a crest is a measure of Britanny cloth (5 ells) (TNA: PRO, E159/177 Recorda Michaelmas m 5), so crest cloth is presumably cloth manufactured in Britanny and therefore measured in crests. However, the account states that one piece measuring 100 ulne was imported | a crest is a measure of Britanny cloth (5 ells) (TNA: PRO, E159/177 Recorda Michaelmas m 5), so crest cloth is presumably cloth manufactured in Britanny and therefore measured in crests | linen cloth from Britanny, so called because measured in crests (= 5 ells) (OED s.v. crest n.3) | linen cloth from Brittany, so called because measured in crests (= 5 ells) (OED s.v. crest n.3)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014069 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/crest> ;
+    hector:attestationCount 27 .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/crest> a crm:E55_Type ;
+    rdfs:label "crest (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,70 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/hamper> a crm:E58_Measurement_Unit ;
+    rdfs:label "hamper" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampers" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hampers" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampperis" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamperis" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hamperes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamperəs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hampper" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hamper" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hamper" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hamper" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Large baskets, usually having a cover or lid, for packing, storing, or transporting food, laundry, or other articles. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/hamper>,
+        <https://w3id.org/mlca/glossary/hamper> ;
+    skos:broader aat:300386648 ;
+    la:equivalent aat:300197291 ;
+    hector:attestationCount 40 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/package> .
+
+aat:300197291 a crm:E55_Type ;
+    rdfs:label "hampers" .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/hamper> a crm:E55_Type ;
+    rdfs:label "hamper" .
+
+<https://w3id.org/mlca/glossary/hamper> a crm:E55_Type ;
+    rdfs:label "hamper (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/cast> a crm:E58_Measurement_Unit ;
+    rdfs:label "cast" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "caste" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kastə" ;
+            hector:validFrom "1520"^^xsd:gYear ;
+            hector:validThrough "1524"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cast" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kast" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "kast" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kast" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "as many (herrings, etc.) as are thrown into a vessel at once, a ‘warp’; a set of three or four (OED s.v. cast n. III 16), here as a measure of stockfish | a set of three or four (stockfish) (OED s.v. cast n. 16) | a measure of earthen pots, containing three pots (Willan 24) | a packing unit for earthen pottes, containing 3 C" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/cast>,
+        <https://w3id.org/mlca/glossary/cast> ;
+    skos:closeMatch aat:300386648 ;
+    hector:attestationCount 36 ;
+    hector:definedAs [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (cast: 'a set of three or four'). Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 4 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ],
+        [ a crm:E54_Dimension ;
+            crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+                    crm:P190_has_symbolic_content "Source: LCA glossary (cast: 'a set of three or four'). Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred" ;
+                    crm:P2_has_type aat:300418049 ] ;
+            crm:P90_has_value 3 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/each> ] ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cast> a crm:E55_Type ;
+    rdfs:label "cast" .
+
+<https://w3id.org/mlca/glossary/cast> a crm:E55_Type ;
+    rdfs:label "cast (London Customs Accounts glossary)" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+<https://w3id.org/hector/unit/each> a crm:E58_Measurement_Unit ;
+    rdfs:label "each" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,93 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/cremil> a crm:E55_Type ;
+    rdfs:label "cremil" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crymylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krimilə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremyll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kremil" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kremilə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremylle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kremilə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crimille" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krimilə" ;
+            hector:validFrom "1400"^^xsd:gYear ;
+            hector:validThrough "1421"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremeles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kremeləs" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crimule" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krimulə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremele" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "kremelə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crimile" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "krimilə" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "cremil" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "kremil" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Refers to a fine, openwork ornamental textile work formed by looping, interlacing, twisting, plaiting, or braiding threads of linen, cotton, silk, hair, metal, or another fiber to form designs or patterns. Lace may be made with a needle or with bobbins. Embroidery may be added. Modern lace may be made by machine. Openwork fabrics made on a loom and ornamental openwork knitting are generally not classified as lace. Lace is often white or monochromatic. True lace developed in the fourteenth century in Europe and the Middle East, although ornamented openwork fabrics were known in ancient cultures, including the Egyptian culture. Lace may be used as a border, edging, or insert on linens or apparel; it is also formed into large pieces of cloth used for hangings, draperies, apparel, or other items.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/cremil> ;
+    la:equivalent aat:300132861 ;
+    hector:attestationCount 47 .
+
+aat:300132861 a crm:E55_Type ;
+    rdfs:label "lace (needlework)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/cremil> a crm:E55_Type ;
+    rdfs:label "cremil (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

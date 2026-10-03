@@ -1,0 +1,64 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lees> a crm:E55_Type ;
+    rdfs:label "lees" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lyes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lies" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "leys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "leis" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lees" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "leːs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "liez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "liːz" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lyzes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lizəs" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "deposits of residual yeast and other particles in wine-making [Source: Wikidata]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lees> ;
+    la:equivalent wd:Q162441 ;
+    hector:attestationCount 16 .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q162441 a crm:E55_Type ;
+    rdfs:label "lees" .
+
+<https://w3id.org/mlca/glossary/lees> a crm:E55_Type ;
+    rdfs:label "lees (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

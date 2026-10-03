@@ -1,0 +1,78 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/hilwort> a crm:E55_Type ;
+    rdfs:label "hilwort" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "olwort" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "olwort" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1398"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoole worte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hoːlə wortə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hilwort" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "hilwort" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holworte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holwortə" ;
+            hector:validFrom "1434"^^xsd:gYear ;
+            hector:validThrough "1438"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hoole holeworte" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hoːlə holeuortə" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holwort" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holwort" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "holwortes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "holwortəs" ;
+            hector:validFrom "1519"^^xsd:gYear ;
+            hector:validThrough "1520"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "pennyroyal (mentha pluegium); also wild thyme, used medicinally (MED s.v. hilwort(e))" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300132436,
+        aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/hilwort> ;
+    hector:attestationCount 6 .
+
+aat:300132436 a crm:E55_Type ;
+    rdfs:label "herbs" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/hilwort> a crm:E55_Type ;
+    rdfs:label "hilwort (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

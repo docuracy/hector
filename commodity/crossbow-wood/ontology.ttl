@@ -1,0 +1,46 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/crossbow-wood> a crm:E55_Type ;
+    rdfs:label "crossbow wood" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    schema1:material aat:300011914 ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "crossbow wood" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "krosbuː woːd" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Bows basically consisting of a curved stave mounted crosswise on a center shaft by means of a system of cord or gut bindings or metal bands, the string being drawn back, held, and released by some mechanical means such as a windlass or a rotatable nut. They were in use as early as the 11th century and continue to be used contemporarily for hunting and recreation. [Source: Getty AAT] | wood for making a crossbow" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300227076 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/crossbow%20wood> ;
+    skos:related <https://w3id.org/hector/commodity/crossbow> .
+
+aat:300011914 a crm:E57_Material ;
+    rdfs:label "wood (plant material)" .
+
+aat:300227076 a crm:E55_Type ;
+    rdfs:label "projectile weapon components" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/crossbow> a crm:E55_Type ;
+    rdfs:label "crossbow" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
+<https://w3id.org/mlca/glossary/crossbow%20wood> a crm:E55_Type ;
+    rdfs:label "crossbow wood (London Customs Accounts glossary)" .
+

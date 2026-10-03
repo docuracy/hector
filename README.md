@@ -28,7 +28,9 @@ Wikidata and QUDT where an equivalent exists, and is published as JSON-LD aligne
 | Kinds of quantity (mass, length, volume, count, package) | 5 | `unit/dimension/<kind>/ontology.json` |
 | Merged or moved records, kept so their URIs still resolve | 3 | deprecation records (`deprecated`, `isReplacedBy`) |
 
-Also published: the JSON-LD context (`context/hector.jsonld`), the vocabulary of HECTOR's own
+Every record is also published as **Turtle** (`ontology.ttl`) and **RDF/XML** (`ontology.rdf`) beside its
+JSON-LD, the same graph in each, and all of HECTOR in one file as `dump/hector.ttl.gz` (Turtle,
+gzipped; 228,115 triples). Also published: the JSON-LD context (`context/hector.jsonld`), the vocabulary of HECTOR's own
 terms (`ontology/ontology.json`), the slug ledgers that record how each URI was minted and what
 replaced it (`ledger/`), and the index the site searches (`search/index.json`). Counts as of
 3 October 2026.
@@ -79,10 +81,11 @@ The pipeline (Python, in `tools/`; everything is written to the git-ignored `bui
 .venv/bin/python -m tools.units.build_units         # -> build/site/unit/, build/ledger/units.tsv
 .venv/bin/python -m tools.rates.link_rates          # rates onto commodities and units; qualified records
 .venv/bin/python -m tools.site.build_search_index   # -> build/site/search/index.json
+.venv/bin/python -m tools.site.build_rdf            # -> ontology.ttl / ontology.rdf beside each record, dump/
 .venv/bin/python tools/validate.py --root build/site --online --no-shacl
 ```
 
-Publishing copies `build/site/{commodity,unit,context,ontology,search}` and `build/ledger/*.tsv`
+Publishing copies `build/site/{commodity,unit,context,ontology,search,dump}` and `build/ledger/*.tsv`
 into the repository root (PLAN.md §3 has the steps). Pushing to `main` publishes.
 
 **Validation.** `tools/validate.py` checks every document against the context, the vocabulary and
@@ -93,7 +96,9 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
 ## Not yet
 
 - No tagged release or DOI: please do not cite.
-- JSON-LD only; no RDF/XML or Turtle.
+- The URIs negotiate JSON-LD only: Turtle and RDF/XML are files to fetch directly
+  (`https://docuracy.github.io/hector/commodity/saffron/ontology.ttl`) until the w3id redirect
+  rules are extended.
 - The site searches spellings, not sounds. Every spelling has an IPA key, but sound-alike search
   is not built.
 - The 1604 Book of Rates is parsed but not published (it waits on its commodities being restored

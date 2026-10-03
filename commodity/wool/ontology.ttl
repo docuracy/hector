@@ -1,0 +1,147 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wool> a crm:E55_Type ;
+    rdfs:label "wool" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wullen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wulen" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lana" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lana" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wull" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wul" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lane" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanei" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanei" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lane" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lanarum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lanarum" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wol" ;
+            hector:validFrom "1556"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wuːlə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wolle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wolə" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woolle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːlə" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "woole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːlə" ;
+            hector:validFrom "1506"^^xsd:gYear ;
+            hector:validThrough "1507"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wooll" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "woːl" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wool" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "woːl" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wulle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wulə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "wool, the fleece of sheep — the principal English export staple — and imported foreign wool (German, Spanish, Scottish, Eastern/'estrich', Danish) (OED s.v. wool n.). For the wool-comb see wul card; cotton wool is cotton." ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wool> ;
+    skos:related <https://w3id.org/hector/commodity/flock>,
+        <https://w3id.org/hector/commodity/steege> ;
+    la:equivalent aat:300014074 ;
+    hector:attestationCount 22637 ;
+    hector:taxation <https://w3id.org/hector/commodity/wool#rate-1558-inward-407> .
+
+aat:300014074 a crm:E55_Type ;
+    rdfs:label "wool (hair material)" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/flock> a crm:E55_Type ;
+    rdfs:label "flock" .
+
+<https://w3id.org/hector/commodity/steege> a crm:E55_Type ;
+    rdfs:label "steege" .
+
+<https://w3id.org/hector/commodity/wool#rate-1558-inward-407> a hector:Rate ;
+    rdfs:label "1558 inward: Estrege wool the C cont’ 112 lb 16s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "16s 8d" ;
+            hector:valueInPence 200.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 407 (transcribed by Stuart Jenks): 'Estrege wool the C cont’ 112 lb' 16s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/wool> a crm:E55_Type ;
+    rdfs:label "wool (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

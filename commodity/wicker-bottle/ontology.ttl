@@ -1,0 +1,94 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/wicker-bottle> a crm:E55_Type ;
+    rdfs:label "wicker bottle" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wicker botelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiker botelə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wicker bottle" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "wiker botlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wykar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikar" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wicker botle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiker botlə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wyckar" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikar" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wicker bottells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiker botels" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wickerde botteles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikerdə boteləs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wickerde bottel" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wikerdə botel" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "wicker bottell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "wiker botel" ;
+            hector:validFrom "1550"^^xsd:gYear ;
+            hector:validThrough "1553"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "bottle, wrapped in wicker for protection | bottle covered with wicker, a pliant twig or small rod, usually of willow, especially as used for making baskets, chiefly used in plural to designate wickerwork, a basket, cradle, chair etc. made of wicker (OED s.v. wicker n.)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014690,
+        aat:300045627 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/wicker%20bottle> ;
+    skos:related <https://w3id.org/hector/commodity/bottle>,
+        <https://w3id.org/hector/commodity/wicker> ;
+    hector:attestationCount 7 .
+
+aat:300014690 a crm:E55_Type ;
+    rdfs:label "wicker" .
+
+aat:300045627 a crm:E55_Type ;
+    rdfs:label "bottles" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/bottle> a crm:E55_Type ;
+    rdfs:label "bottle" .
+
+<https://w3id.org/hector/commodity/wicker> a crm:E55_Type ;
+    rdfs:label "wicker" .
+
+<https://w3id.org/mlca/glossary/wicker%20bottle> a crm:E55_Type ;
+    rdfs:label "wicker bottle (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

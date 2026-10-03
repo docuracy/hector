@@ -1,0 +1,75 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/unit/nest> a crm:E58_Measurement_Unit ;
+    rdfs:label "nest" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nidus" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nidus" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nestys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nestis" ;
+            hector:validFrom "1431"^^xsd:gYear ;
+            hector:validThrough "1433"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nest" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "nest" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1559"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "neste" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nestə" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nidi" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nidi" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "nestes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "nestəs" ;
+            hector:validFrom "1490"^^xsd:gYear ;
+            hector:validThrough "1492"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "nest (set), as a measure of goblets | nest (set), as a measure of ciphorum murre | a packing unit for , containing 3 pieces | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a) | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here as a measure of counters, cista | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here as a measure of chests, counters | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here of chests | of Cyprus chestes | (nester of boxes) a set or series of boxes designed to be contained in the same receptacle, or so made that each smaller one is enclosed in, or fits into, the larger one nearest in size to it (OED s.v. nest n. 5a, quote from 1631). Note that the Cologne translation specifies that this product is for storing combs | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here as a packing unit of maser cuppys | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here made of mazer wood (properly maple) or other hardwood (Cobb 182; OED s.v. mazer n.) | nest measure of quantity for cofers (3 in number) (Zupko 257) | clearly some packing unit or measure of steel, but exact meaning unknown | a set, used here of counters | a set, used here of chesters, cofirs and counters | a set, used here of ciste, cofers and counters | a set, used here as a measure of counters | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here as a measure of counters | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here of chests, hampers | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here of chests, coffers | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here Cyprus chests | a set of similar objects, especially of such as are contained in the same receptacle (OED s.v. nest 6a), here of forcers (chest, coffer or casket)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    rdfs:seeAlso <https://w3id.org/hector/commodity/nest>,
+        <https://w3id.org/mlca/glossary/nest> ;
+    skos:broader aat:300386648 ;
+    hector:attestationCount 530 ;
+    hector:quantityKind <https://w3id.org/hector/unit/dimension/count> .
+
+aat:300386648 a crm:E55_Type ;
+    rdfs:label "weights and measures (general, standards)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/nest> a crm:E55_Type ;
+    rdfs:label "nest" .
+
+<https://w3id.org/mlca/glossary/nest> a crm:E55_Type ;
+    rdfs:label "nest (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

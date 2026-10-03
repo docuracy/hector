@@ -1,0 +1,90 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/armenian-bole> a crm:E55_Type ;
+    rdfs:label "armenian bole" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bole armonyak" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolə armoniak" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bole" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolə" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bole armens" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolə armens" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bole armoniake" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bolə armoniakə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "balle armonyak" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "balə armoniak" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "armenian bole" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "armenian bolə" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Soft red ocher that is a natural mixture of hydrated silicate clays colored with red iron oxide. Since at least the 17th century, it has been used as a foundation for gold leaf and as a red earth pigment. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300404880 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/armenian%20bole> ;
+    la:equivalent aat:300311590 ;
+    hector:attestationCount 11 ;
+    hector:originPlace wd:Q399 ;
+    hector:taxation <https://w3id.org/hector/commodity/armenian-bole#rate-1558-inward-90> .
+
+aat:300311590 a crm:E55_Type ;
+    rdfs:label "Armenian bole" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300404880 a crm:E55_Type ;
+    rdfs:label "medicines (material)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q399 a crm:E53_Place ;
+    rdfs:label "Armenia" .
+
+<https://w3id.org/hector/commodity/armenian-bole#rate-1558-inward-90> a hector:Rate ;
+    rdfs:label "1558 inward: Bole armoniake the C lb. cont’ 112 lb 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 90 (transcribed by Stuart Jenks): 'Bole armoniake the C lb. cont’ 112 lb' 20s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+<https://w3id.org/mlca/glossary/armenian%20bole> a crm:E55_Type ;
+    rdfs:label "armenian bole (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,24 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+<https://w3id.org/hector/unit/dimension/length> a crm:E55_Type ;
+    rdfs:label "length" ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "The dimension measured by units of length (ell, yard, foot)." ;
+            crm:P2_has_type aat:300418049 ] ;
+    la:equivalent quantitykind:Length,
+        wd:Q36253 .
+
+quantitykind:Length a crm:E55_Type ;
+    rdfs:label "Length" .
+
+aat:300418049 a crm:E55_Type ;
+    rdfs:label "brief texts" .
+
+wd:Q36253 a crm:E55_Type ;
+    rdfs:label "length" .
+

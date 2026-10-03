@@ -1,0 +1,114 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/buff-hide> a crm:E55_Type ;
+    rdfs:label "buff hide" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "booffe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boːfə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buff hide" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "buf hidə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "booff" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "boːf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buff" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buf" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boffe skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bofə skinəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bufe hide" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bufə hidə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boffe skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bofə skinə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buf hides" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buf hidəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "buf hide" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "buf hidə" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boff skynnes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bof skinəs" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "boff skynne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bof skinə" ;
+            hector:validFrom "1512"^^xsd:gYear ;
+            hector:validThrough "1513"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "skinnes called buffes" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "skinəs kaled bufəs" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "de bufe" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "de bufə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "bufe hides" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "bufə hidəs" ;
+            hector:validFrom "1531"^^xsd:gYear ;
+            hector:validThrough "1533"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a very stout kind of leather made of ox-hide, dressed with oil, and having a characteristic fuzzy surface, and a dull whitish-yellow color (OED s.v. buff n.2 2a) | a very stout kind of leather made of ox-hide, dressed with oil, and having a characteristic fuzzy surface, and a dull whitish-yellow color (OED s.v. buff n.2 2a & 8) | a very stout kind of leather made of ox-hide, dressed with oil, and having a characteristic fuzzy surface, and a dull whitish-yellow color (OED s.v. buff n.^2 2a)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300011845,
+        aat:300395532 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/buff%20hide> ;
+    hector:attestationCount 63 .
+
+aat:300011845 a crm:E55_Type ;
+    rdfs:label "leather" .
+
+aat:300395532 a crm:E55_Type ;
+    rdfs:label "pelts (animal skins)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/buff%20hide> a crm:E55_Type ;
+    rdfs:label "buff hide (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

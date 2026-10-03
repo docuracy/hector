@@ -1,0 +1,106 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/vitry> a crm:E55_Type ;
+    rdfs:label "vitry" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vitry" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "vitri" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vetery" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "veteri" ;
+            hector:validFrom "1502"^^xsd:gYear ;
+            hector:validThrough "1503"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vittrye canvas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vitrie kanvas" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vitery" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "viteri" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vetry" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "vetri" ;
+            hector:validFrom "1505"^^xsd:gYear ;
+            hector:validThrough "1506"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "vittery canvas" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "viteri kanvas" ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a light, durable kind of canvas, originally made in Vitré (Britanny) (OED s.v. Vitry) (see also canvas vetery) | a light, durable kind of canvas, originally made in Vitré (France) (OED s.v. Vitry) (see also canvas) | a light, durable kind of canvas, originally made in Vitré (France) (OED s.v. Vitry) | a light, durable canvas originally made in Vitrè in Britanny (OED s.v. vitry)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014078 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/vitry> ;
+    hector:attestationCount 33 ;
+    hector:originPlace wd:Q234704 ;
+    hector:taxation <https://w3id.org/hector/commodity/vitry#rate-1545-inward-778>,
+        <https://w3id.org/hector/commodity/vitry#rate-1545-inward-779> .
+
+aat:300014078 a crm:E55_Type ;
+    rdfs:label "canvas (textile material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+wd:Q234704 a crm:E53_Place ;
+    rdfs:label "Vitré" .
+
+<https://w3id.org/hector/commodity/vitry#rate-1545-inward-778> a hector:Rate ;
+    rdfs:label "1545 inward: Vittery canvas the bolle conteyning 2½ C £3" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "£3" ;
+            hector:valueInPence 720.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bolt> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 778 (transcribed by Stuart Jenks): 'Vittery canvas the bolle conteyning 2½ C' £3" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/vitry#rate-1545-inward-779> a hector:Rate ;
+    rdfs:label "1545 inward: Vittery canvas the ballet conteynyng 1¼ C 33s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "33s 4d" ;
+            hector:valueInPence 400.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/bale> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 779 (transcribed by Stuart Jenks): 'Vittery canvas the ballet conteynyng 1¼ C' 33s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/bale> a crm:E58_Measurement_Unit ;
+    rdfs:label "bale" .
+
+<https://w3id.org/hector/unit/bolt> a crm:E58_Measurement_Unit ;
+    rdfs:label "bolt" .
+
+<https://w3id.org/mlca/glossary/vitry> a crm:E55_Type ;
+    rdfs:label "vitry (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/lawn> a crm:E55_Type ;
+    rdfs:label "lawn" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lawen" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lauen" ;
+            hector:validFrom "1480"^^xsd:gYear ;
+            hector:validThrough "1481"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lawne" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "launə" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "laun" ;
+            hector:validFrom "1412"^^xsd:gYear ;
+            hector:validThrough "1427"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lawyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "lauin" ;
+            hector:validFrom "1442"^^xsd:gYear ;
+            hector:validThrough "1445"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "tela lini laun" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "tela lini laun" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "laune" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "launə" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "lawn" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "laun" ;
+            hector:validFrom "1428"^^xsd:gYear ;
+            hector:validThrough "1430"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a kind of fine linen, resembling cambric (the usual measure of which is papir) (OED s.v. lawn sb.1 1) | a kind of fine linen, resembling cambric (OED s.v. lawn, n.1) | a kind of fine linen, resembling cambric (the usual measure of which is papir) (OED s.v. lawn sb.1 1), here narrow | a kind of fine linen, resembling cambric (OED s.v. lawn sb.1 1) | 23, | a kind of fine linen, resembling cambric (the usual measure of which is papir) (OED s.v. lawn sb.1 1), here of low quality" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300014069 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/lawn> ;
+    hector:attestationCount 122 ;
+    hector:taxation <https://w3id.org/hector/commodity/lawn#rate-1545-inward-428>,
+        <https://w3id.org/hector/commodity/lawn#rate-1558-inward-645> .
+
+aat:300014069 a crm:E55_Type ;
+    rdfs:label "linen (material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/lawn#rate-1545-inward-428> a hector:Rate ;
+    rdfs:label "1545 inward: Lawne fyne and course the pece 20s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "20s" ;
+            hector:valueInPence 240.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 428 (transcribed by Stuart Jenks): 'Lawne fyne and course the pece' 20s" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/lawn#rate-1558-inward-645> a hector:Rate ;
+    rdfs:label "1558 inward: Lawne fyne and course the pece 30s" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "30s" ;
+            hector:valueInPence 360.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/pecia> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 645 (transcribed by Stuart Jenks): 'Lawne fyne and course the pece' 30s" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/mlca/glossary/lawn> a crm:E55_Type ;
+    rdfs:label "lawn (London Customs Accounts glossary)" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+<https://w3id.org/hector/unit/pecia> a crm:E58_Measurement_Unit ;
+    rdfs:label "pecia" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

@@ -1,0 +1,110 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/horse-bell> a crm:E55_Type ;
+    rdfs:label "horse bell" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horse bells" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horsə bels" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horsbelles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horsbeləs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horse belles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horsə beləs" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horsbell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horsbel" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hors bell" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hors bel" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horse bell" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "horsə bel" ;
+            hector:validFrom "1548"^^xsd:gYear ;
+            hector:validThrough "1550"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "hors belles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "hors beləs" ;
+            hector:validFrom "1513"^^xsd:gYear ;
+            hector:validThrough "1514"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "horsbelle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "horsbelə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "(OED s.v. horse n. 27c) | small bells used for decoration on a horse’s trappings (OED s.v. bell n.1 1a) | a bell to hang around the neck of a horse (OED s.v. horse n. IV 27c), jingle bells (quote) Whanne he rood men myghte his brydel heere Gynglen in a whistlynge wynd as cleere And eek as loude as dooth the chapel belle (MED s.v. ginglen, quote from Chaucer 1387-95) | a bell to hang around the neck of a horse (OED s.v. horse n. 27c), jingle bells (quote) Whanne he rood men myghte his brydel heere Gynglen in a whistlynge wynd as cleere And eek as loude as dooth the chapel belle (MED s.v. ginglen, quote from Chaucer 1387-95)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300420150 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/horse%20bell> ;
+    skos:related <https://w3id.org/hector/commodity/cow-bell>,
+        <https://w3id.org/hector/commodity/hawk-bell> ;
+    hector:attestationCount 9 ;
+    hector:taxation <https://w3id.org/hector/commodity/horse-bell#rate-1545-inward-364> .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+aat:300420150 a crm:E55_Type ;
+    rdfs:label "animal bells" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/cow-bell> a crm:E55_Type ;
+    rdfs:label "cow bell" .
+
+<https://w3id.org/hector/commodity/hawk-bell> a crm:E55_Type ;
+    rdfs:label "hawk bell" .
+
+<https://w3id.org/hector/commodity/horse-bell#rate-1545-inward-364> a hector:Rate ;
+    rdfs:label "1545 inward: Horsbelles the groce 3s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "3s 4d" ;
+            hector:valueInPence 40.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 144 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/gross> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 364 (transcribed by Stuart Jenks): 'Horsbelles the groce' 3s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/gross> a crm:E58_Measurement_Unit ;
+    rdfs:label "gross" .
+
+<https://w3id.org/mlca/glossary/horse%20bell> a crm:E55_Type ;
+    rdfs:label "horse bell (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

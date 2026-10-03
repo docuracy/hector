@@ -1,0 +1,91 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/partisan> a crm:E55_Type ;
+    rdfs:label "partisan" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partizans" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partizans" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partesan" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partesan" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partesans" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partesans" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partizan" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partizan" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partesyn" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partesin" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partesyns" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partesins" ;
+            hector:validFrom "1553"^^xsd:gYear ;
+            hector:validThrough "1555"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partysan" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partisan" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partisan" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "partisan" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "partysans" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "partisans" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Staff weapons having a broad, tapering triangular blade with two upturned lugs or wings at the base, used as thrusting and cutting weapons but also extremely popular as ceremonial weapons from the 16th to the 19th century, and still occasionally used as such today. [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/partisan> ;
+    skos:related <https://w3id.org/hector/commodity/boar-spear> ;
+    la:equivalent aat:300037032 ;
+    hector:attestationCount 4 .
+
+aat:300037032 a crm:E55_Type ;
+    rdfs:label "partisans" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/boar-spear> a crm:E55_Type ;
+    rdfs:label "boar spear" .
+
+<https://w3id.org/mlca/glossary/partisan> a crm:E55_Type ;
+    rdfs:label "partisan (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

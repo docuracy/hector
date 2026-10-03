@@ -1,0 +1,62 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/rubstone> a crm:E55_Type ;
+    rdfs:label "rubstone" ;
+    dcterms:modified "2026-09-29"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rubstone" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "rubstonə" ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rubstons" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rubstons" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rubbyngstone" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rubiŋstonə" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rubston" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rubston" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "rubbyngstones" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "rubiŋstonəs" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "a stone used for rubbing with, in order to sharpen or make smooth; esp. a kind of whetstone (OED s.v. rubstone)" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:broader aat:300023299 ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/rubstone> ;
+    hector:attestationCount 2 .
+
+aat:300023299 a crm:E55_Type ;
+    rdfs:label "whetstones" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/mlca/glossary/rubstone> a crm:E55_Type ;
+    rdfs:label "rubstone (London Customs Accounts glossary)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+

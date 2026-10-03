@@ -1,0 +1,176 @@
+@prefix aat: <http://vocab.getty.edu/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hector: <https://w3id.org/hector/ontology#> .
+@prefix la: <https://linked.art/ns/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/hector/commodity/gall> a crm:E55_Type ;
+    rdfs:label "gall" ;
+    dcterms:modified "2026-10-03"^^xsd:date ;
+    crm:P1_is_identified_by [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawlles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gauləs" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gauləs" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "galles" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "galəs" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gaules" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gauləs" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawlle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaulə" ;
+            hector:validFrom "1541"^^xsd:gYear ;
+            hector:validThrough "1545"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gaule" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaulə" ;
+            hector:validFrom "1547"^^xsd:gYear ;
+            hector:validThrough "1548"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gall" ;
+            crm:P2_has_type aat:300404670,
+                hector:AttestedVariant ;
+            hector:phoneticKey "gal" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gawle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gaulə" ;
+            hector:validFrom "1536"^^xsd:gYear ;
+            hector:validThrough "1540"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "galli" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gali" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gallys" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "galis" ;
+            hector:validFrom "1380"^^xsd:gYear ;
+            hector:validThrough "1385"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gallorum" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "galorum" ;
+            hector:validFrom "1465"^^xsd:gYear ;
+            hector:validThrough "1472"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "galla" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gala" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gallae" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "gale" ;
+            hector:validFrom "1461"^^xsd:gYear ;
+            hector:validThrough "1465"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "galle" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "galə" ;
+            hector:validFrom "1390"^^xsd:gYear ;
+            hector:validThrough "1390"^^xsd:gYear ],
+        [ a crm:E33_E41_Linguistic_Appellation ;
+            crm:P190_has_symbolic_content "gallez" ;
+            crm:P2_has_type hector:AttestedVariant ;
+            hector:phoneticKey "galez" ;
+            hector:validFrom "1493"^^xsd:gYear ;
+            hector:validThrough "1495"^^xsd:gYear ] ;
+    crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
+            crm:P190_has_symbolic_content "Material made of excrescences produced on trees, usually the oak species Quercus infectoria in Europe and the Near East, and on the sumac species Rhus semialata in China and Japan, by the action of insects, chiefly of the genus Cynips. Galls are formed when gall-wasp eggs are deposited on tree branches in nut-like pockets; the gall grows until the larvae are completely enveloped. The mature insect bores a hole through the gall in order to escape. All galls contain 36-60% tannins; the bluish-green galls, gathered before the insect escapes, are richest in gallotannic acid. The tannins have been used for centuries for vegetable tanning of leather. When galls are combined with ferrous sulfate, a black dye is produced; alone, they produce a gray dye. Gall extract was also used as a mordant in the preparation of writing inks.  [Source: Getty AAT]" ;
+            crm:P2_has_type aat:300435416 ] ;
+    skos:exactMatch <https://w3id.org/mlca/glossary/gall> ;
+    la:equivalent aat:300375063 ;
+    hector:attestationCount 196 ;
+    hector:taxation <https://w3id.org/hector/commodity/gall#rate-1507-none-108>,
+        <https://w3id.org/hector/commodity/gall#rate-1545-inward-320>,
+        <https://w3id.org/hector/commodity/gall#rate-1558-inward-467> .
+
+aat:300375063 a crm:E55_Type ;
+    rdfs:label "gall (plant material)" .
+
+aat:300404670 a crm:E55_Type ;
+    rdfs:label "preferred terms" .
+
+aat:300435416 a crm:E55_Type ;
+    rdfs:label "descriptive note" .
+
+<https://w3id.org/hector/commodity/gall#rate-1507-none-108> a hector:Rate ;
+    rdfs:label "1507: Galles the C wayte 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 1 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundredweight> ] ;
+    hector:sourceText "Book of Rates 1507, line 108 (transcribed by Stuart Jenks): 'Galles the C wayte' 13s 4d" ;
+    hector:validFrom "1507"^^xsd:gYear ;
+    hector:validThrough "1545"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/gall#rate-1545-inward-320> a hector:Rate ;
+    rdfs:label "1545 inward: Gaules the hundreth punde 13s 4d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "13s 4d" ;
+            hector:valueInPence 160.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1545, inward, line 320 (transcribed by Stuart Jenks): 'Gaules the hundreth punde' 13s 4d" ;
+    hector:validFrom "1545"^^xsd:gYear ;
+    hector:validThrough "1558"^^xsd:gYear .
+
+<https://w3id.org/hector/commodity/gall#rate-1558-inward-467> a hector:Rate ;
+    rdfs:label "1558 inward: Gawles the C lb. cont’ 112 lb 26s 8d" ;
+    hector:amount [ a crm:E97_Monetary_Amount ;
+            crm:P180_has_currency aat:300411998 ;
+            hector:lsd "26s 8d" ;
+            hector:valueInPence 320.0 ] ;
+    hector:perQuantity [ a crm:E54_Dimension ;
+            crm:P90_has_value 100 ;
+            crm:P91_has_unit <https://w3id.org/hector/unit/hundred> ] ;
+    hector:sourceText "Book of Rates 1558, inward, line 467 (transcribed by Stuart Jenks): 'Gawles the C lb. cont’ 112 lb' 26s 8d" ;
+    hector:validFrom "1558"^^xsd:gYear ;
+    hector:validThrough "1604"^^xsd:gYear .
+
+<https://w3id.org/hector/unit/hundredweight> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundredweight" .
+
+<https://w3id.org/mlca/glossary/gall> a crm:E55_Type ;
+    rdfs:label "gall (London Customs Accounts glossary)" .
+
+<https://w3id.org/hector/unit/hundred> a crm:E58_Measurement_Unit ;
+    rdfs:label "hundred" .
+
+aat:300411998 a crm:E98_Currency ;
+    rdfs:label "pound sterling (system of money)" .
+
+hector:AttestedVariant a crm:E55_Type ;
+    rdfs:label "attested variant" .
+
