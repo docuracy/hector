@@ -110,6 +110,13 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
 
 Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/docuracy/hector/issues/2).
 
+## Contributing and credits
+
+Corrections are welcome as [issues](https://github.com/docuracy/hector/issues/new?template=correction.yml)
+(every record on the site has a link that opens one with its URI filled in). The records are
+generated, so please read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change to one.
+[CREDITS.md](CREDITS.md) credits every source HECTOR draws on, with its terms.
+
 ## Licence
 
 - **Data** (commodity, unit and rate records, ledgers, vocabulary): **CC BY 4.0**, see

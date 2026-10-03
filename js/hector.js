@@ -87,7 +87,8 @@
         h.push(`<p class="uri"><code>${esc(uri)}</code> <button type="button" class="copy" data-copy="${esc(uri)}">Copy URI</button>
                  <a class="json" href="./${esc(path)}/ontology.json">JSON-LD</a>
                  <a class="json" href="./${esc(path)}/ontology.ttl">Turtle</a>
-                 <a class="json" href="./${esc(path)}/ontology.rdf">RDF/XML</a></p>`);
+                 <a class="json" href="./${esc(path)}/ontology.rdf">RDF/XML</a>
+                 <a class="json" href="https://github.com/docuracy/hector/issues/new?template=correction.yml&amp;uri=${encodeURIComponent(uri)}">Report a correction</a></p>`);
 
         if (d.deprecated) {
             const to = d.isReplacedBy ? ref(d.isReplacedBy) : "nothing";

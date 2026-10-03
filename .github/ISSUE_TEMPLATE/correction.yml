@@ -1,0 +1,44 @@
+name: Correction to a record
+description: Something wrong in a commodity, unit or rate record
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Records are generated, so corrections are made at their source (the London Customs
+        Accounts glossary, or HECTOR's tools) and reach the record at the next republish.
+        See [CONTRIBUTING.md](https://github.com/docuracy/hector/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: uri
+    attributes:
+      label: Record URI
+      placeholder: https://w3id.org/hector/commodity/saffron
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - Wrong or missing AAT / Wikidata identifier
+        - Misidentified commodity or unit
+        - A spelling that belongs to another record
+        - Two records that are the same thing
+        - A rate linked to the wrong goods or unit
+        - A conversion or definition of a unit
+        - Description
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is wrong, and what should it be?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A source, dictionary entry or identifier that supports the correction.

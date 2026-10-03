@@ -35,16 +35,32 @@ release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
   Turtle dump (task 26). README rewritten to match what is published.
 - Issue #2 is the original assessment (15-18 Sep) and is kept as such; a comment there points here.
 
+**1604, when it comes (measured 3 Oct 2026).** The 1604-only entries were removed from the LCA
+glossary on 7 Feb, before the May-July consolidation, the June AAT alignment, the AAT-derived
+groups and the reviews, so none of that reached them: of the 250 identifiable today (sources BOR
+only, absent from the glossary, no history record; 255 by the C8 count), 18 carry an AAT id and
+172 a description (mostly Jenks's index glosses). Against today's glossary, LCA's character
+encoder puts 36 at >=0.90 alike to an existing concept (broche -> brooch, cappe -> cap, calves
+skynne -> calfskin: the same goods), 16 at 0.80-0.90, 26 at 0.70-0.80 (mixed: colyandre seade ->
+coriander right, cesterne -> western wrong) and 172 below 0.70 (apparently new: many are drugs,
+acorus, agnus castus, castoreum). So **do not restore them as they stand**: (1) a curator
+worksheet for the near-duplicates, accepted ones becoming spellings of the existing concept (no
+new URI); (2) the rest restored as `bor1604` concepts with singular keys, Jenks's glosses as
+draft descriptions, groups, and machine-suggested AAT/Wikidata ids (`suggested: true`, withheld
+from publication until accepted); (3) extend the loader filter to SPELLINGS whose only source is
+1604, so stage 1 cannot change a London reading, and prove it with LCA's re-annotation check.
+Then link and publish the 1,644 rows of 1604 rates.
+
 **Next** (no decision needed unless marked):
 1. **27**: w3id content negotiation for Turtle / RDF/XML (PR to perma-id/w3id.org), designed to
    cover the site's other foreseeable needs.
-2. **17 / D6**: the 1604 Book of Rates: restore its 255 commodities to the LCA glossary behind
-   the `bor1604` loader filter, then link and publish its rates.
+2. ~~**17 / D6**: the 1604 Book of Rates~~ **DEFERRED (Stephen, 3 Oct): a version upgrade after
+   the first release**, not part of v1. See "1604, when it comes" below.
 3. The 314 rate spellings that match no glossary form, to LCA's curators (`build/rates/link-report.md`).
 4. **D4 on the LCA side**: LCA's JSON-LD emits `skos:exactMatch` to HECTOR URIs, now the ledger is public.
 5. **25**: first tagged release + Zenodo DOI, which ends the alpha and freezes the ledger
    (docs/uri-policy.md §0) [D: when].
-6. **19, 22, 24** as time allows.
+6. ~~19~~ dropped (D7); ~~22, 24~~ done 3 Oct.
 
 
 ---
@@ -128,18 +144,18 @@ Phase 0 complete 2026-09-18.
 | # | task | status |
 |---|---|---|
 | 18 [E] | Build the unit catalogue: 222 glossary entries in `Units, weights & measures` + 357 corpus-attested unit concepts (ladings `type: unit` spans) + `…_units.tsv` conversion statements | **published 3 Oct 2026** (built 2026-09-19): `tools/units/build_units.py` → `build/units/` (`catalogue.tsv`, `rates_join.tsv`, `conversions.tsv`, `report.md`) + `build/ledger/units.tsv`. 365 candidate concepts (222 in the group ∪ 353 attested, C9); **248 emitted as units** (212 of the group, 26 attested casks/packing units outside it, 10 rates-only incl. `hector:each`); 127 not units (the tagger types every vessel in `Containers & vessels` as a unit; 10 group entries are instruments/goods). All **79** units the rates parser recognises are joined (60 to glossary units, 19 to rates-only units/`each`), covering all 3,972 rate rows that have a unit. 288 conversion statements with sources: 64 general (52 exact), 224 commodity-specific (units.tsv 73, Books of Rates contents clauses 113, LCA value model 34, LCA duty ratios 4). Dimension assignment (mass/length/volume/count/package) is a hand proposal: see §4 |
-| 19 [C] | Align to QUDT and the Digital Noback Project | todo (droppable). Only `pound` carries QUDT/Wikidata ids (kept from the exemplar); dimension documents align to QUDT quantity kinds. The one thing 19 would add that 20 lacks is SI factors for length and volume |
+| 19 [C] | Align to QUDT and the Digital Noback Project | **dropped 29 Sep (D7)**. Only `pound` carries QUDT/Wikidata ids (kept from the exemplar); dimension documents align to QUDT quantity kinds. The one thing 19 would add that 20 lacks is SI factors for length and volume |
 | 20 [E] | Emit `unit/<slug>/ontology.json` (D7; was `unit/<dimension>/<slug>`) with conversion factors where known | **published 3 Oct 2026** (built 2026-09-19 into `build/site/unit/`) (run after the commodity export, which rebuilds `build/site/`): 248 MeasurementUnit records + dimension documents for length, volume, count, package. 48 carry `definedAs` (a Dimension: value + HECTOR unit, with its source), 12 mass units a `conversionToGram` chained to the pound avoirdupois. `definedAs` is a **proposed term**: it and a unit sense of `attestationCount` exist only in the staged `build/site/context` and `ontology`, not in the repo. Whole staging site: 0 errors (2,706 docs); units online: 0 errors, 0 warnings |
 
 ### Framework and publication
 | # | task | status |
 |---|---|---|
 | 21 [E] | Schema + CI validator | **moved to Phase 0** |
-| 22 [E] | Contribution route: PR template, validation on PR | todo |
+| 22 [E] | Contribution route: PR template, validation on PR | **done 3 Oct 2026**: CONTRIBUTING.md (records are generated: corrections by issue, reaching the source), a correction issue form (record URI pre-filled from each record page), a PR template; CI already validates every PR |
 | 23 [E] | UI for thousands of entities (Dexie + Fuse phonetic search, as `index.html` promises) | **largely done 3 Oct 2026**, without Dexie or Fuse: `index.html` + `js/hector.js` give a search over every attested spelling (`search/index.json`, `tools/site/build_search_index.py`) and a readable view of every record (w3id sends every HTML request there). Similar-spelling search added 3 Oct: LCA's character bi-encoder (`js/fuzzy_encoder.js`, weights `search/encoder.json.gz`, vectors by `tools/site/build_fuzzy.mjs`), chosen over Symphonym v8 by Stephen on LCA's measurement (0.881 vs 0.853 top-1, 2,825 held-out spellings); CI checks parity with the Python model and that the vectors are current |
 | 26 [E] | Turtle and RDF/XML | **done 3 Oct 2026**: `tools/site/build_rdf.py`, `ontology.ttl` / `ontology.rdf` beside every record + `dump/hector.ttl.gz`; deterministic, and CI checks they are current |
 | 27 [X] | Content negotiation for Turtle and RDF/XML at the URIs | PR to `perma-id/w3id.org` (`ids/hector/.htaccess`), to be designed to cover the site's other foreseeable needs (dump, files, trailing slashes, root) |
-| 24 [C] | Credits and licence pages for every source | todo |
+| 24 [C] | Credits and licence pages for every source | **done 3 Oct 2026**: CREDITS.md (Jenks, LCA project and glossary, AAT with Getty's ODC-By credit line, Wikidata, QUDT, Linked Art/CIDOC-CRM, w3id, the LCA encoder, quoted dictionaries); the site's credits link and AAT credit line |
 | 25 [E] | Deposit + DOI (Zenodo via a GitHub release) | todo |
 
 Critical path: **1 → 9 → 10 → 15 → 17 → 25**, with **F1–F5 → 12** in parallel. If time runs
