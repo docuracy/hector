@@ -1,0 +1,163 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/grogram",
+  "type": "Type",
+  "_label": "grogram",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a coarse fabric of silk, of mohair and wool, or of these mixed with silk; often stiffened with gum (OED grogram) | a coarse fabric of silk, of mohair and wool, or of these mixed with silk; often stiffened with gum (OED s.v. grogram) | a coarse fabric of silk, of mohair and wool, or of these mixed with silk; often stiffened with gum (OED s.v. grogram); grogram (sic) chamlets attested in OED s.v. grogram 3 and camlet n. but not defined"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "grogram",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "grogram"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "grograyn",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1548",
+      "validThrough": "1550",
+      "phoneticKey": [
+        "grograin"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "grograyne",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1545",
+      "validThrough": "1547",
+      "phoneticKey": [
+        "grograinə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "grograynes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1556",
+      "validThrough": "1559",
+      "phoneticKey": [
+        "grograinəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300162391",
+      "type": "Type",
+      "_label": "cloth"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/grogram",
+      "type": "Type",
+      "_label": "grogram (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 7,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/grogram#rate-1558-inward-534",
+      "type": "Rate",
+      "_label": "1558 inward: Grograyne sylke the yarde 6s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "80",
+        "lsd": "6s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/yard",
+          "type": "MeasurementUnit",
+          "_label": "yard"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 534 (transcribed by Stuart Jenks): 'Grograyne sylke the yarde' 6s 8d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/grogram#rate-1558-inward-535",
+      "type": "Rate",
+      "_label": "1558 inward: Grograyne chamblettes the pece 26s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "320",
+        "lsd": "26s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 535 (transcribed by Stuart Jenks): 'Grograyne chamblettes the pece' 26s 8d"
+    }
+  ]
+}

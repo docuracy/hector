@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/amber-lamber-counterfeit-beades",
+  "type": "Type",
+  "_label": "amber (lamber counterfeit beades)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "amber, qualified as ‘lamber counterfeit beades’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "amber (lamber counterfeit beades)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "amber lamber kuːnterfeit bɛːdəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Lambere counterfet ambre beades",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lamberə kuːnterfet ambrə bɛːdəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/amber",
+      "type": "Type",
+      "_label": "amber"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/amber",
+      "type": "Type",
+      "_label": "amber"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/amber-lamber-counterfeit-beades#rate-1558-inward-692",
+      "type": "Rate",
+      "_label": "1558 inward: Lambere counterfet ambre beades the pound 5s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "60",
+        "lsd": "5s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 692 (transcribed by Stuart Jenks): 'Lambere counterfet ambre beades the pound' 5s"
+    }
+  ]
+}

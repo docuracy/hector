@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/scissors-tailors",
+  "type": "Type",
+  "_label": "scissors (tailors)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "scissors, qualified as ‘tailors’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "scissors (tailors)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "sisors tailors"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Taylors sheres",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "tailors ʃerəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/scissors",
+      "type": "Type",
+      "_label": "scissors"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/scissors",
+      "type": "Type",
+      "_label": "scissors"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/scissors-tailors#rate-1558-inward-1080",
+      "type": "Rate",
+      "_label": "1558 inward: Taylors sheres the dossyn 8s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "96",
+        "lsd": "8s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1080 (transcribed by Stuart Jenks): 'Taylors sheres the dossyn' 8s"
+    }
+  ]
+}

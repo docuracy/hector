@@ -1,0 +1,155 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/gentian",
+  "type": "Type",
+  "_label": "gentian",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "any plant belonging to the genus Gentiana, especially G. lutea, the officinal gentian which yields the gentian-root of the pharmacopoeia, used medicinally (OED s.v. gentian; MED s.v. gencia n. with the variant spelling iencian) | gentian, any plant belonging to the genus Gentiana, especially G. lutea, the officinal gentian which yields the gentian-root of the pharmacopoeia (i.e. medicinal use) (OED s.v. gentian)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "gentian",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "dʒentian"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "encion",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1512",
+      "validThrough": "1513",
+      "phoneticKey": [
+        "ension"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "gencyan",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1442",
+      "validThrough": "1445",
+      "phoneticKey": [
+        "dʒensian"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "gencyum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1519",
+      "validThrough": "1520",
+      "phoneticKey": [
+        "dʒensium"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "gentiana",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "dʒentiana"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300435586",
+      "type": "Type",
+      "_label": "Gentiana (genus)"
+    },
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/gentian",
+      "type": "Type",
+      "_label": "gentian (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 4,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/gentian#rate-1558-inward-521",
+      "type": "Rate",
+      "_label": "1558 inward: Gentiana the pounde 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "4",
+        "lsd": "4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 521 (transcribed by Stuart Jenks): 'Gentiana the pounde' 4d"
+    }
+  ]
+}

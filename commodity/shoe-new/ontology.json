@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/shoe-new",
+  "type": "Type",
+  "_label": "shoe (new)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "shoe, qualified as ‘new’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "shoe (new)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "ʃe neu"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Shoes newe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "ʃes neuə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/shoe",
+      "type": "Type",
+      "_label": "shoe"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/shoe",
+      "type": "Type",
+      "_label": "shoe"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/shoe-new#rate-1558-outward-56",
+      "type": "Rate",
+      "_label": "1558 outward: Shoes newe the C payre £5",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "1200",
+        "lsd": "£5"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, outward, line 56 (transcribed by Stuart Jenks): 'Shoes newe the C payre' £5"
+    }
+  ]
+}

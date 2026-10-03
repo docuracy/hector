@@ -1,0 +1,178 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/herring-shotten",
+  "type": "Type",
+  "_label": "herring (shotten)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "herring, qualified as ‘shotten’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "herring (shotten)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "heriŋ ʃoten"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Herynge shotton",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "herindʒə ʃoton"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Heryng shotten",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "heriŋ ʃoten"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Heringe shotten",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "herindʒə ʃoten"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/herring",
+      "type": "Type",
+      "_label": "herring"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/herring",
+      "type": "Type",
+      "_label": "herring"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/herring-shotten#rate-1507-none-127",
+      "type": "Rate",
+      "_label": "1507: Herynge shotton the laste 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 127 (transcribed by Stuart Jenks): 'Herynge shotton the laste' 40s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/herring-shotten#rate-1545-inward-374",
+      "type": "Rate",
+      "_label": "1545 inward: Heryng shotten the last 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 374 (transcribed by Stuart Jenks): 'Heryng shotten the last' 40s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/herring-shotten#rate-1558-inward-561",
+      "type": "Rate",
+      "_label": "1558 inward: Heringe shotten the laste cont’ 12 barrelles £3",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "720",
+        "lsd": "£3"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 561 (transcribed by Stuart Jenks): 'Heringe shotten the laste cont’ 12 barrelles' £3"
+    }
+  ]
+}

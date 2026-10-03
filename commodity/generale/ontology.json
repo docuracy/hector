@@ -1,0 +1,174 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/generale",
+  "type": "Type",
+  "_label": "generale",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "in painting (?), a ground color (OED general B.n.4) | meaning unknown, measured in lb."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "generale",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1465",
+      "validThrough": "1472",
+      "phoneticKey": [
+        "dʒeneralə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "generalle",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1493",
+      "validThrough": "1495",
+      "phoneticKey": [
+        "dʒeneralə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "generall",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "dʒeneral"
+      ]
+    }
+  ],
+  "classified_as": [
+    {
+      "id": "aat:300386154",
+      "type": "Type",
+      "_label": "unidentified (information indicator)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/generale",
+      "type": "Type",
+      "_label": "generale (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 4,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/generale#rate-1507-none-110",
+      "type": "Rate",
+      "_label": "1507: Generalle the C wayte 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundredweight",
+          "type": "MeasurementUnit",
+          "_label": "hundredweight"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 110 (transcribed by Stuart Jenks): 'Generalle the C wayte' 10s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/generale#rate-1545-inward-328",
+      "type": "Rate",
+      "_label": "1545 inward: Generall the 100 pounde 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 328 (transcribed by Stuart Jenks): 'Generall the 100 pounde' 10s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/generale#rate-1558-inward-472",
+      "type": "Rate",
+      "_label": "1558 inward: Generall the C cont’ fyve skore lb 50s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "600",
+        "lsd": "50s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 472 (transcribed by Stuart Jenks): 'Generall the C cont’ fyve skore lb' 50s"
+    }
+  ]
+}

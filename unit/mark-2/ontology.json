@@ -1,0 +1,117 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/unit/mark-2",
+  "type": "MeasurementUnit",
+  "_label": "mark",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a unit of weight equivalent to two-thirds of a pound, used for gold and silver thread and iron wire (OED mark n.2)"
+    },
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "marc",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "mark"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mark",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "mark"
+      ]
+    }
+  ],
+  "quantityKind": [
+    "hectorid:unit/dimension/mass"
+  ],
+  "conversionToGram": "302.3949133485",
+  "definedAs": [
+    {
+      "type": "Dimension",
+      "value": 0.6666666667,
+      "unit": {
+        "id": "https://w3id.org/hector/unit/pound",
+        "type": "MeasurementUnit",
+        "_label": "pound"
+      },
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "aat:300418049",
+              "type": "Type",
+              "_label": "brief texts"
+            }
+          ],
+          "content": "Source: LCA glossary (mark: 'two-thirds of a pound'). Note: which pound is not stated"
+        }
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300386648",
+      "type": "Type",
+      "_label": "weights and measures (general, standards)"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/mlca/glossary/mark_2",
+      "type": "Type",
+      "_label": "mark_2 (London Customs Accounts glossary)"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/mark-2",
+      "type": "Type",
+      "_label": "mark_2"
+    }
+  ],
+  "attestationCount": 12,
+  "modified": "2026-09-29"
+}

@@ -1,0 +1,137 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/cod-hedes",
+  "type": "Type",
+  "_label": "cod (hedes)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "cod, qualified as ‘hedes’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "cod (hedes)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "kod hedəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Coddes hedes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "kodəs hedəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Coddes heddes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "kodəs hedəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/cod",
+      "type": "Type",
+      "_label": "cod"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/cod",
+      "type": "Type",
+      "_label": "cod"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/cod-hedes#rate-1558-inward-246",
+      "type": "Rate",
+      "_label": "1558 inward: Coddes hedes the laste cont’ 12 barrelles 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 246 (transcribed by Stuart Jenks): 'Coddes hedes the laste cont’ 12 barrelles' 40s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/cod-hedes#rate-1558-inward-247",
+      "type": "Rate",
+      "_label": "1558 inward: Coddes heddes the barrell 3s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "40",
+        "lsd": "3s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/barrel",
+          "type": "MeasurementUnit",
+          "_label": "barrel"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 247 (transcribed by Stuart Jenks): 'Coddes heddes the barrell' 3s 4d"
+    }
+  ]
+}

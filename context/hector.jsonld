@@ -1,7 +1,6 @@
 {
   "@context": {
     "@version": 1.1,
-
     "hector": "https://w3id.org/hector/ontology#",
     "hectorid": "https://w3id.org/hector/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -16,37 +15,119 @@
     "geonames": "https://sws.geonames.org/",
     "qudtunit": "http://qudt.org/vocab/unit/",
     "quantitykind": "http://qudt.org/vocab/quantitykind/",
-
-    "exactMatch": { "@id": "skos:exactMatch", "@type": "@id", "@container": "@set" },
-    "closeMatch": { "@id": "skos:closeMatch", "@type": "@id", "@container": "@set" },
-
-    "illustrative": { "@id": "hector:illustrative", "@type": "xsd:boolean" },
-    "phoneticKey": { "@id": "hector:phoneticKey", "@container": "@set" },
-    "historicalTerm": { "@id": "hector:historicalTerm", "@container": "@set" },
-    "originPlace": { "@id": "hector:originPlace", "@type": "@id", "@container": "@set" },
-    "compoundOf": { "@id": "hector:compoundOf", "@type": "@id", "@container": "@set" },
-    "related": { "@id": "skos:related", "@type": "@id", "@container": "@set" },
-    "seeAlso": { "@id": "rdfs:seeAlso", "@type": "@id", "@container": "@set" },
-    "material": { "@id": "schema:material", "@type": "@id", "@container": "@set" },
-    "attestationCount": { "@id": "hector:attestationCount", "@type": "xsd:integer" },
-
-    "modified": { "@id": "dcterms:modified", "@type": "xsd:date" },
-    "deprecated": { "@id": "owl:deprecated", "@type": "xsd:boolean" },
-    "isReplacedBy": { "@id": "dcterms:isReplacedBy", "@type": "@id" },
-
-    "quantityKind": { "@id": "hector:quantityKind", "@type": "@id", "@container": "@set" },
-    "definedAs": { "@id": "hector:definedAs", "@type": "@id", "@container": "@set" },
-    "conversionToGram": { "@id": "hector:conversionToGram", "@type": "xsd:decimal" },
-
+    "exactMatch": {
+      "@id": "skos:exactMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "closeMatch": {
+      "@id": "skos:closeMatch",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "illustrative": {
+      "@id": "hector:illustrative",
+      "@type": "xsd:boolean"
+    },
+    "phoneticKey": {
+      "@id": "hector:phoneticKey",
+      "@container": "@set"
+    },
+    "historicalTerm": {
+      "@id": "hector:historicalTerm",
+      "@container": "@set"
+    },
+    "originPlace": {
+      "@id": "hector:originPlace",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "compoundOf": {
+      "@id": "hector:compoundOf",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "related": {
+      "@id": "skos:related",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "seeAlso": {
+      "@id": "rdfs:seeAlso",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "material": {
+      "@id": "schema:material",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "attestationCount": {
+      "@id": "hector:attestationCount",
+      "@type": "xsd:integer"
+    },
+    "modified": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:date"
+    },
+    "deprecated": {
+      "@id": "owl:deprecated",
+      "@type": "xsd:boolean"
+    },
+    "isReplacedBy": {
+      "@id": "dcterms:isReplacedBy",
+      "@type": "@id"
+    },
+    "quantityKind": {
+      "@id": "hector:quantityKind",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "definedAs": {
+      "@id": "hector:definedAs",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "conversionToGram": {
+      "@id": "hector:conversionToGram",
+      "@type": "xsd:decimal"
+    },
     "Rate": "hector:Rate",
-    "taxation": { "@id": "hector:taxation", "@type": "@id", "@container": "@set" },
-    "amount": { "@id": "hector:amount", "@type": "@id" },
-    "perQuantity": { "@id": "hector:perQuantity", "@type": "@id" },
-    "valueInPence": { "@id": "hector:valueInPence", "@type": "xsd:decimal" },
-    "lsd": { "@id": "hector:lsd" },
-    "validFrom": { "@id": "hector:validFrom", "@type": "xsd:gYear" },
-    "validThrough": { "@id": "hector:validThrough", "@type": "xsd:gYear" },
-    "source": { "@id": "hector:source", "@type": "@id", "@container": "@set" },
-    "sourceText": { "@id": "hector:sourceText" }
+    "taxation": {
+      "@id": "hector:taxation",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "amount": {
+      "@id": "hector:amount",
+      "@type": "@id"
+    },
+    "perQuantity": {
+      "@id": "hector:perQuantity",
+      "@type": "@id"
+    },
+    "valueInPence": {
+      "@id": "hector:valueInPence",
+      "@type": "xsd:decimal"
+    },
+    "lsd": {
+      "@id": "hector:lsd"
+    },
+    "validFrom": {
+      "@id": "hector:validFrom",
+      "@type": "xsd:gYear"
+    },
+    "validThrough": {
+      "@id": "hector:validThrough",
+      "@type": "xsd:gYear"
+    },
+    "source": {
+      "@id": "hector:source",
+      "@type": "@id",
+      "@container": "@set"
+    },
+    "sourceText": {
+      "@id": "hector:sourceText"
+    }
   }
 }

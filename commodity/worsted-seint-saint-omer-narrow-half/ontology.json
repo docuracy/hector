@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half",
+  "type": "Type",
+  "_label": "worsted (seint saint omer narrow half)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "worsted, qualified as ‘seint saint omer narrow half’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "worsted (seint saint omer narrow half)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "worsted seint saint omer naruː half"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Worsted vocat’ Seynt Omers narrowe or half worsted",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "worsted vokat seint omers naruːə or half worsted"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/worsted",
+      "type": "Type",
+      "_label": "worsted"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/worsted",
+      "type": "Type",
+      "_label": "worsted"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half#rate-1558-inward-1133",
+      "type": "Rate",
+      "_label": "1558 inward: Worsted vocat’ Seynt Omers narrowe or half worsted the pece 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1133 (transcribed by Stuart Jenks): 'Worsted vocat’ Seynt Omers narrowe or half worsted the pece' 10s"
+    }
+  ]
+}

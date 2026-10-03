@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/blanket-paris-manteles-red-dye",
+  "type": "Type",
+  "_label": "blanket (paris manteles red dye)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "blanket, qualified as ‘paris manteles red dye’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "blanket (paris manteles red dye)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "blaŋket paris manteləs red die"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Blankettes voc’ Paris mantelles redde or colored",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "blaŋketəs vok paris manteləs redə or kolored"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/blanket",
+      "type": "Type",
+      "_label": "blanket"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/blanket",
+      "type": "Type",
+      "_label": "blanket"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/blanket-paris-manteles-red-dye#rate-1558-inward-152",
+      "type": "Rate",
+      "_label": "1558 inward: Blankettes voc’ Paris mantelles redde or colored, the mantell 13s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pane",
+          "type": "MeasurementUnit",
+          "_label": "pane"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 152 (transcribed by Stuart Jenks): 'Blankettes voc’ Paris mantelles redde or colored, the mantell' 13s 4d"
+    }
+  ]
+}

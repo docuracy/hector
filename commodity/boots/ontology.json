@@ -1,0 +1,148 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/boots",
+  "type": "Type",
+  "_label": "boots",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Footwear, the leg of which extends above the ankle joint. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "boots",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "boːts"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "boot",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "boːt"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "bootes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "boːtəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "bottes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1545",
+      "validThrough": "1547",
+      "phoneticKey": [
+        "botəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "botes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1513",
+      "validThrough": "1514",
+      "phoneticKey": [
+        "botəs"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300046057",
+      "type": "Type",
+      "_label": "boots (footwear)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/boots",
+      "type": "Type",
+      "_label": "boots (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 15,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/boots#rate-1507-none-198",
+      "type": "Rate",
+      "_label": "1507: Orrys for bottes the C 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 198 (transcribed by Stuart Jenks): 'Orrys for bottes the C' 40s"
+    }
+  ]
+}

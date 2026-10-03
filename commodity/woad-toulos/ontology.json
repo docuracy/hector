@@ -1,0 +1,123 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/woad-toulos",
+  "type": "Type",
+  "_label": "woad (toulos)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "woad, qualified as ‘toulos’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "woad (toulos)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "woad tuːlos"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Woade voc’ Towlose woade",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "woadə vok tuːlosə woadə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/woad",
+      "type": "Type",
+      "_label": "woad"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/woad",
+      "type": "Type",
+      "_label": "woad"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/woad-toulos#rate-1558-inward-1139",
+      "type": "Rate",
+      "_label": "1558 inward: Woade voc’ Towlose woade, the ballet weinge 2 C 26s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "320",
+        "lsd": "26s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/bale",
+          "type": "MeasurementUnit",
+          "_label": "bale"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1139 (transcribed by Stuart Jenks): 'Woade voc’ Towlose woade, the ballet weinge 2 C' 26s 8d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/woad-toulos#rate-1558-inward-1140",
+      "type": "Rate",
+      "_label": "1558 inward: Woade voc’ Towlose woade the C lb. cont’ 112 lb 13s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1140 (transcribed by Stuart Jenks): 'Woade voc’ Towlose woade the C lb. cont’ 112 lb' 13s 4d"
+    }
+  ]
+}

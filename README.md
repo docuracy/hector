@@ -1,6 +1,13 @@
 # HECTOR
 ## Historical Economic Commodities: Terminologies, Ontologies, & Rates
 
+> **Status: alpha (since 3 October 2026). Published for discussion; please do not cite yet.**
+> Every record, identifier and URI may change or be withdrawn without notice until the first
+> tagged release (`vYYYY.MM`, deposited on Zenodo). Until then URIs are not stable, and
+> nothing here should be treated as a reference. Comments are very welcome as
+> [issues](https://github.com/docuracy/hector/issues). See
+> [docs/uri-policy.md](docs/uri-policy.md#0-alpha-until-the-first-release).
+
 ## Objectives
 
 - Facilitate the [IHR AHRC/DFG London Customs Accounts Project](https://www.history.ac.uk/research/history-policy/unlocking-upcycled-medieval-data) by building a **digital catalogue** and **controlled vocabulary** of historical traded commodities. This will be based initially on Tudor Books of Rates transcripts (ed. Stuart Jenks), but should be extensible to other sources including the medieval London Customs Accounts.
@@ -25,7 +32,7 @@
 
 ## Design Principles
 
-- **Stable Identification** – Each entity has a permanent URI and machine-readable definition.
+- **Stable Identification** – Each entity has a permanent URI and machine-readable definition (from the first tagged release; during the alpha, URIs may still change).
 - **Interoperability** – JSON-LD data aligned with LinkedArt and CIDOC-CRM, extended via a dedicated hector: namespace.
 - **Context Richness** – Entities may carry temporal scope, language variants (English, Latin, others), phonetic keys for matching, and implicit links to categories and subcategories from reputable LOD vocabularies (e.g. Getty AAT, Wikidata).
 - **Discoverability** – Phonetic indexing and variant forms support cross-source matching.

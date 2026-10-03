@@ -1,0 +1,117 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/red-earth",
+  "type": "Type",
+  "_label": "red earth",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "earth or soil that is red in colour; specifically (a) red ochre, ruddle (now rare); (b) a red soil occurring in tropical and subtropical regions, typically clayey and highly leached, and coloured by iron (OED s.v. red adj. and n. 1e (e) (ii))"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "red earth",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "red ɛːrθ"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "redde earthe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "redə ɛːrθə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "yerthe rubeum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1545",
+      "validThrough": "1547",
+      "phoneticKey": [
+        "jerθə rubeum"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300014330",
+      "type": "Type",
+      "_label": "soil"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/red%20earth",
+      "type": "Type",
+      "_label": "red earth (London Customs Accounts glossary)"
+    }
+  ],
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/red-earth#rate-1558-outward-53",
+      "type": "Rate",
+      "_label": "1558 outward: Redde earthe the C cont’ 112 lb 2s 6d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "30",
+        "lsd": "2s 6d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, outward, line 53 (transcribed by Stuart Jenks): 'Redde earthe the C cont’ 112 lb' 2s 6d"
+    }
+  ]
+}

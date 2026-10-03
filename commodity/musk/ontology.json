@@ -1,0 +1,172 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/musk",
+  "type": "Type",
+  "_label": "musk",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "musk, an odoriferous, reddish-brown substance, secreted in a gland or sack by the male musk-deer; has a very powerful and enduring odor and is used as the basis of many perfumes, as well as in medicine (OED s.v. musk)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "musk",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "musk"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "muske",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1487",
+      "validThrough": "1490",
+      "phoneticKey": [
+        "muskə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300015166",
+      "type": "Type",
+      "_label": "perfume (scent)"
+    },
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/musk",
+      "type": "Type",
+      "_label": "musk (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/muskball",
+      "type": "Type",
+      "_label": "muskball"
+    }
+  ],
+  "attestationCount": 19,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/musk#rate-1545-inward-475",
+      "type": "Rate",
+      "_label": "1545 inward: Muske the boxe 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "4",
+        "lsd": "4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/box",
+          "type": "MeasurementUnit",
+          "_label": "box"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 475 (transcribed by Stuart Jenks): 'Muske the boxe' 4d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/musk#rate-1558-inward-714",
+      "type": "Rate",
+      "_label": "1558 inward: Muske voc’ codes of muske the dosen coddes 26s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "320",
+        "lsd": "26s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 714 (transcribed by Stuart Jenks): 'Muske voc’ codes of muske the dosen coddes' 26s 8d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/musk#rate-1558-inward-715",
+      "type": "Rate",
+      "_label": "1558 inward: Muske of Levant the ounce 30s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "360",
+        "lsd": "30s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/ounce",
+          "type": "MeasurementUnit",
+          "_label": "ounce"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 715 (transcribed by Stuart Jenks): 'Muske of Levant the ounce' 30s"
+    }
+  ]
+}

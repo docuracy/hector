@@ -1,0 +1,120 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/heath",
+  "type": "Type",
+  "_label": "heath",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "the undershrubs of the Linnæan genus Erīca, used to make brushes (OED s.v. heath n. 2b) | the undershrubs of the Linnæan genus Erīca, used to make brushes (OED s.v. heath n. 2b; Willam 33, 69)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "heath",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "hɛːθ"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "heathe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1550",
+      "validThrough": "1553",
+      "phoneticKey": [
+        "hɛːθə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "hethe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1553",
+      "validThrough": "1555",
+      "phoneticKey": [
+        "heθə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300132407",
+      "type": "Type",
+      "_label": "shrubs"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/heath",
+      "type": "Type",
+      "_label": "heath (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 13,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/heath#rate-1558-outward-54",
+      "type": "Rate",
+      "_label": "1558 outward: Redde heath the thowsaunde 13s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1000,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/thousand",
+          "type": "MeasurementUnit",
+          "_label": "thousand"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, outward, line 54 (transcribed by Stuart Jenks): 'Redde heath the thowsaunde' 13s 4d"
+    }
+  ]
+}

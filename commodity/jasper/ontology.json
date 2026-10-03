@@ -1,0 +1,106 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/jasper",
+  "type": "Type",
+  "_label": "jasper",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Any red chert or chalcedony. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "jasper",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1445",
+      "validThrough": "1446",
+      "phoneticKey": [
+        "dʒasper"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "jaspers",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1513",
+      "validThrough": "1514",
+      "phoneticKey": [
+        "dʒaspers"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300011151",
+      "type": "Type",
+      "_label": "jasper"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/jasper",
+      "type": "Type",
+      "_label": "jasper (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 9,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/jasper#rate-1558-inward-599",
+      "type": "Rate",
+      "_label": "1558 inward: Jasper stones beinge beade stones square the C stones 30s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "360",
+        "lsd": "30s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 599 (transcribed by Stuart Jenks): 'Jasper stones beinge beade stones square the C stones' 30s"
+    }
+  ]
+}

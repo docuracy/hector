@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/rice",
+  "type": "Type",
+  "_label": "rice",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "rice, a grain | rice | meaning unknown"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "rice",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1493",
+      "validThrough": "1559",
+      "phoneticKey": [
+        "risə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ryse",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1493",
+      "validThrough": "1495",
+      "phoneticKey": [
+        "risə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "rise",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "risə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ryce",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1556",
+      "validThrough": "1559",
+      "phoneticKey": [
+        "risə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "rys",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1519",
+      "validThrough": "1520",
+      "phoneticKey": [
+        "ris"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ris",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "ris"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300011871",
+      "type": "Type",
+      "_label": "grain (seed)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/rice",
+      "type": "Type",
+      "_label": "rice (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 143,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/rice#rate-1545-inward-600",
+      "type": "Rate",
+      "_label": "1545 inward: Ryce the 100 pounde 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 600 (transcribed by Stuart Jenks): 'Ryce the 100 pounde' 10s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/rice#rate-1558-inward-895",
+      "type": "Rate",
+      "_label": "1558 inward: Rice the C lb. cont’ 112 lb 16s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "192",
+        "lsd": "16s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 895 (transcribed by Stuart Jenks): 'Rice the C lb. cont’ 112 lb' 16s"
+    }
+  ]
+}

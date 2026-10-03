@@ -1,0 +1,71 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/saffron",
+  "type": "Type",
+  "_label": "saffron",
+  "illustrative": true,
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        { "id": "aat:300418049", "type": "Type", "_label": "brief texts" }
+      ],
+      "content": "Illustrative example of a HECTOR commodity record. The identifiers are real and checked; the rate is invented to show the structure and is not taken from any Book of Rates."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "saffron",
+      "language": [
+        { "id": "aat:300388277", "type": "Language", "_label": "English (language)" }
+      ],
+      "classified_as": [
+        { "id": "aat:300404670", "type": "Type", "_label": "preferred terms" },
+        { "id": "hector:ModernLemma", "type": "Type", "_label": "modern lemma" }
+      ],
+      "phoneticKey": ["ˈsæfrən"]
+    },
+    {
+      "type": "Name",
+      "content": "Safranum",
+      "language": [
+        { "id": "aat:300388693", "type": "Language", "_label": "Latin (language)" }
+      ],
+      "classified_as": [
+        { "id": "aat:300264273", "type": "Type", "_label": "nonpreferred terms" }
+      ]
+    }
+  ],
+  "equivalent": [
+    { "id": "aat:300013073", "type": "Type", "_label": "saffron" },
+    { "id": "wd:Q25434", "type": "Type", "_label": "saffron" }
+  ],
+  "broader": [
+    { "id": "aat:300386730", "type": "Type", "_label": "spices" },
+    { "id": "aat:300013034", "type": "Type", "_label": "vegetable dye" }
+  ],
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/saffron#rate-illustrative",
+      "type": "Rate",
+      "_label": "Illustrative rate for saffron (not from a source)",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": { "id": "aat:300411998", "type": "Currency", "_label": "pound sterling (system of money)" },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": { "id": "hectorid:unit/pound", "type": "MeasurementUnit", "_label": "pound (avoirdupois)" }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604"
+    }
+  ]
+}

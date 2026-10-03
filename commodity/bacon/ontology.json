@@ -1,0 +1,197 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/bacon",
+  "type": "Type",
+  "_label": "bacon",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "bacon: cured pork, traded in flitches (fleches de bacone)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "bacon",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakon"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "bacone",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakonə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "bacones",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakonəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "bacoun",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakuːn"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "baconis",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakonis"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "baconibus",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "bakonibus"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "wd:Q11106",
+      "type": "Type",
+      "_label": "bacon"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/bacon",
+      "type": "Type",
+      "_label": "bacon (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/flitch",
+      "type": "Type",
+      "_label": "flitch"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/pig",
+      "type": "Type",
+      "_label": "pig"
+    }
+  ],
+  "attestationCount": 51,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/bacon#rate-1545-outward-31",
+      "type": "Rate",
+      "_label": "1545 outward: Bacon the fleche 20d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "20",
+        "lsd": "20d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/each",
+          "type": "MeasurementUnit",
+          "_label": "each"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, outward, line 31 (transcribed by Stuart Jenks): 'Bacon the fleche' 20d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/bacon#rate-1558-outward-4",
+      "type": "Rate",
+      "_label": "1558 outward: Bacon the flytche 4s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "48",
+        "lsd": "4s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/each",
+          "type": "MeasurementUnit",
+          "_label": "each"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, outward, line 4 (transcribed by Stuart Jenks): 'Bacon the flytche' 4s"
+    }
+  ]
+}

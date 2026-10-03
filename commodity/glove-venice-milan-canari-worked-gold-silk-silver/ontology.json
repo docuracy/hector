@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/glove-venice-milan-canari-worked-gold-silk-silver",
+  "type": "Type",
+  "_label": "glove (venice milan canari worked gold silk silver)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "glove, qualified as ‘venice milan canari worked gold silk silver’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "glove (venice milan canari worked gold silk silver)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "glovə venisə milan kanari worked gold silk silver"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Gloves of Venis, Millen and Canarie wrought with golde, sylke or silver",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "glovəs of venis milen and kanariː wruːxt wiθ goldə silkə or silver"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/glove",
+      "type": "Type",
+      "_label": "glove"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/glove",
+      "type": "Type",
+      "_label": "glove"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/glove-venice-milan-canari-worked-gold-silk-silver#rate-1558-inward-492",
+      "type": "Rate",
+      "_label": "1558 inward: Gloves of Venis, Millen and Canarie wrought with golde, sylke or silver the dosen 30s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "360",
+        "lsd": "30s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 492 (transcribed by Stuart Jenks): 'Gloves of Venis, Millen and Canarie wrought with golde, sylke or silver the dosen' 30s"
+    }
+  ]
+}

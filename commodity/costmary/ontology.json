@@ -1,0 +1,125 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/costmary",
+  "type": "Type",
+  "_label": "costmary",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "an herb also called alecost (a composite plant (Balsamita vulgaris or Chrysanthemum balsamita) allied to Tansy, so called because formerly much used for giving to ale an agreeable aromatic and bitter flavor OED s.v. alecost) or costmary, an aromatic perennial plant, Chrysanthemum (Pyrethrum, Tanacetum) Balsamita, otherwise Balsamita vulgaris, family Compositæ, a native of the orient region, naturalized in the south of Europe, and cultivated in English gardens since the 16^th century as a flavoring herb; formerly used in medicine and to give a flavor to ale (OED s.v. costmary & cost n.^3)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "costmary",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1398",
+      "phoneticKey": [
+        "kostmari"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "costmarye",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "kostmarie"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "costum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "kostum"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300132436",
+      "type": "Type",
+      "_label": "herbs"
+    },
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/costmary",
+      "type": "Type",
+      "_label": "costmary (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 2,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/costmary#rate-1558-inward-322",
+      "type": "Rate",
+      "_label": "1558 inward: Costum the pounde 2s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "24",
+        "lsd": "2s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 322 (transcribed by Stuart Jenks): 'Costum the pounde' 2s"
+    }
+  ]
+}

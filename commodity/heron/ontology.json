@@ -1,0 +1,113 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/heron",
+  "type": "Type",
+  "_label": "heron",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "any of various long-necked, long-legged wading birds of the genus Ardea and related genera (family Ardeidae), typically having a crest and nesting colonially, and related to egrets and bitterns; especially the large A. cinerea of Eurasia (OED s.v. heron n.)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "heron",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "heron"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "herones",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "heronəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300266506",
+      "type": "Type",
+      "_label": "Aves (class)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/heron",
+      "type": "Type",
+      "_label": "heron (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/herenshew",
+      "type": "Type",
+      "_label": "herenshew"
+    }
+  ],
+  "attestationCount": 2,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/heron#rate-1558-inward-564",
+      "type": "Rate",
+      "_label": "1558 inward: Heron sewes the dosen 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 564 (transcribed by Stuart Jenks): 'Heron sewes the dosen' 20s"
+    }
+  ]
+}

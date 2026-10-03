@@ -1,0 +1,97 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/pewter",
+  "type": "Type",
+  "_label": "pewter",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "pewter vessels, old, second-hand"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "pewter",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1553",
+      "validThrough": "1555",
+      "phoneticKey": [
+        "peuter"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300010979",
+      "type": "Type",
+      "_label": "pewter (tin alloy)"
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300193015",
+      "type": "Type",
+      "_label": "vessels (containers)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/pewter",
+      "type": "Type",
+      "_label": "pewter (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1724,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/pewter#rate-1507-none-223",
+      "type": "Rate",
+      "_label": "1507: Pewter vesselle the C wayte 33s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "400",
+        "lsd": "33s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundredweight",
+          "type": "MeasurementUnit",
+          "_label": "hundredweight"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 223 (transcribed by Stuart Jenks): 'Pewter vesselle the C wayte' 33s 4d"
+    }
+  ]
+}

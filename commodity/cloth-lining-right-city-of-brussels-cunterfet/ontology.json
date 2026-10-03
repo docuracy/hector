@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/cloth-lining-right-city-of-brussels-cunterfet",
+  "type": "Type",
+  "_label": "cloth (lining right city of brussels cunterfet)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "cloth, qualified as ‘lining right city of brussels cunterfet’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "cloth (lining right city of brussels cunterfet)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "kloθ liniŋ rixt siti of brusels kunterfet"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Lynynge clothe called ryght Brusell, cunterfet Brusell",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "linindʒə kloθə kaled rixt brusel kunterfet brusel"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/cloth",
+      "type": "Type",
+      "_label": "cloth"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/cloth",
+      "type": "Type",
+      "_label": "cloth"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/cloth-lining-right-city-of-brussels-cunterfet#rate-1507-none-150",
+      "type": "Rate",
+      "_label": "1507: Lynynge clothe called ryght Brusell, cunterfet Brusell the pece 11s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "132",
+        "lsd": "11s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 150 (transcribed by Stuart Jenks): 'Lynynge clothe called ryght Brusell, cunterfet Brusell the pece' 11s"
+    }
+  ]
+}

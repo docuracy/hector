@@ -1,0 +1,146 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/gold-thread",
+  "type": "Type",
+  "_label": "gold thread",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Fiber or fiber-like material made wholly or in part from gold [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "gold thread",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "gold θrɛːd"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "aurum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "aurum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "auri",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "auri"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "auro",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "auro"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300400561",
+      "type": "Type",
+      "_label": "gold thread"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/gold%20thread",
+      "type": "Type",
+      "_label": "gold thread (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/gold-leaf",
+      "type": "Type",
+      "_label": "gold leaf"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/roll",
+      "type": "Type",
+      "_label": "roll"
+    }
+  ],
+  "attestationCount": 517,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/gold-thread#rate-1558-inward-286",
+      "type": "Rate",
+      "_label": "1558 inward: Crippins cum auro the dossen 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 286 (transcribed by Stuart Jenks): 'Crippins cum auro the dossen' 40s"
+    }
+  ]
+}

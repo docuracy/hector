@@ -5,6 +5,21 @@ three open questions at the end. Applied the same day (PLAN.md F2, F4): the cont
 exemplars and the validator follow it, and `tools/validate.py` enforces §1 (`ENTITY-URI`,
 `DANGLING-REF`). The "problem" section below describes the state before adoption.*
 
+## 0. Alpha, until the first release
+
+*Added 3 Oct 2026 (Stephen): HECTOR is published as an **alpha**, visible for discussion and
+**not for citation**.* Until the first tagged release (§4):
+
+- records, slugs and URIs may change or be withdrawn without notice, and nobody should cite them;
+- the ledger (§3) IS committed, so that each export is reproducible and every change to it is
+  visible in the history, but it may be edited: a slug can be renamed or withdrawn. Where a
+  slug is changed, a deprecation document is still written where practicable;
+- the freeze in §3 ("never regenerated") takes effect at the first tagged release, not at the
+  first push.
+
+The alpha status is stated in the README, on the home page, in `LICENSE-DATA` and as
+`owl:versionInfo` on the vocabulary document.
+
 ## The problem, in one example
 
 `commodity/saffron/ontology.json` says `"id": "hector:commodity/saffron"`, and the context
@@ -62,7 +77,8 @@ does. So:
   publication it lives at `build/ledger/commodities.tsv` (git-ignored), because its keys are
   Jenks-derived headwords. Nothing has been published, so no URI has been cited and nothing can
   break. It is committed as `ledger/commodities.tsv` in the same commit as the first published
-  export, and never regenerated after that* (implementation: `tools/export/export_hector.py`);
+  export, and never regenerated after the first tagged release (§0: during the alpha it may
+  be edited)* (implementation: `tools/export/export_hector.py`);
 - a slug is minted the first time a key is exported, and is looked up from then on;
 - slugs are lowercase ASCII: diacritics are stripped, spaces and punctuation become `-`, and a
   collision takes a numeric suffix. They are never reused;

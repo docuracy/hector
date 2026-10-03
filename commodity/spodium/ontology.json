@@ -1,0 +1,129 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/spodium",
+  "type": "Type",
+  "_label": "spodium",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a fine powder obtained from various substances by calcination, used in medicine (OED s.v. spodium) | a fine powder obtained from various substances by calcination, used medicinally (OED s.v. spodium) | a fine powder obtained from various substances by calcination, used medicinally (OED spodium)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "spodeam",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1533",
+      "validThrough": "1535",
+      "phoneticKey": [
+        "spodɛːm"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "spodium",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1442",
+      "validThrough": "1445",
+      "phoneticKey": [
+        "spodium"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "spodii",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1442",
+      "validThrough": "1445",
+      "phoneticKey": [
+        "spodi"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "closeMatch": [
+    {
+      "id": "wd:Q1531794",
+      "type": "Type",
+      "_label": "spodium"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/spodium",
+      "type": "Type",
+      "_label": "spodium (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 2,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/spodium#rate-1558-inward-1035",
+      "type": "Rate",
+      "_label": "1558 inward: Spodium the pounde 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "8",
+        "lsd": "8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1035 (transcribed by Stuart Jenks): 'Spodium the pounde' 8d"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/serapin",
+  "type": "Type",
+  "_label": "serapin",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a gum-resin, the concrete juice of Ferula persica, formerly used as an antispasmodic and emmenagogue, or externally (OED s.v. serapin(e & sagapenum) | gum-resin, made of the juice of Ferula persica, used medically as an antispasmodic (OED s.v. serapine, sagapenum) (see also gomme seraphin)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "serapin",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "serapin"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "serapium",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "serapium"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "seraphin",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1477",
+      "validThrough": "1479",
+      "phoneticKey": [
+        "serafin"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300012940",
+      "type": "Type",
+      "_label": "gum resin"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/serapin",
+      "type": "Type",
+      "_label": "serapin (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 3,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/serapin#rate-1558-inward-1031",
+      "type": "Rate",
+      "_label": "1558 inward: Serapium the pounde 12d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "12",
+        "lsd": "12d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1031 (transcribed by Stuart Jenks): 'Serapium the pounde' 12d"
+    }
+  ]
+}

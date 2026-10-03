@@ -1,0 +1,152 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/mortar",
+  "type": "Type",
+  "_label": "mortar",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "mortar, a vessel of hard material having a cup-shaped cavity in which ingredients are pounded with a pestle (OED s.v. mortar n.1); here made of brass or stoneware"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "mortar",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "mortar"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mortys",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1472",
+      "validThrough": "1477",
+      "phoneticKey": [
+        "mortis"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mortes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1472",
+      "validThrough": "1477",
+      "phoneticKey": [
+        "mortəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "morter",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "morter"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "morters",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "morters"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300024724",
+      "type": "Type",
+      "_label": "mortars (grinding tools)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/mortar",
+      "type": "Type",
+      "_label": "mortar (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 16,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/mortar#rate-1558-inward-716",
+      "type": "Rate",
+      "_label": "1558 inward: Morters and pestells of brasse the dosen 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 716 (transcribed by Stuart Jenks): 'Morters and pestells of brasse the dosen' 20s"
+    }
+  ]
+}

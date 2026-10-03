@@ -1,0 +1,118 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/seed-pearl",
+  "type": "Type",
+  "_label": "seed pearl",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a seed pearl is a minute pearl having the appearance of a seed, usually drilled and fastened to some material to be worn as an ornament (OED s.v. seed-pearl), but the meaning of medean' is unknown"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "seed pearl",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "seːd pɛːrl"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "sede perle pro medean'",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1434",
+      "validThrough": "1438",
+      "phoneticKey": [
+        "sedə perlə pro medɛːn"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "seede perle",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "seːdə perlə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300011827",
+      "type": "Type",
+      "_label": "pearl (animal material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/seed%20pearl",
+      "type": "Type",
+      "_label": "seed pearl (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/seed-pearl#rate-1558-inward-1063",
+      "type": "Rate",
+      "_label": "1558 inward: Seede perle the ounce 2s 6d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "30",
+        "lsd": "2s 6d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/ounce",
+          "type": "MeasurementUnit",
+          "_label": "ounce"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1063 (transcribed by Stuart Jenks): 'Seede perle the ounce' 2s 6d"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/arras",
+  "type": "Type",
+  "_label": "arras",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a kind of figured tapestry, originally made in Arras (MED s.v. arras)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "arras",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "aras"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "aras",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "aras"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "arrasse",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1505",
+      "validThrough": "1506",
+      "phoneticKey": [
+        "arasə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300411341",
+      "type": "Type",
+      "_label": "woven material"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/arras",
+      "type": "Type",
+      "_label": "arras (London Customs Accounts glossary)"
+    }
+  ],
+  "originPlace": [
+    {
+      "id": "wd:Q131329",
+      "type": "Place",
+      "_label": "Arras"
+    }
+  ],
+  "attestationCount": 21,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/arras#rate-1558-inward-56",
+      "type": "Rate",
+      "_label": "1558 inward: Arras, the Flemyshe elle 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/ell",
+          "type": "MeasurementUnit",
+          "_label": "ell"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 56 (transcribed by Stuart Jenks): 'Arras, the Flemyshe elle' 40s"
+    }
+  ]
+}

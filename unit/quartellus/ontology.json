@@ -1,0 +1,109 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/unit/quartellus",
+  "type": "MeasurementUnit",
+  "_label": "quartellus",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a measure of sweet wine (equivalent to ½ bota or 1/6 tun)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "quartellus",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "kwartelus"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "quartelli",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "kwarteli"
+      ]
+    }
+  ],
+  "quantityKind": [
+    "hectorid:unit/dimension/volume"
+  ],
+  "definedAs": [
+    {
+      "type": "Dimension",
+      "value": 0.1666666667,
+      "unit": {
+        "id": "https://w3id.org/hector/unit/tun",
+        "type": "MeasurementUnit",
+        "_label": "tun"
+      },
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "aat:300418049",
+              "type": "Type",
+              "_label": "brief texts"
+            }
+          ],
+          "content": "Source: LCA glossary (quartellus: '½ bota or 1/6 tun'). Note: of sweet wine"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300386648",
+      "type": "Type",
+      "_label": "weights and measures (general, standards)"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/mlca/glossary/quartellus",
+      "type": "Type",
+      "_label": "quartellus (London Customs Accounts glossary)"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/quartellus",
+      "type": "Type",
+      "_label": "quartellus"
+    }
+  ],
+  "attestationCount": 2,
+  "modified": "2026-09-29"
+}

@@ -1,0 +1,137 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/eel-shaft-kiu-dol",
+  "type": "Type",
+  "_label": "eel (shaft kiu dol)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "eel, qualified as ‘shaft kiu dol’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "eel (shaft kiu dol)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "eːl ʃaft kiu dol"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Elis called shaft, kyve or dole elis",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "elis kaled ʃaft kivə or dolə elis"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Elis called shafte, kyve or dole elis",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "elis kaled ʃaftə kivə or dolə elis"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/eel",
+      "type": "Type",
+      "_label": "eel"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/eel",
+      "type": "Type",
+      "_label": "eel"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/eel-shaft-kiu-dol#rate-1545-inward-256",
+      "type": "Rate",
+      "_label": "1545 inward: Elis called shaft, kyve or dole elis, the barel of eyther 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/barrel",
+          "type": "MeasurementUnit",
+          "_label": "barrel"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 256 (transcribed by Stuart Jenks): 'Elis called shaft, kyve or dole elis, the barel of eyther' 20s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/eel-shaft-kiu-dol#rate-1545-inward-257",
+      "type": "Rate",
+      "_label": "1545 inward: Elis called shafte, kyve or dole elis, the laste of eyther £12",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "2880",
+        "lsd": "£12"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 257 (transcribed by Stuart Jenks): 'Elis called shafte, kyve or dole elis, the laste of eyther' £12"
+    }
+  ]
+}

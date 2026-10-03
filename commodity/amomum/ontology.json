@@ -1,0 +1,129 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/amomum",
+  "type": "Type",
+  "_label": "amomum",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "an odoriferous plant, now appropriated to a genus of aromatic plants (family Zingiberaceæ) including the species which yield Cardamoms and Grains of Paradise (OED s.v. amomum)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "amomum",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1434",
+      "validThrough": "1438",
+      "phoneticKey": [
+        "amomum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "amomumi",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1434",
+      "validThrough": "1438",
+      "phoneticKey": [
+        "amomumi"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "amomi",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1434",
+      "validThrough": "1438",
+      "phoneticKey": [
+        "amomi"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "wd:Q133225",
+      "type": "Type",
+      "_label": "Amomum"
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300435605",
+      "type": "Type",
+      "_label": "Zingiberaceae (family)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/amomum",
+      "type": "Type",
+      "_label": "amomum (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/amomum#rate-1558-inward-51",
+      "type": "Rate",
+      "_label": "1558 inward: Amomum the pounde 2s 6d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "30",
+        "lsd": "2s 6d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 51 (transcribed by Stuart Jenks): 'Amomum the pounde' 2s 6d"
+    }
+  ]
+}

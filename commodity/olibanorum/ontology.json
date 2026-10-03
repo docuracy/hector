@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/olibanorum",
+  "type": "Type",
+  "_label": "olibanorum",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "= olibanum an aromatic gum resin obtained from trees of the genus Boswellia, appearing in commerce in the form of irregular yellowish lumps; formerly used as a medicine (OED s.v. olibanum) | an aromatic gum resin obtained from trees of the genus Boswellia, appearing in commerce in the form of irregular yellowish lumps; formerly used as a medicine (OED s.v. olibanum)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "olibanorum",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "olibanorum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "olibanum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "olibanum"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300012940",
+      "type": "Type",
+      "_label": "gum resin"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/olibanorum",
+      "type": "Type",
+      "_label": "olibanorum (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/olibanorum#rate-1558-inward-769",
+      "type": "Rate",
+      "_label": "1558 inward: Olibanum the pound 12d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "12",
+        "lsd": "12d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 769 (transcribed by Stuart Jenks): 'Olibanum the pound' 12d"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/wheat",
+  "type": "Type",
+  "_label": "wheat",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "wheat, a grain (see also frumentum)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "frumentum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "frumentum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "frumenti",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "frumenti"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "whet",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1512",
+      "validThrough": "1513",
+      "phoneticKey": [
+        "wet"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "whett",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1512",
+      "validThrough": "1513",
+      "phoneticKey": [
+        "wet"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "whete",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1533",
+      "validThrough": "1535",
+      "phoneticKey": [
+        "wetə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wheat",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1550",
+      "validThrough": "1553",
+      "phoneticKey": [
+        "wɛːt"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wheate",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1556",
+      "validThrough": "1559",
+      "phoneticKey": [
+        "wɛːtə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300011871",
+      "type": "Type",
+      "_label": "grain (seed)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/wheat",
+      "type": "Type",
+      "_label": "wheat (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 932,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/wheat#rate-1558-inward-1146",
+      "type": "Rate",
+      "_label": "1558 inward: Wheate the quarter 6s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "80",
+        "lsd": "6s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/quarter",
+          "type": "MeasurementUnit",
+          "_label": "quarter"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1146 (transcribed by Stuart Jenks): 'Wheate the quarter' 6s 8d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/wheat#rate-1558-outward-72",
+      "type": "Rate",
+      "_label": "1558 outward: Wheate the quarter 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/quarter",
+          "type": "MeasurementUnit",
+          "_label": "quarter"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, outward, line 72 (transcribed by Stuart Jenks): 'Wheate the quarter' 10s"
+    }
+  ]
+}

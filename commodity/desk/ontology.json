@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/desk",
+  "type": "Type",
+  "_label": "desk",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Various forms of furniture for readers or writers, generally having a flat writing surface and often drawers and other compartments. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "desk",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "desk"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "deskes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "deskəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "deske",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "deskə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300039338",
+      "type": "Type",
+      "_label": "desks"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/desk",
+      "type": "Type",
+      "_label": "desk (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 12,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/desk#rate-1545-inward-249",
+      "type": "Rate",
+      "_label": "1545 inward: Deskes the pece 12d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "12",
+        "lsd": "12d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 249 (transcribed by Stuart Jenks): 'Deskes the pece' 12d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/desk#rate-1558-inward-357",
+      "type": "Rate",
+      "_label": "1558 inward: Deskes the dossen 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 357 (transcribed by Stuart Jenks): 'Deskes the dossen' 20s"
+    }
+  ]
+}

@@ -56,8 +56,10 @@ AAT_UNIDENTIFIED = {"id": "aat:" + UNIDENTIFIED, "type": "Type",
 ATTESTED = {"id": "hector:AttestedVariant", "type": "Type", "_label": "attested variant"}
 
 # Files of this repo copied into the staging site (what is served besides the export)
-STATIC = ["context", "ontology", "unit", "commodity", "shapes", "tools/contexts", "index.html",
-          "css", "js"]
+# Not commodity/ or unit/: those are generated (here and by build_units / link_rates). Copied
+# from the repo once they were published (3 Oct 2026), they would carry every record forward,
+# including ones the glossary has since dropped, and a staging export would never shrink.
+STATIC = ["context", "ontology", "shapes", "tools/contexts", "index.html", "css", "js"]
 
 LEDGER_FIELDS = ["slug", "glossary_key", "minted", "status", "replaced_by", "content_sha256",
                  "modified"]

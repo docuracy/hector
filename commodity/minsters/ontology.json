@@ -1,0 +1,170 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/minsters",
+  "type": "Type",
+  "_label": "minsters",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "cloth made in Münster"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "mynsters",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1548",
+      "validThrough": "1555",
+      "phoneticKey": [
+        "minsters"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "minsters",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1548",
+      "validThrough": "1550",
+      "phoneticKey": [
+        "minsters"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mynstars",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1550",
+      "validThrough": "1553",
+      "phoneticKey": [
+        "minstars"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "tele lini minstris",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "telə lini minstris"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300162391",
+      "type": "Type",
+      "_label": "cloth"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/minsters",
+      "type": "Type",
+      "_label": "minsters (London Customs Accounts glossary)"
+    }
+  ],
+  "originPlace": [
+    {
+      "id": "wd:Q2742",
+      "type": "Place",
+      "_label": "Münster"
+    }
+  ],
+  "attestationCount": 71,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/minsters#rate-1545-inward-467",
+      "type": "Rate",
+      "_label": "1545 inward: Mynsters the roule £10",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "2400",
+        "lsd": "£10"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/roll",
+          "type": "MeasurementUnit",
+          "_label": "roll"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 467 (transcribed by Stuart Jenks): 'Mynsters the roule' £10"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/minsters#rate-1558-inward-711",
+      "type": "Rate",
+      "_label": "1558 inward: Mynsters the roll cont’ 15 C elles at 5 score [ells] the C £16 13s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "4000",
+        "lsd": "£16 13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/roll",
+          "type": "MeasurementUnit",
+          "_label": "roll"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 711 (transcribed by Stuart Jenks): 'Mynsters the roll cont’ 15 C elles at 5 score [ells] the C' £16 13s 4d"
+    }
+  ]
+}

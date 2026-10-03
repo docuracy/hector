@@ -1,0 +1,177 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/mastike",
+  "type": "Type",
+  "_label": "mastike",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "the gum or resin exuding from the bark of Pistacia lentiscus and other trees, used in medicine (OED s.v. mastic n.)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "mastick",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "mastik"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mastike",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1531",
+      "validThrough": "1533",
+      "phoneticKey": [
+        "mastikə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mastyk",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1445",
+      "validThrough": "1446",
+      "phoneticKey": [
+        "mastik"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mastyke",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1502",
+      "validThrough": "1503",
+      "phoneticKey": [
+        "mastikə"
+      ]
+    }
+  ],
+  "closeMatch": [
+    {
+      "id": "aat:300012940",
+      "type": "Type",
+      "_label": "gum resin"
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/mastike",
+      "type": "Type",
+      "_label": "mastike (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/oil",
+      "type": "Type",
+      "_label": "oil"
+    }
+  ],
+  "attestationCount": 7,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/mastike#rate-1545-inward-466",
+      "type": "Rate",
+      "_label": "1545 inward: Mastike the 100 lb £5",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "1200",
+        "lsd": "£5"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 466 (transcribed by Stuart Jenks): 'Mastike the 100 lb' £5"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/mastike#rate-1558-inward-695",
+      "type": "Rate",
+      "_label": "1558 inward: Mastick the C lb. cont’ 100 poundes £10",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "2400",
+        "lsd": "£10"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 695 (transcribed by Stuart Jenks): 'Mastick the C lb. cont’ 100 poundes' £10"
+    }
+  ]
+}

@@ -79,7 +79,7 @@ describes a Dexie + Fuse.js phonetic search that does not exist yet.
 
 GitHub Pages serves `main` at the repo root → `https://docuracy.github.io/hector/`.
 
-**Pushing to `main` publishes immediately**, to a persistent namespace others may cite.
+**Pushing to `main` publishes immediately.** Since 3 Oct 2026 HECTOR is an **alpha**: public for discussion, NOT for citation; records and URIs may change until the first tagged release (docs/uri-policy.md §0), so the ledger is committed but may still be edited.
 Stephen is content for Phase 0 work to go straight to `main` (2026-09-18). Anything
 Jenks-derived stays in `build/` (git-ignored) until the permission lands; see §6.
 

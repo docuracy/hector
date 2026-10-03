@@ -1,0 +1,110 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/unit/bote",
+  "type": "MeasurementUnit",
+  "_label": "bote",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a cask for wine (OED s.v. butt n.3 1a) (equivalent to 2 hogsheads or ½ tun), here of Malmsey | clearly some measure of lime, but exact meaning unknown"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "bote",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "botə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "botes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "botəs"
+      ]
+    }
+  ],
+  "quantityKind": [
+    "hectorid:unit/dimension/volume",
+    "hectorid:unit/dimension/package"
+  ],
+  "definedAs": [
+    {
+      "type": "Dimension",
+      "value": 0.5,
+      "unit": {
+        "id": "https://w3id.org/hector/unit/tun",
+        "type": "MeasurementUnit",
+        "_label": "tun"
+      },
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "aat:300418049",
+              "type": "Type",
+              "_label": "brief texts"
+            }
+          ],
+          "content": "Source: LCA glossary (bote: 'equivalent to 2 hogsheads or ½ tun')"
+        }
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300386648",
+      "type": "Type",
+      "_label": "weights and measures (general, standards)"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/mlca/glossary/bote",
+      "type": "Type",
+      "_label": "bote (London Customs Accounts glossary)"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/bote",
+      "type": "Type",
+      "_label": "bote"
+    }
+  ],
+  "attestationCount": 20,
+  "modified": "2026-09-29"
+}

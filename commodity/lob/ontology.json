@@ -1,0 +1,191 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/lob",
+  "type": "Type",
+  "_label": "lob",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "pollack (OED s.v. lob n.2) (see also fungia) | the pollack (a North Sea fish) (OED s.v. lob n.2) | the pollack (a North Sea fish) (OED s.v. lob n.2), here cured as a kind of stockfish (see also fungia)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "lob",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lob"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lubfysshe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lubfiʃə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lobbe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1483",
+      "validThrough": "1485",
+      "phoneticKey": [
+        "lobə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lubbe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1502",
+      "validThrough": "1503",
+      "phoneticKey": [
+        "lubə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lubbes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1502",
+      "validThrough": "1503",
+      "phoneticKey": [
+        "lubəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "fungiis lubbes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "fundʒis lubəs"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300389825",
+      "type": "Type",
+      "_label": "fish (meat)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/lob",
+      "type": "Type",
+      "_label": "lob (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 31,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/lob#rate-1558-inward-992",
+      "type": "Rate",
+      "_label": "1558 inward: Stokefyshe voc’ lubfysshe the last £13 6s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "3200",
+        "lsd": "£13 6s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/last",
+          "type": "MeasurementUnit",
+          "_label": "last"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 992 (transcribed by Stuart Jenks): 'Stokefyshe voc’ lubfysshe the last' £13 6s 8d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/lob#rate-1558-inward-993",
+      "type": "Rate",
+      "_label": "1558 inward: Stokefysshe voc’ lubfysshe the C cont’ 6 score 26s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "320",
+        "lsd": "26s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 993 (transcribed by Stuart Jenks): 'Stokefysshe voc’ lubfysshe the C cont’ 6 score' 26s 8d"
+    }
+  ]
+}

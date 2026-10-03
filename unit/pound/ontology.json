@@ -5,9 +5,19 @@
   ],
   "id": "https://w3id.org/hector/unit/pound",
   "type": "MeasurementUnit",
-  "_label": "pound (avoirdupois)",
-  "illustrative": true,
+  "_label": "pound",
   "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Pound: a unit of weight (Latin libra, abbreviated lb)."
+    },
     {
       "type": "LinguisticObject",
       "classified_as": [
@@ -17,20 +27,13 @@
           "_label": "brief texts"
         }
       ],
-      "content": "Illustrative example of a HECTOR unit record. The avoirdupois pound; the conversion given is the modern international definition (1959), not a measured Tudor standard."
+      "content": "conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard."
     }
   ],
   "identified_by": [
     {
       "type": "Name",
       "content": "pound",
-      "language": [
-        {
-          "id": "aat:300388277",
-          "type": "Language",
-          "_label": "English (language)"
-        }
-      ],
       "classified_as": [
         {
           "id": "aat:300404670",
@@ -38,13 +41,139 @@
           "_label": "preferred terms"
         },
         {
-          "id": "hector:ModernLemma",
+          "id": "hector:AttestedVariant",
           "type": "Type",
-          "_label": "modern lemma"
+          "_label": "attested variant"
         }
       ],
       "phoneticKey": [
-        "paʊnd"
+        "puːnd"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "poundes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "puːndəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "pounds",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "puːnds"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lb",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lb"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "libra",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "libra"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "librae",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "libre"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "libras",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "libras"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "librarum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "librarum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lib",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lib"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "libro",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "libro"
       ]
     }
   ],
@@ -55,7 +184,7 @@
   "equivalent": [
     {
       "id": "aat:300379254",
-      "type": "MeasurementUnit",
+      "type": "Type",
       "_label": "pounds (units for weight)"
     },
     {
@@ -68,5 +197,19 @@
       "type": "MeasurementUnit",
       "_label": "Pound Mass"
     }
-  ]
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/mlca/glossary/pound",
+      "type": "Type",
+      "_label": "pound (London Customs Accounts glossary)"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/pound",
+      "type": "Type",
+      "_label": "pound"
+    }
+  ],
+  "attestationCount": 26359,
+  "modified": "2026-10-03"
 }

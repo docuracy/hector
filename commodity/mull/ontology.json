@@ -1,0 +1,104 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/mull",
+  "type": "Type",
+  "_label": "mull",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "meaning unknown | lowest of the four qualities of Dutch madder (from mull = reduced to small particles, dust, rubbish: OED mull, n^1) | madder of the lowest quality"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "mull",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "mul"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "mulle",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "mulə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300013062",
+      "type": "Type",
+      "_label": "madder (colorant)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/mull",
+      "type": "Type",
+      "_label": "mull (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 51,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/mull#rate-1558-inward-699",
+      "type": "Rate",
+      "_label": "1558 inward: Mulle madder the C cont’ 112 lb 2s 6d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "30",
+        "lsd": "2s 6d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 699 (transcribed by Stuart Jenks): 'Mulle madder the C cont’ 112 lb' 2s 6d"
+    }
+  ]
+}

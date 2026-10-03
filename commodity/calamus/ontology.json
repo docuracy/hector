@@ -1,0 +1,90 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/calamus",
+  "type": "Type",
+  "_label": "calamus",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Genus containing around 325 species of palms. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "calamus",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1513",
+      "validThrough": "1545",
+      "phoneticKey": [
+        "kalamus"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300375396",
+      "type": "Type",
+      "_label": "Calamus (genus)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/calamus",
+      "type": "Type",
+      "_label": "calamus (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 7,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/calamus#rate-1558-inward-209",
+      "type": "Rate",
+      "_label": "1558 inward: Calamus the C lb. cont’ fyve score 50s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "600",
+        "lsd": "50s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 209 (transcribed by Stuart Jenks): 'Calamus the C lb. cont’ fyve score' 50s"
+    }
+  ]
+}

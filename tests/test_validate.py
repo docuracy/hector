@@ -17,6 +17,10 @@ from tools import validate as V
 
 REPO = Path(__file__).resolve().parent.parent
 LEGACY = REPO / "tests" / "fixtures" / "legacy"
+# The hand-written saffron exemplar the mutation tests start from. It stood at
+# commodity/saffron until 3 Oct 2026, when the exported saffron record took that path; the
+# tests still place it there in their scratch repo.
+EXEMPLAR = REPO / "tests" / "fixtures" / "exemplar"
 SAFFRON = "commodity/saffron/ontology.json"
 
 
@@ -32,7 +36,10 @@ def make_repo(tmp_path: Path, overrides: dict[str, object] | None = None, legacy
     for rel in ["context/hector.jsonld", "ontology/ontology.json", "shapes/hector.shacl.ttl",
                 "tools/contexts/linked-art.json", SAFFRON, "unit/dimension/mass/ontology.json",
                 "unit/pound/ontology.json", "unit/mass/ontology.json", "unit/mass/pound/ontology.json"]:
-        src = (LEGACY / rel) if legacy and (LEGACY / rel).exists() else REPO / rel
+        if legacy and (LEGACY / rel).exists():
+            src = LEGACY / rel
+        else:
+            src = EXEMPLAR / rel if (EXEMPLAR / rel).exists() else REPO / rel
         dst = root / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(src, dst)
@@ -53,7 +60,8 @@ def codes(issues, level="ERROR", path=None):
 
 
 def load(rel):
-    return json.loads((REPO / rel).read_text(encoding="utf-8"))
+    src = EXEMPLAR / rel if (EXEMPLAR / rel).exists() else REPO / rel
+    return json.loads(src.read_text(encoding="utf-8"))
 
 
 # ------------------------------------------------------------------ the real repo

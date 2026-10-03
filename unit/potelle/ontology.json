@@ -1,0 +1,123 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/unit/potelle",
+  "type": "MeasurementUnit",
+  "_label": "potelle",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "a potel: a measure of capacity of two quarts (half a gallon); part of the pot / quart / pint series (see also pot (measure)). The vessel of this size is the potel pot."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "potelle",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "potelə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "potelles",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1400",
+      "validThrough": "1421",
+      "phoneticKey": [
+        "poteləs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "potellis",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "potelis"
+      ]
+    }
+  ],
+  "quantityKind": [
+    "hectorid:unit/dimension/volume"
+  ],
+  "definedAs": [
+    {
+      "type": "Dimension",
+      "value": 0.5,
+      "unit": {
+        "id": "https://w3id.org/hector/unit/gallon",
+        "type": "MeasurementUnit",
+        "_label": "gallon"
+      },
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "aat:300418049",
+              "type": "Type",
+              "_label": "brief texts"
+            }
+          ],
+          "content": "Source: LCA glossary (potelle: 'two quarts (half a gallon)')"
+        }
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300386648",
+      "type": "Type",
+      "_label": "weights and measures (general, standards)"
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://w3id.org/mlca/glossary/potelle",
+      "type": "Type",
+      "_label": "potelle (London Customs Accounts glossary)"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/potelle",
+      "type": "Type",
+      "_label": "potelle"
+    }
+  ],
+  "attestationCount": 43,
+  "modified": "2026-09-29"
+}

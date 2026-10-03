@@ -1,0 +1,118 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/balsamum",
+  "type": "Type",
+  "_label": "balsamum",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "An oleoresinous exudate from coniferous trees, especially of the Pinus genus. Balsams have been used since antiquity for medicinal purposes and as sealers. The exudate is a soft, semi-liquid consisting of terpenes of resinous character and a large amount of essential oils. Upon distillation, a liquid portion, called turpentine, and a solid residue, called rosin, are produced. Balsams have been used in varnishes and paint mediums; however, they deteriorate easily unless a harder resin is mixed with them. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "balsamum",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "balsamum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "balsami",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1390",
+      "validThrough": "1390",
+      "phoneticKey": [
+        "balsami"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300012891",
+      "type": "Type",
+      "_label": "balsam (resin)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/balsamum",
+      "type": "Type",
+      "_label": "balsamum (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/carpobalsamum",
+      "type": "Type",
+      "_label": "carpobalsamum"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/oil",
+      "type": "Type",
+      "_label": "oil"
+    }
+  ],
+  "attestationCount": 2,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/balsamum#rate-1558-inward-415",
+      "type": "Rate",
+      "_label": "1558 inward: Excella balsami the pounde 6s 8d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "80",
+        "lsd": "6s 8d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 415 (transcribed by Stuart Jenks): 'Excella balsami the pounde' 6s 8d"
+    }
+  ]
+}

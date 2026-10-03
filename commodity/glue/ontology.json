@@ -1,0 +1,147 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/glue",
+  "type": "Type",
+  "_label": "glue",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Adhesive comprising an impure protein obtained by hydrolysis of collagenous material such as skin, bone, and connective tissue by various methods. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "glue",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "glue"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "glew",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1442",
+      "validThrough": "1445",
+      "phoneticKey": [
+        "gleu"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "glewe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1513",
+      "validThrough": "1514",
+      "phoneticKey": [
+        "gleuə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300014815",
+      "type": "Type",
+      "_label": "glue"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/glue",
+      "type": "Type",
+      "_label": "glue (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 60,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/glue#rate-1545-inward-327",
+      "type": "Rate",
+      "_label": "1545 inward: Glewe the 100 pounde 3s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "40",
+        "lsd": "3s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 327 (transcribed by Stuart Jenks): 'Glewe the 100 pounde' 3s 4d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/glue#rate-1558-inward-507",
+      "type": "Rate",
+      "_label": "1558 inward: Glewe the C lb. cont’ 112 lb 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 507 (transcribed by Stuart Jenks): 'Glewe the C lb. cont’ 112 lb' 10s"
+    }
+  ]
+}

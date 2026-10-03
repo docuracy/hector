@@ -1,0 +1,123 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/buske",
+  "type": "Type",
+  "_label": "buske",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Buske cloth: broad- or narrowcloth (also linen) made in 's-Hertogenbosch (Bois-le-Duc); defined in Jenks' Book of Rates as Buske clothe brode / narowe"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "buske",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "buskə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "busk",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "busk"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "buske cloth",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "buskə kloθ"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300162391",
+      "type": "Type",
+      "_label": "cloth"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/buske",
+      "type": "Type",
+      "_label": "buske (London Customs Accounts glossary)"
+    }
+  ],
+  "originPlace": [
+    {
+      "id": "wd:Q2766547",
+      "type": "Place",
+      "_label": "'s-Hertogenbosch"
+    }
+  ],
+  "attestationCount": 168,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/buske#rate-1558-inward-105",
+      "type": "Rate",
+      "_label": "1558 inward: Buske clothe narowe and allmaner clothe in Holland ploye þe pece 24s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "288",
+        "lsd": "24s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 105 (transcribed by Stuart Jenks): 'Buske clothe narowe and allmaner clothe in Holland ploye þe pece' 24s"
+    }
+  ]
+}

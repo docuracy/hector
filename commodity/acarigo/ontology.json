@@ -1,0 +1,114 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/acarigo",
+  "type": "Type",
+  "_label": "acarigo",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "agaric, name given to various corky species of Polyporus, a genus of fungi growing upon trees; of which P. officinalis, chiefly found on the Larch, the ‘Female Agarick’ of old writers, was renowned as a cathartic, and with P. fomentarius, and P. igniarius, ‘Male Agarick’ used as a styptic, as tinder, and in dyeing (Pegolotti 411, OED s.v. agaric n. and a.) [Jenks] | Mushroom-forming; parenthesomes imperforate or perforate (spore caps have openings); includes subclasses Agaricomycetidae and Phallomycetidae; contains 17 orders. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "acarigo",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1438",
+      "validThrough": "1439",
+      "phoneticKey": [
+        "akarigo"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "agaricum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "agarikum"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300417251",
+      "type": "Type",
+      "_label": "Agaricomycetes (class)"
+    },
+    {
+      "id": "aat:300248655",
+      "type": "Type",
+      "_label": "tinder"
+    },
+    {
+      "id": "aat:300013032",
+      "type": "Type",
+      "_label": "natural dye"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/acarigo",
+      "type": "Type",
+      "_label": "acarigo (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/acarigo#rate-1558-inward-46",
+      "type": "Rate",
+      "_label": "1558 inward: Agaricum the pounde 3s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "40",
+        "lsd": "3s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 46 (transcribed by Stuart Jenks): 'Agaricum the pounde' 3s 4d"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/stork",
+  "type": "Type",
+  "_label": "stork",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "stork, a bird, live"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "stork",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1533",
+      "validThrough": "1535",
+      "phoneticKey": [
+        "stork"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "storkes",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1533",
+      "validThrough": "1535",
+      "phoneticKey": [
+        "storkəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "storke",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "storkə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300266506",
+      "type": "Type",
+      "_label": "Aves (class)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/stork",
+      "type": "Type",
+      "_label": "stork (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 1,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/stork#rate-1558-inward-980",
+      "type": "Rate",
+      "_label": "1558 inward: Storkes the dosen 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 980 (transcribed by Stuart Jenks): 'Storkes the dosen' 20s"
+    }
+  ]
+}

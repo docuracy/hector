@@ -1,0 +1,101 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/ambergris",
+  "type": "Type",
+  "_label": "ambergris",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "A waxy, odorous substance of marbled ashy color produced in the intestines of the sperm whale, and often found floating in tropical seas, or on the seashore. Formerly used as an ingredient in perfumery to prevent evaporation, more recently it has been replaced in this function by synthetic substances. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "ambergris",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "ambergris"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ambre grece",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "ambrə gresə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300266222",
+      "type": "Type",
+      "_label": "ambergris"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/ambergris",
+      "type": "Type",
+      "_label": "ambergris (London Customs Accounts glossary)"
+    }
+  ],
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/ambergris#rate-1558-inward-38",
+      "type": "Rate",
+      "_label": "1558 inward: Ambre grece the ounce £3",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "720",
+        "lsd": "£3"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/ounce",
+          "type": "MeasurementUnit",
+          "_label": "ounce"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 38 (transcribed by Stuart Jenks): 'Ambre grece the ounce' £3"
+    }
+  ]
+}

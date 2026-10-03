@@ -1,0 +1,74 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/unit/cloth",
+  "type": "MeasurementUnit",
+  "_label": "cloth",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "the cloth as a unit of account for customs: the statutory cloth (of assize); the Books of Rates reckon other cloths as fractions of it (\"6 statutes for a clothe\")"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "cloth",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "clothe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ]
+    }
+  ],
+  "quantityKind": [
+    "hectorid:unit/dimension/length"
+  ],
+  "definedAs": [
+    {
+      "type": "Dimension",
+      "value": 24,
+      "unit": {
+        "id": "https://w3id.org/hector/unit/virga",
+        "type": "MeasurementUnit",
+        "_label": "virga"
+      },
+      "referred_to_by": [
+        {
+          "type": "LinguisticObject",
+          "classified_as": [
+            {
+              "id": "aat:300418049",
+              "type": "Type",
+              "_label": "brief texts"
+            }
+          ],
+          "content": "Source: LCA data/valuation/duty_rates.tsv (process/duty_rates.py, 19 Sep 2026): counted cloth custom 33d alien / 14d denizen per cloth against 1.375d / 0.583d per virga = 24 yards to the cloth; of 2,348 counted-cloth rows off the rate, 2,119 are lots of 'N pannis, M virgis' charged at 24 yards to the cloth. Note: a customs equivalence (the cloth of assize), not a physical length of every cloth"
+        }
+      ]
+    }
+  ],
+  "modified": "2026-09-29"
+}

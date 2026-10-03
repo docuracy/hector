@@ -1,0 +1,145 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/ink",
+  "type": "Type",
+  "_label": "ink",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "A fluid medium used for drawings or tracings. An opaque, usually black, pigment is mixed with a vehicle such as water to produce a fluid which can be applied with a pen or brush. Through the end of the 19th century, ink was supplied dried in stick or block form which was ground and mixed with water as needed. At the beginning of this century prepared ink became popular. [Source: Getty AAT]"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "ink",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "iŋk"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "inke",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "iŋkə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ynke",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1536",
+      "validThrough": "1540",
+      "phoneticKey": [
+        "iŋkə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300015012",
+      "type": "Type",
+      "_label": "ink"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/ink",
+      "type": "Type",
+      "_label": "ink (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 7,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/ink#rate-1558-inward-608",
+      "type": "Rate",
+      "_label": "1558 inward: Inke the C lb. cont’ 112 lb 13s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "160",
+        "lsd": "13s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 608 (transcribed by Stuart Jenks): 'Inke the C lb. cont’ 112 lb' 13s 4d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/ink#rate-1558-inward-609",
+      "type": "Rate",
+      "_label": "1558 inward: Inke hornes the grosse 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 144,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/gross",
+          "type": "MeasurementUnit",
+          "_label": "gross"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 609 (transcribed by Stuart Jenks): 'Inke hornes the grosse' 10s"
+    }
+  ]
+}

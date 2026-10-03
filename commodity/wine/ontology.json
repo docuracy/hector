@@ -1,0 +1,194 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/wine",
+  "type": "Type",
+  "_label": "wine",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "wine (Latin vinum); in the customs accounts the default is Gascon wine, with many named types (Rhenish, malmsey, muscadel, romney, bastard, sack...) and origins. Soured wine / vinegar is a distinct concept."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "vinum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1520",
+      "phoneticKey": [
+        "vinum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "vini",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1380",
+      "validThrough": "1385",
+      "phoneticKey": [
+        "vini"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "vynum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1550",
+      "validThrough": "1553",
+      "phoneticKey": [
+        "vinum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "vyni",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1550",
+      "validThrough": "1553",
+      "phoneticKey": [
+        "vini"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wyne",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "phoneticKey": [
+        "winə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wine",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "winə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wyn",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "win"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300379442",
+      "type": "Type",
+      "_label": "wine"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/wine",
+      "type": "Type",
+      "_label": "wine (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/vinegar",
+      "type": "Type",
+      "_label": "vinegar"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/lees",
+      "type": "Type",
+      "_label": "lees"
+    }
+  ],
+  "attestationCount": 8780,
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/wine#rate-1545-inward-780",
+      "type": "Rate",
+      "_label": "1545 inward: Wyne of Gascoyne or swete wyne the tonne £3",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "720",
+        "lsd": "£3"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/tun",
+          "type": "MeasurementUnit",
+          "_label": "tun"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 780 (transcribed by Stuart Jenks): 'Wyne of Gascoyne or swete wyne the tonne' £3"
+    }
+  ]
+}

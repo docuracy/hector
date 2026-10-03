@@ -1,0 +1,96 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/nail-large-that-4d-5d-6d",
+  "type": "Type",
+  "_label": "nail (large that 4d 5d 6d)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "nail, qualified as ‘large that 4d 5d 6d’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "nail (large that 4d 5d 6d)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "nail lardʒə θat d d d"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Naylle called grett naylle thatt ys to saye 4d naylle, 5d naylle and 6d naylle",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "nailə kaled gret nailə θat is to saie d nailə d nailə and d nailə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/nail",
+      "type": "Type",
+      "_label": "nail"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/nail",
+      "type": "Type",
+      "_label": "nail"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/nail-large-that-4d-5d-6d#rate-1507-none-186",
+      "type": "Rate",
+      "_label": "1507: Naylle called grett naylle thatt ys to saye 4d naylle, 5d naylle and 6d naylle the barrelle 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/barrel",
+          "type": "MeasurementUnit",
+          "_label": "barrel"
+        }
+      },
+      "validFrom": "1507",
+      "validThrough": "1545",
+      "sourceText": "Book of Rates 1507, line 186 (transcribed by Stuart Jenks): 'Naylle called grett naylle thatt ys to saye 4d naylle, 5d naylle and 6d naylle the barrelle' 40s"
+    }
+  ]
+}

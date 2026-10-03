@@ -1,0 +1,124 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/venice-silver",
+  "type": "Type",
+  "_label": "venice silver",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "silver thread, manufactured in Venice"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "venice silver",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "venisə silver"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "venice argentum",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1519",
+      "validThrough": "1520",
+      "phoneticKey": [
+        "venisə ardʒentum"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "venys sylver",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "venis silver"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300395639",
+      "type": "Type",
+      "_label": "silver thread"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/venice%20silver",
+      "type": "Type",
+      "_label": "venice silver (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/venice-gold",
+      "type": "Type",
+      "_label": "venice gold"
+    }
+  ],
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/venice-silver#rate-1545-inward-769",
+      "type": "Rate",
+      "_label": "1545 inward: Venys sylver the pounde 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 769 (transcribed by Stuart Jenks): 'Venys sylver the pounde' 40s"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/wolf",
+  "type": "Type",
+  "_label": "wolf",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "fur/skin of the wolf (Latin lupus); pellis lupi = wolfskin"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "lupi",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lupi"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "lupus",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "lupus"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolf",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolf"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolfe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolfə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolffe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolfə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolves",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolvəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolfskin",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolfskin"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wolfskins",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wolfskins"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "wulf",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "wulf"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300011811",
+      "type": "Type",
+      "_label": "fur (hair material)"
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300395532",
+      "type": "Type",
+      "_label": "pelts (animal skins)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/wolf",
+      "type": "Type",
+      "_label": "wolf (London Customs Accounts glossary)"
+    }
+  ],
+  "related": [
+    {
+      "id": "https://w3id.org/hector/commodity/otter",
+      "type": "Type",
+      "_label": "otter"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/pelt",
+      "type": "Type",
+      "_label": "pelt"
+    }
+  ],
+  "attestationCount": 5,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/wolf#rate-1558-inward-1154",
+      "type": "Rate",
+      "_label": "1558 inward: Wolfe skynnes tawed the skynne 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/each",
+          "type": "MeasurementUnit",
+          "_label": "each"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1154 (transcribed by Stuart Jenks): 'Wolfe skynnes tawed the skynne' 20s"
+    }
+  ]
+}

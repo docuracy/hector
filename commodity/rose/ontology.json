@@ -1,0 +1,117 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/rose",
+  "type": "Type",
+  "_label": "rose",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "meaning unknown | realgar (disulphide of arsenic), used as a pigment and in pyrotechnics (OED s.v. realgar)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "rose",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1513",
+      "validThrough": "1514",
+      "phoneticKey": [
+        "rosə"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300013561",
+      "type": "Type",
+      "_label": "realgar (pigment)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/rose",
+      "type": "Type",
+      "_label": "rose (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 4,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/rose#rate-1545-inward-601",
+      "type": "Rate",
+      "_label": "1545 inward: Rose algar the 100 pound 33s 4d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "400",
+        "lsd": "33s 4d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 601 (transcribed by Stuart Jenks): 'Rose algar the 100 pound' 33s 4d"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/rose#rate-1558-inward-896",
+      "type": "Rate",
+      "_label": "1558 inward: Rose algar the C lb. cont’ 112 lb 40s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "480",
+        "lsd": "40s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 896 (transcribed by Stuart Jenks): 'Rose algar the C lb. cont’ 112 lb' 40s"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/os-de-corde-cervi",
+  "type": "Type",
+  "_label": "os de corde cervi",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "Bone of a stag’s heart, is of the same rank with the foregoing [cornu unicornis] [i.e. being superstitious and ludicrous as medicine] (Quincy 185 s.v. os [d]e corde cervi), used medically | meaning unknown"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "os de corde cervi",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "os de kordə servi"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "os de corde servi",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "validFrom": "1446",
+      "validThrough": "1450",
+      "phoneticKey": [
+        "os de kordə servi"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/os%20de%20corde%20cervi",
+      "type": "Type",
+      "_label": "os de corde cervi (London Customs Accounts glossary)"
+    }
+  ],
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/os-de-corde-cervi#rate-1558-inward-778",
+      "type": "Rate",
+      "_label": "1558 inward: Os de corde cervi the pound 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 778 (transcribed by Stuart Jenks): 'Os de corde cervi the pound' 10s"
+    }
+  ]
+}

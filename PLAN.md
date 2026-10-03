@@ -19,7 +19,7 @@ London_Customs_Accounts (LCA), and the outputs land here.
 
 | # | decision | recommendation | blocks |
 |---|---|---|---|
-| **1** [X] | **Jenks permission** for derived structured data (LCA `documentation/data_licensing_strategy.md` §1) | **Agreed informally (Stephen, 29 Sep 2026).** Before HECTOR's first publication, get a one-line written confirmation that covers CC BY 4.0 on the derived data (verbatim `original_text` held back). Building continues locally meanwhile | all publication |
+| **1** [D] | **Jenks permission** for derived structured data (LCA `documentation/data_licensing_strategy.md` §1) | **Granted 3 Oct 2026: signed letter, CC BY 4.0** on his transcriptions (verbatim text included) and all derived data, worldwide, irrevocable, third parties and derivative works (Stephen holds the original). Agreed informally 29 Sep, by email 30 Sep | all publication |
 | **2** [D] | **Flatten vs compose** qualified commodities (issue #2 §4) | **Decided 29 Sep: flatten only the combinations the Books of Rates price separately** (at most the 391 rate-bearing phrases, not issue #2's ~2,400). Each gets a commodity URI carrying its rates, linked to its base commodity by `skos:broader` *and* `hector:compoundOf`. Corpus cargo records keep composing (concept + qualifiers). No qualifier needs AAT before release. Slugs readable (`canvas-normandy`), per uri-policy open question 2 | 12, 14–17 |
 | **3** [D] | **URI and versioning policy** | **adopted 2026-09-18** as drafted: `docs/uri-policy.md`; **amended 29 Sep for units** (below) | every export |
 | **D4** [D] | **HECTOR URI vs LCA glossary URI.** Each concept already has `https://w3id.org/mlca/glossary/{key}`. Which is canonical? | **Decided 29 Sep: HECTOR canonical.** LCA keeps its glossary URIs and emits `skos:exactMatch` (not `owl:sameAs`, which would merge LCA-only statements into HECTOR's) to the HECTOR URI. LCA commits the ledger and resolves key → URI at publication; records (incl. pass-2) keep the glossary key | 12 |
@@ -110,7 +110,24 @@ short, drop 19 and 23 before 21 or 25.
 
 ---
 
-## 3a. Parked 29 September 2026 (read this first)
+## 3. PUBLISHED AS ALPHA, 3 October 2026 (read this first)
+
+Jenks's signed letter granted CC BY 4.0 (task 1). Published to `main` the same day, marked
+**alpha: for discussion, not for citation** (README, home page, LICENSE-DATA,
+`owl:versionInfo`, docs/uri-policy.md §0): 3,139 commodity records (2,453 concepts, 685
+qualified, deprecations incl. ciste -> chest), 255 unit records, rates 1507-1558 embedded,
+the extended context and vocabulary, and `ledger/` (commodities, units, qualified). During the
+alpha the ledger is committed but may be edited; the freeze starts at the first tagged
+release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
+- The saffron exemplar moved to `tests/fixtures/exemplar/`; `commodity/saffron` is now the
+  exported record.
+- `export_hector.py` no longer copies `commodity/` and `unit/` from the repo into staging
+  (they are generated; copied, published records would never be dropped). A rebuild now
+  reproduces the published files byte for byte.
+- To republish: parse_bor, export_hector, build_units, link_rates; validate; copy
+  `build/site/{commodity,unit,context,ontology}` and `build/ledger/*.tsv` to the repo.
+
+## 3a. Parked 29 September 2026
 
 Decisions 2, D4, D5, D6, D7 taken 29 Sep (§1). LIVE: D7 (units at unit/<slug>, deprecation
 records for the old paths, definedAs adopted, every conflicting conversion published) and D5

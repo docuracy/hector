@@ -1,0 +1,171 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/ounce",
+  "type": "Type",
+  "_label": "ounce",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "ounce: a unit of weight (and the corresponding balance/scale weight)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "ounce",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "uːnsə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "oz",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "oz"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "ounces",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "uːnsəs"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "unce",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "unsə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "unces",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "unsəs"
+      ]
+    }
+  ],
+  "equivalent": [
+    {
+      "id": "aat:300379229",
+      "type": "Type",
+      "_label": "ounces (units for weight)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/ounce",
+      "type": "Type",
+      "_label": "ounce (London Customs Accounts glossary)"
+    }
+  ],
+  "attestationCount": 13,
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/ounce#rate-1545-inward-72",
+      "type": "Rate",
+      "_label": "1545 inward: Ballandes called ounce ballance the groce 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 144,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/gross",
+          "type": "MeasurementUnit",
+          "_label": "gross"
+        }
+      },
+      "validFrom": "1545",
+      "validThrough": "1558",
+      "sourceText": "Book of Rates 1545, inward, line 72 (transcribed by Stuart Jenks): 'Ballandes called ounce ballance the groce' 10s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/ounce#rate-1558-inward-784",
+      "type": "Rate",
+      "_label": "1558 inward: Ounce skynnes the pece 10s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "120",
+        "lsd": "10s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pecia",
+          "type": "MeasurementUnit",
+          "_label": "pecia"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 784 (transcribed by Stuart Jenks): 'Ounce skynnes the pece' 10s"
+    }
+  ]
+}

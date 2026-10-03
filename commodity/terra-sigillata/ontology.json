@@ -1,0 +1,87 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/terra-sigillata",
+  "type": "Type",
+  "_label": "terra sigillata",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300435416",
+          "type": "Type",
+          "_label": "descriptive note"
+        }
+      ],
+      "content": "an astringent bole, of fatty consistence and reddish colour, obtained from Lemnos; formerly esteemed as a medicine and antidote; sphragide, also known as terra Lemnia (OED s.v. terra sigillata)"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "terra sigillata",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        },
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "tera sidʒilata"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "aat:300404880",
+      "type": "Type",
+      "_label": "medicines (material)"
+    }
+  ],
+  "exactMatch": [
+    {
+      "id": "https://w3id.org/mlca/glossary/terra%20sigillata",
+      "type": "Type",
+      "_label": "terra sigillata (London Customs Accounts glossary)"
+    }
+  ],
+  "modified": "2026-09-29",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/terra-sigillata#rate-1558-inward-1118",
+      "type": "Rate",
+      "_label": "1558 inward: Terra sigillata the pounde 12d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "12",
+        "lsd": "12d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/pound",
+          "type": "MeasurementUnit",
+          "_label": "pound"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 1118 (transcribed by Stuart Jenks): 'Terra sigillata the pounde' 12d"
+    }
+  ]
+}

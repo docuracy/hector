@@ -1,0 +1,150 @@
+{
+  "@context": [
+    "https://linked.art/ns/v1/linked-art.json",
+    "https://w3id.org/hector/context"
+  ],
+  "id": "https://w3id.org/hector/commodity/hemp-cologne",
+  "type": "Type",
+  "_label": "hemp (cologne)",
+  "referred_to_by": [
+    {
+      "type": "LinguisticObject",
+      "classified_as": [
+        {
+          "id": "aat:300418049",
+          "type": "Type",
+          "_label": "brief texts"
+        }
+      ],
+      "content": "hemp, qualified as ‘cologne’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026)."
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Name",
+      "content": "hemp (cologne)",
+      "classified_as": [
+        {
+          "id": "aat:300404670",
+          "type": "Type",
+          "_label": "preferred terms"
+        }
+      ],
+      "phoneticKey": [
+        "hemp kolognə"
+      ]
+    },
+    {
+      "type": "Name",
+      "content": "Cullen hempe",
+      "classified_as": [
+        {
+          "id": "hector:AttestedVariant",
+          "type": "Type",
+          "_label": "attested variant"
+        }
+      ],
+      "phoneticKey": [
+        "kulen hempə"
+      ]
+    }
+  ],
+  "broader": [
+    {
+      "id": "https://w3id.org/hector/commodity/hemp",
+      "type": "Type",
+      "_label": "hemp"
+    }
+  ],
+  "compoundOf": [
+    {
+      "id": "https://w3id.org/hector/commodity/hemp",
+      "type": "Type",
+      "_label": "hemp"
+    }
+  ],
+  "modified": "2026-10-03",
+  "taxation": [
+    {
+      "id": "https://w3id.org/hector/commodity/hemp-cologne#rate-1558-inward-260",
+      "type": "Rate",
+      "_label": "1558 inward: Cullen hempe the sacke cont’ 3 C [lb.] £3",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "720",
+        "lsd": "£3"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 1,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/sack",
+          "type": "MeasurementUnit",
+          "_label": "sack"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 260 (transcribed by Stuart Jenks): 'Cullen hempe the sacke cont’ 3 C [lb.]' £3"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/hemp-cologne#rate-1558-inward-261",
+      "type": "Rate",
+      "_label": "1558 inward: Cullen hempe the C lb. cont’ 112 lb 20s",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "240",
+        "lsd": "20s"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 100,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/hundred",
+          "type": "MeasurementUnit",
+          "_label": "hundred"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 261 (transcribed by Stuart Jenks): 'Cullen hempe the C lb. cont’ 112 lb' 20s"
+    },
+    {
+      "id": "https://w3id.org/hector/commodity/hemp-cologne#rate-1558-inward-263",
+      "type": "Rate",
+      "_label": "1558 inward: Cullen hempe the dossen pounde 2s 6d",
+      "amount": {
+        "type": "MonetaryAmount",
+        "currency": {
+          "id": "aat:300411998",
+          "type": "Currency",
+          "_label": "pound sterling (system of money)"
+        },
+        "valueInPence": "30",
+        "lsd": "2s 6d"
+      },
+      "perQuantity": {
+        "type": "Dimension",
+        "value": 12,
+        "unit": {
+          "id": "https://w3id.org/hector/unit/dozen",
+          "type": "MeasurementUnit",
+          "_label": "dozen"
+        }
+      },
+      "validFrom": "1558",
+      "validThrough": "1604",
+      "sourceText": "Book of Rates 1558, inward, line 263 (transcribed by Stuart Jenks): 'Cullen hempe the dossen pounde' 2s 6d"
+    }
+  ]
+}
