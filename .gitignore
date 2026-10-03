@@ -211,3 +211,12 @@ __marimo__/
 # build/ (ignored above) holds local output. Anything derived from the Jenks transcriptions
 # lives there and must not be committed until the Jenks permission (PLAN.md task 1) is granted.
 build-*.txt
+
+# Published records: a slug is a commodity or unit name, and some collide with the generic
+# Python entries above (commodity/cover and commodity/target were silently left out of the
+# first publication, 3 Oct 2026). Never ignore anything under the record directories.
+!/commodity/*/
+!/commodity/**/ontology.json
+!/unit/**/
+!/unit/**/ontology.json
+!/ledger/*.tsv
