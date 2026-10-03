@@ -92,7 +92,9 @@ Then link and publish the 1,644 rows of 1604 rates.
 4. **D4 on the LCA side**: LCA's JSON-LD emits `skos:exactMatch` to HECTOR URIs, now the ledger is public.
 5. **25**: first tagged release + Zenodo DOI, which ends the alpha and freezes the ledger
    (docs/uri-policy.md §0) [D: when]. Prepared 3 Oct: CITATION.cff (validated), .zenodo.json,
-   CRediT roles in CREDITS.md, CHANGELOG.md, and the step-by-step docs/release.md.
+   CRediT roles in CREDITS.md, CHANGELOG.md, and the step-by-step docs/release.md. The alpha
+   pre-release v2026.10-alpha.1 published 3 Oct (no DOI). Blocked on admin rights on
+   `ihr-digital/hector` for Zenodo's integration (requested of an organisation owner).
 6. ~~19~~ dropped (D7); ~~22, 24~~ done 3 Oct.
 
 
