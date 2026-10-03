@@ -42,7 +42,10 @@ a commodity-provenance place list.
 
 ```
 index.html                 SPA: shows ?path=, fetches the JSON for it, renders with a JSON viewer
-js/phonemize.js            5.6 MB UMD build of hans00/phonemize (English G2P for the IPA display)
+js/phonemize.js            5.6 MB UMD build of hans00/phonemize; NOT loaded by the site since 3 Oct 2026 (records carry
+                           their own lme-letters IPA keys); kept only for tools/phonetics/compare.py
+js/hector.js               the site: landing search over search/index.json + the human view of every record
+                           (w3id sends every HTML request to index.html?path=...)
 css/index.css              5 lines
 context/hector.jsonld      JSON-LD 1.1 context: HECTOR's terms only, used AFTER the Linked Art
                            context (documents: "@context": [linked-art.json, hector context])

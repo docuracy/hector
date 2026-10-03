@@ -124,8 +124,8 @@ release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
 - `export_hector.py` no longer copies `commodity/` and `unit/` from the repo into staging
   (they are generated; copied, published records would never be dropped). A rebuild now
   reproduces the published files byte for byte.
-- To republish: parse_bor, export_hector, build_units, link_rates; validate; copy
-  `build/site/{commodity,unit,context,ontology}` and `build/ledger/*.tsv` to the repo.
+- To republish: parse_bor, export_hector, build_units, link_rates, tools.site.build_search_index; validate;
+  copy `build/site/{commodity,unit,context,ontology,search}` and `build/ledger/*.tsv` to the repo.
 
 ## 3a. Parked 29 September 2026
 
