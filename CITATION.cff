@@ -1,0 +1,61 @@
+# HECTOR is an alpha: this file is in readiness for its first tagged release, when
+# `version`, `date-released` and the Zenodo DOI are added (docs/release.md).
+# Contributor roles (CRediT) are in CREDITS.md: CFF has no field for them.
+cff-version: 1.2.0
+message: >-
+  HECTOR is an alpha: please do not cite it until its first tagged release. After that, cite
+  the release's DOI. Contributor roles (CRediT) are listed in CREDITS.md.
+type: dataset
+title: "HECTOR: Historical Economic Commodities: Terminologies, Ontologies & Rates"
+abstract: >-
+  An open Linked Data vocabulary of historical traded commodities, the units they were
+  measured and packed in, and the customs rates charged on them. Every record gathers the
+  spellings the sources use, links to the Getty Art & Architecture Thesaurus and Wikidata
+  where an equivalent exists, and is published as JSON-LD (with Turtle and RDF/XML) aligned
+  with Linked Art. Its first content comes from the London customs accounts (1380-1560) and
+  the English Books of Rates of 1507, 1545 and 1558, in Stuart Jenks's transcriptions.
+authors:
+  - family-names: Gadd
+    given-names: Stephen
+    orcid: "https://orcid.org/0000-0003-3060-0181"
+    affiliation: Docuracy Ltd
+url: "https://w3id.org/hector/"
+repository-code: "https://github.com/docuracy/hector"
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - commodities
+  - units of measure
+  - customs
+  - economic history
+  - linked data
+  - Linked Art
+  - controlled vocabulary
+references:
+  - type: data
+    title: London Customs Accounts 1380-1560
+    authors:
+      - family-names: Colson
+        given-names: J.
+      - family-names: Scheltjens
+        given-names: W.
+      - family-names: Benbow
+        given-names: E.
+      - family-names: Gadd
+        given-names: S.
+      - family-names: Grove-Gordillo
+        given-names: M.
+    url: "https://docuracy.github.io/London_Customs_Accounts/"
+    notes: The glossary from which HECTOR's commodities and units are derived.
+  - type: book
+    title: London Customs Accounts
+    authors:
+      - family-names: Jenks
+        given-names: Stuart
+    publisher:
+      name: Hansischer Geschichtsverein
+    url: "https://www.hansischergeschichtsverein.de/london-customs-accounts"
+    notes: >-
+      Transcriptions of the London customs accounts and of the Tudor Books of Rates, licensed
+      by Stuart Jenks under CC BY 4.0 as reproduced in HECTOR.

@@ -25,7 +25,7 @@ which LCA measured best for this material (0.881 top-1 on held-out glossary spel
 
 | | records | where |
 |---|---:|---|
-| Commodities | 2,450 | `commodity/<slug>/ontology.json` |
+| Commodities | 2,452 | `commodity/<slug>/ontology.json` |
 | Commodities as the Books of Rates price them ("looking glasses of steel, large"), each linked to its commodity | 688 | `commodity/<slug>/ontology.json` |
 | Customs rates, 1507–1558, with the source line quoted | 1,834 | inside the commodity records (`taxation`) |
 | Units of measure, with definitions and conversions where the sources give them | 248 | `unit/<slug>/ontology.json` |
@@ -34,7 +34,7 @@ which LCA measured best for this material (0.881 top-1 on held-out glossary spel
 
 Every record is also published as **Turtle** (`ontology.ttl`) and **RDF/XML** (`ontology.rdf`) beside its
 JSON-LD, the same graph in each, and all of HECTOR in one file as `dump/hector.ttl.gz` (Turtle,
-gzipped; 228,115 triples). Also published: the JSON-LD context (`context/hector.jsonld`), the vocabulary of HECTOR's own
+gzipped; 228,272 triples). Also published: the JSON-LD context (`context/hector.jsonld`), the vocabulary of HECTOR's own
 terms (`ontology/ontology.json`), the slug ledgers that record how each URI was minted and what
 replaced it (`ledger/`), and the index the site searches (`search/index.json`). Counts as of
 3 October 2026.
@@ -108,17 +108,25 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
   to the LCA glossary).
 - Sources beyond London: other trades, places and languages. HECTOR is built to take them, and
   proposals are welcome. Images from museum and Portable Antiquities collections remain an aim.
-- **No links to QUDT or other vocabularies of modern units, by design**: those define today's
+- **No links to [QUDT](https://qudt.org/) or other vocabularies of modern units, by design**: those define today's
   standard units, whereas historical units varied from place to place and over time, so a link
   would assert an equivalence the sources do not support. Each unit gives its own sourced
   definitions and conversions instead.
 
 Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/docuracy/hector/issues/2).
 
+## Citing HECTOR
+
+Not yet, please: HECTOR is an alpha. From the first tagged release, cite its Zenodo DOI;
+[CITATION.cff](CITATION.cff) supplies the metadata (GitHub's "Cite this repository"), and
+[CREDITS.md](CREDITS.md) lists contributor roles (CRediT). Release steps: [docs/release.md](docs/release.md);
+changes: [CHANGELOG.md](CHANGELOG.md).
+
 ## Contributing and credits
 
 Corrections are welcome as [issues](https://github.com/docuracy/hector/issues/new?template=correction.yml)
-(every record on the site has a link that opens one with its URI filled in). The records are
+(a GitHub account is required; every record on the site has a link that opens one with its URI
+filled in). The records are
 generated, so please read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change to one.
 [CREDITS.md](CREDITS.md) credits every source HECTOR draws on, with its terms.
 

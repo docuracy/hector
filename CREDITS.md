@@ -1,11 +1,22 @@
 # Credits
 
-HECTOR (Historical Economic Commodities: Terminologies, Ontologies & Rates) is built and
-maintained by Stephen Gadd ([docuracy](https://docuracy.co.uk)). Its data are published under
+HECTOR (Historical Economic Commodities: Terminologies, Ontologies & Rates) was conceived and
+built by Stephen Gadd ([docuracy](https://docuracy.co.uk)). Its data are published under
 [CC BY 4.0](LICENSE-DATA) and its code under the [MIT licence](LICENSE). It draws on the sources
 below; each is credited here, with the terms on which it is used.
 
 **HECTOR is an alpha**: please do not cite it yet (see the [README](README.md)).
+
+## Contributor roles (CRediT)
+
+Roles in the [Contributor Roles Taxonomy](https://credit.niso.org/):
+
+| contributor | roles |
+|---|---|
+| Stephen Gadd | Conceptualization, Methodology, Software, Data curation, Validation, Visualization, Writing – original draft |
+| Stuart Jenks | Resources (the transcriptions every record derives from) |
+| Eliot Benbow | Data curation (the London Customs Accounts glossary) |
+| Maria Grove-Gordillo | Data curation (the London Customs Accounts glossary) |
 
 ## The transcriptions: Stuart Jenks
 
