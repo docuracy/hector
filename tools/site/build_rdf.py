@@ -7,22 +7,22 @@
 
 Each graph is made exactly as tools/validate.py makes it (the same local copies of the HECTOR and
 Linked Art contexts, so nothing is fetched), then serialised; every file is re-parsed and must give
-the same number of triples as the JSON-LD, or the run fails. Blank nodes are canonicalised, so a
-rebuild of unchanged records is byte-identical and --check can say what is stale. Also writes dump/hector.ttl.gz, every
+the same number of triples as the JSON-LD, or the run fails. Blank nodes are canonicalised, so the Turtle
+of an unchanged record is byte-identical; RDF/XML is compared as a graph (its bytes follow the
+Python version), and a file is rewritten only when its graph changes. Also writes dump/hector.ttl.gz, every
 record in one file. The JSON-LD stays the source: rebuild these whenever the records change (part
 of the republish steps in PLAN.md).
 """
 import argparse
 import gzip
 import json
-import os
 import sys
 from pathlib import Path
 
 import re
 
 from rdflib import BNode, Graph
-from rdflib.compare import to_canonical_graph
+from rdflib.compare import isomorphic, to_canonical_graph
 
 from tools import validate as V
 
@@ -76,10 +76,17 @@ def build(root: Path, check: bool) -> int:
                 problems.append(f"{doc.parent.relative_to(root)}/{name}: {len(back)} triples, JSON-LD has {len(g)}")
                 continue
             out = doc.parent / name
-            if check:
-                if not out.exists() or out.read_text(encoding="utf-8") != text:
-                    problems.append(f"{out.relative_to(root)}: missing or stale")
+            if fmt == "xml":
+                # rdflib's RDF/XML writer orders subjects through a set, so its bytes vary with the
+                # Python version's string hashing (3.10 here, 3.12 in CI): compare graphs, not bytes,
+                # and rewrite only when the graph has changed, so a republish does not churn every .rdf
+                current = out.exists() and isomorphic(Graph().parse(out, format="xml"), back)
             else:
+                current = out.exists() and out.read_text(encoding="utf-8") == text
+            if check:
+                if not current:
+                    problems.append(f"{out.relative_to(root)}: missing or stale")
+            elif not current:
                 out.write_text(text, encoding="utf-8")
                 written += 1
     out = root / "dump" / "hector.ttl.gz"
@@ -94,11 +101,6 @@ def build(root: Path, check: bool) -> int:
 
 
 def main(argv=None):
-    # rdflib's RDF/XML writer orders subjects through a set, so its output follows the process's
-    # hash seed: pin it (re-running this module once) or every rebuild would rewrite every .rdf.
-    if os.environ.get("PYTHONHASHSEED") != "0":
-        os.environ["PYTHONHASHSEED"] = "0"
-        os.execv(sys.executable, [sys.executable, "-m", "tools.site.build_rdf", *(sys.argv[1:] if argv is None else argv)])
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--root", type=Path, default=REPO / "build" / "site")
     ap.add_argument("--check", action="store_true")

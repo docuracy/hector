@@ -13,7 +13,42 @@ Legend: **[E]** engineering · **[C]** curatorial · **[D]** decision (Stephen) 
 external. **Where** is the repo the work happens in: most inputs come from
 London_Customs_Accounts (LCA), and the outputs land here.
 
+## 0. Where things stand: published as an alpha, 3 October 2026 (read this first)
+
+Jenks's signed letter granted CC BY 4.0 (task 1). Published to `main` the same day, marked
+**alpha: for discussion, not for citation** (README, home page, LICENSE-DATA,
+`owl:versionInfo`, docs/uri-policy.md §0): 3,139 commodity records (2,453 concepts, 685
+qualified, deprecations incl. ciste -> chest), 255 unit records, rates 1507-1558 embedded,
+the extended context and vocabulary, and `ledger/` (commodities, units, qualified). During the
+alpha the ledger is committed but may be edited; the freeze starts at the first tagged
+release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
+- The saffron exemplar moved to `tests/fixtures/exemplar/`; `commodity/saffron` is now the
+  exported record.
+- `export_hector.py` no longer copies `commodity/` and `unit/` from the repo into staging
+  (they are generated; copied, published records would never be dropped). A rebuild now
+  reproduces the published files byte for byte.
+- To republish: parse_bor, export_hector, build_units, link_rates, tools.site.build_search_index,
+  tools.site.build_rdf; validate; copy `build/site/{commodity,unit,context,ontology,search,dump}` and
+  `build/ledger/*.tsv` to the repo.
+- Same day, the site: `index.html` rewritten (task 23): search by any attested spelling, a readable
+  view of every record, honest "not yet" list; favicon. Turtle and RDF/XML for every record and a
+  Turtle dump (task 26). README rewritten to match what is published.
+- Issue #2 is the original assessment (15-18 Sep) and is kept as such; a comment there points here.
+
+**Next** (no decision needed unless marked):
+1. **27**: w3id content negotiation for Turtle / RDF/XML (PR to perma-id/w3id.org), designed to
+   cover the site's other foreseeable needs.
+2. **17 / D6**: the 1604 Book of Rates: restore its 255 commodities to the LCA glossary behind
+   the `bor1604` loader filter, then link and publish its rates.
+3. The 314 rate spellings that match no glossary form, to LCA's curators (`build/rates/link-report.md`).
+4. **D4 on the LCA side**: LCA's JSON-LD emits `skos:exactMatch` to HECTOR URIs, now the ledger is public.
+5. **25**: first tagged release + Zenodo DOI, which ends the alpha and freezes the ledger
+   (docs/uri-policy.md §0) [D: when].
+6. **19, 22, 24** as time allows; sound-alike search over the IPA keys (task 23 remainder).
+
+
 ---
+
 
 ## 1. Decisions needed first (Stephen)
 
@@ -78,30 +113,32 @@ Phase 0 complete 2026-09-18.
 ### The exporter (here)
 | # | task | status |
 |---|---|---|
-| **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `equivalent` (Linked Art's identity link, as in the saffron exemplar); close → `closeMatch`; broader → `broader` (`skos:broader`; on a Linked Art Type, `classified_as` would mean "a kind of type", not "narrower than"); nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | **built 2026-09-18**, local only: `tools/export/export_hector.py` → `build/site/` (staging copy of the site, 2,452 commodity records) + `build/ledger/commodities.tsv`. The whole staging site validates (0 errors); identity counts reproduce C1 exactly. Forms carry no language in the glossary, so Names have none (not guessed). Not yet emitted: groups (no IRIs), qualifiers (decision 2), the `p` matching code (not IPA; task 13 gives IPA). **Publishing = copy `build/site/commodity/` + commit the ledger, after task 1** |
-| 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | **built 29 Sep, local** (`tools/phonetics/ipa.py`, method `lme-letters-v1`): every form read with late Middle English letter values (how the clerks read both languages), ~50 ordered rules, pure Python, no stress; a phoneticKey on 20,933 of 20,935 Names (exporter + qualified records). Chosen by measurement (`tools/phonetics/compare.py`, 18,984 same-concept nearest-neighbour queries): 0.818 against 0.797 bare spelling, 0.797 Epitran lat, 0.769 Epitran eng, 0.777 LCA get_ipa, 0.774 routed by language guess, 0.719 phonemize.js (fra-Latn 0.832 rejected: it wins by silencing inflections). `--check` proven to fail (rule removed: 10 tests + 8,314 stale keys; shuffled rules: nondeterminism). Known weaknesses in the module docstring and PLAN history. Bump METHOD on any rule change |
-| 14 [E] | Emit qualified commodities per decision 2 | **built 29 Sep, local** (`tools/rates/link_rates.py`): a combination gets its own record (`commodity/<concept>-<qualifier>`, skos:broader + compoundOf to the base, spellings as written as attested Names) only where the books price it apart -- the same concept at the same unit at different prices with different qualifiers. 680 records over 171 concepts (issue #2: 170 heads). Qualifier spellings joined through LCA qualifiers.json and a light fold (whit/whyte, spruse/sprewce, newcastell/neucastell); some remain split (neucastel/neuecastel). Slugs minted once into `build/ledger/qualified.tsv` |
+| **12** [E] | `export_hector.py` (in this repo, reading `LCA/docs/data/glossary_data.json` by path): labels, forms with language tags, identifiers, groups, descriptions, attestation counts. **Map `aat` by kind** (see C1), **after first removing every item with id `300386154`** (it occurs with `match:'close'` in 18 entries and beside real concepts in 68, so a kind-based mapping would otherwise emit `closeMatch` to "unidentified"): exact → `equivalent` (Linked Art's identity link, as in the saffron exemplar); close → `closeMatch`; broader → `broader` (`skos:broader`; on a Linked Art Type, `classified_as` would mean "a kind of type", not "narrower than"); nothing left → no identifier, marked unidentified. State a precedence for items flagged both close and broader (`chest`). Emits the D3 key→slug ledger | **published 3 Oct 2026** (built 2026-09-18): `tools/export/export_hector.py` → `build/site/` (staging copy of the site, 2,452 commodity records) + `build/ledger/commodities.tsv`. The whole staging site validates (0 errors); identity counts reproduce C1 exactly. Forms carry no language in the glossary, so Names have none (not guessed). Not yet emitted: groups (no IRIs), qualifiers (decision 2), the `p` matching code (not IPA; task 13 gives IPA). Published with the ledger, 3 Oct 2026 |
+| 13 [E] | Phonetic keys from ~9% to 100% of 19,411 forms, reusing LCA `process/helpers/phonetic.py` | **published 3 Oct 2026** (built 29 Sep) (`tools/phonetics/ipa.py`, method `lme-letters-v1`): every form read with late Middle English letter values (how the clerks read both languages), ~50 ordered rules, pure Python, no stress; a phoneticKey on 20,933 of 20,935 Names (exporter + qualified records). Chosen by measurement (`tools/phonetics/compare.py`, 18,984 same-concept nearest-neighbour queries): 0.818 against 0.797 bare spelling, 0.797 Epitran lat, 0.769 Epitran eng, 0.777 LCA get_ipa, 0.774 routed by language guess, 0.719 phonemize.js (fra-Latn 0.832 rejected: it wins by silencing inflections). `--check` proven to fail (rule removed: 10 tests + 8,314 stale keys; shuffled rules: nondeterminism). Known weaknesses in the module docstring and PLAN history. Bump METHOD on any rule change |
+| 14 [E] | Emit qualified commodities per decision 2 | **published 3 Oct 2026** (built 29 Sep) (`tools/rates/link_rates.py`): a combination gets its own record (`commodity/<concept>-<qualifier>`, skos:broader + compoundOf to the base, spellings as written as attested Names) only where the books price it apart -- the same concept at the same unit at different prices with different qualifiers. 680 records over 171 concepts (issue #2: 170 heads). Qualifier spellings joined through LCA qualifiers.json and a light fold (whit/whyte, spruse/sprewce, newcastell/neucastell); some remain split (neucastel/neuecastel). Slugs minted once into `build/ledger/qualified.tsv` |
 
 ### Rates
 | # | task | where | status |
 |---|---|---|---|
-| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html`: LCA had extracted it and deliberately removed it (e9b5c99) as out of LCA's scope; **in scope for HECTOR** (Stephen, 2026-09-18) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Emitting waits on task 1; 1604 re-extraction cross-checked against LCA's removed PDF-derived TSVs: 99.6% of inward / 97.8% of outward rates align in sequence, differences are group prefixes, PDF line-break truncation and "see" rows |
+| **15** [E] | Parse `LCA/data/bor/*.tsv` into structured rates: split commodity/qualifier/unit out of the fused `commodity` cell; price £ s d → pence + currency; validFrom/validThrough per book; editorial `[…]` kept as a flag; source. 2,419 rows across 5 TSVs. **Also parse 1604** from `Jenks Book of Rates 1604.doc/.html`: LCA had extracted it and deliberately removed it (e9b5c99) as out of LCA's scope; **in scope for HECTOR** (Stephen, 2026-09-18) | here (reads LCA) | parser **done 2026-09-18** (`tools/rates/parse_bor.py`, output in ignored `build/rates/`): 4,063 rows incl. 1,644 from 1604; 3,905 ok / 69 partial / 89 failed (mostly genuine non-rates). Rates and units reliable on samples; the commodity/qualifier split is naive (~15–20% wrong), so match `commodity_text` against the glossary instead (task 16). Published 3 Oct 2026 (1507-1558); 1604 re-extraction cross-checked against LCA's removed PDF-derived TSVs: 99.6% of inward / 97.8% of outward rates align in sequence, differences are group prefixes, PDF line-break truncation and "see" rows |
 | 16 [C] | Reconcile the 141 rate-bearing qualifier phrases that match nothing in `qualifiers.json` | LCA editors | — |
-| 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | **built 29 Sep, local, 1507-1558** (1604 waits for D6's LCA-side restore): of 2,419 rows, 1,828 linked (1,540 by the goods at the head of the entry, 14 by a phrase, 274 by a single word elsewhere); 1,031 rates on base commodities, 797 on qualified ones, 341 qualifiers kept in sourceText as not priced apart; NOT linked and listed in `build/rates/link-report.md`: 314 with no glossary spelling (candidate spellings for LCA's curators: Annes sede, Appells, Beffe...), 170 on a spelling two concepts share, 59 no price, 48 no unit. Rate: pence + lsd, per quantity + unit (units ledger), validFrom the book, validThrough the next, the source line quoted in sourceText. Staging site 3,388 documents, 0 errors. Tests `tests/test_link_rates.py` (head-first proven to fail without its rule) |
+| 17 [E] | Emit `hector:taxation` linked to commodity and unit URIs | here | **published 3 Oct 2026, 1507-1558** (built 29 Sep) (1604 waits for D6's LCA-side restore): of 2,419 rows, 1,828 linked (1,540 by the goods at the head of the entry, 14 by a phrase, 274 by a single word elsewhere); 1,031 rates on base commodities, 797 on qualified ones, 341 qualifiers kept in sourceText as not priced apart; NOT linked and listed in `build/rates/link-report.md`: 314 with no glossary spelling (candidate spellings for LCA's curators: Annes sede, Appells, Beffe...), 170 on a spelling two concepts share, 59 no price, 48 no unit. Rate: pence + lsd, per quantity + unit (units ledger), validFrom the book, validThrough the next, the source line quoted in sourceText. Staging site 3,388 documents, 0 errors. Tests `tests/test_link_rates.py` (head-first proven to fail without its rule) |
 
 ### Units
 | # | task | status |
 |---|---|---|
-| 18 [E] | Build the unit catalogue: 222 glossary entries in `Units, weights & measures` + 357 corpus-attested unit concepts (ladings `type: unit` spans) + `…_units.tsv` conversion statements | **built 2026-09-19**, local only: `tools/units/build_units.py` → `build/units/` (`catalogue.tsv`, `rates_join.tsv`, `conversions.tsv`, `report.md`) + `build/ledger/units.tsv`. 365 candidate concepts (222 in the group ∪ 353 attested, C9); **248 emitted as units** (212 of the group, 26 attested casks/packing units outside it, 10 rates-only incl. `hector:each`); 127 not units (the tagger types every vessel in `Containers & vessels` as a unit; 10 group entries are instruments/goods). All **79** units the rates parser recognises are joined (60 to glossary units, 19 to rates-only units/`each`), covering all 3,972 rate rows that have a unit. 288 conversion statements with sources: 64 general (52 exact), 224 commodity-specific (units.tsv 73, Books of Rates contents clauses 113, LCA value model 34, LCA duty ratios 4). Dimension assignment (mass/length/volume/count/package) is a hand proposal: see §4 |
+| 18 [E] | Build the unit catalogue: 222 glossary entries in `Units, weights & measures` + 357 corpus-attested unit concepts (ladings `type: unit` spans) + `…_units.tsv` conversion statements | **published 3 Oct 2026** (built 2026-09-19): `tools/units/build_units.py` → `build/units/` (`catalogue.tsv`, `rates_join.tsv`, `conversions.tsv`, `report.md`) + `build/ledger/units.tsv`. 365 candidate concepts (222 in the group ∪ 353 attested, C9); **248 emitted as units** (212 of the group, 26 attested casks/packing units outside it, 10 rates-only incl. `hector:each`); 127 not units (the tagger types every vessel in `Containers & vessels` as a unit; 10 group entries are instruments/goods). All **79** units the rates parser recognises are joined (60 to glossary units, 19 to rates-only units/`each`), covering all 3,972 rate rows that have a unit. 288 conversion statements with sources: 64 general (52 exact), 224 commodity-specific (units.tsv 73, Books of Rates contents clauses 113, LCA value model 34, LCA duty ratios 4). Dimension assignment (mass/length/volume/count/package) is a hand proposal: see §4 |
 | 19 [C] | Align to QUDT and the Digital Noback Project | todo (droppable). Only `pound` carries QUDT/Wikidata ids (kept from the exemplar); dimension documents align to QUDT quantity kinds. The one thing 19 would add that 20 lacks is SI factors for length and volume |
-| 20 [E] | Emit `unit/<slug>/ontology.json` (D7; was `unit/<dimension>/<slug>`) with conversion factors where known | **built 2026-09-19** into `build/site/unit/` (run after the commodity export, which rebuilds `build/site/`): 248 MeasurementUnit records + dimension documents for length, volume, count, package. 48 carry `definedAs` (a Dimension: value + HECTOR unit, with its source), 12 mass units a `conversionToGram` chained to the pound avoirdupois. `definedAs` is a **proposed term**: it and a unit sense of `attestationCount` exist only in the staged `build/site/context` and `ontology`, not in the repo. Whole staging site: 0 errors (2,706 docs); units online: 0 errors, 0 warnings |
+| 20 [E] | Emit `unit/<slug>/ontology.json` (D7; was `unit/<dimension>/<slug>`) with conversion factors where known | **published 3 Oct 2026** (built 2026-09-19 into `build/site/unit/`) (run after the commodity export, which rebuilds `build/site/`): 248 MeasurementUnit records + dimension documents for length, volume, count, package. 48 carry `definedAs` (a Dimension: value + HECTOR unit, with its source), 12 mass units a `conversionToGram` chained to the pound avoirdupois. `definedAs` is a **proposed term**: it and a unit sense of `attestationCount` exist only in the staged `build/site/context` and `ontology`, not in the repo. Whole staging site: 0 errors (2,706 docs); units online: 0 errors, 0 warnings |
 
 ### Framework and publication
 | # | task | status |
 |---|---|---|
 | 21 [E] | Schema + CI validator | **moved to Phase 0** |
 | 22 [E] | Contribution route: PR template, validation on PR | todo |
-| 23 [E] | UI for thousands of entities (Dexie + Fuse phonetic search, as `index.html` promises) | todo (droppable) |
+| 23 [E] | UI for thousands of entities (Dexie + Fuse phonetic search, as `index.html` promises) | **largely done 3 Oct 2026**, without Dexie or Fuse: `index.html` + `js/hector.js` give a search over every attested spelling (`search/index.json`, `tools/site/build_search_index.py`) and a readable view of every record (w3id sends every HTML request there). Sound-alike search over the IPA keys not built |
+| 26 [E] | Turtle and RDF/XML | **done 3 Oct 2026**: `tools/site/build_rdf.py`, `ontology.ttl` / `ontology.rdf` beside every record + `dump/hector.ttl.gz`; deterministic, and CI checks they are current |
+| 27 [X] | Content negotiation for Turtle and RDF/XML at the URIs | PR to `perma-id/w3id.org` (`ids/hector/.htaccess`), to be designed to cover the site's other foreseeable needs (dump, files, trailing slashes, root) |
 | 24 [C] | Credits and licence pages for every source | todo |
 | 25 [E] | Deposit + DOI (Zenodo via a GitHub release) | todo |
 
@@ -110,25 +147,7 @@ short, drop 19 and 23 before 21 or 25.
 
 ---
 
-## 3. PUBLISHED AS ALPHA, 3 October 2026 (read this first)
-
-Jenks's signed letter granted CC BY 4.0 (task 1). Published to `main` the same day, marked
-**alpha: for discussion, not for citation** (README, home page, LICENSE-DATA,
-`owl:versionInfo`, docs/uri-policy.md §0): 3,139 commodity records (2,453 concepts, 685
-qualified, deprecations incl. ciste -> chest), 255 unit records, rates 1507-1558 embedded,
-the extended context and vocabulary, and `ledger/` (commodities, units, qualified). During the
-alpha the ledger is committed but may be edited; the freeze starts at the first tagged
-release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
-- The saffron exemplar moved to `tests/fixtures/exemplar/`; `commodity/saffron` is now the
-  exported record.
-- `export_hector.py` no longer copies `commodity/` and `unit/` from the repo into staging
-  (they are generated; copied, published records would never be dropped). A rebuild now
-  reproduces the published files byte for byte.
-- To republish: parse_bor, export_hector, build_units, link_rates, tools.site.build_search_index,
-  tools.site.build_rdf; validate; copy `build/site/{commodity,unit,context,ontology,search,dump}` and
-  `build/ledger/*.tsv` to the repo.
-
-## 3a. Parked 29 September 2026
+## History: parked 29 September 2026 (superseded by §0)
 
 Decisions 2, D4, D5, D6, D7 taken 29 Sep (§1). LIVE: D7 (units at unit/<slug>, deprecation
 records for the old paths, definedAs adopted, every conflicting conversion published) and D5
@@ -139,7 +158,7 @@ link_rates; staging 3,388 docs, 0 errors; 115 tests. **Blocker: Jenks's written 
 back into the LCA glossary behind a loader filter); D4 on the LCA side once the ledger is
 published; `ciste` needs an LCA history record (export exits 1 on it, by design).
 
-## 4. Where things stand (handoff, 2026-09-18, end of session)
+## History: handoff, 2026-09-18 (superseded by §0)
 
 **Done and live on `main`** (CI green; verified over w3id): Phase 0 complete (F1–F5, 21). The
 context is valid and layered on Linked Art, the vocabulary is at `/ontology`, and entity URIs
