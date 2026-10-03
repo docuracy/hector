@@ -7,30 +7,50 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1cdf89e6582d3560b10a5b849c35b262a83a7d9f534be869b384f10326b362a37">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>26s 8d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">320</hector:valueInPence>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cbc5c328a37a3794f1a14b8255f11efa678e40689d1ca631bfa6d29d77f44c6c90">
+    <crm:P190_has_symbolic_content>flemysshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb19af8ba854d009205698a886ece1eb5bf7b02c85f11a36bbfd7e3d68e9cffad19">
+    <crm:P190_has_symbolic_content>flemmysh</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃ</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1d82fec47d0b44919c6dfb1bab78e9f9f8f310887e272956720d5df96b2b735d2">
+    <crm:P190_has_symbolic_content>Flemish cloth: woollen or linen cloth from Flanders, named only by its provenance (cf. the Flanders provenance qualifier for cloth of other types qualified as Flemish)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb8deeda8428778654b640120911cf2b5a6dbfc7bc8f2cbaa619d405807bd34562">
+    <crm:P190_has_symbolic_content>flemyshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300162391">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>cloth</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb8e1a76c6491afadd047ca3dd9a042ae261324726304d4ba0a02852eb862f4198">
-    <crm:P190_has_symbolic_content>flemmyshe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/flemish-cloth#rate-1558-inward-444">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Flemyshe cloth thole pece 26s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_flemish_cloth_cb1cdf89e6582d3560b10a5b849c35b262a83a7d9f534be869b384f10326b362a37"/>
+    <hector:perQuantity rdf:nodeID="commodity_flemish_cloth_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 444 (transcribed by Stuart Jenks): 'Flemyshe cloth thole pece' 26s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb21f12072d22bd2d75cc58ba32f11cd440df607070ac1c27470308a4975b6d9caa">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/flemish-cloth#rate-1545-inward-270">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Flemisshe cloth the hole pece 13s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_flemish_cloth_cb360e1d93969c2ff647e12e77aa136a8b1a1f02ae3c70ebc034eb11dfc26aa9119"/>
+    <hector:perQuantity rdf:nodeID="commodity_flemish_cloth_cb21f12072d22bd2d75cc58ba32f11cd440df607070ac1c27470308a4975b6d9caa"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 270 (transcribed by Stuart Jenks): 'Flemisshe cloth the hole pece' 13s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/flemish-cloth">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -54,66 +74,11 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/flemish-cloth#rate-1545-inward-270"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/flemish-cloth#rate-1558-inward-444"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cbc5c328a37a3794f1a14b8255f11efa678e40689d1ca631bfa6d29d77f44c6c90">
-    <crm:P190_has_symbolic_content>flemysshe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/flemish%20cloth">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>flemish cloth (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/flemish-cloth#rate-1558-inward-444">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Flemyshe cloth thole pece 26s 8d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_flemish_cloth_cb1cdf89e6582d3560b10a5b849c35b262a83a7d9f534be869b384f10326b362a37"/>
-    <hector:perQuantity rdf:nodeID="commodity_flemish_cloth_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 444 (transcribed by Stuart Jenks): 'Flemyshe cloth thole pece' 26s 8d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cbae4e7fef349234b12293969017091784622c82ab6860e6d746eba15ab735f1c9">
-    <crm:P190_has_symbolic_content>flemysche</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pecia">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pecia</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb742a9d5dc432e76ea15b2339e94f2f7a34e46b6a2f6b5ca2b31ba859a8ccbece">
-    <crm:P190_has_symbolic_content>flemmysshe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb19af8ba854d009205698a886ece1eb5bf7b02c85f11a36bbfd7e3d68e9cffad19">
-    <crm:P190_has_symbolic_content>flemmysh</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb11ff08ce553e9ace43741f69c73b903348ce1a2630ec2fbdb36d7c63df2a0e119">
+    <crm:P190_has_symbolic_content>flemish</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>flemiʃ</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb8deeda8428778654b640120911cf2b5a6dbfc7bc8f2cbaa619d405807bd34562">
-    <crm:P190_has_symbolic_content>flemyshe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/flemish-cloth#rate-1545-inward-270">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Flemisshe cloth the hole pece 13s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_flemish_cloth_cb360e1d93969c2ff647e12e77aa136a8b1a1f02ae3c70ebc034eb11dfc26aa9119"/>
-    <hector:perQuantity rdf:nodeID="commodity_flemish_cloth_cb21f12072d22bd2d75cc58ba32f11cd440df607070ac1c27470308a4975b6d9caa"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 270 (transcribed by Stuart Jenks): 'Flemisshe cloth the hole pece' 13s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1bcf4186b013869abf41f3daec6de3a67ffaa05be31165dbf2a40ec785dfe412e">
     <crm:P190_has_symbolic_content>flemysh</crm:P190_has_symbolic_content>
@@ -121,15 +86,33 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>flemiʃ</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb360e1d93969c2ff647e12e77aa136a8b1a1f02ae3c70ebc034eb11dfc26aa9119">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>13s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb8e1a76c6491afadd047ca3dd9a042ae261324726304d4ba0a02852eb862f4198">
+    <crm:P190_has_symbolic_content>flemmyshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pecia">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pecia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb21f12072d22bd2d75cc58ba32f11cd440df607070ac1c27470308a4975b6d9caa">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_flemish_cloth_cbb7f2dcbcd5e135bfcb695c52b09b3f3b2778c621e784820b04254d90e81bba85">
     <crm:P190_has_symbolic_content>flemisshe</crm:P190_has_symbolic_content>
@@ -137,33 +120,50 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>flemiʃə</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1cdf89e6582d3560b10a5b849c35b262a83a7d9f534be869b384f10326b362a37">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>26s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">320</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb742a9d5dc432e76ea15b2339e94f2f7a34e46b6a2f6b5ca2b31ba859a8ccbece">
+    <crm:P190_has_symbolic_content>flemmysshe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb360e1d93969c2ff647e12e77aa136a8b1a1f02ae3c70ebc034eb11dfc26aa9119">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>13s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.wikidata.org/entity/Q157070">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
     <rdfs:label>County of Flanders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cbae4e7fef349234b12293969017091784622c82ab6860e6d746eba15ab735f1c9">
+    <crm:P190_has_symbolic_content>flemysche</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>flemiʃə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/flemish%20cloth">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>flemish cloth (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1dec73232ef3ccc854953f57288c70998959ea2031931ad9706fac9cb202faa56">
     <crm:P190_has_symbolic_content>flemish cloth</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>flemiʃ kloθ</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb11ff08ce553e9ace43741f69c73b903348ce1a2630ec2fbdb36d7c63df2a0e119">
-    <crm:P190_has_symbolic_content>flemish</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>flemiʃ</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_flemish_cloth_cb1d82fec47d0b44919c6dfb1bab78e9f9f8f310887e272956720d5df96b2b735d2">
-    <crm:P190_has_symbolic_content>Flemish cloth: woollen or linen cloth from Flanders, named only by its provenance (cf. the Flanders provenance qualifier for cloth of other types qualified as Flemish)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

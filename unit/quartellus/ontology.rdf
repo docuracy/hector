@@ -7,14 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="unit_quartellus_cb24e4a62d45265ccce32bde1321d0c6ea4a3f0dca878a06e071b87187fc86ab0dc">
-    <crm:P190_has_symbolic_content>quartelli</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kwarteli</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/quartellus">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="unit_quartellus_cb1a44c7fbe70ec0336e5eecc057135625250d221756507cd970268690bc9dce33f"/>
@@ -29,6 +21,14 @@
     <hector:definedAs rdf:nodeID="unit_quartellus_cb1c90ca5b9e7b970d57ab31741de895d9b77329a5ba87343c7053c336ead48ac"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/volume"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_quartellus_cb24e4a62d45265ccce32bde1321d0c6ea4a3f0dca878a06e071b87187fc86ab0dc">
+    <crm:P190_has_symbolic_content>quartelli</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kwarteli</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_quartellus_cb1a44c7fbe70ec0336e5eecc057135625250d221756507cd970268690bc9dce33f">
     <crm:P190_has_symbolic_content>quartellus</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
@@ -38,24 +38,19 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_quartellus_cb1b394ee5ea629b3bc4ff4fb2897ac821a4f24406c9b6a185b7f9accf22fb07cb">
-    <crm:P190_has_symbolic_content>Source: LCA glossary (quartellus: '½ bota or 1/6 tun'). Note: of sweet wine</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/quartellus">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>quartellus (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_quartellus_cb1c90ca5b9e7b970d57ab31741de895d9b77329a5ba87343c7053c336ead48ac">
     <crm:P67i_is_referred_to_by rdf:nodeID="unit_quartellus_cb1b394ee5ea629b3bc4ff4fb2897ac821a4f24406c9b6a185b7f9accf22fb07cb"/>
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1666666667</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/tun"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quartellus">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>quartellus</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/tun">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
@@ -64,10 +59,6 @@
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>weights and measures (general, standards)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="unit_quartellus_cb2204f83101d95fe34d248121f1b5cb4cfa028d38cd2ecc50832f464c88052b39">
     <crm:P190_has_symbolic_content>a measure of sweet wine (equivalent to ½ bota or 1/6 tun)</crm:P190_has_symbolic_content>
@@ -78,12 +69,21 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quartellus">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>quartellus</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>weights and measures (general, standards)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_quartellus_cb1b394ee5ea629b3bc4ff4fb2897ac821a4f24406c9b6a185b7f9accf22fb07cb">
+    <crm:P190_has_symbolic_content>Source: LCA glossary (quartellus: '½ bota or 1/6 tun'). Note: of sweet wine</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/quartellus">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>quartellus (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

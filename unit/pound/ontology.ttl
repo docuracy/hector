@@ -3,7 +3,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix hector: <https://w3id.org/hector/ontology#> .
 @prefix la: <https://linked.art/ns/terms/> .
-@prefix qudtunit: <http://qudt.org/vocab/unit/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -60,15 +59,11 @@
             crm:P2_has_type aat:300435416 ] ;
     rdfs:seeAlso <https://w3id.org/hector/commodity/pound>,
         <https://w3id.org/mlca/glossary/pound> ;
-    la:equivalent qudtunit:LB,
-        aat:300379254,
+    la:equivalent aat:300379254,
         wd:Q100995 ;
     hector:attestationCount 26359 ;
     hector:conversionToGram 453.59237 ;
     hector:quantityKind <https://w3id.org/hector/unit/dimension/mass> .
-
-qudtunit:LB a crm:E58_Measurement_Unit ;
-    rdfs:label "Pound Mass" .
 
 aat:300379254 a crm:E55_Type ;
     rdfs:label "pounds (units for weight)" .

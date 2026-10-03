@@ -7,35 +7,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb54772108278b0af851f36c84b12d6cfc9fbc74e39e2a82810863c0cc7d198722">
-    <crm:P190_has_symbolic_content>Conny skynnes graye stage</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>koni skinəs graie stadʒə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb183f3860e7194532b7b0fbe1b25a974fe84acffcb1e3aba864c036180238edf54">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>2s 6d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/rabbit-skin-grey-out-of-season#rate-1558-outward-18">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 outward: Conny skynnes graye stage the C cont’ 100 2s 6d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb183f3860e7194532b7b0fbe1b25a974fe84acffcb1e3aba864c036180238edf54"/>
-    <hector:perQuantity rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7"/>
-    <hector:sourceText>Book of Rates 1558, outward, line 18 (transcribed by Stuart Jenks): 'Conny skynnes graye stage the C cont’ 100' 2s 6d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>hundred</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/rabbit-skin-grey-out-of-season">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -48,9 +22,21 @@
     <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/rabbit-skin"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/rabbit-skin-grey-out-of-season#rate-1558-outward-18"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/rabbit-skin">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>rabbit skin</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb183f3860e7194532b7b0fbe1b25a974fe84acffcb1e3aba864c036180238edf54">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>2s 6d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb54772108278b0af851f36c84b12d6cfc9fbc74e39e2a82810863c0cc7d198722">
+    <crm:P190_has_symbolic_content>Conny skynnes graye stage</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>koni skinəs graie stadʒə</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb901d78b07811982350c386849135da01f436519d4e94462efeb8843c0c5b9067">
     <crm:P190_has_symbolic_content>rabbit skin (grey out of season)</crm:P190_has_symbolic_content>
@@ -63,20 +49,34 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/rabbit-skin-grey-out-of-season#rate-1558-outward-18">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 outward: Conny skynnes graye stage the C cont’ 100 2s 6d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb183f3860e7194532b7b0fbe1b25a974fe84acffcb1e3aba864c036180238edf54"/>
+    <hector:perQuantity rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7"/>
+    <hector:sourceText>Book of Rates 1558, outward, line 18 (transcribed by Stuart Jenks): 'Conny skynnes graye stage the C cont’ 100' 2s 6d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_rabbit_skin_grey_out_of_season_cb826a2ce4570362860ca609aa2a04caa3ec853145b2a22ba0ac63f5cd75b6eac7">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/hundred"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/hundred">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>hundred</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/rabbit-skin">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>rabbit skin</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

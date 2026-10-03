@@ -12,24 +12,21 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half#rate-1558-inward-1133">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Worsted vocat’ Seynt Omers narrowe or half worsted the pece 10s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb1375c83284bca0db1aee995b60a9e26e063d06f2224a657e6c42768fca22a75d6"/>
-    <hector:perQuantity rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 1133 (transcribed by Stuart Jenks): 'Worsted vocat’ Seynt Omers narrowe or half worsted the pece' 10s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb1375c83284bca0db1aee995b60a9e26e063d06f2224a657e6c42768fca22a75d6">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>10s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb7853efecb6a507b1b37c418d01b46d4c66a63ac455f209a9aa7b10712ceaf6cf">
+    <crm:P190_has_symbolic_content>worsted (seint saint omer narrow half)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>worsted seint saint omer naruː half</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -42,9 +39,9 @@
     <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/worsted"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half#rate-1558-inward-1133"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/worsted">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>worsted</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb94459c00da5e317bd8d5e89b7b5605fa5a35f4aa28b3ea32ad3970a650bb930a">
     <crm:P190_has_symbolic_content>Worsted vocat’ Seynt Omers narrowe or half worsted</crm:P190_has_symbolic_content>
@@ -56,11 +53,22 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>pecia</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb7853efecb6a507b1b37c418d01b46d4c66a63ac455f209a9aa7b10712ceaf6cf">
-    <crm:P190_has_symbolic_content>worsted (seint saint omer narrow half)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>worsted seint saint omer naruː half</hector:phoneticKey>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/worsted-seint-saint-omer-narrow-half#rate-1558-inward-1133">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Worsted vocat’ Seynt Omers narrowe or half worsted the pece 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cb1375c83284bca0db1aee995b60a9e26e063d06f2224a657e6c42768fca22a75d6"/>
+    <hector:perQuantity rdf:nodeID="commodity_worsted_seint_saint_omer_narrow_half_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 1133 (transcribed by Stuart Jenks): 'Worsted vocat’ Seynt Omers narrowe or half worsted the pece' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -70,13 +78,5 @@
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/worsted">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>worsted</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

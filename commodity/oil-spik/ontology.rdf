@@ -18,22 +18,15 @@
     <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/oil"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/oil-spik#rate-1558-inward-793"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_oil_spik_cb0">
-    <crm:P190_has_symbolic_content>oil, qualified as ‘spik’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/oil">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>oil</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_oil_spik_cbf918f51b093890d0c0989b5bc0db2d3eb74406820b9d0a23c7047faf26f234a7">
+    <crm:P190_has_symbolic_content>oil (spik)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>oil spik</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/oil-spik#rate-1558-inward-793">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -50,11 +43,14 @@
     <hector:lsd>2s 6d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_oil_spik_cbf918f51b093890d0c0989b5bc0db2d3eb74406820b9d0a23c7047faf26f234a7">
-    <crm:P190_has_symbolic_content>oil (spik)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>oil spik</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_oil_spik_cb0">
+    <crm:P190_has_symbolic_content>oil, qualified as ‘spik’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -71,12 +67,16 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>oilə de spikə</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/oil">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>oil</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

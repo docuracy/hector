@@ -7,6 +7,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_stragulatum_cb0">
+    <crm:P190_has_symbolic_content>striped or panelled [cloth]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_stragulatum_cb20683d54143ddf40a74da422638bb0234c3c011486ec24a14e8ee6ae9c0b9f3be">
     <crm:P190_has_symbolic_content>stragulati</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -14,6 +19,17 @@
     <hector:phoneticKey>stragulati</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1428</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1430</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/stragulatum">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_stragulatum_cb19a56d3f6fa036d4287c01fc73cf12189e910526c849c86cee060a0767cf85dca"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_stragulatum_cb20683d54143ddf40a74da422638bb0234c3c011486ec24a14e8ee6ae9c0b9f3be"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_stragulatum_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>stragulatum</rdfs:label>
+    <skos:broader rdf:resource="http://vocab.getty.edu/aat/300162391"/>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/stragulatum"/>
+    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300162391">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -28,29 +44,13 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1428</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1430</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_stragulatum_cb0">
-    <crm:P190_has_symbolic_content>striped or panelled [cloth]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/stragulatum">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_stragulatum_cb19a56d3f6fa036d4287c01fc73cf12189e910526c849c86cee060a0767cf85dca"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_stragulatum_cb20683d54143ddf40a74da422638bb0234c3c011486ec24a14e8ee6ae9c0b9f3be"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_stragulatum_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>stragulatum</rdfs:label>
-    <skos:broader rdf:resource="http://vocab.getty.edu/aat/300162391"/>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/stragulatum"/>
-    <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/stragulatum">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>

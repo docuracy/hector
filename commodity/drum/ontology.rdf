@@ -8,6 +8,12 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_drum_cb0">
+    <crm:P190_has_symbolic_content>tympys</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>timpis</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/drum">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="commodity_drum_cb0"/>
@@ -22,11 +28,13 @@
     <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300041729"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_drum_cbb2bae780847dc0432c880ddb76b63d75d55625831b01ce53156084e46c4becbb">
-    <crm:P190_has_symbolic_content>tympan</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>timpan</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>horn</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_drum_cb72d821eddcc062c481ae2a472e5a93d01a58f57c74d4a8dcf6ecef22ea3dbd7c">
     <crm:P190_has_symbolic_content>tympanum</crm:P190_has_symbolic_content>
@@ -34,28 +42,9 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>timpanum</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_drum_cb0">
-    <crm:P190_has_symbolic_content>tympys</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>timpis</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_drum_cb6995fd21af8ece7da2a333735628109f12bd038e0a8919556114f35e18a13b37">
-    <crm:P190_has_symbolic_content>Membranophones with a resonating cavity covered at one or both ends by a membrane, which is sounded by striking, rubbing, or plucking. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/drum">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>horn</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300041729">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>drums (membranophones)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>drum (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_drum_cb1157a71a5a0c355483a4097b03ad03416cbdc685b34d9da5a5a22f3525d7454a6">
     <crm:P190_has_symbolic_content>drum</crm:P190_has_symbolic_content>
@@ -64,13 +53,24 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>drum</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_drum_cbb2bae780847dc0432c880ddb76b63d75d55625831b01ce53156084e46c4becbb">
+    <crm:P190_has_symbolic_content>tympan</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>timpan</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/drum">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>drum (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_drum_cb6995fd21af8ece7da2a333735628109f12bd038e0a8919556114f35e18a13b37">
+    <crm:P190_has_symbolic_content>Membranophones with a resonating cavity covered at one or both ends by a membrane, which is sounded by striking, rubbing, or plucking. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300041729">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>drums (membranophones)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>

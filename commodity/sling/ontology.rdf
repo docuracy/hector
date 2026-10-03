@@ -8,22 +8,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sling">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>sling (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sling_cb7a6238fe2d17bf91d0611ae73b58398efa9dcfedb2f182aff443e4993719cb2f">
-    <crm:P190_has_symbolic_content>Throwing weapons consisting basically of a strap of leather, fabric, or similar flexible material, widening into a pouch at the center to hold the projectile. They are held by the two ends and swung round rapidly, then one end is released to hurl the projectile. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sling_cb8a137008d7cb746c8c562e1e0d2ef5d971ad68e2b842f65e758c87b9408a4aa0">
-    <crm:P190_has_symbolic_content>sling</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>sliŋ</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/sling">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="commodity_sling_cb0"/>
@@ -35,6 +19,18 @@
     <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/sling"/>
     <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300037216"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sling">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>sling (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300037216">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>slings (projectile weapons)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sling_cb0">
     <crm:P190_has_symbolic_content>slyng</crm:P190_has_symbolic_content>
@@ -52,13 +48,17 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300037216">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>slings (projectile weapons)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_sling_cb7a6238fe2d17bf91d0611ae73b58398efa9dcfedb2f182aff443e4993719cb2f">
+    <crm:P190_has_symbolic_content>Throwing weapons consisting basically of a strap of leather, fabric, or similar flexible material, widening into a pouch at the center to hold the projectile. They are held by the two ends and swung round rapidly, then one end is released to hurl the projectile. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_sling_cb8a137008d7cb746c8c562e1e0d2ef5d971ad68e2b842f65e758c87b9408a4aa0">
+    <crm:P190_has_symbolic_content>sling</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>sliŋ</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>

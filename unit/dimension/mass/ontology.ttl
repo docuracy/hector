@@ -1,7 +1,6 @@
 @prefix aat: <http://vocab.getty.edu/aat/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix la: <https://linked.art/ns/terms/> .
-@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
@@ -10,11 +9,7 @@
     crm:P67i_is_referred_to_by [ a crm:E33_Linguistic_Object ;
             crm:P190_has_symbolic_content "The dimension measured by units of weight. A unit gives the dimensions it measures in quantityKind (unit/pound is mass); since 29 Sep 2026 the dimension is not part of a unit's URI." ;
             crm:P2_has_type aat:300418049 ] ;
-    la:equivalent quantitykind:Mass,
-        wd:Q11423 .
-
-quantitykind:Mass a crm:E55_Type ;
-    rdfs:label "Mass" .
+    la:equivalent wd:Q11423 .
 
 aat:300418049 a crm:E55_Type ;
     rdfs:label "brief texts" .

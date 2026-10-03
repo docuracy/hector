@@ -7,9 +7,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb3307f09ca23804bc1e95135239835d5a2d9d122b9054b821b1d59c929db3d19a2">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>10s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1545-inward-655">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -20,10 +22,29 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb269829d9954ca1ea4f9fe46cd6d14c49625cc58aa5f245a172d72532b5c488f5b">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1545-inward-49">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Blacke sope the laste £6</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_soap_black_cb395491747bba9a3d6dbf030f572b6b8210b2b09bf6cf884ce1d09871bcc315cf3"/>
+    <hector:perQuantity rdf:nodeID="commodity_soap_black_cb285e46f7906c3dcf146b2eaa59b3775129cdb1e8c947d6be92a7f834498469f29"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 49 (transcribed by Stuart Jenks): 'Blacke sope the laste' £6</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb11dff8016a932279461f4fb3935f1fc54c35d72d4c6ee68281ae4c720819e2825">
+    <crm:P190_has_symbolic_content>soap (black)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>soap blak</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -42,6 +63,21 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-black#rate-1545-inward-49"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-black#rate-1545-inward-655"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1507-none-243">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1507: Sope called blacke sope the barrelle 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_soap_black_cb3307f09ca23804bc1e95135239835d5a2d9d122b9054b821b1d59c929db3d19a2"/>
+    <hector:perQuantity rdf:nodeID="commodity_soap_black_cb235e36209874706ddbda641fb5f32ad3479d4d1e0229b9e57e70445c3fb56ab05"/>
+    <hector:sourceText>Book of Rates 1507, line 243 (transcribed by Stuart Jenks): 'Sope called blacke sope the barrelle' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb9cad3e0662afdce167d05b635c27dda71f95e72001645abda9bc7f2a50ecc065">
+    <crm:P190_has_symbolic_content>Sope blacke</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>sopə blakə</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1507-none-242">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1507: Sope called blake sope the laste £6</rdfs:label>
@@ -51,19 +87,27 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb395491747bba9a3d6dbf030f572b6b8210b2b09bf6cf884ce1d09871bcc315cf3">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>soap</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb2a60a1bb43169f516d5d985e14a5b815b24bb80cbbed1fc553d0e898984a758ea">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>£6</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1440</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb16bbfdb7cab04ffc5fb485db34755a6cb8990fa5489fd6422a19dae87f3859c3f">
+    <crm:P190_has_symbolic_content>soap, qualified as ‘black’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb9ceb2f32a358f2ffefd7ebc84f2da5c4aaa0eb9d52c66c767601f945183dea5d">
-    <crm:P190_has_symbolic_content>Sope called blake sope</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb1397b6337fdcc772d544817f18e4402d0fac7eedcc8403f7389cda81316b44a2d">
+    <crm:P190_has_symbolic_content>Sope called blacke sope</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>sopə kaled blakə sopə</hector:phoneticKey>
@@ -74,87 +118,13 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>blakə sopə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>soap</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb1397b6337fdcc772d544817f18e4402d0fac7eedcc8403f7389cda81316b44a2d">
-    <crm:P190_has_symbolic_content>Sope called blacke sope</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>sopə kaled blakə sopə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb3307f09ca23804bc1e95135239835d5a2d9d122b9054b821b1d59c929db3d19a2">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>10s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb16bbfdb7cab04ffc5fb485db34755a6cb8990fa5489fd6422a19dae87f3859c3f">
-    <crm:P190_has_symbolic_content>soap, qualified as ‘black’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb9cad3e0662afdce167d05b635c27dda71f95e72001645abda9bc7f2a50ecc065">
-    <crm:P190_has_symbolic_content>Sope blacke</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>sopə blakə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb11dff8016a932279461f4fb3935f1fc54c35d72d4c6ee68281ae4c720819e2825">
-    <crm:P190_has_symbolic_content>soap (black)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>soap blak</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1507-none-243">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1507: Sope called blacke sope the barrelle 10s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_soap_black_cb3307f09ca23804bc1e95135239835d5a2d9d122b9054b821b1d59c929db3d19a2"/>
-    <hector:perQuantity rdf:nodeID="commodity_soap_black_cb235e36209874706ddbda641fb5f32ad3479d4d1e0229b9e57e70445c3fb56ab05"/>
-    <hector:sourceText>Book of Rates 1507, line 243 (transcribed by Stuart Jenks): 'Sope called blacke sope the barrelle' 10s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb285e46f7906c3dcf146b2eaa59b3775129cdb1e8c947d6be92a7f834498469f29">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-black#rate-1545-inward-49">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Blacke sope the laste £6</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_soap_black_cb395491747bba9a3d6dbf030f572b6b8210b2b09bf6cf884ce1d09871bcc315cf3"/>
-    <hector:perQuantity rdf:nodeID="commodity_soap_black_cb285e46f7906c3dcf146b2eaa59b3775129cdb1e8c947d6be92a7f834498469f29"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 49 (transcribed by Stuart Jenks): 'Blacke sope the laste' £6</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb2a60a1bb43169f516d5d985e14a5b815b24bb80cbbed1fc553d0e898984a758ea">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£6</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1440</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_black_cb235e36209874706ddbda641fb5f32ad3479d4d1e0229b9e57e70445c3fb56ab05">
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb269829d9954ca1ea4f9fe46cd6d14c49625cc58aa5f245a172d72532b5c488f5b">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_soap_black_cb38daf5f84be22e8134154286fd9557b87994bbdff4113a1f9591ee38e4b5d60e7">
@@ -163,8 +133,38 @@
     <hector:lsd>£6</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1440</hector:valueInPence>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb235e36209874706ddbda641fb5f32ad3479d4d1e0229b9e57e70445c3fb56ab05">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb285e46f7906c3dcf146b2eaa59b3775129cdb1e8c947d6be92a7f834498469f29">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb9ceb2f32a358f2ffefd7ebc84f2da5c4aaa0eb9d52c66c767601f945183dea5d">
+    <crm:P190_has_symbolic_content>Sope called blake sope</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>sopə kaled blakə sopə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>barrel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_black_cb395491747bba9a3d6dbf030f572b6b8210b2b09bf6cf884ce1d09871bcc315cf3">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£6</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1440</hector:valueInPence>
   </rdf:Description>
 </rdf:RDF>

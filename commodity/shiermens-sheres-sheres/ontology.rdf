@@ -7,32 +7,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/shiermens-sheres">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>shiermens sheres</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/shiermens-sheres-sheres">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb11885bce2841f4d918f048158e9979a1e46c1172105486a92b42f5900155d228d"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb186fb2f14aeb5f40776924015f42268496e0e7df6d2a144cd99290122172e99d9"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb15f7415ab28b1c468a5a351032b3f13783a11a82e4f0cb13d3eb20c76c0a98634"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>shiermens sheres (sheres)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres-sheres#rate-1545-inward-666"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres-sheres#rate-1545-inward-667"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb231516c51525f4aedf38b42744871ab3e6aca3b52dbdcfe281f22847a44f3303e">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>6s 8d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb28c3593b30b1a1cd5da5c687e76c65ada558a9a990837ae2ec1a2112b884eed09">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pair"/>
@@ -47,6 +21,28 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb11885bce2841f4d918f048158e9979a1e46c1172105486a92b42f5900155d228d">
+    <crm:P190_has_symbolic_content>Shermen sheres</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>ʃermen ʃerəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/shiermens-sheres-sheres">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb11885bce2841f4d918f048158e9979a1e46c1172105486a92b42f5900155d228d"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb186fb2f14aeb5f40776924015f42268496e0e7df6d2a144cd99290122172e99d9"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_shiermens_sheres_sheres_cb15f7415ab28b1c468a5a351032b3f13783a11a82e4f0cb13d3eb20c76c0a98634"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>shiermens sheres (sheres)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres-sheres#rate-1545-inward-666"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/shiermens-sheres-sheres#rate-1545-inward-667"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pair">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pair</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/shiermens-sheres-sheres#rate-1545-inward-666">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1545 inward: Shermen sheres the payer newe 6s 8d</rdfs:label>
@@ -56,30 +52,9 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb1c301b00b2d6846777a00721b2ec09fb6b3b98dc402a3f1d783c3ae5dba7ee785">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>4s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pair"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb11885bce2841f4d918f048158e9979a1e46c1172105486a92b42f5900155d228d">
-    <crm:P190_has_symbolic_content>Shermen sheres</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ʃermen ʃerəs</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pair">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pair</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb186fb2f14aeb5f40776924015f42268496e0e7df6d2a144cd99290122172e99d9">
     <crm:P190_has_symbolic_content>shiermens sheres (sheres)</crm:P190_has_symbolic_content>
@@ -92,12 +67,37 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/shiermens-sheres">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+    <rdfs:label>shiermens sheres</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb1c301b00b2d6846777a00721b2ec09fb6b3b98dc402a3f1d783c3ae5dba7ee785">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>4s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb231516c51525f4aedf38b42744871ab3e6aca3b52dbdcfe281f22847a44f3303e">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>6s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_shiermens_sheres_sheres_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pair"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

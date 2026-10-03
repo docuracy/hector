@@ -121,6 +121,7 @@ EXTRA_DIMENSIONS = {k: ("package",) for k in ("sack", "barrel", "hogshead", "fir
 # Slugs that must never be minted for a unit: `unit/dimension/<dim>` holds the dimensions, and
 # `unit/mass` is the deprecation record of the pre-D7 dimension document.
 RESERVED_SLUGS = {"dimension", "mass", "length", "volume", "count", "package"}
+HAND_WRITTEN = ("mass", "mass/pound")   # D7 deprecation records for the old unit/<dimension>/<slug> paths
 
 # Corpus-attested concepts outside the units group that are casks (always measures) ...
 CASKS = {"barrel", "hogshead", "firkin", "puncheon", "vat", "dry vat", "foist", "tonekyn",
@@ -635,14 +636,17 @@ def save_ledger(path: Path, rows: list[dict]):
 PROPOSED_TERMS = {}
 ATTESTATION_COMMENT = None
 
+# No QUDT links, for units or quantity kinds (Stephen, 3 Oct 2026): QUDT defines today's
+# standard units, and historical units were defined differently from place to place and over
+# time, so a link would assert an equivalence the sources do not support.
 DIMENSION_DOCS = {
+    "mass": ("mass", "The dimension measured by units of weight. A unit gives the dimensions it measures in quantityKind (unit/pound is mass); since 29 Sep 2026 the dimension is not part of a unit's URI.",
+             [{"id": "wd:Q11423", "type": "Type", "_label": "mass"}]),
     "length": ("length", "The dimension measured by units of length (ell, yard, foot).",
-               [{"id": "quantitykind:Length", "type": "Type", "_label": "Length"},
-                {"id": "wd:Q36253", "type": "Type", "_label": "length"}]),
+               [{"id": "wd:Q36253", "type": "Type", "_label": "length"}]),
     "volume": ("volume", "The dimension measured by units of capacity, liquid and dry (gallon, "
                "tun, bushel, quarter), including casks that the sources define by capacity.",
-               [{"id": "quantitykind:Volume", "type": "Type", "_label": "Volume"},
-                {"id": "wd:Q39297", "type": "Type", "_label": "volume"}]),
+               [{"id": "wd:Q39297", "type": "Type", "_label": "volume"}]),
     "count": ("count", "Units of number: a count of items (dozen, gross, pair, the timber of 40 "
               "skins), and `each`, one item counted individually.", []),
     "package": ("package", "Packing and transport units (bale, fardel, chest, sack as a packing "
@@ -748,11 +752,11 @@ def unit_doc(key: str, row: dict, cat: dict, by_key: dict, entries: dict, source
         if row.get("_commodity_slug"):
             see.append({"id": f"{W3ID}commodity/{row['_commodity_slug']}", "type": "Type", "_label": key})
         doc["seeAlso"] = see
-    if key == "pound":  # the exemplar's alignments, checked 2026-09-18 (task 19 not done)
+    if key == "pound":  # the exemplar's Wikidata alignment, checked 2026-09-18 (its QUDT link
+        # was dropped 3 Oct 2026 with all QUDT links: see DIMENSION_DOCS)
         doc.setdefault("equivalent", [])
         have = {x["id"] for x in doc["equivalent"]}
-        for x in ({"id": "wd:Q100995", "type": "MeasurementUnit", "_label": "pound"},
-                  {"id": "qudtunit:LB", "type": "MeasurementUnit", "_label": "Pound Mass"}):
+        for x in ({"id": "wd:Q100995", "type": "MeasurementUnit", "_label": "pound"},):
             if x["id"] not in have:
                 doc["equivalent"].append(x)
     n = c["attest_unit"] + c["attest_commodity_unit"]
@@ -843,14 +847,19 @@ def build(lca: Path, site: Path, out: Path, ledger_path: Path, rates_path: Path,
     # stage: rebuild build/site/unit from this repo's unit/ and add the generated records
     if not (site / "context" / "hector.jsonld").exists():
         raise SystemExit(f"{site} is not a staged site: run python -m tools.export.export_hector first")
+    # Only the hand-written records come from the repo: the D7 deprecation records for the old
+    # unit/<dimension>/<slug> paths. Everything else is generated here. Copying all of the repo's
+    # unit/ (as before 3 Oct 2026) carried published records forward for ever and kept the
+    # dimension documents from ever being regenerated.
     shutil.rmtree(site / "unit", ignore_errors=True)
-    shutil.copytree(REPO / "unit", site / "unit")
+    for rel in HAND_WRITTEN:
+        (site / "unit" / rel).mkdir(parents=True, exist_ok=True)
+        shutil.copy2(REPO / "unit" / rel / "ontology.json", site / "unit" / rel / "ontology.json")
     stage_vocabulary(site)
     for dim in DIMENSIONS:
         p = site / "unit" / "dimension" / dim / "ontology.json"
-        if not p.exists():
-            p.parent.mkdir(parents=True, exist_ok=True)
-            p.write_text(json.dumps(dimension_doc(dim), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(json.dumps(dimension_doc(dim), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     counts = collections.Counter()
     for row in ledger:

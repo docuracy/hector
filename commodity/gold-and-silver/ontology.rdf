@@ -7,18 +7,9 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_gold_and_silver_cb944165b9b0ce9852d899362386dc691c97c8f9276cae817a9fb1bacc7c93031b">
-    <crm:P190_has_symbolic_content>aurum et argentum</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>aurum et ardʒentum</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_gold_and_silver_cba24ab8ebfb2763cb465d5008469ade4ba9a4414f9e89c74d1a7009dfeb98a30b">
-    <crm:P190_has_symbolic_content>gold and silver</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>gold and silver</hector:phoneticKey>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300044045">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>goldwork (visual works)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/gold-and-silver">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -31,6 +22,23 @@
     <skos:broader rdf:resource="http://vocab.getty.edu/aat/300234152"/>
     <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/gold%20and%20silver"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_gold_and_silver_cb944165b9b0ce9852d899362386dc691c97c8f9276cae817a9fb1bacc7c93031b">
+    <crm:P190_has_symbolic_content>aurum et argentum</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>aurum et ardʒentum</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300234152">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>silverwork</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_gold_and_silver_cba24ab8ebfb2763cb465d5008469ade4ba9a4414f9e89c74d1a7009dfeb98a30b">
+    <crm:P190_has_symbolic_content>gold and silver</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>gold and silver</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_gold_and_silver_cb0">
     <crm:P190_has_symbolic_content>silver et gold</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -41,20 +49,12 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300234152">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>silverwork</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300044045">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>goldwork (visual works)</rdfs:label>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/gold%20and%20silver">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>gold and silver (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

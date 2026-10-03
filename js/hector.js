@@ -151,7 +151,7 @@
                 return `<tr><td>${when}</td><td>${esc(r.amount?.lsd || "")}</td><td>${per}</td><td class="small">${esc(r.sourceText || r._label || "")}</td></tr>`;
             }).join("");
             h.push(`<section><h2>Customs rates <span class="count">${rates.length}</span></h2>
-                <p class="muted small">The official valuation per unit in the Tudor Books of Rates, from Stuart Jenks's transcriptions.</p>
+                <p class="muted small">The official valuation per unit, with the source of each.</p>
                 <div class="scroll"><table><thead><tr><th>In force</th><th>Rate</th><th>Per</th><th>Source</th></tr></thead>
                 <tbody>${rows}</tbody></table></div></section>`);
         }

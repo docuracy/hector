@@ -8,6 +8,21 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_lees_cbb245e53f487d8f9d6e4fb319ef1bea3c304dfc6e8ddfdadb32bf5269e7122512">
+    <crm:P190_has_symbolic_content>deposits of residual yeast and other particles in wine-making [Source: Wikidata]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lees_cb6a8f8eeee2fc5c4d729132aa73fc8cee967e8b0dabf0877a65281a1436d6445d">
+    <crm:P190_has_symbolic_content>leys</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>leis</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/lees">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="commodity_lees_cb0"/>
@@ -23,6 +38,14 @@
     <la:equivalent rdf:resource="http://www.wikidata.org/entity/Q162441"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hector:attestationCount>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_lees_cbef6a1fbbf0b7ed0808d60704350bade032ced234bb214e16a2ae931da174540a">
+    <crm:P190_has_symbolic_content>lyzes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>lizəs</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1431</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1433</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lees_cbc0cd237f1877b0cdb268040e7af9b1c8c1eb8c640116c776a8bcedee294240d9">
     <crm:P190_has_symbolic_content>lees</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
@@ -30,9 +53,9 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>leːs</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/lees">
+  <rdf:Description rdf:about="http://www.wikidata.org/entity/Q162441">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lees (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>lees</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lees_cbd648546055b47deb61f66b563df4bc92a7d1d07fe4f684b3cb38980b5651e477">
     <crm:P190_has_symbolic_content>liez</crm:P190_has_symbolic_content>
@@ -42,17 +65,17 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1412</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1427</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lees_cbef6a1fbbf0b7ed0808d60704350bade032ced234bb214e16a2ae931da174540a">
-    <crm:P190_has_symbolic_content>lyzes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>lizəs</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1431</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1433</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404880">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>medicines (material)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_lees_cb0">
     <crm:P190_has_symbolic_content>lyes</crm:P190_has_symbolic_content>
@@ -60,31 +83,8 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>lies</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lees_cb6a8f8eeee2fc5c4d729132aa73fc8cee967e8b0dabf0877a65281a1436d6445d">
-    <crm:P190_has_symbolic_content>leys</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>leis</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_lees_cbb245e53f487d8f9d6e4fb319ef1bea3c304dfc6e8ddfdadb32bf5269e7122512">
-    <crm:P190_has_symbolic_content>deposits of residual yeast and other particles in wine-making [Source: Wikidata]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404880">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/lees">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>medicines (material)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.wikidata.org/entity/Q162441">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lees</rdfs:label>
+    <rdfs:label>lees (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

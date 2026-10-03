@@ -7,20 +7,40 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbfcd0a981e7dfb64574324c9c28b75dd499f7d7730edeadf915ef2ce9af6fc4c">
     <crm:P190_has_symbolic_content>dornick (uithout silk cadas)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>dornik uiθuːt silk kadas</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/dornick-uithout-silk-cadas">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb5b1772dfb0e4637a29f4802eaab1b42a2bbb4a68b2a873d09da044d879c2a7a4"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbfcd0a981e7dfb64574324c9c28b75dd499f7d7730edeadf915ef2ce9af6fc4c"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>dornick (uithout silk cadas)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/dornick"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/dornick"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/dornick-uithout-silk-cadas#rate-1545-inward-229"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb0">
     <crm:P190_has_symbolic_content>dornick, qualified as ‘uithout silk cadas’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/dornick">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>dornick</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb5b1772dfb0e4637a29f4802eaab1b42a2bbb4a68b2a873d09da044d879c2a7a4">
     <crm:P190_has_symbolic_content>Dornix without sylke or caddas</crm:P190_has_symbolic_content>
@@ -37,9 +57,13 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/dornick">
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pecia">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pecia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>dornick</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbfcb184f4a27e23de6d93f592100bd71c1c99c6c659375e22925a0137deea554e">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -47,36 +71,12 @@
     <hector:lsd>5s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">60</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pecia">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pecia</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/dornick-uithout-silk-cadas">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb5b1772dfb0e4637a29f4802eaab1b42a2bbb4a68b2a873d09da044d879c2a7a4"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbfcd0a981e7dfb64574324c9c28b75dd499f7d7730edeadf915ef2ce9af6fc4c"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_dornick_uithout_silk_cadas_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>dornick (uithout silk cadas)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/dornick"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/dornick"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/dornick-uithout-silk-cadas#rate-1545-inward-229"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_dornick_uithout_silk_cadas_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pecia"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

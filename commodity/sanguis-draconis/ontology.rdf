@@ -8,6 +8,31 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1d95e4fd985f36681144a019c20b33411926963dd5682e6736881e47c5a6dc30b">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>6d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cbf4bdfc63661ddc26a31c7708a6d0e595b058fff651f82604890e7175d5dcb160">
+    <crm:P190_has_symbolic_content>sanguinis draconis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>saŋguinis drakonis</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sanguis-draconis#rate-1558-inward-938">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Sanguis draconis the pounde 2s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_sanguis_draconis_cb246e7865a842a1c01b18357dd105cbadfbe880899b36af94822afab4e5da16dd5"/>
+    <hector:perQuantity rdf:nodeID="commodity_sanguis_draconis_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 938 (transcribed by Stuart Jenks): 'Sanguis draconis the pounde' 2s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/sanguis-draconis">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="commodity_sanguis_draconis_cb13714d3f2a36c7160f17870317623886acce8a3b3f52e079622e120da13adad90"/>
@@ -27,39 +52,19 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sanguis-draconis#rate-1545-inward-703"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/sanguis-draconis#rate-1558-inward-938"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sanguis-draconis#rate-1545-inward-703">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Sanguis draconis the pounde 6d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_sanguis_draconis_cb1d95e4fd985f36681144a019c20b33411926963dd5682e6736881e47c5a6dc30b"/>
-    <hector:perQuantity rdf:nodeID="commodity_sanguis_draconis_cb1eba057d4a343b1f3524648ce531a1d2be5c7ace1c7e18bdfa697f0eaf439add2"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 703 (transcribed by Stuart Jenks): 'Sanguis draconis the pounde' 6d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sanguis-draconis#rate-1558-inward-938">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Sanguis draconis the pounde 2s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_sanguis_draconis_cb246e7865a842a1c01b18357dd105cbadfbe880899b36af94822afab4e5da16dd5"/>
-    <hector:perQuantity rdf:nodeID="commodity_sanguis_draconis_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 938 (transcribed by Stuart Jenks): 'Sanguis draconis the pounde' 2s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cbdc0318e96b63996cccaff3f7760173de2e40af734ea7b383799794b8be4bb8d9">
     <crm:P190_has_symbolic_content>dragons blood</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>dragons bloːd</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1d95e4fd985f36681144a019c20b33411926963dd5682e6736881e47c5a6dc30b">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>6d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</hector:valueInPence>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb2692ded36deb49c4de016eca21978043c0b75270de1d08e7be1faff3193714b83">
+    <crm:P190_has_symbolic_content>sanguisinis draconis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>saŋguisinis drakonis</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1400</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1421</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb275c8c3ad41920a032a41c382c1ad4ecd3cf5cb3f0456ed33ce53cee500031223">
     <crm:P190_has_symbolic_content>sanguis draconis</crm:P190_has_symbolic_content>
@@ -70,37 +75,22 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1400</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1490</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cbf4bdfc63661ddc26a31c7708a6d0e595b058fff651f82604890e7175d5dcb160">
-    <crm:P190_has_symbolic_content>sanguinis draconis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>saŋguinis drakonis</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sanguis%20draconis">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012929">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>sanguis draconis (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>dragon's blood (resin)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404880">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>medicines (material)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb2692ded36deb49c4de016eca21978043c0b75270de1d08e7be1faff3193714b83">
-    <crm:P190_has_symbolic_content>sanguisinis draconis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>saŋguisinis drakonis</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1400</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1421</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1eba057d4a343b1f3524648ce531a1d2be5c7ace1c7e18bdfa697f0eaf439add2">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1ed42913d6d70610dff26716e42df957272abba32fb507ca35db1a14cf22547fd">
-    <crm:P190_has_symbolic_content>dragon's blood, a bright red gum or resin, an exudation from the fruit of a palm, Calamus Draco, used medically and as a pigment (OED s.v. dragon's blood; Pegolotti 429)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/sanguis-draconis#rate-1545-inward-703">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Sanguis draconis the pounde 6d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_sanguis_draconis_cb1d95e4fd985f36681144a019c20b33411926963dd5682e6736881e47c5a6dc30b"/>
+    <hector:perQuantity rdf:nodeID="commodity_sanguis_draconis_cb1eba057d4a343b1f3524648ce531a1d2be5c7ace1c7e18bdfa697f0eaf439add2"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 703 (transcribed by Stuart Jenks): 'Sanguis draconis the pounde' 6d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb2599b8fbbe26f8c17a5ba6e80bd02bf7403d17df9d0b368388e76d5002825cd15">
     <crm:P190_has_symbolic_content>sanguisis draconis</crm:P190_has_symbolic_content>
@@ -109,26 +99,6 @@
     <hector:phoneticKey>saŋguisis drakonis</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1439</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb246e7865a842a1c01b18357dd105cbadfbe880899b36af94822afab4e5da16dd5">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>2s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013582">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>organic red pigment</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb13714d3f2a36c7160f17870317623886acce8a3b3f52e079622e120da13adad90">
-    <crm:P190_has_symbolic_content>draconis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>drakonis</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
@@ -139,16 +109,46 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012929">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>dragon's blood (resin)</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb13714d3f2a36c7160f17870317623886acce8a3b3f52e079622e120da13adad90">
+    <crm:P190_has_symbolic_content>draconis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>drakonis</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404880">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>medicines (material)</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013582">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>organic red pigment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/sanguis%20draconis">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>sanguis draconis (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb246e7865a842a1c01b18357dd105cbadfbe880899b36af94822afab4e5da16dd5">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>2s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1eba057d4a343b1f3524648ce531a1d2be5c7ace1c7e18bdfa697f0eaf439add2">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_sanguis_draconis_cb1ed42913d6d70610dff26716e42df957272abba32fb507ca35db1a14cf22547fd">
+    <crm:P190_has_symbolic_content>dragon's blood, a bright red gum or resin, an exudation from the fruit of a palm, Calamus Draco, used medically and as a pigment (OED s.v. dragon's blood; Pegolotti 429)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
 </rdf:RDF>

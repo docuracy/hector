@@ -7,15 +7,18 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb27cefdf239a8eaa849d9e84302f7848398db7b12c2bd0796acb6508f575f1e28b">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>16s 8d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel-worsted-iarn#rate-1545-inward-136">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Cruell or worsted yarne the dosen pounde 9s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_crewel_worsted_iarn_cb20a57b1677ff337fb6379611be14077a93bb0465e7e3ef1fec34b25cdfeb31e38"/>
+    <hector:perQuantity rdf:nodeID="commodity_crewel_worsted_iarn_cb125024150a8f393fda372c8d72e05de0ee9cc8ccda79e739dbddef5107276141b"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 136 (transcribed by Stuart Jenks): 'Cruell or worsted yarne the dosen pounde' 9s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>crewel</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel-worsted-iarn">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -36,49 +39,10 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>kreuel worsted iarn</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cbc01c18c5fcf53b23fda5e480b34b2bb1adea9f59af5e8c81460d545a979181c2">
-    <crm:P190_has_symbolic_content>Cruell or worsted yarne</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kruel or worsted jarnə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel-worsted-iarn#rate-1545-inward-136">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Cruell or worsted yarne the dosen pounde 9s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_crewel_worsted_iarn_cb20a57b1677ff337fb6379611be14077a93bb0465e7e3ef1fec34b25cdfeb31e38"/>
-    <hector:perQuantity rdf:nodeID="commodity_crewel_worsted_iarn_cb125024150a8f393fda372c8d72e05de0ee9cc8ccda79e739dbddef5107276141b"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 136 (transcribed by Stuart Jenks): 'Cruell or worsted yarne the dosen pounde' 9s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cbfcc572d4376e8c0911c36c736c312e0b04e15a623dac8436cdbc77ba4f882d6e">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb28024c65e4094d68c75bf9ba36a7bd8273a11ebc3d340637f852c4fd43a6183d">
-    <crm:P190_has_symbolic_content>Cruell voc’ worsted yarne</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kruel vok worsted jarnə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb125024150a8f393fda372c8d72e05de0ee9cc8ccda79e739dbddef5107276141b">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel-worsted-iarn#rate-1558-inward-268">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Cruell voc’ worsted yarne the dossen pounde 16s 8d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_crewel_worsted_iarn_cb27cefdf239a8eaa849d9e84302f7848398db7b12c2bd0796acb6508f575f1e28b"/>
-    <hector:perQuantity rdf:nodeID="commodity_crewel_worsted_iarn_cbfcc572d4376e8c0911c36c736c312e0b04e15a623dac8436cdbc77ba4f882d6e"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 268 (transcribed by Stuart Jenks): 'Cruell voc’ worsted yarne the dossen pounde' 16s 8d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb20a57b1677ff337fb6379611be14077a93bb0465e7e3ef1fec34b25cdfeb31e38">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -90,6 +54,37 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>dozen</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb28024c65e4094d68c75bf9ba36a7bd8273a11ebc3d340637f852c4fd43a6183d">
+    <crm:P190_has_symbolic_content>Cruell voc’ worsted yarne</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kruel vok worsted jarnə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cbc01c18c5fcf53b23fda5e480b34b2bb1adea9f59af5e8c81460d545a979181c2">
+    <crm:P190_has_symbolic_content>Cruell or worsted yarne</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kruel or worsted jarnə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb27cefdf239a8eaa849d9e84302f7848398db7b12c2bd0796acb6508f575f1e28b">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>16s 8d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel-worsted-iarn#rate-1558-inward-268">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Cruell voc’ worsted yarne the dossen pounde 16s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_crewel_worsted_iarn_cb27cefdf239a8eaa849d9e84302f7848398db7b12c2bd0796acb6508f575f1e28b"/>
+    <hector:perQuantity rdf:nodeID="commodity_crewel_worsted_iarn_cbfcc572d4376e8c0911c36c736c312e0b04e15a623dac8436cdbc77ba4f882d6e"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 268 (transcribed by Stuart Jenks): 'Cruell voc’ worsted yarne the dossen pounde' 16s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
@@ -99,12 +94,17 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/crewel">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>crewel</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_crewel_worsted_iarn_cb125024150a8f393fda372c8d72e05de0ee9cc8ccda79e739dbddef5107276141b">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
 </rdf:RDF>

@@ -7,10 +7,34 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1ec2b4d6abd58f2592ab50afeb5a0b003ecb881d06f8e1b8684e24ee06792d301">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-childrens#rate-1545-inward-549">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Porses for chyldren the groce 6s 8d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_purse_childrens_cb2f81daf3767a44610ede282a8f2054d40e5df5c66068350c6654a2af878cdcdb2"/>
+    <hector:perQuantity rdf:nodeID="commodity_purse_childrens_cb1ec2b4d6abd58f2592ab50afeb5a0b003ecb881d06f8e1b8684e24ee06792d301"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 549 (transcribed by Stuart Jenks): 'Porses for chyldren the groce' 6s 8d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1b58d38c366b8417cbcca0dcf88add95ad6998bb71b54764e4fac5a3a84cb1df6">
+    <crm:P190_has_symbolic_content>purse, qualified as ‘childrens’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb187299a34a65407c3477ab1481533bd47227b966ff456fa24dfac02094967d736">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>15s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-childrens#rate-1558-inward-832">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Purses for chyldren the grosse 15s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_purse_childrens_cb187299a34a65407c3477ab1481533bd47227b966ff456fa24dfac02094967d736"/>
+    <hector:perQuantity rdf:nodeID="commodity_purse_childrens_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 832 (transcribed by Stuart Jenks): 'Purses for chyldren the grosse' 15s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-childrens">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -25,50 +49,28 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/purse-childrens#rate-1545-inward-549"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/purse-childrens#rate-1558-inward-832"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>gross</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-childrens#rate-1545-inward-549">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Porses for chyldren the groce 6s 8d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_purse_childrens_cb2f81daf3767a44610ede282a8f2054d40e5df5c66068350c6654a2af878cdcdb2"/>
-    <hector:perQuantity rdf:nodeID="commodity_purse_childrens_cb1ec2b4d6abd58f2592ab50afeb5a0b003ecb881d06f8e1b8684e24ee06792d301"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 549 (transcribed by Stuart Jenks): 'Porses for chyldren the groce' 6s 8d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_purse_childrens_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_purse_childrens_cb190628f7484406d980667371ce96a1d576a4405585b547187ed091fafaedb94ef">
     <crm:P190_has_symbolic_content>purse (childrens)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>pursə tʃildrens</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1b58d38c366b8417cbcca0dcf88add95ad6998bb71b54764e4fac5a3a84cb1df6">
-    <crm:P190_has_symbolic_content>purse, qualified as ‘childrens’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1e79e7aa1ed168f0adf4660968540ed2e71b94a3aa11416c76f04dcf37c024cf5">
-    <crm:P190_has_symbolic_content>Porses for chyldren</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>porsəs for tʃildren</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>gross</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb187299a34a65407c3477ab1481533bd47227b966ff456fa24dfac02094967d736">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>15s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180</hector:valueInPence>
+  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1ec2b4d6abd58f2592ab50afeb5a0b003ecb881d06f8e1b8684e24ee06792d301">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_purse_childrens_cb2f81daf3767a44610ede282a8f2054d40e5df5c66068350c6654a2af878cdcdb2">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -76,26 +78,9 @@
     <hector:lsd>6s 8d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">80</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse-childrens#rate-1558-inward-832">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Purses for chyldren the grosse 15s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_purse_childrens_cb187299a34a65407c3477ab1481533bd47227b966ff456fa24dfac02094967d736"/>
-    <hector:perQuantity rdf:nodeID="commodity_purse_childrens_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 832 (transcribed by Stuart Jenks): 'Purses for chyldren the grosse' 15s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>purse</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_purse_childrens_cbc1b82a9ead6866c769eaf3dbbf25d4e6040ea02ea7bf5eb76f7d33051eeaf073">
     <crm:P190_has_symbolic_content>Purses for chyldren</crm:P190_has_symbolic_content>
@@ -103,8 +88,23 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>pursəs for tʃildren</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/purse">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>purse</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_childrens_cbfe09119c411d60e23a8ef3f6216b3b7b47b4ee474b58845307ca3517da2a3c50">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_purse_childrens_cb1e79e7aa1ed168f0adf4660968540ed2e71b94a3aa11416c76f04dcf37c024cf5">
+    <crm:P190_has_symbolic_content>Porses for chyldren</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>porsəs for tʃildren</hector:phoneticKey>
   </rdf:Description>
 </rdf:RDF>

@@ -7,44 +7,15 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-full">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1101e3ad19b30d4b01da0045aab313e7baec70eb02806081e8df6ab1f622aa05b"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1924e2301ba3928bfd582c9644b8b12116e1e0451a5e5f811e59125ed393bd4d3"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1bec397e3487f423edb15f6ac0ac090b75e33f15a372b9f98cd1edded6e21cf5d"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_herring_full_cb10f65362276dd593c56365940cb6c2ca4dd9326effde2ebbd5c2bbf5d4b9dd9e7"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>herring (full)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/herring"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/herring"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-full#rate-1545-inward-373"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-full#rate-1558-inward-560"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_full_cb1c6f630ac7717f70787462241501aff1716aa430d55d819b20e43173e96515a52">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_full_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_full_cb1924e2301ba3928bfd582c9644b8b12116e1e0451a5e5f811e59125ed393bd4d3">
     <crm:P190_has_symbolic_content>herring (full)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>heriŋ ful</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_full_cb32ecc1a2f13460494947e95d7ff3759812a0271d5151294c65b8532db7371a7f2">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£4</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">960</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>herring</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-full#rate-1545-inward-373">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -54,20 +25,6 @@
     <hector:sourceText>Book of Rates 1545, inward, line 373 (transcribed by Stuart Jenks): 'Heryng full the laste' £4</hector:sourceText>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>herring</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_herring_full_cb1bec397e3487f423edb15f6ac0ac090b75e33f15a372b9f98cd1edded6e21cf5d">
-    <crm:P190_has_symbolic_content>Heryng full</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>heriŋ ful</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-full#rate-1558-inward-560">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -84,27 +41,70 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>herindʒə ful</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/herring-full">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1101e3ad19b30d4b01da0045aab313e7baec70eb02806081e8df6ab1f622aa05b"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1924e2301ba3928bfd582c9644b8b12116e1e0451a5e5f811e59125ed393bd4d3"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_herring_full_cb1bec397e3487f423edb15f6ac0ac090b75e33f15a372b9f98cd1edded6e21cf5d"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_herring_full_cb10f65362276dd593c56365940cb6c2ca4dd9326effde2ebbd5c2bbf5d4b9dd9e7"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>herring (full)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/herring"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/herring"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-full#rate-1545-inward-373"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/herring-full#rate-1558-inward-560"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_herring_full_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_herring_full_cb32ecc1a2f13460494947e95d7ff3759812a0271d5151294c65b8532db7371a7f2">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£4</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">960</hector:valueInPence>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_full_cb2a60a1bb43169f516d5d985e14a5b815b24bb80cbbed1fc553d0e898984a758ea">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>£6</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1440</hector:valueInPence>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_herring_full_cb1bec397e3487f423edb15f6ac0ac090b75e33f15a372b9f98cd1edded6e21cf5d">
+    <crm:P190_has_symbolic_content>Heryng full</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>heriŋ ful</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_herring_full_cb10f65362276dd593c56365940cb6c2ca4dd9326effde2ebbd5c2bbf5d4b9dd9e7">
     <crm:P190_has_symbolic_content>herring, qualified as ‘full’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_herring_full_cb1c6f630ac7717f70787462241501aff1716aa430d55d819b20e43173e96515a52">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
 </rdf:RDF>

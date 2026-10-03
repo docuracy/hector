@@ -7,6 +7,10 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mark">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>mark</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/mark">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
     <crm:P1_is_identified_by rdf:nodeID="unit_mark_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293"/>
@@ -26,32 +30,6 @@
     <hector:definedAs rdf:nodeID="unit_mark_cba34c1c449876b19f5ee90f4faf6a687882ca72c2928c8e7f9bc04ccf1cd31a0e"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/count"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb1fa292b9757b629072e8451e931805e0e75302467ba262733ecc6eb3200d21dfd">
-    <crm:P190_has_symbolic_content>marcae</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>marke</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb2418555100be84ed944d94900a947b549960d849a212cc9850507e4bbc741c19">
-    <crm:P190_has_symbolic_content>Source: LCA glossary (mark: '20 pieces, or 2 dozen'). Note: the glossary's other reading; the Books of Rates give 2 dozen. Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb9d1ecb0c725e3ffbba29cd0ac875a6028a9289c0e56902c2d5f63ea728bf2e47">
-    <crm:P190_has_symbolic_content>Source: units.tsv ('marke sheres for semesters 2 dozen pieces'); Books of Rates ('the marke conteyninge two dossyn'). Note: CONFLICT: the glossary says '20 pieces, or 2 dozen'. One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb1a02a352c77f27cc97d68adf03ccd46a862213e6dc17ff0a2900220fc7c18f2c5">
-    <crm:P190_has_symbolic_content>marke</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>markə</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1465</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_cb188921972a946e37d14fdf0f83099f4c10c642a2dc661d080b1dfae60121a3192">
     <crm:P190_has_symbolic_content>marc</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -59,6 +37,23 @@
     <hector:phoneticKey>mark</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1445</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1446</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cb9d1ecb0c725e3ffbba29cd0ac875a6028a9289c0e56902c2d5f63ea728bf2e47">
+    <crm:P190_has_symbolic_content>Source: units.tsv ('marke sheres for semesters 2 dozen pieces'); Books of Rates ('the marke conteyninge two dossyn'). Note: CONFLICT: the glossary says '20 pieces, or 2 dozen'. One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cb1127290dabc0dd12eb135a0cbbf45b50788f2d24bf9131c92836a92596708071c">
+    <crm:P190_has_symbolic_content>marces</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>marsəs</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_cb106f276518a5b14ab68307d12830277f89e41a4d2c3805bfcec67855958071293">
     <crm:P190_has_symbolic_content>mark</crm:P190_has_symbolic_content>
@@ -69,10 +64,58 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>dozen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cb5892c230e6c431565313bbde8ea72d6b9aaa13ed19b0da2f72f88dc99ce618d9">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_cb9d1ecb0c725e3ffbba29cd0ac875a6028a9289c0e56902c2d5f63ea728bf2e47"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cb1fa292b9757b629072e8451e931805e0e75302467ba262733ecc6eb3200d21dfd">
+    <crm:P190_has_symbolic_content>marcae</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>marke</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_cbce00e6111e7c2d935917077400a6e31412a942f4033877c54573f2dc38391b12">
     <crm:P190_has_symbolic_content>a unit of quantity (20 pieces, or 2 dozen) for cutlery and hardware: shears, scissors, hammer heads, compasses, ironware (Cobb 182)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cba34c1c449876b19f5ee90f4faf6a687882ca72c2928c8e7f9bc04ccf1cd31a0e">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_cb2418555100be84ed944d94900a947b549960d849a212cc9850507e4bbc741c19"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/each"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/each">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>each</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mark_cb1a02a352c77f27cc97d68adf03ccd46a862213e6dc17ff0a2900220fc7c18f2c5">
+    <crm:P190_has_symbolic_content>marke</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>markə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1465</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_cb29e201f8bec75f2ca12f3528586bb6197f010a475e66733d5f844e513dc79779e">
     <crm:P190_has_symbolic_content>marca</crm:P190_has_symbolic_content>
@@ -82,60 +125,17 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb1127290dabc0dd12eb135a0cbbf45b50788f2d24bf9131c92836a92596708071c">
-    <crm:P190_has_symbolic_content>marces</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>marsəs</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+  <rdf:Description rdf:nodeID="unit_mark_cb2418555100be84ed944d94900a947b549960d849a212cc9850507e4bbc741c19">
+    <crm:P190_has_symbolic_content>Source: LCA glossary (mark: '20 pieces, or 2 dozen'). Note: the glossary's other reading; the Books of Rates give 2 dozen. Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mark">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>mark (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cba34c1c449876b19f5ee90f4faf6a687882ca72c2928c8e7f9bc04ccf1cd31a0e">
-    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_cb2418555100be84ed944d94900a947b549960d849a212cc9850507e4bbc741c19"/>
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/each"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>weights and measures (general, standards)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_cb5892c230e6c431565313bbde8ea72d6b9aaa13ed19b0da2f72f88dc99ce618d9">
-    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_cb9d1ecb0c725e3ffbba29cd0ac875a6028a9289c0e56902c2d5f63ea728bf2e47"/>
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/dozen"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mark">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>mark</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/dozen">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>dozen</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/each">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>each</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

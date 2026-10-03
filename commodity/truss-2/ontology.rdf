@@ -7,9 +7,24 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_truss_2_cb17b2c56ca197ac28d09ee632ccce2467a015cb8dcaca9bafb86f88bea229a0506">
     <crm:P190_has_symbolic_content>truss</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>trus</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_truss_2_cbd1f48f2fdbce4d228f30a39554371f2d9f670199bda9bc31d3f03014600bf1c7">
+    <crm:P190_has_symbolic_content>most likely some sort of tackle for drawing a crossbow (OED truss n. 2)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_truss_2_cbf73da05fa02e9d58b21e2bfff3accedf780dba2a6fcc8dcc8c79a4f9356c98a5">
+    <crm:P190_has_symbolic_content>truss_2</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>trus</hector:phoneticKey>
   </rdf:Description>
@@ -24,15 +39,6 @@
     <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/truss_2"/>
     <skos:related rdf:resource="https://w3id.org/hector/commodity/crossbow"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_truss_2_cbd1f48f2fdbce4d228f30a39554371f2d9f670199bda9bc31d3f03014600bf1c7">
-    <crm:P190_has_symbolic_content>most likely some sort of tackle for drawing a crossbow (OED truss n. 2)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/truss_2">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>truss_2 (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
@@ -41,22 +47,16 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>crossbow</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_truss_2_cbf73da05fa02e9d58b21e2bfff3accedf780dba2a6fcc8dcc8c79a4f9356c98a5">
-    <crm:P190_has_symbolic_content>truss_2</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>trus</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300227076">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>projectile weapon components</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/truss_2">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>truss_2 (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

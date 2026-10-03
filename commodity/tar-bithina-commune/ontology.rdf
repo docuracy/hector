@@ -7,40 +7,6 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/tar">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>tar</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/tar-bithina-commune">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_tar_bithina_commune_cbc1035974f0e9b24fc77fe77a3516b0f10ff3ab0dd7f391bec6f8699e851e9444"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_tar_bithina_commune_cbf860492c2b173dab2ae9a813601c3ae71a28f1e1fbd126ec1bc2a3b5e582114f"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_tar_bithina_commune_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>tar (bithina commune)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/tar"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/tar"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/tar-bithina-commune#rate-1558-inward-1123"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_tar_bithina_commune_cb0">
-    <crm:P190_has_symbolic_content>tar, qualified as ‘bithina commune’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_tar_bithina_commune_cbf860492c2b173dab2ae9a813601c3ae71a28f1e1fbd126ec1bc2a3b5e582114f">
-    <crm:P190_has_symbolic_content>Terre Bithina communis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>terə biθina komunis</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/tar-bithina-commune#rate-1558-inward-1123">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1558 inward: Terre Bithina communis the pounde 1d</rdfs:label>
@@ -62,6 +28,36 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>tar biθina komunə</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/tar-bithina-commune">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_tar_bithina_commune_cbc1035974f0e9b24fc77fe77a3516b0f10ff3ab0dd7f391bec6f8699e851e9444"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_tar_bithina_commune_cbf860492c2b173dab2ae9a813601c3ae71a28f1e1fbd126ec1bc2a3b5e582114f"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_tar_bithina_commune_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>tar (bithina commune)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/tar"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/tar"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/tar-bithina-commune#rate-1558-inward-1123"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_tar_bithina_commune_cbf860492c2b173dab2ae9a813601c3ae71a28f1e1fbd126ec1bc2a3b5e582114f">
+    <crm:P190_has_symbolic_content>Terre Bithina communis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>terə biθina komunis</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_tar_bithina_commune_cb0">
+    <crm:P190_has_symbolic_content>tar, qualified as ‘bithina commune’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
@@ -71,12 +67,16 @@
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/tar">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>tar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

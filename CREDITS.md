@@ -41,8 +41,6 @@ Records quote identifiers and labels from these vocabularies, which keep their o
   Trust, Getty Research Institute, Art & Architecture Thesaurus, which is made available under
   the ODC Attribution License.* ([ODC-By 1.0](https://opendatacommons.org/licenses/by/1-0/))
 - **Wikidata**: [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
-- **QUDT** (units and quantity kinds): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/),
-  [qudt.org](https://qudt.org/).
 
 No OpenStreetMap or OpenHistoricalMap data (ODbL) are included.
 

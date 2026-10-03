@@ -35,6 +35,38 @@ release. Validation 3,395 docs, 0 errors online and offline; 117 tests.
   Turtle dump (task 26). README rewritten to match what is published.
 - Issue #2 is the original assessment (15-18 Sep) and is kept as such; a comment there points here.
 
+**Scope and stewardship (Stephen, 3 Oct 2026).** HECTOR is meant to extend beyond London to the
+commodities of other trades, places and languages, so its public text describes a vocabulary of
+historical traded goods generally, with London as its first source, not its subject. This is the
+expertise of **Werner Scheltjens**, invited as a collaborator; Stephen hopes he will in due course
+take over as maintainer, and to include terms from the Sound Toll Registers (https://www.soundtoll.nl/) among other sources.
+Design for other sources: keys, slugs and groups must not assume English or Latin forms.
+
+**Later: harmonising with the Sound Toll Registers (assessed 3 Oct 2026, deferred).** STRO
+(https://www.soundtoll.nl/, KNAW Humanities Cluster with Tresoar) publishes its database as
+CSV/SQL at `/data/db_downloads/` (July 2024): 2.15M passages 1497-1857, 5.6M cargo lines,
+11,734 measure spellings standardised to 591 units, 3,096 standardised places with coordinates
+but no Wikidata/GeoNames ids. **No licence or terms of reuse found on the site: ask before
+republishing anything.** Measured against LCA: places 121 of LCA's 225 mapped places match a STRO
+place within 5 km by name (70 nearby under another name, 34 none); people no (7 of 20,616 LCA
+masters share a full name with a STRO master within 5 years; only 28,620 passages fall before
+1561); goods only 29 of STRO's top 500 strings equal an LCA spelling (11% of cargo lines, with
+false friends: lax -> lock, her -> hair), so goods need a curated cross-language mapping. For
+HECTOR, after v1 and with Werner Scheltjens: (1) units first, STRO's 591 standardised units and
+their spellings mapped to HECTOR's 248 or added; (2) goods: STRO has no standardised goods list
+(223k distinct strings; the top 500 cover 72% of lines), so HECTOR could be that layer, many
+mapping to existing concepts across languages (Rug rye, Hamp hemp, Sild herring, Hvede wheat,
+Jern iron, Hor flax); (3) the place alignment (LCA/HECTOR Wikidata ids <-> STRO place codes),
+which on its own adds little to LCA and is bundled here. Stephen, 3 Oct: defer all of it.
+
+**No QUDT, by decision (Stephen, 3 Oct 2026).** All QUDT links are removed (pound's
+`qudtunit:LB`, the quantity-kind alignments of the dimension documents, the context prefixes),
+and none are to be added: QUDT defines today's standard units, whereas historical units varied
+from place to place and over time, so a link would assert an equivalence the sources do not
+support. Units carry their own sourced definitions and conversions instead. Task 19 stays dropped.
+`build_units.py` now copies only the two hand-written D7 deprecation records from the repo and
+generates everything else, dimension documents included.
+
 **1604, when it comes (measured 3 Oct 2026).** The 1604-only entries were removed from the LCA
 glossary on 7 Feb, before the May-July consolidation, the June AAT alignment, the AAT-derived
 groups and the reviews, so none of that reached them: of the 250 identifiable today (sources BOR

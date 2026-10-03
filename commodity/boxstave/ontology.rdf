@@ -8,6 +8,10 @@
    xmlns:schema1="http://schema.org/"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/boxwood">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>boxwood</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/boxstave">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
     <schema1:material rdf:resource="http://vocab.getty.edu/aat/300012002"/>
@@ -21,6 +25,11 @@
     <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/boxstave"/>
     <skos:related rdf:resource="https://w3id.org/hector/commodity/boxwood"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</hector:attestationCount>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_boxstave_cb0">
+    <crm:P190_has_symbolic_content>staves made of box-wood</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_boxstave_cb13815f155f8ff6f36e4a33c41db99c572e63ca8adb02c699c54a6290df8f8e1a0">
     <crm:P190_has_symbolic_content>boxstave</crm:P190_has_symbolic_content>
@@ -39,18 +48,9 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1412</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1427</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/boxwood">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>boxwood</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/boxstave">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>boxstave (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_boxstave_cb0">
-    <crm:P190_has_symbolic_content>staves made of box-wood</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -62,20 +62,20 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>boks stav</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300014680">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>stave (wood products)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012002">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E57_Material"/>
     <rdfs:label>boxwood (wood)</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/boxstave">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>boxstave (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300014680">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>stave (wood products)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

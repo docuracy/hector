@@ -8,26 +8,33 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_acarigo_cb0">
+    <crm:P190_has_symbolic_content>agaricum</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>agarikum</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_acarigo_cbd87b129a5d4bce2a9c4dfbac662bc12868ddcb380855f25e842854d03c356bb6">
+    <crm:P190_has_symbolic_content>agaric, name given to various corky species of Polyporus, a genus of fungi growing upon trees; of which P. officinalis, chiefly found on the Larch, the ‘Female Agarick’ of old writers, was renowned as a cathartic, and with P. fomentarius, and P. igniarius, ‘Male Agarick’ used as a styptic, as tinder, and in dyeing (Pegolotti 411, OED s.v. agaric n. and a.) [Jenks] | Mushroom-forming; parenthesomes imperforate or perforate (spore caps have openings); includes subclasses Agaricomycetidae and Phallomycetidae; contains 17 orders. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_acarigo_cb18af6fce1290687e0fcc048efe82b69c3325f78aa340337a067ddaaaae303b2ea">
-    <crm:P190_has_symbolic_content>acarigo</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>akarigo</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1439</hector:validThrough>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/acarigo#rate-1558-inward-46">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Agaricum the pounde 3s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_acarigo_cb14ae755489ddc6ba3b7ce96e62e6d6deacd1927a066e565b3ad6c51f0c7a8c788"/>
+    <hector:perQuantity rdf:nodeID="commodity_acarigo_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 46 (transcribed by Stuart Jenks): 'Agaricum the pounde' 3s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013032">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300417251">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>natural dye</rdfs:label>
+    <rdfs:label>Agaricomycetes (class)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/acarigo">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -43,32 +50,9 @@
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hector:attestationCount>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/acarigo#rate-1558-inward-46"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/acarigo#rate-1558-inward-46">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Agaricum the pounde 3s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_acarigo_cb14ae755489ddc6ba3b7ce96e62e6d6deacd1927a066e565b3ad6c51f0c7a8c788"/>
-    <hector:perQuantity rdf:nodeID="commodity_acarigo_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 46 (transcribed by Stuart Jenks): 'Agaricum the pounde' 3s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_acarigo_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300248655">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>tinder</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_acarigo_cbd87b129a5d4bce2a9c4dfbac662bc12868ddcb380855f25e842854d03c356bb6">
-    <crm:P190_has_symbolic_content>agaric, name given to various corky species of Polyporus, a genus of fungi growing upon trees; of which P. officinalis, chiefly found on the Larch, the ‘Female Agarick’ of old writers, was renowned as a cathartic, and with P. fomentarius, and P. igniarius, ‘Male Agarick’ used as a styptic, as tinder, and in dyeing (Pegolotti 411, OED s.v. agaric n. and a.) [Jenks] | Mushroom-forming; parenthesomes imperforate or perforate (spore caps have openings); includes subclasses Agaricomycetidae and Phallomycetidae; contains 17 orders. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_acarigo_cb14ae755489ddc6ba3b7ce96e62e6d6deacd1927a066e565b3ad6c51f0c7a8c788">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -76,26 +60,42 @@
     <hector:lsd>3s 4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_acarigo_cb0">
-    <crm:P190_has_symbolic_content>agaricum</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_acarigo_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300248655">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>tinder</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_acarigo_cb18af6fce1290687e0fcc048efe82b69c3325f78aa340337a067ddaaaae303b2ea">
+    <crm:P190_has_symbolic_content>acarigo</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>agarikum</hector:phoneticKey>
+    <hector:phoneticKey>akarigo</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1438</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1439</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/acarigo">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>acarigo (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300417251">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>Agaricomycetes (class)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300013032">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>natural dye</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

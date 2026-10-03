@@ -7,6 +7,24 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-county-of-flanders">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_soap_county_of_flanders_cb12a87dc56cf80c17804302aedefe41b5f5f9e885d492facfc0c268b5080fc9117"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_soap_county_of_flanders_cb1f95a1ba01d2db19260e02a1dda28ceaa0861c5cac48b89e45d987cf767ad2b35"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_soap_county_of_flanders_cb14001ce2c27cbbbfe8b6da9923e05e9eef00228e0593c6cf3233d3432c9e7a784"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>soap (county of flanders)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/soap"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/soap"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-county-of-flanders#rate-1558-inward-942"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-county-of-flanders#rate-1558-inward-943"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb2eecef5669d392ab629c98064ee4511ed08479a8ef21bdb72aaf9c397379812bb">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£8</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1920</hector:valueInPence>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
@@ -20,11 +38,28 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb1f042e61c5f065a49fa7fc79549a3e3420c1269e146e2ebe10795118416141f76">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb1f95a1ba01d2db19260e02a1dda28ceaa0861c5cac48b89e45d987cf767ad2b35">
     <crm:P190_has_symbolic_content>soap (county of flanders)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>soap kuːnti of flanders</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>soap</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb12a87dc56cf80c17804302aedefe41b5f5f9e885d492facfc0c268b5080fc9117">
     <crm:P190_has_symbolic_content>Sope voc’ Flemysshe sope</crm:P190_has_symbolic_content>
@@ -32,27 +67,16 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>sopə vok flemiʃə sopə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb14001ce2c27cbbbfe8b6da9923e05e9eef00228e0593c6cf3233d3432c9e7a784">
-    <crm:P190_has_symbolic_content>soap, qualified as ‘county of flanders’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-county-of-flanders">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_soap_county_of_flanders_cb12a87dc56cf80c17804302aedefe41b5f5f9e885d492facfc0c268b5080fc9117"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_soap_county_of_flanders_cb1f95a1ba01d2db19260e02a1dda28ceaa0861c5cac48b89e45d987cf767ad2b35"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_soap_county_of_flanders_cb14001ce2c27cbbbfe8b6da9923e05e9eef00228e0593c6cf3233d3432c9e7a784"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>soap (county of flanders)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/soap"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/soap"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-county-of-flanders#rate-1558-inward-942"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/soap-county-of-flanders#rate-1558-inward-943"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb40bb0a612844750e86093920f1e37cbaf90b7bbafb07116b63859f86626e6a302">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>13s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap-county-of-flanders#rate-1558-inward-942">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -63,39 +87,6 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/soap">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>soap</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb2eecef5669d392ab629c98064ee4511ed08479a8ef21bdb72aaf9c397379812bb">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£8</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1920</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb1f042e61c5f065a49fa7fc79549a3e3420c1269e146e2ebe10795118416141f76">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb40bb0a612844750e86093920f1e37cbaf90b7bbafb07116b63859f86626e6a302">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>13s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>barrel</rdfs:label>
@@ -103,5 +94,14 @@
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_soap_county_of_flanders_cb14001ce2c27cbbbfe8b6da9923e05e9eef00228e0593c6cf3233d3432c9e7a784">
+    <crm:P190_has_symbolic_content>soap, qualified as ‘county of flanders’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

@@ -6,29 +6,25 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
+  <rdf:Description rdf:nodeID="unit_cloth_cbfeb8a1e5972d2a486a34f90a1d45ae53129ed5cfdf7bcb7561c63a05c4427487">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_cloth_cb5a99577cea88f9b8d4a77dce0395b8f3feb80048ace98bf8eef132b3ab525e23"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/virga"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_cloth_cb5a99577cea88f9b8d4a77dce0395b8f3feb80048ace98bf8eef132b3ab525e23">
     <crm:P190_has_symbolic_content>Source: LCA data/valuation/duty_rates.tsv (process/duty_rates.py, 19 Sep 2026): counted cloth custom 33d alien / 14d denizen per cloth against 1.375d / 0.583d per virga = 24 yards to the cloth; of 2,348 counted-cloth rows off the rate, 2,119 are lots of 'N pannis, M virgis' charged at 24 yards to the cloth. Note: a customs equivalence (the cloth of assize), not a physical length of every cloth</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_cloth_cb2a174026192caabf707faa53c698e44aa0f3fd9fecf8c4329e30743e0d23eb89">
-    <crm:P190_has_symbolic_content>clothe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_cloth_cb0">
-    <crm:P190_has_symbolic_content>the cloth as a unit of account for customs: the statutory cloth (of assize); the Books of Rates reckon other cloths as fractions of it ("6 statutes for a clothe")</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_cloth_cbac54be1436dfd3ec0d99669c3dfa809f4e9bb776ca093872514966e56d2e1120">
     <crm:P190_has_symbolic_content>cloth</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/virga">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>virga</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/cloth">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -40,26 +36,30 @@
     <hector:definedAs rdf:nodeID="unit_cloth_cbfeb8a1e5972d2a486a34f90a1d45ae53129ed5cfdf7bcb7561c63a05c4427487"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/length"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_cloth_cbfeb8a1e5972d2a486a34f90a1d45ae53129ed5cfdf7bcb7561c63a05c4427487">
-    <crm:P67i_is_referred_to_by rdf:nodeID="unit_cloth_cb5a99577cea88f9b8d4a77dce0395b8f3feb80048ace98bf8eef132b3ab525e23"/>
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/virga"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/virga">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>virga</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_cloth_cb0">
+    <crm:P190_has_symbolic_content>the cloth as a unit of account for customs: the statutory cloth (of assize); the Books of Rates reckon other cloths as fractions of it ("6 statutes for a clothe")</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_cloth_cb2a174026192caabf707faa53c698e44aa0f3fd9fecf8c4329e30743e0d23eb89">
+    <crm:P190_has_symbolic_content>clothe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

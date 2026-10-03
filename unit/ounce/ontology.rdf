@@ -7,18 +7,10 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:nodeID="unit_ounce_cb928448f2477c1e294577f5eec93c6cafdf78658e9130d7960bd66831004a7e74">
-    <crm:P190_has_symbolic_content>ounce</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>uːnsə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_ounce_cb0">
-    <crm:P190_has_symbolic_content>unces</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>unsəs</hector:phoneticKey>
+  <rdf:Description rdf:nodeID="unit_ounce_cb92ce6771264279c64d305e794164269a2ab7c006fdc9dd8e9df0ef8dbeb3be73">
+    <crm:P190_has_symbolic_content>Source: avoirdupois definition. Note: 16 oz to the lb avoirdupois</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/ounce">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -39,15 +31,31 @@
     <hector:definedAs rdf:nodeID="unit_ounce_cbb7e6085db02ee474357cacb384806318c51cab6a5da292c2a54c8eb8c968a53a"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/mass"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_ounce_cb928448f2477c1e294577f5eec93c6cafdf78658e9130d7960bd66831004a7e74">
+    <crm:P190_has_symbolic_content>ounce</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>uːnsə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_ounce_cb459c9246e04ca73371ff397afe826f680de8663f0b2762fed1232fc7d0a60041">
+    <crm:P190_has_symbolic_content>conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard.</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_ounce_cbaedb35bd115a97342d365b603c4b374ebb9aec7503d288fdcab6c4d6a8f15c6f">
     <crm:P190_has_symbolic_content>unce</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>unsə</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/ounce">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>ounce (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
@@ -58,35 +66,9 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_ounce_cb1330b0392e3fb2a6cb4f00a7ae96382d3198b4933b1605006537696b04e481917">
-    <crm:P190_has_symbolic_content>oz</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>oz</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_ounce_cb8f0faa1f945e9f815c1685a79e301350b6f163e9c48701bfb948e7d645bcc0fc">
-    <crm:P190_has_symbolic_content>ounces</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>uːnsəs</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_ounce_cb459c9246e04ca73371ff397afe826f680de8663f0b2762fed1232fc7d0a60041">
-    <crm:P190_has_symbolic_content>conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard.</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/ounce">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>ounce</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_ounce_cb92ce6771264279c64d305e794164269a2ab7c006fdc9dd8e9df0ef8dbeb3be73">
-    <crm:P190_has_symbolic_content>Source: avoirdupois definition. Note: 16 oz to the lb avoirdupois</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
@@ -98,16 +80,34 @@
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_ounce_cb0">
+    <crm:P190_has_symbolic_content>unces</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>unsəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_ounce_cb8f0faa1f945e9f815c1685a79e301350b6f163e9c48701bfb948e7d645bcc0fc">
+    <crm:P190_has_symbolic_content>ounces</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>uːnsəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/ounce">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>ounce</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_ounce_cb1330b0392e3fb2a6cb4f00a7ae96382d3198b4933b1605006537696b04e481917">
+    <crm:P190_has_symbolic_content>oz</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>oz</hector:phoneticKey>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300379229">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>ounces (units for weight)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/ounce">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>ounce (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

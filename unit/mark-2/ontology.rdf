@@ -7,20 +7,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="unit_mark_2_cb459c9246e04ca73371ff397afe826f680de8663f0b2762fed1232fc7d0a60041">
-    <crm:P190_has_symbolic_content>conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard.</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_2_cb55b920aaf32bf1cc3046d8fae83f2b427711d25accb405a53b825d8a18bcb02d">
     <crm:P190_has_symbolic_content>marc</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>mark</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mark-2">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>mark_2</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/mark-2">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -38,23 +29,25 @@
     <hector:definedAs rdf:nodeID="unit_mark_2_cbea3cfa89e27542cfb49910812a954881a4907356aff42e8abd107ec2c9c32a82"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/mass"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+  <rdf:Description rdf:nodeID="unit_mark_2_cb459c9246e04ca73371ff397afe826f680de8663f0b2762fed1232fc7d0a60041">
+    <crm:P190_has_symbolic_content>conversionToGram follows the definitions given under definedAs down to the pound avoirdupois at its 1959 international value (453.59237 g). It is a modern reference value, not a measured historical standard.</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_2_cbfbd4fec767c7b7d9bc3633b19447f11fa6b9dc0fd9e21af8e91e02ec1b94ddc5">
     <crm:P190_has_symbolic_content>a unit of weight equivalent to two-thirds of a pound, used for gold and silver thread and iron wire (OED mark n.2)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_2_cbefcded5106a03a2b2ea80ec91fc9ff52381caae20807ce54096c0e7ccf599a22">
-    <crm:P190_has_symbolic_content>Source: LCA glossary (mark: 'two-thirds of a pound'). Note: which pound is not stated</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
+  <rdf:Description rdf:nodeID="unit_mark_2_cbea3cfa89e27542cfb49910812a954881a4907356aff42e8abd107ec2c9c32a82">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_2_cbefcded5106a03a2b2ea80ec91fc9ff52381caae20807ce54096c0e7ccf599a22"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6666666667</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="unit_mark_2_cb0">
     <crm:P190_has_symbolic_content>mark</crm:P190_has_symbolic_content>
@@ -63,30 +56,37 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>mark</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mark_2">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mark-2">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>mark_2 (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>mark_2</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mark_2_cbea3cfa89e27542cfb49910812a954881a4907356aff42e8abd107ec2c9c32a82">
-    <crm:P67i_is_referred_to_by rdf:nodeID="unit_mark_2_cbefcded5106a03a2b2ea80ec91fc9ff52381caae20807ce54096c0e7ccf599a22"/>
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6666666667</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
+  <rdf:Description rdf:nodeID="unit_mark_2_cbefcded5106a03a2b2ea80ec91fc9ff52381caae20807ce54096c0e7ccf599a22">
+    <crm:P190_has_symbolic_content>Source: LCA glossary (mark: 'two-thirds of a pound'). Note: which pound is not stated</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mark_2">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>weights and measures (general, standards)</rdfs:label>
+    <rdfs:label>mark_2 (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>weights and measures (general, standards)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

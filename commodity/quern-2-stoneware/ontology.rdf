@@ -7,57 +7,38 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2-stoneware">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_quern_2_stoneware_cb165b570c8b98d98387baeb1e88f16ea093fb2662f1e745bafc04bbe86042927ae"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_quern_2_stoneware_cb8b3977ed14de052c0318313e30f74dd25f69125bd64b102b706247017c6c08d3"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_quern_2_stoneware_cb137cf9c64f8dfbc773b909092dc01df1239735648ce757cf1784ebd1760b05376"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>quern (stoneware)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/quern-2"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/quern-2"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1545-inward-596"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1558-inward-879"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1558-inward-881"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>quern</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb137cf9c64f8dfbc773b909092dc01df1239735648ce757cf1784ebd1760b05376">
-    <crm:P190_has_symbolic_content>quern, qualified as ‘stoneware’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb2c049529257fe7eca6a64a26bd66b02ec0b762a593a164f84d560115e5942d612">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>40s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb317b9bdad67b94de8f1f8c41b814818b7bbc0ca13535fb0745764685728ac77b7">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>13s 4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb224d9aeae2536bf193d6993632353cf0116a66609188da5d0f14d4ed87c8b5c15">
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb165b570c8b98d98387baeb1e88f16ea093fb2662f1e745bafc04bbe86042927ae">
+    <crm:P190_has_symbolic_content>Querne stones</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>kwernə stonəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb396509aa1086afeee4ea81dbd732dbdef70c7b04c8db217d8d66721f8da033920">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>40s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb1d8c30add7af407a8e6c11c77a72bf05a5e5933ed7e4c635f1ea1e137a800cf11">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb2c049529257fe7eca6a64a26bd66b02ec0b762a593a164f84d560115e5942d612">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>40s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1545-inward-596">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -77,26 +58,28 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2-stoneware">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_quern_2_stoneware_cb165b570c8b98d98387baeb1e88f16ea093fb2662f1e745bafc04bbe86042927ae"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_quern_2_stoneware_cb8b3977ed14de052c0318313e30f74dd25f69125bd64b102b706247017c6c08d3"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_quern_2_stoneware_cb137cf9c64f8dfbc773b909092dc01df1239735648ce757cf1784ebd1760b05376"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>quern (stoneware)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/quern-2"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/quern-2"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1545-inward-596"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1558-inward-879"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1558-inward-881"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb8b3977ed14de052c0318313e30f74dd25f69125bd64b102b706247017c6c08d3">
     <crm:P190_has_symbolic_content>quern (stoneware)</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>kwern stoneuarə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb1d8c30add7af407a8e6c11c77a72bf05a5e5933ed7e4c635f1ea1e137a800cf11">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb165b570c8b98d98387baeb1e88f16ea093fb2662f1e745bafc04bbe86042927ae">
-    <crm:P190_has_symbolic_content>Querne stones</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>kwernə stonəs</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2-stoneware#rate-1558-inward-879">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -107,18 +90,35 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb396509aa1086afeee4ea81dbd732dbdef70c7b04c8db217d8d66721f8da033920">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>40s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">480</hector:valueInPence>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb224d9aeae2536bf193d6993632353cf0116a66609188da5d0f14d4ed87c8b5c15">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_quern_2_stoneware_cb137cf9c64f8dfbc773b909092dc01df1239735648ce757cf1784ebd1760b05376">
+    <crm:P190_has_symbolic_content>quern, qualified as ‘stoneware’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/quern-2">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>quern</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

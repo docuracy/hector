@@ -7,48 +7,15 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_eel_stub_cb29f8db3bc2d924df28301e56c318b43f4530f9727b9ef391a56fc7ee1dc207a47">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>£20</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4800</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub#rate-1545-inward-254">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Elis called stubbe elis the barell [b.i dorse] 33s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_eel_stub_cb1dbdd27d8e9d18829c053b76320cc4461634d2fe579f509ffeed32ab452c9517f"/>
-    <hector:perQuantity rdf:nodeID="commodity_eel_stub_cb21dcb01dc3567c96a896f30920c9dcd7fc9df2e82b59b078adcfaff9a7b8ce1cc"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 254 (transcribed by Stuart Jenks): 'Elis called stubbe elis the barell [b.i dorse]' 33s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>eel</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_eel_stub_cb1dbdd27d8e9d18829c053b76320cc4461634d2fe579f509ffeed32ab452c9517f">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>33s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_eel_stub_cb149f41ade37f62670429fe003244358505ba3529aa2d6854c5df1e564f8ea12ab">
-    <crm:P190_has_symbolic_content>eel, qualified as ‘stub’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_eel_stub_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>last</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_eel_stub_cb2019fcd4a50d60cc18be22adcc7c62e8588c109b6cef0d5ec56f3f388693bc516">
+    <crm:P190_has_symbolic_content>Elis called stubbe elis</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>elis kaled stubə elis</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -64,14 +31,9 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/eel-stub#rate-1545-inward-254"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/eel-stub#rate-1545-inward-255"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub#rate-1507-none-76">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1507: Elys called stube elys the barylle 20s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_eel_stub_cb39a57b1f779494b4b58f77fa7656f128cf8cf28a35a35c2f2816b4de17f75d1db"/>
-    <hector:perQuantity rdf:nodeID="commodity_eel_stub_cb1c1f0add06426a42ca30757bee8ac6aed4e0722f7807cdbb173d38f1460517848"/>
-    <hector:sourceText>Book of Rates 1507, line 76 (transcribed by Stuart Jenks): 'Elys called stube elys the barylle' 20s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/last">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>last</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub#rate-1545-inward-255">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -82,9 +44,29 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub#rate-1507-none-76">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1507: Elys called stube elys the barylle 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_eel_stub_cb39a57b1f779494b4b58f77fa7656f128cf8cf28a35a35c2f2816b4de17f75d1db"/>
+    <hector:perQuantity rdf:nodeID="commodity_eel_stub_cb1c1f0add06426a42ca30757bee8ac6aed4e0722f7807cdbb173d38f1460517848"/>
+    <hector:sourceText>Book of Rates 1507, line 76 (transcribed by Stuart Jenks): 'Elys called stube elys the barylle' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1507</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/eel-stub#rate-1545-inward-254">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Elis called stubbe elis the barell [b.i dorse] 33s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_eel_stub_cb1dbdd27d8e9d18829c053b76320cc4461634d2fe579f509ffeed32ab452c9517f"/>
+    <hector:perQuantity rdf:nodeID="commodity_eel_stub_cb21dcb01dc3567c96a896f30920c9dcd7fc9df2e82b59b078adcfaff9a7b8ce1cc"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 254 (transcribed by Stuart Jenks): 'Elis called stubbe elis the barell [b.i dorse]' 33s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_stub_cb1dbdd27d8e9d18829c053b76320cc4461634d2fe579f509ffeed32ab452c9517f">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>33s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_eel_stub_cb1c1f0add06426a42ca30757bee8ac6aed4e0722f7807cdbb173d38f1460517848">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
@@ -97,24 +79,25 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>eːl stub</hector:phoneticKey>
   </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_stub_cb149f41ade37f62670429fe003244358505ba3529aa2d6854c5df1e564f8ea12ab">
+    <crm:P190_has_symbolic_content>eel, qualified as ‘stub’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_eel_stub_cb1f133b6a4d34913e7bfa03f6d0211595867fb3c6dd1d9594b304bf30476ed060f">
     <crm:P190_has_symbolic_content>Elys called stube elys</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>elis kaled stubə elis</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_eel_stub_cb21dcb01dc3567c96a896f30920c9dcd7fc9df2e82b59b078adcfaff9a7b8ce1cc">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/barrel"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_eel_stub_cb39a57b1f779494b4b58f77fa7656f128cf8cf28a35a35c2f2816b4de17f75d1db">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -122,11 +105,28 @@
     <hector:lsd>20s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_eel_stub_cb2019fcd4a50d60cc18be22adcc7c62e8588c109b6cef0d5ec56f3f388693bc516">
-    <crm:P190_has_symbolic_content>Elis called stubbe elis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>elis kaled stubə elis</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_stub_cb29f8db3bc2d924df28301e56c318b43f4530f9727b9ef391a56fc7ee1dc207a47">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>£20</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4800</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_eel_stub_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/last"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/barrel">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>

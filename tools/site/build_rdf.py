@@ -33,7 +33,6 @@ PREFIXES = {
     "owl": "http://www.w3.org/2002/07/owl#", "dcterms": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#", "schema": "http://schema.org/",
     "aat": "http://vocab.getty.edu/aat/", "wd": "http://www.wikidata.org/entity/",
-    "qudtunit": "http://qudt.org/vocab/unit/", "quantitykind": "http://qudt.org/vocab/quantitykind/",
     "hector": "https://w3id.org/hector/ontology#", "hectorid": "https://w3id.org/hector/",
 }
 

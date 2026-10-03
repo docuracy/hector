@@ -7,18 +7,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn-tip-hornes#rate-1558-outward-66">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 outward: Tippes of hornes the thousaunde 10s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_horn_tip_hornes_cb26a75508829d013cce5bc1b2db191d24f5a023296a1de6f76144df9196dc83438"/>
-    <hector:perQuantity rdf:nodeID="commodity_horn_tip_hornes_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4"/>
-    <hector:sourceText>Book of Rates 1558, outward, line 66 (transcribed by Stuart Jenks): 'Tippes of hornes the thousaunde' 10s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb11054764eed7a7f2ab878041ddf1fb37fc33bf4763cdf2064de649656fec1aec1">
+    <crm:P190_has_symbolic_content>Typpes of hornes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>tipəs of hornəs</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn-tip-hornes">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -33,6 +26,28 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/horn-tip-hornes#rate-1545-inward-762"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/horn-tip-hornes#rate-1558-outward-66"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb1daea25a3e3390b269f942c67f023d98b48cfa9bab366bb48c72bd0e1483a48f8">
+    <crm:P190_has_symbolic_content>horn tip (hornes)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>horn tip hornəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb9ba8082a63abd45980aa24e16da3db9d0b9b2770dc548b025a4f0e2af379d83c">
+    <crm:P190_has_symbolic_content>Tippes of hornes</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>tipəs of hornəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb120bc6b6ba8553443dbe5c12c91604dd8146d35f568179a623ef5a196728ee81d">
+    <crm:P190_has_symbolic_content>horn tip, qualified as ‘hornes’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn-tip-hornes#rate-1545-inward-762">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
     <rdfs:label>1545 inward: Typpes of hornes the 1000 3s 4d</rdfs:label>
@@ -42,22 +57,13 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb1daea25a3e3390b269f942c67f023d98b48cfa9bab366bb48c72bd0e1483a48f8">
-    <crm:P190_has_symbolic_content>horn tip (hornes)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>horn tip hornəs</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/thousand">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>thousand</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb11054764eed7a7f2ab878041ddf1fb37fc33bf4763cdf2064de649656fec1aec1">
-    <crm:P190_has_symbolic_content>Typpes of hornes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>tipəs of hornəs</hector:phoneticKey>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb26a75508829d013cce5bc1b2db191d24f5a023296a1de6f76144df9196dc83438">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -65,9 +71,26 @@
     <hector:lsd>10s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn-tip">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>horn tip</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/horn-tip-hornes#rate-1558-outward-66">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 outward: Tippes of hornes the thousaunde 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_horn_tip_hornes_cb26a75508829d013cce5bc1b2db191d24f5a023296a1de6f76144df9196dc83438"/>
+    <hector:perQuantity rdf:nodeID="commodity_horn_tip_hornes_cbd2e7e7fae8ec762c68afd9b7ffc530d30c2da3462c201c236da841029f633df4"/>
+    <hector:sourceText>Book of Rates 1558, outward, line 66 (transcribed by Stuart Jenks): 'Tippes of hornes the thousaunde' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb3398cf36ae5a5485860b17bad2e2111aea3a8e78ad266209e3a5c85f7506a892e">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -75,36 +98,13 @@
     <hector:lsd>3s 4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb120bc6b6ba8553443dbe5c12c91604dd8146d35f568179a623ef5a196728ee81d">
-    <crm:P190_has_symbolic_content>horn tip, qualified as ‘hornes’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb9ba8082a63abd45980aa24e16da3db9d0b9b2770dc548b025a4f0e2af379d83c">
-    <crm:P190_has_symbolic_content>Tippes of hornes</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>tipəs of hornəs</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_horn_tip_hornes_cb1925f4d25f9d182f4a06ce9de1ff8b6dfc0068af45db26116372414cde62e6b78">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/thousand"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/thousand">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>thousand</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

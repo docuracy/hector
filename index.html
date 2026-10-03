@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HECTOR: historical commodities, units and customs rates</title>
-    <meta name="description" content="HECTOR: a Linked Data vocabulary of historical traded commodities, units of measure and Tudor customs rates, built from the London customs accounts and the Books of Rates. Alpha.">
+    <meta name="description" content="HECTOR: an open Linked Data vocabulary of historical traded commodities, their units of measure and the customs rates charged on them, gathering the spellings the sources use. Alpha.">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/fuzzy_encoder.js" defer></script>
@@ -30,11 +30,12 @@
     <!-- landing (no ?path) -->
     <section id="landing" hidden>
         <p class="lead">
-            A Linked Data vocabulary of the <strong>commodities</strong> traded through early modern English ports, the
-            <strong>units</strong> they were measured in, and the <strong>customs rates</strong> charged on them in the Tudor
-            Books of Rates of 1507, 1545 and 1558. Every record gathers the spellings the sources actually use, links to the Getty Art
-            &amp; Architecture Thesaurus and Wikidata where an equivalent exists, and is published as JSON-LD aligned with
-            Linked Art.
+            An open Linked Data vocabulary of historical traded <strong>commodities</strong>, the <strong>units</strong> they
+            were measured and packed in, and the <strong>customs rates</strong> charged on them. Every record gathers the
+            spellings the sources actually use, links to the Getty Art &amp; Architecture Thesaurus and Wikidata where an
+            equivalent exists, and is published as JSON-LD aligned with Linked Art. HECTOR is meant to grow to the goods of
+            any trade, period and language; its first content comes from the London customs accounts (1380–1560) and the
+            English Books of Rates of 1507, 1545 and 1558.
         </p>
 
         <div class="search" role="search">
@@ -54,7 +55,7 @@
             <div>
                 <h2>What is published</h2>
                 <ul id="stats" class="stats"><li class="muted">Loading…</li></ul>
-                <p class="muted small">Commodities come from the curated glossary of the
+                <p class="muted small">So far, the commodities come from the curated glossary of the
                     <a href="https://docuracy.github.io/London_Customs_Accounts/">London Customs Accounts</a> project;
                     the qualified commodities are the goods as the Books of Rates price them (“looking glasses of steel,
                     large”), each linked to its commodity and carrying its rates.</p>
@@ -86,7 +87,7 @@
                     Stuart Jenks, from whose transcriptions of the London customs accounts and the Tudor Books of Rates the
                     records are derived; and the London Customs Accounts project (IHR), whose glossary supplies the
                     commodities and units. Identifiers quoted from other vocabularies keep their own terms: Wikidata
-                    (CC0), QUDT (CC BY 4.0), and the Getty AAT: <em>contains information from the J. Paul Getty Trust,
+                    (CC0), and the Getty AAT: <em>contains information from the J. Paul Getty Trust,
                     Getty Research Institute, Art &amp; Architecture Thesaurus, which is made available under the ODC
                     Attribution License</em>. Full <a href="https://github.com/docuracy/hector/blob/main/CREDITS.md">credits</a>
                     and <a href="https://github.com/docuracy/hector/blob/main/LICENSE-DATA">LICENSE-DATA</a>.</p>
@@ -100,7 +101,13 @@
                     <li>The URIs negotiate JSON-LD only; Turtle and RDF/XML are files to fetch directly, until the
                         w3id redirect rules are extended.</li>
                     <li>Rates beyond 1507–1558 (the 1604 book) are parsed but not yet published.</li>
+                    <li>Commodities from other trades, places and languages: HECTOR is built to take them, and proposals
+                        for new sources are welcome as <a href="https://github.com/docuracy/hector/issues">issues</a>.</li>
                 </ul>
+                <p class="muted small">Units are deliberately not linked to QUDT or other vocabularies of modern units: those
+                    define today's standard units, whereas historical units varied from place to place and over time, so a
+                    link would assert an equivalence the sources do not support. Each unit gives its own sourced
+                    definitions and conversions instead.</p>
             </div>
         </section>
     </section>

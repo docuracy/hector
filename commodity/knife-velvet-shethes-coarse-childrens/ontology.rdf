@@ -7,33 +7,22 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens#rate-1558-inward-643">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Knives with vellet shethes course for children the grosse 30s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb227d75498fc896a395aeca73141aad01fe75a598e27ba0d9396f3b7c00fdbb50"/>
-    <hector:perQuantity rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb37c7d7746513cb807620cc92a2b0d60d4c3382e00a8bf9d37b041188aa4463b9"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 643 (transcribed by Stuart Jenks): 'Knives with vellet shethes course for children the grosse' 30s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>gross</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb36b2222121414b23f95694543da0355b85cbc6d7761f08c40885186261bb8ff2">
     <crm:P190_has_symbolic_content>Knives with vellet shethes course for children</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>knivəs wiθ velet ʃeθəs kuːrsə for tʃildren</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb37c7d7746513cb807620cc92a2b0d60d4c3382e00a8bf9d37b041188aa4463b9">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb36b2222121414b23f95694543da0355b85cbc6d7761f08c40885186261bb8ff2"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb4bfd2caec39d3da33dfc3214d1745c307cc6cd4cd6e054689ad7aefbd9179e35"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>knife (velvet shethes coarse childrens)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/knife"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/knife"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens#rate-1558-inward-643"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb227d75498fc896a395aeca73141aad01fe75a598e27ba0d9396f3b7c00fdbb50">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -47,36 +36,47 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>knifə velvet ʃeθəs koarsə tʃildrens</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb36b2222121414b23f95694543da0355b85cbc6d7761f08c40885186261bb8ff2"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb4bfd2caec39d3da33dfc3214d1745c307cc6cd4cd6e054689ad7aefbd9179e35"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>knife (velvet shethes coarse childrens)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/knife"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/knife"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens#rate-1558-inward-643"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/knife">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>knife</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/knife-velvet-shethes-coarse-childrens#rate-1558-inward-643">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Knives with vellet shethes course for children the grosse 30s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb227d75498fc896a395aeca73141aad01fe75a598e27ba0d9396f3b7c00fdbb50"/>
+    <hector:perQuantity rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb37c7d7746513cb807620cc92a2b0d60d4c3382e00a8bf9d37b041188aa4463b9"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 643 (transcribed by Stuart Jenks): 'Knives with vellet shethes course for children the grosse' 30s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb0">
     <crm:P190_has_symbolic_content>knife, qualified as ‘velvet shethes coarse childrens’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/gross">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>gross</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_knife_velvet_shethes_coarse_childrens_cb37c7d7746513cb807620cc92a2b0d60d4c3382e00a8bf9d37b041188aa4463b9">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/gross"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

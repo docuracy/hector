@@ -7,9 +7,32 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_cotton_8_new_cb27b44aee215b2167029c74f0ab679d86ae4eca25dd5cd2f9d232f46a9c488381">
+    <crm:P190_has_symbolic_content>Cotton newe</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>koton neuə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cotton-8-new">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cotton_8_new_cb27b44aee215b2167029c74f0ab679d86ae4eca25dd5cd2f9d232f46a9c488381"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cotton_8_new_cb7d2585adfc85e0fa654118e3d60dc0b870f742406f605279ddcbc7ba75f5e3b0"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_cotton_8_new_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>cotton (new)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/cotton-8"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/cotton-8"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/cotton-8-new#rate-1545-inward-132"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cotton_8_new_cb7d2585adfc85e0fa654118e3d60dc0b870f742406f605279ddcbc7ba75f5e3b0">
+    <crm:P190_has_symbolic_content>cotton (new)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>koton neu</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/cotton-8-new#rate-1545-inward-132">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -25,6 +48,10 @@
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/yard">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>yard</rdfs:label>
@@ -35,48 +62,21 @@
     <hector:lsd>4d</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_cotton_8_new_cb7d2585adfc85e0fa654118e3d60dc0b870f742406f605279ddcbc7ba75f5e3b0">
-    <crm:P190_has_symbolic_content>cotton (new)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>koton neu</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cotton-8-new">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_cotton_8_new_cb27b44aee215b2167029c74f0ab679d86ae4eca25dd5cd2f9d232f46a9c488381"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_cotton_8_new_cb7d2585adfc85e0fa654118e3d60dc0b870f742406f605279ddcbc7ba75f5e3b0"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_cotton_8_new_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>cotton (new)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/cotton-8"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/cotton-8"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/cotton-8-new#rate-1545-inward-132"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_cotton_8_new_cb27b44aee215b2167029c74f0ab679d86ae4eca25dd5cd2f9d232f46a9c488381">
-    <crm:P190_has_symbolic_content>Cotton newe</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>koton neuə</hector:phoneticKey>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_cotton_8_new_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/yard"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cotton-8">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>cotton</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cotton-8">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <rdfs:label>cotton</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

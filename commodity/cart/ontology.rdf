@@ -8,18 +8,14 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300212695">
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cart">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_cart_cb8f27be59a6adb687071f9da11a5c70aae2a77bf1d6bf4dd5a3715f96c2c44bb2"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_cart_cb0"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>carts</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_cart_cb0">
-    <crm:P190_has_symbolic_content>Strong vehicles, having two or sometimes three wheels and without springs. Usually animal-drawn and built for utility purposes, used in farming operations, and for carrying heavy goods. Some varieties were designed as sporting vehicles or for personal transportation. For utility vehicles having four wheels, use "wagons." [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
+    <rdfs:label>cart</rdfs:label>
+    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/cart"/>
+    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300212695"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_cart_cb8f27be59a6adb687071f9da11a5c70aae2a77bf1d6bf4dd5a3715f96c2c44bb2">
     <crm:P190_has_symbolic_content>cart</crm:P190_has_symbolic_content>
@@ -30,25 +26,29 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/cart">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_cart_cb8f27be59a6adb687071f9da11a5c70aae2a77bf1d6bf4dd5a3715f96c2c44bb2"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_cart_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>cart</rdfs:label>
-    <skos:exactMatch rdf:resource="https://w3id.org/mlca/glossary/cart"/>
-    <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300212695"/>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_cart_cb0">
+    <crm:P190_has_symbolic_content>Strong vehicles, having two or sometimes three wheels and without springs. Usually animal-drawn and built for utility purposes, used in farming operations, and for carrying heavy goods. Some varieties were designed as sporting vehicles or for personal transportation. For utility vehicles having four wheels, use "wagons." [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/cart">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>cart (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300212695">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>carts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

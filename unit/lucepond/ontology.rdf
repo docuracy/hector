@@ -7,6 +7,11 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="unit_lucepond_cb40aa5fa8df50244b846fc53d27853d31960979bde43030b898b913ede3ec759b">
+    <crm:P190_has_symbolic_content>Liespfund, a Baltic-Hanseatic unit of weight (6.846 kg or 15 lb.), equivalent to 1/20 of a schippond (Wolf 43), here as a measure of wax | . Liespfund, a Baltic-Hanseatic unit of weight, approximately 6.8 kg, one twentieth of a shipplb.</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_lucepond_cb41e2403888faa6fe324f3e36c5f9fbc6ac5f7a37adaa3c1e02e7caa6922a2866">
     <crm:P190_has_symbolic_content>lucepond</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
@@ -15,20 +20,6 @@
     <hector:phoneticKey>lusepond</hector:phoneticKey>
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1380</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1385</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_lucepond_cb2fecc885d057c792a138a2dc6b509bb48b6096ce196807133d952710e6b1df62">
-    <crm:P67i_is_referred_to_by rdf:nodeID="unit_lucepond_cb71f5c1f9b9b7cc64a6587ac0b806c2368efad338fd1911b50d3cd168330ea9ee"/>
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/schippond"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/lucepond">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>lucepond (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/lucepond">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-29</dcterms:modified>
@@ -45,6 +36,14 @@
     <hector:definedAs rdf:nodeID="unit_lucepond_cb787f98345d3895b7a83fe0fff7f0437514958554e086133ff64c543286936593"/>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/mass"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/lucepond">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>lucepond (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_lucepond_cb19a56d3f6fa036d4287c01fc73cf12189e910526c849c86cee060a0767cf85dca">
     <crm:P190_has_symbolic_content>lyslb</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
@@ -53,12 +52,27 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1428</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1430</hector:validThrough>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/schippond">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>schippond</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>pound</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_lucepond_cb2fecc885d057c792a138a2dc6b509bb48b6096ce196807133d952710e6b1df62">
+    <crm:P67i_is_referred_to_by rdf:nodeID="unit_lucepond_cb71f5c1f9b9b7cc64a6587ac0b806c2368efad338fd1911b50d3cd168330ea9ee"/>
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/schippond"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="unit_lucepond_cb0">
     <crm:P190_has_symbolic_content>Source: LCA glossary (lucepond: '6.846 kg or 15 lb.'). Not exact: approximate, or one of several readings. One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_lucepond_cb71f5c1f9b9b7cc64a6587ac0b806c2368efad338fd1911b50d3cd168330ea9ee">
+    <crm:P190_has_symbolic_content>Source: LCA glossary (lucepond: '1/20 of a schippond', Wolf 43). One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
@@ -72,34 +86,20 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>weights and measures (general, standards)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_lucepond_cb71f5c1f9b9b7cc64a6587ac0b806c2368efad338fd1911b50d3cd168330ea9ee">
-    <crm:P190_has_symbolic_content>Source: LCA glossary (lucepond: '1/20 of a schippond', Wolf 43). One of 2 readings the sources give for this unit; none is preferred</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>weights and measures (general, standards)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/lucepond">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>lucepond</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_lucepond_cb40aa5fa8df50244b846fc53d27853d31960979bde43030b898b913ede3ec759b">
-    <crm:P190_has_symbolic_content>Liespfund, a Baltic-Hanseatic unit of weight (6.846 kg or 15 lb.), equivalent to 1/20 of a schippond (Wolf 43), here as a measure of wax | . Liespfund, a Baltic-Hanseatic unit of weight, approximately 6.8 kg, one twentieth of a shipplb.</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/schippond">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>schippond</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

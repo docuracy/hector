@@ -8,9 +8,28 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/glass">
+  <rdf:Description rdf:nodeID="commodity_glass_cbce20232253d76cc65c8687847d2efb927d59797063eed7b5bcaeb334590f6eef">
+    <crm:P190_has_symbolic_content>An amorphous, inorganic substance made by fusing silica (silicon dioxide) with a basic oxide; generally transparent but often translucent or opaque. Its characteristic properties are its hardness and rigidity at ordinary temperatures, its capacity for plastic working at elevated temperatures, and its resistance to weathering and to most chemicals except hydrofluoric acid. Used for both utilitarian and decorative purposes, it can be formed into various shapes, colored or decorated. Glass originated as a glaze in Mesopotamia in about 3500 BCE and the first objects made wholly of glass date to about 2500 BCE. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cb12474166285e4f7f7d7df7a545f2c4427c2c2f4dd678bf1b6a35c2c3bf2c6a941">
+    <crm:P190_has_symbolic_content>glas</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>glas</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1556</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1559</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cbf36d2ec44377e6b8b380b3f5f3dbb282c96b7b326f43d8d1f98c98ec1b2a2420">
+    <crm:P190_has_symbolic_content>viter</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>viter</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/glass-measure">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>glass (London Customs Accounts glossary)</rdfs:label>
+    <rdfs:label>glass (measure)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_glass_cbd959e38c7265d1e112ddcc39a2c7a6dff5611b6054daa6f3e2fc02195344bfca">
     <crm:P190_has_symbolic_content>glase</crm:P190_has_symbolic_content>
@@ -40,11 +59,19 @@
     <la:equivalent rdf:resource="http://vocab.getty.edu/aat/300010797"/>
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">403</hector:attestationCount>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cbf36d2ec44377e6b8b380b3f5f3dbb282c96b7b326f43d8d1f98c98ec1b2a2420">
-    <crm:P190_has_symbolic_content>viter</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cb18b6988a9e9c627fafb2fda2d7c3186665d4fc143015cfd86a980cd1dc8a9011c">
+    <crm:P190_has_symbolic_content>glasse</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>viter</hector:phoneticKey>
+    <hector:phoneticKey>glasə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300010797">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>glass (material)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_glass_cb1800e3cd8762e1019d0eff472a680f3545b68d4fe3a4c3327e441efa5596a5101">
     <crm:P190_has_symbolic_content>veter</crm:P190_has_symbolic_content>
@@ -52,13 +79,45 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>veter</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cb12474166285e4f7f7d7df7a545f2c4427c2c2f4dd678bf1b6a35c2c3bf2c6a941">
-    <crm:P190_has_symbolic_content>glas</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="https://w3id.org/mlca/glossary/glass">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>glass (London Customs Accounts glossary)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cb739e2c2d21e2e77aa45b5e5070d856b5f68db9ff1b09be63a97ae55fa566f3eb">
+    <crm:P190_has_symbolic_content>vitrie</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>glas</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1556</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1559</hector:validThrough>
+    <hector:phoneticKey>vitriː</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cb0">
+    <crm:P190_has_symbolic_content>vitrum</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>vitrum</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/glass-3">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>glass_3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cb12dddfd0c8919c3f2349f0c6243f7f9a0e9ad59851ae82c9fc3f4e79320d483a8">
+    <crm:P190_has_symbolic_content>vitri</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>vitri</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_glass_cbfcfe7b932fbaef6566df569c83fe9b7c2eb4d264b88da8c896c53b7d908d9bd9">
+    <crm:P190_has_symbolic_content>viteri</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>viteri</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_glass_cbed586dae09416a4501d31cb0353115b0db0b9108d80e19763566aa4941d2e832">
     <crm:P190_has_symbolic_content>glass</crm:P190_has_symbolic_content>
@@ -67,69 +126,10 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>glas</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cb18b6988a9e9c627fafb2fda2d7c3186665d4fc143015cfd86a980cd1dc8a9011c">
-    <crm:P190_has_symbolic_content>glasse</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>glasə</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cb12dddfd0c8919c3f2349f0c6243f7f9a0e9ad59851ae82c9fc3f4e79320d483a8">
-    <crm:P190_has_symbolic_content>vitri</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>vitri</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/glass-3">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>glass_3</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/glass-measure">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>glass (measure)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cbfcfe7b932fbaef6566df569c83fe9b7c2eb4d264b88da8c896c53b7d908d9bd9">
-    <crm:P190_has_symbolic_content>viteri</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>viteri</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cb0">
-    <crm:P190_has_symbolic_content>vitrum</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>vitrum</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_glass_cb103da454f2bfd612a82f1f80d6d4cacba78e827139891b7f68aab01d86d258ce4">
     <crm:P190_has_symbolic_content>viterum</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>viterum</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cbce20232253d76cc65c8687847d2efb927d59797063eed7b5bcaeb334590f6eef">
-    <crm:P190_has_symbolic_content>An amorphous, inorganic substance made by fusing silica (silicon dioxide) with a basic oxide; generally transparent but often translucent or opaque. Its characteristic properties are its hardness and rigidity at ordinary temperatures, its capacity for plastic working at elevated temperatures, and its resistance to weathering and to most chemicals except hydrofluoric acid. Used for both utilitarian and decorative purposes, it can be formed into various shapes, colored or decorated. Glass originated as a glaze in Mesopotamia in about 3500 BCE and the first objects made wholly of glass date to about 2500 BCE. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300010797">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>glass (material)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_glass_cb739e2c2d21e2e77aa45b5e5070d856b5f68db9ff1b09be63a97ae55fa566f3eb">
-    <crm:P190_has_symbolic_content>vitrie</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>vitriː</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

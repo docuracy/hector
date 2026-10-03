@@ -19,9 +19,31 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/mynk-untaued#rate-1545-inward-479"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/mynk-untaued#rate-1558-inward-709"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cbce5db81f587541f4eaab00fafb1008434a1a873f3e1d977f10ede26fcf37803c">
+    <crm:P190_has_symbolic_content>Mynkes untawed</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>miŋkəs untaued</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb1acfa829c03aeda41fdfc5245afcb42a69602c3ecb1ccbd31d2492a10eefe7c25">
+    <crm:P190_has_symbolic_content>mynk (untaued)</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>miŋk untaued</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb224c95897e542157543d9a2aec67cca54c25d289b1ef07617184b8ef4d6a7a1a3">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/mynk-untaued#rate-1558-inward-709">
     <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
@@ -32,11 +54,14 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb1acfa829c03aeda41fdfc5245afcb42a69602c3ecb1ccbd31d2492a10eefe7c25">
-    <crm:P190_has_symbolic_content>mynk (untaued)</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300404670"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>miŋk untaued</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mynk-untaued#rate-1545-inward-479">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Mynkes untawed the tymber 20s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_mynk_untaued_cb3bdc0242195b154dd72220de02bea8747db8090f8c50078768099b56969b4ba05"/>
+    <hector:perQuantity rdf:nodeID="commodity_mynk_untaued_cb224c95897e542157543d9a2aec67cca54c25d289b1ef07617184b8ef4d6a7a1a3"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 479 (transcribed by Stuart Jenks): 'Mynkes untawed the tymber' 20s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb2baee34f151473968a3c45d9de640fbcae4e31d5563a3247779051fe7185cb0a4">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -48,56 +73,31 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>mynk</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb192160d8fa7f37feb94a13c0de2586f499e481389c68d68e0fb57c76829210e63">
+    <crm:P190_has_symbolic_content>mynk, qualified as ‘untaued’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb3bdc0242195b154dd72220de02bea8747db8090f8c50078768099b56969b4ba05">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
     <hector:lsd>20s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">240</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb224c95897e542157543d9a2aec67cca54c25d289b1ef07617184b8ef4d6a7a1a3">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/timber"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mynk-untaued#rate-1545-inward-479">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Mynkes untawed the tymber 20s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_mynk_untaued_cb3bdc0242195b154dd72220de02bea8747db8090f8c50078768099b56969b4ba05"/>
-    <hector:perQuantity rdf:nodeID="commodity_mynk_untaued_cb224c95897e542157543d9a2aec67cca54c25d289b1ef07617184b8ef4d6a7a1a3"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 479 (transcribed by Stuart Jenks): 'Mynkes untawed the tymber' 20s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cbce5db81f587541f4eaab00fafb1008434a1a873f3e1d977f10ede26fcf37803c">
-    <crm:P190_has_symbolic_content>Mynkes untawed</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>miŋkəs untaued</hector:phoneticKey>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_mynk_untaued_cb192160d8fa7f37feb94a13c0de2586f499e481389c68d68e0fb57c76829210e63">
-    <crm:P190_has_symbolic_content>mynk, qualified as ‘untaued’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/timber">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>timber</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>brief texts</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

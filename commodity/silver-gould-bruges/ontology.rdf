@@ -7,6 +7,29 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
+  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cbf7d0b24f892e60cf6ad4b2e92eeed5d55f6c213e112cac52ac61980ca98b51e4">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>8s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cb1319188d9f755caea9ce91016ffdb67f456dbbd08b636961cf6e6049c415fe475">
+    <crm:P190_has_symbolic_content>Gowlde or sylver of Bruges</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>guːldə or silver of brudʒəs</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/silver-gould-bruges">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_silver_gould_bruges_cb1319188d9f755caea9ce91016ffdb67f456dbbd08b636961cf6e6049c415fe475"/>
+    <crm:P1_is_identified_by rdf:nodeID="commodity_silver_gould_bruges_cb1d31ef193e4b44958889a2a46d89d2ae769f123f59126ef7f96fb002eed9ee8c"/>
+    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_silver_gould_bruges_cb0"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>silver (gould bruges)</rdfs:label>
+    <skos:broader rdf:resource="https://w3id.org/hector/commodity/silver"/>
+    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/silver"/>
+    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/silver-gould-bruges#rate-1507-none-123"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
     <rdfs:label>pound sterling (system of money)</rdfs:label>
@@ -26,57 +49,34 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>silver guːld brudʒəs</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/silver-gould-bruges">
-    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_silver_gould_bruges_cb1319188d9f755caea9ce91016ffdb67f456dbbd08b636961cf6e6049c415fe475"/>
-    <crm:P1_is_identified_by rdf:nodeID="commodity_silver_gould_bruges_cb1d31ef193e4b44958889a2a46d89d2ae769f123f59126ef7f96fb002eed9ee8c"/>
-    <crm:P67i_is_referred_to_by rdf:nodeID="commodity_silver_gould_bruges_cb0"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>silver (gould bruges)</rdfs:label>
-    <skos:broader rdf:resource="https://w3id.org/hector/commodity/silver"/>
-    <hector:compoundOf rdf:resource="https://w3id.org/hector/commodity/silver"/>
-    <hector:taxation rdf:resource="https://w3id.org/hector/commodity/silver-gould-bruges#rate-1507-none-123"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cb0">
     <crm:P190_has_symbolic_content>silver, qualified as ‘gould bruges’: a commodity as the Books of Rates price it separately (HECTOR decision 2, 29 Sep 2026).</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300418049"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cbf7d0b24f892e60cf6ad4b2e92eeed5d55f6c213e112cac52ac61980ca98b51e4">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>8s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">96</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/silver">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>silver</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cb1319188d9f755caea9ce91016ffdb67f456dbbd08b636961cf6e6049c415fe475">
-    <crm:P190_has_symbolic_content>Gowlde or sylver of Bruges</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>guːldə or silver of brudʒəs</hector:phoneticKey>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/mast">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
     <rdfs:label>mast</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/mast"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.getty.edu/aat/300418049">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>brief texts</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/silver">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>silver</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_silver_gould_bruges_cbe83c2e9ec84fb4f68570e54e805c59fec0c8a0886a332fb2d030e1b61035b109">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/mast"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
 </rdf:RDF>

@@ -7,22 +7,15 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="unit_mala_cb157961a908f1324cd38376899dd821ce8e160409e0c08b52eaa74784d48c7c79">
-    <crm:P190_has_symbolic_content>mala (also 'male', 'mail'), a packing unit — a leather pack, bag or trunk used to bundle goods (chiefly cloths) for carriage; of no particular fixed size. Cf. French 'malle'.</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mala_cb324ff335c1ad90ffcf8321c5e0c1b09832500d51b3107bb7ae7cdfae560b3e6b">
-    <crm:P190_has_symbolic_content>males</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="unit_mala_cb20cfdbc4d2366820b3f48e14b81fa1e75678b63c10042a3eeb6e2bd8017ff823">
+    <crm:P190_has_symbolic_content>malys</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>maləs</hector:phoneticKey>
+    <hector:phoneticKey>malis</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mala_cb9dc879a0997435dc31d491169a981637eecf7f182008a30b96f666bd17713b5">
-    <crm:P190_has_symbolic_content>male</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>malə</hector:phoneticKey>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mala">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>mala</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/unit/mala">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -40,8 +33,12 @@
     <hector:attestationCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</hector:attestationCount>
     <hector:quantityKind rdf:resource="https://w3id.org/hector/unit/dimension/package"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mala_cb20cfdbc4d2366820b3f48e14b81fa1e75678b63c10042a3eeb6e2bd8017ff823">
-    <crm:P190_has_symbolic_content>malys</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mala_cb28dd298ee3c7b085f5e5f39a029aee7856a0071143357e6ebb94cf169c7df8e5">
+    <crm:P190_has_symbolic_content>malis</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>malis</hector:phoneticKey>
@@ -53,34 +50,37 @@
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
     <hector:phoneticKey>mala</hector:phoneticKey>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/mala">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>mala</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mala_cb9dc879a0997435dc31d491169a981637eecf7f182008a30b96f666bd17713b5">
+    <crm:P190_has_symbolic_content>male</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>malə</hector:phoneticKey>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="unit_mala_cb324ff335c1ad90ffcf8321c5e0c1b09832500d51b3107bb7ae7cdfae560b3e6b">
+    <crm:P190_has_symbolic_content>males</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>maləs</hector:phoneticKey>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/mala">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>mala (London Customs Accounts glossary)</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>weights and measures (general, standards)</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>attested variant</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="unit_mala_cb28dd298ee3c7b085f5e5f39a029aee7856a0071143357e6ebb94cf169c7df8e5">
-    <crm:P190_has_symbolic_content>malis</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>malis</hector:phoneticKey>
+  <rdf:Description rdf:nodeID="unit_mala_cb157961a908f1324cd38376899dd821ce8e160409e0c08b52eaa74784d48c7c79">
+    <crm:P190_has_symbolic_content>mala (also 'male', 'mail'), a packing unit — a leather pack, bag or trunk used to bundle goods (chiefly cloths) for carriage; of no particular fixed size. Cf. French 'malle'.</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300386648">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
+    <rdfs:label>weights and measures (general, standards)</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

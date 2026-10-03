@@ -8,12 +8,13 @@
 > [issues](https://github.com/docuracy/hector/issues). See
 > [docs/uri-policy.md](docs/uri-policy.md#0-alpha-until-the-first-release).
 
-HECTOR is a Linked Data vocabulary of the **commodities** traded through early modern English
-ports, the **units** they were measured in, and the **customs rates** charged on them in the
-Tudor Books of Rates of 1507, 1545 and 1558. Each record gathers the spellings the sources
-actually use, with dates and a phonetic key, links to the Getty Art & Architecture Thesaurus,
-Wikidata and QUDT where an equivalent exists, and is published as JSON-LD aligned with
-[Linked Art](https://linked.art/).
+HECTOR is an open Linked Data vocabulary of historical traded **commodities**, the **units**
+they were measured and packed in, and the **customs rates** charged on them. Each record gathers
+the spellings the sources actually use, with dates and a phonetic key, links to the Getty Art &
+Architecture Thesaurus and Wikidata where an equivalent exists, and is published as JSON-LD
+aligned with [Linked Art](https://linked.art/). It is designed to grow to the goods of any trade,
+period and language; its first content comes from the London customs accounts (1380–1560) and the
+English Books of Rates of 1507, 1545 and 1558.
 
 **Browse and search it at <https://w3id.org/hector/>**, by any spelling the sources use or a near
 miss: similar spellings are found with the London Customs Accounts project's character encoder,
@@ -105,8 +106,12 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
   rules are extended.
 - The 1604 Book of Rates is parsed but not published (it waits on its commodities being restored
   to the LCA glossary).
-- Integration with the [Digital Noback Project](https://www.uni-bamberg.de/en/hist/digital-history/projects/digital-noback-project/)'s
-  units, and images from museum and Portable Antiquities collections, remain aims.
+- Sources beyond London: other trades, places and languages. HECTOR is built to take them, and
+  proposals are welcome. Images from museum and Portable Antiquities collections remain an aim.
+- **No links to QUDT or other vocabularies of modern units, by design**: those define today's
+  standard units, whereas historical units varied from place to place and over time, so a link
+  would assert an equivalence the sources do not support. Each unit gives its own sourced
+  definitions and conversions instead.
 
 Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/docuracy/hector/issues/2).
 

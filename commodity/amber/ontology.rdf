@@ -8,33 +8,32 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
 >
-  <rdf:Description rdf:nodeID="commodity_amber_cb28f5090b6ea07aa5aaf27bc2baa7252d133a4013d17bbfd4e31a6b12057d778c3">
+  <rdf:Description rdf:nodeID="commodity_amber_cb27fc553f7fa0190439c48ae513613d36cb086616c2d946034c987dc58b0fa6118">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
     <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/mast"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb2dde826b4c66ed64047e36e0b794785feacc437077b6203896617849f990344c9">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>10s</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1545-inward-3">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Ambre the pounde 4s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_amber_cb2007cceb2cd5090eb03a380497e79aaa7f5923733e9c588bbeb744f44d45b64c2"/>
+    <hector:perQuantity rdf:nodeID="commodity_amber_cb1ca57edebb756e9f343a8b1bd65a15711fd1af10d20d76b080c14af6c80c0fe36"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 3 (transcribed by Stuart Jenks): 'Ambre the pounde' 4s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1558-inward-15">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Ambre the maste cont’ 2½ pounde 33s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_amber_cb2c648082ca1512570d9f1a257a3b15cb6cc42ad8d6a33408c73274b9ca381701a"/>
+    <hector:perQuantity rdf:nodeID="commodity_amber_cb28f5090b6ea07aa5aaf27bc2baa7252d133a4013d17bbfd4e31a6b12057d778c3"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 15 (transcribed by Stuart Jenks): 'Ambre the maste cont’ 2½ pounde' 33s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb1d946b4362fb7dd73c1c083812bbb6e1fdb70376523a78f41d541e6dcdbfce295">
-    <crm:P190_has_symbolic_content>ambre</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ambrə</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-    <rdfs:label>pound sterling (system of money)</rdfs:label>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012934">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>amber (fossil resin)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber">
     <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-03</dcterms:modified>
@@ -56,86 +55,34 @@
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/amber#rate-1558-inward-15"/>
     <hector:taxation rdf:resource="https://w3id.org/hector/commodity/amber#rate-1558-inward-16"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb2c648082ca1512570d9f1a257a3b15cb6cc42ad8d6a33408c73274b9ca381701a">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>33s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</hector:valueInPence>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>descriptive note</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>pound</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_amber_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb1558524fbd20f36ecd068680e9f361feeb78d48a72a7224155599aac4523284fa">
-    <crm:P190_has_symbolic_content>A yellowish, hard, glassy, translucent fossil tree resin found in largest deposits on the Baltic coast and dating 40-60 million years old. Types of amber are classified by location. Amber is composed of complex mixtures of oxidized and polymerized resin acids and resin alcohols. It has been gathered or mined since Paleolithic times. It is easy to carve and was often used in its natural state for jewelry, beads, amulets, and small vessels. It was also used as an ingredient in paint; dark color oil and amber varnishes are made by dissolving melted amber in amber oil, turpentine oil, or a drying oil. It develops an electrical charge when rubbed with a cloth. It is also valued because very ancient insects and plants may be preserved in the amber. [Source: Getty AAT]</crm:P190_has_symbolic_content>
-    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1558-inward-15">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Ambre the maste cont’ 2½ pounde 33s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_amber_cb2c648082ca1512570d9f1a257a3b15cb6cc42ad8d6a33408c73274b9ca381701a"/>
-    <hector:perQuantity rdf:nodeID="commodity_amber_cb28f5090b6ea07aa5aaf27bc2baa7252d133a4013d17bbfd4e31a6b12057d778c3"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 15 (transcribed by Stuart Jenks): 'Ambre the maste cont’ 2½ pounde' 33s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1545-inward-2">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Ambre the maste 10s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_amber_cb2dde826b4c66ed64047e36e0b794785feacc437077b6203896617849f990344c9"/>
-    <hector:perQuantity rdf:nodeID="commodity_amber_cb27fc553f7fa0190439c48ae513613d36cb086616c2d946034c987dc58b0fa6118"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 2 (transcribed by Stuart Jenks): 'Ambre the maste' 10s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb22365b8f46659da4e02da6f032bd35b2410f10c561ddfaeaecbb21e8ed2ab38ff">
-    <crm:P190_has_symbolic_content>ambir</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_amber_cb20338e2531a2bf53ff406024c106f971cbdfa3c609519edd3a663b3489ec391c3">
+    <crm:P190_has_symbolic_content>aumber</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>ambir</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1477</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1479</hector:validThrough>
+    <hector:phoneticKey>aumber</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1505</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1506</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300012934">
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>amber (fossil resin)</rdfs:label>
+    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb317b9bdad67b94de8f1f8c41b814818b7bbc0ca13535fb0745764685728ac77b7">
-    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-    <hector:lsd>13s 4d</hector:lsd>
-    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1545-inward-3">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1545 inward: Ambre the pounde 4s</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_amber_cb2007cceb2cd5090eb03a380497e79aaa7f5923733e9c588bbeb744f44d45b64c2"/>
-    <hector:perQuantity rdf:nodeID="commodity_amber_cb1ca57edebb756e9f343a8b1bd65a15711fd1af10d20d76b080c14af6c80c0fe36"/>
-    <hector:sourceText>Book of Rates 1545, inward, line 3 (transcribed by Stuart Jenks): 'Ambre the pounde' 4s</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1558-inward-16">
-    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
-    <rdfs:label>1558 inward: Ambre the pounde 13s 4d</rdfs:label>
-    <hector:amount rdf:nodeID="commodity_amber_cb317b9bdad67b94de8f1f8c41b814818b7bbc0ca13535fb0745764685728ac77b7"/>
-    <hector:perQuantity rdf:nodeID="commodity_amber_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
-    <hector:sourceText>Book of Rates 1558, inward, line 16 (transcribed by Stuart Jenks): 'Ambre the pounde' 13s 4d</hector:sourceText>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb205ae54acd76066856140664f8b29ef87d764de20f30bd8cd27bbab56d6b1c49c">
-    <crm:P190_has_symbolic_content>aumbre</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_amber_cb1d946b4362fb7dd73c1c083812bbb6e1fdb70376523a78f41d541e6dcdbfce295">
+    <crm:P190_has_symbolic_content>ambre</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>aumbrə</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>attested variant</rdfs:label>
+    <hector:phoneticKey>ambrə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_amber_cb2619bf73781098589f4e0791fb1820771495ebcb27522e5e53c1ac90154cb29a7">
     <crm:P190_has_symbolic_content>amber</crm:P190_has_symbolic_content>
@@ -146,9 +93,20 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1505</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1506</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/unit/mast">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
-    <rdfs:label>mast</rdfs:label>
+  <rdf:Description rdf:nodeID="commodity_amber_cb28f5090b6ea07aa5aaf27bc2baa7252d133a4013d17bbfd4e31a6b12057d778c3">
+    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/mast"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_amber_cb2c648082ca1512570d9f1a257a3b15cb6cc42ad8d6a33408c73274b9ca381701a">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>33s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400</hector:valueInPence>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_amber_cb2007cceb2cd5090eb03a380497e79aaa7f5923733e9c588bbeb744f44d45b64c2">
     <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
@@ -156,18 +114,36 @@
     <hector:lsd>4s</hector:lsd>
     <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">48</hector:valueInPence>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb27fc553f7fa0190439c48ae513613d36cb086616c2d946034c987dc58b0fa6118">
+  <rdf:Description rdf:nodeID="commodity_amber_cb1ca57edebb756e9f343a8b1bd65a15711fd1af10d20d76b080c14af6c80c0fe36">
     <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/mast"/>
+    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb2addfa276cc8143c343da54d1fcbaa162e57c6183e50aa5ef5dc5fbaedbbf0dd8">
-    <crm:P190_has_symbolic_content>ymber</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_amber_cb205ae54acd76066856140664f8b29ef87d764de20f30bd8cd27bbab56d6b1c49c">
+    <crm:P190_has_symbolic_content>aumbre</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>imber</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+    <hector:phoneticKey>aumbrə</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1390</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1545-inward-2">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1545 inward: Ambre the maste 10s</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_amber_cb2dde826b4c66ed64047e36e0b794785feacc437077b6203896617849f990344c9"/>
+    <hector:perQuantity rdf:nodeID="commodity_amber_cb27fc553f7fa0190439c48ae513613d36cb086616c2d946034c987dc58b0fa6118"/>
+    <hector:sourceText>Book of Rates 1545, inward, line 2 (transcribed by Stuart Jenks): 'Ambre the maste' 10s</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1545</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_amber_cb1558524fbd20f36ecd068680e9f361feeb78d48a72a7224155599aac4523284fa">
+    <crm:P190_has_symbolic_content>A yellowish, hard, glassy, translucent fossil tree resin found in largest deposits on the Baltic coast and dating 40-60 million years old. Types of amber are classified by location. Amber is composed of complex mixtures of oxidized and polymerized resin acids and resin alcohols. It has been gathered or mined since Paleolithic times. It is easy to carve and was often used in its natural state for jewelry, beads, amulets, and small vessels. It was also used as an ingredient in paint; dark color oil and amber varnishes are made by dissolving melted amber in amber oil, turpentine oil, or a drying oil. It develops an electrical charge when rubbed with a cloth. It is also valued because very ancient insects and plants may be preserved in the amber. [Source: Getty AAT]</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="http://vocab.getty.edu/aat/300435416"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300411998">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
+    <rdfs:label>pound sterling (system of money)</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:nodeID="commodity_amber_cb279bb89b6213db825c43b0aed3057e06c324c339f98698c41b5601888fcc88af9">
     <crm:P190_has_symbolic_content>awmber</crm:P190_has_symbolic_content>
@@ -177,29 +153,53 @@
     <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
     <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
   </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300435416">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>descriptive note</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb20338e2531a2bf53ff406024c106f971cbdfa3c609519edd3a663b3489ec391c3">
-    <crm:P190_has_symbolic_content>aumber</crm:P190_has_symbolic_content>
+  <rdf:Description rdf:nodeID="commodity_amber_cb22365b8f46659da4e02da6f032bd35b2410f10c561ddfaeaecbb21e8ed2ab38ff">
+    <crm:P190_has_symbolic_content>ambir</crm:P190_has_symbolic_content>
     <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
-    <hector:phoneticKey>aumber</hector:phoneticKey>
-    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1505</hector:validFrom>
-    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1506</hector:validThrough>
+    <hector:phoneticKey>ambir</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1477</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1479</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_amber_cb2dde826b4c66ed64047e36e0b794785feacc437077b6203896617849f990344c9">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>10s</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">120</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_amber_cb2addfa276cc8143c343da54d1fcbaa162e57c6183e50aa5ef5dc5fbaedbbf0dd8">
+    <crm:P190_has_symbolic_content>ymber</crm:P190_has_symbolic_content>
+    <crm:P2_has_type rdf:resource="https://w3id.org/hector/ontology#AttestedVariant"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation"/>
+    <hector:phoneticKey>imber</hector:phoneticKey>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1513</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1514</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/mast">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>mast</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/commodity/amber#rate-1558-inward-16">
+    <rdf:type rdf:resource="https://w3id.org/hector/ontology#Rate"/>
+    <rdfs:label>1558 inward: Ambre the pounde 13s 4d</rdfs:label>
+    <hector:amount rdf:nodeID="commodity_amber_cb317b9bdad67b94de8f1f8c41b814818b7bbc0ca13535fb0745764685728ac77b7"/>
+    <hector:perQuantity rdf:nodeID="commodity_amber_cb1ae7d68c6a4594a5849df0cb1ff16bf6cbc4a0befaaffba325cf70545401b89a0"/>
+    <hector:sourceText>Book of Rates 1558, inward, line 16 (transcribed by Stuart Jenks): 'Ambre the pounde' 13s 4d</hector:sourceText>
+    <hector:validFrom rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1558</hector:validFrom>
+    <hector:validThrough rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1604</hector:validThrough>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="commodity_amber_cb317b9bdad67b94de8f1f8c41b814818b7bbc0ca13535fb0745764685728ac77b7">
+    <crm:P180_has_currency rdf:resource="http://vocab.getty.edu/aat/300411998"/>
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    <hector:lsd>13s 4d</hector:lsd>
+    <hector:valueInPence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160</hector:valueInPence>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/unit/pound">
+    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E58_Measurement_Unit"/>
+    <rdfs:label>pound</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mlca/glossary/amber">
     <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     <rdfs:label>amber (London Customs Accounts glossary)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="commodity_amber_cb1ca57edebb756e9f343a8b1bd65a15711fd1af10d20d76b080c14af6c80c0fe36">
-    <crm:P90_has_value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</crm:P90_has_value>
-    <crm:P91_has_unit rdf:resource="https://w3id.org/hector/unit/pound"/>
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E54_Dimension"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://vocab.getty.edu/aat/300404670">
-    <rdf:type rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-    <rdfs:label>preferred terms</rdfs:label>
   </rdf:Description>
 </rdf:RDF>
