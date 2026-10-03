@@ -17,6 +17,8 @@ Roles in the [Contributor Roles Taxonomy](https://credit.niso.org/):
 | Stuart Jenks | Resources (the transcriptions every record derives from) |
 | Eliot Benbow | Data curation (the London Customs Accounts glossary) |
 | Maria Grove-Gordillo | Data curation (the London Customs Accounts glossary) |
+| Justin Colson | Funding acquisition, Supervision |
+| Werner Scheltjens | Funding acquisition, Supervision |
 
 ## The transcriptions: Stuart Jenks
 

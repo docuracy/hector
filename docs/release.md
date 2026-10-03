@@ -3,7 +3,15 @@
 The first tagged release ends the **alpha** (docs/uri-policy.md §0): from then on URIs are
 stable and the ledgers are frozen. Prepared 3 October 2026; nothing here has been done yet.
 
-## Before tagging
+## Alpha pre-releases
+
+`vYYYY.MM-alpha.N`, published as a GitHub **pre-release**: a snapshot for discussion that
+promises nothing persistent. No DOI (Zenodo's integration, once enabled, must not be triggered
+by these: publish them as pre-releases only), nothing frozen, alpha notices left in place. Bump
+`version` and `date-released` in CITATION.cff and `owl:versionInfo`, add a CHANGELOG entry, tag.
+First: v2026.10-alpha.1, 3 Oct 2026.
+
+## Before tagging (the first full release)
 
 1. **Decide the version and date** (`vYYYY.MM`, docs/uri-policy.md §4) and what is in it
    (the 1604 Book of Rates and Sound Toll harmonisation are deferred to later versions: PLAN.md).

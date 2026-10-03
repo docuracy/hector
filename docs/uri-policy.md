@@ -8,14 +8,16 @@ exemplars and the validator follow it, and `tools/validate.py` enforces §1 (`EN
 ## 0. Alpha, until the first release
 
 *Added 3 Oct 2026 (Stephen): HECTOR is published as an **alpha**, visible for discussion and
-**not for citation**.* Until the first tagged release (§4):
+**not for citation**.* Until the first full release (§4):
 
 - records, slugs and URIs may change or be withdrawn without notice, and nobody should cite them;
 - the ledger (§3) IS committed, so that each export is reproducible and every change to it is
   visible in the history, but it may be edited: a slug can be renamed or withdrawn. Where a
   slug is changed, a deprecation document is still written where practicable;
-- the freeze in §3 ("never regenerated") takes effect at the first tagged release, not at the
-  first push.
+- the freeze in §3 ("never regenerated") takes effect at the first full release, not at the
+  first push;
+- alpha pre-releases (`vYYYY.MM-alpha.N`, GitHub pre-releases) are snapshots for discussion:
+  no DOI, nothing frozen, no promise that their URIs or records persist.
 
 The alpha status is stated in the README, on the home page, in `LICENSE-DATA` and as
 `owl:versionInfo` on the vocabulary document.
@@ -77,7 +79,7 @@ does. So:
   publication it lives at `build/ledger/commodities.tsv` (git-ignored), because its keys are
   Jenks-derived headwords. Nothing has been published, so no URI has been cited and nothing can
   break. It is committed as `ledger/commodities.tsv` in the same commit as the first published
-  export, and never regenerated after the first tagged release (§0: during the alpha it may
+  export, and never regenerated after the first full release (§0: during the alpha it may
   be edited)* (implementation: `tools/export/export_hector.py`);
 - a slug is minted the first time a key is exported, and is looked up from then on;
 - slugs are lowercase ASCII: diacritics are stripped, spaces and punctuation become `-`, and a

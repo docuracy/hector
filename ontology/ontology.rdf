@@ -4,120 +4,120 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#phoneticKey">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#source">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>A phonetic transcription (IPA) of a Name, used to match variant spellings across sources.</rdfs:comment>
-    <rdfs:label>phonetic key</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#sourceText">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The text of the source entry, verbatim.</rdfs:comment>
-    <rdfs:label>source text</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#Rate">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-    <rdfs:comment>A customs rate: the valuation or charge a Book of Rates sets on a quantity of a commodity for a period.</rdfs:comment>
-    <rdfs:label>Rate</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#conversionToGram">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The number of grams in one of this unit, as an xsd:decimal. State in the unit's description which definition of the unit the figure follows.</rdfs:comment>
-    <rdfs:label>conversion to gram</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#originPlace">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>A place of origin or provenance associated with a commodity (for example the place in a qualified commodity such as Normandy canvas).</rdfs:comment>
-    <rdfs:label>origin place</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#amount">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The MonetaryAmount of a Rate.</rdfs:comment>
-    <rdfs:label>amount</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#historicalTerm">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>A historical word or phrase for a unit or commodity, where a full Name record is not warranted.</rdfs:comment>
-    <rdfs:label>historical term</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#taxation">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>Links a commodity to a Rate set on it.</rdfs:comment>
-    <rdfs:label>taxation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#valueInPence">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The exact value of a pre-decimal sterling amount in pence, as an xsd:decimal (a halfpenny is 0.5, a farthing 0.25). Pounds and shillings do not divide exactly into decimal pounds, so pence is the unit of record.</rdfs:comment>
-    <rdfs:label>value in pence</rdfs:label>
+    <rdfs:comment>The source (for example a Book of Rates) that a Name or a Rate is taken from.</rdfs:comment>
+    <rdfs:label>source</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#ArchaicForm">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdfs:comment>Classifies a Name as an archaic or obsolete form of a term.</rdfs:comment>
     <rdfs:label>archaic form</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#lsd">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#originPlace">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The amount as written in pounds, shillings and pence, for display.</rdfs:comment>
-    <rdfs:label>£ s d</rdfs:label>
+    <rdfs:comment>A place of origin or provenance associated with a commodity (for example the place in a qualified commodity such as Normandy canvas).</rdfs:comment>
+    <rdfs:label>origin place</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#source">
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#phoneticKey">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The source (for example a Book of Rates) that a Name or a Rate is taken from.</rdfs:comment>
-    <rdfs:label>source</rdfs:label>
+    <rdfs:comment>A phonetic transcription (IPA) of a Name, used to match variant spellings across sources.</rdfs:comment>
+    <rdfs:label>phonetic key</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:comment>Classifies a Name as a variant form attested in a historical source.</rdfs:comment>
-    <rdfs:label>attested variant</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#conversionToGram">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The number of grams in one of this unit, as an xsd:decimal. State in the unit's description which definition of the unit the figure follows.</rdfs:comment>
+    <rdfs:label>conversion to gram</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#validThrough">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>The last year in which a Rate or a Name is attested or in force (xsd:gYear).</rdfs:comment>
     <rdfs:label>valid through</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#compoundOf">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The simpler commodities a qualified or compound commodity is composed of. Also published by the London Customs Accounts glossary.</rdfs:comment>
-    <rdfs:label>compound of</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#definedAs">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>A quantity (a Linked Art Dimension: value and unit) that one of this unit is defined as or equal to, according to the source cited on the Dimension. Where sources disagree, each reading is a separate Dimension with its own source; a doubtful one says so in its note. Commodity-specific contents (a bale of cumin holds 3 cwt) are not definitions. Adopted 29 Sep 2026 (D7).</rdfs:comment>
-    <rdfs:label>defined as</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#ModernLemma">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <rdfs:comment>Classifies the Name that is the modern standard form of a term.</rdfs:comment>
-    <rdfs:label>modern lemma</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#validFrom">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The year from which a Rate or a Name is attested or in force (xsd:gYear).</rdfs:comment>
-    <rdfs:label>valid from</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-    <rdfs:comment>Terms HECTOR adds to Linked Art (CIDOC-CRM) for historical commodities, units of measure and customs rates. Term documentation lives here rather than in the JSON-LD context, which may only define terms. Namespace and URI policy: https://github.com/docuracy/hector/blob/main/docs/uri-policy.md</rdfs:comment>
-    <rdfs:label>HECTOR vocabulary</rdfs:label>
-    <owl:versionInfo>alpha (since 2026-10-03): published for discussion, not for citation; terms, records and URIs may change or be withdrawn until the first tagged release</owl:versionInfo>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#Rate">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A customs rate: the valuation or charge a Book of Rates sets on a quantity of a commodity for a period.</rdfs:comment>
+    <rdfs:label>Rate</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#illustrative">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>True when a record is a worked example of HECTOR's shape rather than curated data. Its values are chosen to show the structure and must not be cited.</rdfs:comment>
     <rdfs:label>illustrative</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/hector/ontology#attestationCount">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    <rdfs:comment>The number of times a commodity is attested in the London Customs Accounts corpus, as counted by that project's tagger (LCA docs/data/concept_attestation.json) when the record was exported; for a unit, the number of corpus spans the tagger typed as that unit (`unit` or `commodity-unit`).</rdfs:comment>
-    <rdfs:label>attestation count</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#quantityKind">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>The dimension a unit measures (mass, length, volume, count, package), given as a HECTOR unit dimension (unit/dimension/&lt;dim&gt;). May hold more than one value: a cask or a sack is both a measure and a package. A property, not part of the unit's URI: units are unit/&lt;slug&gt; (D7, 29 Sep 2026).</rdfs:comment>
     <rdfs:label>quantity kind</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#lsd">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The amount as written in pounds, shillings and pence, for display.</rdfs:comment>
+    <rdfs:label>£ s d</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#AttestedVariant">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment>Classifies a Name as a variant form attested in a historical source.</rdfs:comment>
+    <rdfs:label>attested variant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#definedAs">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>A quantity (a Linked Art Dimension: value and unit) that one of this unit is defined as or equal to, according to the source cited on the Dimension. Where sources disagree, each reading is a separate Dimension with its own source; a doubtful one says so in its note. Commodity-specific contents (a bale of cumin holds 3 cwt) are not definitions. Adopted 29 Sep 2026 (D7).</rdfs:comment>
+    <rdfs:label>defined as</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#compoundOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The simpler commodities a qualified or compound commodity is composed of. Also published by the London Customs Accounts glossary.</rdfs:comment>
+    <rdfs:label>compound of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Terms HECTOR adds to Linked Art (CIDOC-CRM) for historical commodities, units of measure and customs rates. Term documentation lives here rather than in the JSON-LD context, which may only define terms. Namespace and URI policy: https://github.com/docuracy/hector/blob/main/docs/uri-policy.md</rdfs:comment>
+    <rdfs:label>HECTOR vocabulary</rdfs:label>
+    <owl:versionInfo>2026.10-alpha.1 (alpha pre-release, 2026-10-03): published for discussion, not for citation; terms, records and URIs may change or be withdrawn until the first full release</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#historicalTerm">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>A historical word or phrase for a unit or commodity, where a full Name record is not warranted.</rdfs:comment>
+    <rdfs:label>historical term</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#sourceText">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The text of the source entry, verbatim.</rdfs:comment>
+    <rdfs:label>source text</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#taxation">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Links a commodity to a Rate set on it.</rdfs:comment>
+    <rdfs:label>taxation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#ModernLemma">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <rdfs:comment>Classifies the Name that is the modern standard form of a term.</rdfs:comment>
+    <rdfs:label>modern lemma</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/hector/ontology#perQuantity">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>The quantity (a Linked Art Dimension: value and unit) that a Rate's amount is charged on.</rdfs:comment>
     <rdfs:label>per quantity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#amount">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The MonetaryAmount of a Rate.</rdfs:comment>
+    <rdfs:label>amount</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#validFrom">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The year from which a Rate or a Name is attested or in force (xsd:gYear).</rdfs:comment>
+    <rdfs:label>valid from</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#valueInPence">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The exact value of a pre-decimal sterling amount in pence, as an xsd:decimal (a halfpenny is 0.5, a farthing 0.25). Pounds and shillings do not divide exactly into decimal pounds, so pence is the unit of record.</rdfs:comment>
+    <rdfs:label>value in pence</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/hector/ontology#attestationCount">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The number of times a commodity is attested in the London Customs Accounts corpus, as counted by that project's tagger (LCA docs/data/concept_attestation.json) when the record was exported; for a unit, the number of corpus spans the tagger typed as that unit (`unit` or `commodity-unit`).</rdfs:comment>
+    <rdfs:label>attestation count</rdfs:label>
   </rdf:Description>
 </rdf:RDF>

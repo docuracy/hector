@@ -1,9 +1,13 @@
 # Changelog
 
-Releases are tagged `vYYYY.MM` and deposited on Zenodo (docs/uri-policy.md §4). Until the first
-release HECTOR is an **alpha**: records and URIs may change.
+Releases are tagged `vYYYY.MM` and deposited on Zenodo (docs/uri-policy.md §4). Alpha
+pre-releases (`vYYYY.MM-alpha.N`) are snapshots for discussion with no DOI and no promise of
+persistence; until the first full release HECTOR is an **alpha** and records and URIs may change.
 
-## Unreleased (alpha, published 3 October 2026)
+## v2026.10-alpha.1 (3 October 2026): alpha pre-release
+
+A snapshot for discussion. **It promises nothing persistent**: no DOI, and records, URIs and
+ledgers may still change or be withdrawn before the first full release.
 
 First publication. Stuart Jenks granted CC BY 4.0 on his transcriptions and all data derived
 from them.

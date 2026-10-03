@@ -3,7 +3,7 @@
 
 > **Status: alpha (since 3 October 2026). Published for discussion; please do not cite yet.**
 > Every record, identifier and URI may change or be withdrawn without notice until the first
-> tagged release (`vYYYY.MM`, deposited on Zenodo). Until then URIs are not stable, and
+> full release (`vYYYY.MM`, deposited on Zenodo). Until then URIs are not stable, and
 > nothing here should be treated as a reference. Comments are very welcome as
 > [issues](https://github.com/docuracy/hector/issues). See
 > [docs/uri-policy.md](docs/uri-policy.md#0-alpha-until-the-first-release).
@@ -100,7 +100,7 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
 
 ## Not yet
 
-- No tagged release or DOI: please do not cite.
+- Only an alpha pre-release (v2026.10-alpha.1), with no DOI: please do not cite.
 - The URIs negotiate JSON-LD only: Turtle and RDF/XML are files to fetch directly
   (`https://docuracy.github.io/hector/commodity/saffron/ontology.ttl`) until the w3id redirect
   rules are extended.
@@ -117,7 +117,7 @@ Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/docura
 
 ## Citing HECTOR
 
-Not yet, please: HECTOR is an alpha. From the first tagged release, cite its Zenodo DOI;
+Not yet, please: HECTOR is an alpha. From the first full release, cite its Zenodo DOI;
 [CITATION.cff](CITATION.cff) supplies the metadata (GitHub's "Cite this repository"), and
 [CREDITS.md](CREDITS.md) lists contributor roles (CRediT). Release steps: [docs/release.md](docs/release.md);
 changes: [CHANGELOG.md](CHANGELOG.md).
@@ -140,7 +140,7 @@ generated, so please read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a 
 ## Design principles
 
 - **Stable identification**: each entity has a URI that dereferences to its own description
-  (stable from the first tagged release; during the alpha, URIs may still change).
+  (stable from the first full release; during the alpha, URIs may still change).
 - **Interoperability**: JSON-LD aligned with Linked Art and CIDOC-CRM, extended by a small
   `hector:` vocabulary.
 - **Variation kept, not normalised away**: every attested spelling stays on its record, dated
