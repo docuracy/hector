@@ -32,7 +32,7 @@ First: v2026.10-alpha.1, 3 Oct 2026.
 
 ## Tagging and the DOI
 
-7. **Zenodo**: in Zenodo, enable the GitHub integration for `docuracy/hector` (Stephen; once).
+7. **Zenodo**: in Zenodo, enable the GitHub integration for `ihr-digital/hector` (needs admin rights on the IHR repository; once).
    A GitHub *release* (not just a tag) then triggers a deposit and mints a DOI.
 8. Create the release `vYYYY.MM` on GitHub with the CHANGELOG entry as its notes.
 9. When Zenodo has minted the DOI: add it to CITATION.cff (`doi`, and an `identifiers` entry),

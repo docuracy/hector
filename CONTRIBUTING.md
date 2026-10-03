@@ -17,7 +17,7 @@ from, so the way to make one is an **issue**.
 
 ## Reporting a correction
 
-[Open an issue](https://github.com/docuracy/hector/issues/new?template=correction.yml) with:
+[Open an issue](https://github.com/ihr-digital/hector/issues/new?template=correction.yml) with:
 
 - the record's URI (`https://w3id.org/hector/commodity/...` or `.../unit/...`);
 - what is wrong: a misidentified commodity, a wrong or missing AAT or Wikidata identifier, a

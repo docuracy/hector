@@ -82,7 +82,8 @@ def set_root(root: Path):
     LOCAL_CONTEXTS.update({
         "https://w3id.org/hector/context": CONTEXT_FILE,
         "https://w3id.org/hector/context/": CONTEXT_FILE,
-        "https://docuracy.github.io/hector/context/hector.jsonld": CONTEXT_FILE,
+        "https://ihr-digital.github.io/hector/context/hector.jsonld": CONTEXT_FILE,
+        "https://docuracy.github.io/hector/context/hector.jsonld": CONTEXT_FILE,   # before the move to IHR, 3 Oct 2026
         "https://linked.art/ns/v1/linked-art.json": LINKED_ART_FILE,
     })
     # PyLD caches resolved contexts by URL; a new root must not be served the old ones
@@ -531,7 +532,7 @@ def validate(paths: list[Path] | None = None, online: bool = False, shacl: bool 
     if online:
         import requests
         session = requests.Session()
-        session.headers["User-Agent"] = "HECTOR validator (https://github.com/docuracy/hector)"
+        session.headers["User-Agent"] = "HECTOR validator (https://github.com/ihr-digital/hector)"
         cache = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
     for path in docs:
         if checked is not None:

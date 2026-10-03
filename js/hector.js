@@ -88,7 +88,7 @@
                  <a class="json" href="./${esc(path)}/ontology.json">JSON-LD</a>
                  <a class="json" href="./${esc(path)}/ontology.ttl">Turtle</a>
                  <a class="json" href="./${esc(path)}/ontology.rdf">RDF/XML</a>
-                 <a class="json" title="Opens a GitHub issue (GitHub account required)" href="https://github.com/docuracy/hector/issues/new?template=correction.yml&amp;uri=${encodeURIComponent(uri)}">Report a correction</a></p>`);
+                 <a class="json" title="Opens a GitHub issue (GitHub account required)" href="https://github.com/ihr-digital/hector/issues/new?template=correction.yml&amp;uri=${encodeURIComponent(uri)}">Report a correction</a></p>`);
 
         if (d.deprecated) {
             const to = d.isReplacedBy ? ref(d.isReplacedBy) : "nothing";

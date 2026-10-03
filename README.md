@@ -5,7 +5,7 @@
 > Every record, identifier and URI may change or be withdrawn without notice until the first
 > full release (`vYYYY.MM`, deposited on Zenodo). Until then URIs are not stable, and
 > nothing here should be treated as a reference. Comments are very welcome as
-> [issues](https://github.com/docuracy/hector/issues). See
+> [issues](https://github.com/ihr-digital/hector/issues). See
 > [docs/uri-policy.md](docs/uri-policy.md#0-alpha-until-the-first-release).
 
 HECTOR is an open Linked Data vocabulary of historical traded **commodities**, the **units**
@@ -102,7 +102,7 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
 
 - Only an alpha pre-release (v2026.10-alpha.1), with no DOI: please do not cite.
 - The URIs negotiate JSON-LD only: Turtle and RDF/XML are files to fetch directly
-  (`https://docuracy.github.io/hector/commodity/saffron/ontology.ttl`) until the w3id redirect
+  (`https://ihr-digital.github.io/hector/commodity/saffron/ontology.ttl`) until the w3id redirect
   rules are extended.
 - The 1604 Book of Rates is parsed but not published (it waits on its commodities being restored
   to the LCA glossary).
@@ -113,7 +113,7 @@ fail. CI runs both on every push and pull request, and weekly, to catch identifi
   would assert an equivalence the sources do not support. Each unit gives its own sourced
   definitions and conversions instead.
 
-Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/docuracy/hector/issues/2).
+Plans and decisions: [PLAN.md](PLAN.md) and [issue #2](https://github.com/ihr-digital/hector/issues/2).
 
 ## Citing HECTOR
 
@@ -124,7 +124,7 @@ changes: [CHANGELOG.md](CHANGELOG.md).
 
 ## Contributing and credits
 
-Corrections are welcome as [issues](https://github.com/docuracy/hector/issues/new?template=correction.yml)
+Corrections are welcome as [issues](https://github.com/ihr-digital/hector/issues/new?template=correction.yml)
 (a GitHub account is required; every record on the site has a link that opens one with its URI
 filled in). The records are
 generated, so please read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change to one.

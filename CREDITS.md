@@ -34,10 +34,10 @@ Roles in the [Contributor Roles Taxonomy](https://credit.niso.org/):
 
 Every commodity, spelling and rate in HECTOR derives from **Stuart Jenks's transcriptions** of
 the London customs accounts (1380–1560) and of the Tudor Books of Rates of 1507, 1545 and 1558,
-with his index of subjects to the Books of Rates. He has licensed the transcriptions as
-reproduced in these datasets, and all data derived from them, under CC BY 4.0. His editions are
-published by the [Hansischer Geschichtsverein](https://www.hansischergeschichtsverein.de/london-customs-accounts);
-the editions themselves, as publications, are not part of that licence or of HECTOR.
+with his index of subjects to the Books of Rates: his own, otherwise unpublished, transcript
+files. He has licensed the transcriptions as reproduced in these datasets, and all data derived
+from them, under CC BY 4.0. His printed and online editions are not a source of HECTOR, nor part
+of that licence.
 
 Credit, as he asked: *"Derived from Stuart Jenks's transcriptions of the London customs accounts
 and the Tudor books of rates. Licensed CC BY 4.0."*

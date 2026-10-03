@@ -6,7 +6,8 @@ static JSON-LD from GitHub Pages behind the persistent namespace `https://w3id.o
 It is the intended publication venue for the commodity glossary built in the sister project,
 the **London Customs Accounts** (LCA), at `/home/stephen/PycharmProjects/London_Customs_Accounts`.
 
-Owner: Stephen Gadd (`docuracy` on GitHub). Remote: `github.com/docuracy/hector`, public,
+Owner: Stephen Gadd (`docuracy` on GitHub). Remote: `github.com/ihr-digital/hector` (transferred
+from `docuracy/hector` to the IHR organisation on 3 Oct 2026, beside the LCA repository), public,
 default branch `main`.
 
 ---
@@ -15,7 +16,7 @@ default branch `main`.
 
 - **`PLAN.md`** (this repo) is the working plan: ordered tasks, owners, status, what to do
   next. Keep it current as work lands; it is the file to update, not the issue.
-- **Issue #2** — <https://github.com/docuracy/hector/issues/2> — *"How far can HECTOR get in
+- **Issue #2** — <https://github.com/ihr-digital/hector/issues/2> — *"How far can HECTOR get in
   the remaining six months? Assessment, task list and timetable"* (2026-09-15). The evidence
   and reasoning behind the plan: the state of the glossary against HECTOR's model, why rates
   force a decision on qualified commodities, the two-gazetteer problem, the licensing audit,
@@ -80,7 +81,7 @@ describes a Dexie + Fuse.js phonetic search that does not exist yet.
 
 ## 3. How it is served (the w3id redirect)
 
-GitHub Pages serves `main` at the repo root → `https://docuracy.github.io/hector/`.
+GitHub Pages serves `main` at the repo root → `https://ihr-digital.github.io/hector/`.
 
 **Pushing to `main` publishes immediately.** Since 3 Oct 2026 HECTOR is an **alpha**: public for discussion, NOT for citation; records and URIs may change until the first tagged release (docs/uri-policy.md §0), so the ledger is committed but may still be edited.
 Stephen is content for Phase 0 work to go straight to `main` (2026-09-18). Anything
