@@ -26,7 +26,7 @@ how often each occurs, come from the curated glossary of the
 [London Customs Accounts](https://docuracy.github.io/London_Customs_Accounts/) project
 (Institute of Historical Research, University of London; AHRC/DFG *Unlocking Upcycled Medieval
 Data*): Colson, J., Scheltjens, W., Benbow, E., Gadd, S., & Grove-Gordillo, M. The glossary's
-curation, by Eliot Benbow among others, is what makes the commodities usable. Its data are CC BY
+curation, by Eliot Benbow and Maria Grove-Gordillo among others, is what makes the commodities usable. Its data are CC BY
 4.0. Each HECTOR record links back to its glossary entry (`exactMatch`), and the glossary links
 to HECTOR in return.
 
