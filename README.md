@@ -130,6 +130,16 @@ filled in). The records are
 generated, so please read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change to one.
 [CREDITS.md](CREDITS.md) credits every source HECTOR draws on, with its terms.
 
+## Funding
+
+HECTOR was developed within the project **[Unlocking Upcycled Medieval Data: North Sea
+Networks, People, and Commodities in the London Customs Accounts 1380–1560](https://www.history.ac.uk/research/centre-history-people-place-community/unlocking-upcycled-medieval-data)**,
+funded by the Arts and Humanities Research Council (AHRC) and the Deutsche
+Forschungsgemeinschaft (DFG) under the AHRC–DFG bilateral scheme, as a collaboration between the
+Institute of Historical Research, School of Advanced Study, University of London, and
+Otto-Friedrich-Universität Bamberg: AHRC grant [AH/Z507179/1](https://gtr.ukri.org/projects?ref=AH%2FZ507179%2F1);
+DFG project number [547507634](https://gepris.dfg.de/project/547507634).
+
 ## Licence
 
 - **Data** (commodity, unit and rate records, ledgers, vocabulary): **CC BY 4.0**, see

@@ -7,6 +7,16 @@ below; each is credited here, with the terms on which it is used.
 
 **HECTOR is an alpha**: please do not cite it yet (see the [README](README.md)).
 
+## Funding
+
+HECTOR was developed within the project **[Unlocking Upcycled Medieval Data: North Sea
+Networks, People, and Commodities in the London Customs Accounts 1380–1560](https://www.history.ac.uk/research/centre-history-people-place-community/unlocking-upcycled-medieval-data)**,
+funded by the Arts and Humanities Research Council (AHRC) and the Deutsche
+Forschungsgemeinschaft (DFG) under the AHRC–DFG bilateral scheme, as a collaboration between the
+Institute of Historical Research, School of Advanced Study, University of London, and
+Otto-Friedrich-Universität Bamberg: AHRC grant [AH/Z507179/1](https://gtr.ukri.org/projects?ref=AH%2FZ507179%2F1);
+DFG project number [547507634](https://gepris.dfg.de/project/547507634).
+
 ## Contributor roles (CRediT)
 
 Roles in the [Contributor Roles Taxonomy](https://credit.niso.org/):
@@ -16,7 +26,7 @@ Roles in the [Contributor Roles Taxonomy](https://credit.niso.org/):
 | Stephen Gadd | Conceptualization, Methodology, Software, Data curation, Validation, Visualization, Writing – original draft |
 | Stuart Jenks | Resources (the transcriptions every record derives from) |
 | Eliot Benbow | Data curation (the London Customs Accounts glossary) |
-| Maria Grove-Gordillo | Data curation (the London Customs Accounts glossary) |
+| María Grove-Gordillo | Data curation (the London Customs Accounts glossary) |
 | Justin Colson | Funding acquisition, Supervision |
 | Werner Scheltjens | Funding acquisition, Supervision |
 
@@ -39,7 +49,7 @@ how often each occurs, come from the curated glossary of the
 [London Customs Accounts](https://docuracy.github.io/London_Customs_Accounts/) project
 (Institute of Historical Research, University of London; AHRC/DFG *Unlocking Upcycled Medieval
 Data*): Colson, J., Scheltjens, W., Benbow, E., Gadd, S., & Grove-Gordillo, M. The glossary's
-curation, by Eliot Benbow and Maria Grove-Gordillo among others, is what makes the commodities usable. Its data are CC BY
+curation, by Eliot Benbow and María Grove-Gordillo among others, is what makes the commodities usable. Its data are CC BY
 4.0. Each HECTOR record links back to its glossary entry (`exactMatch`), and the glossary links
 to HECTOR in return.
 
